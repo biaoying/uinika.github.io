@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#8C634F">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+  <link rel="mask-icon" href="/images/favicon.png" color="#8C634F">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Monda:300,300italic,400,400italic,700,700italic|Source+Code+Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"uinika.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#A38272","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="初等数学主要由代数（Algebra）和几何（Geometry）两部分构成，本篇文章基于《Thomas’ Calculus Early Transcendentals 14th》一书附录的 A Brief Table of Integrals 章节整理而成，主要涉及到了初等代数与几何、三角公式与函数等相关内容，较为系统的概括了初等数学当中较为常见的公式定理以及平面直角坐标系图像，进而为电子学当中涉及">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用初等数学图形与公式汇总">
+<meta property="og:url" content="https://uinika.github.io/Math/Elementary.html">
+<meta property="og:site_name" content="Bit by bit">
+<meta property="og:description" content="初等数学主要由代数（Algebra）和几何（Geometry）两部分构成，本篇文章基于《Thomas’ Calculus Early Transcendentals 14th》一书附录的 A Brief Table of Integrals 章节整理而成，主要涉及到了初等代数与几何、三角公式与函数等相关内容，较为系统的概括了初等数学当中较为常见的公式定理以及平面直角坐标系图像，进而为电子学当中涉及">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/logo.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Triangle.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Similar-Triangles.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Pythagorean-Theorem.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Parallelogram.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Trapezoid.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Circle.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Any-Cylinder-or-Prism-with-Parallel-Bases.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Right-Circular-Cylinder.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Any-Cone-or-Pyramid.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Right-Circular-Cone.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Geometry/Sphere.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometry/Definitions.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/Radian-Measure.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/Degrees-1.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/Radians-1.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/Degrees-2.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/Radians-2.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/1-sin.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/2-cos.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/3-tan.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/4-sec.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/5-csc.png">
+<meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/6-cot.png">
+<meta property="article:published_time" content="2020-05-21T13:39:03.751Z">
+<meta property="article:modified_time" content="2020-05-21T13:39:03.751Z">
+<meta property="article:author" content="Hank">
+<meta property="article:tag" content="Elementary">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://uinika.github.io/Math/Elementary/logo.png">
+
+<link rel="canonical" href="https://uinika.github.io/Math/Elementary.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>常用初等数学图形与公式汇总 | Bit by bit</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Bit by bit" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Bit by bit</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Electronics, Embedded & Web</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-th-large"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">52</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">21</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-briefcase"></i>分类<span class="badge">11</span></a>
+
+  </li>
+        <li class="menu-item menu-item-it圈">
+
+    <a href="/industry/" rel="section"><i class="fa fa-fw fa-microchip"></i>IT圈</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/uinika" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Math/Elementary.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          常用初等数学图形与公式汇总
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Math/" itemprop="url" rel="index"><span itemprop="name">Math</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>初等数学主要由<strong>代数</strong>（Algebra）和<strong>几何</strong>（Geometry）两部分构成，本篇文章基于《Thomas’ Calculus Early Transcendentals 14th》一书附录的 <strong>A Brief Table of Integrals</strong> 章节整理而成，主要涉及到了初等代数与几何、三角公式与函数等相关内容，较为系统的概括了初等数学当中较为常见的<strong>公式定理</strong>以及<strong>平面直角坐标系图像</strong>，进而为电子学当中涉及的各类数学运算做好知识准备。</p>
+<p><img src="/Math/Elementary/logo.png"></p>
+<p>由于初等数学只能解释常量的几何与物理问题，例如：<code>规则图形的长度</code>、<code>面积</code>与<code>体积</code>，<code>匀速直线运动</code>等等。虽然并不涉及工程计算当中经常涉及的变化量的分析与求解，但是却是高等数学知识体系当中，不可或缺的基础常识性内容。因此，笔者为了温习微积分相关的知识，特意将初等数学的重要概念归纳至本篇文章下面，便于方便快速的进行查阅。</p>
+<a id="more"></a>
+<h2 id="数的分类">数的分类</h2>
+<ul>
+<li><strong>自然数 N</strong>：包括<code>零</code>在内的全体非负整数；</li>
+<li><strong>整数 Z</strong>：由<code>正整数</code>、<code>零</code>、<code>负整数</code>组成；</li>
+<li><strong>有理数 Q</strong>：由<code>整数</code>和<code>分数</code>的组成，是整数和分数的集合；</li>
+<li><strong>实数 R</strong>：包括<code>有理数</code>和<code>无理数</code>（小数部分无限不循环）；</li>
+<li><strong>复数 C</strong>：将形如<code>z = a + bi</code>的数称为复数，其中<code>a</code>、<code>b</code>均为实数，<code>a</code>被称为<strong>实部</strong>，<code>b</code>被称为<strong>虚部</strong>，<code>i</code>称为<strong>虚数单位</strong>。</li>
+</ul>
+<h2 id="基本代数公式">基本代数公式</h2>
+<h3 id="算术运算">算术运算</h3>
+<div class="table-container">
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[a \cdot (b+c) = a \cdot b + a \cdot c\]</span>
+</td>
+<td>
+<span class="math display">\[\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}\]</span>
+</td>
+<td>
+<span class="math display">\[\frac{a/b}{c/d} = \frac{a}{b} \cdot \frac{d}{c}\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="符号定律">符号定律</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[-(-a) = a\]</span>
+</td>
+<td>
+<span class="math display">\[\frac{-a}{b} = \frac{a}{-b} = -\frac{a}{b}\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="零">零</h3>
+<p>除数不能为<code>0</code>，如果 <span class="math inline">\(a \neq 0\)</span>，那么：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\frac{0}{a} = 0\]</span>
+</td>
+<td>
+<span class="math display">\[a^0 = 1\]</span>
+</td>
+<td>
+<span class="math display">\[0^a = 0\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>而对于任意的数字<code>a</code>，都会有 <span class="math inline">\(a \cdot 0 = 0 \cdot a = 0\)</span>；</p>
+<h3 id="指数定律">指数定律</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[a^m \cdot a^n = a^{m+n}\]</span>
+</td>
+<td>
+<span class="math display">\[(ab)^m = a^m \cdot b^m\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[(a^m)^n = a^{m \cdot n}\]</span>
+</td>
+<td>
+<span class="math display">\[a^{m/n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>如果 <span class="math inline">\(a \neq 0\)</span>，那么：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\frac{a^m}{a^n} = a^{m-n}\]</span>
+</td>
+<td>
+<span class="math display">\[a^0 = 1\]</span>
+</td>
+<td>
+<span class="math display">\[a^{-m} = \frac{1}{a^m}\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="二项式定理">二项式定理</h3>
+<p>对于任意负整数<code>n</code>可以得到如下公式：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[(a + b)^n = a^n + n \cdot a^{n-1} \cdot b + \frac{n(n - 1)}{1 \times 2} \cdot a^{n-2} \cdot b^2 + \frac{n(n - 1)(n - 2)}{1 \times 2 \times 3} \cdot a^{n-3} \cdot b^3 + ... + n \cdot a \cdot b^{n-1} + b^n\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>例如：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[(a + b)^2 = a^2 + 2ab + b^2\]</span>
+</td>
+<td>
+<span class="math display">\[(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[(a - b)^2 = a^2 - 2ab + b^2\]</span>
+</td>
+<td>
+<span class="math display">\[(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="整数幂的差">整数幂的差</h3>
+<p>类似求整数幂差的因式分解，如果 <span class="math inline">\(n &gt; 1\)</span>：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[a^n - b^n = (a - b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + ... + ab^{n-2} + b^{n-1})\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>例如：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[a^2 - b^2 = (a - b)(a + b),\]</span>
+</td>
+<td>
+<span class="math display">\[a^3 - b^3 = (a - b)(a^2 + ab + b^2)\]</span>
+</td>
+<td>
+<span class="math display">\[a^4 - b^4 = (a - b)(a^3 + a^2b + ab^2 + b^3)\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="配平方">配平方</h3>
+<p>如果 <span class="math inline">\(n &gt; 1\)</span> 时：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[ax^2 + bx + c = au^2 + C，其中 u = x + (\frac{b}{2a})，而 C = c - \frac{b^2}{4 \cdot a}\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="二次公式">二次公式</h3>
+<p>如果 <span class="math inline">\(a \neq 0\)</span> 并且 <span class="math inline">\(ax^2 + bx + c = 0\)</span>，那么：</p>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="几何公式">几何公式</h2>
+<p><strong>A</strong> = 面积（<strong>A</strong>rea）、<strong>B</strong> = 底面积（Area of <strong>B</strong>ase）、<strong>C</strong> = 周长（<strong>C</strong>ircumference）、<strong>S</strong> = 表面或侧面的面积（<strong>S</strong>urface Area）、<strong>V</strong> = 体积（<strong>V</strong>olume）。</p>
+<table>
+<tbody>
+<tr>
+<td>
+<strong>三角形</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Triangle.png">
+</td>
+<td>
+<span class="math display">\[面积 A = \frac{1}{2} b h\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>相似三角形</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Similar-Triangles.png">
+</td>
+<td>
+<span class="math display">\[\frac{a&#39;}{a} = \frac{b&#39;}{b} = \frac{c&#39;}{c}\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>勾股定理</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Pythagorean-Theorem.png">
+</td>
+<td>
+<span class="math display">\[a^2 + b^2 = c^2\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>平行四边形</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Parallelogram.png">
+</td>
+<td>
+<span class="math display">\[面积 A = b \cdot h  \]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>梯形</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Trapezoid.png">
+</td>
+<td>
+<span class="math display">\[面积A = \frac{1}{2} (a + b) \cdot h\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>圆</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Circle.png">
+</td>
+<td>
+<span class="math display">\[面积 A = \pi r^2\]</span> <span class="math display">\[周长 C = 2 \pi r\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<strong>底部平行的圆/棱柱</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Any-Cylinder-or-Prism-with-Parallel-Bases.png">
+</td>
+<td>
+<span class="math display">\[体积 V = B \cdot h\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>直立圆柱</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Right-Circular-Cylinder.png">
+</td>
+<td>
+<span class="math display">\[体积 V = \pi r^2 \cdot h\]</span> <span class="math display">\[侧面面积 S = 2 \pi r \cdot h\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>锥 / 棱锥</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Any-Cone-or-Pyramid.png">
+</td>
+<td>
+<span class="math display">\[体积 V = \frac{1}{3}B \cdot h\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>直立圆锥</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Right-Circular-Cone.png">
+</td>
+<td>
+<span class="math display">\[体积 V = \frac{1}{3} \pi r^2 \cdot h\]</span> <span class="math display">\[侧面面积 S = \pi r \cdot s\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<strong>球体</strong>
+</td>
+<td>
+<img src="/Math/Elementary/Geometry/Sphere.png">
+</td>
+<td>
+<span class="math display">\[体积 V = \frac{4}{3} \pi r^3\]</span> <span class="math display">\[表面积 S = 4 \pi r^2\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="三角函数公式">三角函数公式</h2>
+<table>
+<tbody>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometry/Definitions.png">
+</td>
+<td>
+<span class="math display">\[\sin \theta = \frac{y}{r} = \frac{1}{\csc \theta} ⇐== 正弦(Sine)\]</span> <span class="math display">\[\cos \theta = \frac{x}{r} = \frac{1}{\sec \theta} ⇐== 余弦(Cosine)\]</span> <span class="math display">\[\tan \theta = \frac{y}{x} = \frac{1}{\cot \theta} ⇐== 正切(Tangent)\]</span> <span class="math display">\[\csc \theta = \frac{r}{y} = \frac{1}{\sin \theta} ⇐== 余割(Cosecant)\]</span> <span class="math display">\[\sec \theta = \frac{r}{x} = \frac{1}{\cos \theta} ⇐== 正割(Secant)\]</span> <span class="math display">\[\cot \theta = \frac{x}{y} = \frac{1}{\tan \theta} ⇐== 余切(Cotangent)\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+正弦（Sine [saɪn]）
+</td>
+<td>
+余弦（Cosine [ˈkəʊsaɪn]）
+</td>
+<td>
+正切（Tangent [ˈtændʒənt]）
+</td>
+</tr>
+<tr>
+<td>
+余割（Cosecant ['ko'sikənt]）
+</td>
+<td>
+正割（Secant ['sikænt]）
+</td>
+<td>
+余切（Cotangent ['ko'tændʒənt]）
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="三角恒等式">三角恒等式</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\sin(-\theta) = -\sin\theta\]</span>
+</td>
+<td>
+<span class="math display">\[\cos(-\theta) = \cos\theta\]</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\sin^2\theta + \cos^2\theta = 1\]</span>
+</td>
+<td>
+<span class="math display">\[\sec^2\theta = 1 + \tan^2\theta\]</span>
+</td>
+<td>
+<span class="math display">\[\csc^2\theta = 1 + \cot^2\theta\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\sin 2\theta = 2 \sin\theta \cos\theta\]</span>
+</td>
+<td>
+<span class="math display">\[\cos 2\theta = \cos^2\theta - \sin^2\theta\]</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\cos^2 \theta = \frac{1+\cos2\theta}{2}\]</span>
+</td>
+<td>
+<span class="math display">\[\sin^2 \theta = \frac{1-\cos2\theta}{2}\]</span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\sin (A + B) = \sin A \cos B + \cos A \sin B\]</span>
+</td>
+<td>
+<span class="math display">\[\sin (A - B) = \sin A \cos B - \cos A \sin B\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\cos(A + B) = \cos A \cos B - \sin A \sin B\]</span>
+</td>
+<td>
+<span class="math display">\[\cos(A - B) = \cos A \cos B + \sin A \sin B\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A \tan B}\]</span>
+</td>
+<td>
+<span class="math display">\[\tan(A - B) = \frac{\tan A - \tan B}{1 + \tan A \tan B}\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\sin(A - \frac{\pi}{2}) = -\cos A\]</span>
+</td>
+<td>
+<span class="math display">\[\cos(A - \frac{\pi}{2}) = \sin A\]</span>
+</td>
+<td>
+<span class="math display">\[\sin(A + \frac{\pi}{2}) = \cos A\]</span>
+</td>
+<td>
+<span class="math display">\[\cos(A + \frac{\pi}{2}) = -\sin A\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\sin A \sin B = \frac{1}{2} \cos(A - B) - \frac{1}{2} \cos(A + B)\]</span>
+</td>
+<td>
+<span class="math display">\[\cos A \cos B = \frac{1}{2} \cos(A - B) + \frac{1}{2} \cos(A + B)\]</span>
+</td>
+<td>
+<span class="math display">\[\sin A \cos B = \frac{1}{2} \sin(A - B) + \frac{1}{2} \sin(A + B)\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<span class="math display">\[\sin A + \sin B = 2 \sin \frac{1}{2} (A + B) \cos \frac{1}{2} (A - B)\]</span>
+</td>
+<td>
+<span class="math display">\[\sin A - \sin B = 2 \cos \frac{1}{2} (A + B) \sin \frac{1}{2} (A - B)\]</span>
+</td>
+</tr>
+<tr>
+<td>
+<span class="math display">\[\cos A + \cos B = 2 \cos \frac{1}{2} (A + B) \cos \frac{1}{2} (A - B)\]</span>
+</td>
+<td>
+<span class="math display">\[\cos A - \cos B =-2 \sin \frac{1}{2} (A + B) \sin \frac{1}{2} (A - B)\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="三角函数图像">三角函数图像</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/Radian-Measure.png">
+</td>
+<td style="text-align: center;">
+<span class="math display">\[\frac{s}{r} = \frac{\theta}{1} = \theta\]</span> 或者 <span class="math display">\[\theta = \frac{s}{r}，\]</span> <span class="math display">\[180° = 1 \pi \ 弧度\]</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>可以用<strong>角度</strong>和<strong>弧度</strong>分别表示 2 个同样三角形内的角：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">
+角度
+</th>
+<th style="text-align: center;">
+弧度
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/Degrees-1.png">
+</td>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/Radians-1.png">
+</td>
+</tr>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/Degrees-2.png">
+</td>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/Radians-2.png">
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/1-sin.png">
+</td>
+<td>
+<strong>定义域</strong>：<span class="math inline">\((-\infty, \infty)\)</span>，<strong>值域</strong>：<span class="math inline">\([−1, 1]\)</span>；
+</td>
+</tr>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/2-cos.png">
+</td>
+<td>
+<strong>定义域</strong>：<span class="math inline">\((-\infty, \infty)\)</span>，<strong>值域</strong>：<span class="math inline">\([−1, 1]\)</span>；
+</td>
+</tr>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/3-tan.png">
+</td>
+<td>
+<strong>定义域</strong>：除 <span class="math inline">\(\frac{\pi}{2}\)</span> 的奇整数倍数之外的全体实数，<strong>值域</strong>：<span class="math inline">\((-\infty, \infty)\)</span>；
+</td>
+</tr>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/4-sec.png">
+</td>
+<td>
+<strong>定义域</strong>：<span class="math inline">\(x \neq \pm\frac{\pi}{2}, \pm\frac{3\pi}{2}, ...\)</span>，<strong>值域</strong>：<span class="math inline">\((-\infty, -1] \cap [1, \infty)\)</span>；
+</td>
+</tr>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/5-csc.png">
+</td>
+<td>
+<strong>定义域</strong>：<span class="math inline">\(x \neq 0, \pm\pi, \pm2\pi, ...\)</span>，<strong>值域</strong>：<span class="math inline">\((-\infty, -1] \cap [1, \infty)\)</span>；
+</td>
+</tr>
+<tr>
+<td>
+<img src="/Math/Elementary/Trigonometric-Functions/6-cot.png">
+</td>
+<td>
+<strong>定义域</strong>：<span class="math inline">\(x \neq 0, \pm\pi, \pm2\pi, ...\)</span>，<strong>值域</strong>：<span class="math inline">\((-\infty, \infty)\)</span>；
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Hank
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://uinika.github.io/Math/Elementary.html" title="常用初等数学图形与公式汇总">https://uinika.github.io/Math/Elementary.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Elementary/" rel="tag"><i class="fa fa-tag"></i> Elementary</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Other/chengdu-real-estate-1.html" rel="prev" title="2016 年，成都房价上涨对城南 IT 产业的影响与思考">
+      <i class="fa fa-chevron-left"></i> 2016 年，成都房价上涨对城南 IT 产业的影响与思考
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Other/chengdu-real-estate-3.html" rel="next" title="2018岁未，写在成都本轮地产周期尘埃落定之后">
+      2018岁未，写在成都本轮地产周期尘埃落定之后 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数的分类"><span class="nav-number">1.</span> <span class="nav-text">数的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本代数公式"><span class="nav-number">2.</span> <span class="nav-text">基本代数公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算术运算"><span class="nav-number">2.1.</span> <span class="nav-text">算术运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#符号定律"><span class="nav-number">2.2.</span> <span class="nav-text">符号定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#零"><span class="nav-number">2.3.</span> <span class="nav-text">零</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指数定律"><span class="nav-number">2.4.</span> <span class="nav-text">指数定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二项式定理"><span class="nav-number">2.5.</span> <span class="nav-text">二项式定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#整数幂的差"><span class="nav-number">2.6.</span> <span class="nav-text">整数幂的差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配平方"><span class="nav-number">2.7.</span> <span class="nav-text">配平方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二次公式"><span class="nav-number">2.8.</span> <span class="nav-text">二次公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几何公式"><span class="nav-number">3.</span> <span class="nav-text">几何公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三角函数公式"><span class="nav-number">4.</span> <span class="nav-text">三角函数公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三角恒等式"><span class="nav-number">4.1.</span> <span class="nav-text">三角恒等式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三角函数图像"><span class="nav-number">4.2.</span> <span class="nav-text">三角函数图像</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Hank"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Hank</p>
+  <div class="site-description" itemprop="description">My world of IT, learn it & play it.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/uinika" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;uinika" rel="noopener" target="_blank"><i class="fa fa-fw fa-github-alt"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/uinika/posts" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;uinika&#x2F;posts" rel="noopener" target="_blank"><i class="fa fa-fw fa-quora"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:uinika@outlook.com" title="Email → mailto:uinika@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:uinika@outlook.com?call|chat" title="Skype → skype:uinika@outlook.com?call|chat" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i>Skype</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/7998979/uinika?tab=profile" title="Stack Overflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;7998979&#x2F;uinika?tab&#x3D;profile" rel="noopener" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i>Stack Overflow</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2010 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"><a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">1.5m</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">22:21</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
