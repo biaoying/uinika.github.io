@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-05-21T13:39:03.892Z</updated>
+  <updated>2020-05-21T15:28:49.754Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://uinika.github.io/Web/Webpack.html"/>
     <id>https://uinika.github.io/Web/Webpack.html</id>
     <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
+    <updated>2020-05-21T15:28:49.754Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt;是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt; 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Web/Webpack/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Webpack 提出了&lt;strong&gt;入口&lt;/strong&gt;&lt;code&gt;entry&lt;/code&gt;、&lt;strong&gt;输出&lt;/strong&gt;&lt;code&gt;output&lt;/code&gt;、&lt;strong&gt;加载器&lt;/strong&gt;&lt;code&gt;loader&lt;/code&gt;、&lt;strong&gt;插件&lt;/strong&gt;&lt;code&gt;plugin&lt;/code&gt;这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的&lt;code&gt;import&lt;/code&gt;模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在&lt;a href=&quot;https://github.com/uinika/aves&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aves&lt;/a&gt;和&lt;a href=&quot;https://github.com/uinika/rhino&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rhino&lt;/a&gt;两个开源脚手架项目当中（&lt;em&gt;分别基于 Vue2 和 React16&lt;/em&gt;）所使用到的最佳配置实践。&lt;/p&gt;
     
@@ -36,6 +36,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 工作环境 Config 札记</title>
+    <link href="https://uinika.github.io/Zen/Config-Windows.html"/>
+    <id>https://uinika.github.io/Zen/Config-Windows.html</id>
+    <published>2020-05-21T13:39:03.892Z</published>
+    <updated>2020-05-23T09:26:44.510Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开发人员长期以来对于 Microsoft Windows 操作系统总抱以嗤之以鼻的态度，笔者亲身经历了&lt;code&gt;Windows XP&lt;/code&gt;、&lt;code&gt;Windows 7&lt;/code&gt;到&lt;code&gt;Windows 10&lt;/code&gt;的版本演变过程，抛开众所周知的偏见，事实上是能够感觉到系统稳定性、用户体验方面的大幅改善的，叠加近年来 &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Cmder&lt;/strong&gt;&lt;/a&gt;、&lt;a href=&quot;https://neovim.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; 等辅助开发工具的出现与逐渐成熟，作为软件开发环境，其使用体验已经完全可以与 Linux 媲美，并在图形界面的稳定性以及交互的友好性方面胜于后者。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/Config-Windows/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;但是对于广大硬件电子工程师而言，&lt;strong&gt;Altium Designer&lt;/strong&gt;、&lt;strong&gt;Pads&lt;/strong&gt;、&lt;strong&gt;Allegro&lt;/strong&gt; 等商业 EDA 工具仅提供支持 Windows 操作系统的版本，而高频高速 PCB 电路设计基本离不开 Windows 操作系统环境，因而 Windows 和 Linux 在笔者日常工作里都各自拥有着其不可替代性。本文主要用于记录一些笔者使用 Windows 10 操作系统的配置和习惯，便于切换到新的工作环境时快速的展开，因而文章也会持续的保持更新。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
+    
+    
+      <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
     
   </entry>
   
@@ -63,38 +86,15 @@
   </entry>
   
   <entry>
-    <title>Windows 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Windows.html"/>
-    <id>https://uinika.github.io/Zen/Config-Windows.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;开发人员长期以来对于 Microsoft Windows 操作系统总抱以嗤之以鼻的态度，笔者亲身经历了&lt;code&gt;Windows XP&lt;/code&gt;、&lt;code&gt;Windows 7&lt;/code&gt;到&lt;code&gt;Windows 10&lt;/code&gt;的版本演变过程，抛开众所周知的偏见，事实上是能够感觉到系统稳定性、用户体验方面的大幅改善的，叠加近年来 &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Cmder&lt;/strong&gt;&lt;/a&gt;、&lt;a href=&quot;https://neovim.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; 等辅助开发工具的出现与逐渐成熟，作为软件开发环境，其使用体验已经完全可以与 Linux 媲美，并在图形界面的稳定性以及交互的友好性方面胜于后者。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Windows/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;但是对于广大硬件电子工程师而言，&lt;strong&gt;Altium Designer&lt;/strong&gt;、&lt;strong&gt;Pads&lt;/strong&gt;、&lt;strong&gt;Allegro&lt;/strong&gt; 等商业 EDA 工具仅提供支持 Windows 操作系统的版本，而高频高速 PCB 电路设计基本离不开 Windows 操作系统环境，因而 Windows 和 Linux 在笔者日常工作里都各自拥有着其不可替代性。本文主要用于记录一些笔者使用 Windows 10 操作系统的配置和习惯，便于切换到新的工作环境时快速的展开，因而文章也会持续的保持更新。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SCSS 3.5.5 简明上手指南</title>
     <link href="https://uinika.github.io/Web/Scss.html"/>
     <id>https://uinika.github.io/Web/Scss.html</id>
     <published>2020-05-21T13:39:03.876Z</published>
-    <updated>2020-05-21T13:39:03.876Z</updated>
+    <updated>2020-05-21T15:33:26.888Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt;是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt; 是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Web/Scss/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;基于 Gulp 完成前端自动化的年代，出于快速上手以及 npm 安装方便的考虑，开发团队一直沿用&lt;a href=&quot;http://lesscss.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Less&lt;/a&gt;和&lt;a href=&quot;https://github.com/stevelacy/gulp-less&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp-less&lt;/a&gt;作为 CSS 预处理工具，但是 Sass 提供了更加丰富的动态语法特征，因此逐步淘汰基于 Gulp 的&lt;a href=&quot;https://github.com/uinika/beaver&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;beaver&lt;/a&gt;前端项目脚手架以后，新项目全部基于 Webpack 的&lt;a href=&quot;https://github.com/sass/node-sass&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node-sass&lt;/a&gt;和&lt;a href=&quot;https://github.com/webpack-contrib/sass-loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-loader&lt;/a&gt;作为预处理工具。Sass 和 Less 的详细比较可以参考&lt;a href=&quot;https://css-tricks.com/sass-vs-less/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-vs-less&lt;/a&gt;和&lt;a href=&quot;http://cued.xunlei.com/log044&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass 与 Less 比拼&lt;/a&gt;两篇文章，里面对两者的优劣做了非常详实的比较。&lt;/p&gt;
     
@@ -224,29 +224,6 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
     <title>jQuery 那些容易被忽略的问题</title>
     <link href="https://uinika.github.io/Web/JQuery.html"/>
     <id>https://uinika.github.io/Web/JQuery.html</id>
@@ -266,6 +243,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
@@ -362,6 +362,29 @@
   </entry>
   
   <entry>
+    <title>Web 前端开发遵循的一些规范与约定</title>
+    <link href="https://uinika.github.io/Web/Convention.html"/>
+    <id>https://uinika.github.io/Web/Convention.html</id>
+    <published>2020-05-21T13:39:03.814Z</published>
+    <updated>2020-05-21T13:39:03.814Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开发团队当前正在全面切换到&lt;code&gt;ES6 + Vue/React + Webpack&lt;/code&gt;这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 &lt;strong&gt;code style&lt;/strong&gt; 并且&lt;a href=&quot;https://uinika.github.io/&quot;&gt;开源&lt;/a&gt;出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 &lt;a href=&quot;https://eslint.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESLint&lt;/a&gt; 校验代码风格。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Convention/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文撰写过程中参考了爱彼迎的 &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Airbnb JavaScript Style Guide》&lt;/a&gt;，以及网易 NEC 团队的&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS 基础库命名约定》&lt;/a&gt;等开源规范，结合笔者之前撰写的 &lt;a href=&quot;/Web/Html.html&quot;&gt;《HTML5 语义化标签概览》&lt;/a&gt;一文，总体上分为&lt;code&gt;总体原则&lt;/code&gt;、&lt;code&gt;JavaScript/ES6&lt;/code&gt;、&lt;code&gt;CSS/SCSS&lt;/code&gt;、&lt;code&gt;HTML&lt;/code&gt;四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用 Django2 快速开发 Web 服务</title>
     <link href="https://uinika.github.io/Web/Django.html"/>
     <id>https://uinika.github.io/Web/Django.html</id>
@@ -385,17 +408,17 @@
   </entry>
   
   <entry>
-    <title>Web 前端开发遵循的一些规范与约定</title>
-    <link href="https://uinika.github.io/Web/Convention.html"/>
-    <id>https://uinika.github.io/Web/Convention.html</id>
-    <published>2020-05-21T13:39:03.814Z</published>
-    <updated>2020-05-21T13:39:03.814Z</updated>
+    <title>CSS 2.1 典型概念与布局详解</title>
+    <link href="https://uinika.github.io/Web/CSS2.html"/>
+    <id>https://uinika.github.io/Web/CSS2.html</id>
+    <published>2020-05-21T13:39:03.798Z</published>
+    <updated>2020-05-21T13:39:03.798Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;开发团队当前正在全面切换到&lt;code&gt;ES6 + Vue/React + Webpack&lt;/code&gt;这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 &lt;strong&gt;code style&lt;/strong&gt; 并且&lt;a href=&quot;https://uinika.github.io/&quot;&gt;开源&lt;/a&gt;出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 &lt;a href=&quot;https://eslint.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESLint&lt;/a&gt; 校验代码风格。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Convention/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文撰写过程中参考了爱彼迎的 &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Airbnb JavaScript Style Guide》&lt;/a&gt;，以及网易 NEC 团队的&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS 基础库命名约定》&lt;/a&gt;等开源规范，结合笔者之前撰写的 &lt;a href=&quot;/Web/Html.html&quot;&gt;《HTML5 语义化标签概览》&lt;/a&gt;一文，总体上分为&lt;code&gt;总体原则&lt;/code&gt;、&lt;code&gt;JavaScript/ES6&lt;/code&gt;、&lt;code&gt;CSS/SCSS&lt;/code&gt;、&lt;code&gt;HTML&lt;/code&gt;四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。&lt;/p&gt;
+      &lt;p&gt;本文详细参考&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;网易 NEC 前端开源项目&lt;/a&gt;、&lt;a href=&quot;https://www.apress.com/cn/book/9781430223979&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS Mastery》&lt;/a&gt;、&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla 开发者社区&lt;/a&gt;，将 &lt;strong&gt;CSS 2.1&lt;/strong&gt; 当中常用的概念与典型布局进行了比较全面的梳理与概括，并对&lt;code&gt;定位&lt;/code&gt;、&lt;code&gt;居中&lt;/code&gt;、&lt;code&gt;外边距塌陷&lt;/code&gt;、&lt;code&gt;包含块&lt;/code&gt;、&lt;code&gt;多列布局&lt;/code&gt;等较易混淆的内容，进行了详实的文字说明与代码示例。在涵盖日常开发当中经典布局的同时，也加入了 HTML/CSS 渲染的重绘与回流等更为深入的主题，是笔者 Web 前端开发工作经验的回顾与总结。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/CSS2/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CSS&lt;/strong&gt; 层叠样式表（&lt;em&gt;Cascading Stylesheet&lt;/em&gt;）用于指定浏览器所渲染的样式（&lt;em&gt;如颜色、定位、装饰&lt;/em&gt;），距离 2011 年 &lt;strong&gt;CSS 2.1&lt;/strong&gt; 版本发布至今，已经整整过去&lt;strong&gt;6&lt;/strong&gt;个年头，浏览器和前端技术经历了日新月异的变化。虽然目前 &lt;strong&gt;CSS 3.0&lt;/strong&gt; 规范在选择器、弹性盒模型、动画与过渡方面进行了诸多增强，但是 &lt;a href=&quot;https://www.w3.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;W3C 规范&lt;/a&gt;始终保持着一致的继承性，所以 &lt;strong&gt;CSS 2.1&lt;/strong&gt; 及之前版本规范中提出的大量特性与概念依旧得以沿用。&lt;/p&gt;
     
     </summary>
     
@@ -403,7 +426,7 @@
       <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
     
     
-      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
+      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
     
   </entry>
   
@@ -450,29 +473,6 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 2.1 典型概念与布局详解</title>
-    <link href="https://uinika.github.io/Web/CSS2.html"/>
-    <id>https://uinika.github.io/Web/CSS2.html</id>
-    <published>2020-05-21T13:39:03.798Z</published>
-    <updated>2020-05-21T13:39:03.798Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文详细参考&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;网易 NEC 前端开源项目&lt;/a&gt;、&lt;a href=&quot;https://www.apress.com/cn/book/9781430223979&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS Mastery》&lt;/a&gt;、&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla 开发者社区&lt;/a&gt;，将 &lt;strong&gt;CSS 2.1&lt;/strong&gt; 当中常用的概念与典型布局进行了比较全面的梳理与概括，并对&lt;code&gt;定位&lt;/code&gt;、&lt;code&gt;居中&lt;/code&gt;、&lt;code&gt;外边距塌陷&lt;/code&gt;、&lt;code&gt;包含块&lt;/code&gt;、&lt;code&gt;多列布局&lt;/code&gt;等较易混淆的内容，进行了详实的文字说明与代码示例。在涵盖日常开发当中经典布局的同时，也加入了 HTML/CSS 渲染的重绘与回流等更为深入的主题，是笔者 Web 前端开发工作经验的回顾与总结。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/CSS2/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CSS&lt;/strong&gt; 层叠样式表（&lt;em&gt;Cascading Stylesheet&lt;/em&gt;）用于指定浏览器所渲染的样式（&lt;em&gt;如颜色、定位、装饰&lt;/em&gt;），距离 2011 年 &lt;strong&gt;CSS 2.1&lt;/strong&gt; 版本发布至今，已经整整过去&lt;strong&gt;6&lt;/strong&gt;个年头，浏览器和前端技术经历了日新月异的变化。虽然目前 &lt;strong&gt;CSS 3.0&lt;/strong&gt; 规范在选择器、弹性盒模型、动画与过渡方面进行了诸多增强，但是 &lt;a href=&quot;https://www.w3.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;W3C 规范&lt;/a&gt;始终保持着一致的继承性，所以 &lt;strong&gt;CSS 2.1&lt;/strong&gt; 及之前版本规范中提出的大量特性与概念依旧得以沿用。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
     
   </entry>
   
