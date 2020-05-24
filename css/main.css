@@ -1299,7 +1299,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #70e25e;
+  background: #ff1ab1;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2811,6 +2811,13 @@ mjx-container + br {
 }
 main.main {
   background: url("/images/background.png");
+}
+/* 修改注释左边框颜色 */
+blockquote {
+  border-left: 4px solid #a38272;
+}
+.post-copyright {
+  border-left: 3px solid #8c634f;
 }
 .badge {
   background: rgba(163,130,114,0.6) !important;

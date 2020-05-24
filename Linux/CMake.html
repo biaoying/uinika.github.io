@@ -31,7 +31,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://uinika.github.io/Linux/CMake/logo.png">
 <meta property="article:published_time" content="2020-05-21T13:39:03.642Z">
-<meta property="article:modified_time" content="2020-05-21T13:39:03.642Z">
+<meta property="article:modified_time" content="2020-05-24T15:03:58.983Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Qt">
 <meta name="twitter:card" content="summary">
@@ -230,6 +230,13 @@
 
               <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-24 23:03:58" itemprop="dateModified" datetime="2020-05-24T23:03:58+08:00">2020-05-24</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -253,14 +260,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>427</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -276,9 +283,35 @@
 <p><img src="/Linux/CMake/logo.png"></p>
 <p><a href="https://cmake.org/cmake/help/v3.17/" target="_blank" rel="noopener">CMake 3.17</a>是一款源代码构建管理工具，最初作为各种 <strong>Makefile</strong> 方言的生成器，后来逐步发展为现代化的构建系统，广泛用于 C 和 C++ 工程源代码的构建。官方提供的<a href="https://cmake.org/cmake/help/latest/guide/tutorial/index.html" target="_blank" rel="noopener">《CMake Tutorial》</a> 为开发人员提供了一个循序渐进的指南，涵盖了 CMake 构建过程中常见问题的解决方案。如果需要构建从第三方发布的源代码包，则可以参考<a href="https://cmake.org/cmake/help/v3.17/guide/user-interaction/index.html" target="_blank" rel="noopener">《User Interaction Guide》</a>。而<a href="https://cmake.org/cmake/help/v3.17/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide" target="_blank" rel="noopener">《Using Dependencies Guide》</a>则主要针对需要使用第三方库的开发人员。</p>
 <a id="more"></a>
+<h2 id="cmake">cmake</h2>
+<p>CMake 教程提供了一个循序渐进的指南，涵盖了常见的构建系统问题。本文涉及的示例代码可以在 <a href="https://cmake.org/download/" target="_blank" rel="noopener">CMake 源码树</a>的<code>Help/guide/tutorial</code>目录下找到，每个步骤都拥有其相应的子目录，循序渐进直至提供完整的解决方案。</p>
+<h3 id="基本出发点">基本出发点</h3>
+<p>最为基础的项目是从源代码构建可执行文件，这样只需要一个 3 行的<code>CMakeLists.txt</code>文件，这将是整个教程的起点。在【Step1】目录当中创建如下<code>CMakeLists.txt</code>文件：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.10</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># set the project name</span></span><br><span class="line"><span class="keyword">project</span>(Tutorial)</span><br><span class="line"></span><br><span class="line"><span class="comment"># add the executable</span></span><br><span class="line"><span class="keyword">add_executable</span>(Tutorial tutorial.cxx)</span><br></pre></td></tr></table></figure>
+<p>CMake 支持<strong>大写</strong>、<strong>小写</strong>、<strong>混合大小写</strong>的命令，上面的<code>CMakeLists.txt</code>文件使用了小写命令。教程源代码<code>Step1</code>目录中提供了用于执行数字平方根计算的<code>cxx</code>文件。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 用于执行数字平方根计算的简单程序 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argv[])</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (argc &lt; <span class="number">2</span>) &#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Usage: "</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">" number"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> <span class="keyword">double</span> inputValue = atof(argv[<span class="number">1</span>]);       <span class="comment">// 将输入数据转换为 double 类型</span></span><br><span class="line">  <span class="keyword">const</span> <span class="keyword">double</span> outputValue = <span class="built_in">sqrt</span>(inputValue);   <span class="comment">// 计算平方根</span></span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"The square root of "</span> &lt;&lt; inputValue &lt;&lt; <span class="string">" is "</span> &lt;&lt; outputValue</span><br><span class="line">            &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="添加版本号和配置头文件">添加版本号和配置头文件</h4>
+<p>我们要添加的第一个特性是为项目提供 1 个版本号。虽然源代码中也可以完成这件事，但是使用<code>CMakeLists.txt</code>可以提供更好的灵活性。首先，修改<code>CMakeLists.txt</code>文件，使用<code>project()</code>命令设置项目名称和版本号。</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">3.10</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设备项目名和版本号</span></span><br><span class="line"><span class="keyword">project</span>(Tutorial VERSION <span class="number">1.0</span>)</span><br></pre></td></tr></table></figure>
+<p>然后，继续编写配置，把一个头文件上保存的版本号传递到源代码：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">configure_file</span>(TutorialConfig.h.in TutorialConfig.h)</span><br></pre></td></tr></table></figure>
+<p>由于配置文件将会被写入到二叉树，所以必须将该目录添加至搜索包含文件的路径列表当中，在<code>CMakeLists.txt</code>文件的末尾添加以下行：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">target_include_directories</span>(Tutorial PUBLIC</span><br><span class="line">                           <span class="string">"$&#123;PROJECT_BINARY_DIR&#125;"</span></span><br><span class="line">                          )</span><br></pre></td></tr></table></figure>
+<p>在当前目录下创建<code>TutorialConfig.h</code>文件，并且包含如下内容：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/* 配置主、副版本号 */</span><br><span class="line"><span class="comment">#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@</span></span><br><span class="line"><span class="comment">#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@</span></span><br></pre></td></tr></table></figure>
+<p>当 CMake 配置该头文件以后，上述的<code>@Tutorial_VERSION_MAJOR@</code>和<code>@Tutorial_VERSION_MINOR@</code>的值将会被替换。</p>
+<p>接下来修改<code>tutorial.cxx</code>来包含上面的<code>TutorialConfig.h</code>头文件，并最终通过修改后的<code>tutorial.cxx</code>打印版本号。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"TutorialConfig.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (argc &lt; <span class="number">2</span>) &#123;</span><br><span class="line">   <span class="comment">/* 打印版本号 */</span></span><br><span class="line">   <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">" Version "</span> &lt;&lt; Tutorial_VERSION_MAJOR &lt;&lt; <span class="string">"."</span></span><br><span class="line">             &lt;&lt; Tutorial_VERSION_MINOR &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">   <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Usage: "</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">" number"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="指定-c-标准">指定 C++ 标准</h4>
+<p>接下来，将<code>tutorial.cxx</code>文件中的<code>atof</code>替换为<code>std::stod</code>，从而为项目添加一些 C++11 特性。同时，删除<code>#include &lt;cstdlib&gt;</code>。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> inputValue = <span class="built_in">std</span>::stod(argv[<span class="number">1</span>]);</span><br></pre></td></tr></table></figure>
+<p>CMake 中启用特定 C++ 标准支持的最简单方法是使用<code>CMAKE_CXX_STANDARD</code>变量，这里将<code>CMakeLists.txt</code>文件里的<code>CMAKE_CXX_STANDARD</code>变量设置为<code>11</code>，并将<code>CMAKE_CXX_STANDARD_REQUIRED</code>设置为<code>True</code>：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION <span class="number">3.10</span>)</span><br><span class="line"></span><br><span class="line"># 设置项目名称与版本</span><br><span class="line">project(Tutorial VERSION <span class="number">1.0</span>)</span><br><span class="line"></span><br><span class="line"># 指定 C++ 标准</span><br><span class="line"><span class="built_in">set</span>(CMAKE_CXX_STANDARD <span class="number">11</span>)</span><br><span class="line"><span class="built_in">set</span>(CMAKE_CXX_STANDARD_REQUIRED True)</span><br></pre></td></tr></table></figure>
+<h4 id="编译与测试">编译与测试</h4>
+<p>从命令行导航到 CMake 源代码树的 Help/guide/tutorial 目录，并运行以下命令:</p>
 <h2 id="makefile">makefile</h2>
 <h2 id="automake">automake</h2>
-<h2 id="cmake">cmake</h2>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -315,8 +348,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Linux/Command.html" rel="prev" title="Linux 命令行必知必会">
-      <i class="fa fa-chevron-left"></i> Linux 命令行必知必会
+    <a href="/Linux/GCC.html" rel="prev" title="基于 Linux 的 GCC 与 GDB 应用调试">
+      <i class="fa fa-chevron-left"></i> 基于 Linux 的 GCC 与 GDB 应用调试
     </a></div>
       <div class="post-nav-item">
     <a href="/Linux/Qt-Widgets.html" rel="next" title="Qt 5 桌面应用程序开发指南 - QtWidgets 篇">
@@ -380,7 +413,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#makefile"><span class="nav-number">1.</span> <span class="nav-text">makefile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#automake"><span class="nav-number">2.</span> <span class="nav-text">automake</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cmake"><span class="nav-number">3.</span> <span class="nav-text">cmake</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cmake"><span class="nav-number">1.</span> <span class="nav-text">cmake</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本出发点"><span class="nav-number">1.1.</span> <span class="nav-text">基本出发点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加版本号和配置头文件"><span class="nav-number">1.1.1.</span> <span class="nav-text">添加版本号和配置头文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定-c-标准"><span class="nav-number">1.1.2.</span> <span class="nav-text">指定 C++ 标准</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编译与测试"><span class="nav-number">1.1.3.</span> <span class="nav-text">编译与测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#makefile"><span class="nav-number">2.</span> <span class="nav-text">makefile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#automake"><span class="nav-number">3.</span> <span class="nav-text">automake</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -476,7 +509,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:22</span>
+    <span title="站点阅读时长">22:25</span>
 </div>
 
         
