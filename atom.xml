@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-05-21T15:28:49.754Z</updated>
+  <updated>2020-05-21T13:39:03.892Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux 工作环境 Config 札记</title>
+    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
+    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
+    <published>2020-05-21T13:39:03.892Z</published>
+    <updated>2020-05-21T13:39:03.892Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
+    
+    
+      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
+    
+  </entry>
   
   <entry>
     <title>Webpack 4 核心剖析</title>
@@ -59,29 +82,6 @@
     
     
       <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
-    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
     
   </entry>
   
@@ -339,6 +339,29 @@
   </entry>
   
   <entry>
+    <title>Web 前端开发遵循的一些规范与约定</title>
+    <link href="https://uinika.github.io/Web/Convention.html"/>
+    <id>https://uinika.github.io/Web/Convention.html</id>
+    <published>2020-05-21T13:39:03.814Z</published>
+    <updated>2020-05-21T13:39:03.814Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开发团队当前正在全面切换到&lt;code&gt;ES6 + Vue/React + Webpack&lt;/code&gt;这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 &lt;strong&gt;code style&lt;/strong&gt; 并且&lt;a href=&quot;https://uinika.github.io/&quot;&gt;开源&lt;/a&gt;出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 &lt;a href=&quot;https://eslint.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESLint&lt;/a&gt; 校验代码风格。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Convention/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文撰写过程中参考了爱彼迎的 &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Airbnb JavaScript Style Guide》&lt;/a&gt;，以及网易 NEC 团队的&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS 基础库命名约定》&lt;/a&gt;等开源规范，结合笔者之前撰写的 &lt;a href=&quot;/Web/Html.html&quot;&gt;《HTML5 语义化标签概览》&lt;/a&gt;一文，总体上分为&lt;code&gt;总体原则&lt;/code&gt;、&lt;code&gt;JavaScript/ES6&lt;/code&gt;、&lt;code&gt;CSS/SCSS&lt;/code&gt;、&lt;code&gt;HTML&lt;/code&gt;四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CSS 3.0 新增特性集锦</title>
     <link href="https://uinika.github.io/Web/CSS3.html"/>
     <id>https://uinika.github.io/Web/CSS3.html</id>
@@ -385,17 +408,17 @@
   </entry>
   
   <entry>
-    <title>Web 前端开发遵循的一些规范与约定</title>
-    <link href="https://uinika.github.io/Web/Convention.html"/>
-    <id>https://uinika.github.io/Web/Convention.html</id>
-    <published>2020-05-21T13:39:03.814Z</published>
-    <updated>2020-05-21T13:39:03.814Z</updated>
+    <title>异步事件管理：从 Promise 与 async/await 到 RxJS</title>
+    <link href="https://uinika.github.io/Web/Async.html"/>
+    <id>https://uinika.github.io/Web/Async.html</id>
+    <published>2020-05-21T13:39:03.798Z</published>
+    <updated>2020-05-21T13:39:03.798Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;开发团队当前正在全面切换到&lt;code&gt;ES6 + Vue/React + Webpack&lt;/code&gt;这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 &lt;strong&gt;code style&lt;/strong&gt; 并且&lt;a href=&quot;https://uinika.github.io/&quot;&gt;开源&lt;/a&gt;出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 &lt;a href=&quot;https://eslint.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESLint&lt;/a&gt; 校验代码风格。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Convention/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文撰写过程中参考了爱彼迎的 &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Airbnb JavaScript Style Guide》&lt;/a&gt;，以及网易 NEC 团队的&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS 基础库命名约定》&lt;/a&gt;等开源规范，结合笔者之前撰写的 &lt;a href=&quot;/Web/Html.html&quot;&gt;《HTML5 语义化标签概览》&lt;/a&gt;一文，总体上分为&lt;code&gt;总体原则&lt;/code&gt;、&lt;code&gt;JavaScript/ES6&lt;/code&gt;、&lt;code&gt;CSS/SCSS&lt;/code&gt;、&lt;code&gt;HTML&lt;/code&gt;四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。&lt;/p&gt;
+      &lt;p&gt;早期的浏览器端异步编程主要依靠&lt;code&gt;回调函数&lt;/code&gt;、&lt;code&gt;事件监听&lt;/code&gt;、&lt;code&gt;发布/订阅&lt;/code&gt;、&lt;code&gt;Promise的各类polyfill&lt;/code&gt;这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了&lt;code&gt;Generator&lt;/code&gt;函数及其衍生的&lt;code&gt;async/await&lt;/code&gt;语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的&lt;a href=&quot;http://reactivex.io/rxjs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rxjs&lt;/a&gt;则进一步改善了 JavaScript 异步编程的体验。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Async/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Mozilla Promise Reference》&lt;/a&gt;，关于 Promise 状态的截图部分引用自&lt;a href=&quot;http://liubin.org/promises-book/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《JavaScript Promise 迷你书》&lt;/a&gt;。&lt;/p&gt;
     
     </summary>
     
@@ -403,7 +426,7 @@
       <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
     
     
-      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -450,29 +473,6 @@
     
     
       <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>异步事件管理：从 Promise 与 async/await 到 RxJS</title>
-    <link href="https://uinika.github.io/Web/Async.html"/>
-    <id>https://uinika.github.io/Web/Async.html</id>
-    <published>2020-05-21T13:39:03.798Z</published>
-    <updated>2020-05-21T13:39:03.798Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;早期的浏览器端异步编程主要依靠&lt;code&gt;回调函数&lt;/code&gt;、&lt;code&gt;事件监听&lt;/code&gt;、&lt;code&gt;发布/订阅&lt;/code&gt;、&lt;code&gt;Promise的各类polyfill&lt;/code&gt;这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了&lt;code&gt;Generator&lt;/code&gt;函数及其衍生的&lt;code&gt;async/await&lt;/code&gt;语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的&lt;a href=&quot;http://reactivex.io/rxjs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rxjs&lt;/a&gt;则进一步改善了 JavaScript 异步编程的体验。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Async/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Mozilla Promise Reference》&lt;/a&gt;，关于 Promise 状态的截图部分引用自&lt;a href=&quot;http://liubin.org/promises-book/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《JavaScript Promise 迷你书》&lt;/a&gt;。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
