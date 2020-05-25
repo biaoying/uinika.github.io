@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-05-21T13:39:03.892Z</updated>
+  <updated>2020-05-25T12:23:38.355Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,17 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
-    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
+    <title>Windows 工作环境 Config 札记</title>
+    <link href="https://uinika.github.io/Zen/Config-Windows.html"/>
+    <id>https://uinika.github.io/Zen/Config-Windows.html</id>
+    <published>2020-05-25T12:23:38.339Z</published>
+    <updated>2020-05-25T12:23:38.355Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
+      &lt;p&gt;开发人员长期以来对于 Microsoft Windows 操作系统总抱以嗤之以鼻的态度，笔者亲身经历了&lt;code&gt;Windows XP&lt;/code&gt;、&lt;code&gt;Windows 7&lt;/code&gt;到&lt;code&gt;Windows 10&lt;/code&gt;的版本演变过程，抛开众所周知的偏见，事实上是能够感觉到系统稳定性、用户体验方面的大幅改善的，叠加近年来 &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Cmder&lt;/strong&gt;&lt;/a&gt;、&lt;a href=&quot;https://neovim.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; 等辅助开发工具的出现与逐渐成熟，作为软件开发环境，其使用体验已经完全可以与 Linux 媲美，并在图形界面的稳定性以及交互的友好性方面胜于后者。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/Config-Windows/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;但是对于广大硬件电子工程师而言，&lt;strong&gt;Altium Designer&lt;/strong&gt;、&lt;strong&gt;Pads&lt;/strong&gt;、&lt;strong&gt;Allegro&lt;/strong&gt; 等商业 EDA 工具仅提供支持 Windows 操作系统的版本，而高频高速 PCB 电路设计基本离不开 Windows 操作系统环境，因而 Windows 和 Linux 在笔者日常工作里都各自拥有着其不可替代性。本文主要用于记录一些笔者使用 Windows 10 操作系统的配置和习惯，便于切换到新的工作环境时快速的展开，因而文章也会持续的保持更新。&lt;/p&gt;
     
     </summary>
     
@@ -35,7 +35,7 @@
       <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
     
     
-      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
+      <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
     
   </entry>
   
@@ -63,17 +63,17 @@
   </entry>
   
   <entry>
-    <title>Windows 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Windows.html"/>
-    <id>https://uinika.github.io/Zen/Config-Windows.html</id>
+    <title>Linux 工作环境 Config 札记</title>
+    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
+    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
     <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-24T12:59:44.540Z</updated>
+    <updated>2020-05-21T13:39:03.892Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;开发人员长期以来对于 Microsoft Windows 操作系统总抱以嗤之以鼻的态度，笔者亲身经历了&lt;code&gt;Windows XP&lt;/code&gt;、&lt;code&gt;Windows 7&lt;/code&gt;到&lt;code&gt;Windows 10&lt;/code&gt;的版本演变过程，抛开众所周知的偏见，事实上是能够感觉到系统稳定性、用户体验方面的大幅改善的，叠加近年来 &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Cmder&lt;/strong&gt;&lt;/a&gt;、&lt;a href=&quot;https://neovim.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; 等辅助开发工具的出现与逐渐成熟，作为软件开发环境，其使用体验已经完全可以与 Linux 媲美，并在图形界面的稳定性以及交互的友好性方面胜于后者。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Windows/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;但是对于广大硬件电子工程师而言，&lt;strong&gt;Altium Designer&lt;/strong&gt;、&lt;strong&gt;Pads&lt;/strong&gt;、&lt;strong&gt;Allegro&lt;/strong&gt; 等商业 EDA 工具仅提供支持 Windows 操作系统的版本，而高频高速 PCB 电路设计基本离不开 Windows 操作系统环境，因而 Windows 和 Linux 在笔者日常工作里都各自拥有着其不可替代性。本文主要用于记录一些笔者使用 Windows 10 操作系统的配置和习惯，便于切换到新的工作环境时快速的展开，因而文章也会持续的保持更新。&lt;/p&gt;
+      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
     
     </summary>
     
@@ -81,7 +81,7 @@
       <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
     
     
-      <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
+      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
     
   </entry>
   
@@ -201,29 +201,6 @@
   </entry>
   
   <entry>
-    <title>HTTP 协议深入解析</title>
-    <link href="https://uinika.github.io/Web/Http.html"/>
-    <id>https://uinika.github.io/Web/Http.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP&lt;/a&gt; 是基于 &lt;strong&gt;TCP/IP&lt;/strong&gt; 协议而建立 Web 基础协议，从 1989 年早期的简单 &lt;strong&gt;HTTP/0.9&lt;/strong&gt; 单行协议开始，至 1996 年逐步扩展了状态码、协议头等特性发展到 &lt;strong&gt;HTTP/1.0&lt;/strong&gt;，然后在 1997 年的 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; 增加了 TCP 连接复用、流水线支持、响应分块、缓存控制、内容协商等特性。2015 年 &lt;strong&gt;HTTP/2&lt;/strong&gt; 协议正式标准化之后，传统 HTTP 的文本协议被二进制协议替代，让并行的请求在同 1 个 TCP 连接中处理，并移除了&lt;code&gt;header&lt;/code&gt;中的重复数据，大幅提升通信效率。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Http/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在各类现代化 Web 服务器与开发框架群雄并起的年代，无论是 Python 的&lt;a href=&quot;https://www.djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;，还是 Java 的&lt;a href=&quot;http://www.oracle.com/technetwork/java/index-jsp-135475.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Servlet&lt;/a&gt;或者是 Go 上的&lt;a href=&quot;https://beego.me/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BeeGo&lt;/a&gt;，其本质上都是基于&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP 协议&lt;/a&gt;的封装。因此了解 HTTP 相关协议规范能够提升 Web 开发的透明度，能够从协议角度理解 Web 报文的通信过程，而非仅仅从各类 Web 开发框架及其 API 封装的角度。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
-    
-  </entry>
-  
-  <entry>
     <title>概览 HTML 5 语义化标签</title>
     <link href="https://uinika.github.io/Web/Html.html"/>
     <id>https://uinika.github.io/Web/Html.html</id>
@@ -243,6 +220,29 @@
     
     
       <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 协议深入解析</title>
+    <link href="https://uinika.github.io/Web/Http.html"/>
+    <id>https://uinika.github.io/Web/Http.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP&lt;/a&gt; 是基于 &lt;strong&gt;TCP/IP&lt;/strong&gt; 协议而建立 Web 基础协议，从 1989 年早期的简单 &lt;strong&gt;HTTP/0.9&lt;/strong&gt; 单行协议开始，至 1996 年逐步扩展了状态码、协议头等特性发展到 &lt;strong&gt;HTTP/1.0&lt;/strong&gt;，然后在 1997 年的 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; 增加了 TCP 连接复用、流水线支持、响应分块、缓存控制、内容协商等特性。2015 年 &lt;strong&gt;HTTP/2&lt;/strong&gt; 协议正式标准化之后，传统 HTTP 的文本协议被二进制协议替代，让并行的请求在同 1 个 TCP 连接中处理，并移除了&lt;code&gt;header&lt;/code&gt;中的重复数据，大幅提升通信效率。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Http/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在各类现代化 Web 服务器与开发框架群雄并起的年代，无论是 Python 的&lt;a href=&quot;https://www.djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;，还是 Java 的&lt;a href=&quot;http://www.oracle.com/technetwork/java/index-jsp-135475.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Servlet&lt;/a&gt;或者是 Go 上的&lt;a href=&quot;https://beego.me/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BeeGo&lt;/a&gt;，其本质上都是基于&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP 协议&lt;/a&gt;的封装。因此了解 HTTP 相关协议规范能够提升 Web 开发的透明度，能够从协议角度理解 Web 报文的通信过程，而非仅仅从各类 Web 开发框架及其 API 封装的角度。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
     
   </entry>
   
@@ -339,29 +339,6 @@
   </entry>
   
   <entry>
-    <title>Web 前端开发遵循的一些规范与约定</title>
-    <link href="https://uinika.github.io/Web/Convention.html"/>
-    <id>https://uinika.github.io/Web/Convention.html</id>
-    <published>2020-05-21T13:39:03.814Z</published>
-    <updated>2020-05-21T13:39:03.814Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;开发团队当前正在全面切换到&lt;code&gt;ES6 + Vue/React + Webpack&lt;/code&gt;这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 &lt;strong&gt;code style&lt;/strong&gt; 并且&lt;a href=&quot;https://uinika.github.io/&quot;&gt;开源&lt;/a&gt;出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 &lt;a href=&quot;https://eslint.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESLint&lt;/a&gt; 校验代码风格。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Convention/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文撰写过程中参考了爱彼迎的 &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Airbnb JavaScript Style Guide》&lt;/a&gt;，以及网易 NEC 团队的&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS 基础库命名约定》&lt;/a&gt;等开源规范，结合笔者之前撰写的 &lt;a href=&quot;/Web/Html.html&quot;&gt;《HTML5 语义化标签概览》&lt;/a&gt;一文，总体上分为&lt;code&gt;总体原则&lt;/code&gt;、&lt;code&gt;JavaScript/ES6&lt;/code&gt;、&lt;code&gt;CSS/SCSS&lt;/code&gt;、&lt;code&gt;HTML&lt;/code&gt;四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CSS 3.0 新增特性集锦</title>
     <link href="https://uinika.github.io/Web/CSS3.html"/>
     <id>https://uinika.github.io/Web/CSS3.html</id>
@@ -381,6 +358,29 @@
     
     
       <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web 前端开发遵循的一些规范与约定</title>
+    <link href="https://uinika.github.io/Web/Convention.html"/>
+    <id>https://uinika.github.io/Web/Convention.html</id>
+    <published>2020-05-21T13:39:03.814Z</published>
+    <updated>2020-05-21T13:39:03.814Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;开发团队当前正在全面切换到&lt;code&gt;ES6 + Vue/React + Webpack&lt;/code&gt;这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 &lt;strong&gt;code style&lt;/strong&gt; 并且&lt;a href=&quot;https://uinika.github.io/&quot;&gt;开源&lt;/a&gt;出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 &lt;a href=&quot;https://eslint.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ESLint&lt;/a&gt; 校验代码风格。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Convention/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文撰写过程中参考了爱彼迎的 &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Airbnb JavaScript Style Guide》&lt;/a&gt;，以及网易 NEC 团队的&lt;a href=&quot;http://nec.netease.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CSS 基础库命名约定》&lt;/a&gt;等开源规范，结合笔者之前撰写的 &lt;a href=&quot;/Web/Html.html&quot;&gt;《HTML5 语义化标签概览》&lt;/a&gt;一文，总体上分为&lt;code&gt;总体原则&lt;/code&gt;、&lt;code&gt;JavaScript/ES6&lt;/code&gt;、&lt;code&gt;CSS/SCSS&lt;/code&gt;、&lt;code&gt;HTML&lt;/code&gt;四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
     
   </entry>
   
