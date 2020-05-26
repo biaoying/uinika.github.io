@@ -1299,7 +1299,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffb362;
+  background: #6e8f2a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2878,6 +2878,13 @@ table .even {
 }
 .back-to-top:hover {
   background-color: rgba(163,130,114,0.5);
+}
+/* 解决 C++ 头文件无法选择的问题 */
+pre .meta {
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
 }
 .popup.search-popup .search-header {
   background: #8c634f;
