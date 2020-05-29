@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-05-28T14:34:55.066Z</updated>
+  <updated>2020-05-29T14:39:29.108Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,34 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
-    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
-    <published>2020-05-28T12:08:31.852Z</published>
-    <updated>2020-05-28T14:34:55.066Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
-    
-    
-      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
-    
-  </entry>
-  
-  <entry>
     <title>面向对象的 C++ 11 程序设计语言</title>
     <link href="https://uinika.github.io/Linux/C++.html"/>
     <id>https://uinika.github.io/Linux/C++.html</id>
-    <published>2020-05-27T13:46:29.529Z</published>
-    <updated>2020-05-27T13:46:29.544Z</updated>
+    <published>2020-05-29T14:39:29.092Z</published>
+    <updated>2020-05-29T14:39:29.108Z</updated>
     
     <summary type="html">
     
@@ -63,11 +40,34 @@
   </entry>
   
   <entry>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
+    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
+    <published>2020-05-29T14:39:29.076Z</published>
+    <updated>2020-05-29T14:39:29.092Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows 工作环境 Config 札记</title>
     <link href="https://uinika.github.io/Zen/Config-Windows.html"/>
     <id>https://uinika.github.io/Zen/Config-Windows.html</id>
     <published>2020-05-25T12:23:38.339Z</published>
-    <updated>2020-05-25T12:23:38.355Z</updated>
+    <updated>2020-05-28T16:13:15.003Z</updated>
     
     <summary type="html">
     
@@ -82,29 +82,6 @@
     
     
       <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack 4 核心剖析</title>
-    <link href="https://uinika.github.io/Web/Webpack.html"/>
-    <id>https://uinika.github.io/Web/Webpack.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T15:28:49.754Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt; 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Webpack/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Webpack 提出了&lt;strong&gt;入口&lt;/strong&gt;&lt;code&gt;entry&lt;/code&gt;、&lt;strong&gt;输出&lt;/strong&gt;&lt;code&gt;output&lt;/code&gt;、&lt;strong&gt;加载器&lt;/strong&gt;&lt;code&gt;loader&lt;/code&gt;、&lt;strong&gt;插件&lt;/strong&gt;&lt;code&gt;plugin&lt;/code&gt;这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的&lt;code&gt;import&lt;/code&gt;模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在&lt;a href=&quot;https://github.com/uinika/aves&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aves&lt;/a&gt;和&lt;a href=&quot;https://github.com/uinika/rhino&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rhino&lt;/a&gt;两个开源脚手架项目当中（&lt;em&gt;分别基于 Vue2 和 React16&lt;/em&gt;）所使用到的最佳配置实践。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -128,6 +105,29 @@
     
     
       <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack 4 核心剖析</title>
+    <link href="https://uinika.github.io/Web/Webpack.html"/>
+    <id>https://uinika.github.io/Web/Webpack.html</id>
+    <published>2020-05-21T13:39:03.892Z</published>
+    <updated>2020-05-21T15:28:49.754Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt; 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Webpack/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Webpack 提出了&lt;strong&gt;入口&lt;/strong&gt;&lt;code&gt;entry&lt;/code&gt;、&lt;strong&gt;输出&lt;/strong&gt;&lt;code&gt;output&lt;/code&gt;、&lt;strong&gt;加载器&lt;/strong&gt;&lt;code&gt;loader&lt;/code&gt;、&lt;strong&gt;插件&lt;/strong&gt;&lt;code&gt;plugin&lt;/code&gt;这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的&lt;code&gt;import&lt;/code&gt;模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在&lt;a href=&quot;https://github.com/uinika/aves&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aves&lt;/a&gt;和&lt;a href=&quot;https://github.com/uinika/rhino&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rhino&lt;/a&gt;两个开源脚手架项目当中（&lt;em&gt;分别基于 Vue2 和 React16&lt;/em&gt;）所使用到的最佳配置实践。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -247,29 +247,6 @@
   </entry>
   
   <entry>
-    <title>HTTP 协议深入解析</title>
-    <link href="https://uinika.github.io/Web/Http.html"/>
-    <id>https://uinika.github.io/Web/Http.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP&lt;/a&gt; 是基于 &lt;strong&gt;TCP/IP&lt;/strong&gt; 协议而建立 Web 基础协议，从 1989 年早期的简单 &lt;strong&gt;HTTP/0.9&lt;/strong&gt; 单行协议开始，至 1996 年逐步扩展了状态码、协议头等特性发展到 &lt;strong&gt;HTTP/1.0&lt;/strong&gt;，然后在 1997 年的 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; 增加了 TCP 连接复用、流水线支持、响应分块、缓存控制、内容协商等特性。2015 年 &lt;strong&gt;HTTP/2&lt;/strong&gt; 协议正式标准化之后，传统 HTTP 的文本协议被二进制协议替代，让并行的请求在同 1 个 TCP 连接中处理，并移除了&lt;code&gt;header&lt;/code&gt;中的重复数据，大幅提升通信效率。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Http/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在各类现代化 Web 服务器与开发框架群雄并起的年代，无论是 Python 的&lt;a href=&quot;https://www.djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;，还是 Java 的&lt;a href=&quot;http://www.oracle.com/technetwork/java/index-jsp-135475.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Servlet&lt;/a&gt;或者是 Go 上的&lt;a href=&quot;https://beego.me/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BeeGo&lt;/a&gt;，其本质上都是基于&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP 协议&lt;/a&gt;的封装。因此了解 HTTP 相关协议规范能够提升 Web 开发的透明度，能够从协议角度理解 Web 报文的通信过程，而非仅仅从各类 Web 开发框架及其 API 封装的角度。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
-    
-  </entry>
-  
-  <entry>
     <title>jQuery 那些容易被忽略的问题</title>
     <link href="https://uinika.github.io/Web/JQuery.html"/>
     <id>https://uinika.github.io/Web/JQuery.html</id>
@@ -312,6 +289,29 @@
     
     
       <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP 协议深入解析</title>
+    <link href="https://uinika.github.io/Web/Http.html"/>
+    <id>https://uinika.github.io/Web/Http.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP&lt;/a&gt; 是基于 &lt;strong&gt;TCP/IP&lt;/strong&gt; 协议而建立 Web 基础协议，从 1989 年早期的简单 &lt;strong&gt;HTTP/0.9&lt;/strong&gt; 单行协议开始，至 1996 年逐步扩展了状态码、协议头等特性发展到 &lt;strong&gt;HTTP/1.0&lt;/strong&gt;，然后在 1997 年的 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; 增加了 TCP 连接复用、流水线支持、响应分块、缓存控制、内容协商等特性。2015 年 &lt;strong&gt;HTTP/2&lt;/strong&gt; 协议正式标准化之后，传统 HTTP 的文本协议被二进制协议替代，让并行的请求在同 1 个 TCP 连接中处理，并移除了&lt;code&gt;header&lt;/code&gt;中的重复数据，大幅提升通信效率。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Http/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在各类现代化 Web 服务器与开发框架群雄并起的年代，无论是 Python 的&lt;a href=&quot;https://www.djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;，还是 Java 的&lt;a href=&quot;http://www.oracle.com/technetwork/java/index-jsp-135475.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Servlet&lt;/a&gt;或者是 Go 上的&lt;a href=&quot;https://beego.me/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;BeeGo&lt;/a&gt;，其本质上都是基于&lt;a href=&quot;https://www.w3.org/Protocols/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HTTP 协议&lt;/a&gt;的封装。因此了解 HTTP 相关协议规范能够提升 Web 开发的透明度，能够从协议角度理解 Web 报文的通信过程，而非仅仅从各类 Web 开发框架及其 API 封装的角度。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
     
   </entry>
   
@@ -454,17 +454,17 @@
   </entry>
   
   <entry>
-    <title>为什么认为 Backbone 是现代化前端框架的基石</title>
-    <link href="https://uinika.github.io/Web/Backbone.html"/>
-    <id>https://uinika.github.io/Web/Backbone.html</id>
+    <title>异步事件管理：从 Promise 与 async/await 到 RxJS</title>
+    <link href="https://uinika.github.io/Web/Async.html"/>
+    <id>https://uinika.github.io/Web/Async.html</id>
     <published>2020-05-21T13:39:03.798Z</published>
     <updated>2020-05-21T13:39:03.798Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;伴随着 W3C 协议规范的不断更新，以及现代化浏览器技术的快速进步，Web 前端技术整体取得了日新月异发展，交互体验更加丰富与多样化，与此同时业务逻辑也在极速的膨胀。开发人员函需从大量 DOM 底层处理的劳动中解放出来，更加从容的面对纷繁复杂的各式交互需求。本文开头先简单的梳理一下历史，然后基于现代化前端框架的主要特性，逐一与 Backbone 进行比较和剖析。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Backbone/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;从前端技术发展趋势的角度而言，目前层出不穷的现代化前端框架的诞生，都可以认为是 Angular 和 Backbone 等古典前端框架设计思想走向融合之后的产物。虽然截至到本文执笔的时间点，Backbone 已经略微&lt;strong&gt;old school&lt;/strong&gt;，但之所以依然单独对 Backbone 着重笔墨，主要是在&lt;strong&gt;组件化&lt;/strong&gt;和&lt;strong&gt;作用域控制&lt;/strong&gt;等方面，Backbone 更加接近于现代化前端框架的设计理念，而这两点又正好是同一时期的 Angular 并没有解决好的问题。&lt;/p&gt;
+      &lt;p&gt;早期的浏览器端异步编程主要依靠&lt;code&gt;回调函数&lt;/code&gt;、&lt;code&gt;事件监听&lt;/code&gt;、&lt;code&gt;发布/订阅&lt;/code&gt;、&lt;code&gt;Promise的各类polyfill&lt;/code&gt;这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了&lt;code&gt;Generator&lt;/code&gt;函数及其衍生的&lt;code&gt;async/await&lt;/code&gt;语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的&lt;a href=&quot;http://reactivex.io/rxjs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rxjs&lt;/a&gt;则进一步改善了 JavaScript 异步编程的体验。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Async/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Mozilla Promise Reference》&lt;/a&gt;，关于 Promise 状态的截图部分引用自&lt;a href=&quot;http://liubin.org/promises-book/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《JavaScript Promise 迷你书》&lt;/a&gt;。&lt;/p&gt;
     
     </summary>
     
