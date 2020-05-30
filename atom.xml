@@ -44,7 +44,7 @@
     <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
     <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
     <published>2020-05-29T14:39:29.076Z</published>
-    <updated>2020-05-29T17:48:32.276Z</updated>
+    <updated>2020-05-30T18:07:52.621Z</updated>
     
     <summary type="html">
     
@@ -86,29 +86,6 @@
   </entry>
   
   <entry>
-    <title>Webpack 4 核心剖析</title>
-    <link href="https://uinika.github.io/Web/Webpack.html"/>
-    <id>https://uinika.github.io/Web/Webpack.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T15:28:49.754Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt; 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Webpack/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Webpack 提出了&lt;strong&gt;入口&lt;/strong&gt;&lt;code&gt;entry&lt;/code&gt;、&lt;strong&gt;输出&lt;/strong&gt;&lt;code&gt;output&lt;/code&gt;、&lt;strong&gt;加载器&lt;/strong&gt;&lt;code&gt;loader&lt;/code&gt;、&lt;strong&gt;插件&lt;/strong&gt;&lt;code&gt;plugin&lt;/code&gt;这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的&lt;code&gt;import&lt;/code&gt;模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在&lt;a href=&quot;https://github.com/uinika/aves&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aves&lt;/a&gt;和&lt;a href=&quot;https://github.com/uinika/rhino&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rhino&lt;/a&gt;两个开源脚手架项目当中（&lt;em&gt;分别基于 Vue2 和 React16&lt;/em&gt;）所使用到的最佳配置实践。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Linux 工作环境 Config 札记</title>
     <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
     <id>https://uinika.github.io/Zen/Config-Linux.html</id>
@@ -128,6 +105,29 @@
     
     
       <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack 4 核心剖析</title>
+    <link href="https://uinika.github.io/Web/Webpack.html"/>
+    <id>https://uinika.github.io/Web/Webpack.html</id>
+    <published>2020-05-21T13:39:03.892Z</published>
+    <updated>2020-05-21T15:28:49.754Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt; 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Webpack/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Webpack 提出了&lt;strong&gt;入口&lt;/strong&gt;&lt;code&gt;entry&lt;/code&gt;、&lt;strong&gt;输出&lt;/strong&gt;&lt;code&gt;output&lt;/code&gt;、&lt;strong&gt;加载器&lt;/strong&gt;&lt;code&gt;loader&lt;/code&gt;、&lt;strong&gt;插件&lt;/strong&gt;&lt;code&gt;plugin&lt;/code&gt;这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的&lt;code&gt;import&lt;/code&gt;模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在&lt;a href=&quot;https://github.com/uinika/aves&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aves&lt;/a&gt;和&lt;a href=&quot;https://github.com/uinika/rhino&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rhino&lt;/a&gt;两个开源脚手架项目当中（&lt;em&gt;分别基于 Vue2 和 React16&lt;/em&gt;）所使用到的最佳配置实践。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -247,29 +247,6 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -312,6 +289,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
