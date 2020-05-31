@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-05-29T14:39:29.108Z</updated>
+  <updated>2020-05-30T18:14:20.430Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
+    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
+    <published>2020-05-30T18:14:06.459Z</published>
+    <updated>2020-05-30T18:14:20.430Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
   
   <entry>
     <title>面向对象的 C++ 11 程序设计语言</title>
@@ -36,29 +59,6 @@
     
     
       <category term="Qt" scheme="https://uinika.github.io/tags/Qt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
-    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
-    <published>2020-05-29T14:39:29.076Z</published>
-    <updated>2020-05-30T18:07:52.621Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
-    
-    
-      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
     
   </entry>
   
@@ -339,29 +339,6 @@
   </entry>
   
   <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <link href="https://uinika.github.io/Web/Electron.html"/>
-    <id>https://uinika.github.io/Web/Electron.html</id>
-    <published>2020-05-21T13:39:03.829Z</published>
-    <updated>2020-05-21T13:39:03.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;早期桌面应用的开发主要借助原生 C/C++ API 进行，由于需要反复经历编译过程，且无法分离界面 UI 与业务代码，开发调试极为不便。后期出现的 QT 和 WPF 在一定程度上解决了界面代码分离和跨平台的问题，却依然无法避免较长时间的编译过程。近几年伴随互联网行业的迅猛发展，尤其是 NodeJS、Chromium 这类基于 W3C 标准开源应用的不断涌现，原生代码与 Web 浏览器开发逐步走向融合，Electron 正是在这种背景下诞生的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Electron/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Electron 是由 Github 开发，通过将&lt;a href=&quot;www.chromium.org&quot;&gt;Chromium&lt;/a&gt;和&lt;a href=&quot;https://nodejs.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS&lt;/a&gt;整合为一个运行时环境，实现使用 HTML、CSS、JavaScript 构建跨平台的桌面应用程序的目的。Electron 源于 2013 年 Github 社区提供的开源编辑器 Atom，后于 2014 年在社区开源，并在 2016 年的 5 月和 8 月，通过了 &lt;a href=&quot;https://www.apple.com/mac/app-store/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mac App Store&lt;/a&gt; 和 &lt;a href=&quot;https://apps.microsoft.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows Store&lt;/a&gt; 的上架许可，VSCode、Skype 等著名开源或商业应用程序，都是基于 Electron 打造。为了方便编写测试用例，笔者在 Github 搭建了一个简单的 Electron 种子项目&lt;a href=&quot;https://github.com/uinika/octopus&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Octopus&lt;/a&gt;，读者可以基于此来运行本文涉及的示例代码。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Flux 数据流两三事儿</title>
     <link href="https://uinika.github.io/Web/Flux.html"/>
     <id>https://uinika.github.io/Web/Flux.html</id>
@@ -381,6 +358,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Electron 打造跨平台桌面应用</title>
+    <link href="https://uinika.github.io/Web/Electron.html"/>
+    <id>https://uinika.github.io/Web/Electron.html</id>
+    <published>2020-05-21T13:39:03.829Z</published>
+    <updated>2020-05-21T13:39:03.829Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;早期桌面应用的开发主要借助原生 C/C++ API 进行，由于需要反复经历编译过程，且无法分离界面 UI 与业务代码，开发调试极为不便。后期出现的 QT 和 WPF 在一定程度上解决了界面代码分离和跨平台的问题，却依然无法避免较长时间的编译过程。近几年伴随互联网行业的迅猛发展，尤其是 NodeJS、Chromium 这类基于 W3C 标准开源应用的不断涌现，原生代码与 Web 浏览器开发逐步走向融合，Electron 正是在这种背景下诞生的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Electron/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Electron 是由 Github 开发，通过将&lt;a href=&quot;www.chromium.org&quot;&gt;Chromium&lt;/a&gt;和&lt;a href=&quot;https://nodejs.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS&lt;/a&gt;整合为一个运行时环境，实现使用 HTML、CSS、JavaScript 构建跨平台的桌面应用程序的目的。Electron 源于 2013 年 Github 社区提供的开源编辑器 Atom，后于 2014 年在社区开源，并在 2016 年的 5 月和 8 月，通过了 &lt;a href=&quot;https://www.apple.com/mac/app-store/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mac App Store&lt;/a&gt; 和 &lt;a href=&quot;https://apps.microsoft.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows Store&lt;/a&gt; 的上架许可，VSCode、Skype 等著名开源或商业应用程序，都是基于 Electron 打造。为了方便编写测试用例，笔者在 Github 搭建了一个简单的 Electron 种子项目&lt;a href=&quot;https://github.com/uinika/octopus&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Octopus&lt;/a&gt;，读者可以基于此来运行本文涉及的示例代码。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
     
   </entry>
   
