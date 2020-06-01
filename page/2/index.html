@@ -199,7 +199,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Linux/Vim.html">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Linux/Shell.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -213,7 +213,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Linux/Vim.html" class="post-title-link" itemprop="url">Vim 常用键位生存指南</a>
+            <a href="/Linux/Shell.html" class="post-title-link" itemprop="url">Bash Shell 脚本编程实践</a>
         </h2>
 
         <div class="post-meta">
@@ -225,20 +225,13 @@
 
               <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-22 00:55:32" itemprop="dateModified" datetime="2020-05-22T00:55:32+08:00">2020-05-22</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                  <a href="/categories/Note/" itemprop="url" rel="index"><span itemprop="name">Note</span></a>
                 </span>
             </span>
 
@@ -248,14 +241,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>376</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -267,12 +260,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Vim 是从 UNIX 下的 Vi 发展出来的一个文本编辑器，近几年，伴随<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>、<a href="https://atom.io" target="_blank" rel="noopener">Atom</a>、<a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime</a>等一众轻量级编辑器的快速发展，涌现了大量基于这些编辑器平台的 Vim 快捷键插件，甚至 Chrome 和 Firefox 上都已经分别提供<code>Vimium</code>、<code>VimFx</code>等优秀插件。虽然 Vim 本身因为其繁琐的配置，日常开发中已经较少直接使用，但是其快捷键操作习惯得以保留，因此 Vim 逐渐从一套自由软件发展为可以在诸多平台上使用的快捷键套装。</p>
-<p><img src="/Linux/Vim/logo.png"></p>
-<p>本文总结了笔者运用 Vim 作为日常开发工具的过程当中，经常使用到的一些快捷键和命令，并简单的按照操作进行了一个分类，帮助<em>Vim Junior</em>在纷繁的快捷键位里快速适应并生存下来，逐步成为一名熟练的<em>Vim Addict</em>。文章部分命令和键位的解释参考了<a href="https://coolshell.cn/articles/5426.html" target="_blank" rel="noopener">《简明 VIM 练级攻略》</a>一文，快捷键位示例图则取自<a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html" target="_blank" rel="noopener">《Graphical vi-vim Cheat Sheet and Tutorial》</a>。</p>
+          <p><a href="https://tiswww.case.edu/php/chet/bash/bashtop.html" target="_blank" rel="noopener"><strong>Bash Shell</strong></a> 是由 GUN 官方项目提供的 Shell 解释器，名称源自于 <strong>B</strong>ourne <strong>A</strong>gain <strong>SH</strong>ell 的英文缩写，整合了传统 <strong>Korn Shell</strong> 以及 <strong>C Shell</strong> 的有效特性，并且尽量遵循<code>IEEE POSIX P1003.2/ISO 9945.2</code>规范，同时在编程与交互使用方面提供了大量的功能改进，因而在提供丰富功能的基础之上，展现出了良好的兼容特性，大多数<code>.sh</code>脚本可以无需移植修改即可交由 Bash Shell 来执行。</p>
+<p><img src="/Linux/Shell/logo.png"></p>
+<p>当用户登入任意一款 Linux 操作系统时，初始化程序<code>init</code>都将会为用户启动一个<strong>Bash Shell</strong>命令解析器，其即可以用于解析命令行输入并与内核进行交互，也可以作为高效的脚本编程语言，运用其提供的变量、参数、循环、分支等编程语法特性，完成一些批量的自动化的任务处理工作，本文将会围绕 Bash Shell 的脚本编程特性，加以进行详细的分析、说明与示例。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Linux/Vim.html#more" rel="contents">
+              <a class="btn" href="/Linux/Shell.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -363,6 +356,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Linux/Qt-Widgets.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Linux/Command.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Linux/Command.html" class="post-title-link" itemprop="url">Linux 命令行必知必会</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>24k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>22 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Linux Mint 最早于 2006 年开始发行，是一款基于 <strong>Debian</strong> 与 <strong>Ubuntu</strong> 的 Linux 发行版，提供了更为友好稳定的桌面环境，在进行快捷键、开源字体等方面的设置，并安装了诸多的工具软件之后，笔者将其作为日常工作环境已有近 5 年的历史，伴随近几年开源团队不断的改进与升级，其兼容性与用户体验渐入佳境。从程序编写到 PCB 电路绘制，日常工作已经愈加依赖这款 Linux 操作系统。</p>
+<p><img src="/Linux/Command/logo.png"></p>
+<p>基于 2019 年圣诞节发布的 <strong>Linux mint 19.3</strong> 发行版，采用的 Shell 命令解释器版本为 <strong>Bash Shell 5.0.3</strong>，文章总结了笔者日常所经常使用到的 Linux 命令，在简明扼要的介绍相关命令与参数之后，还展示了各条命令的实际执行结果，便于读者更加直观的了解其功能与用途。限于文章篇幅以及命令行的使用频率，有关 Bash Shell 脚本编程部分的内容，将会新开一篇文章再行介绍。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Linux/Command.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -483,7 +566,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Linux/Command.html">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Linux/Native.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -497,7 +580,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Linux/Command.html" class="post-title-link" itemprop="url">Linux 命令行必知必会</a>
+            <a href="/Linux/Native.html" class="post-title-link" itemprop="url">Linux C 应用程序开发进阶</a>
         </h2>
 
         <div class="post-meta">
@@ -525,14 +608,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>24k</span>
+              <span>527</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>22 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -544,12 +627,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Linux Mint 最早于 2006 年开始发行，是一款基于 <strong>Debian</strong> 与 <strong>Ubuntu</strong> 的 Linux 发行版，提供了更为友好稳定的桌面环境，在进行快捷键、开源字体等方面的设置，并安装了诸多的工具软件之后，笔者将其作为日常工作环境已有近 5 年的历史，伴随近几年开源团队不断的改进与升级，其兼容性与用户体验渐入佳境。从程序编写到 PCB 电路绘制，日常工作已经愈加依赖这款 Linux 操作系统。</p>
-<p><img src="/Linux/Command/logo.png"></p>
-<p>基于 2019 年圣诞节发布的 <strong>Linux mint 19.3</strong> 发行版，采用的 Shell 命令解释器版本为 <strong>Bash Shell 5.0.3</strong>，文章总结了笔者日常所经常使用到的 Linux 命令，在简明扼要的介绍相关命令与参数之后，还展示了各条命令的实际执行结果，便于读者更加直观的了解其功能与用途。限于文章篇幅以及命令行的使用频率，有关 Bash Shell 脚本编程部分的内容，将会新开一篇文章再行介绍。</p>
+          <p><a href="https://uinika.github.io/linux/c-reference.html">【语法规范篇】</a>主要对 Linux C 语法以及 ISO C 标准进行较为系统的描述；由于嵌入式 Linux 应用程序乃至于设备驱动程序开发，紧密围绕着文件 IO、进程控制、进程间通信、多线程、网络编程等一系列主题进行，本文则将会侧重于此进行讲解。</p>
+<p><img src="/Linux/Native/logo.png"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Linux/Command.html#more" rel="contents">
+              <a class="btn" href="/Linux/Native.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -640,95 +722,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Linux/GCC.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Linux/Native.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Linux/Native.html" class="post-title-link" itemprop="url">Linux C 应用程序开发进阶</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>527</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a href="https://uinika.github.io/linux/c-reference.html">【语法规范篇】</a>主要对 Linux C 语法以及 ISO C 标准进行较为系统的描述；由于嵌入式 Linux 应用程序乃至于设备驱动程序开发，紧密围绕着文件 IO、进程控制、进程间通信、多线程、网络编程等一系列主题进行，本文则将会侧重于此进行讲解。</p>
-<p><img src="/Linux/Native/logo.png"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Linux/Native.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2332,7 +2325,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:40</span>
+    <span title="站点阅读时长">22:42</span>
 </div>
 
         
