@@ -23,6 +23,17 @@
       </tags>
   </entry>
   <entry>
+    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
+    <url>/Embedded/NucleoF767ZI.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>模拟与数字电子技术导论</title>
     <url>/Electronics/Introduct.html</url>
     <content><![CDATA[]]></content>
@@ -36,28 +47,6 @@
   <entry>
     <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
     <url>/Embedded/Mini2440.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Altium Designer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
-    <url>/Embedded/NucleoF767ZI.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -89,25 +78,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <url>/Linux/Command.html</url>
+    <title>面向对象的 C++ 11 程序设计语言</title>
+    <url>/Linux/C++.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Linux</category>
+        <category>C/C++</category>
       </categories>
       <tags>
-        <tag>Embedded</tag>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
-    <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
-    <url>/Embedded/STM32F103ZET6.html</url>
+    <title>从 GNU Make 到 CMake 快速入门</title>
+    <url>/Linux/CMake.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Embedded</category>
+        <category>C/C++</category>
       </categories>
       <tags>
-        <tag>MCU</tag>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -130,28 +119,6 @@
       </categories>
       <tags>
         <tag>C language</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象的 C++ 11 程序设计语言</title>
-    <url>/Linux/C++.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从 GNU Make 到 CMake 快速入门</title>
-    <url>/Linux/CMake.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -188,6 +155,28 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux 常用命令行速查手册</title>
+    <url>/Linux/Command.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
+    <url>/Embedded/STM32F103ZET6.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常用初等数学图形与公式汇总</title>
     <url>/Math/Elementary.html</url>
     <content><![CDATA[]]></content>
@@ -199,8 +188,19 @@
       </tags>
   </entry>
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Altium Designer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2016 年，成都房价上涨对城南 IT 产业的影响与思考</title>
-    <url>/Other/chengdu-real-estate-1.html</url>
+    <url>/Other/2016-Chengdu-Realestate.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -211,7 +211,7 @@
   </entry>
   <entry>
     <title>2017年，再聊聊成都房价、地价那些事儿</title>
-    <url>/Other/chengdu-real-estate-2.html</url>
+    <url>/Other/2017-Chengdu-Realestate.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -221,8 +221,8 @@
       </tags>
   </entry>
   <entry>
-    <title>2018岁未，写在成都本轮地产周期尘埃落定之后</title>
-    <url>/Other/chengdu-real-estate-3.html</url>
+    <title>如何理性看待贵阳大数据及 IT 行业的过去与将来</title>
+    <url>/Other/2018-Guiyang-Big-Data.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -232,8 +232,8 @@
       </tags>
   </entry>
   <entry>
-    <title>如何理性看待贵阳大数据及IT行业的过去与将来</title>
-    <url>/Other/guiyang-big-data.html</url>
+    <title>2020 年小憩，聊一聊电子产业路在何方</title>
+    <url>/Other/2020-Electronic-Industry.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -276,17 +276,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 3.0 新增特性集锦</title>
-    <url>/Web/CSS3.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为什么认为 Backbone 是现代化前端框架的基石</title>
     <url>/Web/Backbone.html</url>
     <content><![CDATA[]]></content>
@@ -298,8 +287,41 @@
       </tags>
   </entry>
   <entry>
+    <title>CSS 3.0 新增特性集锦</title>
+    <url>/Web/CSS3.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web 前端开发遵循的一些规范与约定</title>
+    <url>/Web/Convention.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Convention</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用 Django2 快速开发 Web 服务</title>
     <url>/Web/Django.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Electron 打造跨平台桌面应用</title>
+    <url>/Web/Electron.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -320,25 +342,14 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <url>/Web/Electron.html</url>
+    <title>概览 HTML 5 语义化标签</title>
+    <url>/Web/Html.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Web 前端开发遵循的一些规范与约定</title>
-    <url>/Web/Convention.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Convention</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -361,17 +372,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <url>/Web/Html.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -474,19 +474,30 @@
       </tags>
   </entry>
   <entry>
-    <title>言简意赅 の Python3</title>
-    <url>/Web/Python.html</url>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>Server</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
+    <title>React 16.6.x 全新全译</title>
+    <url>/Web/React.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue 2 技术栈归纳与精粹</title>
+    <url>/Web/Vue.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -507,14 +518,14 @@
       </tags>
   </entry>
   <entry>
-    <title>React 16.6.x 全新全译</title>
-    <url>/Web/React.html</url>
+    <title>言简意赅 の Python3</title>
+    <url>/Web/Python.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -526,17 +537,6 @@
       </categories>
       <tags>
         <tag>Grammar</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue 2 技术栈归纳与精粹</title>
-    <url>/Web/Vue.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>

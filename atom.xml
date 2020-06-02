@@ -201,29 +201,6 @@
   </entry>
   
   <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <link href="https://uinika.github.io/Web/Scss.html"/>
-    <id>https://uinika.github.io/Web/Scss.html</id>
-    <published>2020-05-21T13:39:03.876Z</published>
-    <updated>2020-05-21T15:33:26.888Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt; 是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Scss/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;基于 Gulp 完成前端自动化的年代，出于快速上手以及 npm 安装方便的考虑，开发团队一直沿用&lt;a href=&quot;http://lesscss.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Less&lt;/a&gt;和&lt;a href=&quot;https://github.com/stevelacy/gulp-less&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp-less&lt;/a&gt;作为 CSS 预处理工具，但是 Sass 提供了更加丰富的动态语法特征，因此逐步淘汰基于 Gulp 的&lt;a href=&quot;https://github.com/uinika/beaver&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;beaver&lt;/a&gt;前端项目脚手架以后，新项目全部基于 Webpack 的&lt;a href=&quot;https://github.com/sass/node-sass&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node-sass&lt;/a&gt;和&lt;a href=&quot;https://github.com/webpack-contrib/sass-loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-loader&lt;/a&gt;作为预处理工具。Sass 和 Less 的详细比较可以参考&lt;a href=&quot;https://css-tricks.com/sass-vs-less/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-vs-less&lt;/a&gt;和&lt;a href=&quot;http://cued.xunlei.com/log044&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass 与 Less 比拼&lt;/a&gt;两篇文章，里面对两者的优劣做了非常详实的比较。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Vue 2 技术栈归纳与精粹</title>
     <link href="https://uinika.github.io/Web/Vue.html"/>
     <id>https://uinika.github.io/Web/Vue.html</id>
@@ -247,6 +224,29 @@
   </entry>
   
   <entry>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <link href="https://uinika.github.io/Web/Scss.html"/>
+    <id>https://uinika.github.io/Web/Scss.html</id>
+    <published>2020-05-21T13:39:03.876Z</published>
+    <updated>2020-05-21T15:33:26.888Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt; 是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Scss/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;基于 Gulp 完成前端自动化的年代，出于快速上手以及 npm 安装方便的考虑，开发团队一直沿用&lt;a href=&quot;http://lesscss.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Less&lt;/a&gt;和&lt;a href=&quot;https://github.com/stevelacy/gulp-less&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp-less&lt;/a&gt;作为 CSS 预处理工具，但是 Sass 提供了更加丰富的动态语法特征，因此逐步淘汰基于 Gulp 的&lt;a href=&quot;https://github.com/uinika/beaver&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;beaver&lt;/a&gt;前端项目脚手架以后，新项目全部基于 Webpack 的&lt;a href=&quot;https://github.com/sass/node-sass&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node-sass&lt;/a&gt;和&lt;a href=&quot;https://github.com/webpack-contrib/sass-loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-loader&lt;/a&gt;作为预处理工具。Sass 和 Less 的详细比较可以参考&lt;a href=&quot;https://css-tricks.com/sass-vs-less/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-vs-less&lt;/a&gt;和&lt;a href=&quot;http://cued.xunlei.com/log044&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass 与 Less 比拼&lt;/a&gt;两篇文章，里面对两者的优劣做了非常详实的比较。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>NodeJS 快速上手指南</title>
     <link href="https://uinika.github.io/Web/Nodejs.html"/>
     <id>https://uinika.github.io/Web/Nodejs.html</id>
@@ -258,29 +258,6 @@
       &lt;p&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 开源项目于 2009 年由 &lt;strong&gt;Google Brain&lt;/strong&gt; 团队的软件工程师 Ryan Dahl 发起创建，后被美国云计算企业 &lt;a href=&quot;https://www.joyent.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Joyent&lt;/a&gt; 招入麾下，2015 年后正式被 &lt;a href=&quot;https://foundation.nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS 基金会&lt;/a&gt; 接管，三星公司于 2016 年完成了对 Joyent 的收购。经过将近 10 年的发展，NodeJS 已经成为现代化前端开发过程中不可或缺的基础架构，即可以作为页面渲染的分布式服务器，也可以作为前端自动化的宿主环境。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Web/Nodejs/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;本文基于笔者在 2015 年所写的一篇读书笔记整理，彼时 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt; 的版本号还停留在&lt;code&gt;v0.12.x&lt;/code&gt;，社区也还未完成与 &lt;a href=&quot;https://iojs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;io.js&lt;/a&gt; 的最终合并，文中出现的部分 API 时至今日已经被废弃或者迁移。但是这些 API 层面的变化都可以对照 &lt;a href=&quot;https://nodejs.org/dist/latest-v8.x/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《官方文档》&lt;/a&gt;找到相应说明以及替代 API，总体上并不会影响通过本文快速了解 NodeJS 的全套技术栈特性。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>言简意赅 の Python3</title>
-    <link href="https://uinika.github.io/Web/Python.html"/>
-    <id>https://uinika.github.io/Web/Python.html</id>
-    <published>2020-05-21T13:39:03.860Z</published>
-    <updated>2020-05-21T13:39:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Python 诞生于 20 世纪 90 年代初，由荷兰人 Guido van Rossum 开发完成，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库&lt;a href=&quot;https://opencv.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenCV&lt;/a&gt;、三维可视化库&lt;a href=&quot;https://www.vtk.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VTK&lt;/a&gt;、医学图像处理库&lt;a href=&quot;https://itk.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ITK&lt;/a&gt;都提供了 Python 调用接口，Python 也原生提供了&lt;a href=&quot;http://www.numpy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NumPy&lt;/a&gt;、&lt;a href=&quot;https://www.scipy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SciPy&lt;/a&gt;、&lt;a href=&quot;https://matplotlib.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;matplotlib&lt;/a&gt;等强大的科学计算扩展库。Web 开发方面，Python 也提供有&lt;a href=&quot;https://www.Djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org/en/stable/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;两款常用的 Web 开发框架。总而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Python/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文的示例代码基于目前最新的&lt;a href=&quot;https://www.python.org/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python 3.6.6&lt;/a&gt;版本，在简单介绍相关语法以及&lt;a href=&quot;https://pypi.org/project/pip/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pip&lt;/a&gt;、&lt;a href=&quot;https://virtualenv.pypa.io/en/stable/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;virtualenv&lt;/a&gt;等扩展库的使用之后，将会最终完成一个基于官方 XML 解析库&lt;code&gt;ElementTree&lt;/code&gt;的 SVG 图片合并小程序。本文涉及的代码和 Markdown 都已经上传至笔者的&lt;a href=&quot;https://github.com/uinika/python-quick-guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt;，需要的朋友可以直接进行克隆，如果发现缪误或有任何建议请向我提交&lt;a href=&quot;https://github.com/uinika/python-quick-guide/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;issue&lt;/a&gt;。此外，笔者正在撰写[&lt;a href=&quot;https://uinika.github.io/web/server/django.html&quot;&gt;《使用 Django2 快速开发 Web 项目》&lt;/a&gt;一文，供需要使用 Python 进行 Web 开发的朋友进一步阅读。&lt;/p&gt;
     
     </summary>
     
@@ -312,6 +289,52 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>言简意赅 の Python3</title>
+    <link href="https://uinika.github.io/Web/Python.html"/>
+    <id>https://uinika.github.io/Web/Python.html</id>
+    <published>2020-05-21T13:39:03.860Z</published>
+    <updated>2020-05-21T13:39:03.860Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 诞生于 20 世纪 90 年代初，由荷兰人 Guido van Rossum 开发完成，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库&lt;a href=&quot;https://opencv.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenCV&lt;/a&gt;、三维可视化库&lt;a href=&quot;https://www.vtk.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VTK&lt;/a&gt;、医学图像处理库&lt;a href=&quot;https://itk.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ITK&lt;/a&gt;都提供了 Python 调用接口，Python 也原生提供了&lt;a href=&quot;http://www.numpy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NumPy&lt;/a&gt;、&lt;a href=&quot;https://www.scipy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SciPy&lt;/a&gt;、&lt;a href=&quot;https://matplotlib.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;matplotlib&lt;/a&gt;等强大的科学计算扩展库。Web 开发方面，Python 也提供有&lt;a href=&quot;https://www.Djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org/en/stable/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;两款常用的 Web 开发框架。总而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Python/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文的示例代码基于目前最新的&lt;a href=&quot;https://www.python.org/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python 3.6.6&lt;/a&gt;版本，在简单介绍相关语法以及&lt;a href=&quot;https://pypi.org/project/pip/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pip&lt;/a&gt;、&lt;a href=&quot;https://virtualenv.pypa.io/en/stable/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;virtualenv&lt;/a&gt;等扩展库的使用之后，将会最终完成一个基于官方 XML 解析库&lt;code&gt;ElementTree&lt;/code&gt;的 SVG 图片合并小程序。本文涉及的代码和 Markdown 都已经上传至笔者的&lt;a href=&quot;https://github.com/uinika/python-quick-guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt;，需要的朋友可以直接进行克隆，如果发现缪误或有任何建议请向我提交&lt;a href=&quot;https://github.com/uinika/python-quick-guide/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;issue&lt;/a&gt;。此外，笔者正在撰写[&lt;a href=&quot;https://uinika.github.io/web/server/django.html&quot;&gt;《使用 Django2 快速开发 Web 项目》&lt;/a&gt;一文，供需要使用 Python 进行 Web 开发的朋友进一步阅读。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
@@ -362,29 +385,6 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript 6 简明语法书</title>
     <link href="https://uinika.github.io/Web/Javascript.html"/>
     <id>https://uinika.github.io/Web/Javascript.html</id>
@@ -396,29 +396,6 @@
       &lt;p&gt;JavaScript 遵循了 ECMAScript 语言规范，2012 年之后的现代浏览器都完整支持 &lt;strong&gt;ECMAScript 5.1&lt;/strong&gt; 标准。2015 年 6 月 17 日，ECMA 国际组织发布了 &lt;strong&gt;ECMAScript 6&lt;/strong&gt; 标准，官方称为 &lt;strong&gt;ECMAScript 2015&lt;/strong&gt;（俗称为 &lt;strong&gt;ES6&lt;/strong&gt;），从此 ECMAScript 每年发布一次新标准，&lt;strong&gt;本文覆盖了当前最新 ECMAScript2017 草案中的新特性&lt;/strong&gt;。示例代码和术语定义参考了《JavaScrip 高级程序设计》，但是该书成文于 ES6 发布之前，因此从&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Mozilla JavaScript Reference》&lt;/a&gt;摘取了部分内容作为补充。出于查阅与核对的方便，本文目录结构与 Mozilla 官方英文文档保持一致。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Web/Javascript/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;JavaScript 标准化工作由&lt;strong&gt;ECMA&lt;/strong&gt;（&lt;em&gt;European Computer Manufacturers Association&lt;/em&gt;）国际组织负责，JavaScript 的语言标准被称为&lt;strong&gt;ECMAScript&lt;/strong&gt;，企业遵循该标准开发各自的 JavaScript 实现，例如 Firefox 的&lt;code&gt;SpiderMonkey&lt;/code&gt;或者 Chrome 中的&lt;code&gt;V8&lt;/code&gt;解析引擎（&lt;em&gt;ECMAScript 的规范文档主要针对解析引擎的开发人员，而非 JavaScript 脚本的编写人员&lt;/em&gt;）。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flux 数据流两三事儿</title>
-    <link href="https://uinika.github.io/Web/Flux.html"/>
-    <id>https://uinika.github.io/Web/Flux.html</id>
-    <published>2020-05-21T13:39:03.829Z</published>
-    <updated>2020-05-21T13:39:03.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://facebook.github.io/flux/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flux&lt;/a&gt;是由 &lt;strong&gt;Facebook&lt;/strong&gt; 在 2014 年 7 月提出的一种 React 应用体系架构，主要用于解决多层级组件之间数据传递以及状态管理的问题。并由此派生出了&lt;a href=&quot;https://github.com/reflux/refluxjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reflux&lt;/a&gt;、&lt;a href=&quot;http://redux.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux&lt;/a&gt;、&lt;a href=&quot;https://mobx.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MobX&lt;/a&gt;等一系列单向数据流框架。为 Web 前端页面实现组件化拆分之后，组件间的通信与协同机制提供了一套较为完善的方法学。其核心理念在于将所有应用状态放置在&lt;code&gt;Store&lt;/code&gt;内进行统一管理，视图层组件只能通过触发&lt;code&gt;Action&lt;/code&gt;修改&lt;code&gt;Store&lt;/code&gt;中的应用状态。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Flux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文首先系统的概括 Facebook 官方的&lt;strong&gt;Flux&lt;/strong&gt;以及&lt;strong&gt;单向数据流&lt;/strong&gt;思想，然后遵循近几年&lt;strong&gt;Flux 衍生框架&lt;/strong&gt;的发展历程，逐步进行概括性的分析与比较，并顺带介绍了 Vue 技术栈当中的&lt;strong&gt;类 Flux 框架&lt;/strong&gt; &lt;a href=&quot;https://vuex.vuejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VueX&lt;/a&gt;，最后，由于通常将&lt;code&gt;Action&lt;/code&gt;视为 &lt;strong&gt;Flux&lt;/strong&gt; 工作流的核心与起点，本文还对&lt;a href=&quot;https://github.com/redux-utilities/flux-standard-action&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Flux Standard Action》&lt;/a&gt;自述文档进行了翻译，以期更为全面的展现 Flux 生态的演进过程。&lt;/p&gt;
     
     </summary>
     
@@ -450,6 +427,29 @@
     
     
       <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flux 数据流两三事儿</title>
+    <link href="https://uinika.github.io/Web/Flux.html"/>
+    <id>https://uinika.github.io/Web/Flux.html</id>
+    <published>2020-05-21T13:39:03.829Z</published>
+    <updated>2020-05-21T13:39:03.829Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://facebook.github.io/flux/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flux&lt;/a&gt;是由 &lt;strong&gt;Facebook&lt;/strong&gt; 在 2014 年 7 月提出的一种 React 应用体系架构，主要用于解决多层级组件之间数据传递以及状态管理的问题。并由此派生出了&lt;a href=&quot;https://github.com/reflux/refluxjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reflux&lt;/a&gt;、&lt;a href=&quot;http://redux.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux&lt;/a&gt;、&lt;a href=&quot;https://mobx.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MobX&lt;/a&gt;等一系列单向数据流框架。为 Web 前端页面实现组件化拆分之后，组件间的通信与协同机制提供了一套较为完善的方法学。其核心理念在于将所有应用状态放置在&lt;code&gt;Store&lt;/code&gt;内进行统一管理，视图层组件只能通过触发&lt;code&gt;Action&lt;/code&gt;修改&lt;code&gt;Store&lt;/code&gt;中的应用状态。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Flux/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文首先系统的概括 Facebook 官方的&lt;strong&gt;Flux&lt;/strong&gt;以及&lt;strong&gt;单向数据流&lt;/strong&gt;思想，然后遵循近几年&lt;strong&gt;Flux 衍生框架&lt;/strong&gt;的发展历程，逐步进行概括性的分析与比较，并顺带介绍了 Vue 技术栈当中的&lt;strong&gt;类 Flux 框架&lt;/strong&gt; &lt;a href=&quot;https://vuex.vuejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VueX&lt;/a&gt;，最后，由于通常将&lt;code&gt;Action&lt;/code&gt;视为 &lt;strong&gt;Flux&lt;/strong&gt; 工作流的核心与起点，本文还对&lt;a href=&quot;https://github.com/redux-utilities/flux-standard-action&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Flux Standard Action》&lt;/a&gt;自述文档进行了翻译，以期更为全面的展现 Flux 生态的演进过程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
