@@ -30,8 +30,9 @@
 <meta property="og:description" content="GNU Make用于控制如何从程序的源代码文件编译并链接为可执行文件，通过make命令从名称为makefile的文件中获取构建信息，该文件定义了一系列规则来指定源文件的编译先后顺序、是否需要重新编译、甚至于进行更为复杂的操作。通过makefile文件可以方便的实现工程的自动化编译，只需要执行make命令即可完成编译动作，从而极大的提高了开发人员的工作效率。  CMake 3.17是一款源代码构">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://uinika.github.io/Linux/CMake/logo.png">
-<meta property="article:published_time" content="2020-05-21T13:39:03.642Z">
-<meta property="article:modified_time" content="2020-05-24T15:03:58.983Z">
+<meta property="og:image" content="https://uinika.github.io/Linux/CMake/GNU-Make/0.png">
+<meta property="article:published_time" content="2020-06-02T11:58:12.848Z">
+<meta property="article:modified_time" content="2020-06-02T11:58:12.879Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Qt">
 <meta name="twitter:card" content="summary">
@@ -228,15 +229,8 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+              <time title="创建时间：2020-06-02 19:58:12" itemprop="dateCreated datePublished" datetime="2020-06-02T19:58:12+08:00">2020-06-02</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-24 23:03:58" itemprop="dateModified" datetime="2020-05-24T23:03:58+08:00">2020-05-24</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -260,7 +254,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.8k</span>
+              <span>3.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -283,7 +277,20 @@
 <p><img src="/Linux/CMake/logo.png"></p>
 <p><a href="https://cmake.org/cmake/help/v3.17/" target="_blank" rel="noopener">CMake 3.17</a>是一款源代码构建管理工具，最初作为各种 <strong>Makefile</strong> 方言的生成器，后来逐步发展为现代化的构建系统，广泛用于 C 和 C++ 工程源代码的构建。官方提供的<a href="https://cmake.org/cmake/help/latest/guide/tutorial/index.html" target="_blank" rel="noopener">《CMake Tutorial》</a> 为开发人员提供了一个循序渐进的指南，涵盖了 CMake 构建过程中常见问题的解决方案。如果需要构建从第三方发布的源代码包，则可以参考<a href="https://cmake.org/cmake/help/v3.17/guide/user-interaction/index.html" target="_blank" rel="noopener">《User Interaction Guide》</a>。而<a href="https://cmake.org/cmake/help/v3.17/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide" target="_blank" rel="noopener">《Using Dependencies Guide》</a>则主要针对需要使用第三方库的开发人员。</p>
 <a id="more"></a>
-<h2 id="cmake">cmake</h2>
+<h2 id="gnu-make">GNU Make</h2>
+<p><code>make</code>是一款用于解释<code>makefile</code>文件当中命令的工具，而<code>makefile</code>关系到整个工程的编译规则。许多 IDE 集成开发环境都整合了该命令，例如：Visual C++ 里的<strong>nmake</strong>，Linux 里的 <strong>GNU make</strong>，本章节主要讲解 <strong>GNU make</strong> 相关的内容。开始进一步讲解之前，需要先了解一下 C/C++ 源代码的编译过程，具体内容可参见笔者的<a href="/Linux/GCC.html#编译步骤">《基于 Linux 的 GCC 与 GDB 应用调试》 - 编译步骤</a>一文：</p>
+<p><img src="/Linux/CMake/GNU-Make/0.png"></p>
+<ol type="1">
+<li><strong>预处理 Preprocessing</strong>：解析各种预处理命令，包括头文件包含、宏定义的扩展、条件编译的选择等；</li>
+<li><strong>编译 Compiling</strong>：对预处理之后的源文件进行翻译转换，产生由机器语言描述的汇编文件；</li>
+<li><strong>汇编 Assembly</strong>：将汇编代码转译成为机器码；</li>
+<li><strong>链接 Link</strong>：将机器码中的各种符号引用与定义转换为可执行文件内的相应信息（例如虚拟地址）；</li>
+</ol>
+<h2 id="autoconf">Autoconf</h2>
+<p><a href="http://www.gnu.org/software/autoconf/" target="_blank" rel="noopener">autoconf</a></p>
+<h2 id="automake">Automake</h2>
+<p><a href="http://www.gnu.org/software/automake/" target="_blank" rel="noopener">automake</a></p>
+<h2 id="cmake">CMake</h2>
 <p>CMake 教程提供了一个循序渐进的指南，涵盖了常见的构建系统问题。本文涉及的示例代码可以在 <a href="https://cmake.org/download/" target="_blank" rel="noopener">CMake 源码树</a>的<code>Help/guide/tutorial</code>目录下找到，每个步骤都拥有其相应的子目录，循序渐进直至提供完整的解决方案。</p>
 <h3 id="基本出发点">基本出发点</h3>
 <p>最为基础的项目是从源代码构建可执行文件，这样只需要一个 3 行的<code>CMakeLists.txt</code>文件，这将是整个教程的起点。在【Step1】目录当中创建如下<code>CMakeLists.txt</code>文件：</p>
@@ -309,9 +316,7 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION <span class="number">3.10</span>)</span><br><span class="line"></span><br><span class="line"># 设置项目名称与版本</span><br><span class="line">project(Tutorial VERSION <span class="number">1.0</span>)</span><br><span class="line"></span><br><span class="line"># 指定 C++ 标准</span><br><span class="line"><span class="built_in">set</span>(CMAKE_CXX_STANDARD <span class="number">11</span>)</span><br><span class="line"><span class="built_in">set</span>(CMAKE_CXX_STANDARD_REQUIRED True)</span><br></pre></td></tr></table></figure>
 <h4 id="编译与测试">编译与测试</h4>
 <p>从命令行导航到 CMake 源代码树的 Help/guide/tutorial 目录，并运行以下命令:</p>
-<h2 id="makefile">makefile</h2>
-<h2 id="automake">automake</h2>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="cmake-gui">CMake GUI</h2>
 
     </div>
 
@@ -348,12 +353,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Linux/Native.html" rel="prev" title="Linux C 应用程序开发进阶">
-      <i class="fa fa-chevron-left"></i> Linux C 应用程序开发进阶
+    <a href="/Embedded/RaspberryPi.html" rel="prev" title="玩转 Raspberry Pi 4B 开源硬件">
+      <i class="fa fa-chevron-left"></i> 玩转 Raspberry Pi 4B 开源硬件
     </a></div>
       <div class="post-nav-item">
-    <a href="/Linux/Command.html" rel="next" title="Linux 命令行必知必会">
-      Linux 命令行必知必会 <i class="fa fa-chevron-right"></i>
+    <a href="/Linux/Command.html" rel="next" title="Linux 常用命令行速查手册">
+      Linux 常用命令行速查手册 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -413,7 +418,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cmake"><span class="nav-number">1.</span> <span class="nav-text">cmake</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本出发点"><span class="nav-number">1.1.</span> <span class="nav-text">基本出发点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加版本号和配置头文件"><span class="nav-number">1.1.1.</span> <span class="nav-text">添加版本号和配置头文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定-c-标准"><span class="nav-number">1.1.2.</span> <span class="nav-text">指定 C++ 标准</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编译与测试"><span class="nav-number">1.1.3.</span> <span class="nav-text">编译与测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#makefile"><span class="nav-number">2.</span> <span class="nav-text">makefile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#automake"><span class="nav-number">3.</span> <span class="nav-text">automake</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gnu-make"><span class="nav-number">1.</span> <span class="nav-text">GNU Make</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#autoconf"><span class="nav-number">2.</span> <span class="nav-text">Autoconf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#automake"><span class="nav-number">3.</span> <span class="nav-text">Automake</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cmake"><span class="nav-number">4.</span> <span class="nav-text">CMake</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本出发点"><span class="nav-number">4.1.</span> <span class="nav-text">基本出发点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加版本号和配置头文件"><span class="nav-number">4.1.1.</span> <span class="nav-text">添加版本号和配置头文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定-c-标准"><span class="nav-number">4.1.2.</span> <span class="nav-text">指定 C++ 标准</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编译与测试"><span class="nav-number">4.1.3.</span> <span class="nav-text">编译与测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cmake-gui"><span class="nav-number">5.</span> <span class="nav-text">CMake GUI</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -509,7 +514,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:42</span>
+    <span title="站点阅读时长">22:43</span>
 </div>
 
         
