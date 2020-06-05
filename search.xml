@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>J-Link 仿真器固件恢复小记</title>
-    <url>/Embedded/JLink.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《模拟电子技术》学习笔记</title>
     <url>/Electronics/Analog.html</url>
     <content><![CDATA[]]></content>
@@ -20,17 +9,6 @@
       </categories>
       <tags>
         <tag>Analog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
-    <url>/Embedded/NucleoF767ZI.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -45,8 +23,41 @@
       </tags>
   </entry>
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Altium Designer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>J-Link 仿真器固件恢复小记</title>
+    <url>/Embedded/JLink.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
     <url>/Embedded/Mini2440.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
+    <url>/Embedded/NucleoF767ZI.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -78,6 +89,17 @@
       </tags>
   </entry>
   <entry>
+    <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
+    <url>/Embedded/STM32F103ZET6.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象的 C++ 11 程序设计语言</title>
     <url>/Linux/C++.html</url>
     <content><![CDATA[]]></content>
@@ -97,6 +119,17 @@
       </categories>
       <tags>
         <tag>Qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 常用命令行速查手册</title>
+    <url>/Linux/Command.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
       </tags>
   </entry>
   <entry>
@@ -155,28 +188,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <url>/Linux/Command.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
-    <url>/Embedded/STM32F103ZET6.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>常用初等数学图形与公式汇总</title>
     <url>/Math/Elementary.html</url>
     <content><![CDATA[]]></content>
@@ -185,17 +196,6 @@
       </categories>
       <tags>
         <tag>Elementary</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Altium Designer</tag>
       </tags>
   </entry>
   <entry>
@@ -265,17 +265,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 2.1 典型概念与布局详解</title>
-    <url>/Web/CSS2.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为什么认为 Backbone 是现代化前端框架的基石</title>
     <url>/Web/Backbone.html</url>
     <content><![CDATA[]]></content>
@@ -284,6 +273,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS 2.1 典型概念与布局详解</title>
+    <url>/Web/CSS2.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -320,17 +320,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <url>/Web/Electron.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Flux 数据流两三事儿</title>
     <url>/Web/Flux.html</url>
     <content><![CDATA[]]></content>
@@ -339,6 +328,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Electron 打造跨平台桌面应用</title>
+    <url>/Web/Electron.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -419,17 +419,6 @@
       </tags>
   </entry>
   <entry>
-    <title>电路分析涉及的理论与原理</title>
-    <url>/Electronics/Analysis.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
     <url>/Embedded/Arduino.html</url>
     <content><![CDATA[]]></content>
@@ -449,6 +438,17 @@
       </categories>
       <tags>
         <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析涉及的理论与原理</title>
+    <url>/Electronics/Analysis.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Analysis</tag>
       </tags>
   </entry>
   <entry>
@@ -485,6 +485,28 @@
       </tags>
   </entry>
   <entry>
+    <title>言简意赅 の Python3</title>
+    <url>/Web/Python.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <url>/Web/Scss.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>React 16.6.x 全新全译</title>
     <url>/Web/React.html</url>
     <content><![CDATA[]]></content>
@@ -504,28 +526,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <url>/Web/Scss.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>言简意赅 の Python3</title>
-    <url>/Web/Python.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
