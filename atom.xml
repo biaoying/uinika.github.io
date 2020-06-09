@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-06-05T14:04:46.672Z</updated>
+  <updated>2020-06-09T14:32:12.210Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
+    <link href="https://uinika.github.io/Linux/Qt-Widgets.html"/>
+    <id>https://uinika.github.io/Linux/Qt-Widgets.html</id>
+    <published>2020-06-09T14:32:12.210Z</published>
+    <updated>2020-06-09T14:32:12.210Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.qt.io/offline-installers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt 5.14.2&lt;/strong&gt;&lt;/a&gt; 是跨平台应用开发框架 Qt 的最新版本，除了采用基于 &lt;strong&gt;C++11&lt;/strong&gt; 的经典 &lt;a href=&quot;https://doc.qt.io/qt-5/qtwidgets-index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt Widgets&lt;/strong&gt;&lt;/a&gt; 进行桌面应用程序开发以外，还支持通过 &lt;strong&gt;Qt Quick&lt;/strong&gt; 快速开发适用于移动端设备的用户界面，因为 Qt 5 底层图形渲染引擎基于 GPU 硬件加速，所以其能够保持与原生 &lt;strong&gt;C++&lt;/strong&gt; 近乎等同的运行效率。笔者计划通过两篇文章分别对这 2 种技术进行介绍，但是无论如何，在传统跨平台桌面应用开发领域，&lt;strong&gt;Qt Widgets&lt;/strong&gt; 依然是 Qt5 最为基础与核心的内容。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Linux/Qt-Widgets/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;虽然 Qt 6 发布在即，但是官方声明将会依然保持 API 的兼容与稳定性，因此本文依然基于当前最新的 Qt5 稳定版本撰写。全文将会分别对 &lt;strong&gt;Qt Widgets&lt;/strong&gt; 当中使用较为频繁的&lt;code&gt;窗口部件&lt;/code&gt;、&lt;code&gt;布局管理&lt;/code&gt;、&lt;code&gt;应用主窗口&lt;/code&gt;、&lt;code&gt;事件系统&lt;/code&gt;、&lt;code&gt;对象模型&lt;/code&gt;、&lt;code&gt;风格与样式&lt;/code&gt;、&lt;code&gt;国际化&lt;/code&gt;等部分内容进行深入介绍，同时展示完善的示例代码以及程序运行效果，并结合&lt;a href=&quot;./embedded/Qt-Quick.html&quot;&gt;《QtQuick 篇》&lt;/a&gt;一文讲解混合编程相关的技术。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Qt" scheme="https://uinika.github.io/categories/Qt/"/>
+    
+    
+      <category term="Desktop" scheme="https://uinika.github.io/tags/Desktop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
+    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
+    <published>2020-06-09T14:32:12.194Z</published>
+    <updated>2020-06-09T14:32:12.194Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
   
   <entry>
     <title>从 GNU Make 到 CMake 快速入门</title>
@@ -67,7 +113,7 @@
     <link href="https://uinika.github.io/Linux/Command.html"/>
     <id>https://uinika.github.io/Linux/Command.html</id>
     <published>2020-06-02T11:58:12.879Z</published>
-    <updated>2020-06-02T16:22:03.081Z</updated>
+    <updated>2020-06-06T07:32:18.099Z</updated>
     
     <summary type="html">
     
@@ -82,29 +128,6 @@
     
     
       <category term="Embedded" scheme="https://uinika.github.io/tags/Embedded/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
-    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
-    <published>2020-06-02T11:58:12.817Z</published>
-    <updated>2020-06-02T11:58:12.848Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
-    
-    
-      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
     
   </entry>
   
@@ -316,29 +339,6 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -385,6 +385,29 @@
   </entry>
   
   <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript 6 简明语法书</title>
     <link href="https://uinika.github.io/Web/Javascript.html"/>
     <id>https://uinika.github.io/Web/Javascript.html</id>
@@ -396,29 +419,6 @@
       &lt;p&gt;JavaScript 遵循了 ECMAScript 语言规范，2012 年之后的现代浏览器都完整支持 &lt;strong&gt;ECMAScript 5.1&lt;/strong&gt; 标准。2015 年 6 月 17 日，ECMA 国际组织发布了 &lt;strong&gt;ECMAScript 6&lt;/strong&gt; 标准，官方称为 &lt;strong&gt;ECMAScript 2015&lt;/strong&gt;（俗称为 &lt;strong&gt;ES6&lt;/strong&gt;），从此 ECMAScript 每年发布一次新标准，&lt;strong&gt;本文覆盖了当前最新 ECMAScript2017 草案中的新特性&lt;/strong&gt;。示例代码和术语定义参考了《JavaScrip 高级程序设计》，但是该书成文于 ES6 发布之前，因此从&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Mozilla JavaScript Reference》&lt;/a&gt;摘取了部分内容作为补充。出于查阅与核对的方便，本文目录结构与 Mozilla 官方英文文档保持一致。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Web/Javascript/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;JavaScript 标准化工作由&lt;strong&gt;ECMA&lt;/strong&gt;（&lt;em&gt;European Computer Manufacturers Association&lt;/em&gt;）国际组织负责，JavaScript 的语言标准被称为&lt;strong&gt;ECMAScript&lt;/strong&gt;，企业遵循该标准开发各自的 JavaScript 实现，例如 Firefox 的&lt;code&gt;SpiderMonkey&lt;/code&gt;或者 Chrome 中的&lt;code&gt;V8&lt;/code&gt;解析引擎（&lt;em&gt;ECMAScript 的规范文档主要针对解析引擎的开发人员，而非 JavaScript 脚本的编写人员&lt;/em&gt;）。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flux 数据流两三事儿</title>
-    <link href="https://uinika.github.io/Web/Flux.html"/>
-    <id>https://uinika.github.io/Web/Flux.html</id>
-    <published>2020-05-21T13:39:03.829Z</published>
-    <updated>2020-05-21T13:39:03.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://facebook.github.io/flux/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flux&lt;/a&gt;是由 &lt;strong&gt;Facebook&lt;/strong&gt; 在 2014 年 7 月提出的一种 React 应用体系架构，主要用于解决多层级组件之间数据传递以及状态管理的问题。并由此派生出了&lt;a href=&quot;https://github.com/reflux/refluxjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reflux&lt;/a&gt;、&lt;a href=&quot;http://redux.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux&lt;/a&gt;、&lt;a href=&quot;https://mobx.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MobX&lt;/a&gt;等一系列单向数据流框架。为 Web 前端页面实现组件化拆分之后，组件间的通信与协同机制提供了一套较为完善的方法学。其核心理念在于将所有应用状态放置在&lt;code&gt;Store&lt;/code&gt;内进行统一管理，视图层组件只能通过触发&lt;code&gt;Action&lt;/code&gt;修改&lt;code&gt;Store&lt;/code&gt;中的应用状态。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Flux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文首先系统的概括 Facebook 官方的&lt;strong&gt;Flux&lt;/strong&gt;以及&lt;strong&gt;单向数据流&lt;/strong&gt;思想，然后遵循近几年&lt;strong&gt;Flux 衍生框架&lt;/strong&gt;的发展历程，逐步进行概括性的分析与比较，并顺带介绍了 Vue 技术栈当中的&lt;strong&gt;类 Flux 框架&lt;/strong&gt; &lt;a href=&quot;https://vuex.vuejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VueX&lt;/a&gt;，最后，由于通常将&lt;code&gt;Action&lt;/code&gt;视为 &lt;strong&gt;Flux&lt;/strong&gt; 工作流的核心与起点，本文还对&lt;a href=&quot;https://github.com/redux-utilities/flux-standard-action&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Flux Standard Action》&lt;/a&gt;自述文档进行了翻译，以期更为全面的展现 Flux 生态的演进过程。&lt;/p&gt;
     
     </summary>
     
@@ -454,17 +454,17 @@
   </entry>
   
   <entry>
-    <title>CSS 3.0 新增特性集锦</title>
-    <link href="https://uinika.github.io/Web/CSS3.html"/>
-    <id>https://uinika.github.io/Web/CSS3.html</id>
-    <published>2020-05-21T13:39:03.814Z</published>
-    <updated>2020-05-21T13:39:03.814Z</updated>
+    <title>Flux 数据流两三事儿</title>
+    <link href="https://uinika.github.io/Web/Flux.html"/>
+    <id>https://uinika.github.io/Web/Flux.html</id>
+    <published>2020-05-21T13:39:03.829Z</published>
+    <updated>2020-05-21T13:39:03.829Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;现代 CSS 开发当中所面临的挑战，已不在于如何绕过各类转瞬即逝的浏览器兼容性 bug，而在于保证灵活、轻量、易维护的前提下，尽可能符合标准的将 CSS 特性转化为网页中的各种交互创意&lt;/strong&gt;。阅读 W3C 工作组成员&lt;a href=&quot;https://github.com/LeaVerou&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Lea Verou&lt;/a&gt;的&lt;strong&gt;《CSS 揭秘》&lt;/strong&gt;之后，开始重新审视前端重度交互下 CSS 提供的各类最新特性，在系统的参考 Mozilla 的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CSS Reference&lt;/a&gt;之后，结合&lt;a href=&quot;https://www.w3.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;W3C 规范&lt;/a&gt;对常用 CSS 3.0 特性进行逐步的归纳与说明。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/CSS3/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;由于 CSS 2.1 以后的规范越来越庞大，因而 W3C 工作组将这些规范打散到不同的模块，每个模块都独立在进行版本更新。首先所有 CSS2.1 特性模块都被升级至&lt;strong&gt;3&lt;/strong&gt;作为版本号，其次全新的功能模块将从版本号&lt;em&gt;1&lt;/em&gt;开始定义。因此 CSS 3.0 并非真正意义上的 W3C 规范，准确的描述应是&lt;strong&gt;CSS 标准规范第 3 版与部分版本号为 1 的新规范的集合&lt;/strong&gt;。因为目前 CSS 规范的各个模块版本更新速度不尽相同，所以后续将很难再给予准确的版本号描述。&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;https://facebook.github.io/flux/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flux&lt;/a&gt;是由 &lt;strong&gt;Facebook&lt;/strong&gt; 在 2014 年 7 月提出的一种 React 应用体系架构，主要用于解决多层级组件之间数据传递以及状态管理的问题。并由此派生出了&lt;a href=&quot;https://github.com/reflux/refluxjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reflux&lt;/a&gt;、&lt;a href=&quot;http://redux.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux&lt;/a&gt;、&lt;a href=&quot;https://mobx.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MobX&lt;/a&gt;等一系列单向数据流框架。为 Web 前端页面实现组件化拆分之后，组件间的通信与协同机制提供了一套较为完善的方法学。其核心理念在于将所有应用状态放置在&lt;code&gt;Store&lt;/code&gt;内进行统一管理，视图层组件只能通过触发&lt;code&gt;Action&lt;/code&gt;修改&lt;code&gt;Store&lt;/code&gt;中的应用状态。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Flux/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文首先系统的概括 Facebook 官方的&lt;strong&gt;Flux&lt;/strong&gt;以及&lt;strong&gt;单向数据流&lt;/strong&gt;思想，然后遵循近几年&lt;strong&gt;Flux 衍生框架&lt;/strong&gt;的发展历程，逐步进行概括性的分析与比较，并顺带介绍了 Vue 技术栈当中的&lt;strong&gt;类 Flux 框架&lt;/strong&gt; &lt;a href=&quot;https://vuex.vuejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VueX&lt;/a&gt;，最后，由于通常将&lt;code&gt;Action&lt;/code&gt;视为 &lt;strong&gt;Flux&lt;/strong&gt; 工作流的核心与起点，本文还对&lt;a href=&quot;https://github.com/redux-utilities/flux-standard-action&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Flux Standard Action》&lt;/a&gt;自述文档进行了翻译，以期更为全面的展现 Flux 生态的演进过程。&lt;/p&gt;
     
     </summary>
     
@@ -472,7 +472,7 @@
       <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
     
     
-      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   

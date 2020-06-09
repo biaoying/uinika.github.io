@@ -55,8 +55,8 @@
 <meta property="og:image" content="https://uinika.github.io/Embedded/RaspberryPi/wiringPi.jpg">
 <meta property="og:image" content="https://uinika.github.io/Embedded/RaspberryPi/opencv/raspi-config-1.png">
 <meta property="og:image" content="https://uinika.github.io/Embedded/RaspberryPi/opencv/raspi-config-2.png">
-<meta property="article:published_time" content="2020-06-02T11:58:12.817Z">
-<meta property="article:modified_time" content="2020-06-02T11:58:12.848Z">
+<meta property="article:published_time" content="2020-06-09T14:32:12.194Z">
+<meta property="article:modified_time" content="2020-06-09T14:32:12.194Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="MCU">
 <meta name="twitter:card" content="summary">
@@ -253,7 +253,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-06-02 19:58:12" itemprop="dateCreated datePublished" datetime="2020-06-02T19:58:12+08:00">2020-06-02</time>
+              <time title="创建时间：2020-06-09 22:32:12" itemprop="dateCreated datePublished" datetime="2020-06-09T22:32:12+08:00">2020-06-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -767,7 +767,7 @@
 <p><img src="/Embedded/RaspberryPi/wiringPi.jpg"></p>
 <h2 id="安装-dlib-face_recognition">安装 dlib &amp; face_recognition</h2>
 <p>使用如下命令安装所需的依赖库。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜ sudo apt-get install build-essential cmake gfortran git wget curl graphicsmagick libgraphicsmagick1-dev libatlas-dev libavcodec-dev libavformat-dev libboost-all-dev libgtk2.0-dev libjpeg-dev liblapack-dev libswscale-dev pkg-config python3-dev python3-numpy python3-pip zip</span><br><span class="line"></span><br><span class="line">➜ sudo apt-get clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">➜ sudo apt-get install build-essential cmake gfortran git wget curl graphicsmagick libgraphicsmagick1-dev libatlas-dev libavcodec-dev libavformat-dev  libgtk2.0-dev libjpeg-dev liblapack-dev libswscale-dev pkg-config python3-dev python3-numpy python3-pip zip</span><br><span class="line"></span><br><span class="line">➜ sudo apt-get install libboost-all-dev   <span class="comment"># 必须单独安装</span></span><br><span class="line"></span><br><span class="line">➜ sudo apt-get clean</span><br></pre></td></tr></table></figure>
 <p>如果你正在使用相机，还需要安装 Python 库<code>picamera</code>以及数组支持。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜ sudo apt-get install python3-picamera</span><br><span class="line">➜ sudo pip3 install --upgrade picamera[array]</span><br></pre></td></tr></table></figure>
 <p>临时设置更大的<code>swap</code>文件尺寸，防止编译<code>dlib</code>编译时由于存储空间有限而导致失败。</p>
@@ -780,7 +780,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">➜ sudo vim /etc/dphys-swapfile</span><br><span class="line"></span><br><span class="line">&lt; change CONF_SWAPSIZE=1024 to CONF_SWAPSIZE=100 &gt;</span><br><span class="line"></span><br><span class="line">➜ sudo /etc/init.d/dphys-swapfile restart</span><br></pre></td></tr></table></figure>
 <p>下载<code>face_recognition</code>示例代码：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜ git <span class="built_in">clone</span> --single-branch https://github.com/ageitgey/face_recognition.git</span><br><span class="line">➜ <span class="built_in">cd</span> ./face_recognition/examples</span><br><span class="line">➜ python3 facerec_on_raspberry_pi.py</span><br></pre></td></tr></table></figure>
-<p>如果需要使用桌面 GUI，那么还需要安装 <strong>PIXEL</strong>：</p>
+<blockquote>
+<p><strong>注意</strong>：执行<code>example</code>下的示例代码之前，如果使用的是板载 <strong>CSI</strong> 接口摄像头，则必须执行<code>sudo raspi-config</code>打开树莓派软件配置工具，依次选择【Interfacing Options -&gt; P1 Camera】使能该摄像头。</p>
+</blockquote>
+<p>如果需要使用桌面 GUI，则还需要再安装 <strong>PIXEL</strong>：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">➜ sudo apt-get install --no-install-recommends xserver-xorg xinit raspberrypi-ui-mods</span><br></pre></td></tr></table></figure>
 <h2 id="安装-opencv-3.4.9">安装 OpenCV 3.4.9</h2>
 <p>本小节详细记录了在 <strong>树莓派 4B</strong> 上源码编译安装<code>opencv 3.4.9</code>和<code>opencv_contrib-3.4.9</code>的完整步骤。</p>
@@ -808,7 +811,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">➜ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/<span class="built_in">local</span> -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=/home/pi/Downloads/opencv_contrib-3.4.9/modules -D BUILD_EXAMPLES=ON -D WITH_LIBV4L=ON PYTHON3_EXECUTABLE=/usr/bin/python3.5 PYTHON_INCLUDE_DIR=/usr/include/python3.5 PYTHON_LIBRARY=/usr/lib/arm-linux-gnueabihf/libpython3.5m.so PYTHON3_NUMPY_INCLUDE_DIRS=/home/pi/.<span class="built_in">local</span>/lib/python3.5/site-packages/numpy/core/include ..</span><br></pre></td></tr></table></figure>
 <h3 id="开始编译">开始编译</h3>
 <p>执行 <code>make</code> 命令对源码包进行编译：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜ <span class="built_in">cd</span> /home/pi/Downloads/opencv-3.4.9/build</span><br><span class="line">➜ make</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜ <span class="built_in">cd</span> /home/pi/Downloads/opencv-3.4.9/build</span><br><span class="line">➜ sudo make</span><br></pre></td></tr></table></figure>
 <p>执行 <code>make install</code> 安装编译程序：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">➜ sudo make install</span><br></pre></td></tr></table></figure>
 <h3 id="解决-.i-文件依赖">解决 .i 文件依赖</h3>
@@ -862,12 +865,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Linux/C++.html" rel="prev" title="面向对象的 C++ 11 程序设计语言">
-      <i class="fa fa-chevron-left"></i> 面向对象的 C++ 11 程序设计语言
+    <a href="/Linux/CMake.html" rel="prev" title="从 GNU Make 到 CMake 快速入门">
+      <i class="fa fa-chevron-left"></i> 从 GNU Make 到 CMake 快速入门
     </a></div>
       <div class="post-nav-item">
-    <a href="/Linux/Command.html" rel="next" title="Linux 常用命令行速查手册">
-      Linux 常用命令行速查手册 <i class="fa fa-chevron-right"></i>
+    <a href="/Linux/Qt-Widgets.html" rel="next" title="Qt 5 桌面应用程序开发指南 - QtWidgets 篇">
+      Qt 5 桌面应用程序开发指南 - QtWidgets 篇 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -1023,7 +1026,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:47</span>
+    <span title="站点阅读时长">22:48</span>
 </div>
 
         
