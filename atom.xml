@@ -44,7 +44,7 @@
     <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
     <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
     <published>2020-06-10T13:08:45.069Z</published>
-    <updated>2020-06-10T13:08:45.069Z</updated>
+    <updated>2020-06-10T15:22:31.110Z</updated>
     
     <summary type="html">
     
@@ -178,29 +178,6 @@
   </entry>
   
   <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
-    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Webpack 4 核心剖析</title>
     <link href="https://uinika.github.io/Web/Webpack.html"/>
     <id>https://uinika.github.io/Web/Webpack.html</id>
@@ -220,6 +197,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 工作环境 Config 札记</title>
+    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
+    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
+    <published>2020-05-21T13:39:03.892Z</published>
+    <updated>2020-05-21T13:39:03.892Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
+    
+    
+      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
     
   </entry>
   
@@ -339,6 +339,29 @@
   </entry>
   
   <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -381,29 +404,6 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
