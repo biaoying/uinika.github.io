@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-06-12T15:03:45.366Z</updated>
+  <updated>2020-06-16T18:21:20.645Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android 物联网应用开发实例</title>
+    <link href="https://uinika.github.io/Embedded/Android.html"/>
+    <id>https://uinika.github.io/Embedded/Android.html</id>
+    <published>2020-06-16T13:57:28.900Z</published>
+    <updated>2020-06-16T18:21:20.645Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://developer.android.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; 可以采用 Kotlin、Java、C++ 语言编写应用程序，&lt;a href=&quot;https://developer.android.google.cn/reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android SDK&lt;/a&gt; 会将这些代码连同相应的数据和资源文件编译为 Android 软件包，即一个带有&lt;code&gt;.apk&lt;/code&gt;后缀的归档文件，也就是 Android 应用程序的安装文件。本质上 Android 系统是一种多用户的 Linux 系统，每个应用程序都运行在独立的 Linux 用户 &lt;strong&gt;ID&lt;/strong&gt; 和&lt;strong&gt;进程&lt;/strong&gt;之下，从而为每个 Android 应用都提供了独立的&lt;strong&gt;安全沙盒&lt;/strong&gt;，体现了最小权限的设计原则。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/Android/logo.png&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="Mobile" scheme="https://uinika.github.io/tags/Mobile/"/>
+    
+  </entry>
   
   <entry>
     <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
@@ -339,29 +361,6 @@
   </entry>
   
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <link href="https://uinika.github.io/Web/JQuery.html"/>
-    <id>https://uinika.github.io/Web/JQuery.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -381,6 +380,29 @@
     
     
       <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <link href="https://uinika.github.io/Web/JQuery.html"/>
+    <id>https://uinika.github.io/Web/JQuery.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -450,29 +472,6 @@
     
     
       <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flux 数据流两三事儿</title>
-    <link href="https://uinika.github.io/Web/Flux.html"/>
-    <id>https://uinika.github.io/Web/Flux.html</id>
-    <published>2020-05-21T13:39:03.829Z</published>
-    <updated>2020-05-21T13:39:03.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://facebook.github.io/flux/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Flux&lt;/a&gt;是由 &lt;strong&gt;Facebook&lt;/strong&gt; 在 2014 年 7 月提出的一种 React 应用体系架构，主要用于解决多层级组件之间数据传递以及状态管理的问题。并由此派生出了&lt;a href=&quot;https://github.com/reflux/refluxjs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reflux&lt;/a&gt;、&lt;a href=&quot;http://redux.js.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Redux&lt;/a&gt;、&lt;a href=&quot;https://mobx.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MobX&lt;/a&gt;等一系列单向数据流框架。为 Web 前端页面实现组件化拆分之后，组件间的通信与协同机制提供了一套较为完善的方法学。其核心理念在于将所有应用状态放置在&lt;code&gt;Store&lt;/code&gt;内进行统一管理，视图层组件只能通过触发&lt;code&gt;Action&lt;/code&gt;修改&lt;code&gt;Store&lt;/code&gt;中的应用状态。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Flux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文首先系统的概括 Facebook 官方的&lt;strong&gt;Flux&lt;/strong&gt;以及&lt;strong&gt;单向数据流&lt;/strong&gt;思想，然后遵循近几年&lt;strong&gt;Flux 衍生框架&lt;/strong&gt;的发展历程，逐步进行概括性的分析与比较，并顺带介绍了 Vue 技术栈当中的&lt;strong&gt;类 Flux 框架&lt;/strong&gt; &lt;a href=&quot;https://vuex.vuejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VueX&lt;/a&gt;，最后，由于通常将&lt;code&gt;Action&lt;/code&gt;视为 &lt;strong&gt;Flux&lt;/strong&gt; 工作流的核心与起点，本文还对&lt;a href=&quot;https://github.com/redux-utilities/flux-standard-action&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Flux Standard Action》&lt;/a&gt;自述文档进行了翻译，以期更为全面的展现 Flux 生态的演进过程。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
