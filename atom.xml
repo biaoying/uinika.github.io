@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-06-16T18:21:20.645Z</updated>
+  <updated>2020-06-18T17:32:47.681Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <title>Android 物联网应用开发实例</title>
     <link href="https://uinika.github.io/Embedded/Android.html"/>
     <id>https://uinika.github.io/Embedded/Android.html</id>
-    <published>2020-06-16T13:57:28.900Z</published>
-    <updated>2020-06-16T18:21:20.645Z</updated>
+    <published>2020-06-18T14:03:28.245Z</published>
+    <updated>2020-06-18T17:32:47.681Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;https://developer.android.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; 可以采用 Kotlin、Java、C++ 语言编写应用程序，&lt;a href=&quot;https://developer.android.google.cn/reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android SDK&lt;/a&gt; 会将这些代码连同相应的数据和资源文件编译为 Android 软件包，即一个带有&lt;code&gt;.apk&lt;/code&gt;后缀的归档文件，也就是 Android 应用程序的安装文件。本质上 Android 系统是一种多用户的 Linux 系统，每个应用程序都运行在独立的 Linux 用户 &lt;strong&gt;ID&lt;/strong&gt; 和&lt;strong&gt;进程&lt;/strong&gt;之下，从而为每个 Android 应用都提供了独立的&lt;strong&gt;安全沙盒&lt;/strong&gt;，体现了最小权限的设计原则。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Embedded/Android/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;鉴于 Google 官方提供了完善的文档，本文并不过多过深的涉及 Android SDK 开发的具体知识细节，仅会在简单介绍 Android 开发当中的一些基本概念之后，着重分析&lt;strong&gt;经典/低功耗蓝牙&lt;/strong&gt;、&lt;strong&gt;NFC&lt;/strong&gt;、&lt;strong&gt;WIFI&lt;/strong&gt;、&lt;strong&gt;指纹识别&lt;/strong&gt;、&lt;strong&gt;5G&lt;/strong&gt; 等硬件外设的通信协议概念以及相应的实现步骤，并且展示一些比较典型的应用场景与示例代码，从而为读者在进行物联网相关项目的开发时，在移动设备应用控制端提供即有的现成经验。&lt;/p&gt;
     
     </summary>
     
@@ -384,29 +385,6 @@
   </entry>
   
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <link href="https://uinika.github.io/Web/JQuery.html"/>
-    <id>https://uinika.github.io/Web/JQuery.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>概览 HTML 5 语义化标签</title>
     <link href="https://uinika.github.io/Web/Html.html"/>
     <id>https://uinika.github.io/Web/Html.html</id>
@@ -426,6 +404,29 @@
     
     
       <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <link href="https://uinika.github.io/Web/JQuery.html"/>
+    <id>https://uinika.github.io/Web/JQuery.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
