@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-06-23T16:21:56.432Z</updated>
+  <updated>2020-07-10T14:02:19.122Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,25 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Android 物联网应用开发实例</title>
-    <link href="https://uinika.github.io/Embedded/Android.html"/>
-    <id>https://uinika.github.io/Embedded/Android.html</id>
-    <published>2020-06-23T15:23:07.155Z</published>
-    <updated>2020-06-23T16:21:56.432Z</updated>
+    <title>Bash Shell 脚本编程实践</title>
+    <link href="https://uinika.github.io/Linux/Shell.html"/>
+    <id>https://uinika.github.io/Linux/Shell.html</id>
+    <published>2020-07-10T14:02:19.122Z</published>
+    <updated>2020-07-10T14:02:19.122Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://developer.android.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; 可以采用 Kotlin、Java、C++ 语言编写应用程序，&lt;a href=&quot;https://developer.android.google.cn/reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android SDK&lt;/a&gt; 会将这些代码连同相应的数据和资源文件编译为 Android 软件包，即一个带有&lt;code&gt;.apk&lt;/code&gt;后缀的归档文件，也就是 Android 应用程序的安装文件。本质上 Android 系统是一种多用户的 Linux 系统，每个应用程序都运行在独立的 Linux 用户 &lt;strong&gt;ID&lt;/strong&gt; 和&lt;strong&gt;进程&lt;/strong&gt;之下，从而为每个 Android 应用都提供了独立的&lt;strong&gt;安全沙盒&lt;/strong&gt;，体现了最小权限的设计原则。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/Android/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;鉴于 Google 官方提供了完善的文档，本文并不过多过深的涉及 Android SDK 开发的具体知识细节，仅会在简单介绍 Android 开发当中的一些基本概念之后，着重分析&lt;strong&gt;经典/低功耗蓝牙&lt;/strong&gt;、&lt;strong&gt;NFC&lt;/strong&gt;、&lt;strong&gt;WIFI&lt;/strong&gt;、&lt;strong&gt;指纹识别&lt;/strong&gt;、&lt;strong&gt;5G&lt;/strong&gt; 等硬件外设的通信协议概念以及相应的实现步骤，并且展示一些比较典型的应用场景与示例代码，从而为读者在进行物联网相关项目的开发时，在移动设备应用控制端提供即有的现成经验。&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Shell&lt;/strong&gt; 既是一套&lt;strong&gt;命令行工具&lt;/strong&gt;（交互式地解释和执行用户输入的命令）也是一种&lt;strong&gt;脚本设计语言&lt;/strong&gt;（定义有变量与参数，并提供了控制、循环、分支结构）。&lt;a href=&quot;https://tiswww.case.edu/php/chet/bash/bashtop.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Bash Shell&lt;/strong&gt;&lt;/a&gt; 是由 GUN 官方项目提供的 Shell 解释器，名称源自于 &lt;strong&gt;B&lt;/strong&gt;ourne &lt;strong&gt;A&lt;/strong&gt;gain &lt;strong&gt;SH&lt;/strong&gt;ell 的英文缩写，整合了传统 &lt;strong&gt;Korn Shell&lt;/strong&gt; 以及 &lt;strong&gt;C Shell&lt;/strong&gt; 的有效特性，并且尽量遵循&lt;code&gt;IEEE POSIX P1003.2/ISO 9945.2&lt;/code&gt;规范，同时在编程与交互使用方面提供了大量的功能改进，因而在提供丰富功能的基础之上，展现出了良好的兼容特性，大多数&lt;code&gt;.sh&lt;/code&gt;脚本可以无需移植修改即可交由 Bash Shell 来执行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Linux/Shell/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;当用户登入任意一款 Linux 操作系统时，初始化程序&lt;code&gt;init&lt;/code&gt;都将会为用户启动一个&lt;strong&gt;Bash Shell&lt;/strong&gt;命令解析器，其即可以用于解析命令行输入并与内核进行交互，也可以作为高效的脚本编程语言，运用其提供的变量、参数、循环、分支等编程语法特性，完成一些批量的自动化的任务处理工作，本文将会围绕 Bash Shell 的脚本编程特性，加以进行详细的分析、说明与示例。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+      <category term="Note" scheme="https://uinika.github.io/categories/Note/"/>
     
     
-      <category term="Mobile" scheme="https://uinika.github.io/tags/Mobile/"/>
+      <category term="Linux" scheme="https://uinika.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -43,8 +43,8 @@
     <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
     <link href="https://uinika.github.io/Linux/Qt-Widgets.html"/>
     <id>https://uinika.github.io/Linux/Qt-Widgets.html</id>
-    <published>2020-06-12T15:03:45.355Z</published>
-    <updated>2020-06-12T15:03:45.366Z</updated>
+    <published>2020-07-10T14:02:19.106Z</published>
+    <updated>2020-07-10T14:02:19.122Z</updated>
     
     <summary type="html">
     
@@ -66,8 +66,8 @@
     <title>玩转 Raspberry Pi 4B 开源硬件</title>
     <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
     <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
-    <published>2020-06-10T13:08:45.069Z</published>
-    <updated>2020-06-10T15:22:31.110Z</updated>
+    <published>2020-07-10T14:02:19.059Z</published>
+    <updated>2020-07-10T14:02:19.091Z</updated>
     
     <summary type="html">
     
@@ -82,6 +82,29 @@
     
     
       <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android 物联网应用开发实例</title>
+    <link href="https://uinika.github.io/Embedded/Android.html"/>
+    <id>https://uinika.github.io/Embedded/Android.html</id>
+    <published>2020-06-23T15:23:07.155Z</published>
+    <updated>2020-06-23T16:21:56.432Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://developer.android.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; 可以采用 Kotlin、Java、C++ 语言编写应用程序，&lt;a href=&quot;https://developer.android.google.cn/reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android SDK&lt;/a&gt; 会将这些代码连同相应的数据和资源文件编译为 Android 软件包，即一个带有&lt;code&gt;.apk&lt;/code&gt;后缀的归档文件，也就是 Android 应用程序的安装文件。本质上 Android 系统是一种多用户的 Linux 系统，每个应用程序都运行在独立的 Linux 用户 &lt;strong&gt;ID&lt;/strong&gt; 和&lt;strong&gt;进程&lt;/strong&gt;之下，从而为每个 Android 应用都提供了独立的&lt;strong&gt;安全沙盒&lt;/strong&gt;，体现了最小权限的设计原则。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/Android/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;鉴于 Google 官方提供了完善的文档，本文并不过多过深的涉及 Android SDK 开发的具体知识细节，仅会在简单介绍 Android 开发当中的一些基本概念之后，着重分析&lt;strong&gt;经典/低功耗蓝牙&lt;/strong&gt;、&lt;strong&gt;NFC&lt;/strong&gt;、&lt;strong&gt;WIFI&lt;/strong&gt;、&lt;strong&gt;指纹识别&lt;/strong&gt;、&lt;strong&gt;5G&lt;/strong&gt; 等硬件外设的通信协议概念以及相应的实现步骤，并且展示一些比较典型的应用场景与示例代码，从而为读者在进行物联网相关项目的开发时，在移动设备应用控制端提供即有的现成经验。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="Mobile" scheme="https://uinika.github.io/tags/Mobile/"/>
     
   </entry>
   
@@ -450,29 +473,6 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <link href="https://uinika.github.io/Web/Electron.html"/>
-    <id>https://uinika.github.io/Web/Electron.html</id>
-    <published>2020-05-21T13:39:03.829Z</published>
-    <updated>2020-05-21T13:39:03.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;早期桌面应用的开发主要借助原生 C/C++ API 进行，由于需要反复经历编译过程，且无法分离界面 UI 与业务代码，开发调试极为不便。后期出现的 QT 和 WPF 在一定程度上解决了界面代码分离和跨平台的问题，却依然无法避免较长时间的编译过程。近几年伴随互联网行业的迅猛发展，尤其是 NodeJS、Chromium 这类基于 W3C 标准开源应用的不断涌现，原生代码与 Web 浏览器开发逐步走向融合，Electron 正是在这种背景下诞生的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Electron/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Electron 是由 Github 开发，通过将&lt;a href=&quot;www.chromium.org&quot;&gt;Chromium&lt;/a&gt;和&lt;a href=&quot;https://nodejs.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS&lt;/a&gt;整合为一个运行时环境，实现使用 HTML、CSS、JavaScript 构建跨平台的桌面应用程序的目的。Electron 源于 2013 年 Github 社区提供的开源编辑器 Atom，后于 2014 年在社区开源，并在 2016 年的 5 月和 8 月，通过了 &lt;a href=&quot;https://www.apple.com/mac/app-store/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mac App Store&lt;/a&gt; 和 &lt;a href=&quot;https://apps.microsoft.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows Store&lt;/a&gt; 的上架许可，VSCode、Skype 等著名开源或商业应用程序，都是基于 Electron 打造。为了方便编写测试用例，笔者在 Github 搭建了一个简单的 Electron 种子项目&lt;a href=&quot;https://github.com/uinika/octopus&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Octopus&lt;/a&gt;，读者可以基于此来运行本文涉及的示例代码。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
     
   </entry>
   
