@@ -225,6 +225,13 @@
 
               <time title="创建时间：2020-07-10 22:02:19" itemprop="dateCreated datePublished" datetime="2020-07-10T22:02:19+08:00">2020-07-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-12 19:03:02" itemprop="dateModified" datetime="2020-07-12T19:03:02+08:00">2020-07-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -241,14 +248,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.5k</span>
+              <span>4.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -1496,96 +1503,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Python.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Python.html" class="post-title-link" itemprop="url">言简意赅 の Python3</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>36k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>33 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Python 诞生于 20 世纪 90 年代初，由荷兰人 Guido van Rossum 开发完成，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库<a href="https://opencv.org/" target="_blank" rel="noopener">OpenCV</a>、三维可视化库<a href="https://www.vtk.org/" target="_blank" rel="noopener">VTK</a>、医学图像处理库<a href="https://itk.org/" target="_blank" rel="noopener">ITK</a>都提供了 Python 调用接口，Python 也原生提供了<a href="http://www.numpy.org/" target="_blank" rel="noopener">NumPy</a>、<a href="https://www.scipy.org/" target="_blank" rel="noopener">SciPy</a>、<a href="https://matplotlib.org/" target="_blank" rel="noopener">matplotlib</a>等强大的科学计算扩展库。Web 开发方面，Python 也提供有<a href="https://www.Djangoproject.com/" target="_blank" rel="noopener">Django</a>、<a href="http://www.tornadoweb.org/en/stable/" target="_blank" rel="noopener">Tornado</a>两款常用的 Web 开发框架。总而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。</p>
-<p><img src="/Web/Python/logo.png"></p>
-<p>本文的示例代码基于目前最新的<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python 3.6.6</a>版本，在简单介绍相关语法以及<a href="https://pypi.org/project/pip/" target="_blank" rel="noopener">pip</a>、<a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="noopener">virtualenv</a>等扩展库的使用之后，将会最终完成一个基于官方 XML 解析库<code>ElementTree</code>的 SVG 图片合并小程序。本文涉及的代码和 Markdown 都已经上传至笔者的<a href="https://github.com/uinika/python-quick-guide" target="_blank" rel="noopener">Github</a>，需要的朋友可以直接进行克隆，如果发现缪误或有任何建议请向我提交<a href="https://github.com/uinika/python-quick-guide/issues" target="_blank" rel="noopener">issue</a>。此外，笔者正在撰写[<a href="https://uinika.github.io/web/server/django.html">《使用 Django2 快速开发 Web 项目》</a>一文，供需要使用 Python 进行 Web 开发的朋友进一步阅读。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Python.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/React.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1653,6 +1570,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/React.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Python.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Python.html" class="post-title-link" itemprop="url">言简意赅 の Python3</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>36k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>33 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Python 诞生于 20 世纪 90 年代初，由荷兰人 Guido van Rossum 开发完成，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库<a href="https://opencv.org/" target="_blank" rel="noopener">OpenCV</a>、三维可视化库<a href="https://www.vtk.org/" target="_blank" rel="noopener">VTK</a>、医学图像处理库<a href="https://itk.org/" target="_blank" rel="noopener">ITK</a>都提供了 Python 调用接口，Python 也原生提供了<a href="http://www.numpy.org/" target="_blank" rel="noopener">NumPy</a>、<a href="https://www.scipy.org/" target="_blank" rel="noopener">SciPy</a>、<a href="https://matplotlib.org/" target="_blank" rel="noopener">matplotlib</a>等强大的科学计算扩展库。Web 开发方面，Python 也提供有<a href="https://www.Djangoproject.com/" target="_blank" rel="noopener">Django</a>、<a href="http://www.tornadoweb.org/en/stable/" target="_blank" rel="noopener">Tornado</a>两款常用的 Web 开发框架。总而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。</p>
+<p><img src="/Web/Python/logo.png"></p>
+<p>本文的示例代码基于目前最新的<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python 3.6.6</a>版本，在简单介绍相关语法以及<a href="https://pypi.org/project/pip/" target="_blank" rel="noopener">pip</a>、<a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="noopener">virtualenv</a>等扩展库的使用之后，将会最终完成一个基于官方 XML 解析库<code>ElementTree</code>的 SVG 图片合并小程序。本文涉及的代码和 Markdown 都已经上传至笔者的<a href="https://github.com/uinika/python-quick-guide" target="_blank" rel="noopener">Github</a>，需要的朋友可以直接进行克隆，如果发现缪误或有任何建议请向我提交<a href="https://github.com/uinika/python-quick-guide/issues" target="_blank" rel="noopener">issue</a>。此外，笔者正在撰写[<a href="https://uinika.github.io/web/server/django.html">《使用 Django2 快速开发 Web 项目》</a>一文，供需要使用 Python 进行 Web 开发的朋友进一步阅读。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Python.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2486,96 +2493,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Async.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Async.html" class="post-title-link" itemprop="url">异步事件管理：从 Promise 与 async/await 到 RxJS</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>12k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>11 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>早期的浏览器端异步编程主要依靠<code>回调函数</code>、<code>事件监听</code>、<code>发布/订阅</code>、<code>Promise的各类polyfill</code>这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了<code>Generator</code>函数及其衍生的<code>async/await</code>语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的<a href="http://reactivex.io/rxjs/" target="_blank" rel="noopener">rxjs</a>则进一步改善了 JavaScript 异步编程的体验。</p>
-<p><img src="/Web/Async/logo.png"></p>
-<p>本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">《Mozilla Promise Reference》</a>，关于 Promise 状态的截图部分引用自<a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">《JavaScript Promise 迷你书》</a>。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Async.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Backbone.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2643,6 +2560,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/Backbone.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Async.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Async.html" class="post-title-link" itemprop="url">异步事件管理：从 Promise 与 async/await 到 RxJS</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>12k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>11 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>早期的浏览器端异步编程主要依靠<code>回调函数</code>、<code>事件监听</code>、<code>发布/订阅</code>、<code>Promise的各类polyfill</code>这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了<code>Generator</code>函数及其衍生的<code>async/await</code>语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的<a href="http://reactivex.io/rxjs/" target="_blank" rel="noopener">rxjs</a>则进一步改善了 JavaScript 异步编程的体验。</p>
+<p><img src="/Web/Async/logo.png"></p>
+<p>本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">《Mozilla Promise Reference》</a>，关于 Promise 状态的截图部分引用自<a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">《JavaScript Promise 迷你书》</a>。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Async.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -3089,7 +3096,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23:15</span>
+    <span title="站点阅读时长">23:18</span>
 </div>
 
         
