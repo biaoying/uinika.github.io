@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-07-12T21:02:16.365Z</updated>
+  <updated>2020-07-13T14:56:07.963Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Bash Shell 脚本编程实践</title>
     <link href="https://uinika.github.io/Linux/Shell.html"/>
     <id>https://uinika.github.io/Linux/Shell.html</id>
-    <published>2020-07-10T14:02:19.122Z</published>
-    <updated>2020-07-12T21:02:16.365Z</updated>
+    <published>2020-07-13T14:56:07.963Z</published>
+    <updated>2020-07-13T14:56:07.963Z</updated>
     
     <summary type="html">
     
@@ -270,29 +270,6 @@
   </entry>
   
   <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <link href="https://uinika.github.io/Web/Scss.html"/>
-    <id>https://uinika.github.io/Web/Scss.html</id>
-    <published>2020-05-21T13:39:03.876Z</published>
-    <updated>2020-05-21T15:33:26.888Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt; 是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Scss/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;基于 Gulp 完成前端自动化的年代，出于快速上手以及 npm 安装方便的考虑，开发团队一直沿用&lt;a href=&quot;http://lesscss.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Less&lt;/a&gt;和&lt;a href=&quot;https://github.com/stevelacy/gulp-less&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp-less&lt;/a&gt;作为 CSS 预处理工具，但是 Sass 提供了更加丰富的动态语法特征，因此逐步淘汰基于 Gulp 的&lt;a href=&quot;https://github.com/uinika/beaver&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;beaver&lt;/a&gt;前端项目脚手架以后，新项目全部基于 Webpack 的&lt;a href=&quot;https://github.com/sass/node-sass&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node-sass&lt;/a&gt;和&lt;a href=&quot;https://github.com/webpack-contrib/sass-loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-loader&lt;/a&gt;作为预处理工具。Sass 和 Less 的详细比较可以参考&lt;a href=&quot;https://css-tricks.com/sass-vs-less/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-vs-less&lt;/a&gt;和&lt;a href=&quot;http://cued.xunlei.com/log044&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass 与 Less 比拼&lt;/a&gt;两篇文章，里面对两者的优劣做了非常详实的比较。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Vue 2 技术栈归纳与精粹</title>
     <link href="https://uinika.github.io/Web/Vue.html"/>
     <id>https://uinika.github.io/Web/Vue.html</id>
@@ -312,6 +289,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <link href="https://uinika.github.io/Web/Scss.html"/>
+    <id>https://uinika.github.io/Web/Scss.html</id>
+    <published>2020-05-21T13:39:03.876Z</published>
+    <updated>2020-05-21T15:33:26.888Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt; 是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Scss/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;基于 Gulp 完成前端自动化的年代，出于快速上手以及 npm 安装方便的考虑，开发团队一直沿用&lt;a href=&quot;http://lesscss.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Less&lt;/a&gt;和&lt;a href=&quot;https://github.com/stevelacy/gulp-less&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp-less&lt;/a&gt;作为 CSS 预处理工具，但是 Sass 提供了更加丰富的动态语法特征，因此逐步淘汰基于 Gulp 的&lt;a href=&quot;https://github.com/uinika/beaver&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;beaver&lt;/a&gt;前端项目脚手架以后，新项目全部基于 Webpack 的&lt;a href=&quot;https://github.com/sass/node-sass&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node-sass&lt;/a&gt;和&lt;a href=&quot;https://github.com/webpack-contrib/sass-loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-loader&lt;/a&gt;作为预处理工具。Sass 和 Less 的详细比较可以参考&lt;a href=&quot;https://css-tricks.com/sass-vs-less/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-vs-less&lt;/a&gt;和&lt;a href=&quot;http://cued.xunlei.com/log044&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass 与 Less 比拼&lt;/a&gt;两篇文章，里面对两者的优劣做了非常详实的比较。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
     
   </entry>
   
@@ -408,29 +408,6 @@
   </entry>
   
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <link href="https://uinika.github.io/Web/JQuery.html"/>
-    <id>https://uinika.github.io/Web/JQuery.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -450,6 +427,29 @@
     
     
       <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <link href="https://uinika.github.io/Web/JQuery.html"/>
+    <id>https://uinika.github.io/Web/JQuery.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   

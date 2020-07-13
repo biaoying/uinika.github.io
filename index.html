@@ -223,15 +223,8 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-07-10 22:02:19" itemprop="dateCreated datePublished" datetime="2020-07-10T22:02:19+08:00">2020-07-10</time>
+              <time title="创建时间：2020-07-13 22:56:07" itemprop="dateCreated datePublished" datetime="2020-07-13T22:56:07+08:00">2020-07-13</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-13 05:02:16" itemprop="dateModified" datetime="2020-07-13T05:02:16+08:00">2020-07-13</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -248,14 +241,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>8.8k</span>
+              <span>12k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 分钟</span>
+              <span>11 分钟</span>
             </span>
 
         </div>
@@ -1232,6 +1225,96 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Vue.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Vue.html" class="post-title-link" itemprop="url">Vue 2 技术栈归纳与精粹</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>50k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>45 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Vue 是一款<strong>高度封装的</strong>、<strong>开箱即用的</strong>、<strong>一栈式的前端框架</strong>，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至<code>全局window</code>使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 <code>2.5.2</code>。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方<a href="https://vuejs.org/v2/guide/" target="_blank" rel="noopener">《Get Started》</a> 的补充性读物。</p>
+<p><img src="/Web/Vue/logo.png"></p>
+<p><code>Vue2.2.x</code>发布之后，其框架体系及技术栈日趋完善，相较于<code>React+Reflux/Redux/MobX</code>技术栈，Vue 更加贴近 W3C 技术规范（<em>例如实现仍处于 W3C 草案阶段的<code>&lt;template&gt;</code>、<code>&lt;slot&gt;</code>、<code>is</code>等新特性，提供了良好易用的模板书写环境</em>），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的<code>store</code>的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Vue.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Scss.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1300,96 +1383,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/Scss.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Vue.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Vue.html" class="post-title-link" itemprop="url">Vue 2 技术栈归纳与精粹</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>50k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>45 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Vue 是一款<strong>高度封装的</strong>、<strong>开箱即用的</strong>、<strong>一栈式的前端框架</strong>，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至<code>全局window</code>使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 <code>2.5.2</code>。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方<a href="https://vuejs.org/v2/guide/" target="_blank" rel="noopener">《Get Started》</a> 的补充性读物。</p>
-<p><img src="/Web/Vue/logo.png"></p>
-<p><code>Vue2.2.x</code>发布之后，其框架体系及技术栈日趋完善，相较于<code>React+Reflux/Redux/MobX</code>技术栈，Vue 更加贴近 W3C 技术规范（<em>例如实现仍处于 W3C 草案阶段的<code>&lt;template&gt;</code>、<code>&lt;slot&gt;</code>、<code>is</code>等新特性，提供了良好易用的模板书写环境</em>），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的<code>store</code>的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Vue.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1773,96 +1766,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/JQuery.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/JQuery.html" class="post-title-link" itemprop="url">jQuery 那些容易被忽略的问题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>6.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>伴随<code>Vue</code>、<code>Angular</code>、<code>React</code>等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持<code>selectAll()</code>等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于<code>jQuery</code>来完成 DOM 文档操作。</p>
-<p><img src="/Web/JQuery/logo.png"></p>
-<p>因此<code>jQuery</code>这款诞生于 2006 年的 JavaScript 库，依然在<strong>现代化前端开发</strong>当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了<code>jQuery</code>实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象<code>$.Deferred()</code>以及 JavaScript 性能优化相关的话题。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/JQuery.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Http.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1930,6 +1833,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/Http.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/JQuery.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/JQuery.html" class="post-title-link" itemprop="url">jQuery 那些容易被忽略的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>伴随<code>Vue</code>、<code>Angular</code>、<code>React</code>等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持<code>selectAll()</code>等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于<code>jQuery</code>来完成 DOM 文档操作。</p>
+<p><img src="/Web/JQuery/logo.png"></p>
+<p>因此<code>jQuery</code>这款诞生于 2006 年的 JavaScript 库，依然在<strong>现代化前端开发</strong>当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了<code>jQuery</code>实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象<code>$.Deferred()</code>以及 JavaScript 性能优化相关的话题。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/JQuery.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2313,96 +2306,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Convention.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Convention.html" class="post-title-link" itemprop="url">Web 前端开发遵循的一些规范与约定</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>11k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>10 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>开发团队当前正在全面切换到<code>ES6 + Vue/React + Webpack</code>这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 <strong>code style</strong> 并且<a href="https://uinika.github.io/">开源</a>出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 <a href="https://eslint.org/" target="_blank" rel="noopener">ESLint</a> 校验代码风格。</p>
-<p><img src="/Web/Convention/logo.png"></p>
-<p>本文撰写过程中参考了爱彼迎的 <a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener">《Airbnb JavaScript Style Guide》</a>，以及网易 NEC 团队的<a href="http://nec.netease.com/" target="_blank" rel="noopener">《CSS 基础库命名约定》</a>等开源规范，结合笔者之前撰写的 <a href="/Web/Html.html">《HTML5 语义化标签概览》</a>一文，总体上分为<code>总体原则</code>、<code>JavaScript/ES6</code>、<code>CSS/SCSS</code>、<code>HTML</code>四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Convention.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Django.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2470,6 +2373,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/Django.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Convention.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Convention.html" class="post-title-link" itemprop="url">Web 前端开发遵循的一些规范与约定</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>11k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>10 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>开发团队当前正在全面切换到<code>ES6 + Vue/React + Webpack</code>这套技术栈，小伙伴们在开发过程中对编码规范以及 ES6 使用约定方面存在诸多困惑，所以参考了 Github 以及互联网企业 UED 的相关技术文档，结合团队之前积累的大量开发约定和范式，整理了这篇 <strong>code style</strong> 并且<a href="https://uinika.github.io/">开源</a>出来，计划在 Team 小伙伴们熟练掌握以后，逐步在项目中推广使用 <a href="https://eslint.org/" target="_blank" rel="noopener">ESLint</a> 校验代码风格。</p>
+<p><img src="/Web/Convention/logo.png"></p>
+<p>本文撰写过程中参考了爱彼迎的 <a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener">《Airbnb JavaScript Style Guide》</a>，以及网易 NEC 团队的<a href="http://nec.netease.com/" target="_blank" rel="noopener">《CSS 基础库命名约定》</a>等开源规范，结合笔者之前撰写的 <a href="/Web/Html.html">《HTML5 语义化标签概览》</a>一文，总体上分为<code>总体原则</code>、<code>JavaScript/ES6</code>、<code>CSS/SCSS</code>、<code>HTML</code>四个部分，分门别类的从命名约定、选择器使用、DOM 结构组织等纬度进行阐述，以帮助小组成员形成良好的编码习惯。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Convention.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2583,96 +2576,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Backbone.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Backbone.html" class="post-title-link" itemprop="url">为什么认为 Backbone 是现代化前端框架的基石</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>14k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>13 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>伴随着 W3C 协议规范的不断更新，以及现代化浏览器技术的快速进步，Web 前端技术整体取得了日新月异发展，交互体验更加丰富与多样化，与此同时业务逻辑也在极速的膨胀。开发人员函需从大量 DOM 底层处理的劳动中解放出来，更加从容的面对纷繁复杂的各式交互需求。本文开头先简单的梳理一下历史，然后基于现代化前端框架的主要特性，逐一与 Backbone 进行比较和剖析。</p>
-<p><img src="/Web/Backbone/logo.png"></p>
-<p>从前端技术发展趋势的角度而言，目前层出不穷的现代化前端框架的诞生，都可以认为是 Angular 和 Backbone 等古典前端框架设计思想走向融合之后的产物。虽然截至到本文执笔的时间点，Backbone 已经略微<strong>old school</strong>，但之所以依然单独对 Backbone 着重笔墨，主要是在<strong>组件化</strong>和<strong>作用域控制</strong>等方面，Backbone 更加接近于现代化前端框架的设计理念，而这两点又正好是同一时期的 Angular 并没有解决好的问题。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Backbone.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/CSS2.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2740,6 +2643,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/CSS2.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Backbone.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Backbone.html" class="post-title-link" itemprop="url">为什么认为 Backbone 是现代化前端框架的基石</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>14k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>13 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>伴随着 W3C 协议规范的不断更新，以及现代化浏览器技术的快速进步，Web 前端技术整体取得了日新月异发展，交互体验更加丰富与多样化，与此同时业务逻辑也在极速的膨胀。开发人员函需从大量 DOM 底层处理的劳动中解放出来，更加从容的面对纷繁复杂的各式交互需求。本文开头先简单的梳理一下历史，然后基于现代化前端框架的主要特性，逐一与 Backbone 进行比较和剖析。</p>
+<p><img src="/Web/Backbone/logo.png"></p>
+<p>从前端技术发展趋势的角度而言，目前层出不穷的现代化前端框架的诞生，都可以认为是 Angular 和 Backbone 等古典前端框架设计思想走向融合之后的产物。虽然截至到本文执笔的时间点，Backbone 已经略微<strong>old school</strong>，但之所以依然单独对 Backbone 着重笔墨，主要是在<strong>组件化</strong>和<strong>作用域控制</strong>等方面，Backbone 更加接近于现代化前端框架的设计理念，而这两点又正好是同一时期的 Angular 并没有解决好的问题。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Backbone.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -3096,7 +3089,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23:21</span>
+    <span title="站点阅读时长">23:24</span>
 </div>
 
         
