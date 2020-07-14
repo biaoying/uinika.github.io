@@ -223,15 +223,8 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-07-13 22:56:07" itemprop="dateCreated datePublished" datetime="2020-07-13T22:56:07+08:00">2020-07-13</time>
+              <time title="创建时间：2020-07-14 21:22:07" itemprop="dateCreated datePublished" datetime="2020-07-14T21:22:07+08:00">2020-07-14</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-14 00:54:38" itemprop="dateModified" datetime="2020-07-14T00:54:38+08:00">2020-07-14</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -248,14 +241,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>12k</span>
+              <span>15k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>11 分钟</span>
+              <span>14 分钟</span>
             </span>
 
         </div>
@@ -1232,6 +1225,96 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Vue.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Vue.html" class="post-title-link" itemprop="url">Vue 2 技术栈归纳与精粹</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>50k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>45 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Vue 是一款<strong>高度封装的</strong>、<strong>开箱即用的</strong>、<strong>一栈式的前端框架</strong>，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至<code>全局window</code>使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 <code>2.5.2</code>。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方<a href="https://vuejs.org/v2/guide/" target="_blank" rel="noopener">《Get Started》</a> 的补充性读物。</p>
+<p><img src="/Web/Vue/logo.png"></p>
+<p><code>Vue2.2.x</code>发布之后，其框架体系及技术栈日趋完善，相较于<code>React+Reflux/Redux/MobX</code>技术栈，Vue 更加贴近 W3C 技术规范（<em>例如实现仍处于 W3C 草案阶段的<code>&lt;template&gt;</code>、<code>&lt;slot&gt;</code>、<code>is</code>等新特性，提供了良好易用的模板书写环境</em>），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的<code>store</code>的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Vue.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Scss.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1300,96 +1383,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/Scss.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Vue.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Vue.html" class="post-title-link" itemprop="url">Vue 2 技术栈归纳与精粹</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>50k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>45 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Vue 是一款<strong>高度封装的</strong>、<strong>开箱即用的</strong>、<strong>一栈式的前端框架</strong>，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至<code>全局window</code>使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 <code>2.5.2</code>。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方<a href="https://vuejs.org/v2/guide/" target="_blank" rel="noopener">《Get Started》</a> 的补充性读物。</p>
-<p><img src="/Web/Vue/logo.png"></p>
-<p><code>Vue2.2.x</code>发布之后，其框架体系及技术栈日趋完善，相较于<code>React+Reflux/Redux/MobX</code>技术栈，Vue 更加贴近 W3C 技术规范（<em>例如实现仍处于 W3C 草案阶段的<code>&lt;template&gt;</code>、<code>&lt;slot&gt;</code>、<code>is</code>等新特性，提供了良好易用的模板书写环境</em>），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的<code>store</code>的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Vue.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2493,6 +2486,96 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Async.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Async.html" class="post-title-link" itemprop="url">异步事件管理：从 Promise 与 async/await 到 RxJS</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>12k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>11 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>早期的浏览器端异步编程主要依靠<code>回调函数</code>、<code>事件监听</code>、<code>发布/订阅</code>、<code>Promise的各类polyfill</code>这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了<code>Generator</code>函数及其衍生的<code>async/await</code>语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的<a href="http://reactivex.io/rxjs/" target="_blank" rel="noopener">rxjs</a>则进一步改善了 JavaScript 异步编程的体验。</p>
+<p><img src="/Web/Async/logo.png"></p>
+<p>本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">《Mozilla Promise Reference》</a>，关于 Promise 状态的截图部分引用自<a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">《JavaScript Promise 迷你书》</a>。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Async.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Backbone.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2673,96 +2756,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Async.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Async.html" class="post-title-link" itemprop="url">异步事件管理：从 Promise 与 async/await 到 RxJS</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>12k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>11 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>早期的浏览器端异步编程主要依靠<code>回调函数</code>、<code>事件监听</code>、<code>发布/订阅</code>、<code>Promise的各类polyfill</code>这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了<code>Generator</code>函数及其衍生的<code>async/await</code>语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的<a href="http://reactivex.io/rxjs/" target="_blank" rel="noopener">rxjs</a>则进一步改善了 JavaScript 异步编程的体验。</p>
-<p><img src="/Web/Async/logo.png"></p>
-<p>本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">《Mozilla Promise Reference》</a>，关于 Promise 状态的截图部分引用自<a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">《JavaScript Promise 迷你书》</a>。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Async.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Angularjs.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2853,7 +2846,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Other/2018-Guiyang-Big-Data.html">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Other/2017-Chengdu-Realestate.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -2867,7 +2860,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Other/2018-Guiyang-Big-Data.html" class="post-title-link" itemprop="url">如何理性看待贵阳大数据及 IT 行业的过去与将来</a>
+            <a href="/Other/2017-Chengdu-Realestate.html" class="post-title-link" itemprop="url">2017年，再聊聊成都房价、地价那些事儿</a>
         </h2>
 
         <div class="post-meta">
@@ -2884,7 +2877,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-03 01:13:32" itemprop="dateModified" datetime="2020-06-03T01:13:32+08:00">2020-06-03</time>
+                <time title="修改时间：2020-06-03 01:18:21" itemprop="dateModified" datetime="2020-06-03T01:18:21+08:00">2020-06-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2902,14 +2895,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>5.1k</span>
+              <span>4.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -2921,11 +2914,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>笔者目前就职于成都市天府软件园的一家 IT 企业，作为从业近十年的一线 IT 技术人员，目前担负着一支中等规模开发团队的研发管理工作。过去有幸学习和生活在贵阳，见证过 10 年前贵阳 IT 产业的蛮荒状态，其间也有一段不短的工作经历。对于贵阳 IT 的过去和现在，略有一些体会，在这里以 IT 从业者的角度写下一些观点，希望为大家提供更多的视角。</p>
-<p><img src="/Other/2018-Guiyang-Big-Data/expo.jpg" title="2018年数博会"></p>
+          <p>本文从基于成都市<code>土地供应</code>、<code>人口流入</code>、<code>金融改革</code>三侧、阐述了对于当时成都楼市的观点。</p>
+<p><img src="/Other/2017-Chengdu-Realestate/chengdu.jpg"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Other/2018-Guiyang-Big-Data.html#more" rel="contents">
+              <a class="btn" href="/Other/2017-Chengdu-Realestate.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -3096,7 +3089,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23:25</span>
+    <span title="站点阅读时长">23:27</span>
 </div>
 
         
