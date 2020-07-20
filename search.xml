@@ -12,17 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Altium Designer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>模拟与数字电子技术导论</title>
     <url>/Electronics/Introduct.html</url>
     <content><![CDATA[]]></content>
@@ -34,14 +23,14 @@
       </tags>
   </entry>
   <entry>
-    <title>J-Link 仿真器固件恢复小记</title>
-    <url>/Embedded/JLink.html</url>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Embedded</category>
+        <category>Electronics</category>
       </categories>
       <tags>
-        <tag>MCU</tag>
+        <tag>Altium Designer</tag>
       </tags>
   </entry>
   <entry>
@@ -58,6 +47,17 @@
   <entry>
     <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
     <url>/Embedded/Mini2440.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>J-Link 仿真器固件恢复小记</title>
+    <url>/Embedded/JLink.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -155,17 +155,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Bash Shell 脚本编程实践</title>
-    <url>/Linux/Shell.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Note</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vim 常用键位生存指南</title>
     <url>/Linux/Vim.html</url>
     <content><![CDATA[]]></content>
@@ -174,6 +163,17 @@
       </categories>
       <tags>
         <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Bash Shell 脚本编程实践</title>
+    <url>/Linux/Shell.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -254,8 +254,8 @@
       </tags>
   </entry>
   <entry>
-    <title>为什么认为 Backbone 是现代化前端框架的基石</title>
-    <url>/Web/Backbone.html</url>
+    <title>异步事件管理：从 Promise 与 async/await 到 RxJS</title>
+    <url>/Web/Async.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -265,8 +265,8 @@
       </tags>
   </entry>
   <entry>
-    <title>异步事件管理：从 Promise 与 async/await 到 RxJS</title>
-    <url>/Web/Async.html</url>
+    <title>为什么认为 Backbone 是现代化前端框架的基石</title>
+    <url>/Web/Backbone.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -353,17 +353,6 @@
       </tags>
   </entry>
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <url>/Web/Html.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>jQuery 那些容易被忽略的问题</title>
     <url>/Web/JQuery.html</url>
     <content><![CDATA[]]></content>
@@ -375,14 +364,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Webpack 4 核心剖析</title>
-    <url>/Web/Webpack.html</url>
+    <title>概览 HTML 5 语义化标签</title>
+    <url>/Web/Html.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -394,6 +383,17 @@
       </categories>
       <tags>
         <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Webpack 4 核心剖析</title>
+    <url>/Web/Webpack.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -416,17 +416,6 @@
       </categories>
       <tags>
         <tag>Windows Config</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <url>/Embedded/RaspberryPi.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -463,14 +452,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux C 标准程序设计语言</title>
-    <url>/Linux/C.html</url>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <url>/Embedded/RaspberryPi.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Linux</category>
+        <category>Embedded</category>
       </categories>
       <tags>
-        <tag>C language</tag>
+        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -482,6 +471,17 @@
       </categories>
       <tags>
         <tag>Desktop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux C 标准程序设计语言</title>
+    <url>/Linux/C.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>C language</tag>
       </tags>
   </entry>
   <entry>
@@ -507,17 +507,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <url>/Web/Scss.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>React 16.6.x 全新全译</title>
     <url>/Web/React.html</url>
     <content><![CDATA[]]></content>
@@ -526,6 +515,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <url>/Web/Scss.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
