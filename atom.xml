@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-07-17T19:50:34.748Z</updated>
+  <updated>2020-07-20T13:26:21.403Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Linux 常用命令行速查手册</title>
     <link href="https://uinika.github.io/Linux/Command.html"/>
     <id>https://uinika.github.io/Linux/Command.html</id>
-    <published>2020-07-17T15:29:11.614Z</published>
-    <updated>2020-07-17T19:50:34.748Z</updated>
+    <published>2020-07-20T13:26:21.403Z</published>
+    <updated>2020-07-20T13:26:21.403Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,29 @@
     
     
       <category term="Embedded" scheme="https://uinika.github.io/tags/Embedded/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微积分常用公式与导学</title>
+    <link href="https://uinika.github.io/Math/Calculus.html"/>
+    <id>https://uinika.github.io/Math/Calculus.html</id>
+    <published>2020-07-19T04:42:36.694Z</published>
+    <updated>2020-07-19T04:42:36.694Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;高等数学是由微积分学，较为深入的代数学、几何学以及它们之间的交叉内容所形成的一门基础学科。由于&lt;strong&gt;电路分析&lt;/strong&gt;、&lt;strong&gt;运算放大器&lt;/strong&gt;、&lt;strong&gt;信号完整性&lt;/strong&gt;、&lt;strong&gt;高频电路&lt;/strong&gt;和&lt;strong&gt;信号学&lt;/strong&gt;当中，都涉及有大量的积分和导数运算，也需要经常使用到拉普拉斯和傅立叶变换等高等数学内容，因此着手撰写本文用于复习大学本科学习阶段涉及的微积分知识，主要包含&lt;code&gt;一元函数微分学&lt;/code&gt;、&lt;code&gt;一元函数积分学&lt;/code&gt;、&lt;code&gt;矢量代数与空间解析几何&lt;/code&gt;、&lt;code&gt;多元函数微分学&lt;/code&gt;、&lt;code&gt;多元函数积分学&lt;/code&gt;、&lt;code&gt;无穷级数&lt;/code&gt;、&lt;code&gt;常微分方程&lt;/code&gt;等部分的内容。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Math/Calculus/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;由于微积分涉及的概念相对较为抽象，因此在文章写作过程中，阅读并且参考了&lt;strong&gt;《Thomas’ Calculus》&lt;/strong&gt;一书当中的有关内容。该书从 1951 年第 1 版发行至今，当前的最新版本为第 14 版，已经足足经历了七十个年头，是一本经历过时间检验的优秀参考资料。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
+    
+    
+      <category term="Calculus" scheme="https://uinika.github.io/tags/Calculus/"/>
     
   </entry>
   
@@ -385,29 +408,6 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -454,17 +454,17 @@
   </entry>
   
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <link href="https://uinika.github.io/Web/Javascript.html"/>
-    <id>https://uinika.github.io/Web/Javascript.html</id>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
     <published>2020-05-21T13:39:03.845Z</published>
     <updated>2020-05-21T13:39:03.845Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;JavaScript 遵循了 ECMAScript 语言规范，2012 年之后的现代浏览器都完整支持 &lt;strong&gt;ECMAScript 5.1&lt;/strong&gt; 标准。2015 年 6 月 17 日，ECMA 国际组织发布了 &lt;strong&gt;ECMAScript 6&lt;/strong&gt; 标准，官方称为 &lt;strong&gt;ECMAScript 2015&lt;/strong&gt;（俗称为 &lt;strong&gt;ES6&lt;/strong&gt;），从此 ECMAScript 每年发布一次新标准，&lt;strong&gt;本文覆盖了当前最新 ECMAScript2017 草案中的新特性&lt;/strong&gt;。示例代码和术语定义参考了《JavaScrip 高级程序设计》，但是该书成文于 ES6 发布之前，因此从&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Mozilla JavaScript Reference》&lt;/a&gt;摘取了部分内容作为补充。出于查阅与核对的方便，本文目录结构与 Mozilla 官方英文文档保持一致。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Javascript/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;JavaScript 标准化工作由&lt;strong&gt;ECMA&lt;/strong&gt;（&lt;em&gt;European Computer Manufacturers Association&lt;/em&gt;）国际组织负责，JavaScript 的语言标准被称为&lt;strong&gt;ECMAScript&lt;/strong&gt;，企业遵循该标准开发各自的 JavaScript 实现，例如 Firefox 的&lt;code&gt;SpiderMonkey&lt;/code&gt;或者 Chrome 中的&lt;code&gt;V8&lt;/code&gt;解析引擎（&lt;em&gt;ECMAScript 的规范文档主要针对解析引擎的开发人员，而非 JavaScript 脚本的编写人员&lt;/em&gt;）。&lt;/p&gt;
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
     
     </summary>
     
@@ -472,7 +472,7 @@
       <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
     
     
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
