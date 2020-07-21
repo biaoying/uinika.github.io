@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-07-20T13:26:21.403Z</updated>
+  <updated>2020-07-21T17:06:14.031Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>托马斯微积分常用公式与导学</title>
+    <link href="https://uinika.github.io/Math/Calculus.html"/>
+    <id>https://uinika.github.io/Math/Calculus.html</id>
+    <published>2020-07-21T13:18:29.787Z</published>
+    <updated>2020-07-21T17:06:14.031Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;高等数学是由微积分学，较为深入的代数学、几何学以及它们之间的交叉内容所形成的一门基础学科。由于&lt;strong&gt;电路分析&lt;/strong&gt;、&lt;strong&gt;运算放大器&lt;/strong&gt;、&lt;strong&gt;信号完整性&lt;/strong&gt;、&lt;strong&gt;高频电路&lt;/strong&gt;和&lt;strong&gt;信号学&lt;/strong&gt;当中，都涉及有大量的积分和导数运算，也需要经常使用到拉普拉斯和傅立叶变换等高等数学内容，因此着手撰写本文用于复习大学本科学习阶段涉及的微积分知识，主要包含&lt;code&gt;一元函数微分学&lt;/code&gt;、&lt;code&gt;一元函数积分学&lt;/code&gt;、&lt;code&gt;矢量代数与空间解析几何&lt;/code&gt;、&lt;code&gt;多元函数微分学&lt;/code&gt;、&lt;code&gt;多元函数积分学&lt;/code&gt;、&lt;code&gt;无穷级数&lt;/code&gt;、&lt;code&gt;常微分方程&lt;/code&gt;等部分的内容。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Math/Calculus/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;由于微积分涉及的概念相对较为抽象，因此在文章写作过程中，阅读并且参考了&lt;strong&gt;《Thomas’ Calculus》&lt;/strong&gt;一书当中的有关内容。该书从 1951 年第 1 版发行至今，当前的最新版本为第 14 版，已经足足经历了七十个年头，是一本经历过时间检验的优秀参考资料。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
+    
+    
+      <category term="Calculus" scheme="https://uinika.github.io/tags/Calculus/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 常用命令行速查手册</title>
@@ -36,29 +59,6 @@
     
     
       <category term="Embedded" scheme="https://uinika.github.io/tags/Embedded/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微积分常用公式与导学</title>
-    <link href="https://uinika.github.io/Math/Calculus.html"/>
-    <id>https://uinika.github.io/Math/Calculus.html</id>
-    <published>2020-07-19T04:42:36.694Z</published>
-    <updated>2020-07-19T04:42:36.694Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;高等数学是由微积分学，较为深入的代数学、几何学以及它们之间的交叉内容所形成的一门基础学科。由于&lt;strong&gt;电路分析&lt;/strong&gt;、&lt;strong&gt;运算放大器&lt;/strong&gt;、&lt;strong&gt;信号完整性&lt;/strong&gt;、&lt;strong&gt;高频电路&lt;/strong&gt;和&lt;strong&gt;信号学&lt;/strong&gt;当中，都涉及有大量的积分和导数运算，也需要经常使用到拉普拉斯和傅立叶变换等高等数学内容，因此着手撰写本文用于复习大学本科学习阶段涉及的微积分知识，主要包含&lt;code&gt;一元函数微分学&lt;/code&gt;、&lt;code&gt;一元函数积分学&lt;/code&gt;、&lt;code&gt;矢量代数与空间解析几何&lt;/code&gt;、&lt;code&gt;多元函数微分学&lt;/code&gt;、&lt;code&gt;多元函数积分学&lt;/code&gt;、&lt;code&gt;无穷级数&lt;/code&gt;、&lt;code&gt;常微分方程&lt;/code&gt;等部分的内容。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Math/Calculus/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;由于微积分涉及的概念相对较为抽象，因此在文章写作过程中，阅读并且参考了&lt;strong&gt;《Thomas’ Calculus》&lt;/strong&gt;一书当中的有关内容。该书从 1951 年第 1 版发行至今，当前的最新版本为第 14 版，已经足足经历了七十个年头，是一本经历过时间检验的优秀参考资料。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
-    
-    
-      <category term="Calculus" scheme="https://uinika.github.io/tags/Calculus/"/>
     
   </entry>
   
@@ -408,29 +408,6 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -473,6 +450,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <link href="https://uinika.github.io/Web/Html.html"/>
+    <id>https://uinika.github.io/Web/Html.html</id>
+    <published>2020-05-21T13:39:03.845Z</published>
+    <updated>2020-05-21T13:39:03.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
