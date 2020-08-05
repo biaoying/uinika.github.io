@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-07-21T17:06:14.031Z</updated>
+  <updated>2020-08-05T12:14:52.708Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常用初等数学图形与公式汇总</title>
+    <link href="https://uinika.github.io/Math/Elementary.html"/>
+    <id>https://uinika.github.io/Math/Elementary.html</id>
+    <published>2020-08-05T12:14:52.708Z</published>
+    <updated>2020-08-05T12:14:52.708Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;初等数学主要由&lt;strong&gt;代数&lt;/strong&gt;（Algebra）和&lt;strong&gt;几何&lt;/strong&gt;（Geometry）两部分构成，本篇文章基于《Thomas’ Calculus Early Transcendentals 14th》一书附录的 &lt;strong&gt;A Brief Table of Integrals&lt;/strong&gt; 章节整理而成，主要涉及到了初等代数与几何、三角公式与函数等相关内容，较为系统的概括了初等数学当中较为常见的&lt;strong&gt;公式定理&lt;/strong&gt;以及&lt;strong&gt;平面直角坐标系图像&lt;/strong&gt;，进而为电子学当中涉及的各类数学运算做好知识准备。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Math/Elementary/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;由于初等数学只能解释常量的几何与物理问题，例如：&lt;code&gt;规则图形的长度&lt;/code&gt;、&lt;code&gt;面积&lt;/code&gt;与&lt;code&gt;体积&lt;/code&gt;，&lt;code&gt;匀速直线运动&lt;/code&gt;等等。虽然并不涉及工程计算当中经常涉及的变化量的分析与求解，但是却是高等数学知识体系当中，不可或缺的基础常识性内容。因此，笔者为了温习微积分相关的知识，特意将初等数学的重要概念归纳至本篇文章下面，便于方便快速的进行查阅。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
+    
+    
+      <category term="Elementary" scheme="https://uinika.github.io/tags/Elementary/"/>
+    
+  </entry>
+  
+  <entry>
     <title>托马斯微积分常用公式与导学</title>
     <link href="https://uinika.github.io/Math/Calculus.html"/>
     <id>https://uinika.github.io/Math/Calculus.html</id>
-    <published>2020-07-21T13:18:29.787Z</published>
-    <updated>2020-07-21T17:06:14.031Z</updated>
+    <published>2020-07-26T13:22:51.317Z</published>
+    <updated>2020-07-26T13:22:51.317Z</updated>
     
     <summary type="html">
     
@@ -450,29 +473,6 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
     
   </entry>
   
