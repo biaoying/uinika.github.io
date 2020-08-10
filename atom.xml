@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-08-10T16:30:56.097Z</updated>
+  <updated>2020-08-10T17:12:25.240Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://uinika.github.io/Electronics/Analysis.html"/>
     <id>https://uinika.github.io/Electronics/Analysis.html</id>
     <published>2020-08-10T14:47:46.940Z</published>
-    <updated>2020-08-10T16:30:56.097Z</updated>
+    <updated>2020-08-10T17:12:25.240Z</updated>
     
     <summary type="html">
     
@@ -385,6 +385,29 @@
   </entry>
   
   <entry>
+    <title>NodeJS 快速上手指南</title>
+    <link href="https://uinika.github.io/Web/Nodejs.html"/>
+    <id>https://uinika.github.io/Web/Nodejs.html</id>
+    <published>2020-05-21T13:39:03.860Z</published>
+    <updated>2020-05-21T13:39:03.860Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 开源项目于 2009 年由 &lt;strong&gt;Google Brain&lt;/strong&gt; 团队的软件工程师 Ryan Dahl 发起创建，后被美国云计算企业 &lt;a href=&quot;https://www.joyent.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Joyent&lt;/a&gt; 招入麾下，2015 年后正式被 &lt;a href=&quot;https://foundation.nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS 基金会&lt;/a&gt; 接管，三星公司于 2016 年完成了对 Joyent 的收购。经过将近 10 年的发展，NodeJS 已经成为现代化前端开发过程中不可或缺的基础架构，即可以作为页面渲染的分布式服务器，也可以作为前端自动化的宿主环境。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Nodejs/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于笔者在 2015 年所写的一篇读书笔记整理，彼时 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt; 的版本号还停留在&lt;code&gt;v0.12.x&lt;/code&gt;，社区也还未完成与 &lt;a href=&quot;https://iojs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;io.js&lt;/a&gt; 的最终合并，文中出现的部分 API 时至今日已经被废弃或者迁移。但是这些 API 层面的变化都可以对照 &lt;a href=&quot;https://nodejs.org/dist/latest-v8.x/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《官方文档》&lt;/a&gt;找到相应说明以及替代 API，总体上并不会影响通过本文快速了解 NodeJS 的全套技术栈特性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
+    
+  </entry>
+  
+  <entry>
     <title>言简意赅 の Python3</title>
     <link href="https://uinika.github.io/Web/Python.html"/>
     <id>https://uinika.github.io/Web/Python.html</id>
@@ -427,29 +450,6 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NodeJS 快速上手指南</title>
-    <link href="https://uinika.github.io/Web/Nodejs.html"/>
-    <id>https://uinika.github.io/Web/Nodejs.html</id>
-    <published>2020-05-21T13:39:03.860Z</published>
-    <updated>2020-05-21T13:39:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 开源项目于 2009 年由 &lt;strong&gt;Google Brain&lt;/strong&gt; 团队的软件工程师 Ryan Dahl 发起创建，后被美国云计算企业 &lt;a href=&quot;https://www.joyent.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Joyent&lt;/a&gt; 招入麾下，2015 年后正式被 &lt;a href=&quot;https://foundation.nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS 基金会&lt;/a&gt; 接管，三星公司于 2016 年完成了对 Joyent 的收购。经过将近 10 年的发展，NodeJS 已经成为现代化前端开发过程中不可或缺的基础架构，即可以作为页面渲染的分布式服务器，也可以作为前端自动化的宿主环境。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Nodejs/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于笔者在 2015 年所写的一篇读书笔记整理，彼时 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt; 的版本号还停留在&lt;code&gt;v0.12.x&lt;/code&gt;，社区也还未完成与 &lt;a href=&quot;https://iojs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;io.js&lt;/a&gt; 的最终合并，文中出现的部分 API 时至今日已经被废弃或者迁移。但是这些 API 层面的变化都可以对照 &lt;a href=&quot;https://nodejs.org/dist/latest-v8.x/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《官方文档》&lt;/a&gt;找到相应说明以及替代 API，总体上并不会影响通过本文快速了解 NodeJS 的全套技术栈特性。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
     
   </entry>
   
