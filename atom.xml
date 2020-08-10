@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-08-05T12:14:52.708Z</updated>
+  <updated>2020-08-10T16:30:56.097Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电路分析涉及的理论与原理</title>
+    <link href="https://uinika.github.io/Electronics/Analysis.html"/>
+    <id>https://uinika.github.io/Electronics/Analysis.html</id>
+    <published>2020-08-10T14:47:46.940Z</published>
+    <updated>2020-08-10T16:30:56.097Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《电路分析》主要介绍电路理论的基本知识，也是后续模拟、数字、高频电路的先导基础内容，其主要用于分析电路当中的&lt;strong&gt;电磁现象&lt;/strong&gt;，并采用&lt;code&gt;电流&lt;/code&gt;、&lt;code&gt;电压&lt;/code&gt;、&lt;code&gt;电量&lt;/code&gt;、&lt;code&gt;磁通&lt;/code&gt;等物流量描述其过程，从而研究电路的基本规律及其分析方法。其理论与工程实际紧密相连，需要注意&lt;strong&gt;电路模型&lt;/strong&gt;与&lt;strong&gt;实际电路&lt;/strong&gt;的差别与联系，以及&lt;strong&gt;测量值&lt;/strong&gt;与&lt;strong&gt;计算值&lt;/strong&gt;的差别；由于每个电路模型分别具有特定的工作条件，根据工作场景的不同，还会选取不同的电路模型。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Electronics/Analysis/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本篇文章主要包含了&lt;code&gt;电路模型与电路定律&lt;/code&gt;、&lt;code&gt;电阻电路分析&lt;/code&gt;、&lt;code&gt;动态电路的时域分析&lt;/code&gt;、&lt;code&gt;正弦稳态电路分析&lt;/code&gt;等方面的概念，由于电路分析方法本质是数学在电路当中的应用，因此学习过程需要注重将电路分析方法与数学知识相结合，例如向量法当中的&lt;strong&gt;复数&lt;/strong&gt;。全文撰写过程当中，参考并借鉴了国外大学普遍采用的《Electric Circuits》第 10 版教材。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Electronics" scheme="https://uinika.github.io/categories/Electronics/"/>
+    
+    
+      <category term="Analysis" scheme="https://uinika.github.io/tags/Analysis/"/>
+    
+  </entry>
   
   <entry>
     <title>常用初等数学图形与公式汇总</title>
@@ -270,29 +293,6 @@
   </entry>
   
   <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
-    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Webpack 4 核心剖析</title>
     <link href="https://uinika.github.io/Web/Webpack.html"/>
     <id>https://uinika.github.io/Web/Webpack.html</id>
@@ -312,6 +312,29 @@
     
     
       <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 工作环境 Config 札记</title>
+    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
+    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
+    <published>2020-05-21T13:39:03.892Z</published>
+    <updated>2020-05-21T13:39:03.892Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
+    
+    
+      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
     
   </entry>
   
@@ -362,29 +385,6 @@
   </entry>
   
   <entry>
-    <title>NodeJS 快速上手指南</title>
-    <link href="https://uinika.github.io/Web/Nodejs.html"/>
-    <id>https://uinika.github.io/Web/Nodejs.html</id>
-    <published>2020-05-21T13:39:03.860Z</published>
-    <updated>2020-05-21T13:39:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 开源项目于 2009 年由 &lt;strong&gt;Google Brain&lt;/strong&gt; 团队的软件工程师 Ryan Dahl 发起创建，后被美国云计算企业 &lt;a href=&quot;https://www.joyent.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Joyent&lt;/a&gt; 招入麾下，2015 年后正式被 &lt;a href=&quot;https://foundation.nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS 基金会&lt;/a&gt; 接管，三星公司于 2016 年完成了对 Joyent 的收购。经过将近 10 年的发展，NodeJS 已经成为现代化前端开发过程中不可或缺的基础架构，即可以作为页面渲染的分布式服务器，也可以作为前端自动化的宿主环境。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Nodejs/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于笔者在 2015 年所写的一篇读书笔记整理，彼时 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt; 的版本号还停留在&lt;code&gt;v0.12.x&lt;/code&gt;，社区也还未完成与 &lt;a href=&quot;https://iojs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;io.js&lt;/a&gt; 的最终合并，文中出现的部分 API 时至今日已经被废弃或者迁移。但是这些 API 层面的变化都可以对照 &lt;a href=&quot;https://nodejs.org/dist/latest-v8.x/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《官方文档》&lt;/a&gt;找到相应说明以及替代 API，总体上并不会影响通过本文快速了解 NodeJS 的全套技术栈特性。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
     <title>言简意赅 の Python3</title>
     <link href="https://uinika.github.io/Web/Python.html"/>
     <id>https://uinika.github.io/Web/Python.html</id>
@@ -431,6 +431,29 @@
   </entry>
   
   <entry>
+    <title>NodeJS 快速上手指南</title>
+    <link href="https://uinika.github.io/Web/Nodejs.html"/>
+    <id>https://uinika.github.io/Web/Nodejs.html</id>
+    <published>2020-05-21T13:39:03.860Z</published>
+    <updated>2020-05-21T13:39:03.860Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 开源项目于 2009 年由 &lt;strong&gt;Google Brain&lt;/strong&gt; 团队的软件工程师 Ryan Dahl 发起创建，后被美国云计算企业 &lt;a href=&quot;https://www.joyent.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Joyent&lt;/a&gt; 招入麾下，2015 年后正式被 &lt;a href=&quot;https://foundation.nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS 基金会&lt;/a&gt; 接管，三星公司于 2016 年完成了对 Joyent 的收购。经过将近 10 年的发展，NodeJS 已经成为现代化前端开发过程中不可或缺的基础架构，即可以作为页面渲染的分布式服务器，也可以作为前端自动化的宿主环境。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Nodejs/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于笔者在 2015 年所写的一篇读书笔记整理，彼时 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt; 的版本号还停留在&lt;code&gt;v0.12.x&lt;/code&gt;，社区也还未完成与 &lt;a href=&quot;https://iojs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;io.js&lt;/a&gt; 的最终合并，文中出现的部分 API 时至今日已经被废弃或者迁移。但是这些 API 层面的变化都可以对照 &lt;a href=&quot;https://nodejs.org/dist/latest-v8.x/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《官方文档》&lt;/a&gt;找到相应说明以及替代 API，总体上并不会影响通过本文快速了解 NodeJS 的全套技术栈特性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTTP 协议深入解析</title>
     <link href="https://uinika.github.io/Web/Http.html"/>
     <id>https://uinika.github.io/Web/Http.html</id>
@@ -450,29 +473,6 @@
     
     
       <category term="Convention" scheme="https://uinika.github.io/tags/Convention/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <link href="https://uinika.github.io/Web/JQuery.html"/>
-    <id>https://uinika.github.io/Web/JQuery.html</id>
-    <published>2020-05-21T13:39:03.845Z</published>
-    <updated>2020-05-21T13:39:03.845Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
