@@ -336,7 +336,7 @@
 <p><strong>STM32F103C8T6</strong>基于 ARM 32 位 Cortex™-M3 内核，使用<code>2.0V ~ 3.6V</code>电压供电，工作频率最高可以达到<code>72MHz</code>，内部采用<code>64K</code>或<code>128K</code>字节 Flash 程序存储器，以及高达<code>20K</code>字节的 SRAM 数据存储器；内置 CRC 循环冗余校验以及 96 位编码（即 24 位的十六进制数）的芯片唯一序列号（例如：<code>52FF69067871515237582567</code>）。</p>
 <p>其主系统主要由 4 个<strong>控制单元</strong>（DCode 总线<strong>D-bus</strong>、系统总线<strong>S-bus</strong>、通用<strong>DMA1</strong>、通用<strong>DMA2</strong>）以及 4 个<strong>受控单元</strong>（内部<strong>SRAM</strong>、内部<strong>Flash</strong>、<strong>FSMC</strong>、AHB 到 APB 的桥<strong>AHB2APBx</strong>）组成，它们通过一个多级的 AHB 总线相互进行连接，如下图所示：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/architecture.png" alt><figcaption>architecture</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/architecture.png" alt="architecture"><figcaption aria-hidden="true">architecture</figcaption>
 </figure>
 <ul>
 <li><strong>ICode</strong> 总线：连接 M3 内核指令总线与 Flash 的指令接口，用于进行指令预取。</li>
@@ -427,23 +427,23 @@
 <p><img src="/Embedded/STM32F103C8T6/overview/HSE-sequence.png"></p>
 <p>下图当中，当<strong>HSI</strong>作为<strong>PLL</strong>时钟的输入时，最高系统时钟频率只能达到<code>64MHz</code>。当使用 USB 功能时，必须同时使用<strong>HSE</strong>和<strong>PLL</strong>，并且 CPU 的频率必须为<code>48MHz</code>或<code>72MHz</code>。当需要的<strong>ADC</strong>采样时间为<code>1μs</code>的时候，**APB2**必须设置为<code>14MHz</code>、<code>28MHz</code>或<code>56MHz</code>。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/clock-tree.png" alt><figcaption>clock-tree</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/clock-tree.png" alt="clock-tree"><figcaption aria-hidden="true">clock-tree</figcaption>
 </figure>
 <h3 id="gpio">GPIO</h3>
 <p><strong>STM32F103C8T6</strong>采用 LQFP48 方式封装，一共拥有 37 个 I/O 引脚，被分为<strong>PA</strong>(15 个)、<strong>PB</strong>(15 个)、<strong>PC</strong>(3 个)、<strong>PD</strong>(2 个)、<strong>PE</strong>(0 个)五个组，所有 I/O 接口可以映像到 16 个外部中断，并且大部份端口都可以可以兼容<code>5V</code>信号。每个 I/O 端口可以接受或输出<code>8mA</code>电流，灌电流则可达到<code>20mA</code>，下面是详细的引脚定义图：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/LQFP48.png" alt><figcaption>LQFP48</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/LQFP48.png" alt="LQFP48"><figcaption aria-hidden="true">LQFP48</figcaption>
 </figure>
 <p>每个 GPIO 端口都拥有两个 32 位配置寄存器<code>GPIOx_CRL</code>和<code>GPIOx_CRH</code>，两个 32 位数据寄存器<code>GPIOx_IDR</code>和<code>GPIOx_ODR</code>，一个 32 位置位/复位寄存器<code>GPIOx_BSRR</code>和一个 16 位复位寄存器<code>GPIOx_BRR</code>和一个 32 位锁定寄存器<code>GPIOx_LCKR</code>。</p>
 <p>GPIO 端口的每个位都可以通过软件将其配置为<strong>输出</strong>（推挽输出<code>GPIO_Mode_Out_PP</code>、开漏输出<code>GPIO_Mode_Out_OD</code>）、<strong>输入</strong>（浮空输入<code>GPIO_Mode_IN_FLOATING</code>、上拉输入<code>GPIO_Mode_IPU</code>、下拉输入<code>GPIO_Mode_IPD</code>、模拟输入<code>GPIO_Mode_AIN</code>）、<strong>复用</strong>（复用推挽输出<code>GPIO_Mode_AF_PP</code>、复用开漏输出<code>GPIO_Mode_AF_OD</code>）功能。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/GPIO-structure.png" alt><figcaption>GPIO-structure</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/GPIO-structure.png" alt="GPIO-structure"><figcaption aria-hidden="true">GPIO-structure</figcaption>
 </figure>
 <p>除具有模拟输入功能的引脚之外，所有 GPIO 都拥有大电流通过能力。必要时可以对 GPIO 进行锁定，以避免意外擦写 GPIO 相关的寄存器。位于<strong>APB2</strong>上的 GPIO 引脚，其脉冲转换速度可达<code>18MHz</code>。</p>
 <h3 id="定时器">定时器</h3>
 <p><strong>STM32F103C8T6</strong>拥有 7 个定时器，其中 1 个用于电机控制的 16 位 PWM 高级控制定时器、3 个 16 位通用定时器、2 个看门狗定时器（包含独立型的和窗口型）、1 个 24 位自减型系统嘀嗒定时器。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/interrupt.png" alt><figcaption>interrupt</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/interrupt.png" alt="interrupt"><figcaption aria-hidden="true">interrupt</figcaption>
 </figure>
 <ol type="1">
 <li><strong>高级控制定时器 TIM1</strong>：<strong>TIM1</strong>可以被视为分配到 6 个通道的三相 PWM 发生器，具有带死区插入的互补 PWM 输出，还可以用作完整的通用定时器；其四个独立通道可分别用于：<strong>输入捕获</strong>、<strong>输出比较</strong>、产生边缘或中心对齐模式的<strong>PWM</strong>、<strong>单脉冲输出</strong>。当配置为 16 位普通定时器时，与<strong>TIM2</strong>、<strong>TIM3</strong>、<strong>TIM4</strong>具有相同功能；配置为 16 位 PWM 发生器时，具有<code>0 ~ 100%</code>的全调制能力。</li>
@@ -455,7 +455,7 @@
 <h3 id="通信接口">通信接口</h3>
 <p><strong>STM32F103C8T6</strong>拥有 <strong>2</strong> 个 I²C 接口、<strong>3</strong> 个 USART 接口、<strong>2</strong> 个 SPI 接口、<strong>1</strong> 个 CAN 接口、<strong>1</strong> 个 USB 2.0 全速接口。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/communication.png" alt><figcaption>interrupt</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/communication.png" alt="interrupt"><figcaption aria-hidden="true">interrupt</figcaption>
 </figure>
 <ul>
 <li><strong>I²C</strong>：内置 I²C 总线接口能够工作于多主模式或从模式，支持标准和快速模式；I²C 接口支持 7 位或 10 位寻址，7 位从模式时支持双从地址寻址，并且内置了硬件 CRC 发生器/校验器，支持使用 DMA 操作并支持 SMBus 总线 2.0 版/PMBus 总线。I²C 总线的连接线一般不超过 2 米，并且理论上数据线需要增加<code>2KΩ</code>上拉电阻，所有与<strong>STM32F103C8T6</strong>连接的设备都需要共同接地。</li>
@@ -470,7 +470,7 @@
 <h3 id="dma">DMA</h3>
 <p><strong>DMA</strong>（直接内存存取，Direct Memory Access）用来提供在外设与存储器或者存储器与存储器之间的高速数据传输，传输过程无需经过 CPU 进行干预，数据直接通过 DMA 快速进行操作，从而节省大量 CPU 资源。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/overview/DMA.png" alt><figcaption>DMA</figcaption>
+<img src="/Embedded/STM32F103C8T6/overview/DMA.png" alt="DMA"><figcaption aria-hidden="true">DMA</figcaption>
 </figure>
 <blockquote>
 <p>STM32F103 拥有 2 个 DMA 控制器共 12 个通道，其中<strong>DMA1</strong>拥有 7 个通道，<strong>DMA2</strong>拥有 5 个通道，每个通道都用来管理外部设备对片内存储器的访问请求，此外还有一个仲裁器来协调各个 DMA 请求的优先级。除了管理外部设备（Timer、ADC、SPI、I²C、USART）到储存器之间数据的双向传输，DMA 还能够管理存储器之间的数据传输。</p>
@@ -478,18 +478,18 @@
 <h2 id="stm32f103-最小系统">STM32F103 最小系统</h2>
 <p><strong>STM32F103C8T6</strong>的最小系统电路由<strong>电源电路</strong>、<strong>复位电路</strong>、<strong>时钟电路</strong>、<strong>程序下载电路</strong>4 部份组成，具体请参考下面的电路图：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/minimum/mcu.png" alt><figcaption>mcu</figcaption>
+<img src="/Embedded/STM32F103C8T6/minimum/mcu.png" alt="mcu"><figcaption aria-hidden="true">mcu</figcaption>
 </figure>
 <p><strong>电源电路</strong>：<strong>STM32F103C8T6</strong>拥有三路逻辑电源<strong>VDD_1</strong>、<strong>VDD_2</strong>、<strong>VDD_3</strong>和一路模拟电源<strong>VDDA</strong>（由于当前实验电路对于模拟电压的读取精度无特殊要求，所以模拟电源与逻辑电源可以共用）。此外，<strong>VBAT</strong>引脚上还连接了一枚<code>3V</code>纽扣电池<strong>BT1</strong>，用于为内部的 RTC 时钟供电。而后续串接的去耦电容<strong>C1</strong>、<strong>C3</strong>、<strong>C3</strong>、<strong>C4</strong>则主要用于稳定电源以及滤除杂波。<strong>STM32F103C8T6</strong>使用的<code>3V</code>电压是通过<strong>AMS1117-3V</strong>稳压芯片获得，该芯片将计算机 Micro USB 接口的<code>5V</code>供电电压转换为<code>3.3V</code>电压，然后将这个<code>3.3V</code>电压连接至继电器<strong>J1</strong>的开关控制位。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/minimum/power.png" alt><figcaption>mcu</figcaption>
+<img src="/Embedded/STM32F103C8T6/minimum/power.png" alt="mcu"><figcaption aria-hidden="true">mcu</figcaption>
 </figure>
 <blockquote>
 <p><strong>注意</strong>：上面电路原理图当中的<strong>VCC</strong>是指<code>C = Circuit</code>，表示接入电路的电压；<strong>VDD</strong>是指<code>D = Device</code>，表示元件内部的工作电压；<strong>VSS</strong>是指<code>S = Series</code>，表示公共连接，通常指公共接地端。</p>
 </blockquote>
 <p><strong>复位电路</strong>：<strong>STM32F103C8T6</strong>内部已经拥有一个上电复位电路，但是生产环境下为了防止复位引脚悬空，通常还是会连接一组由电容<strong>C9</strong>电阻<strong>R7</strong>共同组成的 RC 外部复位电路，而手动外部复位则是通过后续连接的微动开关<strong>K1</strong>（即实验电路里的复位按键）来完成。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/minimum/reset.png" alt><figcaption>mcu</figcaption>
+<img src="/Embedded/STM32F103C8T6/minimum/reset.png" alt="mcu"><figcaption aria-hidden="true">mcu</figcaption>
 </figure>
 <p><strong>时钟电路</strong>：频率为<code>8MHz</code>的晶振<strong>TX1</strong>是外部系统时钟，由<strong>C5</strong>和<strong>C6</strong>两枚电容协助起震；频率为<code>32.768KHz</code>的晶振<strong>TX2</strong>用于外部<strong>RTC</strong>实时时钟电路，由<strong>C7</strong>和<strong>C8</strong>两枚电容协助起震。</p>
 <p><img src="/Embedded/STM32F103C8T6/minimum/oscillator.png"></p>
@@ -542,22 +542,22 @@
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">D:\<span class="title">Workspace</span>\<span class="title">merkava</span>\<span class="title">User</span> (<span class="title">master</span> -&gt; <span class="title">origin</span>)</span></span><br><span class="line"><span class="function">λ <span class="title">ls</span></span></span><br><span class="line"><span class="function"><span class="title">main.c</span>  <span class="title">stm32f10x_conf.h</span>  <span class="title">stm32f10x_it.c</span>  <span class="title">stm32f10x_it.h</span></span></span><br></pre></td></tr></table></figure>
 <p>完成 STM32 官方标准库文件的拷贝与复制之后，还需要对 Keil uVision 进行相应设置。首先新建一个【New uVision Project】，由于 Keil uVision 5.28.0.0 并未内置 STM32F103C8T6 支持包，因此需要点击菜单栏上的【Pack Installer】功能手动进行安装。当建立好 uVision 项目之后，再点击【Manage Project Items】图标将刚才建立的代码目录添加至 Keil uVision 项目。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/keil/manage-project-items.png" alt><figcaption>manage-project-items.png</figcaption>
+<img src="/Embedded/STM32F103C8T6/keil/manage-project-items.png" alt="manage-project-items.png"><figcaption aria-hidden="true">manage-project-items.png</figcaption>
 </figure>
 <blockquote>
 <p>将<code>CMSIS</code>目录下的 2 个<code>.c</code>文件全部添加至 Keil uVision 项目的<strong>CMSIS</strong>组，然后将<code>Lib\src</code>目录下的所有文件添加至<strong>Lib</strong>组，将<code>Startup</code>目录下的<code>startup_stm32f10x_md.s</code>汇编文件添加至<strong>Startup</strong>组，最后将<code>User</code>下的 2 个<code>.c</code>文件添加至<strong>User</strong>组，最后保存退出。</p>
 </blockquote>
 <p>接下来进一步对 Keil uVision 进行一些初始化的设置，这里首先设置【Target】选项卡下面的外部晶振频率为<code>8.0 MHz</code>，然后勾选【Output】选项卡下的<code>Create HEX File</code>。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/keil/options-for-target-1.png" alt><figcaption>options-for-target-1</figcaption>
+<img src="/Embedded/STM32F103C8T6/keil/options-for-target-1.png" alt="options-for-target-1"><figcaption aria-hidden="true">options-for-target-1</figcaption>
 </figure>
 <p>然后在【C/C++】选项卡下的【Preprocessor Symbols】内的【Define】输入框内填入<code>USE_STDPERIPH_DRIVER,STM32F10X_MD</code>。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/keil/options-for-target-2.png" alt><figcaption>options-for-target-2</figcaption>
+<img src="/Embedded/STM32F103C8T6/keil/options-for-target-2.png" alt="options-for-target-2"><figcaption aria-hidden="true">options-for-target-2</figcaption>
 </figure>
 <p>最后点击【Include Paths】左侧的添加按钮，把刚才新建的那些文件夹逐一选入。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/keil/options-for-target-3.png" alt><figcaption>options-for-target-3</figcaption>
+<img src="/Embedded/STM32F103C8T6/keil/options-for-target-3.png" alt="options-for-target-3"><figcaption aria-hidden="true">options-for-target-3</figcaption>
 </figure>
 <p>官方库文件添加完毕之后，还需要新建<code>Basic</code>和<code>Hardware</code>两个目录来放置开发人员编写的代码，同样按照以上步骤将其添加至 Keil uVision 开发环境当中，至此项目中所有目录的功能说明如下：</p>
 <ul>
@@ -576,7 +576,7 @@
 <li><code>delay_s()</code>：秒级延时函数；</li>
 </ul>
 <figure>
-<img src="/Embedded/STM32F103C8T6/minimum/led.png" alt><figcaption>led</figcaption>
+<img src="/Embedded/STM32F103C8T6/minimum/led.png" alt="led"><figcaption aria-hidden="true">led</figcaption>
 </figure>
 <h4 id="main.c">main.c</h4>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** User/main.c */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"delay.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"led.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stm32f10x.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"sys.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  RCC_Configuration(); <span class="comment">// 时钟设置</span></span><br><span class="line">  LED_Init();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">/** 方式 1</span></span><br><span class="line"><span class="comment">      typedef enum &#123;</span></span><br><span class="line"><span class="comment">        Bit_RESET = 0,</span></span><br><span class="line"><span class="comment">        Bit_SET</span></span><br><span class="line"><span class="comment">      &#125; BitAction; // 位于 stm32f10x_gpio.h</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    GPIO_WriteBit(LEDPORT, LED1, (BitAction)(<span class="number">1</span>)); <span class="comment">// LED1 输出高电平 1</span></span><br><span class="line"></span><br><span class="line">    delay_us(<span class="number">50000</span>);                              <span class="comment">// 延时 1 秒</span></span><br><span class="line">    GPIO_WriteBit(LEDPORT, LED1, (BitAction)(<span class="number">0</span>)); <span class="comment">// LED1 输出低电平 0</span></span><br><span class="line">    delay_us(<span class="number">50000</span>);                              <span class="comment">// 延时 1 秒</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/** 方式 2 */</span></span><br><span class="line">    GPIO_WriteBit(LEDPORT, LED1, (BitAction)(<span class="number">1</span> - GPIO_ReadOutputDataBit(LEDPORT, LED1))); <span class="comment">// 取反 LED1</span></span><br><span class="line">    delay_ms(<span class="number">500</span>);                                                                        <span class="comment">// 延时 1 秒</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/** 方式 3 */</span></span><br><span class="line">    GPIO_SetBits(LEDPORT, LED1);   <span class="comment">// LED 置为高电平 1</span></span><br><span class="line">    delay_s(<span class="number">1</span>);                    <span class="comment">// 延时 1 秒</span></span><br><span class="line">    GPIO_ResetBits(LEDPORT, LED1); <span class="comment">// LED 重置为低电平 0</span></span><br><span class="line">    delay_s(<span class="number">1</span>);                    <span class="comment">// 延时 1 秒</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/** 方式 4 */</span></span><br><span class="line">    GPIO_Write(LEDPORT, <span class="number">0x0001</span>); <span class="comment">// 将 32 位状态值写入整组 GPIO</span></span><br><span class="line">    delay_s(<span class="number">2</span>);                  <span class="comment">// 延时 1 秒</span></span><br><span class="line">    GPIO_Write(LEDPORT, <span class="number">0x0000</span>); <span class="comment">// 将 32 位状态值写入整组 GPIO</span></span><br><span class="line">    delay_s(<span class="number">2</span>);                  <span class="comment">// 延时 1 秒</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -612,7 +612,7 @@
 <h3 id="led-按键">LED 按键</h3>
 <p>GPIO 通常为高电平状态，当按键<strong>K2</strong>和<strong>K3</strong>按下时，<strong>PA0</strong>和<strong>PA1</strong>将分别被下拉为低电平状态。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/minimum/key.png" alt><figcaption>key</figcaption>
+<img src="/Embedded/STM32F103C8T6/minimum/key.png" alt="key"><figcaption aria-hidden="true">key</figcaption>
 </figure>
 <h4 id="main.c-2">main.c</h4>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** User/main.c */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"delay.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"key.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"led.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stm32f10x.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"sys.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  u8 a;</span><br><span class="line">  RCC_Configuration(); <span class="comment">// 时钟设置</span></span><br><span class="line">  LED_Init();          <span class="comment">// 初始化 LED</span></span><br><span class="line">  KEY_Init();          <span class="comment">// 初始化按键</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">/* 示例 1：无锁存 */</span></span><br><span class="line">    <span class="keyword">if</span> (GPIO_ReadInputDataBit(KEYPORT, KEY1)) &#123; <span class="comment">// 读按键接口的电平</span></span><br><span class="line">      GPIO_ResetBits(LEDPORT, LED1);            <span class="comment">// LED灯都为低电平（0）</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      GPIO_SetBits(LEDPORT, LED1);              <span class="comment">// LED灯都为高电平（1）</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 示例 2：无锁存 */</span></span><br><span class="line">    GPIO_WriteBit(LEDPORT, LED1, (BitAction)(!GPIO_ReadInputDataBit(KEYPORT, KEY1)));</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 示例 3：有锁存（较为常用） */</span></span><br><span class="line">    <span class="keyword">if</span> (!GPIO_ReadInputDataBit(KEYPORT, KEY1)) &#123;                                              <span class="comment">// 读取按键对应 GPIO 引脚的电平状态</span></span><br><span class="line">      delay_ms(<span class="number">20</span>);                                                                           <span class="comment">// 调用延时函数消除按键抖动</span></span><br><span class="line">      <span class="keyword">if</span> (!GPIO_ReadInputDataBit(KEYPORT, KEY1)) &#123;                                            <span class="comment">// 读取按键对应 GPIO 引脚的电平状态</span></span><br><span class="line">        GPIO_WriteBit(LEDPORT, LED1, (BitAction)(<span class="number">1</span> - GPIO_ReadOutputDataBit(LEDPORT, LED1))); <span class="comment">// 采用 1 减去状态值的方式使 LED 状态取反</span></span><br><span class="line">        <span class="keyword">while</span> (!GPIO_ReadInputDataBit(KEYPORT, KEY1))</span><br><span class="line">          ; <span class="comment">// 等待按键松开</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 示例 4：有锁存 */</span></span><br><span class="line">    <span class="keyword">if</span> (!GPIO_ReadInputDataBit(KEYPORT, KEY1)) &#123;       <span class="comment">// 读取按键对应 GPIO 引脚的电平状态</span></span><br><span class="line">      delay_ms(<span class="number">20</span>);                                    <span class="comment">// 调用延时函数消除按键抖动</span></span><br><span class="line">      <span class="keyword">if</span> (!GPIO_ReadInputDataBit(KEYPORT, KEY1)) &#123;     <span class="comment">// 读取按键对应 GPIO 引脚的电平状态</span></span><br><span class="line">        a++;                                           <span class="comment">// 变量自增 1</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (a &gt; <span class="number">3</span>) &#123;</span><br><span class="line">          a = <span class="number">0</span>; <span class="comment">// 当变量大于 3 时清零</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        GPIO_Write(LEDPORT, a);                        <span class="comment">// 将变量值写入 LED 对应的 GPIO 上的 PB0 和 PB1</span></span><br><span class="line">        <span class="keyword">while</span> (!GPIO_ReadInputDataBit(KEYPORT, KEY1)); <span class="comment">// 等待按键松开</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -643,7 +643,7 @@
 <h2 id="buzzer-无源蜂鸣器">Buzzer 无源蜂鸣器</h2>
 <p>蜂鸣器<strong>BP1</strong>一端通过限流电阻<strong>R1</strong>连接到 3V 电源，另外一端通过 PNP 三极管<strong>VT1</strong>进行控制，该三极管的集电极连接至 GND，基极通过限流电阻<strong>R3</strong>连接至 STM32 的<strong>PB5</strong>引脚；当<strong>PB5</strong>输出高电平时，三极管的集电极<strong>C</strong>端与发射极<strong>E</strong>端断开，蜂鸣器处于断开状态；当<strong>PB5</strong>输出低电平时，三极管的集电极<strong>C</strong>端与发射极<strong>E</strong>端导通，蜂鸣器开始上电工作。如果要发出<code>1KHz</code>频率的声音，需要 1 秒需要经过 1000 个周期，即<code>1000us</code>。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/minimum/buzzer.png" alt><figcaption>buzzer</figcaption>
+<img src="/Embedded/STM32F103C8T6/minimum/buzzer.png" alt="buzzer"><figcaption aria-hidden="true">buzzer</figcaption>
 </figure>
 <h3 id="按键控制蜂鸣器">按键控制蜂鸣器</h3>
 <h4 id="main.c-4">main.c</h4>
@@ -832,11 +832,11 @@
 <h2 id="ttp223-触摸按键">TTP223 触摸按键</h2>
 <p><strong>TTP223</strong>是一款单通道电容触摸按键检测芯片，工作电压在<code>2.0V ~ 5.5V</code>范围之间，灵敏度可由<code>0 ~ 50pF</code>的外部电容进行调节。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/touch-key/diagram.png" alt><figcaption>touch-key</figcaption>
+<img src="/Embedded/STM32F103C8T6/touch-key/diagram.png" alt="touch-key"><figcaption aria-hidden="true">touch-key</figcaption>
 </figure>
 <p>上面电路图当中，触摸按键<strong>TTP223_1</strong>、<strong>TTP223_2</strong>、<strong>TTP223_3</strong>、<strong>TTP223_4</strong>经过 P10 跳线座，分别连接到 STM32 的 <strong>PA0</strong>、<strong>PA1</strong>、<strong>PA2</strong>、<strong>PA3</strong>四个引脚，并且中间并联了一枚 LED 指示灯以及限流电阻。按键电路上<code>15pF</code>的<strong>C3</strong>电容用来进行灵敏度调节，而<strong>C4</strong>则属于滤波电容。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/touch-key/TTP223.png" alt><figcaption>TTP223</figcaption>
+<img src="/Embedded/STM32F103C8T6/touch-key/TTP223.png" alt="TTP223"><figcaption aria-hidden="true">TTP223</figcaption>
 </figure>
 <table>
 <thead>
@@ -899,14 +899,14 @@
 <h3 id="双击长按控制核心板-led">双击/长按控制核心板 LED</h3>
 <p>本实验项目沿用上面的源代码，未进行目录结构上的任何修改，仅在<code>main.c</code>文件当中添加了<code>#define KEYA_SPEED1 100</code>和<code>#define KEYA_SPEED2 10</code>两条用于区分长按与双击时间的宏定义语句，下面是触摸按键单击、双击、长按时产生的信号时序示意图：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/touch-key/sequence.png" alt><figcaption>TTP223</figcaption>
+<img src="/Embedded/STM32F103C8T6/touch-key/sequence.png" alt="TTP223"><figcaption aria-hidden="true">TTP223</figcaption>
 </figure>
 <h4 id="main.c-14">main.c</h4>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** User/main.c */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"delay.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"led.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stm32f10x.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"sys.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"touch_key.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> KEYA_SPEED1 100 <span class="comment">// 定义长按的时间长度(单位为 10ms)，即 100 * 10ms = 1秒，当按键按下的时间持续 1 秒钟以后就认为是长按</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> KEYA_SPEED2 10  <span class="comment">// 定义双击的时间长度(单位为 20ms)，即 10 * 20ms = 200毫秒，即第一次按键放开之后，如果 200ms 以内还有按键按下，就认为是双击</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  u8 a = <span class="number">0</span>, b, c = <span class="number">0</span>;</span><br><span class="line">  RCC_Configuration(); <span class="comment">// 初始化 系统时钟</span></span><br><span class="line">  LED_Init();          <span class="comment">// 初始化 LED</span></span><br><span class="line">  TOUCH_KEY_Init();    <span class="comment">// 初始化 按键</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">    <span class="comment">/* 判断触摸按键 A 是否按下 */</span></span><br><span class="line">    <span class="keyword">if</span> (!GPIO_ReadInputDataBit(TOUCH_KEYPORT, TOUCH_KEY_A)) &#123;</span><br><span class="line">      delay_ms(<span class="number">20</span>);                                              <span class="comment">// 为了让程序兼容核心板上的按键 K1，这里调用了去抖函数</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">/* 判断长短按键 */</span></span><br><span class="line">      <span class="keyword">if</span> (!GPIO_ReadInputDataBit(TOUCH_KEYPORT, TOUCH_KEY_A)) &#123;</span><br><span class="line">        <span class="comment">/* 循环进行长按状态的判断，如果 c &lt; 100，这里 KEYA_SPEED1 为上面宏定义的值 100 */</span></span><br><span class="line">        <span class="keyword">while</span> ((!GPIO_ReadInputDataBit(TOUCH_KEYPORT, TOUCH_KEY_A)) &amp;&amp; c &lt; KEYA_SPEED1) &#123;</span><br><span class="line">          c++;</span><br><span class="line">          delay_ms(<span class="number">10</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/* 长按处理代码，如果 c &gt;= 100 */</span></span><br><span class="line">        <span class="keyword">if</span> (c &gt;= KEYA_SPEED1) &#123;</span><br><span class="line">          GPIO_WriteBit(LEDPORT, LED1, (BitAction)(<span class="number">1</span>));          <span class="comment">// 点亮 LED1</span></span><br><span class="line">          <span class="keyword">while</span> (!GPIO_ReadInputDataBit(TOUCH_KEYPORT, TOUCH_KEY_A));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">/* 单击处理代码 */</span></span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">/* 首先判断双击，如果 b &lt; 10，这里 KEYA_SPEED2 为上面宏定义的值 10 */</span></span><br><span class="line">          <span class="keyword">for</span> (b = <span class="number">0</span>; b &lt; KEYA_SPEED2; b++) &#123;</span><br><span class="line">            delay_ms(<span class="number">20</span>);</span><br><span class="line">            <span class="keyword">if</span> (!GPIO_ReadInputDataBit(TOUCH_KEYPORT, TOUCH_KEY_A)) &#123;</span><br><span class="line">              a = <span class="number">1</span>;</span><br><span class="line">              GPIO_WriteBit(LEDPORT, LED2, (BitAction)(<span class="number">1</span>));      <span class="comment">// 点亮 LED2</span></span><br><span class="line">              <span class="keyword">while</span> (!GPIO_ReadInputDataBit(TOUCH_KEYPORT, TOUCH_KEY_A));</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="comment">/* 然后判断单击 */</span></span><br><span class="line">          <span class="keyword">if</span> (a == <span class="number">0</span>) &#123;</span><br><span class="line">            GPIO_WriteBit(LEDPORT, LED1 | LED2, (BitAction)(<span class="number">0</span>)); <span class="comment">// 将 LED1 和 LED2 全部熄灭</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        a = <span class="number">0</span>; c = <span class="number">0</span>;   <span class="comment">// 参数清零，确保下次判断时 2 个参数都恢复为初始值</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="滑动控制-led">滑动控制 LED</h3>
 <p>需要进行滑动操作的 A、B、C、D 四个触摸按键间距必须足够的小，才会呈现出<code>A - AB - B - BC - C - CD - D</code>的滑动轨迹，而非仅仅被识别为 4 次点击操作。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/touch-key/sliding-sequence.png" alt><figcaption>touch-key</figcaption>
+<img src="/Embedded/STM32F103C8T6/touch-key/sliding-sequence.png" alt="touch-key"><figcaption aria-hidden="true">touch-key</figcaption>
 </figure>
 <p>本实验项目同样基于上一步代码进行修改，引入了<code>#include "usart.h"</code>串口操作相关的头文件，便于在<code>main.c</code>当中将滑动操作的轨迹打印到 USART 串口上面。</p>
 <h4 id="main.c-15">main.c</h4>
@@ -914,7 +914,7 @@
 <h2 id="tm1640-驱动共阴极数码管">TM1640 驱动共阴极数码管</h2>
 <p>TM1640 由深圳天威电子推出的一款数码管专用驱动控制芯片，采用 SOP28 形式封装，并使用 5V 工作电压。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/digital-tube/tm1640.png" alt><figcaption>tm1640</figcaption>
+<img src="/Embedded/STM32F103C8T6/digital-tube/tm1640.png" alt="tm1640"><figcaption aria-hidden="true">tm1640</figcaption>
 </figure>
 <table>
 <thead>
@@ -966,11 +966,11 @@
 </table>
 <p><strong>STM32F103C8T6</strong>的通过两线式通信接口与<strong>TM1640</strong>进行连接，当时钟信号<strong>CLK</strong>为高电平时，数据信号<strong>DIN</strong>保持不变；仅当<strong>CLK</strong>为低电平时<strong>DIN</strong>的信号才会发生改变，数据传输时总是<strong>低位在前，高位在后</strong>。数据输入的开始条件为<strong>CLK</strong>为高时 <strong>DIN</strong>由高变低负跳变；结束条件是<strong>CLK</strong>为高时<strong>DIN</strong>由低向高正跳变，指令传输的时序图如下：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/digital-tube/sequence.png" alt><figcaption>tm1640</figcaption>
+<img src="/Embedded/STM32F103C8T6/digital-tube/sequence.png" alt="tm1640"><figcaption aria-hidden="true">tm1640</figcaption>
 </figure>
 <p>TM1640 的数据线<strong>DIN</strong>和时钟同步线<strong>SCLK</strong>引脚通过跳线帽<strong>P9</strong>连接至 STM32 的<strong>PA11</strong>和<strong>PA12</strong>引脚，其第 17 脚和 6 脚分别连接至 5V 电源与<strong>GND</strong>，并在回路上串接了<strong>C1</strong>和<strong>C2</strong>两枚滤波电容；<strong>GR1</strong>至<strong>GR8</strong>引脚则各自连接到共阴极数码管的位选端上，<strong>SEG1</strong>至<strong>SEG8</strong>引脚则连接至段选端。另外，电路中 8 枚独立 LED 的负极分别连接至 TM1640 的第 26 脚，正极则分别连接至<strong>SEG1</strong>至<strong>SEG8</strong>引脚。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/digital-tube/diagram.png" alt><figcaption>diagram</figcaption>
+<img src="/Embedded/STM32F103C8T6/digital-tube/diagram.png" alt="diagram"><figcaption aria-hidden="true">diagram</figcaption>
 </figure>
 <h3 id="main.c-16">main.c</h3>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** User/main.c */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"TM1640.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"delay.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"rtc.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stm32f10x.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"sys.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  u8 c = <span class="number">0x01</span>;</span><br><span class="line">  RCC_Configuration(); <span class="comment">// 初始化 系统时钟</span></span><br><span class="line">  RTC_Config();        <span class="comment">// 初始化 RTC</span></span><br><span class="line">  TM1640_Init();       <span class="comment">// 初始化 TM1640</span></span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (RTC_Get() == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="comment">/* 调用 TM1640 显示函数，用于显示天数，后面加 10 是为了点亮小数点 */</span></span><br><span class="line">      TM1640_display(<span class="number">0</span>, rday / <span class="number">10</span>);</span><br><span class="line">      TM1640_display(<span class="number">1</span>, rday % <span class="number">10</span> + <span class="number">10</span>);</span><br><span class="line">      <span class="comment">/* 调用 TM1640 显示函数，用于显示小时，后面加 10 是为了点亮小数点 */</span></span><br><span class="line">      TM1640_display(<span class="number">2</span>, rhour / <span class="number">10</span>);</span><br><span class="line">      TM1640_display(<span class="number">3</span>, rhour % <span class="number">10</span> + <span class="number">10</span>);</span><br><span class="line">      <span class="comment">/* 调用 TM1640 显示函数，用于显示分钟，后面加 10 是为了点亮小数点 */</span></span><br><span class="line">      TM1640_display(<span class="number">4</span>, rmin / <span class="number">10</span>);</span><br><span class="line">      TM1640_display(<span class="number">5</span>, rmin % <span class="number">10</span> + <span class="number">10</span>);</span><br><span class="line">      <span class="comment">/* 调用 TM1640 显示函数，用于显示秒数，后面加 10 是为了点亮小数点 */</span></span><br><span class="line">      TM1640_display(<span class="number">6</span>, rsec / <span class="number">10</span>);</span><br><span class="line">      TM1640_display(<span class="number">7</span>, rsec % <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">      TM1640_led(c); <span class="comment">// 高电平点亮与 TM1640 连接的 8 位独立 LED</span></span><br><span class="line"></span><br><span class="line">      c &lt;&lt;= <span class="number">1</span>;       <span class="comment">// 通过对局部变量 c 进行左移操作，实现出流水灯效果</span></span><br><span class="line">      <span class="keyword">if</span> (c == <span class="number">0x00</span>)</span><br><span class="line">        c = <span class="number">0x01</span>;    <span class="comment">// 局部变量 c 左移操作结束之后，让 c 恢复默认值，从而达到反复显示流水灯的效果</span></span><br><span class="line">      delay_ms(<span class="number">125</span>); <span class="comment">// 通过延时函数来决定流水灯的速度</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -981,17 +981,17 @@
 <h2 id="ec11-旋转编码器">EC11 旋转编码器</h2>
 <p>实验电路中所使用的 EC11 旋转编码器，旋转一圈产生的脉冲次数为<strong>20</strong>次（<em>即旋转 360° 需要经过 20 个位格</em>），且向下按压时可作为开关使用，最大工作电压为<code>5V</code>，最大工作电流为<code>10mA</code>，其内部等效原理图如下所示：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/rotary-encoder/sketch.png" alt><figcaption>sketch</figcaption>
+<img src="/Embedded/STM32F103C8T6/rotary-encoder/sketch.png" alt="sketch"><figcaption aria-hidden="true">sketch</figcaption>
 </figure>
 <p>当按下旋钮时，开关<strong>K1</strong>闭合，导通第<strong>1</strong>和<strong>2</strong>引脚；当旋转旋钮时，开关<strong>K2</strong>和<strong>K3</strong>以一定的先后顺序导通，通过两者的导通顺序就可以判断旋转方向和旋转的隔断数，如下是旋钮分别向左和向右旋转时，开关<strong>K2</strong>和<strong>K3</strong>产生的时序差异比较图：</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/rotary-encoder/sequence.png" alt><figcaption>sequence</figcaption>
+<img src="/Embedded/STM32F103C8T6/rotary-encoder/sequence.png" alt="sequence"><figcaption aria-hidden="true">sequence</figcaption>
 </figure>
 <blockquote>
 <p><strong>注意：</strong>由于旋转编码器内部采用的是机械式微动开关，旋钮旋转过一个隔断会产生一个低电平触发，此时会在该低电平触发的下降沿和上升沿产生约<code>2ms</code>左右的按键抖动。</p>
 </blockquote>
 <figure>
-<img src="/Embedded/STM32F103C8T6/rotary-encoder/diagram.png" alt><figcaption>diagram</figcaption>
+<img src="/Embedded/STM32F103C8T6/rotary-encoder/diagram.png" alt="diagram"><figcaption aria-hidden="true">diagram</figcaption>
 </figure>
 <p>电路图当中，将 EC11 旋转编码器的第<strong>1</strong>和<strong>4</strong>引脚连接至<strong>GND</strong>，而第<strong>2</strong>、<strong>3</strong>、<strong>5</strong>脚通过跳线帽<strong>P8</strong>连接至 STM32F103 的<strong>PA6</strong>、<strong>PA7</strong>、<strong>PB2</strong>引脚，此时只需要将<strong>GPIO</strong>设置为上拉电阻输入方式，就可以在<strong>K1</strong>、<strong>K2</strong>、<strong>K3</strong>任何一个开关闭合导通时，向 GPIO 端口输入低电平，从而通过这 3 个 GPIO 读取到了旋转编码器内部 3 个微动开关的状态。</p>
 <h3 id="main.c-17">main.c</h3>
@@ -1008,11 +1008,11 @@
 <p><strong>I²C</strong>总线属于两线制的通信连接方式，传输线路上需要使用<code>1kΩ ~ 10kΩ</code>范围阻值的上拉电阻，并且复用为 I²C 接口的 GPIO 引脚需要设置为<strong>复用开漏模式</strong>。由于 I²C 总线上，所有设备都连接到相同的<strong>数据线 SDA</strong>与<strong>时钟线 SCL</strong>，因此通过每个设备的唯一地址来加以区分，该地址由 7 位十六进制数组成，一条总线上最多可挂载 127 个设备。新版 I²C 规范增加了 10 位地址模式，可以容纳的设备数量达到了 1023 个。</p>
 <p><strong>STM32F103C8T6</strong>拥有 2 组<strong>I²C</strong>总线接口，分别是由<strong>PB6</strong>和<strong>PB7</strong>组成的<strong>I²C1</strong>，由<strong>PB10</strong>和<strong>PB11</strong>组成的<strong>I²C2</strong>。其中，<strong>I²C1</strong>通过跳线帽<strong>P11</strong>串联<strong>R18</strong>和<strong>R19</strong>两枚<code>5.1kΩ</code>上拉电阻以后，连接至实验电路中的 OLED 液晶显示屏以及 LM75A 温度传感器。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/i2c/diagram-lm75a.png" alt><figcaption>diagram-lm75a</figcaption>
+<img src="/Embedded/STM32F103C8T6/i2c/diagram-lm75a.png" alt="diagram-lm75a"><figcaption aria-hidden="true">diagram-lm75a</figcaption>
 </figure>
 <p><strong>LM75A</strong>是由恩智浦公司生产的一款温度传感器，一共拥有 8 个引脚，其中第 1 和 2 引脚分别连接至 I²C 总线的两条通信线路，第 3 脚是中断输出，第 4 和 8 脚分别是电源的<strong>VCC</strong>和<strong>GND</strong>，而第 5、6、7 引脚可以用来定义设备地址。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/i2c/lm75a.png" alt><figcaption>diagram-lm75a</figcaption>
+<img src="/Embedded/STM32F103C8T6/i2c/lm75a.png" alt="diagram-lm75a"><figcaption aria-hidden="true">diagram-lm75a</figcaption>
 </figure>
 <table>
 <thead>
@@ -1082,7 +1082,7 @@
 <h3 id="oled-无字库液晶屏">OLED 无字库液晶屏</h3>
 <p>12864 液晶是指<code>128 × 64</code>像素分辨率的显示屏幕，当前实验电路采用的是型号为 <strong>OLED0561</strong> 的 OLED 液晶显示屏，采用 <strong>SH1106</strong> 主控芯片，可以进行单色无灰度的显示，屏幕采用 I²C 总线与<strong>STM32F103C8T6</strong>微控制器进行通信。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/i2c/diagram-oled.png" alt><figcaption>diagram-oled</figcaption>
+<img src="/Embedded/STM32F103C8T6/i2c/diagram-oled.png" alt="diagram-oled"><figcaption aria-hidden="true">diagram-oled</figcaption>
 </figure>
 <p>在<code>Hardware</code>目录下的<code>OLED0561</code>文件夹内新建<code>ASCII_8x16</code>（八乘十六的 ASCII 码字库）、<code>CHS_16x16.h</code>（十六乘十六的汉字编码）、<code>PIC1.h</code>（图片编码）以及 OLED 显示驱动程序<code>oled0561.h</code>和<code>oled0561.c</code>源文件。</p>
 <blockquote>
@@ -1103,7 +1103,7 @@
 <h2 id="relay-继电器">Relay 继电器</h2>
 <p>首先，将实验电路上继电器对应的<strong>P26</strong>跳线帽短接，然后将触摸按键对应的<strong>P10</strong>跳线帽短接，本实验使用触摸按键来进行继电器开关控制，并使用<strong>ULN2003A</strong>达林顿芯片来驱动继电器。</p>
 <figure>
-<img src="/Embedded/STM32F103C8T6/relay-motor/diagram.png" alt><figcaption>diagram-oled</figcaption>
+<img src="/Embedded/STM32F103C8T6/relay-motor/diagram.png" alt="diagram-oled"><figcaption aria-hidden="true">diagram-oled</figcaption>
 </figure>
 <p>上面的电路图当中，继电器 1 和 2 分别连接至<strong>STM32F103C8T6</strong>的<strong>PA13</strong>和<strong>PA14</strong>引脚（上电时 JTAG 电路将这两个引脚默认为 JTAG 模式，本实验中需要将其手动设置为 GPIO 模式），然后 PA13 和 PA14 分别通过<strong>P26</strong>跳线帽连接至<strong>ULN2003</strong>达林顿管芯片的<strong>IN5</strong>和<strong>IN6</strong>引脚（由于其内部使用了非门电路，其左边输入与右边输出的状态相反），最后其<strong>OUT5/J1</strong>和<strong>OUT6/J2</strong>引脚分别用于控制原理图中的继电器<strong>U13</strong>和<strong>U12</strong>。</p>
 <p>这样，当<strong>PA13</strong>和<strong>PA14</strong>输出高电平时，经过<strong>ULN2003</strong>反向之后，对应输出低电平，由于继电器另一端连接在<code>5V</code>高电平上，从而使继电器线圈吸合工作，导致<strong>OUT1A</strong>和<strong>OUT1C</strong>触点导通或者<strong>OUT2A</strong>和<strong>OUT2C</strong>触点导通；反之，如果<strong>PA13</strong>和<strong>PA14</strong>输出低电平，则<strong>OUT1A</strong>和<strong>OUT1B</strong>导通或者<strong>OUT2A</strong>和<strong>OUT2B</strong>导通。此外，实验电路还在继电器<strong>U13</strong>和<strong>U12</strong>上连接了<strong>LED9</strong>和<strong>LED10</strong>两枚 LED 指示灯，以及相应的<strong>R28</strong>和<strong>R29</strong>两只限流电阻。</p>
@@ -1932,7 +1932,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:51</span>
+    <span title="站点阅读时长">22:53</span>
 </div>
 
         

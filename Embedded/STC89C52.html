@@ -958,7 +958,7 @@
 <h1 id="步进电机">步进电机</h1>
 <p>步进电机属于控制类电机，用来将脉冲信号转换成一个转动角度。当前使用的<code>28BYJ-48</code>是四相八拍的永磁式减速步进电机，这里的减速是指步进电机转子通过内置减速齿轮对外输出动力，<code>28BYJ-48</code>的减速比为<code>1 : 64</code>，也就是转子需要旋转<code>64</code>圈，外部的传动轴才会旋转<code>1</code>圈。</p>
 <figure>
-<img src="/Embedded/STC89C52/Motor/five-wire-four-phase.png" alt><figcaption>type-matrix</figcaption>
+<img src="/Embedded/STC89C52/Motor/five-wire-four-phase.png" alt="type-matrix"><figcaption aria-hidden="true">type-matrix</figcaption>
 </figure>
 <p>下面结构图当中，里圈由永磁体组成的 6 个齿（标注为<code>0～5</code>）称为<strong>转子</strong>，外圈缠有线圈绕组的 8 个齿并且保持不动的是<strong>定子</strong>，其正对的两个齿上的绕组相互串联，总是同时导通或关断，从而形成<strong>四相</strong>（标注为<code>A、B、C、D</code>）。通过循环导通<code>A、B、C、D</code>绕组实现转子的逆时针转动，每个四节拍转子将会转过一个定子齿的角度，八个四节拍转子就可以转动一圈，其中单个节拍使转子转过的角度<span class="math inline">\(\frac{360度}{8次\times4拍}=11.25度\)</span>称为<strong>步进角度</strong>，上述这种工作模式就是步进电机的<strong>单相绕组通电四节拍模式</strong>，简称<strong>单四拍模式</strong>。</p>
 <p>如果在单四拍的两个节拍之间插入一个双绕组导通的中间节拍，则可以构成扭矩更大精度更高的<strong>八节拍模式</strong>，其步进角度为<span class="math inline">\(\frac{360度}{8次\times8拍}=5.625度\)</span>。如果舍弃八拍模式中单绕组通电的四拍，而只保留双绕组通电的四拍，就可以构成<strong>双绕组通电四节拍</strong>，其步进角度虽与单四拍模式相同，但由于两个绕组同时导通，扭矩相比单四拍模式更大。生产环境当中，<strong>八节拍模式</strong>能够最大限度发挥电机的扭矩和精度，是四相步进电机的最佳工作模式。</p>
@@ -1040,7 +1040,7 @@
 </blockquote>
 <p>当前电路当中，步进电机控制模块与 LED 控制模块的<strong>74HC138</strong>译码器共同复用单片机的<code>P1.0 ~ P1.3</code>引脚，通过调整<strong>跳线帽</strong>位置可以切换<code>P1.0 ~ P1.3</code>去控制步进电机的四个绕组。</p>
 <figure>
-<img src="/Embedded/STC89C52/Motor/diagram.png" alt><figcaption>type-matrix</figcaption>
+<img src="/Embedded/STC89C52/Motor/diagram.png" alt="type-matrix"><figcaption aria-hidden="true">type-matrix</figcaption>
 </figure>
 <p>另外，由于单片机 IO 接口输出电流能力较弱，所以每相控制线上都添加了 9012 三极管提高驱动能力。结合上面的电路图和八拍模式绕组控制顺序表，如果要让<strong>A</strong>相绕组导通，则三极管<strong>Q2</strong>必须导通，此时<strong>A 相</strong>对应的橙色线相当于接地，单片机<strong>P1</strong>引脚低 4 位应输出<code>0b1110</code>（即<code>0xE</code>）；如要让<strong>A</strong>、<strong>B</strong>相同时导通，那么就需要三极管<strong>Q2</strong>、<strong>Q3</strong>导通，<strong>P1</strong>引脚低 4 位应输出<code>0b1100</code>（即<code>0xC</code>），依此类推就可以得出八拍模式下的单片机 IO 控制码数组：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> code BeatCode[<span class="number">8</span>] = &#123; <span class="number">0xE</span>, <span class="number">0xC</span>, <span class="number">0xD</span>, <span class="number">0x9</span>, <span class="number">0xB</span>, <span class="number">0x3</span>, <span class="number">0x7</span>, <span class="number">0x6</span> &#125;;</span><br></pre></td></tr></table></figure>
@@ -2183,7 +2183,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:51</span>
+    <span title="站点阅读时长">22:53</span>
 </div>
 
         

@@ -313,7 +313,7 @@
 <h3 id="nodejs-架构简介">NodeJS 架构简介</h3>
 <p>NodeJS 除了使用 V8 作为 JavaScript 引擎以外，还使用高效的<a href="http://software.schmorp.de/pkg/libev.html" target="_blank" rel="noopener">libev</a>和<a href="http://software.schmorp.de/pkg/libev.html" target="_blank" rel="noopener">libeio</a>库支持事件驱动和异步式 I/O（<em>Windows 下使用了 IOCP</em>），并在此基础上抽象出<strong>libuv</strong>层。</p>
 <figure>
-<img src="/Web/Nodejs/architecture.png" alt><figcaption>NodeJS架构</figcaption>
+<img src="/Web/Nodejs/architecture.png" alt="NodeJS架构"><figcaption aria-hidden="true">NodeJS架构</figcaption>
 </figure>
 <h2 id="快速开始">快速开始</h2>
 <p>新建 1 个 test.js 文件，编写代码<code>console.log('Hello NodeJS!');</code>，然后保存文件。打开命令行执行<code>node test.js</code>语句，得到结果如下：</p>
@@ -334,7 +334,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">➜  /workspace node app.js</span><br><span class="line">HTTP服务运行于http://127.0.0.1:5000/</span><br></pre></td></tr></table></figure>
 <p>打开浏览器访问<code>http://127.0.0.1:5000</code>。</p>
 <figure>
-<img src="/Web/Nodejs/hello-world.png" alt><figcaption>hello-world</figcaption>
+<img src="/Web/Nodejs/hello-world.png" alt="hello-world"><figcaption aria-hidden="true">hello-world</figcaption>
 </figure>
 <blockquote>
 <p>服务启动后，NodeJS 会一直监听<code>5000</code>端口，按下<strong>Ctrl+C</strong>可以结束 HTTP 监听服务。</p>
@@ -355,13 +355,13 @@
 <li><strong>同步式 IO</strong>（<em>阻塞式 IO</em>）：线程在执行中如果遇到磁盘读写、网络通信、长事务查询等 I/O 操作，通常需要耗费较长时间，这时操作系统会剥夺该线程 CPU 控制权，将资源让给其它工作线程。当 I/O 操作完毕时，操作系统解除该线程阻塞状态，恢复 CPU 控制权，使其继续执行。</li>
 </ul>
 <figure>
-<img src="/Web/Nodejs/io-synchronization.png" alt><figcaption>多线程同步式IO</figcaption>
+<img src="/Web/Nodejs/io-synchronization.png" alt="多线程同步式IO"><figcaption aria-hidden="true">多线程同步式IO</figcaption>
 </figure>
 <ul>
 <li><strong>异步式 IO</strong>（<em>非阻塞式 IO</em>）：当线程遇到 I/O 操作时，不会以阻塞方式等待 I/O 操作完成，而只是将 I/O 请求发送给操作系统，然后继续执行下一条语句。当操作系统完成 I/O 操作时，以事件形式通知执行 I/O 操作的线程，线程会在特定时间处理该事件。处理异步 I/O 的时候，线程必须有事件循环，不断检查有无未处理的事件，然后依次进行处理。</li>
 </ul>
 <figure>
-<img src="/Web/Nodejs/io-asynchronization.png" alt><figcaption>单线程异步式IO</figcaption>
+<img src="/Web/Nodejs/io-asynchronization.png" alt="单线程异步式IO"><figcaption aria-hidden="true">单线程异步式IO</figcaption>
 </figure>
 <h3 id="多线程同步式-io-与单线程异步式-io-的比较">多线程同步式 IO 与单线程异步式 IO 的比较</h3>
 <ol type="1">
@@ -1089,7 +1089,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:51</span>
+    <span title="站点阅读时长">22:53</span>
 </div>
 
         

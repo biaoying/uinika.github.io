@@ -313,18 +313,18 @@
 <h2 id="close-lock-screen">Close Lock Screen</h2>
 <p>对于 Windows 10 专业版，可以打开<em>组策略编辑器</em>并依次进入<code>计算机配置-管理模板-控制面板-个性化</code>目录，选择右则<code>个性化</code>选项的<code>不显示锁屏</code>并设置为<strong>已启用</strong>。</p>
 <figure>
-<img src="/Zen/Config-Windows/close-win10-lock-screen.png" alt><figcaption>close-win10-lock-screen</figcaption>
+<img src="/Zen/Config-Windows/close-win10-lock-screen.png" alt="close-win10-lock-screen"><figcaption aria-hidden="true">close-win10-lock-screen</figcaption>
 </figure>
 <p>对于 Windows 10 家庭版，由于<strong>没有组策略编辑器</strong>，所以需要采用修改注册表的办法禁用锁屏。按下【Win + R】并且输入<code>regedit</code>打开注册表编辑器，依次展开<code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows</code>，在鼠标右键<code>Windows</code>的菜单项当中，选择【新建项】并将其命名为<code>Personalization</code>，在该项下面新建【DWORD（32 位）值】<code>NoLockScreen</code>，并将其数值数据修改为<code>1</code>。</p>
 <figure>
-<img src="/Zen/Config-Windows/close-win10-lock-screen-home.png" alt><figcaption>close-win10-lock-screen</figcaption>
+<img src="/Zen/Config-Windows/close-win10-lock-screen-home.png" alt="close-win10-lock-screen"><figcaption aria-hidden="true">close-win10-lock-screen</figcaption>
 </figure>
 <h2 id="time-sync">Time Sync</h2>
 <p><strong>Win+R</strong>运行<code>regedit</code>打开<em>注册表编辑器</em>，然后找到下面目录的位置：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/TimeZoneInformation/</span><br></pre></td></tr></table></figure>
 <p>鼠标右键新建<strong>QWORD(64 位)值</strong>，键为<code>RealTimeIsUniversal</code>值为<code>1</code>，然后重启 Windows 10。</p>
 <figure>
-<img src="/Zen/Config-Windows/time-sync.png" alt><figcaption>time-sync</figcaption>
+<img src="/Zen/Config-Windows/time-sync.png" alt="time-sync"><figcaption aria-hidden="true">time-sync</figcaption>
 </figure>
 <h2 id="kms-activate">KMS Activate</h2>
 <p>如果当前使用的是 Windows 10 专业版，那么可以使用向微软官方购买的正版激活密钥，并以<strong>管理员</strong>方式运行如下命令：</p>
@@ -337,7 +337,7 @@
 <h2 id="hyper-v-install">Hyper-V Install</h2>
 <p>Hyper-V 是 windows 10 自带的虚拟机工具，打开<code>控制面板\所有控制面板项\程序和功能</code>，然后点击左侧的<code>启用和关闭windows程序</code>，在弹出界面勾选如下选项，然后重启计算机：</p>
 <figure>
-<img src="/Zen/Config-Windows/hyper-v.png" alt><figcaption>hyper-v</figcaption>
+<img src="/Zen/Config-Windows/hyper-v.png" alt="hyper-v"><figcaption aria-hidden="true">hyper-v</figcaption>
 </figure>
 <h2 id="remove-grub-from-efi">Remove GRUB from EFI</h2>
 <p>计算机同时安装有 Linux 与 Windows 双系统的情况下，如果仅仅移除 Linux 分区，那么 BIOS 依然能够读取到遗留的 Linux 启动项。如果需要彻底删除该启动欺罔 ，则需要通过 Windows 10 进入 <strong>Boot EFI</strong> 并且删除 GRUB 目录。以管理员身份运行 Windows PowerShell，执行如下命令：</p>
@@ -587,7 +587,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:51</span>
+    <span title="站点阅读时长">22:53</span>
 </div>
 
         

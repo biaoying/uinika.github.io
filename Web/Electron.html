@@ -281,7 +281,7 @@
 <p>Electron 是由 Github 开发，通过将<a href="www.chromium.org">Chromium</a>和<a href="https://nodejs.org" target="_blank" rel="noopener">NodeJS</a>整合为一个运行时环境，实现使用 HTML、CSS、JavaScript 构建跨平台的桌面应用程序的目的。Electron 源于 2013 年 Github 社区提供的开源编辑器 Atom，后于 2014 年在社区开源，并在 2016 年的 5 月和 8 月，通过了 <a href="https://www.apple.com/mac/app-store/" target="_blank" rel="noopener">Mac App Store</a> 和 <a href="https://apps.microsoft.com/" target="_blank" rel="noopener">Windows Store</a> 的上架许可，VSCode、Skype 等著名开源或商业应用程序，都是基于 Electron 打造。为了方便编写测试用例，笔者在 Github 搭建了一个简单的 Electron 种子项目<a href="https://github.com/uinika/octopus" target="_blank" rel="noopener">Octopus</a>，读者可以基于此来运行本文涉及的示例代码。</p>
 <a id="more"></a>
 <figure>
-<img src="/Web/Electron/construction.png" alt><figcaption>construction</figcaption>
+<img src="/Web/Electron/construction.png" alt="construction"><figcaption aria-hidden="true">construction</figcaption>
 </figure>
 <h1 id="getting-start">Getting Start</h1>
 <p>首先，让我们通过<code>npm init</code>和<code>git init</code>新建一个项目，然后通过如下<code>npm</code>语句安装最新的 Electron 稳定版。</p>
@@ -296,7 +296,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Hello Electron<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>你好，Electron！<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 所有NodeJS可用的API都可以通过renderer.js的process属性访问 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">      当前Electron版本：</span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.write(process.versions.electron);</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">      当前NodeJS版本：</span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.write(process.versions.node);</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">      当前Chromium版本：</span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.write(process.versions.chrome);</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">      <span class="comment">// 这里也可以包含运行在当前进程里的其它文件</span></span></span><br><span class="line"><span class="javascript">      <span class="built_in">require</span>(<span class="string">"./renderer.js"</span>);</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>使用命令行工具执行<code>npm start</code>命令之后，上述 HTML 代码在笔者 Linux 操作系统内被渲染为如下界面。应用当中，可以通过<code>CTRL+R</code>重新加载页面，或者使用<code>CTRL+SHIFT+I</code>打开浏览器控制台。</p>
 <figure>
-<img src="/Web/Electron/hello-electron.png" alt><figcaption>hello-electron</figcaption>
+<img src="/Web/Electron/hello-electron.png" alt="hello-electron"><figcaption aria-hidden="true">hello-electron</figcaption>
 </figure>
 <blockquote>
 <p>一个 Electron 应用的<strong>主进程</strong>只会有一个，<strong>渲染进程</strong>则会有多个。</p>
@@ -307,7 +307,7 @@
 <li><strong>渲染进程</strong>（<em>renderer processes</em>）用来运行页面，每个渲染进程都对应自己的<code>BrowserWindow</code>实例，如果实例被销毁那么渲染进程就会被终止。</li>
 </ul>
 <figure>
-<img src="/Web/Electron/structure.png" alt><figcaption>structure</figcaption>
+<img src="/Web/Electron/structure.png" alt="structure"><figcaption aria-hidden="true">structure</figcaption>
 </figure>
 <p>Electron 分别在<strong>主进程</strong>和<strong>渲染进程</strong>提供了大量 API，可以通过<code>require</code>语句方便的将这些 API 包含在当前模块使用。但是 Electron 提供的 API 只能用于指定进程类型，即某些 API 只能用于渲染进程，而某些只能用于主进程，例如上面提到的<code>BrowserWindow</code>就只能用于主进程。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; BrowserWindow &#125; = <span class="built_in">require</span>(<span class="string">"electron"</span>);</span><br><span class="line"></span><br><span class="line">ccc = <span class="keyword">new</span> BrowserWindow();</span><br></pre></td></tr></table></figure>
@@ -366,7 +366,7 @@
 <p>使用<code>MenuItem</code>类可以添加菜单项至 Electron 应用程序菜单和上下文菜单当中。</p>
 </blockquote>
 <figure>
-<img src="/Web/Electron/menu.png" alt><figcaption>menu</figcaption>
+<img src="/Web/Electron/menu.png" alt="menu"><figcaption aria-hidden="true">menu</figcaption>
 </figure>
 <h2 id="netlog-模块">netLog 模块</h2>
 <p>用于记录网络日志。</p>
@@ -809,7 +809,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:51</span>
+    <span title="站点阅读时长">22:53</span>
 </div>
 
         

@@ -23,6 +23,17 @@
       </tags>
   </entry>
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Altium Designer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>模拟与数字电子技术导论</title>
     <url>/Electronics/Introduct.html</url>
     <content><![CDATA[]]></content>
@@ -42,17 +53,6 @@
       </categories>
       <tags>
         <tag>Mobile</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Altium Designer</tag>
       </tags>
   </entry>
   <entry>
@@ -386,17 +386,6 @@
       </tags>
   </entry>
   <entry>
-    <title>NodeJS 快速上手指南</title>
-    <url>/Web/Nodejs.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Webpack 4 核心剖析</title>
     <url>/Web/Webpack.html</url>
     <content><![CDATA[]]></content>
@@ -405,6 +394,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NodeJS 快速上手指南</title>
+    <url>/Web/Nodejs.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -430,17 +430,6 @@
       </tags>
   </entry>
   <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <url>/Embedded/RaspberryPi.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>宏晶 STC90C516RD+ 数据手册精读</title>
     <url>/Embedded/STC90C51.html</url>
     <content><![CDATA[]]></content>
@@ -460,6 +449,28 @@
       </categories>
       <tags>
         <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <url>/Embedded/RaspberryPi.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -485,14 +496,14 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <url>/Web/Scss.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -515,17 +526,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <url>/Web/Scss.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -562,8 +562,8 @@
       </tags>
   </entry>
   <entry>
-    <title>意法半导体 STM32F103C8T6 标准库典型实例</title>
-    <url>/Embedded/STM32F103C8T6.html</url>
+    <title>宏晶 STC89C52RC 微控制器实践小书</title>
+    <url>/Embedded/STC89C52.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -573,8 +573,8 @@
       </tags>
   </entry>
   <entry>
-    <title>宏晶 STC89C52RC 微控制器实践小书</title>
-    <url>/Embedded/STC89C52.html</url>
+    <title>意法半导体 STM32F103C8T6 标准库典型实例</title>
+    <url>/Embedded/STM32F103C8T6.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>

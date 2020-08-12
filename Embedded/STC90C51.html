@@ -308,12 +308,12 @@
 <h1 id="单片机最小系统">单片机最小系统</h1>
 <p><strong>电源</strong>、<strong>晶振</strong>、<strong>复位</strong>是构成 <strong>STC90C516RD+</strong> 单片机最小系统不可或缺的 3 个部分。</p>
 <figure>
-<img src="/Embedded/STC90C51/minimum.png" alt><figcaption>minimum</figcaption>
+<img src="/Embedded/STC90C51/minimum.png" alt="minimum"><figcaption aria-hidden="true">minimum</figcaption>
 </figure>
 <h2 id="电源电路">电源电路</h2>
 <p><strong>STC90C516RD+</strong> 单片机的工作电压为<code>5.5-3.3V</code>，其中 P0 口的灌电流（<em>单片机引脚低电平时对外吸收的电流</em>）最大为<code>12mA</code>，其它 I/O 口灌电流最大为<code>6mA</code>。而拉电流（<em>单片机引脚高电平时对外输出的电流</em>）则通常低于<code>1mA</code>，万用表实测开发板 LED 电路 P0 口实际输出仅为<code>0.22mA</code>。单片机的供电引脚分别位于<code>40</code>脚和<code>20</code>脚，其中<code>40</code>脚接+5V，通常称为<strong>VCC</strong>代表电源正极，<code>20</code>脚接<strong>GND</strong>代表电源负极。</p>
 <figure>
-<img src="/Embedded/STC90C51/power.png" alt><figcaption>power</figcaption>
+<img src="/Embedded/STC90C51/power.png" alt="power"><figcaption aria-hidden="true">power</figcaption>
 </figure>
 <blockquote>
 <p>单片机基本都采用 TTL 电平规范，STM32 单片机属于 3V 单片机，STC90C51 属于 5V 单片机，单片机电路出现 CMOS 器件的机率比较小。</p>
@@ -321,7 +321,7 @@
 <h2 id="晶振电路">晶振电路</h2>
 <p>晶体振荡器（<em>crystal oscillator ['ɒsɪleɪtə(r)]</em>），启动后会一直不停振荡，从而为单片机系统提供基准时钟信号（<em>单片机内部以该时钟信号为基准进行工作</em>）。STC90C516RD+的第 18 脚<code>XTAL2</code>和第 19 脚<code>XTAL1</code>是晶振引脚，电路中使用了<code>12MHz</code>的晶振（<em>每秒振荡 1200 万次</em>），外加两个<code>33pF</code>电容帮助晶振起振，并维持振荡信号稳定。</p>
 <figure>
-<img src="/Embedded/STC90C51/scm.png" alt><figcaption>MCU</figcaption>
+<img src="/Embedded/STC90C51/scm.png" alt="MCU"><figcaption aria-hidden="true">MCU</figcaption>
 </figure>
 <h2 id="复位电路">复位电路</h2>
 <p>下图的复位电路接到了单片机<code>9脚</code>的 RST 复位引脚上，单片机复位一般发生在下面 3 种情况：</p>
@@ -331,7 +331,7 @@
 <li><strong>程序自动复位</strong>：程序长时间失去响应，看门狗模块会自动重启复位单片机。</li>
 </ol>
 <figure>
-<img src="/Embedded/STC90C51/reset.png" alt><figcaption>reset</figcaption>
+<img src="/Embedded/STC90C51/reset.png" alt="reset"><figcaption aria-hidden="true">reset</figcaption>
 </figure>
 <p>针对于手动复位的情况，当上面的开发板电路处于稳态时，电容将起到隔离直流的作用，复位按键此时处于弹起状态，电路没有产生电压差，HRST 端的电位与 GND 相等，由于 <strong>STC90C516RD+</strong> 单片机是高电平复位，低电平正常工作，因而此时单片机复位端口电压为低电平 0V 处于正常工作状态。</p>
 <p>而对于上电复位的情况，上述电路在上电瞬间，电容 C5 将会逐步充电，电路的电压差将从电容刚开始充电时的 5V 逐步过渡至充满后的 0V。直至电容充满后电路上没有电流流动。由于 <strong>STC90C516RD+</strong> 的上电复位要求 RST 引脚先保持一小段时间高电平然后再切换至低电平，因而在开发板电路上电的过程当中，单片机实质上也就完成了上电复位操作。</p>
@@ -341,7 +341,7 @@
 <h2 id="程序存储器-flash">程序存储器 Flash</h2>
 <p><strong>Flash 闪存</strong>（<em>Flash Memory</em>）主要包括 <strong>NOR</strong> 和 <strong>NADN</strong> 两种类型，可以在断电条件下存放用户的程序和数据，STC90C516RD+内部集成<code>61K</code>字节的 Flash 程序存储器，此外还具备访问<code>64KB</code>外部程序存储器的能力。当单片机复位之后，程序计数器 PC 初始值为 <code>0000H</code>，单片机将会从该位置运行代码。开发人员可以通过控制单片机的<strong>EA</strong>引脚来选择需要访问的是<code>61K</code><strong>片内</strong>程序存储器（<em>高电平</em>），还是访问<code>64KB</code>的片外程序存储器（<em>高电平</em>）。如果访问的是<strong>片内</strong>程序存储器，就会从其 0000H 单元开始执行，当 PC 的值超出地址上限 3FFFH 时，单片机将自动跳转至<strong>片外</strong>程序存储器（<em>如果存在</em>）的起始地址<code>4000H</code>继续执行。</p>
 <figure>
-<img src="/Embedded/STC90C51/flash.png" alt><figcaption>flash</figcaption>
+<img src="/Embedded/STC90C51/flash.png" alt="flash"><figcaption aria-hidden="true">flash</figcaption>
 </figure>
 <p>中断服务程序的入口地址（<em>中断向量</em>）也位于程序存储器，每个中断都会在程序存储器当中拥有一个固定的入口地址，当中断发生并且冰屑得到响应之后，单片机就会自动跳转至相应的中断入口地址执行代码。外部中断 0 的中断服务程序入口地址位于<code>0003H</code>，定时器/计数器 0 的中断服务程序入口地址位于<code>000BH</code>,外部中断 1 的中断程序入口地址位于<code>0013H</code>，定时器/计数器 1 的中断入口地址是<code>001BH</code>等等。由于相邻的中断入口地址仅仅间隔 8 个字节，通常无法保存完整的中断服务程序，因此会在中断响应的地址区域存放一条指向真正存放中断服务程序地址空间的强制跳转指令。</p>
 <blockquote>
@@ -350,11 +350,11 @@
 <h2 id="数据存储器-ram">数据存储器 RAM</h2>
 <p><strong>RAM 随机存取存储器 </strong>（<em>Random Access Memory</em>）用于存放程序执行的中间结果和过程数据，掉电后存储内容丢失，<em>消费类电子产品上广泛使用的 DDR(Double Data Rate SDRAM)就属于 RAM 中的一种</em>。STC90C516RD+内部集成了<code>1280</code>字节的 RAM，并在物理和逻辑上分为两个地址空间：256 字节的<strong>内部</strong> RAM 和 1024 字节的<strong>内部扩展</strong> RAM，此外还可以访问片外扩展的 64KB <strong>外部扩展</strong>RAM（<em>如果存在</em>）。</p>
 <figure>
-<img src="/Embedded/STC90C51/ram-1.png" alt><figcaption>ram</figcaption>
+<img src="/Embedded/STC90C51/ram-1.png" alt="ram"><figcaption aria-hidden="true">ram</figcaption>
 </figure>
 <p>内部 RAM 一共 256 字节，分为三部分：<strong>低 128 字节 RAM</strong>(<em>兼容传统 8051 架构，既可直接寻址也可间接寻址</em>)、<strong>高 128 字节 RAM</strong>(<em>扩展自 8052 架构，只能间接寻址</em>)、<strong>特殊功能寄存器区</strong>（<em>只可直接寻址</em>）；高 128 字节 RAM 与特殊功能寄存器区地址空间虽然近似重叠，但是物理上是独立的，使用时通过不同寻址方式加以区分。</p>
 <figure>
-<img src="/Embedded/STC90C51/ram-2.png" alt><figcaption>ram</figcaption>
+<img src="/Embedded/STC90C51/ram-2.png" alt="ram"><figcaption aria-hidden="true">ram</figcaption>
 </figure>
 <p>低 128 字节 RAM 也称为<strong>通用 RAM 区</strong>，分为<strong>工作寄存器组区</strong>、<strong>可位寻址区</strong>、<strong>用户 RAM 区</strong>、<strong>堆栈区</strong>。</p>
 <ul>
@@ -584,26 +584,26 @@
 <h1 id="keil-uvision-5">Keil uVision 5</h1>
 <p>2013 年 10 月 ARM 公司发布最新集成开发环境 RealView MDK 开发工具中集成了最新版本的 Keil uVision 5，让编译器、软件模拟与性能分析等调试工具与 ARM 处理器完美匹配。</p>
 <figure>
-<img src="/Embedded/STC90C51/keil/logo.png" alt><figcaption>logo</figcaption>
+<img src="/Embedded/STC90C51/keil/logo.png" alt="logo"><figcaption aria-hidden="true">logo</figcaption>
 </figure>
 <h2 id="界面布局">界面布局</h2>
 <p>Keil µVision 的图形界面提供了用于选择命令的菜单以及带有命令按钮的工具栏，位于窗口底部的状态栏用于显示当前执行命令的信息和消息。编辑器当中的窗口可以重新定位并停靠在另一个物理屏幕，窗口布局会为每个项目自动保存，并在下次使用项目时恢复，如果需要也可以使用菜单里的<code>Reset View to Defaults</code>恢复默认布局。Keil 拥有创建应用程序的<strong>构建模式</strong>和用于分析应用程序的<strong>调试模式</strong>两种操作方式，它们各自提供了额外的窗口和对话框，下面的截图展示了构建模式当中的一些主要窗口：</p>
 <figure>
-<img src="/Embedded/STC90C51/keil/keil-build.png" alt><figcaption>keil-build</figcaption>
+<img src="/Embedded/STC90C51/keil/keil-build.png" alt="keil-build"><figcaption aria-hidden="true">keil-build</figcaption>
 </figure>
 <p>Keil 上对当前项目设置晶振频率，并在目标选项的 Debug 选项卡下勾选<code>Use Simulator</code>以后，就可以通过工具栏上的【Debug】按钮进入调试模式。</p>
 <figure>
-<img src="/Embedded/STC90C51/keil/keil-debug.png" alt><figcaption>keil-debug</figcaption>
+<img src="/Embedded/STC90C51/keil/keil-debug.png" alt="keil-debug"><figcaption aria-hidden="true">keil-debug</figcaption>
 </figure>
 <h2 id="减少代码长度">减少代码长度</h2>
 <p>Keil C 软件中选择目标选项的【C51】选项卡，可以将编译后生成的 HEX 文件尺寸最大减少 10K 左右，可以有效降低占用程序存储器 Flash 的空间。</p>
 <figure>
-<img src="/Embedded/STC90C51/keil/performance.png" alt><figcaption>keil-performance</figcaption>
+<img src="/Embedded/STC90C51/keil/performance.png" alt="keil-performance"><figcaption aria-hidden="true">keil-performance</figcaption>
 </figure>
 <h2 id="代码格式化">代码格式化</h2>
 <p>Keil 本身并没有提供代码格式化功能，当代码量较大的时候，维护代码格式会给开发人员带来额外的负担，因此接下来将会基于开源格式化工具<a href="http://astyle.sourceforge.net/" target="_blank" rel="noopener">Astyle</a>，为 Keil 添加上自定义的格式化命令以及对应的快捷键。</p>
 <figure>
-<img src="/Embedded/STC90C51/keil/format-1.png" alt><figcaption>keil-format-1</figcaption>
+<img src="/Embedded/STC90C51/keil/format-1.png" alt="keil-format-1"><figcaption aria-hidden="true">keil-format-1</figcaption>
 </figure>
 <h2 id="输出日志">输出日志</h2>
 <p>Keil uVision 编译二进制文件之后，会输出如下的日志信息：</p>
@@ -788,7 +788,7 @@
 </tbody>
 </table>
 <figure>
-<img src="/Embedded/STC90C51/keil/memory-model.png" alt><figcaption>memory-model</figcaption>
+<img src="/Embedded/STC90C51/keil/memory-model.png" alt="memory-model"><figcaption aria-hidden="true">memory-model</figcaption>
 </figure>
 <blockquote>
 <p>实际开发环境下，通常会使用<code>Small</code>模型，生成的代码最快体积最小，仅在不适用的场景才会选择<code>Compact</code>或<code>Large</code>模型。</p>
@@ -2460,7 +2460,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:51</span>
+    <span title="站点阅读时长">22:53</span>
 </div>
 
         
