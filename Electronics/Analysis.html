@@ -63,8 +63,14 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/31.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/31.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/32.png">
-<meta property="article:published_time" content="2020-08-13T14:30:35.843Z">
-<meta property="article:modified_time" content="2020-08-13T17:09:08.392Z">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/33.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/34.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/35.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/36.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/37.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/1-Basic/38.png">
+<meta property="article:published_time" content="2020-08-14T16:17:23.701Z">
+<meta property="article:modified_time" content="2020-08-14T16:17:23.701Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analysis">
 <meta name="twitter:card" content="summary">
@@ -261,15 +267,8 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-08-13 22:30:35" itemprop="dateCreated datePublished" datetime="2020-08-13T22:30:35+08:00">2020-08-13</time>
+              <time title="创建时间：2020-08-15 00:17:23" itemprop="dateCreated datePublished" datetime="2020-08-15T00:17:23+08:00">2020-08-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 01:09:08" itemprop="dateModified" datetime="2020-08-14T01:09:08+08:00">2020-08-14</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -293,14 +292,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.8k</span>
+              <span>9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>7 分钟</span>
+              <span>8 分钟</span>
             </span>
 
         </div>
@@ -580,6 +579,55 @@ x = \begin{cases}
 \]</span></p>
 <p>联立上述方程，即可求解出全部的电压变量。如果当前需要求解的是支路电流，则相应的代入欧姆定律即可。</p>
 <h2 id="网络等效简化电路分析">网络等效简化电路分析</h2>
+<h3 id="线性无源单口网络等效">线性无源单口网络等效</h3>
+<p><strong>线性无源单口网络</strong>是指不含有独立源的单口网络，可以由电阻和受控源或者纯电阻组成。对于完全由电阻组成的无源单口网络，根据电阻的连接方式分为<strong>串联</strong>、<strong>并联</strong>、<strong>电桥</strong>等几种形式。</p>
+<h4 id="线性电阻串联">线性电阻串联</h4>
+<p>电阻串联是指每个电阻元件<strong>依次</strong>首尾相接，流过每个电阻的电流相等，下图就是一个由串联电阻组成的无源单口网络：</p>
+<p><img src="/Electronics/Analysis/1-Basic/33.png"></p>
+<p>由于端口电压 <span class="math inline">\(U\)</span> 等于每个串联电阻上的电压之和，对于该单口网络可以列写其 VCR 方程：</p>
+<p><span class="math display">\[
+u = u_1 + u_2 + u_3 + ... + u_n = R_1i_1 + R_2i_2 + R_3i_3 + ... + R_ni_n = (R_1 + R_2 + R_3 + ... + R_n)i
+\]</span></p>
+<p>再看下面电路图当中的这个由 1 个电阻构成的单口网络：</p>
+<p><img src="/Electronics/Analysis/1-Basic/34.png"></p>
+<p>其端口的 VCR 方程非常容易列写：</p>
+<p><span class="math display">\[
+u = Ri
+\]</span></p>
+<p>当满足 <span class="math inline">\(R\)</span> 等于所有串联电阻之和的时候，上述两个电路的 VCR 表达式完全相同，说明两个端口网络是等效的。由此可以得出结论：<strong><code>n</code>个线性电阻串联的单口网络，其端口特性等于一个线性二端电阻，其电阻值为各串联电阻之和</strong>。</p>
+<p><span class="math display">\[
+R = \sum_{k=1}^n R_k
+\]</span></p>
+<h4 id="线性电阻并联">线性电阻并联</h4>
+<p>电阻并联是指每个电阻元件<strong>分别</strong>首尾相接，每个电阻两端的电压分别相等，下图为电阻并联情况下的无源端口网络：</p>
+<p><img src="/Electronics/Analysis/1-Basic/35.png"></p>
+<p>端口电流 <span class="math inline">\(i\)</span> 等于每个并联电阻流经的电流之和，由此可以列写 VCR 方程：</p>
+<p><span class="math display">\[
+i = i_1 + i_2 + i_3 + ... + i_n = G_1u_1 + G_2u_2 + G_3u_3 + ... + G_nu_n = (G_1 + G_2 + G_3 + ... + G_n)u
+\]</span></p>
+<p>再看下面电路图当中的这个由 1 个电阻构成的单口网络：</p>
+<p><img src="/Electronics/Analysis/1-Basic/36.png"></p>
+<p>其端口的 VCR 方程非常容易列写：</p>
+<p><span class="math display">\[
+i = Gu
+\]</span></p>
+<p>比较上述两个电路的 VCR 关系，可以看出满足电导 <span class="math inline">\(G\)</span> 等于所有并联电导之和的时候，两个 VCR 表达式完全相同，说明两个端口网络是等效的。由此可以得出结论：<strong><code>n</code>个线性电阻并联的单口网络，其端口特性等效于一个线性二端电阻，其电导值为各并联电阻的电导之和</strong>。</p>
+<p><span class="math display">\[
+G = \sum_{k=1}^n G_k
+\]</span></p>
+<h4 id="分析电阻串并联混合电路">分析电阻串并联混合电路</h4>
+<p>对于由电阻串并联组成的单口网络，求解其等效电路时，可以根据电路的具体情况，分别采用电阻串并联公式计算出总电阻。这个过程当中，正确判断电阻的串并联关系显得极为重要。</p>
+<p>下面电路图中的电阻串并联关系不容易直观的分析出来，对于这种情况可以采用<strong>结点法</strong>来进行判断。</p>
+<p><img src="/Electronics/Analysis/1-Basic/37.png"></p>
+<p>【求解】首先，标出电路上全部的结点<code>a</code>、<code>b</code>、<code>c</code>。</p>
+<p><img src="/Electronics/Analysis/1-Basic/38.png"></p>
+<p>然后，根据每个电阻的结点连接情况，很容易看出 <span class="math inline">\(6Ω\)</span> 和 <span class="math inline">\(3Ω\)</span> 电阻连接于<code>b</code>和<code>c</code>之间，另外一个 <span class="math inline">\(6Ω\)</span> 电阻连接于<code>a</code>和<code>c</code>之间，<span class="math inline">\(12Ω\)</span> 电阻连接于<code>a</code>和<code>c</code>之间：</p>
+<p><span class="math display">\[
+R_{ab} = \frac{3Ω \times 6Ω}{3Ω + 6Ω} + \frac{12Ω \times 6Ω}{12Ω + 6Ω} = 2Ω + 4Ω = 6Ω
+\]</span></p>
+<h4 id="平衡电桥电路的等效">平衡电桥电路的等效</h4>
+<p>电阻之间的关系，除了串联和并联之外，还有一种情况是电桥电路。</p>
+<p>上述电桥电路中，<span class="math inline">\(R_1\)</span>、<span class="math inline">\(R_2\)</span>、<span class="math inline">\(R_3\)</span> 称为桥臂，</p>
 <h2 id="受控源电路分析方法">受控源电路分析方法</h2>
 <h2 id="电路网络定理">电路网络定理</h2>
 <h2 id="理想变压器与运算放大器">理想变压器与运算放大器</h2>
@@ -625,12 +673,12 @@ x = \begin{cases}
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Math/Elementary.html" rel="prev" title="常用初等数学图形与公式汇总">
-      <i class="fa fa-chevron-left"></i> 常用初等数学图形与公式汇总
+    <a href="/Linux/Command.html" rel="prev" title="Linux 常用命令行速查手册">
+      <i class="fa fa-chevron-left"></i> Linux 常用命令行速查手册
     </a></div>
       <div class="post-nav-item">
-    <a href="/Linux/Shell.html" rel="next" title="Bash Shell 脚本编程实践">
-      Bash Shell 脚本编程实践 <i class="fa fa-chevron-right"></i>
+    <a href="/Math/Calculus.html" rel="next" title="常用高等数学公式与导学">
+      常用高等数学公式与导学 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -690,7 +738,7 @@ x = \begin{cases}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电路的基本概念和分析方法"><span class="nav-number">1.</span> <span class="nav-text">电路的基本概念和分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集总参数电路"><span class="nav-number">1.1.</span> <span class="nav-text">集总参数电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电流电压电功率"><span class="nav-number">1.2.</span> <span class="nav-text">电流、电压、电功率</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流"><span class="nav-number">1.2.1.</span> <span class="nav-text">电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压"><span class="nav-number">1.2.2.</span> <span class="nav-text">电压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联参考方向"><span class="nav-number">1.2.3.</span> <span class="nav-text">关联参考方向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电功率"><span class="nav-number">1.2.4.</span> <span class="nav-text">电功率</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基尔霍夫定律"><span class="nav-number">1.3.</span> <span class="nav-text">基尔霍夫定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电流定律-kcl"><span class="nav-number">1.3.1.</span> <span class="nav-text">基尔霍夫电流定律 KCL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电压定律-kvl"><span class="nav-number">1.3.2.</span> <span class="nav-text">基尔霍夫电压定律 KVL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻"><span class="nav-number">1.4.</span> <span class="nav-text">电阻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#独立电源"><span class="nav-number">1.5.</span> <span class="nav-text">独立电源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电压源"><span class="nav-number">1.5.1.</span> <span class="nav-text">独立电压源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电流源"><span class="nav-number">1.5.2.</span> <span class="nav-text">独立电流源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际电源模型"><span class="nav-number">1.6.</span> <span class="nav-text">实际电源模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元件拓扑约束与-2b-方程"><span class="nav-number">1.7.</span> <span class="nav-text">元件&#x2F;拓扑约束与 2b 方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电流法"><span class="nav-number">1.8.</span> <span class="nav-text">支路电流法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电压法"><span class="nav-number">1.9.</span> <span class="nav-text">支路电压法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络等效简化电路分析"><span class="nav-number">2.</span> <span class="nav-text">网络等效简化电路分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#受控源电路分析方法"><span class="nav-number">3.</span> <span class="nav-text">受控源电路分析方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电路网络定理"><span class="nav-number">4.</span> <span class="nav-text">电路网络定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理想变压器与运算放大器"><span class="nav-number">5.</span> <span class="nav-text">理想变压器与运算放大器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电容与电感"><span class="nav-number">6.</span> <span class="nav-text">电容与电感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一二阶电路暂态分析"><span class="nav-number">7.</span> <span class="nav-text">一二阶电路暂态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态分析"><span class="nav-number">8.</span> <span class="nav-text">正弦稳态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态功率与三相电路"><span class="nav-number">9.</span> <span class="nav-text">正弦稳态功率与三相电路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络函数与频率特性"><span class="nav-number">10.</span> <span class="nav-text">网络函数与频率特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#耦合电感"><span class="nav-number">11.</span> <span class="nav-text">耦合电感</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电路的基本概念和分析方法"><span class="nav-number">1.</span> <span class="nav-text">电路的基本概念和分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集总参数电路"><span class="nav-number">1.1.</span> <span class="nav-text">集总参数电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电流电压电功率"><span class="nav-number">1.2.</span> <span class="nav-text">电流、电压、电功率</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流"><span class="nav-number">1.2.1.</span> <span class="nav-text">电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压"><span class="nav-number">1.2.2.</span> <span class="nav-text">电压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联参考方向"><span class="nav-number">1.2.3.</span> <span class="nav-text">关联参考方向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电功率"><span class="nav-number">1.2.4.</span> <span class="nav-text">电功率</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基尔霍夫定律"><span class="nav-number">1.3.</span> <span class="nav-text">基尔霍夫定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电流定律-kcl"><span class="nav-number">1.3.1.</span> <span class="nav-text">基尔霍夫电流定律 KCL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电压定律-kvl"><span class="nav-number">1.3.2.</span> <span class="nav-text">基尔霍夫电压定律 KVL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻"><span class="nav-number">1.4.</span> <span class="nav-text">电阻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#独立电源"><span class="nav-number">1.5.</span> <span class="nav-text">独立电源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电压源"><span class="nav-number">1.5.1.</span> <span class="nav-text">独立电压源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电流源"><span class="nav-number">1.5.2.</span> <span class="nav-text">独立电流源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际电源模型"><span class="nav-number">1.6.</span> <span class="nav-text">实际电源模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元件拓扑约束与-2b-方程"><span class="nav-number">1.7.</span> <span class="nav-text">元件&#x2F;拓扑约束与 2b 方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电流法"><span class="nav-number">1.8.</span> <span class="nav-text">支路电流法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电压法"><span class="nav-number">1.9.</span> <span class="nav-text">支路电压法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络等效简化电路分析"><span class="nav-number">2.</span> <span class="nav-text">网络等效简化电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性无源单口网络等效"><span class="nav-number">2.1.</span> <span class="nav-text">线性无源单口网络等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性电阻串联"><span class="nav-number">2.1.1.</span> <span class="nav-text">线性电阻串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线性电阻并联"><span class="nav-number">2.1.2.</span> <span class="nav-text">线性电阻并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分析电阻串并联混合电路"><span class="nav-number">2.1.3.</span> <span class="nav-text">分析电阻串并联混合电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#平衡电桥电路的等效"><span class="nav-number">2.1.4.</span> <span class="nav-text">平衡电桥电路的等效</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#受控源电路分析方法"><span class="nav-number">3.</span> <span class="nav-text">受控源电路分析方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电路网络定理"><span class="nav-number">4.</span> <span class="nav-text">电路网络定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理想变压器与运算放大器"><span class="nav-number">5.</span> <span class="nav-text">理想变压器与运算放大器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电容与电感"><span class="nav-number">6.</span> <span class="nav-text">电容与电感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一二阶电路暂态分析"><span class="nav-number">7.</span> <span class="nav-text">一二阶电路暂态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态分析"><span class="nav-number">8.</span> <span class="nav-text">正弦稳态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态功率与三相电路"><span class="nav-number">9.</span> <span class="nav-text">正弦稳态功率与三相电路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络函数与频率特性"><span class="nav-number">10.</span> <span class="nav-text">网络函数与频率特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#耦合电感"><span class="nav-number">11.</span> <span class="nav-text">耦合电感</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -786,7 +834,7 @@ x = \begin{cases}
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">22:55</span>
+    <span title="站点阅读时长">22:56</span>
 </div>
 
         
