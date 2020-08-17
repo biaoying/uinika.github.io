@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-08-14T16:17:23.747Z</updated>
+  <updated>2020-08-17T15:52:57.302Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,34 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>常用高等数学公式与导学</title>
-    <link href="https://uinika.github.io/Math/Calculus.html"/>
-    <id>https://uinika.github.io/Math/Calculus.html</id>
-    <published>2020-08-14T16:17:23.747Z</published>
-    <updated>2020-08-14T16:17:23.747Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;高等数学是由微积分学，较为深入的代数学、几何学以及它们之间的交叉内容所形成的一门基础学科。由于&lt;strong&gt;电路分析&lt;/strong&gt;、&lt;strong&gt;运算放大器&lt;/strong&gt;、&lt;strong&gt;信号完整性&lt;/strong&gt;、&lt;strong&gt;高频电路&lt;/strong&gt;和&lt;strong&gt;信号学&lt;/strong&gt;当中，都涉及有大量的积分和导数运算，也需要经常使用到拉普拉斯和傅立叶变换等高等数学内容，因此着手撰写本文用于复习大学本科学习阶段涉及的微积分知识，主要包含&lt;code&gt;一元函数微分学&lt;/code&gt;、&lt;code&gt;一元函数积分学&lt;/code&gt;、&lt;code&gt;矢量代数与空间解析几何&lt;/code&gt;、&lt;code&gt;多元函数微分学&lt;/code&gt;、&lt;code&gt;多元函数积分学&lt;/code&gt;、&lt;code&gt;无穷级数&lt;/code&gt;、&lt;code&gt;常微分方程&lt;/code&gt;等部分的内容。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Math/Calculus/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;由于微积分涉及的概念相对较为抽象，因此在文章写作过程中，阅读并且参考了&lt;strong&gt;《Thomas’ Calculus》&lt;/strong&gt;一书当中的有关内容。该书从 1951 年第 1 版发行至今，当前的最新版本为第 14 版，已经足足经历了七十个年头，是一本经历过时间检验的优秀参考资料。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
-    
-    
-      <category term="Calculus" scheme="https://uinika.github.io/tags/Calculus/"/>
-    
-  </entry>
-  
-  <entry>
     <title>现代电路分析涉及的理论与原理</title>
     <link href="https://uinika.github.io/Electronics/Analysis.html"/>
     <id>https://uinika.github.io/Electronics/Analysis.html</id>
-    <published>2020-08-14T16:17:23.701Z</published>
-    <updated>2020-08-16T17:10:26.449Z</updated>
+    <published>2020-08-17T12:19:17.017Z</published>
+    <updated>2020-08-17T15:52:57.302Z</updated>
     
     <summary type="html">
     
@@ -59,6 +36,29 @@
     
     
       <category term="Analysis" scheme="https://uinika.github.io/tags/Analysis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用高等数学公式与导学</title>
+    <link href="https://uinika.github.io/Math/Calculus.html"/>
+    <id>https://uinika.github.io/Math/Calculus.html</id>
+    <published>2020-08-14T16:17:23.747Z</published>
+    <updated>2020-08-17T15:16:32.829Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;高等数学是由微积分学，较为深入的代数学、几何学以及它们之间的交叉内容所形成的一门基础学科。由于&lt;strong&gt;电路分析&lt;/strong&gt;、&lt;strong&gt;运算放大器&lt;/strong&gt;、&lt;strong&gt;信号完整性&lt;/strong&gt;、&lt;strong&gt;高频电路&lt;/strong&gt;和&lt;strong&gt;信号学&lt;/strong&gt;当中，都涉及有大量的积分和导数运算，也需要经常使用到拉普拉斯和傅立叶变换等高等数学内容，因此着手撰写本文用于复习大学本科学习阶段涉及的微积分知识，主要包含&lt;code&gt;一元函数微分学&lt;/code&gt;、&lt;code&gt;一元函数积分学&lt;/code&gt;、&lt;code&gt;矢量代数与空间解析几何&lt;/code&gt;、&lt;code&gt;多元函数微分学&lt;/code&gt;、&lt;code&gt;多元函数积分学&lt;/code&gt;、&lt;code&gt;无穷级数&lt;/code&gt;、&lt;code&gt;常微分方程&lt;/code&gt;等部分的内容。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Math/Calculus/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;由于微积分涉及的概念相对较为抽象，因此在文章写作过程中，阅读并且参考了&lt;strong&gt;《Thomas’ Calculus》&lt;/strong&gt;一书当中的有关内容。该书从 1951 年第 1 版发行至今，当前的最新版本为第 14 版，已经足足经历了七十个年头，是一本经历过时间检验的优秀参考资料。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
+    
+    
+      <category term="Calculus" scheme="https://uinika.github.io/tags/Calculus/"/>
     
   </entry>
   
