@@ -134,8 +134,29 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Controlled/24.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Controlled/25.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Controlled/26.png">
-<meta property="article:published_time" content="2020-08-18T17:22:09.429Z">
-<meta property="article:modified_time" content="2020-08-18T18:57:11.314Z">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/1.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/2.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/3.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/4.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/5.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/6.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/7.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/8.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/9.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/10.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/11.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/12.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/13.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/14.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/15.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/16.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/17.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/18.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/19.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/20.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/4-Network/21.png">
+<meta property="article:published_time" content="2020-08-19T14:01:07.393Z">
+<meta property="article:modified_time" content="2020-08-19T18:58:24.426Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analysis">
 <meta name="twitter:card" content="summary">
@@ -331,10 +352,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-08-19 01:22:09 / 修改时间：02:57:11" itemprop="dateCreated datePublished" datetime="2020-08-19T01:22:09+08:00">2020-08-19</time>
+              <time title="创建时间：2020-08-19 22:01:07" itemprop="dateCreated datePublished" datetime="2020-08-19T22:01:07+08:00">2020-08-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-20 02:58:24" itemprop="dateModified" datetime="2020-08-20T02:58:24+08:00">2020-08-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -358,14 +385,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>24k</span>
+              <span>28k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>22 分钟</span>
+              <span>26 分钟</span>
             </span>
 
         </div>
@@ -1235,6 +1262,182 @@ i = \frac{10V}{2.5Ω} = 4A
 \end{cases}
 \]</span></p>
 <h2 id="电路网络定理">电路网络定理</h2>
+<h3 id="叠加定理">叠加定理</h3>
+<p><strong>线性电路</strong>是由<strong>线性电阻</strong>（任意时刻元件电流电压都满足欧姆定律）和<strong>独立电源</strong>（直流的电压电流源，或者非线性时变电源）组成的电路。</p>
+<ol type="1">
+<li><strong>齐次性</strong>：电路上任意电阻元件的电流电压呈线性比例关系，也称为<strong>比例性</strong>；</li>
+<li><strong>叠加性</strong>：多个独立电源<strong>共同作用</strong>产生的响应，等于每个独立电源<strong>单独作用</strong>产生的响应之<strong>和</strong>；</li>
+</ol>
+<h4 id="齐次性">齐次性</h4>
+<p>根据欧姆定律，下图电阻上电压 <span class="math inline">\(U\)</span> 和电流 <span class="math inline">\(I\)</span> 的关系满足表达式 <span class="math inline">\(U = R \cdot I\)</span>：</p>
+<p><img src="/Electronics/Analysis/4-Network/1.png"></p>
+<p>在电阻 <span class="math inline">\(R\)</span> 保持不变的情况下，如果电流 I 增加<code>k</code>倍，则电压 <span class="math inline">\(U\)</span> 也将会增大<code>k</code>倍：</p>
+<p><span class="math display">\[
+U \times k = R \cdot I \times k
+\]</span></p>
+<p>或者，如果独立电压源 <span class="math inline">\(U_s\)</span> 增加<code>k</code>倍，则电阻两端的电压 <span class="math inline">\(U\)</span> 和电流 <span class="math inline">\(I\)</span> 也相应增大<code>k</code>倍，该表达式仅在电路中只存在一个独立电源时成立。</p>
+<p>【例题】根据下面的电路图，求解如下的问题：</p>
+<ul>
+<li>① 已知 <span class="math inline">\(I_5=1A\)</span>，求解各个支路电流以及电压源电压 <span class="math inline">\(U_s\)</span> ？</li>
+<li>② 如果已知 <span class="math inline">\(U_s=120V\)</span>，相应求解各个支路的电流？</li>
+</ul>
+<p><img src="/Electronics/Analysis/4-Network/2.png"></p>
+<p>【求解】① 由 <strong>2b</strong> 方程，可以依次推导得到如下方程：</p>
+<p><span class="math display">\[
+\begin{aligned}
+  &amp; I_4 = \frac{(12Ω)I_5}{4Ω} = 3A  \\
+  &amp; I_3 = I_4 + I_5 = 4A  \\
+  &amp; I_2 = \frac{(7Ω)I_3 + (12Ω)I_5}{10Ω} = 4A  \\
+  &amp; I_1 = I_2 + I_3 = 8A  \\
+  &amp; U_s = (5Ω)I_1 + (10Ω)I_2 = 80V  \\
+\end{aligned}
+\]</span></p>
+<p>② 当 <span class="math inline">\(U_s=120V\)</span> 时，其值为原始电压<code>80V</code>的 <strong>1.5</strong> 倍，根据齐次性定理，电路当中的各个电流均会增加 <strong>1.5</strong> 倍:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  &amp; I_1 = 1.5 \times 8A = 12A  \\
+  &amp; I_2 = I_3 = 1.5 \times 4A = 6A  \\
+  &amp; I_4 = 1.5 \times 3A = 4.5A  \\
+  &amp; I_5 = 1.5 \times 1A = 1.5A
+\end{aligned}
+\]</span></p>
+<h4 id="叠加性">叠加性</h4>
+<p>下图是由 2 个独立电压源和独立电流源组成的线性电阻电路，试求解电阻 <span class="math inline">\(R_1\)</span> 的电流 <span class="math inline">\(I_1\)</span> 和电阻 <span class="math inline">\(R_2\)</span> 两端电压 <span class="math inline">\(U_2\)</span>？</p>
+<p><img src="/Electronics/Analysis/4-Network/3.png"></p>
+<p>根据网孔电流分析方法，可以列写如下方程，求解后可以得到 <span class="math inline">\(I_1\)</span>（可分解为 <span class="math inline">\({I_1}^{&#39;} + {I_1}^{&#39;&#39;}\)</span> 之和）和 <span class="math inline">\(U_2\)</span>（可分解为 <span class="math inline">\({U_2}^{&#39;} + {U_2}^{&#39;&#39;}\)</span> 之和）。</p>
+<p><span class="math display">\[
+\begin{cases}
+  (R_1+R_2)I_1 + R_2I_3 = U_s  \\
+  I_3 = I_s
+\end{cases}
+\]</span></p>
+<p>其中 <span class="math inline">\({I_1}^{&#39;}\)</span> 和 <span class="math inline">\({U_2}^{&#39;}\)</span> 可以视为原电路<strong>电流源</strong> <span class="math inline">\(I_s\)</span> 为<strong>零</strong>时，电流与电压的输出（<span class="math inline">\({I_1}^{&#39;}\)</span> 可以通过欧姆定律获得，<span class="math inline">\({U_2}^{&#39;}\)</span> 可以通过分压表达式获得），其对应电路如下所示：</p>
+<p><img src="/Electronics/Analysis/4-Network/4.png"></p>
+<p>类似的，<span class="math inline">\({I_1}^{&#39;&#39;}\)</span> 和 <span class="math inline">\({U_2}^{&#39;&#39;}\)</span> 是在原电路<strong>电压源</strong> <span class="math inline">\(U_s\)</span> 为<strong>零</strong>时，电流和电压的输出（<span class="math inline">\({I_1}^{&#39;&#39;}\)</span> 可通过分流表达式获得，<span class="math inline">\({U_2}^{&#39;&#39;}\)</span> 可通过欧姆定律获得），其对应电路如下所示：</p>
+<p><img src="/Electronics/Analysis/4-Network/5.png"></p>
+<p>综上所述，<span class="math inline">\(I_1 = {I_1}^{&#39;} + {I_1}^{&#39;&#39;}\)</span> 和 <span class="math inline">\(U_2 = {U_2}^{&#39;} + {U_2}^{&#39;&#39;}\)</span> 的具体对应关系可以整理为如下示意图：</p>
+<p><img src="/Electronics/Analysis/4-Network/6.png"></p>
+<p><strong>叠加定理</strong>是指线性电阻电路当中存在多个独立电源时，全部独立电源产生的电压电流，等于每个独立电源单独作用所产生电压电流的代数和。当这个独立电源单独作用时，其它<strong>独立电压源</strong>使用<strong>短路</strong> <span class="math inline">\(U_s=0\)</span> 代替，其它<strong>独立电流源</strong>则用<strong>开路</strong> <span class="math inline">\(I_s=0\)</span> 代替。</p>
+<p><img src="/Electronics/Analysis/4-Network/7.png"></p>
+<p>叠加定理的优点在于，通过短路替代了电压源，或者采用开路替代了电流源，从而降低了电路的复杂度，便于进行分析计算。</p>
+<p>【例题】如下电路图所示，试用叠加定理求解电压 <span class="math inline">\(U\)</span> ？</p>
+<p><img src="/Electronics/Analysis/4-Network/8.png"></p>
+<p>【求解】当独立<strong>电压源</strong> <span class="math inline">\(U_s\)</span> 单独作用时，<strong>电流源</strong> <span class="math inline">\(I_s\)</span> <strong>开路</strong>置零，此时 <span class="math inline">\(R_4\)</span> 两端的电压 <span class="math inline">\(U^{&#39;}\)</span> 可以通过分压表达式获得。</p>
+<p><img src="/Electronics/Analysis/4-Network/9.png"></p>
+<p><span class="math display">\[
+U^{&#39;} = \frac{R_4}{R_2+R_4}U_s
+\]</span></p>
+<p>当独立<strong>电流源</strong> <span class="math inline">\(I_s\)</span> 单独作用时，<strong>电压源</strong> <span class="math inline">\(U_s\)</span> <strong>短路</strong>置零，此时 <span class="math inline">\(R_4\)</span> 两端的电压 <span class="math inline">\(U^{&#39;&#39;}\)</span> 可以通过分流表达式和欧姆定律得到。</p>
+<p><img src="/Electronics/Analysis/4-Network/10.png"></p>
+<p><span class="math display">\[
+U^{&#39;&#39;} = \frac{R_2R_4}{R_2+R_4}I_s
+\]</span></p>
+<p>根据叠加定理，总电压 <span class="math inline">\(U\)</span> 可以通过 <span class="math inline">\(U^{&#39;}\)</span> 和 <span class="math inline">\(U^{&#39;&#39;}\)</span> 相加的<strong>和</strong>得到：</p>
+<p><span class="math display">\[
+U = U^{&#39;} + U^{&#39;&#39;} =  \frac{R_4}{R_2+R_4}(U_s + R_2I_s)
+\]</span></p>
+<p>【例题】如下电路图所示，由独立电压源和电流源组成的线性电路，当电压源和电流源按图（1）方式进行连接时，输出端电压为 <span class="math inline">\(U\)</span>；当电流源反向连接，按图（2）方式进行连接时，输出端电压为 <span class="math inline">\(0.2U\)</span>；试求电压源反向连接时，电路如图（3）所示输出端电压 <span class="math inline">\(U_o\)</span> ？</p>
+<p><img src="/Electronics/Analysis/4-Network/11.png"></p>
+<p>【求解】首先，对应图（1）、（2）、（3）采用<strong>齐次性</strong>和<strong>叠加性</strong>分别列写输出电压 <span class="math inline">\(U\)</span> 与电压源电流源对应的比例关系：</p>
+<p><span class="math display">\[
+\begin{cases}
+  U = k_1U_s + k_2I_s  \\
+  0.2U = k_1U_s - k_2I_s
+\end{cases}
+\]</span></p>
+<p>然后，求解上述方程，可以得到系数 <span class="math inline">\(k_1\)</span> 和 <span class="math inline">\(k_2\)</span>：</p>
+<p><span class="math display">\[
+\begin{cases}
+  k_1 = \frac{0.6U}{U_s}  \\
+  k_2 = \frac{0.4U}{I_s}
+\end{cases}
+\]</span></p>
+<p>最后，根据叠加原理，就能方便的计算出输出端电压 <span class="math inline">\(U_o\)</span> 的值：</p>
+<p><span class="math display">\[
+U_o = -k_1U_s + k_2I_s = -0.6U + 0.4U = -0.2U
+\]</span></p>
+<p>或者，由于图（2）和图（3）电源的连接方式正好相板，根据齐次性定理可以直接得到 <span class="math inline">\(U_o = 0.2U\)</span>。</p>
+<p>使用<strong>叠加定理</strong>进行电路分析时，需要特别<strong>注意</strong>以下 3 点：</p>
+<ol type="1">
+<li>应用叠加定理时，电路当中的<strong>受控源</strong>应该像<strong>线性电阻</strong>一样保留下来，而不能视为独立电源；</li>
+<li>由于元件响应的叠加是代数和，因此在计算时需要特别注意电压电流<strong>参考方向</strong>的一致性；</li>
+<li>叠加定理仅仅适用于<strong>线性电阻电路当中电流电压的求解</strong>，并且线性电路中元件的<strong>功率不满足叠加定理</strong>，其值不等于每个独立电源产生功率之和。这是因为功率是电流和电压的乘积，这并非一个线性方程。</li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+  P &amp;= UI = (U^{&#39;} + U^{&#39;&#39;})(I^{&#39;} + I^{&#39;&#39;})  \\
+    &amp;= U^{&#39;}I^{&#39;} + U^{&#39;}I^{&#39;&#39;} + U^{&#39;&#39;}I^{&#39;} + U^{&#39;&#39;}I^{&#39;&#39;}  \\
+    &amp; \ne U^{&#39;}I^{&#39;} + U^{&#39;&#39;}I^{&#39;&#39;}  \\
+    &amp; \ne P_1 + P_2
+\end{aligned}
+\]</span></p>
+<p>【例题】已知 <span class="math inline">\(r =2Ω\)</span>，试用叠加定理求解电流 <span class="math inline">\(i\)</span> 和电压 <span class="math inline">\(u\)</span> ?</p>
+<p><img src="/Electronics/Analysis/4-Network/12.png"></p>
+<p>【求解】当<code>12V</code>独立电压源单独作用时，<code>6A</code>电流源开路置零，得到如下电路：</p>
+<p><img src="/Electronics/Analysis/4-Network/13.png"></p>
+<p>根据上图列写出 KVL 方程，并且求解 <span class="math inline">\(I^{&#39;}\)</span>：</p>
+<p><span class="math display">\[
+(2Ω)I^{&#39;} + (1Ω)I^{&#39;} + 12V + (3Ω)I^{&#39;} = 0 \implies I^{&#39;} = -2A
+\]</span></p>
+<p>再根据欧姆定律，求解出 <span class="math inline">\(U^{&#39;}\)</span>：</p>
+<p><span class="math display">\[
+U^{&#39;} = -(3Ω)I^{&#39;} = -3Ω \times -2A = 6V
+\]</span></p>
+<blockquote>
+<p><strong>注意</strong>：保留<strong>受控源</strong>的同时，需要将<strong>控制量</strong>修改为化简电路当中的相应变量。</p>
+</blockquote>
+<p>当<code>6A</code>独立电流源单独作用时，<code>12V</code>电压源短路置零，得到如下电路：</p>
+<p><img src="/Electronics/Analysis/4-Network/14.png"></p>
+<p>同样根据上图列写 KVL 方程，进而求解 <span class="math inline">\(I^{&#39;&#39;}\)</span>：</p>
+<p><span class="math display">\[
+(2Ω)I^{&#39;&#39;} + (1Ω)I^{&#39;&#39;} + (3Ω)(I^{&#39;&#39;} - 6A) = 0 \implies I^{&#39;&#39;} = 3A
+\]</span></p>
+<p>同样根据欧姆定律，求解得到 <span class="math inline">\(U^{&#39;&#39;}\)</span>：</p>
+<p><span class="math display">\[
+U^{&#39;&#39;} = (3Ω)(6A - I^{&#39;&#39;}) = 3Ω \times (6A - 3A) = 9V
+\]</span></p>
+<p>最后根据叠加定理，可以分别求解出电流 <span class="math inline">\(I\)</span> 和电压 <span class="math inline">\(U\)</span> 的值：</p>
+<p><span class="math display">\[
+\begin{aligned}
+  &amp; I = I^{&#39;} + I^{&#39;&#39;} = -2A + 3A = 1A  \\
+  &amp; U = U^{&#39;} + U^{&#39;&#39;} = 6V + 9V = 15V
+\end{aligned}
+\]</span></p>
+<h3 id="戴维南定理">戴维南定理</h3>
+<p>含独立源的线性电阻单口网络，就其端口特性而言，可以等效为一个<strong>电压源</strong>和<strong>电阻</strong>串联的单口网络。下图左侧电路是一个含有独立源的线性单口网络 <strong>N</strong>，其端口电流为 <span class="math inline">\(i\)</span> 电压为 <span class="math inline">\(u\)</span>，可以将其等效为电压源 <span class="math inline">\(u_oc\)</span> 和等效电阻 <span class="math inline">\(R_o\)</span> 的串联。其中，<span class="math inline">\(u_oc\)</span> 称为<strong>开路电压</strong>，<span class="math inline">\(R_o\)</span> 称为<strong>戴维南等效电阻</strong>，而网络端口处的电流 <span class="math inline">\(i\)</span> 和电压 <span class="math inline">\(u\)</span> 保持不变，最终得到右侧的<strong>戴维南等效电路</strong>。</p>
+<p><img src="/Electronics/Analysis/4-Network/15.png"></p>
+<p>当单口网络的端口电压、电流采用<strong>关联参考方向</strong>时，戴维南电路的等效数学模型为如下的 VCR 方程：</p>
+<p><span class="math display">\[
+U = R_oi + u_{oc}
+\]</span></p>
+<p>接下来，通过下面电路来证明戴维南定理，其端口外加电流源 <span class="math inline">\(i\)</span>，端口两则电压为 <span class="math inline">\(u\)</span>。</p>
+<p><img src="/Electronics/Analysis/4-Network/16.png"></p>
+<p>根据叠加定理，将内部的电压源短路电流源开路，在外部电流源单独作用时，单口网络 <strong>N</strong> 的等值电阻为 <span class="math inline">\(R_o\)</span>，根据 VCR 关系可知端口电压 <span class="math inline">\(u^{&#39;} = R_oi\)</span>。</p>
+<p><img src="/Electronics/Analysis/4-Network/17.png"></p>
+<p>电路外加电流源置零，即端口网络开路，此时内部所有独立源产生的电压就是端口电压 <span class="math inline">\(u^{&#39;&#39;} = u_{oc}\)</span>：</p>
+<p><img src="/Electronics/Analysis/4-Network/18.png"></p>
+<p>叠加端口电压 <span class="math inline">\(u^{&#39;}\)</span> 和 <span class="math inline">\(u^{&#39;&#39;}\)</span>，可以得到如下端口电压和电流的表达式：</p>
+<p><span class="math display">\[
+u = u^{&#39;} + u^{&#39;&#39;} = R_oi + u_{oc}
+\]</span></p>
+<p>综上就可以得到戴维南定理的完整定义：<strong>任意的线性含源二端网络 N，可以用一个独立电压源 <span class="math inline">\(u_{oc}\)</span> 和电阻 <span class="math inline">\(R_o\)</span> 的串联组合来进行等效，其中 <span class="math inline">\(u_{oc}\)</span> 等于端口的开路电压，<span class="math inline">\(R_o\)</span> 等于二端网络 N 当中所有独立源置<code>0</code>之后的等效电阻</strong>。</p>
+<p>【例题】已知 <span class="math inline">\(r = 2Ω\)</span>，试求解下面电路所对应的戴维南等效电路？</p>
+<p><img src="/Electronics/Analysis/4-Network/19.png"></p>
+<p>【求解】首先，求解求受控源的控制变量 <span class="math inline">\(i_1\)</span>：</p>
+<p><span class="math display">\[
+i_1 = \frac{10V}{5Ω} = 2A
+\]</span></p>
+<p>然后，求解端口开路电压 <span class="math inline">\(u_{oc}\)</span>：</p>
+<p><span class="math display">\[
+u_{oc} = r \cdot i_1 = 2Ω \times 2A = 4V
+\]</span></p>
+<p><img src="/Electronics/Analysis/4-Network/20.png"></p>
+<p>接着，求解将所有独立源置<code>0</code>以后的等效电阻 <span class="math inline">\(R_o\)</span>：</p>
+<p><span class="math display">\[
+R_o = \frac{u}{i} = \frac{0}{i} = 0Ω
+\]</span></p>
+<p>最后，在求得到 <span class="math inline">\(u_{oc}\)</span> 和 <span class="math inline">\(R_o\)</span> 之后，根据戴维南电路的等效数学模型 <span class="math inline">\(U = R_oi + u_{oc} = 4V\)</span>，就可以得到下面只拥有一个 <span class="math inline">\(4V\)</span> 电压源的简化电路：</p>
+<p><img src="/Electronics/Analysis/4-Network/21.png"></p>
 <h2 id="理想变压器与运算放大器">理想变压器与运算放大器</h2>
 <h2 id="电容与电感">电容与电感</h2>
 <h2 id="一二阶电路暂态分析">一二阶电路暂态分析</h2>
@@ -1340,7 +1543,7 @@ i = \frac{10V}{2.5Ω} = 4A
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电路的基本概念和分析方法"><span class="nav-number">1.</span> <span class="nav-text">电路的基本概念和分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集总参数电路"><span class="nav-number">1.1.</span> <span class="nav-text">集总参数电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电流电压电功率"><span class="nav-number">1.2.</span> <span class="nav-text">电流、电压、电功率</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流"><span class="nav-number">1.2.1.</span> <span class="nav-text">电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压"><span class="nav-number">1.2.2.</span> <span class="nav-text">电压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联参考方向"><span class="nav-number">1.2.3.</span> <span class="nav-text">关联参考方向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电功率"><span class="nav-number">1.2.4.</span> <span class="nav-text">电功率</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基尔霍夫定律"><span class="nav-number">1.3.</span> <span class="nav-text">基尔霍夫定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电流定律-kcl"><span class="nav-number">1.3.1.</span> <span class="nav-text">基尔霍夫电流定律 KCL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电压定律-kvl"><span class="nav-number">1.3.2.</span> <span class="nav-text">基尔霍夫电压定律 KVL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻"><span class="nav-number">1.4.</span> <span class="nav-text">电阻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#独立电源"><span class="nav-number">1.5.</span> <span class="nav-text">独立电源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电压源"><span class="nav-number">1.5.1.</span> <span class="nav-text">独立电压源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电流源"><span class="nav-number">1.5.2.</span> <span class="nav-text">独立电流源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际电源模型"><span class="nav-number">1.6.</span> <span class="nav-text">实际电源模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元件拓扑约束与-2b-方程"><span class="nav-number">1.7.</span> <span class="nav-text">元件&#x2F;拓扑约束与 2b 方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电流法"><span class="nav-number">1.8.</span> <span class="nav-text">支路电流法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电压法"><span class="nav-number">1.9.</span> <span class="nav-text">支路电压法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络等效简化电路分析"><span class="nav-number">2.</span> <span class="nav-text">网络等效简化电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性无源单口网络等效"><span class="nav-number">2.1.</span> <span class="nav-text">线性无源单口网络等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性电阻串联"><span class="nav-number">2.1.1.</span> <span class="nav-text">线性电阻串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线性电阻并联"><span class="nav-number">2.1.2.</span> <span class="nav-text">线性电阻并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分析电阻串并联混合电路"><span class="nav-number">2.1.3.</span> <span class="nav-text">分析电阻串并联混合电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#平衡电桥电路等效"><span class="nav-number">2.1.4.</span> <span class="nav-text">平衡电桥电路等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非平衡电桥电路等效"><span class="nav-number">2.1.5.</span> <span class="nav-text">非平衡电桥电路等效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#含源线性电阻单口等效"><span class="nav-number">2.2.</span> <span class="nav-text">含源线性电阻单口等效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻星形三角形连接等效变换"><span class="nav-number">2.3.</span> <span class="nav-text">电阻星形三角形连接等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻星形三角形连接的电压电流关系"><span class="nav-number">2.3.1.</span> <span class="nav-text">电阻星形三角形连接的电压电流关系</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#受控源电路分析方法"><span class="nav-number">3.</span> <span class="nav-text">受控源电路分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#受控源"><span class="nav-number">3.1.</span> <span class="nav-text">受控源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#受控源的分类"><span class="nav-number">3.1.1.</span> <span class="nav-text">受控源的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#含受控源单口网络的等效"><span class="nav-number">3.1.2.</span> <span class="nav-text">含受控源单口网络的等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#含受控源电路的等效变换"><span class="nav-number">3.1.3.</span> <span class="nav-text">含受控源电路的等效变换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网孔分析法"><span class="nav-number">3.2.</span> <span class="nav-text">网孔分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网孔电流方程"><span class="nav-number">3.2.1.</span> <span class="nav-text">网孔电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#含独立电流源的网孔方程"><span class="nav-number">3.2.2.</span> <span class="nav-text">含独立电流源的网孔方程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结点分析法"><span class="nav-number">3.3.</span> <span class="nav-text">结点分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#结点方程"><span class="nav-number">3.3.1.</span> <span class="nav-text">结点方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包含电压源的结点方程"><span class="nav-number">3.3.2.</span> <span class="nav-text">包含电压源的结点方程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#含受控源的结点网孔方程"><span class="nav-number">3.4.</span> <span class="nav-text">含受控源的结点&#x2F;网孔方程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电路网络定理"><span class="nav-number">4.</span> <span class="nav-text">电路网络定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理想变压器与运算放大器"><span class="nav-number">5.</span> <span class="nav-text">理想变压器与运算放大器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电容与电感"><span class="nav-number">6.</span> <span class="nav-text">电容与电感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一二阶电路暂态分析"><span class="nav-number">7.</span> <span class="nav-text">一二阶电路暂态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态分析"><span class="nav-number">8.</span> <span class="nav-text">正弦稳态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态功率与三相电路"><span class="nav-number">9.</span> <span class="nav-text">正弦稳态功率与三相电路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络函数与频率特性"><span class="nav-number">10.</span> <span class="nav-text">网络函数与频率特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#耦合电感"><span class="nav-number">11.</span> <span class="nav-text">耦合电感</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电路的基本概念和分析方法"><span class="nav-number">1.</span> <span class="nav-text">电路的基本概念和分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集总参数电路"><span class="nav-number">1.1.</span> <span class="nav-text">集总参数电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电流电压电功率"><span class="nav-number">1.2.</span> <span class="nav-text">电流、电压、电功率</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流"><span class="nav-number">1.2.1.</span> <span class="nav-text">电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压"><span class="nav-number">1.2.2.</span> <span class="nav-text">电压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联参考方向"><span class="nav-number">1.2.3.</span> <span class="nav-text">关联参考方向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电功率"><span class="nav-number">1.2.4.</span> <span class="nav-text">电功率</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基尔霍夫定律"><span class="nav-number">1.3.</span> <span class="nav-text">基尔霍夫定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电流定律-kcl"><span class="nav-number">1.3.1.</span> <span class="nav-text">基尔霍夫电流定律 KCL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电压定律-kvl"><span class="nav-number">1.3.2.</span> <span class="nav-text">基尔霍夫电压定律 KVL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻"><span class="nav-number">1.4.</span> <span class="nav-text">电阻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#独立电源"><span class="nav-number">1.5.</span> <span class="nav-text">独立电源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电压源"><span class="nav-number">1.5.1.</span> <span class="nav-text">独立电压源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电流源"><span class="nav-number">1.5.2.</span> <span class="nav-text">独立电流源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际电源模型"><span class="nav-number">1.6.</span> <span class="nav-text">实际电源模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元件拓扑约束与-2b-方程"><span class="nav-number">1.7.</span> <span class="nav-text">元件&#x2F;拓扑约束与 2b 方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电流法"><span class="nav-number">1.8.</span> <span class="nav-text">支路电流法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电压法"><span class="nav-number">1.9.</span> <span class="nav-text">支路电压法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络等效简化电路分析"><span class="nav-number">2.</span> <span class="nav-text">网络等效简化电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性无源单口网络等效"><span class="nav-number">2.1.</span> <span class="nav-text">线性无源单口网络等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性电阻串联"><span class="nav-number">2.1.1.</span> <span class="nav-text">线性电阻串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线性电阻并联"><span class="nav-number">2.1.2.</span> <span class="nav-text">线性电阻并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分析电阻串并联混合电路"><span class="nav-number">2.1.3.</span> <span class="nav-text">分析电阻串并联混合电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#平衡电桥电路等效"><span class="nav-number">2.1.4.</span> <span class="nav-text">平衡电桥电路等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非平衡电桥电路等效"><span class="nav-number">2.1.5.</span> <span class="nav-text">非平衡电桥电路等效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#含源线性电阻单口等效"><span class="nav-number">2.2.</span> <span class="nav-text">含源线性电阻单口等效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻星形三角形连接等效变换"><span class="nav-number">2.3.</span> <span class="nav-text">电阻星形三角形连接等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻星形三角形连接的电压电流关系"><span class="nav-number">2.3.1.</span> <span class="nav-text">电阻星形三角形连接的电压电流关系</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#受控源电路分析方法"><span class="nav-number">3.</span> <span class="nav-text">受控源电路分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#受控源"><span class="nav-number">3.1.</span> <span class="nav-text">受控源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#受控源的分类"><span class="nav-number">3.1.1.</span> <span class="nav-text">受控源的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#含受控源单口网络的等效"><span class="nav-number">3.1.2.</span> <span class="nav-text">含受控源单口网络的等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#含受控源电路的等效变换"><span class="nav-number">3.1.3.</span> <span class="nav-text">含受控源电路的等效变换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网孔分析法"><span class="nav-number">3.2.</span> <span class="nav-text">网孔分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#网孔电流方程"><span class="nav-number">3.2.1.</span> <span class="nav-text">网孔电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#含独立电流源的网孔方程"><span class="nav-number">3.2.2.</span> <span class="nav-text">含独立电流源的网孔方程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结点分析法"><span class="nav-number">3.3.</span> <span class="nav-text">结点分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#结点方程"><span class="nav-number">3.3.1.</span> <span class="nav-text">结点方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包含电压源的结点方程"><span class="nav-number">3.3.2.</span> <span class="nav-text">包含电压源的结点方程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#含受控源的结点网孔方程"><span class="nav-number">3.4.</span> <span class="nav-text">含受控源的结点&#x2F;网孔方程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电路网络定理"><span class="nav-number">4.</span> <span class="nav-text">电路网络定理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#叠加定理"><span class="nav-number">4.1.</span> <span class="nav-text">叠加定理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#齐次性"><span class="nav-number">4.1.1.</span> <span class="nav-text">齐次性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#叠加性"><span class="nav-number">4.1.2.</span> <span class="nav-text">叠加性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#戴维南定理"><span class="nav-number">4.2.</span> <span class="nav-text">戴维南定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理想变压器与运算放大器"><span class="nav-number">5.</span> <span class="nav-text">理想变压器与运算放大器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电容与电感"><span class="nav-number">6.</span> <span class="nav-text">电容与电感</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一二阶电路暂态分析"><span class="nav-number">7.</span> <span class="nav-text">一二阶电路暂态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态分析"><span class="nav-number">8.</span> <span class="nav-text">正弦稳态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦稳态功率与三相电路"><span class="nav-number">9.</span> <span class="nav-text">正弦稳态功率与三相电路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络函数与频率特性"><span class="nav-number">10.</span> <span class="nav-text">网络函数与频率特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#耦合电感"><span class="nav-number">11.</span> <span class="nav-text">耦合电感</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1436,7 +1639,7 @@ i = \frac{10V}{2.5Ω} = 4A
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23:10</span>
+    <span title="站点阅读时长">23:14</span>
 </div>
 
         
