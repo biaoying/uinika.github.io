@@ -54,7 +54,7 @@
 <meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/5-csc.png">
 <meta property="og:image" content="https://uinika.github.io/Math/Elementary/Trigonometric-Functions/6-cot.png">
 <meta property="article:published_time" content="2020-08-05T12:14:52.708Z">
-<meta property="article:modified_time" content="2020-08-05T12:14:52.708Z">
+<meta property="article:modified_time" content="2020-08-22T21:23:54.597Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Elementary">
 <meta name="twitter:card" content="summary">
@@ -253,6 +253,13 @@
 
               <time title="创建时间：2020-08-05 20:14:52" itemprop="dateCreated datePublished" datetime="2020-08-05T20:14:52+08:00">2020-08-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-23 05:23:54" itemprop="dateModified" datetime="2020-08-23T05:23:54+08:00">2020-08-23</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -276,14 +283,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.2k</span>
+              <span>5.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>5 分钟</span>
             </span>
 
         </div>
@@ -299,16 +306,64 @@
 <p><img src="/Math/Elementary/logo.png"></p>
 <p>由于初等数学只能解释常量的几何与物理问题，例如：<code>规则图形的长度</code>、<code>面积</code>与<code>体积</code>，<code>匀速直线运动</code>等等。虽然并不涉及工程计算当中经常涉及的变化量的分析与求解，但是却是高等数学知识体系当中，不可或缺的基础常识性内容。因此，笔者为了温习微积分相关的知识，特意将初等数学的重要概念归纳至本篇文章下面，便于方便快速的进行查阅。</p>
 <a id="more"></a>
-<h2 id="数的分类">数的分类</h2>
+<h2 id="集合">集合</h2>
+<h3 id="集合的含义与表示">集合的含义与表示</h3>
+<p><strong>集合</strong>是指具有某种特定性质的事物的总体，用大写的拉丁字母 <code>A</code>、<code>B</code>、<code>C</code>... 表示。<strong>元素</strong>是组成这个集合的具体事物，用小写的拉丁字母 <code>a</code>、<code>b</code>、<code>c</code>... 表示，集合的表示方法通常有如下 2 种：</p>
 <ul>
-<li><strong>自然数 N</strong>：包括<code>零</code>在内的全体非负整数；</li>
-<li><strong>整数 Z</strong>：由<code>正整数</code>、<code>零</code>、<code>负整数</code>组成；</li>
-<li><strong>有理数 Q</strong>：由<code>整数</code>和<code>分数</code>的组成，是整数和分数的集合；</li>
-<li><strong>实数 R</strong>：包括<code>有理数</code>和<code>无理数</code>（小数部分无限不循环）；</li>
-<li><strong>复数 C</strong>：将形如<code>z = a + bi</code>的数称为复数，其中<code>a</code>、<code>b</code>均为实数，<code>a</code>被称为<strong>实部</strong>，<code>b</code>被称为<strong>虚部</strong>，<code>i</code>称为<strong>虚数单位</strong>。</li>
+<li><strong>列举法</strong>：将集合的全部元素逐一列举出来，<span class="math inline">\(A = {a_1, a_2, ..., a_n }\)</span>；</li>
+<li><strong>描述法</strong>：用集合所含元素的共同特征表示集合的方法，<span class="math inline">\(B = {x | x 具有的性质}\)</span>；</li>
 </ul>
-<h2 id="基本代数公式">基本代数公式</h2>
-<h3 id="算术运算">算术运算</h3>
+<blockquote>
+<p><strong>注意</strong>：如果元素 <span class="math inline">\(a\)</span> 是集合 <span class="math inline">\(A\)</span> 中的元素，就认为 <span class="math inline">\(a\)</span> 属于集合 <span class="math inline">\(A\)</span>，记作 <span class="math inline">\(a \in A\)</span>；如果元素 <span class="math inline">\(a\)</span> 不是集合 <span class="math inline">\(A\)</span> 中的元素，就认为 <span class="math inline">\(a\)</span> 不属于集合 <span class="math inline">\(A\)</span>，记作 <span class="math inline">\(a \notin A\)</span>；</p>
+</blockquote>
+<p>在表示数集的字母右上角标注<code>*</code>表示该数集当中排除<code>0</code>，标注<code>+</code>来表示该数集内排除<code>0</code>和负数的集合。下面是一些常用数集的表示方法：</p>
+<ul>
+<li><strong>自然数集 <span class="math inline">\(N\)</span></strong>：包括<code>零</code>在内的全体非负整数，<span class="math inline">\(N=\{ 0, 1, 2, ..., n, ... \}\)</span>；</li>
+<li><strong>正整数 <span class="math inline">\(N^+\)</span></strong>：全体正整数，<span class="math inline">\(N^+=\{ 1, 2, ..., n, ... \}\)</span>；</li>
+<li><strong>整数集 <span class="math inline">\(Z\)</span></strong>：由<code>正整数</code>、<code>零</code>、<code>负整数</code>组成，<span class="math inline">\(Z=\{..., -n, ..., -2, -1, 0, 1, 2, ..., n, ...\}\)</span>；</li>
+<li><strong>有理数集 <span class="math inline">\(Q\)</span></strong>：由<code>整数</code>和<code>分数</code>组成，<span class="math inline">\(Q=\{ \frac{p}{q} | p \in Z, q \in N^+ 且 p 与 q 互质 \}\)</span>；</li>
+<li><strong>实数集 <span class="math inline">\(R\)</span></strong>：包括<code>有理数</code>和<code>无理数</code>（小数部分无限不循环）；</li>
+</ul>
+<h3 id="集合之间的关系">集合之间的关系</h3>
+<p>假设 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span> 是两个集合，如果集合 <span class="math inline">\(A\)</span> 中的元素都是集合 <span class="math inline">\(B\)</span> 的元素，则称 <span class="math inline">\(A\)</span> 是 <span class="math inline">\(B\)</span> 的<strong>子集</strong>，记作 <span class="math inline">\(A \subset B\)</span>（读作 <span class="math inline">\(A\)</span> 包含于 <span class="math inline">\(B\)</span>）或者 <span class="math inline">\(B \supset A\)</span>（读作 <span class="math inline">\(B\)</span> 包含 <span class="math inline">\(A\)</span>）。若 <span class="math inline">\(A \subset B\)</span> 且 <span class="math inline">\(A \neq B\)</span>，则称 <span class="math inline">\(A\)</span> 是 <span class="math inline">\(B\)</span> 的<strong>真子集</strong>，记作 <span class="math inline">\(A \subsetneqq B\)</span>。</p>
+<p>如果集合 <span class="math inline">\(A\)</span> 与集合 <span class="math inline">\(B\)</span> 互为子集，即 <span class="math inline">\(A \subset B\)</span> 且 <span class="math inline">\(B \subset A\)</span>，则称集合 <span class="math inline">\(A\)</span> 与集合 <span class="math inline">\(B\)</span> <strong>相等</strong>，记作 <span class="math inline">\(A=B\)</span>。</p>
+<p>不含任何元素的集合称为<strong>空集</strong>，记作 <span class="math inline">\(\emptyset\)</span>，空集是任何集合的子集。</p>
+<h3 id="集合的基本运算">集合的基本运算</h3>
+<p>设 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span> 是两个集合，由所有属于 <span class="math inline">\(A\)</span> 或者属于 <span class="math inline">\(B\)</span> 的元素组成的集合，称为 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 的<strong>并集</strong>，记作 <span class="math inline">\(A \cup B\)</span>。</p>
+<p><span class="math display">\[
+A \cup B = \{ x | x \in A 或 x \in B \}
+\]</span></p>
+<p>由所有既属于 <span class="math inline">\(A\)</span> 又属于 <span class="math inline">\(B\)</span> 的元素组成的集合称为 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 的<strong>交集</strong>，记作 <span class="math inline">\(A \cap B\)</span>。</p>
+<p><span class="math display">\[
+A \cap B = \{ x | x \in A 且 x \in B \}
+\]</span></p>
+<p>由所有属于 <span class="math inline">\(A\)</span> 而不属于 <span class="math inline">\(B\)</span> 的元素组成的集合称为 <span class="math inline">\(A\)</span> 与 <span class="math inline">\(B\)</span> 的<strong>差集</strong>，记作 <span class="math inline">\(A \setminus B\)</span>。</p>
+<p><span class="math display">\[
+A \setminus B = \{ x | x \in A 且 x \notin B \}
+\]</span></p>
+<p>包含所研究问题全部元素的集合称为<strong>全集</strong>，通常记作 <span class="math inline">\(U\)</span>。由全集 <span class="math inline">\(U\)</span> 中不属于集合 <span class="math inline">\(A\)</span> 的所有元素组成的集合称为<strong>补集</strong>，记作 <span class="math inline">\(A^C\)</span>。</p>
+<p><span class="math display">\[
+A^C = \{ x | x \in U, 且 x \notin A \}
+\]</span></p>
+<p>设 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span>、<span class="math inline">\(C\)</span> 为任意三个集合，则下列集合的运算法则成立：</p>
+<ul>
+<li><strong>交换律</strong>：<span class="math inline">\(A \cup B = B \cup A\)</span>，<span class="math inline">\(A \cap B = B \cap A\)</span>；</li>
+<li><strong>结合律</strong>：<span class="math inline">\((A \cup B) \cup C = A \cup (B \cup C)\)</span>，<span class="math inline">\((A \cap B) \cap C = A \cap (B \cap C)\)</span>；</li>
+<li><strong>分配律</strong>：<span class="math inline">\((A \cup B) \cap C = (A \cap C) \cup (B \cap C)\)</span>，<span class="math inline">\((A \cap B) \cup C = (A \cup C) \cap (B \cup C)\)</span>；</li>
+<li><strong>对偶律</strong>：<span class="math inline">\((A \cup B)^C = A^C \cap B^C\)</span>，<span class="math inline">\((A \cap B)^C = A^C \cup B^C\)</span>；</li>
+</ul>
+<p>两个<strong>集合</strong>之间还可以定义<strong>直积</strong>（也称为<strong>笛卡儿积</strong>），假设 <span class="math inline">\(A\)</span>、<span class="math inline">\(B\)</span> 是任意两个集合，在集合 <span class="math inline">\(A\)</span> 中任意取一个元素<code>x</code>，在集合 <span class="math inline">\(B\)</span> 中任意取一个元素<code>y</code>，组成一个有序对 <span class="math inline">\((x, y)\)</span>，把这样的有序对作为新的元素，由其全体组成的集合称为集合 <span class="math inline">\(A\)</span> 与集合 <span class="math inline">\(B\)</span> 的直积，记为 <span class="math inline">\(A×B\)</span>。</p>
+<p><span class="math display">\[
+A \times B = \{ (x, y) | x \in A 且 y \in B \}
+\]</span></p>
+<h2 id="函数">函数</h2>
+<h2 id="指数函数">指数函数</h2>
+<h2 id="对数函数">对数函数</h2>
+<h2 id="幂函数">幂函数</h2>
+<h2 id="三角函数">三角函数</h2>
+<h2 id="常用公式">常用公式</h2>
+<h3 id="基本代数公式">基本代数公式</h3>
+<h4 id="算术运算">算术运算</h4>
 <div class="table-container">
 <table>
 <tbody>
@@ -331,7 +386,7 @@
 </tbody>
 </table>
 </div>
-<h3 id="符号定律">符号定律</h3>
+<h4 id="符号定律">符号定律</h4>
 <table>
 <tbody>
 <tr>
@@ -344,7 +399,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="零">零</h3>
+<h4 id="零">零</h4>
 <p>除数不能为<code>0</code>，如果 <span class="math inline">\(a \neq 0\)</span>，那么：</p>
 <table>
 <tbody>
@@ -362,7 +417,7 @@
 </tbody>
 </table>
 <p>而对于任意的数字<code>a</code>，都会有 <span class="math inline">\(a \cdot 0 = 0 \cdot a = 0\)</span>；</p>
-<h3 id="指数定律">指数定律</h3>
+<h4 id="指数定律">指数定律</h4>
 <table>
 <tbody>
 <tr>
@@ -399,7 +454,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="二项式定理">二项式定理</h3>
+<h4 id="二项式定理">二项式定理</h4>
 <p>对于任意负整数<code>n</code>可以得到如下公式：</p>
 <table>
 <tbody>
@@ -431,7 +486,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="整数幂的差">整数幂的差</h3>
+<h4 id="整数幂的差">整数幂的差</h4>
 <p>类似求整数幂差的因式分解，如果 <span class="math inline">\(n &gt; 1\)</span>：</p>
 <table>
 <tbody>
@@ -458,7 +513,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="配平方">配平方</h3>
+<h4 id="配平方">配平方</h4>
 <p>如果 <span class="math inline">\(n &gt; 1\)</span> 时：</p>
 <table>
 <tbody>
@@ -469,7 +524,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="二次公式">二次公式</h3>
+<h4 id="二次公式">二次公式</h4>
 <p>如果 <span class="math inline">\(a \neq 0\)</span> 并且 <span class="math inline">\(ax^2 + bx + c = 0\)</span>，那么：</p>
 <table>
 <tbody>
@@ -480,7 +535,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="几何公式">几何公式</h2>
+<h3 id="几何公式">几何公式</h3>
 <p><strong>A</strong> = 面积（<strong>A</strong>rea）、<strong>B</strong> = 底面积（Area of <strong>B</strong>ase）、<strong>C</strong> = 周长（<strong>C</strong>ircumference）、<strong>S</strong> = 表面或侧面的面积（<strong>S</strong>urface Area）、<strong>V</strong> = 体积（<strong>V</strong>olume）。</p>
 <table>
 <tbody>
@@ -611,7 +666,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="三角函数公式">三角函数公式</h2>
+<h3 id="三角函数公式">三角函数公式</h3>
 <table>
 <tbody>
 <tr>
@@ -619,7 +674,16 @@
 <img src="/Math/Elementary/Trigonometry/Definitions.png">
 </td>
 <td>
-<span class="math display">\[\sin \theta = \frac{y}{r} = \frac{1}{\csc \theta} ⇐== 正弦(Sine)\]</span> <span class="math display">\[\cos \theta = \frac{x}{r} = \frac{1}{\sec \theta} ⇐== 余弦(Cosine)\]</span> <span class="math display">\[\tan \theta = \frac{y}{x} = \frac{1}{\cot \theta} ⇐== 正切(Tangent)\]</span> <span class="math display">\[\csc \theta = \frac{r}{y} = \frac{1}{\sin \theta} ⇐== 余割(Cosecant)\]</span> <span class="math display">\[\sec \theta = \frac{r}{x} = \frac{1}{\cos \theta} ⇐== 正割(Secant)\]</span> <span class="math display">\[\cot \theta = \frac{x}{y} = \frac{1}{\tan \theta} ⇐== 余切(Cotangent)\]</span>
+<span class="math display">\[
+        \begin{aligned}
+          &amp; \sin \theta = \frac{y}{r} = \frac{1}{\csc \theta} \implies 正弦(Sine)        \\
+          &amp; \cos \theta = \frac{x}{r} = \frac{1}{\sec \theta} \implies 余弦(Cosine)      \\
+          &amp; \tan \theta = \frac{y}{x} = \frac{1}{\cot \theta} \implies 正切(Tangent)     \\
+          &amp; \csc \theta = \frac{r}{y} = \frac{1}{\sin \theta} \implies 余割(Cosecant)    \\
+          &amp; \sec \theta = \frac{r}{x} = \frac{1}{\cos \theta} \implies 正割(Secant)      \\
+          &amp; \cot \theta = \frac{x}{y} = \frac{1}{\tan \theta} \implies 余切(Cotangent)   \\
+        \end{aligned}
+        \]</span>
 </td>
 </tr>
 </tbody>
@@ -650,7 +714,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="三角恒等式">三角恒等式</h3>
+<h4 id="三角恒等式">三角恒等式</h4>
 <table>
 <tbody>
 <tr>
@@ -777,7 +841,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="三角函数图像">三角函数图像</h3>
+<h4 id="三角函数图像">三角函数图像</h4>
 <table>
 <tbody>
 <tr>
@@ -785,7 +849,7 @@
 <img src="/Math/Elementary/Trigonometric-Functions/Radian-Measure.png">
 </td>
 <td style="text-align: center;">
-<span class="math display">\[\frac{s}{r} = \frac{\theta}{1} = \theta\]</span> 或者 <span class="math display">\[\theta = \frac{s}{r}，\]</span> <span class="math display">\[180° = 1 \pi \ 弧度\]</span>
+<span class="math display">\[弧度 \theta = \frac{s}{r}，180° = 1 \pi \ 弧度\]</span>
 </td>
 </tr>
 </tbody>
@@ -974,7 +1038,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数的分类"><span class="nav-number">1.</span> <span class="nav-text">数的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本代数公式"><span class="nav-number">2.</span> <span class="nav-text">基本代数公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算术运算"><span class="nav-number">2.1.</span> <span class="nav-text">算术运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#符号定律"><span class="nav-number">2.2.</span> <span class="nav-text">符号定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#零"><span class="nav-number">2.3.</span> <span class="nav-text">零</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指数定律"><span class="nav-number">2.4.</span> <span class="nav-text">指数定律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二项式定理"><span class="nav-number">2.5.</span> <span class="nav-text">二项式定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#整数幂的差"><span class="nav-number">2.6.</span> <span class="nav-text">整数幂的差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配平方"><span class="nav-number">2.7.</span> <span class="nav-text">配平方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二次公式"><span class="nav-number">2.8.</span> <span class="nav-text">二次公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几何公式"><span class="nav-number">3.</span> <span class="nav-text">几何公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三角函数公式"><span class="nav-number">4.</span> <span class="nav-text">三角函数公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三角恒等式"><span class="nav-number">4.1.</span> <span class="nav-text">三角恒等式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三角函数图像"><span class="nav-number">4.2.</span> <span class="nav-text">三角函数图像</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#集合"><span class="nav-number">1.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集合的含义与表示"><span class="nav-number">1.1.</span> <span class="nav-text">集合的含义与表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合之间的关系"><span class="nav-number">1.2.</span> <span class="nav-text">集合之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合的基本运算"><span class="nav-number">1.3.</span> <span class="nav-text">集合的基本运算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">2.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指数函数"><span class="nav-number">3.</span> <span class="nav-text">指数函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对数函数"><span class="nav-number">4.</span> <span class="nav-text">对数函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#幂函数"><span class="nav-number">5.</span> <span class="nav-text">幂函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三角函数"><span class="nav-number">6.</span> <span class="nav-text">三角函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用公式"><span class="nav-number">7.</span> <span class="nav-text">常用公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本代数公式"><span class="nav-number">7.1.</span> <span class="nav-text">基本代数公式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算"><span class="nav-number">7.1.1.</span> <span class="nav-text">算术运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#符号定律"><span class="nav-number">7.1.2.</span> <span class="nav-text">符号定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#零"><span class="nav-number">7.1.3.</span> <span class="nav-text">零</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指数定律"><span class="nav-number">7.1.4.</span> <span class="nav-text">指数定律</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二项式定理"><span class="nav-number">7.1.5.</span> <span class="nav-text">二项式定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整数幂的差"><span class="nav-number">7.1.6.</span> <span class="nav-text">整数幂的差</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配平方"><span class="nav-number">7.1.7.</span> <span class="nav-text">配平方</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二次公式"><span class="nav-number">7.1.8.</span> <span class="nav-text">二次公式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#几何公式"><span class="nav-number">7.2.</span> <span class="nav-text">几何公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三角函数公式"><span class="nav-number">7.3.</span> <span class="nav-text">三角函数公式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#三角恒等式"><span class="nav-number">7.3.1.</span> <span class="nav-text">三角恒等式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三角函数图像"><span class="nav-number">7.3.2.</span> <span class="nav-text">三角函数图像</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1070,7 +1134,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23:14</span>
+    <span title="站点阅读时长">23:19</span>
 </div>
 
         
