@@ -178,8 +178,12 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/11.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/12.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/13.png">
-<meta property="article:published_time" content="2020-09-01T13:56:11.748Z">
-<meta property="article:modified_time" content="2020-09-01T18:17:21.168Z">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/14.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/15.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/16.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analysis/3-Linear/17.png">
+<meta property="article:published_time" content="2020-09-02T15:32:55.902Z">
+<meta property="article:modified_time" content="2020-09-02T15:32:55.918Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analysis">
 <meta name="twitter:card" content="summary">
@@ -376,15 +380,8 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-09-01 21:56:11" itemprop="dateCreated datePublished" datetime="2020-09-01T21:56:11+08:00">2020-09-01</time>
+              <time title="创建时间：2020-09-02 23:32:55" itemprop="dateCreated datePublished" datetime="2020-09-02T23:32:55+08:00">2020-09-02</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-02 02:17:21" itemprop="dateModified" datetime="2020-09-02T02:17:21+08:00">2020-09-02</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -408,14 +405,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>43k</span>
+              <span>46k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>39 分钟</span>
+              <span>42 分钟</span>
             </span>
 
         </div>
@@ -900,7 +897,7 @@ p = \mu \cdot u_1 \cdot i_L = \mu u_1 (\frac{-\mu \cdot u_1}{R_L}) = \frac{-(\mu
 <td style="text-align: center;"><img src="/Electronics/Analysis/1-Concept/62.png"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><strong>节点</strong>（Node）</td>
+<td style="text-align: center;"><strong>结点</strong>（Node）</td>
 <td style="text-align: left;">三条或者三条以上支路所构成的连接点，右侧示例拥有<code>a</code>、<code>b</code>、<code>c</code>、<code>d</code>共 4 个结点；</td>
 <td style="text-align: center;"><img src="/Electronics/Analysis/1-Concept/63.png"></td>
 </tr>
@@ -920,15 +917,15 @@ p = \mu \cdot u_1 \cdot i_L = \mu u_1 (\frac{-\mu \cdot u_1}{R_L}) = \frac{-(\mu
 <p><img src="/Electronics/Analysis/1-Concept/67.png"></p>
 <p>【解答】4 条支路，2 个结点（<code>a</code>和<code>b</code>以及<code>c</code>和<code>d</code>分别为 2 组<strong>等电位</strong>结点）。</p>
 <h4 id="基尔霍夫电流定律-kcl">基尔霍夫电流定律 KCL</h4>
-<p><strong>基尔霍夫电流定律</strong>：集总参数电路当中的任意节点，在任意一个时刻，流入该<strong>结点</strong>的<strong>电流</strong>代数和为<strong>零</strong>。</p>
+<p><strong>基尔霍夫电流定律</strong>：集总参数电路当中的任意结点，在任意一个时刻，流入该<strong>结点</strong>的<strong>电流</strong>代数和为<strong>零</strong>。</p>
 <p><span class="math display">\[
 \sum_{k=1}^{n} i_k = 0
 \]</span></p>
-<p>上式当中，可以假设流入结点的电流为正<code>+</code>，流出节点的电流为负<code>-</code>，当然也可以作出相反的假设。</p>
+<p>上式当中，可以假设流入结点的电流为正<code>+</code>，流出结点的电流为负<code>-</code>，当然也可以作出相反的假设。</p>
 <p>【例题】求解流过下图当中结点<code>a</code>的电流的代数和？</p>
 <p><img src="/Electronics/Analysis/1-Concept/68.png"></p>
 <p>【解答】根据 KCL 可知流过结点<code>a</code>的电流代数和为零 <span class="math inline">\(-i_1 + i_2 + i_3 - i_4 = 0\)</span>，将方程变换后得到 <span class="math inline">\(i_2 + i_3 = i_1 + i_4\)</span>，可以发现方程中 <span class="math inline">\(i_2\)</span> 和 <span class="math inline">\(i_3\)</span> 是流入结点<code>a</code>的电流，<span class="math inline">\(i_1\)</span> 和 <span class="math inline">\(i_4\)</span> 是流出结点<code>a</code>的电流。</p>
-<p>对于上面示例中的结点<code>a</code>而言，流入电流之和等于流出电流之和，这样就可以得到基尔霍夫电流定律的第 2 种表达：<strong>任意一个时刻，流入任意一个节点的电流之和等于从该节点流出的电流之和</strong>。</p>
+<p>对于上面示例中的结点<code>a</code>而言，流入电流之和等于流出电流之和，这样就可以得到基尔霍夫电流定律的第 2 种表达：<strong>任意一个时刻，流入任意一个结点的电流之和等于从该结点流出的电流之和</strong>。</p>
 <blockquote>
 <p><strong>注意</strong>：基尔霍夫电流定律本质上是一种电路的电流约束，而且这样的约束是线性的，电路分析当中称之为<strong>线性相关</strong>。</p>
 </blockquote>
@@ -1534,7 +1531,7 @@ I = 2A
    结点 3 \implies  I_1 + I_3 - I_6  = 0
 \end{cases}
 \]</span></p>
-<p>具有 <span class="math inline">\(n\)</span> 个结点的电路，其独立的 KCL 方程数为 <span class="math inline">\(n-1\)</span> 个；任选 <span class="math inline">\(n-1\)</span> 个节点列写 KCL 方程，就可以得到独立的 KCL 方程组，这里的 <span class="math inline">\(n-1\)</span> 个结点就称为<strong>独立结点</strong>。</p>
+<p>具有 <span class="math inline">\(n\)</span> 个结点的电路，其独立的 KCL 方程数为 <span class="math inline">\(n-1\)</span> 个；任选 <span class="math inline">\(n-1\)</span> 个结点列写 KCL 方程，就可以得到独立的 KCL 方程组，这里的 <span class="math inline">\(n-1\)</span> 个结点就称为<strong>独立结点</strong>。</p>
 <h4 id="独立的-kvl-方程">独立的 KVL 方程</h4>
 <p>首先，标记出上面电路所有支路上的电压 <span class="math inline">\(U_1\)</span>、<span class="math inline">\(U_2\)</span>、<span class="math inline">\(U_3\)</span>、<span class="math inline">\(U_4\)</span>、<span class="math inline">\(U_5\)</span>、<span class="math inline">\(U_6\)</span>：</p>
 <p><img src="/Electronics/Analysis/3-Linear/2.png"></p>
@@ -1555,7 +1552,7 @@ I = 2A
    回路 2-3-4-2 \implies U_3 + U_6 - U_5 = 0
 \end{cases}
 \]</span></p>
-<p><strong>平面电路的全部网孔就是一组独立回路</strong>，对于具有 <span class="math inline">\(b\)</span> 条支路 <span class="math inline">\(n\)</span> 个节点的平面电路而言，其网孔数量为 <span class="math inline">\(b-n+1\)</span> 个，任选 <span class="math inline">\(b-n+1\)</span> 个网孔列写 KVL 方程，就可以得到一个独立的 KVL 方程组。</p>
+<p><strong>平面电路的全部网孔就是一组独立回路</strong>，对于具有 <span class="math inline">\(b\)</span> 条支路 <span class="math inline">\(n\)</span> 个结点的平面电路而言，其网孔数量为 <span class="math inline">\(b-n+1\)</span> 个，任选 <span class="math inline">\(b-n+1\)</span> 个网孔列写 KVL 方程，就可以得到一个独立的 KVL 方程组。</p>
 <h4 id="b-法">2b 法</h4>
 <p>如果当前电路拥有 <span class="math inline">\(b\)</span> 条支路 <span class="math inline">\(n\)</span> 个结点，那么可以列写的独立 <strong>KCL</strong> 方程数量为：</p>
 <p><span class="math display">\[
@@ -1949,6 +1946,112 @@ I_{m2} - I_{m3} = 5
    I_{m3} = 6.75A
 \end{cases}
 \]</span></p>
+<h3 id="结点电压法">结点电压法</h3>
+<p>下图电路拥有 <span class="math inline">\(n=3\)</span> 个结点，独立结点数量为 <span class="math inline">\(n-1=2\)</span>，选择结点 3 为<strong>零电位</strong>参考结点，结点 1 和 2 与参考结点的电压降称为<strong>结点电压</strong>，分别记为 <span class="math inline">\(U_{N1}\)</span> 和 <span class="math inline">\(U_{N2}\)</span>。</p>
+<p><img src="/Electronics/Analysis/3-Linear/14.png"></p>
+<p>任意选择一个<strong>零电位参考点</strong>，<strong>结点电压</strong>就是指定结点与参考点之间的电压降，也即<strong>结点电位</strong>，其方向由独立结点指向参考结点。</p>
+<p>节点电压变量是否能够对电路进行全面求解，取决于其是否满足<strong>完备性</strong>和<strong>独立性</strong>两个条件。该电路的支路电压一共拥有 3 个，分别将其标注为 <span class="math inline">\(U_1\)</span>、<span class="math inline">\(U_2\)</span>、<span class="math inline">\(U_3\)</span>：</p>
+<p><img src="/Electronics/Analysis/3-Linear/15.png"></p>
+<p>由于 <span class="math inline">\(U_1 = U_{N1}\)</span>、<span class="math inline">\(U_2 = U_{N2}\)</span>、<span class="math inline">\(U_3 = U_{N1} - U_{N2}\)</span>，因而只要求解出结点电压 <span class="math inline">\(U_{N1}\)</span> 和 <span class="math inline">\(U_{N2}\)</span> ，就可以相应的求出所有的支路电压和支路电流，所以它具有<strong>完备性</strong>。</p>
+<p><img src="/Electronics/Analysis/3-Linear/16.png"></p>
+<p>对于上面的网孔，顺时针方向绕行一圈的代数和等于 <span class="math inline">\(U_3 + U_2 - U_1\)</span>，代入 <span class="math inline">\(U_{N1}\)</span> 和 <span class="math inline">\(U_{N2}\)</span> 以后可以得到 <span class="math inline">\((U_{N1} - U_{N2}) + U_{N2} - U_{N1} = 0\)</span>，能够自动满足 KVL 方程，因而也具备<strong>独立性</strong>。</p>
+<p>因为节点电压这组变量可以同时满足<strong>完备性</strong>和<strong>独立性</strong>，通过其可以对电路进行全面求解。这种以节点电压为未知变量，列写 KCL 方程分析电路的方法就称为<strong>节点电压法</strong>。</p>
+<ol type="1">
+<li>选定参考结点，并且标注其它 <span class="math inline">\(n-1\)</span> 个独立结点的电压；</li>
+<li>然后基于独立结点列写 KCL 方程；</li>
+</ol>
+<p><span class="math display">\[
+\begin{cases}
+  结点 1 \implies I_1 + I_{S2} + I_2 + I_3 = I_{S1} + I_{S3}  \\
+  结点 2 \implies I_4 + I_{S3} = I_3
+\end{cases}
+\implies
+\begin{cases}
+  I_1 + I_2 + I_3 = I_{S1} - I_{S2} + I_{S3}   \\
+  -I_3 + I_4 = - I_{S3}
+\end{cases}
+\]</span></p>
+<p>将支路电流 <span class="math inline">\(I_1\)</span>、<span class="math inline">\(I_2\)</span>、<span class="math inline">\(I_3\)</span>、<span class="math inline">\(I_4\)</span> 采用结点电压进行表示：</p>
+<p><span class="math display">\[
+\begin{cases}
+   I_1 = G_1U_{N1}             \\
+   I_2 = G_2U_{N1}             \\
+   I_3 = G_3(U_{N1} - U_{N2})  \\
+   I_4 = G_4U_{N2}
+\end{cases}
+\]</span></p>
+<p>将这些方程代入上面列写的结点 KCL 方程并且整理：</p>
+<p><span class="math display">\[
+\begin{cases}
+  结点 1 \implies G_1U_{N1} + G_2U_{N1} + G_3(U_{N1} - U_{N2}) = I_{S1} - I_{S2} - I_{S3}  \\
+  结点 2 \implies -G_3(U_{N1} - U_{N2}) + G_4U_{N2} = -I_{S3}
+\end{cases}
+\implies
+\begin{cases}
+   (G_1 + G_2 + G_3)U_{N1} - G_3U_{N2} = I_{S1} - I_{S2} - I_{S3}  \\
+   -G_3U_{N1} + (G_3 + G_4)U_{N2} = -I_{S3}
+\end{cases}
+\]</span></p>
+<p>上面方程左侧的 <span class="math inline">\(G_1 + G_2 + G_3 = G_{11}\)</span> 是与结点 1 相连的全部电导之和，称为结点 1 的<strong>自电导</strong>；同样的，<span class="math inline">\(G_3 + G_4 = G_{22}\)</span> 是与结点 <strong>2</strong> 相连的全部电导之和，称为结点 <strong>2</strong> 的<strong>自电导</strong>；$ -G_3 = G_{21} = G_{12}$ 是结点 1 和 2 之间所有支路上电导之和的<strong>负值</strong>，称为结点 1 和 2 之间的<strong>互电导</strong>。方程右侧的 <span class="math inline">\(I_{S1} - I_{S2} + I_{S3} = I_{S11}\)</span> 是流入结点 1 的电流源电流的代数和；同理，<span class="math inline">\(I_{S22} = -I_{S3}\)</span> 是流入结点 1 的电流源电流的代数和；电流源的电流流入结点时取正号<code>+</code>，流出时取负号<code>-</code>。最后，将上面的方程组简记为如下形式：</p>
+<p><span class="math display">\[
+\begin{cases}
+  结点 1 \implies G_{11}U_{N1} + G_{12}U_{N2} = I_{S11} \\
+  结点 2 \implies G_{21}U_{N1} + G_{22}U_{N2} = I_{S22}
+\end{cases}
+\]</span></p>
+<p>将结点电压法推广至含有 n 个结点，且仅含有电阻和独立电流源的电路。对于 n 个结点的电路，其独立结点个数为 <span class="math inline">\(n-1\)</span> 个，因而可以列写 <span class="math inline">\(n-1\)</span> 个方程：</p>
+<p><span class="math display">\[
+\begin{cases}
+  G_{11}U_{N1} + G_{12}U_{N2} + \cdots + G_{1(n-1)}U_{N(n-1)} = I_{S11}   \\
+  G_{21}U_{N1} + G_{22}U_{N2} + \cdots + G_{2(n-1)}U_{N(n-1)} = I_{S22}   \\
+  \cdots \qquad \cdots \qquad \cdots \qquad \cdots \qquad \cdots \qquad \cdots  \\
+  G_{(n-1)1}U_{N1} + G_{(n-2)2}U_{N2} + \cdots + G_{(n-1)(n-1)}U_{N(n-1)} = I_{S(n-1)(n-1)}
+\end{cases}
+\]</span></p>
+<ul>
+<li>方程左侧的 <span class="math inline">\(G_{11}\)</span>、<span class="math inline">\(G_{22}\)</span>、<span class="math inline">\(G_{(n-1)(n-1)}\)</span> 记作 <span class="math inline">\(G_{kk}\)</span>，即第 <span class="math inline">\(k\)</span> 个结点上所有支路的电导之和，称为结点 <span class="math inline">\(k\)</span> 的<strong>自电导</strong>，自电导总是为正<code>+</code>；</li>
+<li>方程左侧的 <span class="math inline">\(G_{12}\)</span>、<span class="math inline">\(G_{21}\)</span>、<span class="math inline">\(G_{(n-1)1}\)</span>、<span class="math inline">\(G_{(n-2)2}\)</span>、<span class="math inline">\(G_{1(n-1)}\)</span>、<span class="math inline">\(G_{2(n-1)}\)</span> 记作 <span class="math inline">\(G_{jk} (j \neq k)\)</span> ，即第 <span class="math inline">\(k\)</span> 和 <span class="math inline">\(j\)</span> 个结点之间所有公共支路上电导之和的负值，称为结点 <span class="math inline">\(k\)</span> 与 <span class="math inline">\(j\)</span> 之间的<strong>互电导</strong>，互电导总是为负<code>-</code>；</li>
+<li>方程右侧的 <span class="math inline">\(I_{S11}\)</span>、<span class="math inline">\(I_{S22}\)</span>、<span class="math inline">\(I_{S(n-1)(n-1)}\)</span> 指的是流入结点 <span class="math inline">\(k\)</span> 的所有电流源电流的代数和；</li>
+</ul>
+<p>采用结点电压法进行电路分析时，列写的方程遵循这样的规律：<strong>所在结点的结点电压乘以与该结点相连的所有支路上的电导之和，减去相临结点的电压与公共支路上电导之和的乘积，等于流入该结点的所有电流源电流的代数和</strong>。</p>
+<p>【例题】列出下图所示电路的节点电压方程 ？</p>
+<p><img src="/Electronics/Analysis/3-Linear/17.png"></p>
+<p>【解答】上面电路一共拥有 <strong>1</strong>、<strong>2</strong>、<strong>3</strong>、<strong>4</strong>、<strong>5</strong> 共五个结点。选择结点 <strong>5</strong> 作为参考结点，那么待求的结点电压为 <span class="math inline">\(U_{N1}\)</span>、<span class="math inline">\(U_{N2}\)</span>、<span class="math inline">\(U_{N3}\)</span>、<span class="math inline">\(U_{N4}\)</span>。接下来列写结点电压方程，需要首先求解<strong>自电导</strong>和<strong>负电导</strong>。</p>
+<p>首先，求解自电导（即与节点相连所有支路上的电导值之和）:</p>
+<p><span class="math display">\[
+\begin{cases}
+   G_11 = 0.1S + 1S + 0.1S = 1.2S       \\
+   G_22 = 1S + 1S + 0.5S = 2.5S         \\
+   G_33 = 0.5S + 0.5S + 0.25S = 1.25S   \\
+   G_44 = 0.25S + 0.25S + 0.1S = 0.6S
+\end{cases}
+\]</span></p>
+<p>然后，求解互电导（即结点之间所有公共支路上电导之和的负值）:</p>
+<p><span class="math display">\[
+\begin{cases}
+   G_{12} = G_{21} = -1S      \\
+   G_{23} = G_{32} = -0.5S    \\
+   G_{34} = G_{43} = -0.25S   \\
+   G_{14} = G_{41} = -0.1S    \\
+   G_{13} = G_{31} = 0（结点1和3之间无公共电导） \\
+   G_{24} = G_{42} = 0（结点2和4之间无公共电导）
+\end{cases}
+\]</span></p>
+<p>接下来，就可以直接列写结点电压方程了。</p>
+<p><span class="math display">\[
+\begin{cases}
+   结点 1 \implies 1.2U_{N1} - U_{N2} - 0.1U_{N4} = 1           \\
+   结点 2 \implies -U_{N1} + 2.5U_{N2} - 0.5U_{N3} = -0.5       \\
+   结点 3 \implies -0.5U_{N2} + 1.25U_{N3} - 0.25U_{N4} = 0.5   \\
+   结点 4 \implies -0.1U_{N1} - 0.25U_{N3} + 0.6U_{N4} = 0
+\end{cases}
+\]</span></p>
+<p>最后，再来总结一下结点电压法的求解步骤：</p>
+<ol type="1">
+<li>选定 1 个节点作为参考节点，以该节点作为零电位参考点，假设剩下的 <span class="math inline">\(n-1\)</span> 个节点的电压为：<span class="math inline">\(u_{N1}\)</span>、<span class="math inline">\(u_{N2}\)</span>、<span class="math inline">\(u_{N(n-1)}\)</span>；</li>
+<li>对 <span class="math inline">\(n-1\)</span> 个非参考结点列写 KCL 方程，并且根据欧姆定律用<strong>结点电压</strong>来表示各个支路电流；</li>
+<li>求解联立方程组，得到未知的节点电压，进而计算出各个支路电解压和电流；</li>
+</ol>
 <h2 id="动态电路的暂态分析">动态电路的暂态分析</h2>
 <h2 id="正弦交流电路稳态分析">正弦交流电路稳态分析</h2>
 <h2 id="含二端口元件电路分析">含二端口元件电路分析</h2>
@@ -2063,7 +2166,7 @@ I_{m2} - I_{m3} = 5
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电路基本概念与两类约束"><span class="nav-number">1.</span> <span class="nav-text">电路基本概念与两类约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#电路模型"><span class="nav-number">1.1.</span> <span class="nav-text">电路模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本物理量"><span class="nav-number">1.2.</span> <span class="nav-text">基本物理量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷"><span class="nav-number">1.2.1.</span> <span class="nav-text">电荷</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流"><span class="nav-number">1.2.2.</span> <span class="nav-text">电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压"><span class="nav-number">1.2.3.</span> <span class="nav-text">电压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电位"><span class="nav-number">1.2.4.</span> <span class="nav-text">电位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功率"><span class="nav-number">1.2.5.</span> <span class="nav-text">功率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#能量"><span class="nav-number">1.2.6.</span> <span class="nav-text">能量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无源元件"><span class="nav-number">1.3.</span> <span class="nav-text">无源元件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻"><span class="nav-number">1.3.1.</span> <span class="nav-text">电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容"><span class="nav-number">1.3.2.</span> <span class="nav-text">电容</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-微分"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">伏安关系-微分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-积分"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">伏安关系-积分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#储能"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">储能</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#示例"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电感"><span class="nav-number">1.3.3.</span> <span class="nav-text">电感</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-微分-1"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">伏安关系-微分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-积分-1"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">伏安关系-积分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#储能-1"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">储能</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安关系总结"><span class="nav-number">1.3.4.</span> <span class="nav-text">伏安关系总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有源元件"><span class="nav-number">1.4.</span> <span class="nav-text">有源元件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电源"><span class="nav-number">1.4.1.</span> <span class="nav-text">独立电源</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#独立电压源"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">独立电压源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#独立电流源"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">独立电流源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#开短路问题"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">开短路问题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#受控源"><span class="nav-number">1.4.2.</span> <span class="nav-text">受控源</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#受控电压源"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">受控电压源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#受控电流源"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">受控电流源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#功率-1"><span class="nav-number">1.4.2.3.</span> <span class="nav-text">功率</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一般表示法"><span class="nav-number">1.4.2.4.</span> <span class="nav-text">一般表示法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基尔霍夫定律"><span class="nav-number">1.5.</span> <span class="nav-text">基尔霍夫定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电流定律-kcl"><span class="nav-number">1.5.1.</span> <span class="nav-text">基尔霍夫电流定律 KCL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电压定律-kvl"><span class="nav-number">1.5.2.</span> <span class="nav-text">基尔霍夫电压定律 KVL</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电路的等效变换"><span class="nav-number">2.</span> <span class="nav-text">电路的等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等效变换的概念"><span class="nav-number">2.1.</span> <span class="nav-text">等效变换的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻的串并联等效"><span class="nav-number">2.2.</span> <span class="nav-text">电阻的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻的串联"><span class="nav-number">2.2.1.</span> <span class="nav-text">电阻的串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻的并联"><span class="nav-number">2.2.2.</span> <span class="nav-text">电阻的并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流表量程切换"><span class="nav-number">2.2.3.</span> <span class="nav-text">电流表量程切换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#y-电阻等效变换"><span class="nav-number">2.3.</span> <span class="nav-text">Y ▲ 电阻等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#等效推导过程"><span class="nav-number">2.3.1.</span> <span class="nav-text">等效推导过程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电容的串并联等效"><span class="nav-number">2.4.</span> <span class="nav-text">电容的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电容串联等效"><span class="nav-number">2.4.1.</span> <span class="nav-text">电容串联等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容并联等效"><span class="nav-number">2.4.2.</span> <span class="nav-text">电容并联等效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电感的串并联等效"><span class="nav-number">2.5.</span> <span class="nav-text">电感的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电感串联等效"><span class="nav-number">2.5.1.</span> <span class="nav-text">电感串联等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电感并联等效"><span class="nav-number">2.5.2.</span> <span class="nav-text">电感并联等效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电压电流源的串并联等效"><span class="nav-number">2.6.</span> <span class="nav-text">电压电流源的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电压源串联"><span class="nav-number">2.6.1.</span> <span class="nav-text">电压源串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压源并联"><span class="nav-number">2.6.2.</span> <span class="nav-text">电压源并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流源串联"><span class="nav-number">2.6.3.</span> <span class="nav-text">电流源串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流源并联"><span class="nav-number">2.6.4.</span> <span class="nav-text">电流源并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流源与非电流源串联"><span class="nav-number">2.6.5.</span> <span class="nav-text">电流源与非电流源串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压源与非电压源并联"><span class="nav-number">2.6.6.</span> <span class="nav-text">电压源与非电压源并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">2.6.7.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#电压源等效"><span class="nav-number">2.6.7.1.</span> <span class="nav-text">电压源等效</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#电流源等效"><span class="nav-number">2.6.7.2.</span> <span class="nav-text">电流源等效</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际电源的等效变换"><span class="nav-number">2.7.</span> <span class="nav-text">实际电源的等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实际电压源"><span class="nav-number">2.7.1.</span> <span class="nav-text">实际电压源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实际电流源"><span class="nav-number">2.7.2.</span> <span class="nav-text">实际电流源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#受控源的等效变换"><span class="nav-number">2.8.</span> <span class="nav-text">受控源的等效变换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性电路的分析方法"><span class="nav-number">3.</span> <span class="nav-text">线性电路的分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#独立方程求解法"><span class="nav-number">3.1.</span> <span class="nav-text">独立方程求解法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立的-kcl-方程"><span class="nav-number">3.1.1.</span> <span class="nav-text">独立的 KCL 方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独立的-kvl-方程"><span class="nav-number">3.1.2.</span> <span class="nav-text">独立的 KVL 方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-法"><span class="nav-number">3.1.3.</span> <span class="nav-text">2b 法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电流法"><span class="nav-number">3.2.</span> <span class="nav-text">支路电流法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网孔电流法"><span class="nav-number">3.3.</span> <span class="nav-text">网孔电流法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#含受控源的处理"><span class="nav-number">3.3.1.</span> <span class="nav-text">含受控源的处理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态电路的暂态分析"><span class="nav-number">4.</span> <span class="nav-text">动态电路的暂态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦交流电路稳态分析"><span class="nav-number">5.</span> <span class="nav-text">正弦交流电路稳态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#含二端口元件电路分析"><span class="nav-number">6.</span> <span class="nav-text">含二端口元件电路分析</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电路基本概念与两类约束"><span class="nav-number">1.</span> <span class="nav-text">电路基本概念与两类约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#电路模型"><span class="nav-number">1.1.</span> <span class="nav-text">电路模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本物理量"><span class="nav-number">1.2.</span> <span class="nav-text">基本物理量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电荷"><span class="nav-number">1.2.1.</span> <span class="nav-text">电荷</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流"><span class="nav-number">1.2.2.</span> <span class="nav-text">电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压"><span class="nav-number">1.2.3.</span> <span class="nav-text">电压</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电位"><span class="nav-number">1.2.4.</span> <span class="nav-text">电位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功率"><span class="nav-number">1.2.5.</span> <span class="nav-text">功率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#能量"><span class="nav-number">1.2.6.</span> <span class="nav-text">能量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无源元件"><span class="nav-number">1.3.</span> <span class="nav-text">无源元件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻"><span class="nav-number">1.3.1.</span> <span class="nav-text">电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容"><span class="nav-number">1.3.2.</span> <span class="nav-text">电容</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-微分"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">伏安关系-微分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-积分"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">伏安关系-积分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#储能"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">储能</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#示例"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">示例</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电感"><span class="nav-number">1.3.3.</span> <span class="nav-text">电感</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-微分-1"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">伏安关系-微分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#伏安关系-积分-1"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">伏安关系-积分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#储能-1"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">储能</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安关系总结"><span class="nav-number">1.3.4.</span> <span class="nav-text">伏安关系总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有源元件"><span class="nav-number">1.4.</span> <span class="nav-text">有源元件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立电源"><span class="nav-number">1.4.1.</span> <span class="nav-text">独立电源</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#独立电压源"><span class="nav-number">1.4.1.1.</span> <span class="nav-text">独立电压源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#独立电流源"><span class="nav-number">1.4.1.2.</span> <span class="nav-text">独立电流源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#开短路问题"><span class="nav-number">1.4.1.3.</span> <span class="nav-text">开短路问题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#受控源"><span class="nav-number">1.4.2.</span> <span class="nav-text">受控源</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#受控电压源"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">受控电压源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#受控电流源"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">受控电流源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#功率-1"><span class="nav-number">1.4.2.3.</span> <span class="nav-text">功率</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#一般表示法"><span class="nav-number">1.4.2.4.</span> <span class="nav-text">一般表示法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基尔霍夫定律"><span class="nav-number">1.5.</span> <span class="nav-text">基尔霍夫定律</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电流定律-kcl"><span class="nav-number">1.5.1.</span> <span class="nav-text">基尔霍夫电流定律 KCL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基尔霍夫电压定律-kvl"><span class="nav-number">1.5.2.</span> <span class="nav-text">基尔霍夫电压定律 KVL</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电路的等效变换"><span class="nav-number">2.</span> <span class="nav-text">电路的等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等效变换的概念"><span class="nav-number">2.1.</span> <span class="nav-text">等效变换的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电阻的串并联等效"><span class="nav-number">2.2.</span> <span class="nav-text">电阻的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻的串联"><span class="nav-number">2.2.1.</span> <span class="nav-text">电阻的串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻的并联"><span class="nav-number">2.2.2.</span> <span class="nav-text">电阻的并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流表量程切换"><span class="nav-number">2.2.3.</span> <span class="nav-text">电流表量程切换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#y-电阻等效变换"><span class="nav-number">2.3.</span> <span class="nav-text">Y ▲ 电阻等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#等效推导过程"><span class="nav-number">2.3.1.</span> <span class="nav-text">等效推导过程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电容的串并联等效"><span class="nav-number">2.4.</span> <span class="nav-text">电容的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电容串联等效"><span class="nav-number">2.4.1.</span> <span class="nav-text">电容串联等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电容并联等效"><span class="nav-number">2.4.2.</span> <span class="nav-text">电容并联等效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电感的串并联等效"><span class="nav-number">2.5.</span> <span class="nav-text">电感的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电感串联等效"><span class="nav-number">2.5.1.</span> <span class="nav-text">电感串联等效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电感并联等效"><span class="nav-number">2.5.2.</span> <span class="nav-text">电感并联等效</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电压电流源的串并联等效"><span class="nav-number">2.6.</span> <span class="nav-text">电压电流源的串并联等效</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电压源串联"><span class="nav-number">2.6.1.</span> <span class="nav-text">电压源串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压源并联"><span class="nav-number">2.6.2.</span> <span class="nav-text">电压源并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流源串联"><span class="nav-number">2.6.3.</span> <span class="nav-text">电流源串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流源并联"><span class="nav-number">2.6.4.</span> <span class="nav-text">电流源并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流源与非电流源串联"><span class="nav-number">2.6.5.</span> <span class="nav-text">电流源与非电流源串联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电压源与非电压源并联"><span class="nav-number">2.6.6.</span> <span class="nav-text">电压源与非电压源并联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">2.6.7.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#电压源等效"><span class="nav-number">2.6.7.1.</span> <span class="nav-text">电压源等效</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#电流源等效"><span class="nav-number">2.6.7.2.</span> <span class="nav-text">电流源等效</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实际电源的等效变换"><span class="nav-number">2.7.</span> <span class="nav-text">实际电源的等效变换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实际电压源"><span class="nav-number">2.7.1.</span> <span class="nav-text">实际电压源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实际电流源"><span class="nav-number">2.7.2.</span> <span class="nav-text">实际电流源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#受控源的等效变换"><span class="nav-number">2.8.</span> <span class="nav-text">受控源的等效变换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性电路的分析方法"><span class="nav-number">3.</span> <span class="nav-text">线性电路的分析方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#独立方程求解法"><span class="nav-number">3.1.</span> <span class="nav-text">独立方程求解法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独立的-kcl-方程"><span class="nav-number">3.1.1.</span> <span class="nav-text">独立的 KCL 方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独立的-kvl-方程"><span class="nav-number">3.1.2.</span> <span class="nav-text">独立的 KVL 方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-法"><span class="nav-number">3.1.3.</span> <span class="nav-text">2b 法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支路电流法"><span class="nav-number">3.2.</span> <span class="nav-text">支路电流法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网孔电流法"><span class="nav-number">3.3.</span> <span class="nav-text">网孔电流法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#含受控源的处理"><span class="nav-number">3.3.1.</span> <span class="nav-text">含受控源的处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结点电压法"><span class="nav-number">3.4.</span> <span class="nav-text">结点电压法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态电路的暂态分析"><span class="nav-number">4.</span> <span class="nav-text">动态电路的暂态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正弦交流电路稳态分析"><span class="nav-number">5.</span> <span class="nav-text">正弦交流电路稳态分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#含二端口元件电路分析"><span class="nav-number">6.</span> <span class="nav-text">含二端口元件电路分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -2153,13 +2256,13 @@ I_{m2} - I_{m3} = 5
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">1.5m</span>
+    <span title="站点总字数">1.6m</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23:28</span>
+    <span title="站点阅读时长">23:31</span>
 </div>
 
         
