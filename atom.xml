@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-09-06T11:58:55.399Z</updated>
+  <updated>2020-09-11T17:38:52.454Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
+    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
+    <published>2020-09-11T17:38:52.454Z</published>
+    <updated>2020-09-11T17:38:52.454Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
     <title>现代电路分析涉及的理论与原理</title>
     <link href="https://uinika.github.io/Electronics/Analysis.html"/>
     <id>https://uinika.github.io/Electronics/Analysis.html</id>
-    <published>2020-09-06T02:28:51.697Z</published>
-    <updated>2020-09-06T11:58:55.399Z</updated>
+    <published>2020-09-07T15:00:32.847Z</published>
+    <updated>2020-09-07T15:00:32.855Z</updated>
     
     <summary type="html">
     
@@ -151,29 +174,6 @@
     
     
       <category term="Desktop" scheme="https://uinika.github.io/tags/Desktop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
-    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
-    <published>2020-07-10T14:02:19.059Z</published>
-    <updated>2020-07-10T14:02:19.091Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
-    
-    
-      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
     
   </entry>
   
@@ -454,17 +454,17 @@
   </entry>
   
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <link href="https://uinika.github.io/Web/Html.html"/>
-    <id>https://uinika.github.io/Web/Html.html</id>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <link href="https://uinika.github.io/Web/JQuery.html"/>
+    <id>https://uinika.github.io/Web/JQuery.html</id>
     <published>2020-05-21T13:39:03.845Z</published>
     <updated>2020-05-21T13:39:03.845Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文翻译自 Mozilla 社区的&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《HTML Reference》&lt;/a&gt;，包含了 &lt;strong&gt;HTML5&lt;/strong&gt; 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 &lt;a href=&quot;https://caniuse.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Can I use&lt;/strong&gt;&lt;/a&gt; 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 &lt;strong&gt;W3C&lt;/strong&gt; 和 &lt;strong&gt;Mozilla&lt;/strong&gt; 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加&lt;strong&gt;语义化&lt;/strong&gt;的文档结构。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Html/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;HTML 超文本标记语言（&lt;em&gt;Hypertext Markup Language&lt;/em&gt;）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。&lt;strong&gt;HTML 语义化&lt;/strong&gt;（&lt;em&gt;Semantic HTML&lt;/em&gt;）则是指合理的使用 HTML 元素编写 Web 页面内容，&lt;strong&gt;强调 Web 页面编码信息的含义凌驾于其表现样式之上&lt;/strong&gt;，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。&lt;/p&gt;
+      &lt;p&gt;伴随&lt;code&gt;Vue&lt;/code&gt;、&lt;code&gt;Angular&lt;/code&gt;、&lt;code&gt;React&lt;/code&gt;等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持&lt;code&gt;selectAll()&lt;/code&gt;等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于&lt;code&gt;jQuery&lt;/code&gt;来完成 DOM 文档操作。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/JQuery/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;因此&lt;code&gt;jQuery&lt;/code&gt;这款诞生于 2006 年的 JavaScript 库，依然在&lt;strong&gt;现代化前端开发&lt;/strong&gt;当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了&lt;code&gt;jQuery&lt;/code&gt;实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象&lt;code&gt;$.Deferred()&lt;/code&gt;以及 JavaScript 性能优化相关的话题。&lt;/p&gt;
     
     </summary>
     
@@ -472,7 +472,7 @@
       <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
     
     
-      <category term="HTML" scheme="https://uinika.github.io/tags/HTML/"/>
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
