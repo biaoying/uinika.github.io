@@ -54,7 +54,7 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-2/14.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/4-Theorem/0.png">
 <meta property="article:published_time" content="2020-09-15T13:43:11.432Z">
-<meta property="article:modified_time" content="2020-09-15T16:30:32.008Z">
+<meta property="article:modified_time" content="2020-09-15T17:37:23.508Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -258,7 +258,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-16 00:30:32" itemprop="dateModified" datetime="2020-09-16T00:30:32+08:00">2020-09-16</time>
+                <time title="修改时间：2020-09-16 01:37:23" itemprop="dateModified" datetime="2020-09-16T01:37:23+08:00">2020-09-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -283,7 +283,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.4k</span>
+              <span>4.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -304,14 +304,14 @@
       
         <p>电子技术发展到现在，基础理论方面的突破甚少，进步主要体现在工艺、材料与制程方面。特别是大规模集成电路的广泛应用，过去需要采用大量分立式元器件才能实现的工作，都已经被标准化的模拟、数字集成电路所替代。电子工程师的日常工作内容，逐步从过去各类基础电路的搭建，转换至电子自动化设计<strong>EDA</strong>（Electronic Design Automation）、信号完整性<strong>SI</strong>（Signal Integrity）、电磁兼容性<strong>EMC</strong>（Electro Magnetic Compatibility）等方向。</p>
 <p><img src="/Electronics/Analog/logo.jpg"></p>
-<p>模拟电子技术作为现代电子工业的理论基石，主要围绕由<code>双极性结型晶体管</code> BJT、<code>场效应晶体管</code> FET 构成的<strong>模拟信号</strong>放大电路展开，近几年碳化硅、氮化镓等第三代半导体材料的应用，让模拟电路的性能取得了显著的提高，全文写作中参考了《Electronic Devices and Circuit Theory 》第 11 版。</p>
+<p>模拟电子技术作为现代电子工业的理论基石，主要围绕<code>双极性结型晶体管</code> BJT、<code>场效应晶体管</code> FET 构成的<strong>模拟信号</strong>放大电路展开，伴随近年碳化硅、氮化镓等第三代半导体材料的广泛应用，模拟电子电路的性能取得了显著提高，本文写作过程当中参考了《Electronic Devices and Circuit Theory》。</p>
 <a id="more"></a>
 <h2 id="半导体导论">半导体导论</h2>
-<p>半导体的导电性介于导体和绝缘体之间，例如：锗<code>Ge</code>、硅<code>Si</code>、砷化镓<code>GaAs</code>和一些硫化物、氧化物等。半导体的导电性受到温度和光照的影响，也可以人为掺入适量的杂质，从而精确控制导电能力，从而制造出具备不同特性的电子元器件。</p>
+<p>半导体的导电性介于导体和绝缘体之间，例如：锗<code>Ge</code>、硅<code>Si</code>、砷化镓<code>GaAs</code>和一些硫化物、氧化物等。半导体的导电性受到温度和光照的影响，也可以人为掺入适量的杂质，从而精确的控制导电能力，并且制造出具备不同特性的电子元器件。</p>
 <h3 id="本征半导体">本征半导体</h3>
-<p>纯净的具有晶体结构的半导体称为<strong>本征半导体</strong>（Intrinsic Materials）；相邻原子的最外层电子不但围绕着原子核运动，还会出现在相邻原子所属的轨道上成为共用电子，即<strong>共价键</strong>；共价键上的电子可以简称为<strong>价电子</strong>。</p>
+<p>纯净的具有晶体结构的半导体称为<strong>本征半导体</strong>（Intrinsic /ɪnˈtrɪnzɪk/ Materials）；相邻原子的最外层电子不但围绕着原子核运动，还会出现在相邻原子所属的轨道上成为共用电子，即<strong>共价键</strong>；共价键上的电子可以被简称为<strong>价电子</strong>。</p>
 <p><img src="/Electronics/Analog/Section-1/1.png"></p>
-<p>共价键具有很强的结合力，常温下仅少数价电子由于热激发而挣脱共价键束缚变为<strong>自由电子</strong>（Free Electron）。此时会在共价键当中留下一个空位，称为<strong>空穴</strong>（Hole）。<strong>价电子带有负电荷</strong>，原子由于失去一个价电子而带正电，因此可以认为<strong>空穴带有正电荷</strong>。本征半导体当中，自由电子与空穴总是成对出现数目相等。</p>
+<p>共价键具有很强的结合性，常温下仅少数价电子由于热激发而挣脱共价键束缚变为<strong>自由电子</strong>（Free Electron）。此时会在共价键当中留下一个空位，称为<strong>空穴</strong>（Hole）。<strong>价电子带有负电荷</strong>，原子由于失去一个价电子而带正电，因此可以认为<strong>空穴带有正电荷</strong>。本征半导体当中，自由电子与空穴总是成对出现并且数目相等。</p>
 <p><img src="/Electronics/Analog/Section-1/2.png"></p>
 <p>如果在本征半导体两端施加一个电场，一方面自由电子发生定向移动形成<strong>电子电流</strong>，另一方面由于空穴的存在，价电子会沿着一定方向依次填补空穴，从而认为空穴也在发生定向移动形成<strong>空穴电流</strong>。运载电荷的粒子称为<strong>载流子</strong>，导体导电只有自由电子一种载流子，而本征半导体的自由电子和空穴均参与导电；</p>
 <h3 id="杂质半导体">杂质半导体</h3>
@@ -324,9 +324,9 @@
 <p><strong>注意</strong>：杂质半导体主要依靠多数载流子导电，掺入的杂质越多，多子的浓度就越高，其导电性能就越强。</p>
 </blockquote>
 <h3 id="pn-结">PN 结</h3>
-<p><strong><code>PN</code> 结</strong>是 <code>P</code> 型半导体和 <code>N</code> 型半导体交界面的特殊薄层，也称为<strong>耗尽层</strong>或者<strong>空间电荷区</strong>。杂质半导体当中载流子的<strong>扩散</strong>和<strong>漂移</strong>这对相反运动最终达到动态平衡，空间电荷区的厚度保持基本稳定。</p>
+<p><strong><code>PN</code> 结</strong>是 <code>P</code> 型半导体和 <code>N</code> 型半导体交界面的特殊薄层，也称为<strong>耗尽层</strong>或者<strong>空间电荷区</strong>。由于杂质半导体当中载流子的<strong>扩散</strong>和<strong>漂移</strong>这对相反运动最终会达到动态平衡，所以空间电荷区的厚度通常会保持基本稳定。</p>
 <p><img src="/Electronics/Analog/Section-1/5.png"></p>
-<p>如果在 <code>PN</code> 结两侧外加电压，就会破坏这样的平衡状态。此时，扩散电流不再等于漂移电流，因而 <code>PN</code> 结将会有电流流过。当外加电压极性不同时，<code>PN</code> 结表现出截然不同的导电性能，即呈现出<strong>单向导电性</strong>。</p>
+<p>如果在 <code>PN</code> 结两侧外加电压，就会破坏这样的平衡状态。此时，扩散电流不再等于漂移电流，因而 <code>PN</code> 结上会有电流流过。当外加电压极性不同时，<code>PN</code> 结表现出截然不同的导电性能，即呈现出<strong>单向导电性</strong>。</p>
 <ul>
 <li><strong>正向偏置</strong>：<code>PN</code> 结加正向电压，即 <code>P</code> 端连接正极 <code>N</code> 端连接负极，空间电荷区的厚度变窄，多子在外电场作用下定向移动形成较大的正向电流；此时 <code>PN</code> 结正向电阻较小，整体处于导通状态。 <img src="/Electronics/Analog/Section-1/6.png"></li>
 <li><strong>反向偏置</strong>：<code>PN</code> 结加反向电压，即 <code>P</code> 端连接负极 <code>N</code> 端连接正极，空间电荷区的厚度变厚，少子在外电场作用下定向移动形成极小的反向电流；此时 <code>PN</code> 结反向电阻较大，整体处于截止状态。 <img src="/Electronics/Analog/Section-1/7.png"></li>
@@ -345,7 +345,7 @@ C_j = C_b+ C_d
 \]</span></p>
 <h2 id="二极管基础">二极管基础</h2>
 <h3 id="组成与分类">组成与分类</h3>
-<p>将 <code>PN</code> 结用外壳封装并添加电极引线就构成了半导体二极管，简称为<strong>二极管</strong>。由 <code>P</code> 区引出的电极称为阳极 <code>N</code> 区引出的电极为阴极，其符号如下所示：</p>
+<p>将 <code>PN</code> 结用外壳封装并且添加电极引线就构成了半导体二极管，简称为<strong>二极管</strong>。由 <code>P</code> 区引出的电极称为<strong>阳极</strong>，而 <code>N</code> 区引出的电极称为<strong>阴极</strong>，二极管的电路符号如下图所示：</p>
 <p><img src="/Electronics/Analog/Section-2/1.png"></p>
 <ul>
 <li><strong>点接触型二极管</strong>：由一根金属丝经过特殊工艺与半导体表面连接形成 <code>PN</code> 结，由于 <code>PN</code> 结面积较小，不能通过较大的电流。其结电容较小一般处于 <code>1pF</code> 以下，而工作频率可以达到 <code>100MHz</code> 以上，因此适用于高频电路和小功率整流电路。 <img src="/Electronics/Analog/Section-2/2.png"></li>
@@ -356,13 +356,13 @@ C_j = C_b+ C_d
 <p>二极管是一种<strong>非线性元件</strong>，其<strong>伏安关系</strong>可以通过下面的电路进行测量，串联的安培表 <strong>A</strong> 测量流经二极管的电流 <span class="math inline">\(i_D\)</span>，并联的伏特表 <strong>V</strong> 测量二极管两端的电压 <span class="math inline">\(v_D\)</span>：</p>
 <p><img src="/Electronics/Analog/Section-2/5.png"></p>
 <h4 id="伏安特性">伏安特性</h4>
-<p>当调整可变电源的输出时，逐一记录安伏表和伏特表的读数即可得到其伏安特性曲线，下面图表是硅二极管 <code>2CP10</code> 的伏安特性曲线：</p>
+<p>当调整可变电源的输出时，逐一记录安伏表和伏特表的读数即可得到其伏安特性曲线，下图是型号为 <code>2CP10</code> 的硅二极管伏安特性曲线：</p>
 <p><img src="/Electronics/Analog/Section-2/6.png"></p>
 <ul>
-<li><strong>死区开启电压</strong> <span class="math inline">\(U_{th}\)</span>：当外加正向电压很低时，由于外电场还不能够克服 <code>PN</code> 结里电场对多数载流子扩散运动的阻力，所以正向电流极小几乎为零，这一区域就称为<strong>死区</strong>。 <img src="/Electronics/Analog/Section-2/7.png"></li>
+<li><strong>死区开启电压</strong> <span class="math inline">\(U_{th}\)</span>：当外加正向电压很低时，由于外电场还不能够克服 <code>PN</code> 结内的电场对多数载流子扩散运动的阻力，所以正向电流极小几乎为零，这一区域就称为<strong>死区</strong>。 <img src="/Electronics/Analog/Section-2/7.png"></li>
 <li><strong>导通压降</strong> <span class="math inline">\(U_{on}\)</span>：当外加正向电压超过死区电压时，内电场会被极大削弱，正向电流迅速增加，二极管进入<strong>正向导通区</strong>。当电压再继续增加时，电流迅速增大，而二极管两端电压几乎不变，此时二极管的端电压称为<strong>导通压降</strong>。 <img src="/Electronics/Analog/Section-2/8.png"></li>
-<li><strong>反向饱和电流</strong> <span class="math inline">\(I_{S}\)</span>：二极管两端加反向电压时，将会存在极小的，由少子漂移运动形成的<strong>反向饱和电流</strong>通过二极管。在反向电压不超过某一个范围时，反向电流的大小基本保持恒定。反向饱和电流起小，说明元件的温度稳定性越好。 <img src="/Electronics/Analog/Section-2/9.png"></li>
-<li><strong>反向击穿电压</strong> <span class="math inline">\(U_{R}\)</span>：当外加的反向电压超过<strong>反向击穿电压</strong>时，反向电流会突然增大，导致二极管失去单向导电性，进入<strong>反向击穿区</strong>。反向击穿是一种可逆的电击穿（<strong>雪崩击穿</strong>和<strong>齐纳击穿</strong>）。 <img src="/Electronics/Analog/Section-2/10.png"></li>
+<li><strong>反向饱和电流</strong> <span class="math inline">\(I_{S}\)</span>：二极管两端加反向电压时，将会存在极小的，由少子漂移运动形成的<strong>反向饱和电流</strong>通过二极管。在反向电压不超过某一个范围值时，反向电流的大小基本保持恒定。反向饱和电流越小，说明元件的温度稳定性越好。 <img src="/Electronics/Analog/Section-2/9.png"></li>
+<li><strong>反向击穿电压</strong> <span class="math inline">\(U_{R}\)</span>：当外加的反向电压超过<strong>反向击穿电压</strong>时，反向电流将会突然增大，导致二极管失去单向导电性，进入<strong>反向击穿区</strong>。反向击穿是一种可逆的电击穿（<strong>雪崩击穿</strong>和<strong>齐纳击穿</strong>）。 <img src="/Electronics/Analog/Section-2/10.png"></li>
 </ul>
 <blockquote>
 <p><strong>注意</strong>：如果元件的功率超过其额定值，导致元件过热发生热击穿，此时元件就彻底损坏无法使用。</p>
@@ -397,7 +397,7 @@ C_j = C_b+ C_d
 <p><span class="math display">\[
 i_D = I_s(e^{u_D/U_T} - 1)
 \]</span></p>
-<p>其中，<span class="math inline">\(i_D\)</span> 是通过二极管的电流，<span class="math inline">\(u_D\)</span> 则是二极管两端的电压，<span class="math inline">\(U_T = \frac{kT}{q}\)</span> 是温度的电压当量（常温 <code>27℃</code> 时其值为<code>26mV</code>），二极管电流方程对应的图像如下面所示：</p>
+<p>其中，<span class="math inline">\(i_D\)</span> 是通过二极管的电流，<span class="math inline">\(u_D\)</span> 则是二极管两端的电压，<span class="math inline">\(U_T = \frac{kT}{q}\)</span> 是温度的电压当量（常温 <code>27℃</code> 时其值为 <code>26mV</code>），二极管电流方程对应的图像如下所示：</p>
 <p><img src="/Electronics/Analog/Section-2/11.png"></p>
 <p>当 <code>PN</code> 结外加正向电压处于<strong>正向偏置</strong>时，由于 <span class="math inline">\(U_D \gg U_T \gg 26mV\)</span>，方程指数部份的 <span class="math inline">\(\frac{U_D}{U_T} \gg 1\)</span>，此时二极管电流方程可以近似记作 <span class="math inline">\(i_D \approx I_S^{e^{U_D/U_T}}\)</span>。而当 <code>PN</code> 结外加反向电压处于<strong>反向偏置</strong>时，由于 <span class="math inline">\(U_D\)</span> 为负数，指数部分将远远小于 <code>1</code> 几乎可以忽略不记，此时 <span class="math inline">\(i_D \approx -I_S\)</span>。</p>
 <p>从图中可以看出，二极管的正向特性为指数曲线，反向特性为接近横轴的平行线，因此可以认为二极管的电流方程与伏安特性是相互印证的。</p>
@@ -421,8 +421,8 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
 <h3 id="主要特性参数">主要特性参数</h3>
 <p>为了描述二极管的性能，通常需要引用厂家数据手册当中的如下几个主要参数：</p>
 <ul>
-<li><strong>最大整数电流</strong> <span class="math inline">\(I_F\)</span>：二极管长期运行时所允许通过的最大正向平均电流，其值与 <code>PN</code> 结面积以及外部散热条件等有关。规定散热条件下，二极管正向平均电流如果超过该值就会烧坏。</li>
-<li><strong>最高反向工作电压</strong> <span class="math inline">\(U_R\)</span>：二极管工作时所允许外加的最大反向电压，超过该值二极管就可能因为反向击穿而损坏，通常 <span class="math inline">\(U_R\)</span> 为反向击穿电压 <span class="math inline">\(U_{BR}\)</span> 的一半左右。</li>
+<li><strong>最大整流电流</strong> <span class="math inline">\(I_F\)</span>：二极管长期稳定运行时所允许通过的最大平均正向电流，其值与 <code>PN</code> 结面积以及外部散热条件等相关。指定散热条件下，二极管平均正向电流超过该值就会有烧坏风险。</li>
+<li><strong>最高反向工作电压</strong> <span class="math inline">\(U_R\)</span>：二极管工作时所允许外加的最大反向电压，超过该值二极管就可能由于反向击穿而损坏，通常 <span class="math inline">\(U_R\)</span> 为反向击穿电压 <span class="math inline">\(U_{BR}\)</span> 的一半左右。</li>
 <li><strong>反向电流</strong> <span class="math inline">\(I_R\)</span>：二极管没有发生击穿时的反向电流，这个值越小，二极管的单向导电性就越好，该参数对于温度非常敏感。</li>
 <li><strong>最高工作频率</strong> <span class="math inline">\(f_M\)</span>：二极管工作的上限截止频率，超过该值就会由于结电容的作用，不能较好的体现单向导电性。</li>
 </ul>
@@ -430,7 +430,7 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
 <ul>
 <li>要求导通压降较小时选择<strong>锗管</strong>，要求反向电流较小时选择<strong>硅管</strong>；</li>
 <li>要求工作电流较大时选择<strong>面接触型</strong>，要求工作频率较高时选择<strong>点接触型</strong>；</li>
-<li>要求反向击穿电压高时选<strong>硅管</strong>，要求温度特性好时依然选择<strong>硅管</strong>；</li>
+<li>要求反向击穿电压高就选择<strong>硅管</strong>，要求温度特性更好依然选择<strong>硅管</strong>；</li>
 </ul>
 <h2 id="二极管电路分析与应用">二极管电路分析与应用</h2>
 <h2 id="其它类型二极管">其它类型二极管</h2>

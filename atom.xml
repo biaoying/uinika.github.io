@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-09-15T16:30:32.008Z</updated>
+  <updated>2020-09-15T17:37:23.508Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://uinika.github.io/Electronics/Analog.html"/>
     <id>https://uinika.github.io/Electronics/Analog.html</id>
     <published>2020-09-15T13:43:11.432Z</published>
-    <updated>2020-09-15T16:30:32.008Z</updated>
+    <updated>2020-09-15T17:37:23.508Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;电子技术发展到现在，基础理论方面的突破甚少，进步主要体现在工艺、材料与制程方面。特别是大规模集成电路的广泛应用，过去需要采用大量分立式元器件才能实现的工作，都已经被标准化的模拟、数字集成电路所替代。电子工程师的日常工作内容，逐步从过去各类基础电路的搭建，转换至电子自动化设计&lt;strong&gt;EDA&lt;/strong&gt;（Electronic Design Automation）、信号完整性&lt;strong&gt;SI&lt;/strong&gt;（Signal Integrity）、电磁兼容性&lt;strong&gt;EMC&lt;/strong&gt;（Electro Magnetic Compatibility）等方向。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Electronics/Analog/logo.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;模拟电子技术作为现代电子工业的理论基石，主要围绕由&lt;code&gt;双极性结型晶体管&lt;/code&gt; BJT、&lt;code&gt;场效应晶体管&lt;/code&gt; FET 构成的&lt;strong&gt;模拟信号&lt;/strong&gt;放大电路展开，近几年碳化硅、氮化镓等第三代半导体材料的应用，让模拟电路的性能取得了显著的提高，全文写作中参考了《Electronic Devices and Circuit Theory 》第 11 版。&lt;/p&gt;
+&lt;p&gt;模拟电子技术作为现代电子工业的理论基石，主要围绕&lt;code&gt;双极性结型晶体管&lt;/code&gt; BJT、&lt;code&gt;场效应晶体管&lt;/code&gt; FET 构成的&lt;strong&gt;模拟信号&lt;/strong&gt;放大电路展开，伴随近年碳化硅、氮化镓等第三代半导体材料的广泛应用，模拟电子电路的性能取得了显著提高，本文写作过程当中参考了《Electronic Devices and Circuit Theory》。&lt;/p&gt;
     
     </summary>
     
@@ -132,29 +132,6 @@
   </entry>
   
   <entry>
-    <title>Bash Shell 脚本编程实践</title>
-    <link href="https://uinika.github.io/Linux/Shell.html"/>
-    <id>https://uinika.github.io/Linux/Shell.html</id>
-    <published>2020-08-13T14:30:35.890Z</published>
-    <updated>2020-08-13T14:30:35.906Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;Shell&lt;/strong&gt; 既是一套&lt;strong&gt;命令行工具&lt;/strong&gt;（交互式地解释和执行用户输入的命令）也是一种&lt;strong&gt;脚本设计语言&lt;/strong&gt;（定义有变量与参数，并提供了控制、循环、分支结构）。&lt;a href=&quot;https://tiswww.case.edu/php/chet/bash/bashtop.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Bash Shell&lt;/strong&gt;&lt;/a&gt; 是由 GUN 官方项目提供的 Shell 解释器，名称源自于 &lt;strong&gt;B&lt;/strong&gt;ourne &lt;strong&gt;A&lt;/strong&gt;gain &lt;strong&gt;SH&lt;/strong&gt;ell 的英文缩写，整合了传统 &lt;strong&gt;Korn Shell&lt;/strong&gt; 以及 &lt;strong&gt;C Shell&lt;/strong&gt; 的有效特性，并且尽量遵循&lt;code&gt;IEEE POSIX P1003.2/ISO 9945.2&lt;/code&gt;规范，同时在编程与交互使用方面提供了大量的功能改进，因而在提供丰富功能的基础之上，展现出了良好的兼容特性，大多数&lt;code&gt;.sh&lt;/code&gt;脚本可以无需移植修改即可交由 Bash Shell 来执行。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Linux/Shell/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;当用户登入任意一款 Linux 操作系统时，初始化程序&lt;code&gt;init&lt;/code&gt;都将会为用户启动一个&lt;strong&gt;Bash Shell&lt;/strong&gt;命令解析器，其即可以用于解析命令行输入并与内核进行交互，也可以作为高效的脚本编程语言，运用其提供的变量、参数、循环、分支等编程语法特性，完成一些批量的自动化的任务处理工作，本文将会围绕 Bash Shell 的脚本编程特性，加以进行详细的分析、说明与示例。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Note" scheme="https://uinika.github.io/categories/Note/"/>
-    
-    
-      <category term="Linux" scheme="https://uinika.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Linux 常用命令行速查手册</title>
     <link href="https://uinika.github.io/Linux/Command.html"/>
     <id>https://uinika.github.io/Linux/Command.html</id>
@@ -174,6 +151,29 @@
     
     
       <category term="Embedded" scheme="https://uinika.github.io/tags/Embedded/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bash Shell 脚本编程实践</title>
+    <link href="https://uinika.github.io/Linux/Shell.html"/>
+    <id>https://uinika.github.io/Linux/Shell.html</id>
+    <published>2020-08-13T14:30:35.890Z</published>
+    <updated>2020-08-13T14:30:35.906Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Shell&lt;/strong&gt; 既是一套&lt;strong&gt;命令行工具&lt;/strong&gt;（交互式地解释和执行用户输入的命令）也是一种&lt;strong&gt;脚本设计语言&lt;/strong&gt;（定义有变量与参数，并提供了控制、循环、分支结构）。&lt;a href=&quot;https://tiswww.case.edu/php/chet/bash/bashtop.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Bash Shell&lt;/strong&gt;&lt;/a&gt; 是由 GUN 官方项目提供的 Shell 解释器，名称源自于 &lt;strong&gt;B&lt;/strong&gt;ourne &lt;strong&gt;A&lt;/strong&gt;gain &lt;strong&gt;SH&lt;/strong&gt;ell 的英文缩写，整合了传统 &lt;strong&gt;Korn Shell&lt;/strong&gt; 以及 &lt;strong&gt;C Shell&lt;/strong&gt; 的有效特性，并且尽量遵循&lt;code&gt;IEEE POSIX P1003.2/ISO 9945.2&lt;/code&gt;规范，同时在编程与交互使用方面提供了大量的功能改进，因而在提供丰富功能的基础之上，展现出了良好的兼容特性，大多数&lt;code&gt;.sh&lt;/code&gt;脚本可以无需移植修改即可交由 Bash Shell 来执行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Linux/Shell/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;当用户登入任意一款 Linux 操作系统时，初始化程序&lt;code&gt;init&lt;/code&gt;都将会为用户启动一个&lt;strong&gt;Bash Shell&lt;/strong&gt;命令解析器，其即可以用于解析命令行输入并与内核进行交互，也可以作为高效的脚本编程语言，运用其提供的变量、参数、循环、分支等编程语法特性，完成一些批量的自动化的任务处理工作，本文将会围绕 Bash Shell 的脚本编程特性，加以进行详细的分析、说明与示例。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Note" scheme="https://uinika.github.io/categories/Note/"/>
+    
+    
+      <category term="Linux" scheme="https://uinika.github.io/tags/Linux/"/>
     
   </entry>
   
