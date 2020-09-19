@@ -52,9 +52,21 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-2/12.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-2/13.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-2/14.png">
-<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/4-Theorem/0.png">
-<meta property="article:published_time" content="2020-09-15T13:43:11.432Z">
-<meta property="article:modified_time" content="2020-09-15T17:37:23.508Z">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/1.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/2.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/3.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/4.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/5.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/6.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/7.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/8.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/9.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/10.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/11.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/12.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/33.png">
+<meta property="article:published_time" content="2020-09-19T04:43:24.432Z">
+<meta property="article:modified_time" content="2020-09-19T07:12:06.118Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -250,16 +262,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-15 21:43:11" itemprop="dateCreated datePublished" datetime="2020-09-15T21:43:11+08:00">2020-09-15</time>
+              <time title="创建时间：2020-09-19 12:43:24 / 修改时间：15:12:06" itemprop="dateCreated datePublished" datetime="2020-09-19T12:43:24+08:00">2020-09-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-16 01:37:23" itemprop="dateModified" datetime="2020-09-16T01:37:23+08:00">2020-09-16</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -283,14 +289,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.5k</span>
+              <span>6.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>6 分钟</span>
             </span>
 
         </div>
@@ -433,6 +439,90 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
 <li>要求反向击穿电压高就选择<strong>硅管</strong>，要求温度特性更好依然选择<strong>硅管</strong>；</li>
 </ul>
 <h2 id="二极管电路分析与应用">二极管电路分析与应用</h2>
+<p>实际电路通常存在两个电源：提供能量的直流电源、携带数据信息的交流信号源。</p>
+<p><img src="/Electronics/Analog/Section-3/1.png"></p>
+<p>根据叠加原理，可以将电路从信号响应的层面进行分解，分解为由<strong>直流电源</strong>单独作用下的响应（静态）和<strong>交流信号源</strong>作用下的响应（动态）：</p>
+<p><img src="/Electronics/Analog/Section-3/2.png"></p>
+<ul>
+<li><strong>静态</strong>：当放大电路<strong>没有</strong>输入信号时，电路当中各点的电流电压为直流信号，称为直流工作状态或者静态；</li>
+<li><strong>动态</strong>：当放大电路<strong>存在</strong>输入信号时，电路当中的电压和电流随交流信号而变化，称为动态；</li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>：电路当中的静态与动态密不可分，动态<strong>驮载</strong>在静态之上。在电路分析时，通常<strong>遵循先运态后静态的原则</strong>。</p>
+</blockquote>
+<p>正是因为电路通常由<strong>直流量</strong>与<strong>交流量</strong>叠加而成，所以为了便于后续的电路分析，需要对不同信号量使用对应的符号进行区分：</p>
+<p><img src="/Electronics/Analog/Section-3/3.png"></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">符号</th>
+<th>描述</th>
+<th style="text-align: center;">规则</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(I_B\)</span></td>
+<td><strong>直流分量</strong></td>
+<td style="text-align: center;">符号大写，下标大写；</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(i_b\)</span></td>
+<td><strong>交流分量瞬时值</strong></td>
+<td style="text-align: center;">符号小写，下标小写；</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(i_B\)</span></td>
+<td><strong>电流的总瞬时值</strong></td>
+<td style="text-align: center;">符号小写，下标大写；</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(I_b\)</span></td>
+<td><strong>交流有效值</strong></td>
+<td style="text-align: center;">符号大写，下标小写；</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(I_{bm}\)</span></td>
+<td><strong>交流幅值</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p>由于二极管是一个非线性元件，所以包含有二极管的电路就是一个非线性电路，非线性电路的分析方法主要有<code>数值求解法</code>、<code>图解分析法</code>、<code>等效模型分析法</code>三种，其中<strong>数值求解法</strong>是利用外电路方程与元件方程联立求解，这种方式精度较高但是计算量较大，需要计算机辅助进行；工程上较为常用的是<strong>图解分析法</strong>和<strong>等效模型分析法</strong>。</p>
+<h3 id="图解分析法">图解分析法</h3>
+<p><strong>图解分析法</strong>是利用元件的伏安特性曲线以及外电路的特性曲线，通过作图的方式求解电路问题，并且同样遵循先静态后动态的理念：</p>
+<ol type="1">
+<li><strong>静态分析</strong>：交流信号源置<code>0</code>，得到直流通路，再结合外电路特性曲线得到二极管电流电压，即静态工作点 <span class="math inline">\(Q(I_D, V_D)\)</span>；</li>
+<li><strong>动态分析</strong>：直流电源置<code>0</code>，得到交流通路，在静态工作点的基础之上，进行小信号分析；</li>
+</ol>
+<p>▶【例题】已知二极管的伏安特性曲线，电源 <span class="math inline">\(V_{DD}\)</span> 和电阻 <span class="math inline">\(R\)</span>，信号源 <span class="math inline">\(v_s =V_m sin \omega t\)</span>，利用<strong>图解法</strong>求二极管两端的电压 <span class="math inline">\(v_D\)</span> 以及流过的电流 <span class="math inline">\(i_D\)</span> ？</p>
+<p><img src="/Electronics/Analog/Section-3/4.png"></p>
+<p>▶【解答】首先，进行<strong>静态分析</strong>，绘制上面电路的直流通路，即将交流信号源置零的情况下，直流分量所流经的通路：</p>
+<p><img src="/Electronics/Analog/Section-3/5.png"></p>
+<p>显然，此时电路中的电流和电压都是由直流电源确定的固定值，显然二极管两端的电压 <span class="math inline">\(v_D\)</span> 电流 <span class="math inline">\(i_D\)</span> 在坐标系中是一个点，这个点即满足二极管伏安特性曲线，也满足外电路的电流电压关系：</p>
+<p><span class="math display">\[
+I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
+\]</span></p>
+<p>上面方程在伏安特性坐标系下，显然是一条斜率为 <span class="math inline">\(-\frac{1}{R}\)</span> 的直线，称为负载线。负载线与伏安特性曲线的唯一交点就是二极管的<strong>静态工作点</strong> <code>Q</code>：</p>
+<p><img src="/Electronics/Analog/Section-3/6.png"></p>
+<p>然后，进行<strong>动态分析</strong>，绘制上面电路的交流通路，即仅考虑交流信号源作用的时候，交流分量流经的通路：</p>
+<p><img src="/Electronics/Analog/Section-3/7.png"></p>
+<p>输入的交流电压信号源 <span class="math inline">\(v_s\)</span> 驮载在直流电压 <span class="math inline">\(v_dd\)</span> 上注入电路（需保持两者坐标轴方向一致），此时二极管的工作点将在 <span class="math inline">\(Q^{&#39;}\)</span> 和 <span class="math inline">\(Q^{&#39;&#39;}\)</span> 之间进行变化，通过作图就可以得到二极管两端的电压 <span class="math inline">\(v_d\)</span> 和电流 <span class="math inline">\(i_d\)</span> 的变化：</p>
+<p><img src="/Electronics/Analog/Section-3/8.png"></p>
+<p>最后，结合前面得到的静态工作点，最终就可以得到流过二极管两端电压和电流的总瞬时值，并且完成图解法分析。</p>
+<p><strong>图解法</strong>运用的前提是已经获取到元件的伏安特性曲线，其优点在于能够直观展示电路参数对于性能的影响，缺点则在于存在作图误差，且某些参数无法直接求解。</p>
+<h3 id="等效模型分析法">等效模型分析法</h3>
+<p>虽然二极管的伏安特性是一种非线性元件，但是其局部区域依然具有线性的特征。如果选择合适的线性元件，等效的反映二极管在这些区域的端口特性，就可以建立二极管的线性等效模型，将非线性电路转换为线性电路，进而利用线性电路分析方法简化分析过程。</p>
+<p><img src="/Electronics/Analog/Section-3/9.png"></p>
+<p>二极管常用的等效模型主要有下面三种，其中红色线条为折线化处理的伏安特性，黑色虚线则表示实际的伏安特性，最底部为对应的等效电路。</p>
+<ul>
+<li><strong>理想模型</strong>：表明二极管导通时正向压降为零，截止时反向电流为零，称为理想二极管，采用空心的二极管符号来表示。 <img src="/Electronics/Analog/Section-3/10.png"></li>
+<li><strong>恒压降模型</strong>：表明二极管导通时正向压降为一个常量 <span class="math inline">\(U_{on}\)</span>，截止时反向电流为零。因而等效电路是理想二极管串联电压源 <span class="math inline">\(U_{on}\)</span>。 <img src="/Electronics/Analog/Section-3/11.png"></li>
+<li><strong>折线模型</strong>：表明当二极管正向电压 <span class="math inline">\(U\)</span> 大于 <span class="math inline">\(U_{on}\)</span> 以后，电流 <span class="math inline">\(I\)</span> 与 <span class="math inline">\(U\)</span> 成线性关系，直线斜率为 <span class="math inline">\(\frac{1}{r_D}\)</span>；二极管截止时反向电流为零，因此等效电路为二极管串联电压源 <span class="math inline">\(U_{on}\)</span> 和电阻 <span class="math inline">\(r_D\)</span>，并且 <span class="math inline">\(r_D=\frac{\Delta U}{\Delta I}\)</span>。 <img src="/Electronics/Analog/Section-3/12.png"></li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>：二极管工作在线性区是以上模型成立的充分必须条件，如果二极管工作在非线性区，则只能选择图解法。</p>
+</blockquote>
 <h2 id="其它类型二极管">其它类型二极管</h2>
 <h2 id="双极型晶体管">双极型晶体管</h2>
 <h2 id="晶体管放大电路基础">晶体管放大电路基础</h2>
@@ -454,9 +544,9 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
    \implies
 \end{aligned}
 \]</span></p>
-<p>【例题】</p>
-<p><img src="/Electronics/Analog/4-Theorem/0.png"></p>
-<p>【解答】</p>
+<p>▶【例题】</p>
+<p><img src="/Electronics/Analog/Section-3/33.png"></p>
+<p>▶【解答】</p>
 
     </div>
 
@@ -555,7 +645,7 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析与应用"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析与应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它类型二极管"><span class="nav-number">4.</span> <span class="nav-text">其它类型二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析与应用"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析与应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它类型二极管"><span class="nav-number">4.</span> <span class="nav-text">其它类型二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -651,7 +741,7 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">24:02</span>
+    <span title="站点阅读时长">24:03</span>
 </div>
 
         
