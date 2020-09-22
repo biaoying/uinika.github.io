@@ -78,9 +78,16 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/24.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/25.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/26.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/1.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/2.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/3.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/4.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/5.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/6.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/7.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/0.png">
-<meta property="article:published_time" content="2020-09-19T04:43:24.432Z">
-<meta property="article:modified_time" content="2020-09-21T09:42:40.431Z">
+<meta property="article:published_time" content="2020-09-22T14:24:08.181Z">
+<meta property="article:modified_time" content="2020-09-22T14:33:24.683Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -276,16 +283,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-19 12:43:24" itemprop="dateCreated datePublished" datetime="2020-09-19T12:43:24+08:00">2020-09-19</time>
+              <time title="创建时间：2020-09-22 22:24:08 / 修改时间：22:33:24" itemprop="dateCreated datePublished" datetime="2020-09-22T22:24:08+08:00">2020-09-22</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-21 17:42:40" itemprop="dateModified" datetime="2020-09-21T17:42:40+08:00">2020-09-21</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -309,14 +310,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>9.1k</span>
+              <span>12k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 分钟</span>
+              <span>11 分钟</span>
             </span>
 
         </div>
@@ -458,7 +459,7 @@ r_D = \frac{\Delta V_D}{\Delta I_D}
 <li>要求工作电流较大时选择<strong>面接触型</strong>，要求工作频率较高时选择<strong>点接触型</strong>；</li>
 <li>要求反向击穿电压高就选择<strong>硅管</strong>，要求温度特性更好依然选择<strong>硅管</strong>；</li>
 </ul>
-<h2 id="二极管电路分析与应用">二极管电路分析与应用</h2>
+<h2 id="二极管电路分析">二极管电路分析</h2>
 <p>实际电路通常存在两个电源：提供能量的直流电源、携带数据信息的交流信号源。</p>
 <p><img src="/Electronics/Analog/Section-3/1.png"></p>
 <p>根据叠加原理，可以将电路从信号响应的层面进行分解，分解为由<strong>直流电源</strong>单独作用下的响应（静态）和<strong>交流信号源</strong>作用下的响应（动态）：</p>
@@ -606,7 +607,81 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 <p><img src="/Electronics/Analog/Section-3/25.png"></p>
 <p>利用二极管与电容配合组成的<strong>倍压电路</strong>，将一个较低的交流电压，整流为一个较高的直流电压。</p>
 <p><img src="/Electronics/Analog/Section-3/26.png"></p>
-<h2 id="其它类型二极管">其它类型二极管</h2>
+<h2 id="稳压二极管">稳压二极管</h2>
+<p>稳压二极管除了具备单向导电性之外，还具有稳压的能力，其符号与普通二极管稍有区别，并且阳极和阴极的标识与普通二极管相反，即阳极为<code>+</code>阴极为<code>-</code>。</p>
+<p><img src="/Electronics/Analog/Section-4/1.png"></p>
+<p>稳压二极管的伏安特性与普通二极管类似，正向特性为指数曲线，当稳压二极管外加反向电压增大到一定程度时则发生击穿。但是稳压二极管击穿区的曲线非常陡峭，几乎平行于纵轴，虽然击穿后电流变化较大，但是两端电压的变化极小，利用这个特性，稳压二极管在电路当中可以表现出稳压特性。</p>
+<p><img src="/Electronics/Analog/Section-4/2.png"></p>
+<ul>
+<li><strong>稳定电压</strong> <span class="math inline">\(U_z\)</span>：稳压二极管正常工作时（反向击穿）两端的电压；</li>
+<li><strong>稳定电流</strong> <span class="math inline">\(I_z\)</span>：指稳压管正常工作时的参考电流；</li>
+<li><strong>动态电阻</strong> <span class="math inline">\(r_z\)</span>：稳压二极管工作在稳压区时，端电压变化量与其电流变化量的比值，<span class="math inline">\(r_z = \frac{\Delta U_z}{\Delta I_z}\)</span>，该值越小，电流 <span class="math inline">\(I_z\)</span> 变化时 <span class="math inline">\(U_z\)</span> 的变化就越小，稳压管的稳压特性就越好；</li>
+<li><strong>最大允许耗散功率</strong> <span class="math inline">\(P_{zm}\)</span>：等于稳压二极管的稳定电压 <span class="math inline">\(U_z\)</span> 与最大稳定电流 <span class="math inline">\(I_{zm}\)</span> 的乘积；不超过该功率时，电流越大，稳压效果越好，超过该值则可能会导致损坏；</li>
+</ul>
+<p>稳压二极管发挥稳压功能所需要遵循的规则和典型电路如下所示：</p>
+<p><img src="/Electronics/Analog/Section-4/3.png"></p>
+<ul>
+<li>稳压二极管反偏，并且保证管子工作在反向击穿区；</li>
+<li>稳压二极管必须与负载电阻 <span class="math inline">\(R_L\)</span> 并联；</li>
+<li>必须通过限流电阻限制流过稳压二极管的电流 <span class="math inline">\(I_Z\)</span>，使其不超过额定工作值；</li>
+</ul>
+<p>引发负载两端电压变化的因素主要有两个：一个是<strong>电源电压本身的波动</strong>，另一个则是由<strong>负载本身的变化</strong>。</p>
+<ol type="1">
+<li><strong>如果电压 <span class="math inline">\(U_1\)</span> 出现波动，而负载 <span class="math inline">\(R_L\)</span> 保持不变的时候</strong>。如果由于某种原因造成输入电压 <span class="math inline">\(U_I\)</span> 增大，此时输出电压 <span class="math inline">\(U_O\)</span> 也会有增大的趋势（输出电压 <span class="math inline">\(U_O\)</span> 就是二极管两端的电压），稳压二极管的电流 <span class="math inline">\(I_{DZ}\)</span> 将会显著增加（结合伏安特性曲线，稳压二极管的特性在于两端电压出现微小变化时，电流将会出现较大的变化）。根据基尔霍夫电流定律 <span class="math inline">\(I_R = I_{DZ} + I_O\)</span> 就会使得 <span class="math inline">\(I_R\)</span> 增大，进而导致限流电阻 <span class="math inline">\(R\)</span> 上的电压降 <span class="math inline">\(U_R\)</span> 也会增大，根据基尔霍夫电压定律 <span class="math inline">\(U_O = U_I - U_R\)</span>，当输入电压 <span class="math inline">\(U_I\)</span> 增大的时候，由于限流电阻上的电压 <span class="math inline">\(U_R\)</span> 也在增大，就会使得输出电压 <span class="math inline">\(U_O\)</span> 基本保持不变，达到稳压的效果。</li>
+<li><strong>当负载 <span class="math inline">\(R_L\)</span> 发生变化，输入电压 <span class="math inline">\(U_I\)</span> 保持不变的时候</strong>。负载电阻 <span class="math inline">\(R_L\)</span> 的增大会导致输出电压 <span class="math inline">\(U_O\)</span> 增大，进而导致稳压二极管上的电流 <span class="math inline">\(I_{DZ}\)</span> 显著增大，同样使得 <span class="math inline">\(I_R\)</span> 也会增大，最终通过限流电阻电压的变化，使得 <span class="math inline">\(U_O\)</span> 保持不变。</li>
+</ol>
+<p>综上所述，稳压二极管稳定电压的基本过程，都是通过两端电压的微小变化，引起电流的显著变化，从而调整限流电阻 <span class="math inline">\(R\)</span> 上的压降，最终使得输出电压 <span class="math inline">\(U_O\)</span> 保持基本稳定。</p>
+<p>通过上面对稳压二极管原理的讨论，限流电阻对于稳压二极管的正常工作和稳压而言都至关重要，因此限流电阻的选择就成为了稳压二极管电路的重要环节。接下来，基于如下典型的稳压二极管电路，讨论限流电阻的选择问题。</p>
+<p><img src="/Electronics/Analog/Section-4/4.png"></p>
+<p>假设上面电路当中，输入电压的变化范围为 <span class="math inline">\(U_{INmin} ~ U_{INmax}\)</span>，负载电阻的变化范围为 <span class="math inline">\(R_{Lmin} ~ R_{Lmax}\)</span>，根据欧姆定理很容易发现，负载电流的最小值和最大值分别为：</p>
+<p><span class="math display">\[
+\begin{cases}
+    I_{Lmin} = \frac{U_Z}{R_{Lmax}} \\
+    I_{Lmax} = \frac{U_Z}{R_{Lmin}}
+\end{cases}
+\]</span></p>
+<p>当输入电压最大负载电流最小的时候，根据 KCL 定律，此时稳压二极管上的电流 <span class="math inline">\(I_Z\)</span> 将为最大，并且其电流值不能超过上面的 <span class="math inline">\(I_{Zmax}\)</span>：</p>
+<p><span class="math display">\[
+\frac{U_{INmax} - U_Z}{R} - I_{Lmin} = I_Z \le I_{Zmax} \implies  R \ge \frac{U_{INmax} - U_Z}{I_{Lmin} + I_{Zmax}} = R_{min}
+\]</span></p>
+<p>当输入电压最小负载电流最大的时候，根据 KCL 定律，此时稳压二极管上的电流 <span class="math inline">\(I_Z\)</span> 将为最小，但是其电流值不能低于上面的 <span class="math inline">\(I_{Zmin}\)</span>：</p>
+<p><span class="math display">\[
+\frac{U_{INmin} - U_Z}{R} - I_{Lmax} = I_Z \ge I_{Zmin} \implies  R \le \frac{U_{INmin} - U_Z}{I_{Lmax} + I_{Zmin}} = R_{max}
+\]</span></p>
+<p>根据上面的分析，就可以得到限流电阻的取值范围应为 <span class="math inline">\(R_{min} ~ R_{max}\)</span>，即 <span class="math inline">\(R_{min} \le R \le R_{max}\)</span>。</p>
+<p>▶【例题】如图所示的稳压二极管电路，已知其具体参数为 <span class="math inline">\(U_Z = 12V\)</span>、<span class="math inline">\(I_Z = 5mA\)</span>、<span class="math inline">\(I_{ZM} = 50mA\)</span>。</p>
+<p>（1）如果 <span class="math inline">\(U_I = 3V\)</span> 并且限流电阻等于负载电阻 <span class="math inline">\(R_L = R\)</span>，求解 <span class="math inline">\(U_O\)</span> ？</p>
+<p>（2）如果 <span class="math inline">\(U_I = 20V\)</span> 并且其允许的变化量为 <span class="math inline">\(\pm 2V\)</span>，而 <span class="math inline">\(I_O\)</span> 的变化范围要求在 <span class="math inline">\(0mA ~ 15mA\)</span>，试选择限流电阻 <span class="math inline">\(R\)</span> 的合适阻值与功率？</p>
+<p><img src="/Electronics/Analog/Section-4/5.png"></p>
+<p>▶【解答-1】稳压二极管电路的分析，依然秉承先定性后定量的原则。这里首先将稳压二极管从电路里断开，从而独立讨论两端电位的极性与大小，从而判断出稳压二极管的工作状态。</p>
+<p>当 <span class="math inline">\(U_I = 3V\)</span> 并且 <span class="math inline">\(R_L = R\)</span>，显然此时稳压二极管的阴极电位为 <code>1.5V</code>，而阳极电位为 <code>0V</code>，稳压二极管处于反偏状态。此时，由于 <span class="math inline">\(1.5V &lt; U_Z = 12V\)</span>，工作点并没有进入反向击穿区，此时稳压二极管反偏截止，不能进行稳压。</p>
+<p><img src="/Electronics/Analog/Section-4/6.png"></p>
+<p>根据上面的结论，就可以很容易求解得到此时的 <span class="math inline">\(U_O\)</span> 的值为：</p>
+<p><span class="math display">\[
+U_O = \frac{R_L}{R_L + R} \cdot U_I = \frac{3}{2}V = 1.5V
+\]</span></p>
+<p>▶【解答-2】由于此时 <span class="math inline">\(U_I = 20V\)</span>，稳压二极管处于反向偏置，只要选择合适的限流电阻，就可以让电路进行稳压工作。</p>
+<p>输入电压 <span class="math inline">\(U_I\)</span> 最大并且输出电流 <span class="math inline">\(I_O\)</span> 最小的时候，此时稳压二极管上的电流 <span class="math inline">\(I_{DZ}\)</span> 为最大值，限流电阻 <span class="math inline">\(R\)</span> 的阻值需要满足 <span class="math inline">\(I_{DZ} \le I_{ZM}\)</span>，列出方程求解限流电阻的最小取值 <span class="math inline">\(R_{min}\)</span>：</p>
+<p><span class="math display">\[
+R_{min} = \frac{U_{Imax} - U_Z}{I_{ZM} + I_{Omin}} = \frac{(20+2-12)V}{50mA} = 200Ω
+\]</span></p>
+<p>输入电压 <span class="math inline">\(U_I\)</span> 最小并且输出电流 <span class="math inline">\(I_O\)</span> 最大的时候，此时稳压二极管上的电流 <span class="math inline">\(I_{DZ}\)</span> 为最小值，限流电阻 <span class="math inline">\(R\)</span> 的阻值需要满足 <span class="math inline">\(I_{DZ} \ge I_{ZM}\)</span>，列出方程求解限流电阻的最大取值 <span class="math inline">\(R_{max}\)</span>：</p>
+<p><span class="math display">\[
+R_{max} = \frac{U_{Imin} - U_Z}{I_{Z} + I_{Omax}} = \frac{(20-2-12)V}{(5 + 15)mA} = 300Ω
+\]</span></p>
+<p>结合上面的分析结论，可以在 <span class="math inline">\(200Ω \le R \le 300Ω\)</span> 范围选取限流电阻 <span class="math inline">\(R\)</span> 的值。如果取值为 <span class="math inline">\(270Ω\)</span>，则限流电阻上产生的最大功耗 <span class="math inline">\(P_{Rmax}\)</span> 为：</p>
+<p><span class="math display">\[
+P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
+\]</span></p>
+<p>本题到这里求解完毕，通过以上的介绍和分析，虽然稳压二极管仍然具有单向导电性，但其使用和性能上与普通二极管存在较大区别：</p>
+<ol type="1">
+<li>稳压二极管工作在<strong>反向击穿区</strong>，普通二极管工作在<strong>正向导通区</strong>；</li>
+<li>稳压二极管反向特性曲线比普通二极管更为陡峭，虽然两端电流会在较大范围内变化，但是两端的电压变化较小，因此具备稳压作用；</li>
+<li>稳压二极管反向击穿电压相比普通二极管更低，普通二极管反向击穿电压为 <code>25 ~ 50V</code>，稳压二极管的反向击穿电压则要低得多，其中 <code>6V</code> 左右稳压二极管的稳压输出最为稳定；</li>
+<li>稳压二极管去掉反向击穿电压之后，只要不超过其额定功耗，就又可以恢复正常工作；而普通二极管进入反向击穿区，就会失去单向导电性，同时由于反向电流过大，容易烧毁普通二极管；</li>
+</ol>
+<p>除了普通二极管与稳压二极管之外，还有存在下表中这样的其它类型二极管：</p>
+<p><img src="/Electronics/Analog/Section-4/7.png"></p>
 <h2 id="双极型晶体管">双极型晶体管</h2>
 <h2 id="晶体管放大电路基础">晶体管放大电路基础</h2>
 <p>Ω</p>
@@ -728,7 +803,7 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析与应用"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析与应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它类型二极管"><span class="nav-number">4.</span> <span class="nav-text">其它类型二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -824,7 +899,7 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">24:06</span>
+    <span title="站点阅读时长">24:09</span>
 </div>
 
         
