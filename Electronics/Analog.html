@@ -86,9 +86,27 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/6.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-4/7.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/1.png">
-<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-3/0.png">
-<meta property="article:published_time" content="2020-09-22T14:24:08.181Z">
-<meta property="article:modified_time" content="2020-09-22T15:19:20.324Z">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/2.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/3.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/4.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/5.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/6.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/7.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/8.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/9.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/10.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/11.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/12.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/13.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/14.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/15.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/16.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/17.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/18.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/19.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/0.png">
+<meta property="article:published_time" content="2020-09-23T16:35:40.157Z">
+<meta property="article:modified_time" content="2020-09-23T18:37:34.880Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -286,7 +304,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-22 22:24:08 / 修改时间：23:19:20" itemprop="dateCreated datePublished" datetime="2020-09-22T22:24:08+08:00">2020-09-22</time>
+              <time title="创建时间：2020-09-24 00:35:40 / 修改时间：02:37:34" itemprop="dateCreated datePublished" datetime="2020-09-24T00:35:40+08:00">2020-09-24</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -311,14 +329,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>13k</span>
+              <span>20k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>12 分钟</span>
+              <span>18 分钟</span>
             </span>
 
         </div>
@@ -690,6 +708,141 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 <blockquote>
 <p><strong>注意</strong>：三极管的组成结构可以概括为：<strong>3 个极（基极、发射极、集电极）、3 个区（基区、发射区、集电区）、2 个 PN 结（发射结、集电结）</strong>。</p>
 </blockquote>
+<h3 id="放大原理">放大原理</h3>
+<p>三极管的<strong>电流放大能力</strong>必须从<strong>内部</strong>结构和<strong>外部</strong>偏置条件两个方面来进行满足：</p>
+<ul>
+<li><strong>内部结构</strong>：基区最薄掺杂浓度最低（空穴浓度最低），主要用于传送和控制载流子；发射区掺杂浓度（自由电子浓度最高）最高，主要用于发射载流子；集电区的面积最大，主要用于收集载流子。 <img src="/Electronics/Analog/Section-5/2.png"></li>
+<li><strong>外部结构</strong>：通过正确的偏置保证晶体管的放大，所谓的<strong>偏置</strong>就是利用直流电源为电路设置固定的电流与电压。对于晶体管而言，必须保证发射极正偏集电极反偏（通过选择合适的电源与电阻）。对于 <strong>NPN</strong> 晶体管而言，发射极正偏是 <span class="math inline">\(V_B &gt; V_E\)</span>，集电极反偏是 <span class="math inline">\(V_C &gt; V_B\)</span>；于 <strong>PNP</strong> 晶体管而言，发射极正偏是 <span class="math inline">\(V_B &lt; V_E\)</span>，集电极反偏是 <span class="math inline">\(V_C &lt; V_B\)</span>。 <img src="/Electronics/Analog/Section-5/3.png"></li>
+</ul>
+<p>当 <strong>NPN</strong> 型晶体管加入正确的外部偏置以后，晶体管内部载流子的运动规律如下所示：</p>
+<ol type="1">
+<li><strong>发射结加正向电压，扩散运动形成发射极电流 <span class="math inline">\(I_E\)</span></strong>：由于发射结加正向电压，且发射区杂质浓度较高，大量自由电子经过扩散运动越过发射结到达基区。与此同时，空穴也从基区向发射区扩散，但是由于基区杂质浓度较低，所以空穴形成的电流非常小，基本可以忽略不计，即扩散运动形成了发射极电流 <span class="math inline">\(I_E\)</span>；</li>
+<li><strong>扩散到基区的自由电子与空穴的复合，形成基极电流 <span class="math inline">\(I_B\)</span></strong>：由于基区很薄杂质浓度较低，当集电结加反向电压时，仅少部分扩散到基区的电子与空穴发生复合，其余部分均作为基区的非平衡少子到达集电结。同时又由于电源 <span class="math inline">\(V_{BB}\)</span> 的作用，电子与空穴的复合运动将会持续不断的进行，从而形成基极电流 <span class="math inline">\(I_B\)</span>；</li>
+<li><strong>集电结加反向电压，漂移运动形成集电极电流 <span class="math inline">\(I_C\)</span></strong>：由于集电结加反向电压并且其结面积较大，基区的非平衡少子在外电场作用下越过集电结到达集电区，形成漂移电流。与此同时，集电区与基区的平衡少子也参与漂移运动，但是其数量较少基本可以忽略不计。即在集电极电源 <span class="math inline">\(V_{CC}\)</span> 的作用下，漂移运动形成集电极电流 <span class="math inline">\(I_C\)</span>；</li>
+</ol>
+<p><img src="/Electronics/Analog/Section-5/4.png"></p>
+<p>如图所示，假设由发射区向基区扩散所形成的电子电流为 <span class="math inline">\(I_{EN}\)</span>，由基区向发射区扩散所形成的空穴电流为 <span class="math inline">\(I_{EP}\)</span>，由基区内部复合运动所形成的电流为 <span class="math inline">\(IBN\)</span>，由基区内非平衡少子（即发射区扩散到基区但没有被复合的自由电子）漂移至集电区所形成的电流为 <span class="math inline">\(I_{CN}\)</span>，由平衡少子在集电区与基区之间的漂移运动所形成的电流为 <span class="math inline">\(I_{CBO}\)</span>。接下来，分别对晶体管的<strong>发射极电流</strong> <span class="math inline">\(I_E\)</span>、<strong>集电极电流</strong> <span class="math inline">\(I_C\)</span>、<strong>基极电流</strong> <span class="math inline">\(I_B\)</span> 进行分析：</p>
+<p><span class="math display">\[
+\begin{cases}
+  发射极电流 &amp; I_E = I_{EN} + I_{EP} = (I_{CN} + I_{BN}) + I_{EP} \\
+  集电极电流 &amp; I_C = I_{CN} + I_{CBO}  \\
+  基极电流 &amp; I_B = I_{BN} + I_{EP} - I_{CBO} = I^{&#39;}_B - I_{CBO}
+\end{cases}
+\]</span></p>
+<p>联立上面的公式，可以发现晶体管三个电极电流的分配关系依然可以遵循基尔霍夫电流定律：即将晶体管视为一个结点，<span class="math inline">\(I_B\)</span> 与 <span class="math inline">\(I_C\)</span> 为流入结点的电流，<span class="math inline">\(I_E\)</span> 则为流出结点的电流，它们之间存在如下的关系：</p>
+<p><span class="math display">\[
+发射极电流 I_E = 集电极电流 I_C + 基极电流 I_B
+\]</span></p>
+<blockquote>
+<p><strong>注意</strong>：当晶体管满足发射结正偏集电结反偏时，这种分配关系将会是固定的，与外加电压并没有关系，主要取决于晶体管基区的宽度以及发射区多子的浓度。</p>
+</blockquote>
+<p>基本晶体管三个电极电流的固定关系，可以定义出下面几个比较重要的参数：</p>
+<ul>
+<li><strong>共基极直流电流放大系数</strong> <span class="math inline">\(\bar \alpha = \frac{I_C}{I_E}\)</span>：根据前面对载流子运动规律的分析，<span class="math inline">\(I_C\)</span> 约等于 <span class="math inline">\(I_E\)</span> 并且小于 <span class="math inline">\(I_E\)</span>，所以 <span class="math inline">\(\bar \alpha\)</span> 小于<code>1</code>并且接近于<code>1</code>；</li>
+<li><strong>共发射极直流电流放大系数</strong> <span class="math inline">\(\bar \beta = \frac{I_C}{I_B} = \frac{\bar \alpha}{1 - \bar \alpha}\)</span>：该参数直接反映了输出电流 <span class="math inline">\(I_C\)</span> 与输入电流 <span class="math inline">\(I_B\)</span> 的比例关系，由于 <span class="math inline">\(I_C\)</span> 较大而 <span class="math inline">\(I_B\)</span> 这样复合运动产生的电流较小，所以非常直观的体现了晶体管的放大能力，是后续<strong>直流分析当中需要经常使用到的参数</strong>；</li>
+<li><strong>共发射极交流电流放大系数</strong> <span class="math inline">\(\beta = \frac{\Delta i_C}{\Delta i_B}\)</span>：晶体管对于交流电流也具备放大能力，该参数对于后续的交流分析而言至关重要；</li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>：上述晶体管参数上面的<strong>小横扛</strong>代表这是一个直流参量。</p>
+</blockquote>
+<p>综上所述，当<strong>晶体管发射结正偏集电结反偏</strong>时，就可以将基极电流的微小变化引发集电极电流的较大变化，从而使得晶体管具备了<strong>电流放大作用</strong>。</p>
+<h3 id="伏安特性-1">伏安特性</h3>
+<p><strong>晶体管的伏安特性</strong>是指晶体管各个电极的电压电流关系曲线，是晶体管内部载流子运动的外部表现。对伏安特性的全面了解，是分析与设计晶体管放大电路的前提和基础，这里以应用较为广泛的<strong>共发射极</strong>连接方式的特性曲线为例，来介绍晶体管的伏安特性。</p>
+<p>类似于二极管，晶体管的伏安特性也是通过实际电路测量而来的，下图是型号为 <code>3DG100</code> 的 NPN 型晶体管伏安特性测量电路：</p>
+<p><img src="/Electronics/Analog/Section-5/5.png"></p>
+<p>在基级和射极之间连接了电源 <span class="math inline">\(E_B\)</span> 以及可变电阻 <span class="math inline">\(R_B\)</span>，同时在集电极和发射极之间，连接了可变电源 <span class="math inline">\(E_C\)</span>，同时在输入回路用伏特表和安倍表分别测量输入电压 <span class="math inline">\(U_{BE}\)</span> 和输入电流 <span class="math inline">\(I_B\)</span>，而在输出回路则测得其输出电流 <span class="math inline">\(I_C\)</span> 和输出电压 <span class="math inline">\(U_{CE}\)</span>。信号从晶体管的基极输入集电极输出，此时输出回路和输入回路共用一个电极，所以将这种电路连接方式称为 <span class="math inline">\(共发射极接法\)</span>。</p>
+<p>这种连接方式下，通过调节可变电源 <span class="math inline">\(E_C\)</span> 的值来调节可变电阻 <span class="math inline">\(R_B\)</span>，此时输入电流 <span class="math inline">\(I_B\)</span> 和输入电压 <span class="math inline">\(U_{BE}\)</span> 的读数都会发生变化，将得到的数据逐一记录并且描述，就得到了 <span class="math inline">\(I_B\)</span> 和 <span class="math inline">\(U_{BE}\)</span> 的伏安关系曲线。多次重复该操作，就可以得到一组 <span class="math inline">\(U_{CE}\)</span> 为常数情况下，<span class="math inline">\(I_B\)</span> 和 <span class="math inline">\(U_{BE}\)</span> 的关系曲线，称为<strong>输入特性曲线</strong>：</p>
+<p><span class="math display">\[
+I_B = f(U_{BE}) |_{U_{CE} = 常数}
+\]</span></p>
+<p>采用同样的方式，也可以在指定 <span class="math inline">\(I_B\)</span> 为常数情况下，得到一组反映 <span class="math inline">\(U_{CE}\)</span> 和 <span class="math inline">\(I_C\)</span> 关系的曲线，称之为<strong>输出特性曲线</strong>：</p>
+<p><span class="math display">\[
+I_C = f(U_{CE}) |_{I_{B} = 常数}
+\]</span></p>
+<blockquote>
+<p><strong>注意</strong>：晶体管的特性曲线都会拥有一个常数条件的原因在于，晶体管的输入和输出回路并不是孤立存在的，两者之间存在一条共用的支路，所以必然会产生相互影响，为了避免这种情况对测量造成的影响，会在测量某一特性回路的时候，需要固定另外一个回路的参数，能能得到较为准确的特性曲线。</p>
+</blockquote>
+<h4 id="输入特性曲线">输入特性曲线</h4>
+<p>输入特性曲线是在 <span class="math inline">\(U_{CE}\)</span> 指定的前提下，考察输入电流 <span class="math inline">\(I_B\)</span>（纵轴）输入电压 <span class="math inline">\(U_{BE}\)</span>（横轴）：</p>
+<p><img src="/Electronics/Analog/Section-5/6.png"></p>
+<ul>
+<li><strong>当指定 <span class="math inline">\(U_{CE} = 0V\)</span> 时测得一条输入特性曲线</strong>，该特性与二极管的正向特性极为相似，这是由于晶体管的基极和射极之间就是一个 PN 结，所以其特性与 PN 结的正向特性一致，对于硅管而言依然是 <span class="math inline">\(0.5V\)</span> 的开启电压以及 <span class="math inline">\(0.7V\)</span> 的导通电压。</li>
+<li><strong>当指定 <span class="math inline">\(U_{CE} = 1V\)</span> 时再次进行测量</strong>，此时形成的新特性曲线会向右移动。<span class="math inline">\(U_{CE}\)</span> 增加导致特性曲线向右移的原因在于基极电流主要来源与复合电流，随着 <span class="math inline">\(U_{CE}\)</span> 的增大集电区收集自由电子的能力增强，大部分自由电子都被收集到集电区，从而减小了自由电子与基区中空穴复合的机会，这样就使得在同样的 <span class="math inline">\(U_{BE}\)</span> 条件下 <span class="math inline">\(I_B\)</span> 会减小，使得特性曲线向右移动；</li>
+<li><strong>当继续增大 <span class="math inline">\(U_{CE}\)</span> 取值的时候</strong>，特性曲线继续右移，但是移动的幅度并不明显。当 <span class="math inline">\(U_{CE}\)</span> 达到一定程度时大部分自由电子都已经被收集，但仍然会有小部分的自由电子进行复合，此时 <span class="math inline">\(U_{CE}\)</span> 的增大就不会让 <span class="math inline">\(I_D\)</span> 减小很多；因此对于小功率晶体管，可以认为当 <span class="math inline">\(U_{CE} &gt; 1V\)</span> 时的一条输入特性曲线，可以代替 <span class="math inline">\(U_{CE} &gt; 1V\)</span> 时的所有输入特性曲线。由于这个条件通常是满足的，所以后续通常只会对一条输入特性曲线进行讨论；</li>
+</ul>
+<h4 id="输出特性曲线">输出特性曲线</h4>
+<p>输出特性曲线是晶体管相关内容的核心，也是后续内容的出发点，因此需要十分重视。输出特性曲线反映的是在 <span class="math inline">\(I_B\)</span> 为常数情况下，输出电压 <span class="math inline">\(U_{CE}\)</span> 和 输出电流<span class="math inline">\(I_C\)</span> 的关系，对于每一个 <span class="math inline">\(I_B\)</span> 都会对应一条 <span class="math inline">\(I_C\)</span> 随着 <span class="math inline">\(U_{CE}\)</span> 变化的特性曲线，而且每条特性曲线的变化趋势都是相同的，这里以下图中红色的曲线为例进行讨论：</p>
+<p><img src="/Electronics/Analog/Section-5/7.png"></p>
+<ul>
+<li><strong>当 <span class="math inline">\(U_{CE}\)</span> 较小的时候</strong>，<span class="math inline">\(I_B\)</span> 随着 <span class="math inline">\(U_{CE}\)</span> 的变化呈现较大的变化过程。这是由于在原点 <span class="math inline">\(U_{CE} = 0V\)</span> 时，集电结并没有反向偏置，集电区不能收集自由电子，所以此时电流 <span class="math inline">\(I_C\)</span> 为零。随着 <span class="math inline">\(U_{CE}\)</span> 逐渐增大，集电区收集自由电子的能力逐渐增强，此时集电极电流 <span class="math inline">\(I_C\)</span> 也随之增大，<span class="math inline">\(I_C\)</span> 与 <span class="math inline">\(U_{CE}\)</span> 的变化基本呈现出一种线性关系。</li>
+<li><strong>当 <span class="math inline">\(U_{CE}\)</span> 增大到一定程度的时候</strong>，<span class="math inline">\(I_C\)</span> 就将不再增加，使得特性曲线几乎平行于横轴。这是由于当 <span class="math inline">\(U_{CE}\)</span> 足够大的时候，集电结完全反向偏置，集电区收集了几乎所有的电子，此时 <span class="math inline">\(I_C\)</span> 将不会再增大，从而表现出一种恒流特性。在这个恒流区域 <span class="math inline">\(I_C\)</span> 与 <span class="math inline">\(I_B\)</span> 的比值将会为一个固定值，这就是前面定义的<strong>直流电流放大系数</strong> <span class="math inline">\(\bar \beta = \frac{I_C}{I_B}\)</span>。同时，还可以发现恒流区除了每一条特性曲线与横轴平行之外，特性曲线之间的间隔距离也基本是相同的，这就说明在这个区域变化的 <span class="math inline">\(\Delta i_C\)</span> 与变化的 <span class="math inline">\(\Delta i_B\)</span> 的比值也基本是一个常数，这也就是前面定义的<strong>交流电流放大系数</strong> <span class="math inline">\(\beta = \frac{\Delta i_C}{\Delta i_B}\)</span>。总而言之，晶体管在这个区域体现了电流放大能力。除此之外，在这样的区域还可以发现 <span class="math inline">\(I_C\)</span> 的变化几乎与 <span class="math inline">\(U_{CE}\)</span> 无关，<span class="math inline">\(I_B\)</span> 才是决定 <span class="math inline">\(I_C\)</span> 大小的重要因素，这就体现了基极电流 <span class="math inline">\(I_B\)</span> 控制集电极电流 <span class="math inline">\(I_C\)</span> 的特性，说明晶体管是一个<strong>有源的电流控制元件</strong>；</li>
+</ul>
+<h3 id="工作区">工作区</h3>
+<p>根据晶体管的伏安特性，可以将晶体管划分为 3 个工作区：</p>
+<ol type="1">
+<li><strong>放大区</strong>：线性区，此时 <span class="math inline">\(I_C = \beta I_B\)</span>，发射结<strong>正偏</strong>集电结<strong>反偏</strong>即可进入放大区，模拟电路当中主要应用的就是晶体管的放大能力； <img src="/Electronics/Analog/Section-5/8.png"></li>
+<li><strong>截止区</strong>：非线性区，发射结和集电结<strong>都反向偏置</strong>即可进入该区，此时发射区当中的自由电子不能进入基区，基极电流 <span class="math inline">\(I_B = 0\)</span> 同时 <span class="math inline">\(I_C \approx 0\)</span>，此时 <span class="math inline">\(I_C\)</span> 仍然存在来自于少子漂移运动产生的电流 <span class="math inline">\(I_{CEO}\)</span>，称为<strong>极射穿透电流</strong>；该电流对于小功率晶体管几乎可以忽略不计（小于<code>1uA</code>）; <img src="/Electronics/Analog/Section-5/9.png"></li>
+<li><strong>饱和区</strong>：非线性区，发射结和集电结<strong>都正向偏置</strong>即可进入该区，，当 <span class="math inline">\(U_{CE} &lt; U_{BE}\)</span> 并且 <span class="math inline">\(U_{CE} \approx 0\)</span> 的时候，此时集电极还没有反向偏置，集电区收集自由电子的能力并不强，这就导致电流 <span class="math inline">\(I_C &lt; \beta I_B\)</span>；对于小功率 NPN 型晶体管，可以将 <code>0.3V</code> 作为晶体管从放大区进入饱和区的临界电压； <img src="/Electronics/Analog/Section-5/10.png"></li>
+</ol>
+<p>晶体管除了工作在<strong>放大区</strong>提供<strong>电流放大</strong>作用以外，还可以在<strong>饱和区</strong>和<strong>截止区</strong>分别提供<strong>短路</strong>与<strong>开路</strong>的功能：</p>
+<p><img src="/Electronics/Analog/Section-5/11.png"></p>
+<ul>
+<li><strong>放大区</strong>：发射结<strong>正偏</strong> <span class="math inline">\(U_{BE} &gt; 0\)</span> 集电结<strong>反偏</strong> <span class="math inline">\(U_{BC} &lt; 0\)</span>，这种状态下晶体管具有放大能力 <span class="math inline">\(I_C = \bar \beta I_B\)</span>，即合适大小的基极电流 <span class="math inline">\(I_B\)</span> 可以在集电极 <span class="math inline">\(I_C\)</span> 上获得数以百倍的输出；</li>
+<li><strong>截止区</strong>：发射结<strong>反偏</strong> <span class="math inline">\(U_{BE} \le 0\)</span> 集电结<strong>反偏</strong> <span class="math inline">\(U_{BC} &lt; 0\)</span>，此时 <span class="math inline">\(I_B = 0\)</span>，且 <span class="math inline">\(I_C \approx 0\)</span>，导致发射极到集电极几乎没有电流流过，相当于开路状态，此时集电极的输出电压 <span class="math inline">\(V_o \approx V_CC\)</span>；</li>
+<li><strong>饱和区</strong>：发射结<strong>正偏</strong> <span class="math inline">\(U_{BE} &gt; 0\)</span> 集电结<strong>正偏</strong> <span class="math inline">\(U_{BC} &gt; 0\)</span>，此时 <span class="math inline">\(U_{CE} \approx 0\)</span>，这就意味着集电极和发射极之间近似于短路状态，此时<strong>临界集电极饱和电流</strong> <span class="math inline">\(I_{CS} = \frac{(V_{CC} - U_{CES})}{R_C}\)</span>，此时集电极输出电压 <span class="math inline">\(V_O \approx 0\)</span>；</li>
+</ul>
+<p>综上所述，当晶体管工作于饱和区时 <span class="math inline">\(U_{CE} \approx 0\)</span>，集电极与发射极之间电阻极小，近似于<strong>短路</strong>状态；当晶体管工作于截止区时，<span class="math inline">\(IC \approx 0\)</span> ，集电极与发射极之间电阻极大，近似于<strong>开路</strong>状态。由此可见，晶体管除了具有放大作用以外，还具备开关的作用，可以在数字电路当中大显身手。</p>
+<p>下面的表格给出了晶体管在不同工作状态下典型的电压值：</p>
+<p><img src="/Electronics/Analog/Section-5/12.png"></p>
+<blockquote>
+<p><strong>注意</strong>：需要重点记忆硅基三极管导通情况下的 <span class="math inline">\(U_{BE} = 0.7V\)</span> 以及 <span class="math inline">\(U_{CES} = 0.3V\)</span>，这两个值将会用于后续的具体计算。</p>
+</blockquote>
+<p>通过前面的分析可以知道，晶体管在三个不同的工作区域具有不同的特性，分析晶体管电路同样需要首先了解其工作状态，从而决定后续采用什么样的分析方法。判断晶体管工作状态的方法主要有如下两种：</p>
+<p><strong>三极管结偏置判定法</strong>：根据发射极与集电极偏置的不同来判定晶体管的工作状态，该方法通常用于实际存在电路的场景，借助万用表可以容易的测得晶体管每个电极对应的电位，进而判断出发射极与集电极的偏置状态，最后得到晶体管的工作状态：</p>
+<p><img src="/Electronics/Analog/Section-5/13.png"></p>
+<p><strong>三极管电流关系判定法</strong>：适用于实际电路不存在的场合，由于晶体管是一个电流控制元件，其输出与状态都与输入电流 <span class="math inline">\(I_B\)</span> 有极大的关系。因此，以临界的 <span class="math inline">\(I_B\)</span> 值作为标尺，就可以衡量出晶体管当前所处的工作区域：</p>
+<p><img src="/Electronics/Analog/Section-5/14.png"></p>
+<p>▶【例题】下图为 NPN 型三极管构成的两个电路，假设电路当中三极管 <strong>VT</strong> 的 <span class="math inline">\(U_{BE} = 0.7V\)</span>，试分析该三极管处于何种工作状态？</p>
+<p><img src="/Electronics/Analog/Section-5/15.png"></p>
+<p>▶【解答 - a】首先，假设晶体管处于临界状态，从而求解出此时的临界基极饱和电流 <span class="math inline">\(I_{BS}\)</span>。</p>
+<p><img src="/Electronics/Analog/Section-5/16.png"></p>
+<p>基于上图红线所示支路的电压方程，求解出 <span class="math inline">\(I_{BS}\)</span>：</p>
+<p><span class="math display">\[
+\begin{aligned}
+   V_{CC} = \beta \cdot I_{BS} \cdot R_C + U_{CES}  \implies
+   I_{BS} = \frac{V_{CC} - U_{CES}}{\beta \cdot R_C} = \frac{5 - 0.3}{40 \times 2000} = 0.058mA
+\end{aligned}
+\]</span></p>
+<p>接下来求解出实际的 <span class="math inline">\(I_B\)</span> 的值，再将其与 <span class="math inline">\(I_{BS}\)</span> 进行比较。</p>
+<p><img src="/Electronics/Analog/Section-5/17.png"></p>
+<p>基于上图所示输入回路的电压方程，对 <span class="math inline">\(I_B\)</span> 进行求解：</p>
+<p><span class="math display">\[
+\begin{aligned}
+   V_{CC} = I_B \cdot R_b + U_{BE}  \implies
+   I_B = \frac{V_{CC} - U_{BE}}{R_b} = \frac{5 - 0.7}{100000} = 0.043mA
+\end{aligned}
+\]</span></p>
+<p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 处于放大状态。</p>
+<p>▶【解答 - b】与前面电路相比，该电路多了一个射极电阻 <span class="math inline">\(R_E\)</span>，这里任然首先假设晶体管处于临界饱和状态：</p>
+<p><img src="/Electronics/Analog/Section-5/18.png"></p>
+<p>通过上面红线支路的电压方程，可以对 <span class="math inline">\(I_{BS}\)</span> 进行求解：</p>
+<p><span class="math display">\[
+\begin{aligned}
+   V_{CC} = \beta \cdot I_{BS} \cdot R_C + U_{CES} + (1 + \beta) \cdot I_{BS} \cdot R_e  \implies
+   I_{BS} = \frac{V_{CC} - U_{BE}}{R_e + \beta(R_c + R_e)} \approx \frac{12 - 0.3}{50 \times (1.5 + 0.1)} = 0.14mA
+\end{aligned}
+\]</span></p>
+<p>具体的 <span class="math inline">\(I_B\)</span> 仍然需要通过输入回路进行求解：</p>
+<p><img src="/Electronics/Analog/Section-5/19.png"></p>
+<p>通过上面标红支路的电压方程对 <span class="math inline">\(I_B\)</span> 进行求解：</p>
+<p><span class="math display">\[
+\begin{aligned}
+   V_{CC} = I_B \cdot R_b + U_{BE} + (1 + \beta) \cdot I_{B} \cdot R_e  \implies
+   I_{B} = \frac{V_{CC} - U_{BE}}{R_b + (1 + \beta) \cdot R_e} = \frac{12 - 0.7}{100 + 51 + 0.1} = 0.11mA
+\end{aligned}
+\]</span></p>
+<p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 处于放大状态。</p>
+<h3 id="主要参数">主要参数</h3>
 <h2 id="晶体管放大电路基础">晶体管放大电路基础</h2>
 <p>Ω</p>
 <p><span class="math display">\[
@@ -710,7 +863,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 \end{aligned}
 \]</span></p>
 <p>▶【例题】</p>
-<p><img src="/Electronics/Analog/Section-3/0.png"></p>
+<p><img src="/Electronics/Analog/Section-5/0.png"></p>
 <p>▶【解答】</p>
 
     </div>
@@ -810,7 +963,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#放大原理"><span class="nav-number">5.1.</span> <span class="nav-text">放大原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性-1"><span class="nav-number">5.2.</span> <span class="nav-text">伏安特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入特性曲线"><span class="nav-number">5.2.1.</span> <span class="nav-text">输入特性曲线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出特性曲线"><span class="nav-number">5.2.2.</span> <span class="nav-text">输出特性曲线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区"><span class="nav-number">5.3.</span> <span class="nav-text">工作区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参数"><span class="nav-number">5.4.</span> <span class="nav-text">主要参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -906,7 +1059,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">24:09</span>
+    <span title="站点阅读时长">24:15</span>
 </div>
 
         
