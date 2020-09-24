@@ -104,9 +104,19 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/17.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/18.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/19.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/20.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/21.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/22.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/23.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/24.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-6/1.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-6/2.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-6/3.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-6/4.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-6/5.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-5/0.png">
-<meta property="article:published_time" content="2020-09-23T16:35:40.157Z">
-<meta property="article:modified_time" content="2020-09-23T18:37:34.880Z">
+<meta property="article:published_time" content="2020-09-24T12:41:16.317Z">
+<meta property="article:modified_time" content="2020-09-24T16:11:11.915Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -302,10 +312,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-24 00:35:40 / 修改时间：02:37:34" itemprop="dateCreated datePublished" datetime="2020-09-24T00:35:40+08:00">2020-09-24</time>
+              <time title="创建时间：2020-09-24 20:41:16" itemprop="dateCreated datePublished" datetime="2020-09-24T20:41:16+08:00">2020-09-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-25 00:11:11" itemprop="dateModified" datetime="2020-09-25T00:11:11+08:00">2020-09-25</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -329,14 +345,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>20k</span>
+              <span>22k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>18 分钟</span>
+              <span>20 分钟</span>
             </span>
 
         </div>
@@ -843,8 +859,62 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 \]</span></p>
 <p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 处于放大状态。</p>
 <h3 id="主要参数">主要参数</h3>
+<p>晶体管的数据手册详细说明了元件的各项参数、特性曲线、封装尺寸等等，本小节将会讨论一些比较重要的参数。</p>
+<h4 id="电流放大系数">电流放大系数</h4>
+<p><strong>共发射极电流放大系数</strong>是晶体管电流放大能力的最直接体现。</p>
+<ul>
+<li><strong>直流电流放大系数</strong> <span class="math inline">\(h_{FE}\)</span>：体现了晶体管的<strong>直流电流</strong>放大能力，即共发射极直流电流放大系数 <span class="math inline">\(\bar \beta = \frac{I_C}{I_B}\)</span>；</li>
+<li><strong>交流电流放大系数</strong> <span class="math inline">\(h_{fe}\)</span>：体现了晶体管的<strong>交流电流</strong>放大能力，即共发射极交流电流放大系数 <span class="math inline">\(\beta = \frac{\Delta I_C}{\Delta I_B}\)</span>；</li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>：<span class="math inline">\(\bar \beta\)</span> 和 <span class="math inline">\(\beta\)</span> 参数的含义并不相同，但是当晶体管工作在恒流状态，特性曲线接近于平行，并且 <span class="math inline">\(I_{CE0}\)</span> 较小的情况下，两者在数值比较接近，因此在后续计算过程当中，会对这两个参数作近似相等处理；通过参数手册可以发现，<span class="math inline">\(\beta\)</span> 值的大小并不是固定的，它将会随着 <span class="math inline">\(I_C\)</span> 的变化而变化；</p>
+</blockquote>
+<p><strong>共基极电流放大系数</strong>在数据手册中并不直接体现，但是可以通过 <span class="math inline">\(\alpha\)</span> 和 <span class="math inline">\(\beta\)</span> 的如下关系进行求解：</p>
+<ul>
+<li><strong>直流电流放大系数</strong> <span class="math inline">\(\bar \alpha = \frac{I_C}{I_E} = \frac{\bar \beta}{1 + \bar \beta}\)</span>；</li>
+<li><strong>交流电流放大系数</strong> <span class="math inline">\(\alpha = \frac{\Delta I_C}{\Delta I_E} = \frac{\beta}{1 + \beta}\)</span>；</li>
+</ul>
+<h4 id="极间反向电流">极间反向电流</h4>
+<p>晶体管拥有 <code>C</code>、<code>B</code>、<code>E</code> 三个极，极间反向电流符号当中的哪个极被字母 <span class="math inline">\(O\)</span> 所取代，这一极就处于开路状态。</p>
+<ul>
+<li><strong>集基极反向截止电流</strong> <span class="math inline">\(I_{CBO}\)</span>：发射极 <code>E</code> 开路情况下，集电极到基极的反向电流，该电流由少子漂移运动产生，受温度影响较大，温度升高时 <span class="math inline">\(I_{CBO}\)</span> 也会明显增大；对于硅管而言，该参数的数值较小，仅纳安 <code>nA</code> 量级。 <img src="/Electronics/Analog/Section-5/20.png"></li>
+<li><strong>集射极反向截止电流</strong> <span class="math inline">\(I_{CEO}\)</span>：即前面提到的极射反向穿透电流，基极 <code>B</code> 开路的情况下，集电极和射极之间的电流，就好像该电流直接从集电极穿透进入发射极，该参数也会受到温度影响，当温度升高时该值会急剧增大。 <img src="/Electronics/Analog/Section-5/21.png"></li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>：通过对这两个参数的讨论可以发现，晶体管在工作时性能指标受温度的影响较大，表现出的温度特性较差。</p>
+</blockquote>
+<h4 id="极限参数">极限参数</h4>
+<ul>
+<li><strong>集电极最大允许电流</strong> <span class="math inline">\(I_{CM}\)</span>：前面内容提到 <span class="math inline">\(\beta\)</span> 随着 <span class="math inline">\(I_C\)</span> 的增大而减小，当 <span class="math inline">\(\beta\)</span> 值下降到线性放大区 <span class="math inline">\(\beta\)</span> 值的 70％ 时候，此时所对应的集电极电流就称为集电极最大允许电流 <span class="math inline">\(I_{CM}\)</span>。虽然晶体管的 <span class="math inline">\(I_C &gt; I_{CM}\)</span> 不至于损坏元件，但是电流放大系数 <span class="math inline">\(\beta\)</span> 会出现明显下降，影响了晶体管的放大能力，因此晶体管进行线性应用时，<span class="math inline">\(I_C\)</span> 不能够大于 <span class="math inline">\(I_{CM}\)</span>；</li>
+<li><strong>集射极反向击穿电压</strong> <span class="math inline">\(U_{BR/CEO}\)</span>：当晶体管集射极之间（集电结）的电压 <span class="math inline">\(U_{CE}\)</span> 超过该数值时，三极管就会被反向击穿（如果晶体管使用过程中发现该值突然增大，可能就说明已经被击穿）；</li>
+<li><strong>集电极最大允许功率损耗</strong> <span class="math inline">\(P_{CM}\)</span>：即集电极电流通过集电结时产生的功耗 <span class="math inline">\(PC = ICUCE &lt; PCM\)</span>（当晶体管工作在放大状态时，集电结承受着较高的反向电压和电流，所以集电结上会由于消耗较高功率而发热，如果超过这个额定参数就会出现热击击穿损坏）；</li>
+</ul>
+<p>通过以上 3 个极限参数的约束，以及对晶体管放大区的定义，就可以在特性曲线上得出一个安全工作区：</p>
+<p><img src="/Electronics/Analog/Section-5/22.png"></p>
+<p>除了让晶体管工作的电流电压处于安全工作区范围以内，确保晶体管安全稳定的工作还需要注意温度的影响：</p>
+<ul>
+<li><strong>温度对输入特性的影响</strong>：当温度每升高 <code>1°C</code>，<span class="math inline">\(U_{BE}\)</span> 将会减小 <code>-(2～2.5)mV</code>，即晶体管具有负温度系数； <img src="/Electronics/Analog/Section-5/23.png"></li>
+<li><strong>温度对输出特性 <span class="math inline">\(\beta\)</span> 的影响</strong>：温度升高时载流子扩散和漂移运动都会加快，因此减少了复合的机会。对于同样的基极电流 <span class="math inline">\(I_B\)</span>，当温度升高时，集电极电流 <span class="math inline">\(I_C\)</span> 将会明显增大，从而使得电流放大系数 <span class="math inline">\(\beta\)</span> 对于温度也敏感，即温度升高，输出特性曲线上移，间距拉大。温度每升高 <code>1°C</code>，电流放大系数 <span class="math inline">\(\beta\)</span> 就会增加 <span class="math inline">\(0.5%~1.0%\)</span>； <img src="/Electronics/Analog/Section-5/24.png"></li>
+<li><strong>温度对反向电流 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 的影响</strong>：温度每增加 <code>10°C</code> 就会导致 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 显著增大，该特性上硅管会优于锗管；</li>
+</ul>
 <h2 id="晶体管放大电路基础">晶体管放大电路基础</h2>
+<p>放大电路是一种可以将微弱信号（电压、电流、功率）放大至所需量级的电路。</p>
+<p><img src="/Electronics/Analog/Section-6/1.png"></p>
+<p>所有放大电路都需要至少一路直流电源进行供电，而直流电源正是放大所需能量的提供方。而放大的本质就是利用晶体管这类有源控制元件，实现能量的控制与转换，而不失真则是放大的前提和基本条件。</p>
+<p><img src="/Electronics/Analog/Section-6/2.png"></p>
+<p>放大电路当中存在交流信号源和直流电源，基于叠加原理，可以将电路中信号的响应分解为单独由直流电源作用下的<strong>静态</strong>和由交流信号源作用的<strong>动态</strong>。</p>
+<p><img src="/Electronics/Analog/Section-6/3.png"></p>
+<ul>
+<li><strong>静态</strong>：放大电路没有输入信号时，电路当中各点的电流、电压为直流信号；</li>
+<li><strong>动态</strong>：放大电路存在输入信号时，电路当中的电流、电压随交流信号而发生变化；</li>
+</ul>
+<p>当输入电压 <span class="math inline">\(u_i\)</span> 为零时，此时放大电路仅有直流电源单独作用，晶体管各极的电流和管压降都是直流分量，称为<strong>静态工作点 Q</strong>。对于放大电路而言，下图中的 <span class="math inline">\(I_{BQ}\)</span>、<span class="math inline">\(U_{BEQ}\)</span> 和 <span class="math inline">\(I_{CQ}\)</span>、<span class="math inline">\(U_{CEQ}\)</span> 四个值就是静态工作点 <strong>Q</strong> 的坐标；</p>
+<p><img src="/Electronics/Analog/Section-6/4.png"></p>
+<p>静态工作点的确立是放大电路分析和设计的重要环节，因为静态工作点的位置直接决定了晶体管是否能够稳定工作在放大区，所以放大电路需要时刻保持静态工作点的稳定，从而保证信号能够不失真的放大。</p>
+<p><img src="/Electronics/Analog/Section-6/5.png"></p>
+<h2 id="bjt-放大电路静态分析">BJT 放大电路静态分析</h2>
 <p>Ω</p>
+<p>°C</p>
 <p><span class="math display">\[
 \begin{cases}
     \\
@@ -963,7 +1033,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#放大原理"><span class="nav-number">5.1.</span> <span class="nav-text">放大原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性-1"><span class="nav-number">5.2.</span> <span class="nav-text">伏安特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入特性曲线"><span class="nav-number">5.2.1.</span> <span class="nav-text">输入特性曲线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出特性曲线"><span class="nav-number">5.2.2.</span> <span class="nav-text">输出特性曲线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区"><span class="nav-number">5.3.</span> <span class="nav-text">工作区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参数"><span class="nav-number">5.4.</span> <span class="nav-text">主要参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#放大原理"><span class="nav-number">5.1.</span> <span class="nav-text">放大原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性-1"><span class="nav-number">5.2.</span> <span class="nav-text">伏安特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入特性曲线"><span class="nav-number">5.2.1.</span> <span class="nav-text">输入特性曲线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出特性曲线"><span class="nav-number">5.2.2.</span> <span class="nav-text">输出特性曲线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区"><span class="nav-number">5.3.</span> <span class="nav-text">工作区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参数"><span class="nav-number">5.4.</span> <span class="nav-text">主要参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大系数"><span class="nav-number">5.4.1.</span> <span class="nav-text">电流放大系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极间反向电流"><span class="nav-number">5.4.2.</span> <span class="nav-text">极间反向电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极限参数"><span class="nav-number">5.4.3.</span> <span class="nav-text">极限参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bjt-放大电路静态分析"><span class="nav-number">7.</span> <span class="nav-text">BJT 放大电路静态分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1059,7 +1129,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">24:15</span>
+    <span title="站点阅读时长">24:17</span>
 </div>
 
         
