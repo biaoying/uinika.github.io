@@ -149,7 +149,7 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-7/13.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-7/99.png">
 <meta property="article:published_time" content="2020-09-29T13:33:19.310Z">
-<meta property="article:modified_time" content="2020-09-29T15:12:57.331Z">
+<meta property="article:modified_time" content="2020-09-29T16:40:45.582Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -345,10 +345,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-29 21:33:19 / 修改时间：23:12:57" itemprop="dateCreated datePublished" datetime="2020-09-29T21:33:19+08:00">2020-09-29</time>
+              <time title="创建时间：2020-09-29 21:33:19" itemprop="dateCreated datePublished" datetime="2020-09-29T21:33:19+08:00">2020-09-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-30 00:40:45" itemprop="dateModified" datetime="2020-09-30T00:40:45+08:00">2020-09-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -470,13 +476,13 @@ C_j = C_b+ C_d
 <tr class="odd">
 <td><strong>硅</strong>（Si）</td>
 <td>约为 <code>0.5V</code></td>
-<td><code>0.6V ~ 0.8V</code>（典型值 <code>0.7V</code>）</td>
+<td><code>0.6V \sim 0.8V</code>（典型值 <code>0.7V</code>）</td>
 <td>小于<code>0.1uA</code></td>
 </tr>
 <tr class="even">
 <td><strong>锗</strong>（Ge）</td>
 <td>约为 <code>0.1V</code></td>
-<td><code>0.1V ~ 0.3V</code></td>
+<td><code>0.1V \sim 0.3V</code></td>
 <td>数十微安</td>
 </tr>
 </tbody>
@@ -590,21 +596,21 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 <p><img src="/Electronics/Analog/Section-3/6.png"></p>
 <p>然后，进行<strong>动态分析</strong>，绘制上面电路的交流通路，即仅考虑交流信号源作用的时候，交流分量流经的通路：</p>
 <p><img src="/Electronics/Analog/Section-3/7.png"></p>
-<p>输入的交流电压信号源 <span class="math inline">\(v_s\)</span> 驮载在直流电压 <span class="math inline">\(v_dd\)</span> 上注入电路（需保持两者坐标轴方向一致），此时二极管的工作点将在 <span class="math inline">\(Q^{&#39;}\)</span> 和 <span class="math inline">\(Q^{&#39;&#39;}\)</span> 之间进行变化，通过作图就可以得到二极管两端的电压 <span class="math inline">\(v_d\)</span> 和电流 <span class="math inline">\(i_d\)</span> 的变化：</p>
+<p>输入的交流电压信号源 <span class="math inline">\(v_s\)</span> 驮载在直流电压 <span class="math inline">\(v_{dd}\)</span> 上注入电路（需要保持两者坐标轴方向一致），此时二极管的工作点将会在 <span class="math inline">\(Q^{&#39;}\)</span> 和 <span class="math inline">\(Q^{&#39;&#39;}\)</span> 之间进行变化，通过作图就可以得到二极管两端的电压 <span class="math inline">\(v_d\)</span> 和电流 <span class="math inline">\(i_d\)</span> 的变化：</p>
 <p><img src="/Electronics/Analog/Section-3/8.png"></p>
 <p>最后，结合前面得到的静态工作点，最终就可以得到流过二极管两端电压和电流的总瞬时值，并且完成图解法分析。</p>
-<p><strong>图解法</strong>运用的前提是已经获取到元件的伏安特性曲线，其优点在于能够直观展示电路参数对于性能的影响，缺点则在于存在作图误差，且某些参数无法直接求解。</p>
+<p><strong>图解法</strong>运用的前提是已经获取到元件的伏安特性曲线，其优点在于能够直观展示电路参数对于性能的影响，缺点则在于存在作图误差，且某些参数无法直接进行求解。</p>
 <h3 id="等效模型分析法">等效模型分析法</h3>
 <p>虽然二极管的伏安特性是一种非线性元件，但是其局部区域依然具有线性的特征。如果选择合适的线性元件，等效的反映二极管在这些区域的端口特性，就可以建立二极管的线性等效模型，将非线性电路转换为线性电路，进而利用线性电路分析方法简化分析过程。</p>
 <p><img src="/Electronics/Analog/Section-3/9.png"></p>
-<p>二极管常用的等效模型主要有下面三种，其中红色线条为折线化处理的伏安特性，黑色虚线则表示实际的伏安特性，最底部为对应的等效电路。</p>
+<p>二极管常用的等效模型主要有下面三种，其中红色线条为折线化处理的伏安特性，黑色虚线则表示实际的伏安特性，最底部为相应的等效电路。</p>
 <ul>
 <li><strong>理想模型</strong>：表明二极管导通时正向压降为零，截止时反向电流为零，称为理想二极管，采用空心的二极管符号来表示。 <img src="/Electronics/Analog/Section-3/10.png"></li>
-<li><strong>恒压降模型</strong>：表明二极管导通时正向压降为一个常量 <span class="math inline">\(U_{on}\)</span>，截止时反向电流为零。因而等效电路是理想二极管串联电压源 <span class="math inline">\(U_{on}\)</span>。 <img src="/Electronics/Analog/Section-3/11.png"></li>
+<li><strong>恒压降模型</strong>：表明二极管导通时正向压降为一个常量 <span class="math inline">\(U_{on}\)</span>，截止时反向电流为零，因而等效电路是理想二极管串联一个电压源 <span class="math inline">\(U_{on}\)</span>。 <img src="/Electronics/Analog/Section-3/11.png"></li>
 <li><strong>折线模型</strong>：表明当二极管正向电压 <span class="math inline">\(U\)</span> 大于 <span class="math inline">\(U_{on}\)</span> 以后，电流 <span class="math inline">\(I\)</span> 与 <span class="math inline">\(U\)</span> 成线性关系，直线斜率为 <span class="math inline">\(\frac{1}{r_D}\)</span>；二极管截止时反向电流为零，因此等效电路为二极管串联电压源 <span class="math inline">\(U_{on}\)</span> 和电阻 <span class="math inline">\(r_D\)</span>，并且 <span class="math inline">\(r_D=\frac{\Delta U}{\Delta I}\)</span>。 <img src="/Electronics/Analog/Section-3/12.png"></li>
 </ul>
 <blockquote>
-<p><strong>注意</strong>：二极管工作在线性区是以上模型成立的充分必须条件，如果二极管工作在非线性区，则只能选择图解法。</p>
+<p><strong>注意</strong>：二极管工作在线性区是以上模型成立的充分必要条件，如果二极管工作在非线性区，则只能选择图解法。</p>
 </blockquote>
 <p>分析二极管电路，需要遵循<strong>先静态后动态</strong>以及<strong>先定性后定量</strong>的原则，即首先判断二极管是处于<strong>导通</strong>还是<strong>截止</strong>状态，具体分析方法与步骤如下所示：</p>
 <table>
@@ -619,22 +625,22 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 </tr>
 </tbody>
 </table>
-<p>▶【例题】设二极管电路如下面左图所示，<span class="math inline">\(V_{DD}\)</span> 分别为 <code>10V</code> 以及 <code>1.5V</code>，电阻 <span class="math inline">\(R\)</span> 为 <span class="math inline">\(10kΩ\)</span>，下面右图是左图的习惯画法。对于上述两种情况，试分别应用理想模型、恒压降模型、折线模型求解求解 <span class="math inline">\(i_D\)</span> 和 <span class="math inline">\(u_D\)</span> 的值？</p>
+<p>▶【例题】设二极管电路如下面左图所示，<span class="math inline">\(V_{DD}\)</span> 分别为 <code>10V</code> 以及 <code>1.5V</code>，电阻 <span class="math inline">\(R\)</span> 为 <span class="math inline">\(10kΩ\)</span>，下面右图是左图的习惯画法。对于上述两种情况，试分别应用理想模型、恒压降模型、折线模型求解 <span class="math inline">\(i_D\)</span> 和 <span class="math inline">\(u_D\)</span> 的值？</p>
 <p><img src="/Electronics/Analog/Section-3/13.png"></p>
 <p>▶【解答】首先，针对 10V 直流电源进行分析，假设断开二极管 D，由于此时电路当中没有电流，所以二极管阳极电位 <span class="math inline">\(V_阳 = V_{DD}=10V\)</span> 阴极电位 <span class="math inline">\(V_阴 = 0V\)</span>。</p>
 <p>如果采用<strong>理想模型</strong>，由于其阳极电位大于阴极电位 <span class="math inline">\(V_阳 &gt; V_阴\)</span>，此时二极管处于导通状态，可以等效为一个闭合的开关：</p>
 <p><img src="/Electronics/Analog/Section-3/14.png"></p>
-<p>此时流过二极管的端电流 <span class="math inline">\(i_D = \frac{V_{DD}}{R} = 1mA\)</span>，端电压 <span class="math inline">\(u_D = 0V\)</span>。</p>
+<p>此时流过二极管的端电流 <span class="math inline">\(i_D = \frac{V_{DD}}{R} = 1mA\)</span>，而端电压 <span class="math inline">\(u_D = 0V\)</span>。</p>
 <p>如果采用<strong>恒压降模型</strong>，由于其阳极电位高于阴极电位<code>0.7V</code>以上 <span class="math inline">\(V_阳 - V_阴 &gt; 0.7V\)</span>，此时二极管仍然处于导通状态，可以利用恒压降模型的等效电路进行替换：</p>
 <p><img src="/Electronics/Analog/Section-3/15.png"></p>
 <p>此时流过二极管的端电流 <span class="math inline">\(i_D = \frac{V_{DD} - 0.7V}{R} = 0.93mA\)</span>，端电压 <span class="math inline">\(u_D = 0.7V\)</span> 为恒压降的<code>0.7</code>V。</p>
 <p>如果采用<strong>折线模型</strong>，同样因为 <span class="math inline">\(V_阳 - V_阴 &gt; 0.7V\)</span>，所以二极管依然处于导通状态，其线性等效电路需要加上二极管的内阻 <span class="math inline">\(r_D\)</span> 进行替换：</p>
 <p><img src="/Electronics/Analog/Section-3/16.png"></p>
-<p>由于二极管内阻 <span class="math inline">\(r_D = \frac{26mV}{I_D} = 28Ω\)</span>，将其代入电压方程即可以求解出端电流 <span class="math inline">\(i_D = \frac{V_{DD} - 0.7V}{R + r_D} = 0.927mA\)</span>，端电压包含了内阻上的压降 <span class="math inline">\(u_D = 0.7V + i_D \cdot r_D = 0.73V\)</span>。</p>
-<p>举一反三，同样可以计算出 <span class="math inline">\(V_{DD} = 1.5V\)</span> 时分别采用理想模型、恒压降模型、折线模型得到的 <span class="math inline">\(i_D\)</span> 和 <span class="math inline">\(u_D\)</span> 的值，然后通过下面表格前三行对全部计算结果进行了统计：</p>
+<p>由于二极管内阻 <span class="math inline">\(r_D = \frac{26mV}{I_D} = 28Ω\)</span>，将其代入电压方程即可以求解出端电流 <span class="math inline">\(i_D = \frac{V_{DD} - 0.7V}{R + r_D} = 0.927mA\)</span>，而端电压包含有内阻上的压降 <span class="math inline">\(u_D = 0.7V + i_D \cdot r_D = 0.73V\)</span>。</p>
+<p>举一反三，同样可以计算出 <span class="math inline">\(V_{DD} = 1.5V\)</span> 时分别采用理想模型、恒压降模型、折线模型得到的 <span class="math inline">\(i_D\)</span> 和 <span class="math inline">\(u_D\)</span> 的值，然后通过下面表格的前 3 行对全部计算结果进行统计：</p>
 <p><img src="/Electronics/Analog/Section-3/17.png"></p>
-<p>上面表格的最后三行，分别展示了采用各种模型计算后所产生的相对误差。可以发现 <span class="math inline">\(V_{DD} = 10V\)</span> 时候误差相对较小，当 <span class="math inline">\(V_{DD} = 1.5V\)</span> 的时候误差则急剧增大。这是由于二极管等效模型所忽略的变量，会在电压较低的情况下凸显出来。此外，无论是在 <code>10V</code> 还是 <code>1.5V</code>，恒压降和折线模型的误差都比较小。</p>
-<p>综上所述可以得到这样的结论：<strong>如果电源电压较高，可以选择理想模型或者恒压降模型；而当电源电压或者信号较小的时候，则应该选择更加精确的恒压降模型和折线模型。如果要考虑二极管对于交流信号的响应，则应该选择折线模型。日常电路分析当中，恒压降模型会相对更加常用</strong>。</p>
+<p>上面表格的最后 3 行，则分别展示了采用各种模型计算后所产生的相对误差。可以发现 <span class="math inline">\(V_{DD} = 10V\)</span> 时候误差相对较小，当 <span class="math inline">\(V_{DD} = 1.5V\)</span> 的时候误差则急剧增大。这是由于二极管等效模型所忽略的变量，会在电压较低的情况下凸显出来。此外，无论是在 <code>10V</code> 还是 <code>1.5V</code>，恒压降和折线模型的误差都比较小。</p>
+<p>综上所述就可以得到这样的结论：<strong>如果电源电压较高，可以选择理想模型或者恒压降模型；而当电源电压或者信号较小的时候，则应该选择更加精确的恒压降模型和折线模型。如果要考虑二极管对于交流信号的响应，则应该选择折线模型。日常电路分析当中，恒压降模型会相对更加常用</strong>。</p>
 <p>▶【例题】下面电路当中有 2 个二极管，2 个直流电源，输入信号的波形已经给出，要求绘制出当二极管指定为理想模型时，电路的输出波形？</p>
 <p><img src="/Electronics/Analog/Section-3/18.png"></p>
 <p>▶【解答】首先，断开二极管，独立分析其两端的电压大小与极性。</p>
@@ -644,7 +650,7 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 <li>当 <span class="math inline">\(-V_2 &lt; v_i &lt; V_1\)</span> 的时候，二极管 <span class="math inline">\(D_1\)</span> 截止，二极管 <span class="math inline">\(D_2\)</span> 截止，此时 <span class="math inline">\(v_o = v_i\)</span>；</li>
 <li>当 <span class="math inline">\(v_i &lt; -V_2\)</span> 的时候，二极管 <span class="math inline">\(D_1\)</span> 截止，二极管 <span class="math inline">\(D_2\)</span> 导通，此时 <span class="math inline">\(v_o = -V_2\)</span>；</li>
 </ol>
-<p>根据上面的分析结果，就可以马上得到 <span class="math inline">\(V_2\)</span> 的输出波形：</p>
+<p>根据上面的分析结果，可以马上得到 <span class="math inline">\(V_2\)</span> 如下的输出波形：</p>
 <p><img src="/Electronics/Analog/Section-3/19.png"></p>
 <p>这样就完成了本题的求解，观察上面的输出波形会发现，如果调整两个直流电源 <span class="math inline">\(V_1\)</span> 和 <span class="math inline">\(V_2\)</span> 的值，就可以确定输出信号的幅值，因此该电路实现的是<strong>双向限幅功能</strong>。</p>
 <p>▶【例题】硅二极管组成的电路如图所示。当 <span class="math inline">\(V_{I1}\)</span> 和 <span class="math inline">\(V_{I2}\)</span> 分别取值为 <span class="math inline">\(0V\)</span> 或 <span class="math inline">\(3V\)</span> 时，试采用二极管的恒压降模型（导通压降 <span class="math inline">\(0.7V\)</span>），求解 <span class="math inline">\(V_{I1}\)</span> 和 <span class="math inline">\(V_{I2}\)</span> 在不同值组合的情况下，输出电压 <span class="math inline">\(v_o\)</span> 的值分别为多少？</p>
@@ -665,37 +671,37 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 <p><img src="/Electronics/Analog/Section-3/23.png"></p>
 <p>放大电路通常需要双电源供电，利用双绕组变压器结合二极管构成的整流桥，就可以方便的得到一个<strong>双电源电路</strong>。</p>
 <p><img src="/Electronics/Analog/Section-3/24.png"></p>
-<p>许多电子设备同时采用 220V 交流电和电池进行双电源供电，<strong>供电门电路</strong>正是利用了二极管的单向导电性，让两套电源在向用电器供电时都经过二极管，从而确保电流只从直流电源或者电池流向用电器，避免两套电源相互干扰。</p>
+<p>许多电子设备同时采用 <code>220V</code> 交流电和电池进行双电源供电，<strong>供电门电路</strong>正是利用了二极管的单向导电性，让两套电源在向用电器供电时都经过二极管，从而确保电流只从直流电源或者电池流向用电器，避免两套电源相互干扰。</p>
 <p><img src="/Electronics/Analog/Section-3/25.png"></p>
 <p>利用二极管与电容配合组成的<strong>倍压电路</strong>，将一个较低的交流电压，整流为一个较高的直流电压。</p>
 <p><img src="/Electronics/Analog/Section-3/26.png"></p>
 <h2 id="稳压二极管">稳压二极管</h2>
 <p>稳压二极管除了具备单向导电性之外，还具有稳压的能力，其符号与普通二极管稍有区别，并且阳极和阴极的标识与普通二极管相反，即阳极为<code>+</code>阴极为<code>-</code>。</p>
 <p><img src="/Electronics/Analog/Section-4/1.png"></p>
-<p>稳压二极管的伏安特性与普通二极管类似，正向特性为指数曲线，当稳压二极管外加反向电压增大到一定程度时则发生击穿。但是稳压二极管击穿区的曲线非常陡峭，几乎平行于纵轴，虽然击穿后电流变化较大，但是两端电压的变化极小，利用这个特性，稳压二极管在电路当中可以表现出稳压特性。</p>
+<p>稳压二极管的伏安特性与普通二极管类似，正向特性为指数曲线，当稳压二极管外加反向电压增大到一定程度时则发生击穿。但是稳压二极管击穿区的曲线非常陡峭，几乎平行于纵轴，虽然击穿后电流变化较大，但是两端电压的变化极小，利用这个特性，稳压二极管在电路当中就可以表现出稳压特性。</p>
 <p><img src="/Electronics/Analog/Section-4/2.png"></p>
 <ul>
 <li><strong>稳定电压</strong> <span class="math inline">\(U_z\)</span>：稳压二极管正常工作时（反向击穿）两端的电压；</li>
-<li><strong>稳定电流</strong> <span class="math inline">\(I_z\)</span>：指稳压管正常工作时的参考电流；</li>
+<li><strong>稳定电流</strong> <span class="math inline">\(I_z\)</span>：稳压管正常工作时的参考电流；</li>
 <li><strong>动态电阻</strong> <span class="math inline">\(r_z\)</span>：稳压二极管工作在稳压区时，端电压变化量与其电流变化量的比值，<span class="math inline">\(r_z = \frac{\Delta U_z}{\Delta I_z}\)</span>，该值越小，电流 <span class="math inline">\(I_z\)</span> 变化时 <span class="math inline">\(U_z\)</span> 的变化就越小，稳压管的稳压特性就越好；</li>
 <li><strong>最大允许耗散功率</strong> <span class="math inline">\(P_{zm}\)</span>：等于稳压二极管的稳定电压 <span class="math inline">\(U_z\)</span> 与最大稳定电流 <span class="math inline">\(I_{zm}\)</span> 的乘积；不超过该功率时，电流越大，稳压效果越好，超过该值则可能会导致损坏；</li>
 </ul>
 <p>稳压二极管发挥稳压功能所需要遵循的规则和典型电路如下所示：</p>
 <p><img src="/Electronics/Analog/Section-4/3.png"></p>
 <ul>
-<li>稳压二极管反偏，并且保证管子工作在反向击穿区；</li>
+<li>稳压二极管反偏，并且确保工作在反向击穿区；</li>
 <li>稳压二极管必须与负载电阻 <span class="math inline">\(R_L\)</span> 并联；</li>
 <li>必须通过限流电阻限制流过稳压二极管的电流 <span class="math inline">\(I_Z\)</span>，使其不超过额定工作值；</li>
 </ul>
-<p>引发负载两端电压变化的因素主要有两个：一个是<strong>电源电压本身的波动</strong>，另一个则是由<strong>负载本身的变化</strong>。</p>
+<p>引发负载两端电压变化的因素主要有两个：一个是<strong>电源电压本身的波动</strong>，另一个则是<strong>负载本身的变化</strong>。</p>
 <ol type="1">
 <li><strong>如果电压 <span class="math inline">\(U_1\)</span> 出现波动，而负载 <span class="math inline">\(R_L\)</span> 保持不变的时候</strong>。如果由于某种原因造成输入电压 <span class="math inline">\(U_I\)</span> 增大，此时输出电压 <span class="math inline">\(U_O\)</span> 也会有增大的趋势（输出电压 <span class="math inline">\(U_O\)</span> 就是二极管两端的电压），稳压二极管的电流 <span class="math inline">\(I_{DZ}\)</span> 将会显著增加（结合伏安特性曲线，稳压二极管的特性在于两端电压出现微小变化时，电流将会出现较大的变化）。根据基尔霍夫电流定律 <span class="math inline">\(I_R = I_{DZ} + I_O\)</span> 就会使得 <span class="math inline">\(I_R\)</span> 增大，进而导致限流电阻 <span class="math inline">\(R\)</span> 上的电压降 <span class="math inline">\(U_R\)</span> 也会增大，根据基尔霍夫电压定律 <span class="math inline">\(U_O = U_I - U_R\)</span>，当输入电压 <span class="math inline">\(U_I\)</span> 增大的时候，由于限流电阻上的电压 <span class="math inline">\(U_R\)</span> 也在增大，就会使得输出电压 <span class="math inline">\(U_O\)</span> 基本保持不变，达到稳压的效果。</li>
 <li><strong>当负载 <span class="math inline">\(R_L\)</span> 发生变化，输入电压 <span class="math inline">\(U_I\)</span> 保持不变的时候</strong>。负载电阻 <span class="math inline">\(R_L\)</span> 的增大会导致输出电压 <span class="math inline">\(U_O\)</span> 增大，进而导致稳压二极管上的电流 <span class="math inline">\(I_{DZ}\)</span> 显著增大，同样使得 <span class="math inline">\(I_R\)</span> 也会增大，最终通过限流电阻电压的变化，使得 <span class="math inline">\(U_O\)</span> 保持不变。</li>
 </ol>
 <p>综上所述，稳压二极管稳定电压的基本过程，都是通过两端电压的微小变化，引起电流的显著变化，从而调整限流电阻 <span class="math inline">\(R\)</span> 上的压降，最终使得输出电压 <span class="math inline">\(U_O\)</span> 保持基本稳定。</p>
-<p>通过上面对稳压二极管原理的讨论，限流电阻对于稳压二极管的正常工作和稳压而言都至关重要，因此限流电阻的选择就成为了稳压二极管电路的重要环节。接下来，基于如下典型的稳压二极管电路，讨论限流电阻的选择问题。</p>
+<p>通过上面对稳压二极管原理的讨论，限流电阻对于稳压二极管的正常工作和稳压而言都至关重要，因此限流电阻的选择就成为了稳压二极管电路设计的重要环节。接下来，基于下面典型的稳压二极管电路，讨论限流电阻的选择问题。</p>
 <p><img src="/Electronics/Analog/Section-4/4.png"></p>
-<p>假设上面电路当中，输入电压的变化范围为 <span class="math inline">\(U_{INmin} ~ U_{INmax}\)</span>，负载电阻的变化范围为 <span class="math inline">\(R_{Lmin} ~ R_{Lmax}\)</span>，根据欧姆定理很容易发现，负载电流的最小值和最大值分别为：</p>
+<p>假设上面电路当中，输入电压的变化范围为 <span class="math inline">\(U_{INmin} \sim U_{INmax}\)</span>，负载电阻的变化范围为 <span class="math inline">\(R_{Lmin} \sim R_{Lmax}\)</span>，根据欧姆定理很容易发现，负载电流的最小值和最大值分别为：</p>
 <p><span class="math display">\[
 \begin{cases}
     I_{Lmin} = \frac{U_Z}{R_{Lmax}} \\
@@ -710,15 +716,15 @@ I_D = -\frac{1}{R}V_D + \frac{V_{DD}}{R}
 <p><span class="math display">\[
 \frac{U_{INmin} - U_Z}{R} - I_{Lmax} = I_Z \ge I_{Zmin} \implies  R \le \frac{U_{INmin} - U_Z}{I_{Lmax} + I_{Zmin}} = R_{max}
 \]</span></p>
-<p>根据上面的分析，就可以得到限流电阻的取值范围应为 <span class="math inline">\(R_{min} ~ R_{max}\)</span>，即 <span class="math inline">\(R_{min} \le R \le R_{max}\)</span>。</p>
+<p>根据上面的分析，就可以得到限流电阻的取值范围应为 <span class="math inline">\(R_{min} \sim R_{max}\)</span>，即 <span class="math inline">\(R_{min} \le R \le R_{max}\)</span>。</p>
 <p>▶【例题】如图所示的稳压二极管电路，已知其具体参数为 <span class="math inline">\(U_Z = 12V\)</span>、<span class="math inline">\(I_Z = 5mA\)</span>、<span class="math inline">\(I_{ZM} = 50mA\)</span>。</p>
 <p>（1）如果 <span class="math inline">\(U_I = 3V\)</span> 并且限流电阻等于负载电阻 <span class="math inline">\(R_L = R\)</span>，求解 <span class="math inline">\(U_O\)</span> ？</p>
-<p>（2）如果 <span class="math inline">\(U_I = 20V\)</span> 并且其允许的变化量为 <span class="math inline">\(\pm 2V\)</span>，而 <span class="math inline">\(I_O\)</span> 的变化范围要求在 <span class="math inline">\(0mA ~ 15mA\)</span>，试选择限流电阻 <span class="math inline">\(R\)</span> 的合适阻值与功率？</p>
+<p>（2）如果 <span class="math inline">\(U_I = 20V\)</span> 并且其允许的变化量为 <span class="math inline">\(\pm 2V\)</span>，而 <span class="math inline">\(I_O\)</span> 的变化范围要求在 <span class="math inline">\(0mA \sim 15mA\)</span>，试选择限流电阻 <span class="math inline">\(R\)</span> 的合适阻值与功率？</p>
 <p><img src="/Electronics/Analog/Section-4/5.png"></p>
 <p>▶【解答-1】稳压二极管电路的分析，依然秉承先定性后定量的原则。这里首先将稳压二极管从电路里断开，从而独立讨论两端电位的极性与大小，从而判断出稳压二极管的工作状态。</p>
-<p>当 <span class="math inline">\(U_I = 3V\)</span> 并且 <span class="math inline">\(R_L = R\)</span>，显然此时稳压二极管的阴极电位为 <code>1.5V</code>，而阳极电位为 <code>0V</code>，稳压二极管处于反偏状态。此时，由于 <span class="math inline">\(1.5V &lt; U_Z = 12V\)</span>，工作点并没有进入反向击穿区，此时稳压二极管反偏截止，不能进行稳压。</p>
+<p>当 <span class="math inline">\(U_I = 3V\)</span> 并且 <span class="math inline">\(R_L = R\)</span>，显然此时稳压二极管的阴极电位为 <code>1.5V</code>，而阳极电位为 <code>0V</code>，稳压二极管处于反偏状态。此时由于 <span class="math inline">\(1.5V &lt; U_Z = 12V\)</span>，工作点并没有进入反向击穿区，此时稳压二极管反偏截止，不能进行稳压。</p>
 <p><img src="/Electronics/Analog/Section-4/6.png"></p>
-<p>根据上面的结论，就可以很容易求解得到此时的 <span class="math inline">\(U_O\)</span> 的值为：</p>
+<p>根据上面的结论，就可以很容易求解得到此时 <span class="math inline">\(U_O\)</span> 的值为：</p>
 <p><span class="math display">\[
 U_O = \frac{R_L}{R_L + R} \cdot U_I = \frac{3}{2}V = 1.5V
 \]</span></p>
@@ -731,7 +737,7 @@ R_{min} = \frac{U_{Imax} - U_Z}{I_{ZM} + I_{Omin}} = \frac{(20+2-12)V}{50mA} = 2
 <p><span class="math display">\[
 R_{max} = \frac{U_{Imin} - U_Z}{I_{Z} + I_{Omax}} = \frac{(20-2-12)V}{(5 + 15)mA} = 300Ω
 \]</span></p>
-<p>结合上面的分析结论，可以在 <span class="math inline">\(200Ω \le R \le 300Ω\)</span> 范围选取限流电阻 <span class="math inline">\(R\)</span> 的值。如果取值为 <span class="math inline">\(270Ω\)</span>，则限流电阻上产生的最大功耗 <span class="math inline">\(P_{Rmax}\)</span> 为：</p>
+<p>结合上面的分析结论，可以在 <span class="math inline">\(200Ω \le R \le 300Ω\)</span> 范围选取限流电阻 <span class="math inline">\(R\)</span> 的值。如果取值为 <span class="math inline">\(270Ω\)</span>，则限流电阻上产生的最大功耗 <span class="math inline">\(P_{Rmax}\)</span> 应为：</p>
 <p><span class="math display">\[
 P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 \]</span></p>
@@ -739,10 +745,10 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 <ol type="1">
 <li>稳压二极管工作在<strong>反向击穿区</strong>，普通二极管工作在<strong>正向导通区</strong>；</li>
 <li>稳压二极管反向特性曲线比普通二极管更为陡峭，虽然两端电流会在较大范围内变化，但是两端的电压变化较小，因此具备稳压作用；</li>
-<li>稳压二极管反向击穿电压相比普通二极管更低，普通二极管反向击穿电压为 <code>25 ~ 50V</code>，稳压二极管的反向击穿电压则要低得多，其中 <code>6V</code> 左右稳压二极管的稳压输出最为稳定；</li>
+<li>稳压二极管反向击穿电压相比普通二极管更低，普通二极管反向击穿电压为 <code>25 \sim 50V</code>，稳压二极管的反向击穿电压则要低得多，其中 <code>6V</code> 左右稳压二极管的稳压输出最为稳定；</li>
 <li>稳压二极管去掉反向击穿电压之后，只要不超过其额定功耗，就又可以恢复正常工作；而普通二极管进入反向击穿区，就会失去单向导电性，同时由于反向电流过大，容易烧毁普通二极管；</li>
 </ol>
-<p>除了普通二极管与稳压二极管之外，还有存在下面表格中这样的其它类型二极管：</p>
+<p>除了普通二极管和稳压二极管之外，还存在下面表格当中的这些其它类型二极管：</p>
 <p><img src="/Electronics/Analog/Section-4/7.png"></p>
 <h2 id="双极型晶体管">双极型晶体管</h2>
 <p>晶体三极管当中存在<strong>两种带有不同极性电荷的载流子</strong>参与导电，所以称为<strong>双极型晶体管</strong>（<strong>B</strong>ipolar <strong>J</strong>unction <strong>T</strong>ransistor），也称为<strong>半导体三极管</strong>。主要分为 <strong>PNP</strong> 和 <strong>NPN</strong> 两种类型，通过它们符号中箭头的指向加以区分记忆，即都是<strong>从 P 型半导体指向 N 型半导体</strong>。</p>
@@ -921,7 +927,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 <p>除了让晶体管工作的电流电压处于安全工作区范围以内，确保晶体管安全稳定的工作还需要注意温度的影响：</p>
 <ul>
 <li><strong>温度对输入特性的影响</strong>：当温度每升高 <code>1°C</code>，<span class="math inline">\(U_{BE}\)</span> 将会减小 <code>-(2～2.5)mV</code>，即晶体管具有负温度系数； <img src="/Electronics/Analog/Section-5/23.png"></li>
-<li><strong>温度对输出特性 <span class="math inline">\(\beta\)</span> 的影响</strong>：温度升高时载流子扩散和漂移运动都会加快，因此减少了复合的机会。对于同样的基极电流 <span class="math inline">\(I_B\)</span>，当温度升高时，集电极电流 <span class="math inline">\(I_C\)</span> 将会明显增大，从而使得电流放大系数 <span class="math inline">\(\beta\)</span> 对于温度也敏感，即温度升高，输出特性曲线上移，间距拉大。温度每升高 <code>1°C</code>，电流放大系数 <span class="math inline">\(\beta\)</span> 就会增加 <span class="math inline">\(0.5%~1.0%\)</span>； <img src="/Electronics/Analog/Section-5/24.png"></li>
+<li><strong>温度对输出特性 <span class="math inline">\(\beta\)</span> 的影响</strong>：温度升高时载流子扩散和漂移运动都会加快，因此减少了复合的机会。对于同样的基极电流 <span class="math inline">\(I_B\)</span>，当温度升高时，集电极电流 <span class="math inline">\(I_C\)</span> 将会明显增大，从而使得电流放大系数 <span class="math inline">\(\beta\)</span> 对于温度也敏感，即温度升高，输出特性曲线上移，间距拉大。温度每升高 <code>1°C</code>，电流放大系数 <span class="math inline">\(\beta\)</span> 就会增加 <span class="math inline">\(0.5% \sim 1.0%\)</span>； <img src="/Electronics/Analog/Section-5/24.png"></li>
 <li><strong>温度对反向电流 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 的影响</strong>：温度每增加 <code>10°C</code> 就会导致 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 显著增大，该特性上硅管会优于锗管；</li>
 </ul>
 <h2 id="晶体管放大电路基础">晶体管放大电路基础</h2>
@@ -1071,7 +1077,7 @@ R_o = \frac{U_o}{I_o} |_{R_L = \infty, u_s = 0}
 <p>首先，任何一种静态分析方法，都需要准确的获得放大电路的直流通路：</p>
 <p><img src="/Electronics/Analog/Section-7/3.png"></p>
 <p>上图直流通路当中各点的电流、电压都是直流分量，可以采用大符号大下标进行表示，这里的 <span class="math inline">\(I_B\)</span>、<span class="math inline">\(I_C\)</span>、<span class="math inline">\(U_{BE}\)</span>、<span class="math inline">\(U_{CE}\)</span> 就是待求取的静态工作点。</p>
-<p>已知当晶体管处于发射结正偏时，PN 结的正向导通压降可以视为一个确定值，例如硅管 <span class="math inline">\(U_{BEQ} = (0.6V ~ 0.8V)\)</span>，通常取典型值 <code>0.7V</code>。此外，当晶体管进行放大的时候，<span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(I_B\)</span> 之间有着比较固定的 <span class="math inline">\(I_C = \beta I_B\)</span> 关系。最后，结合 KVL 方程就可以对静态工作点进行求解，如果已知 <span class="math inline">\(V_CC\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span>、<span class="math inline">\(U_{BEQ}\)</span>、<span class="math inline">\(\beta\)</span>，就可以联立得到如下的方程：</p>
+<p>已知当晶体管处于发射结正偏时，PN 结的正向导通压降可以视为一个确定值，例如硅管 <span class="math inline">\(U_{BEQ} = (0.6V \sim 0.8V)\)</span>，通常取典型值 <code>0.7V</code>。此外，当晶体管进行放大的时候，<span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(I_B\)</span> 之间有着比较固定的 <span class="math inline">\(I_C = \beta I_B\)</span> 关系。最后，结合 KVL 方程就可以对静态工作点进行求解，如果已知 <span class="math inline">\(V_CC\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span>、<span class="math inline">\(U_{BEQ}\)</span>、<span class="math inline">\(\beta\)</span>，就可以联立得到如下的方程：</p>
 <p><span class="math display">\[
 \begin{cases}
   I_{BQ} = \frac{V_{CC} - U_{BEQ}}{R_B} \approx \frac{V_{CC}}{R_B} \\
