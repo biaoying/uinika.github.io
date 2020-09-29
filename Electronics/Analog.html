@@ -24,7 +24,7 @@
 
   <meta name="description" content="电子技术发展至今，基础理论方面的突破甚少，进步主要体现在工艺、材料与制程方面。特别是大规模集成电路的广泛应用，过去需要采用大量分立式元器件才能完成的工作，都已经被标准化的模拟、数字集成电路所替代。电子工程师的日常工作内容，逐步从过去各类基础电路的搭建，切换至电子自动化设计EDA（Electronic Design Automation）、信号完整性SI（Signal Integrity）、电磁兼容">
 <meta property="og:type" content="article">
-<meta property="og:title" content="模拟电子技术实用笔记">
+<meta property="og:title" content="现代模拟电子技术实用笔记">
 <meta property="og:url" content="https://uinika.github.io/Electronics/Analog.html">
 <meta property="og:site_name" content="Bit by bit">
 <meta property="og:description" content="电子技术发展至今，基础理论方面的突破甚少，进步主要体现在工艺、材料与制程方面。特别是大规模集成电路的广泛应用，过去需要采用大量分立式元器件才能完成的工作，都已经被标准化的模拟、数字集成电路所替代。电子工程师的日常工作内容，逐步从过去各类基础电路的搭建，切换至电子自动化设计EDA（Electronic Design Automation）、信号完整性SI（Signal Integrity）、电磁兼容">
@@ -149,7 +149,7 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-7/13.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-7/99.png">
 <meta property="article:published_time" content="2020-09-29T13:33:19.310Z">
-<meta property="article:modified_time" content="2020-09-29T16:40:45.582Z">
+<meta property="article:modified_time" content="2020-09-29T18:59:33.862Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -168,7 +168,7 @@
   };
 </script>
 
-  <title>模拟电子技术实用笔记 | Bit by bit</title>
+  <title>现代模拟电子技术实用笔记 | Bit by bit</title>
   
 
 
@@ -336,7 +336,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          模拟电子技术实用笔记
+          现代模拟电子技术实用笔记
         </h1>
 
         <div class="post-meta">
@@ -353,7 +353,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-30 00:40:45" itemprop="dateModified" datetime="2020-09-30T00:40:45+08:00">2020-09-30</time>
+                <time title="修改时间：2020-09-30 02:59:33" itemprop="dateModified" datetime="2020-09-30T02:59:33+08:00">2020-09-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -753,7 +753,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 <h2 id="双极型晶体管">双极型晶体管</h2>
 <p>晶体三极管当中存在<strong>两种带有不同极性电荷的载流子</strong>参与导电，所以称为<strong>双极型晶体管</strong>（<strong>B</strong>ipolar <strong>J</strong>unction <strong>T</strong>ransistor），也称为<strong>半导体三极管</strong>。主要分为 <strong>PNP</strong> 和 <strong>NPN</strong> 两种类型，通过它们符号中箭头的指向加以区分记忆，即都是<strong>从 P 型半导体指向 N 型半导体</strong>。</p>
 <p><img src="/Electronics/Analog/Section-5/1.png"></p>
-<p>根据不同的掺杂方式在同一块硅片上制造出 <strong>3</strong> 个掺杂区域，并形成 <strong>2</strong> 个 PN 结。以 <strong>NPN</strong> 型三极管为例，位于中间的 P 区称为<strong>基区</strong>，它很薄且杂质浓度很低，所引出的电极为<strong>基极</strong>（<strong>B</strong>ase）；位于左边的 N 区是<strong>发射区</strong>，其掺杂浓度非常高，引出的电极称为<strong>发射极</strong>（<strong>E</strong>mitter）；位于右边的 N 区是<strong>集电区</strong>，面积较大，所引出的电极就是<strong>集电极</strong>（<strong>C</strong>ollector）；</p>
+<p>基于不同的掺杂方式在同一块硅片上制造出 <strong>3</strong> 个掺杂区域，并且形成 <strong>2</strong> 个 PN 结。以上图的 <strong>NPN</strong> 型三极管为例，位于中间的 P 区称为<strong>基区</strong>，它很薄且杂质浓度很低，所引出的电极为<strong>基极</strong>（<strong>B</strong>ase）；位于左边的 N 区是<strong>发射区</strong>，其掺杂浓度非常高，引出的电极称为<strong>发射极</strong>（<strong>E</strong>mitter）；位于右边的 N 区是<strong>集电区</strong>，面积较大，所引出的电极就是<strong>集电极</strong>（<strong>C</strong>ollector）；</p>
 <blockquote>
 <p><strong>注意</strong>：三极管的组成结构可以概括为：<strong>3 个极（基极、发射极、集电极）、3 个区（基区、发射区、集电区）、2 个 PN 结（发射结、集电结）</strong>。</p>
 </blockquote>
@@ -761,7 +761,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 <p>三极管的<strong>电流放大能力</strong>必须从<strong>内部</strong>结构和<strong>外部</strong>偏置条件两个方面来进行满足：</p>
 <ul>
 <li><strong>内部结构</strong>：基区最薄掺杂浓度最低（空穴浓度最低），主要用于传送和控制载流子；发射区掺杂浓度（自由电子浓度最高）最高，主要用于发射载流子；集电区的面积最大，主要用于收集载流子。 <img src="/Electronics/Analog/Section-5/2.png"></li>
-<li><strong>外部结构</strong>：通过正确的偏置保证晶体管的放大，所谓的<strong>偏置</strong>就是利用直流电源为电路设置固定的电流与电压。对于晶体管而言，必须保证发射极正偏集电极反偏（通过选择合适的电源与电阻）。对于 <strong>NPN</strong> 晶体管而言，发射极正偏是 <span class="math inline">\(V_B &gt; V_E\)</span>，集电极反偏是 <span class="math inline">\(V_C &gt; V_B\)</span>；于 <strong>PNP</strong> 晶体管而言，发射极正偏是 <span class="math inline">\(V_B &lt; V_E\)</span>，集电极反偏是 <span class="math inline">\(V_C &lt; V_B\)</span>。 <img src="/Electronics/Analog/Section-5/3.png"></li>
+<li><strong>外部结构</strong>：通过正确的偏置保证晶体管的放大，所谓<strong>偏置</strong>就是利用直流电源为电路设置固定的电流与电压。对于晶体管而言，必须保证发射结正偏集电结反偏（通过选择合适的电源与电阻）。对于 <strong>NPN</strong> 晶体管而言，发射结正偏是 <span class="math inline">\(V_B &gt; V_E\)</span>，集电结反偏是 <span class="math inline">\(V_C &gt; V_B\)</span>；而对于 <strong>PNP</strong> 晶体管而言，发射结正偏是 <span class="math inline">\(V_B &lt; V_E\)</span>，集电结反偏是 <span class="math inline">\(V_C &lt; V_B\)</span>。 <img src="/Electronics/Analog/Section-5/3.png"></li>
 </ul>
 <p>当 <strong>NPN</strong> 型晶体管加入正确的外部偏置以后，晶体管内部载流子的运动规律如下所示：</p>
 <ol type="1">
@@ -770,7 +770,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 <li><strong>集电结加反向电压，漂移运动形成集电极电流 <span class="math inline">\(I_C\)</span></strong>：由于集电结加反向电压并且其结面积较大，基区的非平衡少子在外电场作用下越过集电结到达集电区，形成漂移电流。与此同时，集电区与基区的平衡少子也参与漂移运动，但是其数量较少基本可以忽略不计。即在集电极电源 <span class="math inline">\(V_{CC}\)</span> 的作用下，漂移运动形成集电极电流 <span class="math inline">\(I_C\)</span>；</li>
 </ol>
 <p><img src="/Electronics/Analog/Section-5/4.png"></p>
-<p>如图所示，假设由发射区向基区扩散所形成的电子电流为 <span class="math inline">\(I_{EN}\)</span>，由基区向发射区扩散所形成的空穴电流为 <span class="math inline">\(I_{EP}\)</span>，由基区内部复合运动所形成的电流为 <span class="math inline">\(IBN\)</span>，由基区内非平衡少子（即发射区扩散到基区但没有被复合的自由电子）漂移至集电区所形成的电流为 <span class="math inline">\(I_{CN}\)</span>，由平衡少子在集电区与基区之间的漂移运动所形成的电流为 <span class="math inline">\(I_{CBO}\)</span>。接下来，分别对晶体管的<strong>发射极电流</strong> <span class="math inline">\(I_E\)</span>、<strong>集电极电流</strong> <span class="math inline">\(I_C\)</span>、<strong>基极电流</strong> <span class="math inline">\(I_B\)</span> 进行分析：</p>
+<p>如图所示，假设由发射区向基区扩散所形成的电子电流为 <span class="math inline">\(I_{EN}\)</span>，由基区向发射区扩散所形成的空穴电流为 <span class="math inline">\(I_{EP}\)</span>，由基区内部复合运动所形成的电流为 <span class="math inline">\(I_{BN}\)</span>，由基区内非平衡少子（即发射区扩散到基区但没有被复合的自由电子）漂移至集电区所形成的电流为 <span class="math inline">\(I_{CN}\)</span>，由平衡少子在集电区与基区之间的漂移运动所形成的电流为 <span class="math inline">\(I_{CBO}\)</span>。接下来，分别对晶体管的<strong>发射极电流</strong> <span class="math inline">\(I_E\)</span>、<strong>集电极电流</strong> <span class="math inline">\(I_C\)</span>、<strong>基极电流</strong> <span class="math inline">\(I_B\)</span> 进行分析：</p>
 <p><span class="math display">\[
 \begin{cases}
   发射极电流 &amp; I_E = I_{EN} + I_{EP} = (I_{CN} + I_{BN}) + I_{EP} \\
@@ -778,7 +778,7 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
   基极电流 &amp; I_B = I_{BN} + I_{EP} - I_{CBO} = I^{&#39;}_B - I_{CBO}
 \end{cases}
 \]</span></p>
-<p>联立上面的公式，可以发现晶体管三个电极电流的分配关系依然可以遵循基尔霍夫电流定律：即将晶体管视为一个结点，<span class="math inline">\(I_B\)</span> 与 <span class="math inline">\(I_C\)</span> 为流入结点的电流，<span class="math inline">\(I_E\)</span> 则为流出结点的电流，它们之间存在如下的关系：</p>
+<p>联立上面的公式，可以发现晶体管三个电极电流的分配关系依然遵循着基尔霍夫电流定律：即将晶体管视为一个结点，<span class="math inline">\(I_B\)</span> 与 <span class="math inline">\(I_C\)</span> 为流入结点的电流，<span class="math inline">\(I_E\)</span> 则为流出结点的电流，它们之间存在着如下的关系：</p>
 <p><span class="math display">\[
 发射极电流 I_E = 集电极电流 I_C + 基极电流 I_B
 \]</span></p>
@@ -794,13 +794,13 @@ P_{Rmax} = \frac{(U_{Imax} - U_Z)^2}{R} = \frac{(22-12)^2}{270} \approx 0.37W
 <blockquote>
 <p><strong>注意</strong>：上述晶体管参数上面的<strong>小横扛</strong>代表这是一个直流参量。</p>
 </blockquote>
-<p>综上所述，当<strong>晶体管发射结正偏集电结反偏</strong>时，就可以将基极电流的微小变化引发集电极电流的较大变化，从而使得晶体管具备了<strong>电流放大作用</strong>。</p>
+<p>综上所述，当<strong>晶体管发射结正偏集电结反偏</strong>时，基极电流的微小变化就可以引发集电极电流的较大变化，从而使得晶体管具备了<strong>电流放大</strong>能力。</p>
 <h3 id="伏安特性-1">伏安特性</h3>
 <p><strong>晶体管的伏安特性</strong>是指晶体管各个电极的电压电流关系曲线，是晶体管内部载流子运动的外部表现。对伏安特性的全面了解，是分析与设计晶体管放大电路的前提和基础，这里以应用较为广泛的<strong>共发射极</strong>连接方式的特性曲线为例，来介绍晶体管的伏安特性。</p>
 <p>类似于二极管，晶体管的伏安特性也是通过实际电路测量而来的，下图是型号为 <code>3DG100</code> 的 NPN 型晶体管伏安特性测量电路：</p>
 <p><img src="/Electronics/Analog/Section-5/5.png"></p>
-<p>在基级和射极之间连接了电源 <span class="math inline">\(E_B\)</span> 以及可变电阻 <span class="math inline">\(R_B\)</span>，同时在集电极和发射极之间，连接了可变电源 <span class="math inline">\(E_C\)</span>，同时在输入回路用伏特表和安倍表分别测量输入电压 <span class="math inline">\(U_{BE}\)</span> 和输入电流 <span class="math inline">\(I_B\)</span>，而在输出回路则测得其输出电流 <span class="math inline">\(I_C\)</span> 和输出电压 <span class="math inline">\(U_{CE}\)</span>。信号从晶体管的基极输入集电极输出，此时输出回路和输入回路共用一个电极，所以将这种电路连接方式称为 <span class="math inline">\(共发射极接法\)</span>。</p>
-<p>这种连接方式下，通过调节可变电源 <span class="math inline">\(E_C\)</span> 的值来调节可变电阻 <span class="math inline">\(R_B\)</span>，此时输入电流 <span class="math inline">\(I_B\)</span> 和输入电压 <span class="math inline">\(U_{BE}\)</span> 的读数都会发生变化，将得到的数据逐一记录并且描述，就得到了 <span class="math inline">\(I_B\)</span> 和 <span class="math inline">\(U_{BE}\)</span> 的伏安关系曲线。多次重复该操作，就可以得到一组 <span class="math inline">\(U_{CE}\)</span> 为常数情况下，<span class="math inline">\(I_B\)</span> 和 <span class="math inline">\(U_{BE}\)</span> 的关系曲线，称为<strong>输入特性曲线</strong>：</p>
+<p>在基级和射极之间连接了电源 <span class="math inline">\(E_B\)</span> 以及可变电阻 <span class="math inline">\(R_B\)</span>，同时在集电极和发射极之间连接了可变电源 <span class="math inline">\(E_C\)</span>，并且在输入回路用伏特表和安倍表分别测量输入电压 <span class="math inline">\(U_{BE}\)</span> 和输入电流 <span class="math inline">\(I_B\)</span>，而在输出回路则测得其输出电流 <span class="math inline">\(I_C\)</span> 和输出电压 <span class="math inline">\(U_{CE}\)</span>。信号从晶体管的基极输入集电极输出，此时输出回路和输入回路共用一个电极，所以将这种电路连接方式称为<strong>共发射极接法</strong>。</p>
+<p>在这种连接方式下，可以通过调节可变电源 <span class="math inline">\(E_C\)</span> 的值来调节可变电阻 <span class="math inline">\(R_B\)</span>，此时输入电流 <span class="math inline">\(I_B\)</span> 和输入电压 <span class="math inline">\(U_{BE}\)</span> 的读数都会发生变化，将得到的数据逐一记录并且描述，就得到了 <span class="math inline">\(I_B\)</span> 和 <span class="math inline">\(U_{BE}\)</span> 的伏安关系曲线。多次重复该操作，就可以得到一组在 <span class="math inline">\(U_{CE}\)</span> 为常数情况下，<span class="math inline">\(I_B\)</span> 与 <span class="math inline">\(U_{BE}\)</span> 的关系曲线，称为<strong>输入特性曲线</strong>：</p>
 <p><span class="math display">\[
 I_B = f(U_{BE}) |_{U_{CE} = 常数}
 \]</span></p>
@@ -809,47 +809,47 @@ I_B = f(U_{BE}) |_{U_{CE} = 常数}
 I_C = f(U_{CE}) |_{I_{B} = 常数}
 \]</span></p>
 <blockquote>
-<p><strong>注意</strong>：晶体管的特性曲线都会拥有一个常数条件的原因在于，晶体管的输入和输出回路并不是孤立存在的，两者之间存在一条共用的支路，所以必然会产生相互影响，为了避免这种情况对测量造成的影响，会在测量某一特性回路的时候，需要固定另外一个回路的参数，能能得到较为准确的特性曲线。</p>
+<p><strong>注意</strong>：晶体管特性曲线都拥有一个常数条件的原因在于，晶体管的输入和输出回路并不是孤立存在的，两者之间存在一条共用的支路，所以必然会产生相互影响，为了避免这种情况对测量造成的影响，会在测量某一特性回路的时候，固定另一个回路的参数，从而得到较为准确的特性曲线。</p>
 </blockquote>
 <h4 id="输入特性曲线">输入特性曲线</h4>
 <p>输入特性曲线是在 <span class="math inline">\(U_{CE}\)</span> 指定的前提下，考察输入电流 <span class="math inline">\(I_B\)</span>（纵轴）输入电压 <span class="math inline">\(U_{BE}\)</span>（横轴）：</p>
 <p><img src="/Electronics/Analog/Section-5/6.png"></p>
 <ul>
 <li><strong>当指定 <span class="math inline">\(U_{CE} = 0V\)</span> 时测得一条输入特性曲线</strong>，该特性与二极管的正向特性极为相似，这是由于晶体管的基极和射极之间就是一个 PN 结，所以其特性与 PN 结的正向特性一致，对于硅管而言依然是 <span class="math inline">\(0.5V\)</span> 的开启电压以及 <span class="math inline">\(0.7V\)</span> 的导通电压。</li>
-<li><strong>当指定 <span class="math inline">\(U_{CE} = 1V\)</span> 时再次进行测量</strong>，此时形成的新特性曲线会向右移动。<span class="math inline">\(U_{CE}\)</span> 增加导致特性曲线向右移的原因在于基极电流主要来源与复合电流，随着 <span class="math inline">\(U_{CE}\)</span> 的增大集电区收集自由电子的能力增强，大部分自由电子都被收集到集电区，从而减小了自由电子与基区中空穴复合的机会，这样就使得在同样的 <span class="math inline">\(U_{BE}\)</span> 条件下 <span class="math inline">\(I_B\)</span> 会减小，使得特性曲线向右移动；</li>
-<li><strong>当继续增大 <span class="math inline">\(U_{CE}\)</span> 取值的时候</strong>，特性曲线继续右移，但是移动的幅度并不明显。当 <span class="math inline">\(U_{CE}\)</span> 达到一定程度时大部分自由电子都已经被收集，但仍然会有小部分的自由电子进行复合，此时 <span class="math inline">\(U_{CE}\)</span> 的增大就不会让 <span class="math inline">\(I_D\)</span> 减小很多；因此对于小功率晶体管，可以认为当 <span class="math inline">\(U_{CE} &gt; 1V\)</span> 时的一条输入特性曲线，可以代替 <span class="math inline">\(U_{CE} &gt; 1V\)</span> 时的所有输入特性曲线。由于这个条件通常是满足的，所以后续通常只会对一条输入特性曲线进行讨论；</li>
+<li><strong>当指定 <span class="math inline">\(U_{CE} = 1V\)</span> 时再次进行测量</strong>，此时形成的新特性曲线会向右移动。<span class="math inline">\(U_{CE}\)</span> 增加导致特性曲线向右移的原因在于基极电流主要来源于复合电流，随着 <span class="math inline">\(U_{CE}\)</span> 的增大集电区收集自由电子的能力增强，大部分自由电子都被收集到集电区，从而减小了自由电子和基区当中空穴复合的机会，使得在同样的 <span class="math inline">\(U_{BE}\)</span> 条件下 <span class="math inline">\(I_B\)</span> 的值会减小，导致特性曲线向右移动；</li>
+<li><strong>当继续增大 <span class="math inline">\(U_{CE}\)</span> 取值的时候</strong>，特性曲线继续右移，但是移动的幅度并不明显。当 <span class="math inline">\(U_{CE}\)</span> 达到一定程度时大部分自由电子都已经被收集，但仍然会有小部分的自由电子进行复合，此时 <span class="math inline">\(U_{CE}\)</span> 的增大就不会让 <span class="math inline">\(I_D\)</span> 减小很多；因此对于小功率晶体管，可以认为当 <span class="math inline">\(U_{CE} &gt; 1V\)</span> 时的这条输入特性曲线，可以代替 <span class="math inline">\(U_{CE} &gt; 1V\)</span> 时的所有输入特性曲线。由于这个条件通常是满足的，所以本文后续通常只会讨论一条输入特性曲线；</li>
 </ul>
 <h4 id="输出特性曲线">输出特性曲线</h4>
-<p>输出特性曲线是晶体管相关内容的核心，也是后续内容的出发点，因此需要十分重视。输出特性曲线反映的是在 <span class="math inline">\(I_B\)</span> 为常数情况下，输出电压 <span class="math inline">\(U_{CE}\)</span> 和 输出电流<span class="math inline">\(I_C\)</span> 的关系，对于每一个 <span class="math inline">\(I_B\)</span> 都会对应一条 <span class="math inline">\(I_C\)</span> 随着 <span class="math inline">\(U_{CE}\)</span> 变化的特性曲线，而且每条特性曲线的变化趋势都是相同的，这里以下图中红色的曲线为例进行讨论：</p>
+<p>输出特性曲线是晶体管相关内容的核心，也是后续内容的出发点，因此需要十分重视。输出特性曲线反映的是在 <span class="math inline">\(I_B\)</span> 为常数情况下，输出电压 <span class="math inline">\(U_{CE}\)</span> 和 输出电流 <span class="math inline">\(I_C\)</span> 的关系，对于每一个 <span class="math inline">\(I_B\)</span> 都会对应一条 <span class="math inline">\(I_C\)</span> 随着 <span class="math inline">\(U_{CE}\)</span> 变化的特性曲线，而且每条特性曲线的变化趋势都是相同的，这里以下图当中红色的曲线为例进行讨论：</p>
 <p><img src="/Electronics/Analog/Section-5/7.png"></p>
 <ul>
 <li><strong>当 <span class="math inline">\(U_{CE}\)</span> 较小的时候</strong>，<span class="math inline">\(I_B\)</span> 随着 <span class="math inline">\(U_{CE}\)</span> 的变化呈现较大的变化过程。这是由于在原点 <span class="math inline">\(U_{CE} = 0V\)</span> 时，集电结并没有反向偏置，集电区不能收集自由电子，所以此时电流 <span class="math inline">\(I_C\)</span> 为零。随着 <span class="math inline">\(U_{CE}\)</span> 逐渐增大，集电区收集自由电子的能力逐渐增强，此时集电极电流 <span class="math inline">\(I_C\)</span> 也随之增大，<span class="math inline">\(I_C\)</span> 与 <span class="math inline">\(U_{CE}\)</span> 的变化基本呈现出一种线性关系。</li>
-<li><strong>当 <span class="math inline">\(U_{CE}\)</span> 增大到一定程度的时候</strong>，<span class="math inline">\(I_C\)</span> 就将不再增加，使得特性曲线几乎平行于横轴。这是由于当 <span class="math inline">\(U_{CE}\)</span> 足够大的时候，集电结完全反向偏置，集电区收集了几乎所有的电子，此时 <span class="math inline">\(I_C\)</span> 将不会再增大，从而表现出一种恒流特性。在这个恒流区域 <span class="math inline">\(I_C\)</span> 与 <span class="math inline">\(I_B\)</span> 的比值将会为一个固定值，这就是前面定义的<strong>直流电流放大系数</strong> <span class="math inline">\(\bar \beta = \frac{I_C}{I_B}\)</span>。同时，还可以发现恒流区除了每一条特性曲线与横轴平行之外，特性曲线之间的间隔距离也基本是相同的，这就说明在这个区域变化的 <span class="math inline">\(\Delta i_C\)</span> 与变化的 <span class="math inline">\(\Delta i_B\)</span> 的比值也基本是一个常数，这也就是前面定义的<strong>交流电流放大系数</strong> <span class="math inline">\(\beta = \frac{\Delta i_C}{\Delta i_B}\)</span>。总而言之，晶体管在这个区域体现了电流放大能力。除此之外，在这样的区域还可以发现 <span class="math inline">\(I_C\)</span> 的变化几乎与 <span class="math inline">\(U_{CE}\)</span> 无关，<span class="math inline">\(I_B\)</span> 才是决定 <span class="math inline">\(I_C\)</span> 大小的重要因素，这就体现了基极电流 <span class="math inline">\(I_B\)</span> 控制集电极电流 <span class="math inline">\(I_C\)</span> 的特性，说明晶体管是一个<strong>有源的电流控制元件</strong>；</li>
+<li><strong>当 <span class="math inline">\(U_{CE}\)</span> 增大到一定程度的时候</strong>，<span class="math inline">\(I_C\)</span> 就将不再增加，使得特性曲线几乎平行于横轴。这是由于当 <span class="math inline">\(U_{CE}\)</span> 足够大的时候，集电结完全反向偏置，集电区收集了几乎所有的电子，此时 <span class="math inline">\(I_C\)</span> 将不会再增大，从而表现出一种恒流特性。在这个恒流区域 <span class="math inline">\(I_C\)</span> 与 <span class="math inline">\(I_B\)</span> 的比值将会为一个固定值，这就是前面定义的<strong>直流电流放大系数</strong> <span class="math inline">\(\bar \beta = \frac{I_C}{I_B}\)</span>。同时，还可以发现恒流区除了每一条特性曲线与横轴平行之外，特性曲线之间的间隔距离也基本是相同的，这就说明在这个区域变化的 <span class="math inline">\(\Delta i_C\)</span> 与变化的 <span class="math inline">\(\Delta i_B\)</span> 的比值也基本是一个常数，也就是前面所定义的<strong>交流电流放大系数</strong> <span class="math inline">\(\beta = \frac{\Delta i_C}{\Delta i_B}\)</span>。总而言之，晶体管在这个区域体现了电流放大能力。除此之外，在这样的区域还可以发现 <span class="math inline">\(I_C\)</span> 的变化几乎与 <span class="math inline">\(U_{CE}\)</span> 无关，<span class="math inline">\(I_B\)</span> 才是决定 <span class="math inline">\(I_C\)</span> 大小的重要因素，这就体现了基极电流 <span class="math inline">\(I_B\)</span> 控制集电极电流 <span class="math inline">\(I_C\)</span> 的特性，说明晶体管是一个<strong>有源的电流控制元件</strong>；</li>
 </ul>
 <h3 id="工作区">工作区</h3>
 <p>根据晶体管的伏安特性，可以将晶体管划分为 3 个工作区：</p>
 <ol type="1">
 <li><strong>放大区</strong>：线性区，此时 <span class="math inline">\(I_C = \beta I_B\)</span>，发射结<strong>正偏</strong>集电结<strong>反偏</strong>即可进入放大区，模拟电路当中主要应用的就是晶体管的放大能力； <img src="/Electronics/Analog/Section-5/8.png"></li>
-<li><strong>截止区</strong>：非线性区，发射结和集电结<strong>都反向偏置</strong>即可进入该区，此时发射区当中的自由电子不能进入基区，基极电流 <span class="math inline">\(I_B = 0\)</span> 同时 <span class="math inline">\(I_C \approx 0\)</span>，此时 <span class="math inline">\(I_C\)</span> 仍然存在来自于少子漂移运动产生的电流 <span class="math inline">\(I_{CEO}\)</span>，称为<strong>极射穿透电流</strong>；该电流对于小功率晶体管几乎可以忽略不计（小于<code>1uA</code>）; <img src="/Electronics/Analog/Section-5/9.png"></li>
-<li><strong>饱和区</strong>：非线性区，发射结和集电结<strong>都正向偏置</strong>即可进入该区，，当 <span class="math inline">\(U_{CE} &lt; U_{BE}\)</span> 并且 <span class="math inline">\(U_{CE} \approx 0\)</span> 的时候，此时集电极还没有反向偏置，集电区收集自由电子的能力并不强，这就导致电流 <span class="math inline">\(I_C &lt; \beta I_B\)</span>；对于小功率 NPN 型晶体管，可以将 <code>0.3V</code> 作为晶体管从放大区进入饱和区的临界电压； <img src="/Electronics/Analog/Section-5/10.png"></li>
+<li><strong>截止区</strong>：非线性区，发射结和集电结<strong>都反向偏置</strong>即可进入该区，此时发射区当中的自由电子不能进入基区，基极电流 <span class="math inline">\(I_B = 0\)</span> 同时 <span class="math inline">\(I_C \approx 0\)</span>，此时 <span class="math inline">\(I_C\)</span> 仍然存在来自于少子漂移运动产生的电流 <span class="math inline">\(I_{CEO}\)</span>，称为<strong>极射穿透电流</strong>；该电流对于小功率晶体管而言几乎可以忽略不计（小于<code>1uA</code>）; <img src="/Electronics/Analog/Section-5/9.png"></li>
+<li><strong>饱和区</strong>：非线性区，发射结和集电结<strong>全部正向偏置</strong>即可进入该区域，当 <span class="math inline">\(U_{CE} &lt; U_{BE}\)</span> 并且 <span class="math inline">\(U_{CE} \approx 0\)</span> 的时候，此时集电极还没有反向偏置，集电区收集自由电子的能力并不强，这就导致电流 <span class="math inline">\(I_C &lt; \beta I_B\)</span>；对于小功率 NPN 型晶体管，可以将 <code>0.3V</code> 作为晶体管从放大区进入饱和区的临界电压； <img src="/Electronics/Analog/Section-5/10.png"></li>
 </ol>
 <p>晶体管除了工作在<strong>放大区</strong>提供<strong>电流放大</strong>作用以外，还可以在<strong>饱和区</strong>和<strong>截止区</strong>分别提供<strong>短路</strong>与<strong>开路</strong>的功能：</p>
 <p><img src="/Electronics/Analog/Section-5/11.png"></p>
 <ul>
 <li><strong>放大区</strong>：发射结<strong>正偏</strong> <span class="math inline">\(U_{BE} &gt; 0\)</span> 集电结<strong>反偏</strong> <span class="math inline">\(U_{BC} &lt; 0\)</span>，这种状态下晶体管具有放大能力 <span class="math inline">\(I_C = \bar \beta I_B\)</span>，即合适大小的基极电流 <span class="math inline">\(I_B\)</span> 可以在集电极 <span class="math inline">\(I_C\)</span> 上获得数以百倍的输出；</li>
-<li><strong>截止区</strong>：发射结<strong>反偏</strong> <span class="math inline">\(U_{BE} \le 0\)</span> 集电结<strong>反偏</strong> <span class="math inline">\(U_{BC} &lt; 0\)</span>，此时 <span class="math inline">\(I_B = 0\)</span>，且 <span class="math inline">\(I_C \approx 0\)</span>，导致发射极到集电极几乎没有电流流过，相当于开路状态，此时集电极的输出电压 <span class="math inline">\(V_o \approx V_CC\)</span>；</li>
-<li><strong>饱和区</strong>：发射结<strong>正偏</strong> <span class="math inline">\(U_{BE} &gt; 0\)</span> 集电结<strong>正偏</strong> <span class="math inline">\(U_{BC} &gt; 0\)</span>，此时 <span class="math inline">\(U_{CE} \approx 0\)</span>，这就意味着集电极和发射极之间近似于短路状态，此时<strong>临界集电极饱和电流</strong> <span class="math inline">\(I_{CS} = \frac{(V_{CC} - U_{CES})}{R_C}\)</span>，此时集电极输出电压 <span class="math inline">\(V_O \approx 0\)</span>；</li>
+<li><strong>截止区</strong>：发射结<strong>反偏</strong> <span class="math inline">\(U_{BE} \le 0\)</span> 集电结<strong>反偏</strong> <span class="math inline">\(U_{BC} &lt; 0\)</span>，此时 <span class="math inline">\(I_B = 0\)</span>，且 <span class="math inline">\(I_C \approx 0\)</span>，导致发射极到集电极几乎没有电流流过，相当于开路状态，此时集电极的输出电压 <span class="math inline">\(V_o \approx V_{CC}\)</span>；</li>
+<li><strong>饱和区</strong>：发射结<strong>正偏</strong> <span class="math inline">\(U_{BE} &gt; 0\)</span> 集电结<strong>正偏</strong> <span class="math inline">\(U_{BC} &gt; 0\)</span>，此时 <span class="math inline">\(U_{CE} \approx 0\)</span>，这就意味着集电极和发射极之间近似于短路状态，此时<strong>临界集电极饱和电流</strong> <span class="math inline">\(I_{CS} = \frac{(V_{CC} - U_{CES})}{R_C}\)</span>，而集电极输出电压 <span class="math inline">\(V_O \approx 0\)</span>；</li>
 </ul>
-<p>综上所述，当晶体管工作于饱和区时 <span class="math inline">\(U_{CE} \approx 0\)</span>，集电极与发射极之间电阻极小，近似于<strong>短路</strong>状态；当晶体管工作于截止区时，<span class="math inline">\(IC \approx 0\)</span> ，集电极与发射极之间电阻极大，近似于<strong>开路</strong>状态。由此可见，晶体管除了具有放大作用以外，还具备开关的作用，可以在数字电路当中大显身手。</p>
-<p>下面的表格给出了晶体管在不同工作状态下典型的电压值：</p>
+<p>综上所述，当晶体管工作于饱和区时 <span class="math inline">\(U_{CE} \approx 0\)</span>，集电极与发射极之间电阻极小，近似于<strong>短路</strong>状态；当晶体管工作于截止区时，<span class="math inline">\(I_C \approx 0\)</span> ，集电极与发射极之间电阻极大，近似于<strong>开路</strong>状态。由此可见，晶体管除了具有<strong>放大</strong>作用以外，还具备<strong>开关</strong>的作用，可以在数字电路当中大显身手。</p>
+<p>下面的表格给出了晶体管处于不同工作状态时的典型电压值：</p>
 <p><img src="/Electronics/Analog/Section-5/12.png"></p>
 <blockquote>
-<p><strong>注意</strong>：需要重点记忆硅基三极管导通情况下的 <span class="math inline">\(U_{BE} = 0.7V\)</span> 以及 <span class="math inline">\(U_{CES} = 0.3V\)</span>，这两个值将会用于后续的具体计算。</p>
+<p><strong>注意</strong>：需要重点记忆硅基三极管导通情况下的 <span class="math inline">\(U_{BE} = 0.7V\)</span> 以及 <span class="math inline">\(U_{CES} = 0.3V\)</span>，这两个值将会应用于后续的具体计算。</p>
 </blockquote>
-<p>通过前面的分析可以知道，晶体管在三个不同的工作区域具有不同的特性，分析晶体管电路同样需要首先了解其工作状态，从而决定后续采用什么样的分析方法。判断晶体管工作状态的方法主要有如下两种：</p>
+<p>通过前面的分析可以了解，晶体管在三个不同的工作区域分别具有不同的特性，分析晶体管电路同样需要首先了解其工作状态，从而决定后续采用什么样的分析方法，判断晶体管工作状态的方法主要有如下两种：</p>
 <p><strong>三极管结偏置判定法</strong>：根据发射极与集电极偏置的不同来判定晶体管的工作状态，该方法通常用于实际存在电路的场景，借助万用表可以容易的测得晶体管每个电极对应的电位，进而判断出发射极与集电极的偏置状态，最后得到晶体管的工作状态：</p>
 <p><img src="/Electronics/Analog/Section-5/13.png"></p>
-<p><strong>三极管电流关系判定法</strong>：适用于实际电路不存在的场合，由于晶体管是一个电流控制元件，其输出与状态都与输入电流 <span class="math inline">\(I_B\)</span> 有极大的关系。因此，以临界的 <span class="math inline">\(I_B\)</span> 值作为标尺，就可以衡量出晶体管当前所处的工作区域：</p>
+<p><strong>三极管电流关系判定法</strong>：适用于实际电路不存在的场合，由于晶体管是一个电流控制元件，其输出状态与输入电流 <span class="math inline">\(I_B\)</span> 有着极大的关系。因此可以将临界的 <span class="math inline">\(I_B\)</span> 值作为标尺，去衡量晶体管当前所处的工作区域：</p>
 <p><img src="/Electronics/Analog/Section-5/14.png"></p>
 <p>▶【例题】下图为 NPN 型三极管构成的两个电路，假设电路当中三极管 <strong>VT</strong> 的 <span class="math inline">\(U_{BE} = 0.7V\)</span>，试分析该三极管处于何种工作状态？</p>
 <p><img src="/Electronics/Analog/Section-5/15.png"></p>
@@ -862,7 +862,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
    I_{BS} = \frac{V_{CC} - U_{CES}}{\beta \cdot R_C} = \frac{5 - 0.3}{40 \times 2000} = 0.058mA
 \end{aligned}
 \]</span></p>
-<p>接下来求解出实际的 <span class="math inline">\(I_B\)</span> 的值，再将其与 <span class="math inline">\(I_{BS}\)</span> 进行比较。</p>
+<p>接下来求解出实际的 <span class="math inline">\(I_B\)</span> 值，再将其与 <span class="math inline">\(I_{BS}\)</span> 进行比较。</p>
 <p><img src="/Electronics/Analog/Section-5/17.png"></p>
 <p>基于上图所示输入回路的电压方程，对 <span class="math inline">\(I_B\)</span> 进行求解：</p>
 <p><span class="math display">\[
@@ -871,8 +871,8 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
    I_B = \frac{V_{CC} - U_{BE}}{R_b} = \frac{5 - 0.7}{100000} = 0.043mA
 \end{aligned}
 \]</span></p>
-<p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 处于放大状态。</p>
-<p>▶【解答 - b】与前面电路相比，该电路多了一个射极电阻 <span class="math inline">\(R_E\)</span>，这里任然首先假设晶体管处于临界饱和状态：</p>
+<p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 当前处于放大状态。</p>
+<p>▶【解答 - b】与前面电路相比，该电路多出了一个射极电阻 <span class="math inline">\(R_E\)</span>，这里仍然假设晶体管处于临界饱和状态：</p>
 <p><img src="/Electronics/Analog/Section-5/18.png"></p>
 <p>通过上面红线支路的电压方程，可以对 <span class="math inline">\(I_{BS}\)</span> 进行求解：</p>
 <p><span class="math display">\[
@@ -881,7 +881,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
    I_{BS} = \frac{V_{CC} - U_{BE}}{R_e + \beta(R_c + R_e)} \approx \frac{12 - 0.3}{50 \times (1.5 + 0.1)} = 0.14mA
 \end{aligned}
 \]</span></p>
-<p>具体的 <span class="math inline">\(I_B\)</span> 仍然需要通过输入回路进行求解：</p>
+<p>具体的 <span class="math inline">\(I_B\)</span> 仍然需要通过输入回路的电压方程进行求解：</p>
 <p><img src="/Electronics/Analog/Section-5/19.png"></p>
 <p>通过上面标红支路的电压方程对 <span class="math inline">\(I_B\)</span> 进行求解：</p>
 <p><span class="math display">\[
@@ -890,7 +890,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
    I_{B} = \frac{V_{CC} - U_{BE}}{R_b + (1 + \beta) \cdot R_e} = \frac{12 - 0.7}{100 + 51 + 0.1} = 0.11mA
 \end{aligned}
 \]</span></p>
-<p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 处于放大状态。</p>
+<p>此时，由于 <span class="math inline">\(I_B &lt; I_{BS}\)</span>，所以晶体管 <strong>VT</strong> 当前是处于放大状态。</p>
 <h3 id="主要参数">主要参数</h3>
 <p>晶体管的数据手册详细说明了元件的各项参数、特性曲线、封装尺寸等等，本小节将会讨论一些比较重要的参数。</p>
 <h4 id="电流放大系数">电流放大系数</h4>
@@ -900,7 +900,7 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 <li><strong>交流电流放大系数</strong> <span class="math inline">\(h_{fe}\)</span>：体现了晶体管的<strong>交流电流</strong>放大能力，即共发射极交流电流放大系数 <span class="math inline">\(\beta = \frac{\Delta I_C}{\Delta I_B}\)</span>；</li>
 </ul>
 <blockquote>
-<p><strong>注意</strong>：<span class="math inline">\(\bar \beta\)</span> 和 <span class="math inline">\(\beta\)</span> 参数的含义并不相同，但是当晶体管工作在恒流状态，特性曲线接近于平行，并且 <span class="math inline">\(I_{CE0}\)</span> 较小的情况下，两者在数值比较接近，因此在后续计算过程当中，会对这两个参数作近似相等处理；通过参数手册可以发现，<span class="math inline">\(\beta\)</span> 值的大小并不是固定的，它将会随着 <span class="math inline">\(I_C\)</span> 的变化而变化；</p>
+<p><strong>注意</strong>：<span class="math inline">\(\bar \beta\)</span> 和 <span class="math inline">\(\beta\)</span> 参数的含义并不相同，但是在晶体管工作于恒流状态，特性曲线接近于平行，并且 <span class="math inline">\(I_{CE0}\)</span> 较小的情况下，两者在数值上比较接近，因而在后续的计算过程当中，会对这两个参数作近似相等处理；通过参数手册可以发现，<span class="math inline">\(\beta\)</span> 值的大小并不是固定的，它将会伴随 <span class="math inline">\(I_C\)</span> 的变化而变化；</p>
 </blockquote>
 <p><strong>共基极电流放大系数</strong>在数据手册中并不直接体现，但是可以通过 <span class="math inline">\(\alpha\)</span> 和 <span class="math inline">\(\beta\)</span> 的如下关系进行求解：</p>
 <ul>
@@ -908,34 +908,34 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 <li><strong>交流电流放大系数</strong> <span class="math inline">\(\alpha = \frac{\Delta I_C}{\Delta I_E} = \frac{\beta}{1 + \beta}\)</span>；</li>
 </ul>
 <h4 id="极间反向电流">极间反向电流</h4>
-<p>晶体管拥有 <code>C</code>、<code>B</code>、<code>E</code> 三个极，极间反向电流符号当中的哪个极被字母 <span class="math inline">\(O\)</span> 所取代，这一极就处于开路状态。</p>
+<p>晶体管拥有 <code>C</code>、<code>B</code>、<code>E</code> 三个极，极间反向电流符号当中的哪个极被字母 <span class="math inline">\(O\)</span> 所取代，那么这一极就处于开路状态。</p>
 <ul>
-<li><strong>集基极反向截止电流</strong> <span class="math inline">\(I_{CBO}\)</span>：发射极 <code>E</code> 开路情况下，集电极到基极的反向电流，该电流由少子漂移运动产生，受温度影响较大，温度升高时 <span class="math inline">\(I_{CBO}\)</span> 也会明显增大；对于硅管而言，该参数的数值较小，仅纳安 <code>nA</code> 量级。 <img src="/Electronics/Analog/Section-5/20.png"></li>
-<li><strong>集射极反向截止电流</strong> <span class="math inline">\(I_{CEO}\)</span>：即前面提到的极射反向穿透电流，基极 <code>B</code> 开路的情况下，集电极和射极之间的电流，就好像该电流直接从集电极穿透进入发射极，该参数也会受到温度影响，当温度升高时该值会急剧增大。 <img src="/Electronics/Analog/Section-5/21.png"></li>
+<li><strong>集基极反向截止电流</strong> <span class="math inline">\(I_{CBO}\)</span>：发射极 <code>E</code> 开路情况下，集电极到基极的反向电流，该电流由少子漂移运动产生，受温度影响较大，温度升高时 <span class="math inline">\(I_{CBO}\)</span> 也会明显增大；对于硅管而言，该参数的数值较小，仅为纳安 <code>nA</code> 量级； <img src="/Electronics/Analog/Section-5/20.png"></li>
+<li><strong>集射极反向截止电流</strong> <span class="math inline">\(I_{CEO}\)</span>：即前面提到的<strong>极射反向穿透电流</strong>，是基极 <span class="math inline">\(B\)</span> 在开路情况下，集电极与发射极之间的电流，类似该电流直接从集电极穿透进入发射极一样。该参数同样也会受到温度的影响，当温度升高时该参数将会急剧增大； <img src="/Electronics/Analog/Section-5/21.png"></li>
 </ul>
 <blockquote>
-<p><strong>注意</strong>：通过对这两个参数的讨论可以发现，晶体管在工作时性能指标受温度的影响较大，表现出的温度特性较差。</p>
+<p><strong>注意</strong>：通过对这两个参数的讨论可以发现，晶体管工作时的性能指标受温度的影响比较大，体现出的温度特性较差。</p>
 </blockquote>
 <h4 id="极限参数">极限参数</h4>
 <ul>
-<li><strong>集电极最大允许电流</strong> <span class="math inline">\(I_{CM}\)</span>：前面内容提到 <span class="math inline">\(\beta\)</span> 随着 <span class="math inline">\(I_C\)</span> 的增大而减小，当 <span class="math inline">\(\beta\)</span> 值下降到线性放大区 <span class="math inline">\(\beta\)</span> 值的 70％ 时候，此时所对应的集电极电流就称为集电极最大允许电流 <span class="math inline">\(I_{CM}\)</span>。虽然晶体管的 <span class="math inline">\(I_C &gt; I_{CM}\)</span> 不至于损坏元件，但是电流放大系数 <span class="math inline">\(\beta\)</span> 会出现明显下降，影响了晶体管的放大能力，因此晶体管进行线性应用时，<span class="math inline">\(I_C\)</span> 不能够大于 <span class="math inline">\(I_{CM}\)</span>；</li>
-<li><strong>集射极反向击穿电压</strong> <span class="math inline">\(U_{BR/CEO}\)</span>：当晶体管集射极之间（集电结）的电压 <span class="math inline">\(U_{CE}\)</span> 超过该数值时，三极管就会被反向击穿（如果晶体管使用过程中发现该值突然增大，可能就说明已经被击穿）；</li>
-<li><strong>集电极最大允许功率损耗</strong> <span class="math inline">\(P_{CM}\)</span>：即集电极电流通过集电结时产生的功耗 <span class="math inline">\(PC = ICUCE &lt; PCM\)</span>（当晶体管工作在放大状态时，集电结承受着较高的反向电压和电流，所以集电结上会由于消耗较高功率而发热，如果超过这个额定参数就会出现热击击穿损坏）；</li>
+<li><strong>集电极最大允许电流</strong> <span class="math inline">\(I_{CM}\)</span>：前面内容提到 <span class="math inline">\(\beta\)</span> 随着 <span class="math inline">\(I_C\)</span> 的增大而减小，当 <span class="math inline">\(\beta\)</span> 值下降到线性放大区 <span class="math inline">\(\beta\)</span> 值的 70％ 的时候，此时所对应的集电极电流就称为集电极最大允许电流 <span class="math inline">\(I_{CM}\)</span>。虽然晶体管的 <span class="math inline">\(I_C &gt; I_{CM}\)</span> 不至于损坏元件，但是电流放大系数 <span class="math inline">\(\beta\)</span> 会出现明显下降，影响了晶体管的放大能力，因此晶体管进行线性应用时，<span class="math inline">\(I_C\)</span> 不能够大于 <span class="math inline">\(I_{CM}\)</span>；</li>
+<li><strong>集射极反向击穿电压</strong> <span class="math inline">\(U_{BR/CEO}\)</span>：当晶体管集射极之间（集电结）的电压 <span class="math inline">\(U_{CE}\)</span> 超过该数值时，三极管就会被反向击穿（如果晶体管使用过程中发现该值突然增大，表明可能已经被击穿）；</li>
+<li><strong>集电极最大允许功率损耗</strong> <span class="math inline">\(P_{CM}\)</span>：即集电极电流通过集电结时产生的功耗 <span class="math inline">\(P_C = I_C U_{CE} &lt; P_{CM}\)</span>（当晶体管工作在放大状态时，集电结承受着较高的反向电压和电流，所以集电结上会由于消耗较高功率而发热，如果超过该额定参数就会发生热击穿而损坏）；</li>
 </ul>
-<p>通过以上 3 个极限参数的约束，以及对晶体管放大区的定义，就可以在特性曲线上得出一个安全工作区：</p>
+<p>通过以上 3 个极限参数的约束，以及对晶体管放大区的定义，就可以在特性曲线上得到一个安全工作区：</p>
 <p><img src="/Electronics/Analog/Section-5/22.png"></p>
-<p>除了让晶体管工作的电流电压处于安全工作区范围以内，确保晶体管安全稳定的工作还需要注意温度的影响：</p>
+<p>除了让晶体管工作的电流、电压处于安全工作区范围以内，确保晶体管安全稳定的工作还需要注意温度的影响：</p>
 <ul>
 <li><strong>温度对输入特性的影响</strong>：当温度每升高 <code>1°C</code>，<span class="math inline">\(U_{BE}\)</span> 将会减小 <code>-(2～2.5)mV</code>，即晶体管具有负温度系数； <img src="/Electronics/Analog/Section-5/23.png"></li>
-<li><strong>温度对输出特性 <span class="math inline">\(\beta\)</span> 的影响</strong>：温度升高时载流子扩散和漂移运动都会加快，因此减少了复合的机会。对于同样的基极电流 <span class="math inline">\(I_B\)</span>，当温度升高时，集电极电流 <span class="math inline">\(I_C\)</span> 将会明显增大，从而使得电流放大系数 <span class="math inline">\(\beta\)</span> 对于温度也敏感，即温度升高，输出特性曲线上移，间距拉大。温度每升高 <code>1°C</code>，电流放大系数 <span class="math inline">\(\beta\)</span> 就会增加 <span class="math inline">\(0.5% \sim 1.0%\)</span>； <img src="/Electronics/Analog/Section-5/24.png"></li>
-<li><strong>温度对反向电流 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 的影响</strong>：温度每增加 <code>10°C</code> 就会导致 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 显著增大，该特性上硅管会优于锗管；</li>
+<li><strong>温度对输出特性 <span class="math inline">\(\beta\)</span> 的影响</strong>：当温度升高时载流子的扩散和漂移运动都将会加快，因而减少了复合的机会。对于同样的基极电流 <span class="math inline">\(I_B\)</span>，当温度升高时，集电极电流 <span class="math inline">\(I_C\)</span> 将会明显增大，从而使得电流放大系数 <span class="math inline">\(\beta\)</span> 对于温度也敏感，即温度升高，输出特性曲线上移，间距拉大。温度每升高 <code>1°C</code>，电流放大系数 <span class="math inline">\(\beta\)</span> 就会增加 <span class="math inline">\(0.5% \sim 1.0%\)</span>； <img src="/Electronics/Analog/Section-5/24.png"></li>
+<li><strong>温度对反向电流 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 的影响</strong>：温度每增加 <code>10°C</code> 就会导致 <span class="math inline">\(I_{CBO}\)</span>、<span class="math inline">\(I_{CEO}\)</span> 显著增大，在该特性上硅管会优于锗管；</li>
 </ul>
 <h2 id="晶体管放大电路基础">晶体管放大电路基础</h2>
 <p>放大电路是一种可以将微弱信号（电压、电流、功率）放大至所需量级的电路。</p>
 <p><img src="/Electronics/Analog/Section-6/1.png"></p>
 <p>所有放大电路都需要至少一路直流电源进行供电，而直流电源正是放大所需能量的提供方。而放大的本质就是利用晶体管这类有源控制元件，实现能量的控制与转换，而不失真则是放大的前提和基本条件。</p>
 <p><img src="/Electronics/Analog/Section-6/2.png"></p>
-<p>放大电路当中存在交流信号源和直流电源，基于叠加原理，可以将电路中信号的响应分解为单独由直流电源作用下的<strong>静态</strong>和由交流信号源作用的<strong>动态</strong>。</p>
+<p>放大电路当中同时存在有交流信号源和直流电源，基于叠加原理，可以将电路当中信号的响应分解为单独由直流电源作用下的<strong>静态</strong>和由交流信号源作用的<strong>动态</strong>：</p>
 <p><img src="/Electronics/Analog/Section-6/3.png"></p>
 <ul>
 <li><strong>静态</strong>：放大电路没有输入信号时，电路当中各点的电流、电压为直流信号；</li>
@@ -944,12 +944,12 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 <h3 id="静态工作点-q">静态工作点 Q</h3>
 <p>当输入电压 <span class="math inline">\(u_i\)</span> 为零时，此时放大电路仅有直流电源单独作用，晶体管各极的电流和管压降都是直流分量，称为<strong>静态工作点 Q</strong>。对于放大电路而言，下图中的 <span class="math inline">\(I_{BQ}\)</span>、<span class="math inline">\(U_{BEQ}\)</span> 和 <span class="math inline">\(I_{CQ}\)</span>、<span class="math inline">\(U_{CEQ}\)</span> 四个值就是静态工作点 <strong>Q</strong> 的坐标；</p>
 <p><img src="/Electronics/Analog/Section-6/4.png"></p>
-<p>静态工作点的确立是放大电路分析和设计的重要环节，因为静态工作点的位置直接决定了晶体管是否能够稳定工作在放大区，所以放大电路需要时刻保持静态工作点的稳定，从而保证信号能够不失真的放大。</p>
+<p>静态工作点的确立是放大电路分析和设计的重要环节，因为静态工作点的位置直接决定了晶体管是否能够稳定工作在放大区，所以放大电路需要时刻保持静态工作点的稳定，从而保证信号能够不失真的被放大。</p>
 <p><img src="/Electronics/Analog/Section-6/5.png"></p>
 <h3 id="动态参数">动态参数</h3>
-<p>选择了合适的静态工作点，就可以开始关注用于指征放大电路性能指标的动态参数：<code>放大倍数</code>、<code>输入电阻</code>、<code>输出电阻</code>、<code>非线性失真</code>、<code>最大输出幅度</code>、<code>通频带/频率响应</code>、<code>最大输出功率</code>、<code>效率</code>、<code>信号噪声比</code>、<code>抗干扰能力</code>等。由于当前学习目标是放大中低频小信号，所以这里主要关注放大倍数 <span class="math inline">\(\dot{A}\)</span>、输入电阻 <span class="math inline">\(R_i\)</span>、输出电阻 <span class="math inline">\(R_o\)</span>。</p>
+<p>选择了合适的静态工作点，就可以开始关注用于指征放大电路性能指标的动态参数：<code>放大倍数</code>、<code>输入电阻</code>、<code>输出电阻</code>、<code>非线性失真</code>、<code>最大输出幅度</code>、<code>通频带/频率响应</code>、<code>最大输出功率</code>、<code>信号噪声比</code>、<code>抗干扰能力</code>等。由于当前学习目标是放大中低频小信号，所以这里主要关注放大倍数 <span class="math inline">\(\dot{A}\)</span>、输入电阻 <span class="math inline">\(R_i\)</span>、输出电阻 <span class="math inline">\(R_o\)</span>。</p>
 <h4 id="放大倍数-dota">放大倍数 <span class="math inline">\(\dot{A}\)</span></h4>
-<p>下面这个放大电路的输入端有输入端电流 <span class="math inline">\(\dot{I_i}\)</span> 和输入端电压 <span class="math inline">\(\dot{U_i}\)</span>，输出端有输出端电流 <span class="math inline">\(\dot{I_o}\)</span> 和输出端电压 <span class="math inline">\(\dot{U_o}\)</span>，利用这四个量的比值，就可以定义出一系列的放大倍数。</p>
+<p>下面这个放大电路的输入端有输入端电流 <span class="math inline">\(\dot{I_i}\)</span> 和输入端电压 <span class="math inline">\(\dot{U_i}\)</span>，输出端有输出端电流 <span class="math inline">\(\dot{I_o}\)</span> 和输出端电压 <span class="math inline">\(\dot{U_o}\)</span>，利用这四个量的比值，就可以定义出一系列的放大倍数参数：</p>
 <p><img src="/Electronics/Analog/Section-6/6.png"></p>
 <ul>
 <li><strong>电压放大倍</strong>：<span class="math inline">\(\dot{A_u} = \frac{\dot{U_o}}{\dot{U_i}} = \frac{输出电压}{输入电压}\)</span>；</li>
@@ -962,38 +962,38 @@ I_C = f(U_{CE}) |_{I_{B} = 常数}
 <p><img src="/Electronics/Analog/Section-6/7.png"></p>
 <p>对于电压放大而言，基于如下两点原因，输入电阻 <span class="math inline">\(R_i\)</span> 越大越好：</p>
 <ul>
-<li><span class="math inline">\(R_i\)</span> 越大 <span class="math inline">\(i_i\)</span> 就越小，从信号源索取的电流就越小，信号源消耗的功率就越小；</li>
+<li><span class="math inline">\(R_i\)</span> 越大 <span class="math inline">\(i_i\)</span> 就越小，从信号源索取的电流就越小，信号源消耗的功率也就越小；</li>
 <li>输入电压 <span class="math inline">\(U_i\)</span> 和 信号源内阻 <span class="math inline">\(u_s\)</span> 的关系可以通过分压公式 <span class="math inline">\(U_i = \frac{R_i}{R_s + R_i} u_s\)</span> 表达，可以看到 <span class="math inline">\(R_i\)</span> 越大 <span class="math inline">\(u_i\)</span> 就越接近 <span class="math inline">\(u_S\)</span>；</li>
 </ul>
 <h4 id="输出电阻-r_o">输出电阻 <span class="math inline">\(R_o\)</span></h4>
 <p>从放大电路的输出端看进去的等效电阻，这个参数代表了放大电路的带负载能力：</p>
 <p><img src="/Electronics/Analog/Section-6/8.png"></p>
-<p>将上图左侧的有源二端口网络基于戴维南定理，等效为电压源与电阻的串联，这个戴维南等效电阻 <span class="math inline">\(R_o\)</span> 就是输出电阻。因此，可以将其定量的描述为当负载开路 <span class="math inline">\(R_L = \infty\)</span> 信号源置零 <span class="math inline">\(u_s = 0\)</span> 时，外加激励所得到的电阻阻值：</p>
+<p>将上图左侧的有源二端口网络基于戴维南定理，等效为电压源与电阻的串联，这个戴维南等效电阻 <span class="math inline">\(R_o\)</span> 就是<strong>输出电阻</strong>。因此，可以将其定量的描述为当负载开路 <span class="math inline">\(R_L = \infty\)</span> 信号源置零 <span class="math inline">\(u_s = 0\)</span> 时，外加激励所得到的电阻阻值：</p>
 <p><span class="math display">\[
 R_o = \frac{U_o}{I_o} |_{R_L = \infty, u_s = 0}
 \]</span></p>
-<p>由于负载两端的输出电压 <span class="math inline">\(u_o = \frac{R_L}{r_o + R_L} u_{so}\)</span>，所以输出电阻 <span class="math inline">\(r_o\)</span> 越小放大电路的带负载的能力就越强，反之则越会差。</p>
+<p>由于负载两端的输出电压 <span class="math inline">\(u_o = \frac{R_L}{r_o + R_L} u_{so}\)</span>，所以输出电阻 <span class="math inline">\(r_o\)</span> 越小放大电路的带负载的能力就越强，反之则会越差。</p>
 <h3 id="组态与偏置">组态与偏置</h3>
 <p>组成放大电路时必须从静态和动态两个角度遵循如下原则：</p>
 <ul>
-<li><strong>静态构建原则</strong>：首先，外加直流电源的极性必须让三极管<strong>发射结正偏集电结反偏</strong>以保证其工作于放大区；然后，配置大小合适的直流电源与电阻，保证合适的静态工作点；</li>
-<li><strong>动态构建原则</strong>：要求动态信号能够作用于晶体管输入回路，在负载上能够获得放大后的动态信号；<strong>输入回路</strong>的连接应该让输入电压的变化量 <span class="math inline">\(\Delta u_i\)</span> 能够传送至基极回路，并使基极电流 <span class="math inline">\(i_B\)</span> 产生相应的变化量 <span class="math inline">\(\Delta i_b\)</span>；<strong>输出回路</strong>的连接应让集电极电流 <span class="math inline">\(i_C\)</span> 的变化量 <span class="math inline">\(\Delta i_c\)</span> 能够转化为集电极电压的变化量 <span class="math inline">\(\Delta u_{ce}\)</span>，并且传送至输出端。</li>
+<li><strong>静态构建原则</strong>：首先，外加直流电源的极性必须让三极管<strong>发射结正偏集电结反偏</strong>，以确保其工作于放大区；然后，配置大小合适的直流电源与电阻，保证合适的静态工作点；</li>
+<li><strong>动态构建原则</strong>：要求动态信号能够作用于晶体管输入回路，在负载上能够获得放大后的动态信号；<strong>输入回路</strong>的连接应该让输入电压的变化量 <span class="math inline">\(\Delta u_i\)</span> 能够传送至基极回路，并使得基极电流 <span class="math inline">\(i_B\)</span> 产生相应的变化量 <span class="math inline">\(\Delta i_b\)</span>；<strong>输出回路</strong>的连接应让集电极电流 <span class="math inline">\(i_C\)</span> 的变化量 <span class="math inline">\(\Delta i_c\)</span> 能够转化为集电极电压的变化量 <span class="math inline">\(\Delta u_{ce}\)</span>，并且传送至输出端；</li>
 </ul>
 <h4 id="偏置">偏置</h4>
 <p>所谓<strong>偏置</strong>就是利用直流电源为电路设置固定的直流电压或者电流的过程，也就是设置静态工作点，并且保持静态工作点的稳定。</p>
-<p>在下面 NPN 型晶体管的基极 B 和射极 E 之间添加一个电源 <span class="math inline">\(E_B\)</span> 即可以保证发射结正偏，此时由于 PN 结正向导通电阻较小，为了防止晶体管烧毁，还需要在基级回路添加一个电阻 <span class="math inline">\(R_B\)</span>。在输出回路添加电源 <span class="math inline">\(E_C\)</span> 可以确保集电结反偏，由于晶体管的集电极会输出被放大的电流 <span class="math inline">\(I_C\)</span>，由于此时负载上需要的是被放大的电压信号，因此需要在集电极上添加一个电阻 <span class="math inline">\(R_C\)</span>，根据集电极电位 <span class="math inline">\(V_C = E_C - R_CI_C\)</span>，即可将输出电流的变化转换为电压的变化。</p>
+<p>向下面 NPN 型晶体管的基极 B 和射极 E 之间添加一个电源 <span class="math inline">\(E_B\)</span> 就可以保证发射结正偏，此时由于 PN 结正向导通电阻较小，为了防止晶体管烧毁，还需要在基级回路添加一个电阻 <span class="math inline">\(R_B\)</span>。在输出回路添加电源 <span class="math inline">\(E_C\)</span> 可以确保集电结反偏，由于晶体管的集电极会输出被放大的电流 <span class="math inline">\(I_C\)</span>，由于此时负载上需要的是被放大的电压信号，因此需要在集电极上添加一个电阻 <span class="math inline">\(R_C\)</span>，根据集电极电位 <span class="math inline">\(V_C = E_C - R_CI_C\)</span>，即可将输出电流的变化转换为电压的变化。</p>
 <p><img src="/Electronics/Analog/Section-6/9.png"></p>
 <p>上面的电路已经可以从原理上保证<strong>发射结正偏集电结反偏</strong>，将该电路当中的两个直流电源合二为一，即可得到如下这个单电源供电的偏置电路：</p>
 <p><img src="/Electronics/Analog/Section-6/10.png"></p>
-<p>上面的偏置电路当中，一旦确定电源 <span class="math inline">\(V_{CC}\)</span> 和基极电阻 <span class="math inline">\(R_B\)</span>，基极电流 <span class="math inline">\(I_B\)</span> 也就基本固定，因此这种偏置也称为<strong>固定偏置</strong>。</p>
-<p>由于基极电流 <span class="math inline">\(I_B\)</span> 基本固定类似于一个常量，此时如果由于某种因素，导致晶体管的电流放大系数 <span class="math inline">\(\beta\)</span> 出现变化，此时 <span class="math inline">\(I_B\)</span> 依然会保持不变，而此时由于 <span class="math inline">\(I_C = \beta I_B\)</span>，因而 <span class="math inline">\(I_C\)</span> 就会出现变化，这意味着当晶体管电流放大系数因为某种因素发生变化时，静态工作点将会受到较大的影响。</p>
+<p>上面的偏置电路当中，一旦确定电源 <span class="math inline">\(V_{CC}\)</span> 和基极电阻 <span class="math inline">\(R_B\)</span>，基极电流 <span class="math inline">\(I_B\)</span> 也就基本固定，因此这种偏置也被称为<strong>固定偏置</strong>。</p>
+<p>由于基极电流 <span class="math inline">\(I_B\)</span> 基本固定类似于一个常量，如果由于某种因素导致晶体管的电流放大系数 <span class="math inline">\(\beta\)</span> 出现变化，此时 <span class="math inline">\(I_B\)</span> 依然会保持不变，然而由于 <span class="math inline">\(I_C = \beta I_B\)</span>，因而 <span class="math inline">\(I_C\)</span> 就会出现变化，这意味着当晶体管电流放大系数因为某种因素发生变化时，静态工作点都将会受到较大的影响。</p>
 <p><img src="/Electronics/Analog/Section-6/11.png"></p>
-<p>例如在上面的参数条件下，<span class="math inline">\(\beta\)</span> 由 <code>50</code> 变到 <code>100</code> 时，由于 <span class="math inline">\(I_B\)</span> 基本固定不变，输出回路的两个静态工作点 <span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(V_{CE}\)</span> 就会发生明显的变化，由此说明这种固定偏置电路不能稳定静态工作点 Q。</p>
+<p>例如在上面的参数条件下，<span class="math inline">\(\beta\)</span> 由 <code>50</code> 变为 <code>100</code> 时，由于 <span class="math inline">\(I_B\)</span> 基本固定不变，输出回路的两个静态工作点 <span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(V_{CE}\)</span> 就会发生明显的变化，由此说明这种固定偏置电路不能稳定静态工作点 Q。</p>
 <p><img src="/Electronics/Analog/Section-6/12.png"></p>
-<p>究其原因，这种固定偏置之所以不能够稳定静态工作点，就是由于在 <span class="math inline">\(\beta\)</span> 变化的情况下 <span class="math inline">\(I_B\)</span> 依然固定不变，因此需要打破这种固定才能够达到稳定静态工作点的目标。例如在晶体管射极加入一个电阻 <span class="math inline">\(R_E\)</span>，再来考察上面的情况：</p>
+<p>究其原因，这种固定偏置之所以不能够稳定静态工作点，就是由于在 <span class="math inline">\(\beta\)</span> 变化的情况下 <span class="math inline">\(I_B\)</span> 依然固定不变，因此需要打破这种固定才能够达到稳定静态工作点的目的。比如在晶体管射极加入一个电阻 <span class="math inline">\(R_E\)</span>，此时再来考察上面的情况：</p>
 <p><img src="/Electronics/Analog/Section-6/13.png"></p>
-<p>当 <span class="math inline">\(\beta\)</span> 由 <code>50</code> 变到 <code>100</code> 的时候，由于 <span class="math inline">\(I_B\)</span> 在此时并不是一个固定的量，这样就可以使得输出的 <span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(V_{CE}\)</span> 变化程度较小，因而具备了稳定静态工作点的能力，这种射极添加了电阻的电路称为<strong>射极偏置</strong>。射极偏置添加电阻能够稳定静态工作点的原因在于 <span class="math inline">\(R_E\)</span> 在电阻中引入了<strong>直流负反馈</strong>。</p>
-<p>虽然射极偏置已经可以减小 <span class="math inline">\(\beta\)</span> 变化给静态工作点 Q 造成的影响，但是如果希望电路工作的稳定性能更好，那么可以继续添加在基极和发射极之前再添加一个电阻，得到<strong>分压式偏置</strong>电路。下面的分压式偏置电路，利用 <span class="math inline">\(R_{B1}\)</span> 和 <span class="math inline">\(R_{B2}\)</span> 串联分压稳定的基极电位，配合 <span class="math inline">\(R_E\)</span> 带来的负反馈，可以进一步提高稳定静态工作点的能力。</p>
+<p>当 <span class="math inline">\(\beta\)</span> 由 <code>50</code> 变到 <code>100</code> 的时候，由于此时 <span class="math inline">\(I_B\)</span> 并不是一个固定的量，这样就可以使得输出的 <span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(V_{CE}\)</span> 变化程度较小，因而具备了稳定静态工作点的能力，这种射极添加了电阻的电路称为<strong>射极偏置</strong>。射极偏置添加电阻能够稳定静态工作点的原因在于 <span class="math inline">\(R_E\)</span> 在电阻中引入了<strong>直流负反馈</strong>。</p>
+<p>虽然射极偏置已经可以减小 <span class="math inline">\(\beta\)</span> 变化给静态工作点 Q 造成的影响，但是如果希望电路工作的稳定性更好，可以向基极与发射极之间再添加一个电阻，从而得到<strong>分压式偏置</strong>电路。下面的分压式偏置电路，利用了电阻 <span class="math inline">\(R_{B1}\)</span> 和 <span class="math inline">\(R_{B2}\)</span> 的串联分压来稳定基极电位，配合 <span class="math inline">\(R_E\)</span> 带来的负反馈，就可以进一步提高稳定静态工作点的能力。</p>
 <p><img src="/Electronics/Analog/Section-6/14.png"></p>
 <p>既然反馈可以稳定静态工作点，那么还可以在基极和集电极之间引入反馈，得到如下的<strong>电压反馈式</strong>偏置电路：</p>
 <p><img src="/Electronics/Analog/Section-6/15.png"></p>
@@ -1009,45 +1009,44 @@ R_o = \frac{U_o}{I_o} |_{R_L = \infty, u_s = 0}
 <li>晶体管 <strong>VT2</strong> 从射极输入信号，而输出则是通过集电极驱动 VT3 晶体管，因此 VT2 是一个<strong>共基放大电路</strong>；</li>
 <li>晶体管 <strong>VT3</strong> 从基极输入信号，然后通过发射极驱动负载，因此 VT3 构成的是一个<strong>共集放大电路</strong>；</li>
 </ul>
-<p>上述各种组态的放大电路当中，都会存在一个电容元件（隔直通交），使得输入信号与放大电路、放大电路与负载都通过该电容连接，这种连接方式就称为<strong>阻容耦合</strong>，这个电容就称为<strong>耦合电容</strong>。这样一种阻容耦合的放大电路，其最大优点在于可以隔离输入输出对于电路直流的影响，同时保证交流信号顺利的进行传输。</p>
-<p>而不经过耦合电容直接相连的连接方式称为直接耦合，由于没有了隔直通交的电容，因此其静态工作点更容易受到输入信号与负载的影响，并且由于 <span class="math inline">\(R_{B1}\)</span> 对输入电压存在一定的串联分压效果，因此对晶体管的放大倍数也会造成一定影响。但是这种类型的电路也并非一无是处，正是由于不存在耦合电容，其低频特性非常良好且更容易集成，因而广泛应用于集成电路。</p>
+<p>上述各种组态的放大电路当中，都会存在一个电容元件（隔直通交），使得输入信号与放大电路、放大电路与负载都通过该电容连接，这种连接方式就称为<strong>阻容耦合</strong>，这个电容就称为<strong>耦合电容</strong>。这样一种阻容耦合的放大电路，其最大优点在于可以隔离输入输出对于电路直流的影响，同时保证交流信号的顺利传输。</p>
+<p>而不经过耦合电容直接相连的连接方式称为<strong>直接耦合</strong>，由于没有了隔直通交的电容，因此其静态工作点更容易受到输入信号与负载的影响，并且由于 <span class="math inline">\(R_{B1}\)</span> 对于输入电压存在一定的串联分压效果，因此对晶体管的放大倍数也会造成一定影响。但是这种类型的电路也并非一无是处，正是由于不存在耦合电容，其低频特性非常良好而且更加容易集成，因而广泛应用于各种集成电路当中。</p>
 <h3 id="共射放大电路工作原理">共射放大电路工作原理</h3>
 <p>前一小节，从静态需求的角度引入了多种偏置电路，进而从动态信号传输的角度定义了三种基本组态。</p>
 <p><img src="/Electronics/Analog/Section-6/18.png"></p>
 <p>上面电路是一个前面介绍过的固定偏置电路，选择合适的电源和电阻配合，就可以保证发射结正偏集电结反偏，从而得到一个合适的静态工作点。</p>
 <p><img src="/Electronics/Analog/Section-6/19.png"></p>
-<p>如果将输入信号从基极输入，而将负载连接到集电极上面，就可以得到上面这个较为常用的<strong>共射放大电路</strong>。</p>
-<p>工作原理，信号源 <span class="math inline">\(u_i\)</span> 提供了一个变化的输入信号 <span class="math inline">\(\delta u_i\)</span>，经过耦合电容 <span class="math inline">\(C_1\)</span> 的作用之后，输入信号 <span class="math inline">\(\delta u_i\)</span> 将会引起晶体管输入电压 <span class="math inline">\(\delta u_{be}\)</span> 的变化。</p>
+<p>如果将输入信号从基极输入，而将负载连接到集电极上面，就可以得到上面这个较为常用的<strong>共射放大电路</strong>。其中，信号源 <span class="math inline">\(u_i\)</span> 提供了一个变化的输入信号 <span class="math inline">\(\Delta u_i\)</span>，经过耦合电容 <span class="math inline">\(C_1\)</span> 的作用之后，输入信号 <span class="math inline">\(\Delta u_i\)</span> 将会引起晶体管输入电压 <span class="math inline">\(\Delta u_{be}\)</span> 的变化。</p>
 <p><img src="/Electronics/Analog/Section-6/20.png"></p>
-<p>基于晶体管的输入特性曲线，可以发现变化的 <span class="math inline">\(\delta u_{be}\)</span> 必然引起 <span class="math inline">\(\delta i_b\)</span> 的变化，因为 <span class="math inline">\(\delta i_c = \beta i_b\)</span>，所以 <span class="math inline">\(\delta i_b\)</span> 的变化又会引起 <span class="math inline">\(\delta i_c\)</span> 的变化，从而在输出端获得一个被放大的电流。</p>
-<p>集电极电阻 <span class="math inline">\(R_c\)</span> 上的电流会由于 <span class="math inline">\(\delta i_c\)</span> 的变化而变化，<span class="math inline">\(\delta i_c\)</span> 的变化必然会引起 <span class="math inline">\(R_c\)</span> 上电压降 <span class="math inline">\(\delta u_{R_c}\)</span> 的变化。由于 <span class="math inline">\(u_{R_c} + U_{CE} = U_{CC}\)</span>，这里直流电源 <span class="math inline">\(U_{CC}\)</span> 是固定的，因此 <span class="math inline">\(\delta u_{ce} = - \delta u_{R_c} = - \delta i_c R_c\)</span>，这样就可以将变化的电流 <span class="math inline">\(\delta i_c\)</span> 转换为变化的电压 <span class="math inline">\(\delta u_{ce}\)</span>，变化的 <span class="math inline">\(\delta u_{ce}\)</span> 经过耦合电容 <span class="math inline">\(C_2\)</span> 以后，就是被放大的输出电压 <span class="math inline">\(\delta u_o\)</span>。</p>
-<p>通过上述分析还可以得到一个重要结论：因为 <span class="math inline">\(u_{R_c} + U_{CE} = U_{CC}\)</span>，所以 <span class="math inline">\(u_{R_c}\)</span> 的变化与 <span class="math inline">\(U_{CE}\)</span> 的变化是反向的，<span class="math inline">\(u_o\)</span> 的变化与 <span class="math inline">\(i_c\)</span> 或者 <span class="math inline">\(u_i\)</span> 的变化也是反向的。通过直观的信号变化可以更容易理解这个过程，给上面的共射放大电路输入一个正弦的输入电压信号 <span class="math inline">\(u_i\)</span>：</p>
+<p>基于晶体管的输入特性曲线，可以发现变化的 <span class="math inline">\(\Delta u_{be}\)</span> 必然引起 <span class="math inline">\(\Delta i_b\)</span> 的变化，因为 <span class="math inline">\(\Delta i_c = \beta i_b\)</span>，所以 <span class="math inline">\(\Delta i_b\)</span> 的变化又会引起 <span class="math inline">\(\Delta i_c\)</span> 的变化，从而在输出端获得一个被放大的电流。</p>
+<p>集电极电阻 <span class="math inline">\(R_c\)</span> 上的电流会由于 <span class="math inline">\(\Delta i_c\)</span> 的变化而变化，<span class="math inline">\(\Delta i_c\)</span> 的变化必然会引起 <span class="math inline">\(R_c\)</span> 上电压降 <span class="math inline">\(\Delta u_{R_c}\)</span> 的变化。由于 <span class="math inline">\(u_{R_c} + U_{CE} = U_{CC}\)</span>，这里直流电源 <span class="math inline">\(U_{CC}\)</span> 是固定的，因此 <span class="math inline">\(\Delta u_{ce} = - \Delta u_{R_c} = - \Delta i_c R_c\)</span>，这样就可以将变化的电流 <span class="math inline">\(\Delta i_c\)</span> 转换为变化的电压 <span class="math inline">\(\Delta u_{ce}\)</span>，变化的 <span class="math inline">\(\Delta u_{ce}\)</span> 经过耦合电容 <span class="math inline">\(C_2\)</span> 以后，就是被放大的输出电压 <span class="math inline">\(\Delta u_o\)</span>。</p>
+<p>通过上述分析还可以得到一个重要结论：因为 <span class="math inline">\(u_{R_c} + U_{CE} = U_{CC}\)</span>，所以 <span class="math inline">\(u_{R_c}\)</span> 的变化与 <span class="math inline">\(U_{CE}\)</span> 的变化是反向的，<span class="math inline">\(u_o\)</span> 的变化与 <span class="math inline">\(i_c\)</span> 或者 <span class="math inline">\(u_i\)</span> 的变化也是反向的。通过直观的信号变化可以更容易理解这个过程，假如这里给上面的共射放大电路输入一个正弦的电压信号 <span class="math inline">\(u_i\)</span>：</p>
 <p><img src="/Electronics/Analog/Section-6/21.png"></p>
 <p>显然，<span class="math inline">\(u_i\)</span> 的变化会引起晶体管输入电压信号 <span class="math inline">\(u_{BE}\)</span> 呈现等量同向的变化：</p>
 <p><img src="/Electronics/Analog/Section-6/22.png"></p>
-<p>而 <span class="math inline">\(u_{BE}\)</span> 的变化显然会引起基极电流 <span class="math inline">\(i_B\)</span> 和集电极电流 <span class="math inline">\(i_C\)</span> 的变化：</p>
+<p>而 <span class="math inline">\(u_{BE}\)</span> 的变化显然会引发基极电流 <span class="math inline">\(i_B\)</span> 和集电极电流 <span class="math inline">\(i_C\)</span> 的变化：</p>
 <p><img src="/Electronics/Analog/Section-6/23.png"></p>
-<p><span class="math inline">\(i_C\)</span> 的变化经过 <span class="math inline">\(R_C\)</span> 的作用以后，<span class="math inline">\(u_{CE}\)</span> 上就可以得到一个反向的信号变化：</p>
+<p><span class="math inline">\(i_C\)</span> 的变化经过 <span class="math inline">\(R_C\)</span> 的作用以后，在 <span class="math inline">\(u_{CE}\)</span> 上就可以得到一个反向的信号变化：</p>
 <p><img src="/Electronics/Analog/Section-6/24.png"></p>
 <p>经过耦合电容 <span class="math inline">\(C_2\)</span> 过滤掉直流分量，即可以得到纯交流的输出信号 <span class="math inline">\(u_o\)</span>：</p>
 <p><img src="/Electronics/Analog/Section-6/25.png"></p>
-<p>通过上述过程可以非常清楚的看到输入信号 <span class="math inline">\(u_i\)</span> 和输出信号 <span class="math inline">\(u_o\)</span> 是明显反向的，此外除 <span class="math inline">\(u_i\)</span> 和 <span class="math inline">\(u_o\)</span> 是纯交流分量以外，电路当中其它位置的电流电压都不是纯交流信号，而是交流与直流（静态工作点）的叠加。综上所述，放大电路内部是<code>直流</code>与<code>交流</code>分量共存的，两种信号的来源和作用各有不同；其中直流分量是基础，其来自于直流电源，用于保证三极管正确偏置，并且保持合适的静态工作点；而交流分量则是携带信息并且被放大的量；</p>
+<p>通过上述过程可以非常清楚的看到输入信号 <span class="math inline">\(u_i\)</span> 和输出信号 <span class="math inline">\(u_o\)</span> 是明显反向的，此外除了 <span class="math inline">\(u_i\)</span> 和 <span class="math inline">\(u_o\)</span> 是纯交流分量以外，电路当中其它位置的电流电压都不是纯交流信号，而是交流与直流（静态工作点）的叠加。综上所述，放大电路内部的<code>直流</code>与<code>交流</code>分量是共存的，两种信号的来源和作用各有不同；其中直流分量是基础，其来自于直流电源，用于保证三极管正确偏置，并且保持合适的静态工作点；而交流分量则是用于携带信息并且被放大的量；</p>
 <h2 id="bjt-放大电路静态分析">BJT 放大电路静态分析</h2>
 <p>前一节讨论了共射放大电路的工作原理，清楚展示了放大过程中交流与直流共存的状态，即<strong>直流是基础，交流是驮载在直流之上被放大的信号</strong>。</p>
 <p>放大电路结构当中的一些元件，对于直流信号和交流信号所呈现的阻抗是不相同的：</p>
 <ul>
-<li><strong>电容</strong>：隔直通交，对于直流信号的阻抗为无穷大，可以视为开路；对于交流信号在电容上的压降可以忽略不计，可以视为短路处理；</li>
-<li><strong>电感</strong>：隔交通直，对于直流信号的阻抗很小，可以视为短路；而对于交流信号则呈现出感抗 <span class="math inline">\(ωL\)</span> 视为开路；</li>
+<li><strong>电容</strong>：<strong>隔直通交</strong>，对于直流信号的阻抗为无穷大，可以视为开路；对于交流信号在电容上的压降可以忽略不计，可以作短路处理；</li>
+<li><strong>电感</strong>：<strong>隔交通直</strong>，对于直流信号的阻抗很小，可以视为短路；而对于交流信号则呈现出感抗 <span class="math inline">\(ωL\)</span> 而视为开路；</li>
 </ul>
 <p>除了上述电抗元件，由于动态信号下重点关注的是信号本身的变化，如果电路当中某些点的电压、电流不随交流信号变化，那么也需要重点进行考虑：</p>
 <ul>
 <li><strong>理想直流电压源</strong>：电压恒定不变，即电压变化量等于零，因此在交流信号的作用下相当于<strong>短路</strong>。</li>
 <li><strong>理想直流电流源</strong>：电流恒定不变，即电流变化量等于零，因此在交流信号的作用下相当于<strong>开路</strong>。</li>
 </ul>
-<p>既然电路当中客观存在上述对交直流呈现不同阻抗的元件，那么交流分量和直流分量所经过的通路可能就是不同的：</p>
+<p>由于电路当中存在上述对交直流呈现不同阻抗的元件，那么交流分量和直流分量所经过的通路就是不同的：</p>
 <ul>
 <li><strong>直流通路</strong>：没有交流信号源作用时，直流电流所流经的通路，主要用于分析静态工作点；</li>
-<li><strong>交流通路</strong>：输入交流信号所流经的通路，主要用于计算电压放大倍数、输入电阻、输出电阻等动态性能指标；</li>
+<li><strong>交流通路</strong>：输入交流信号时所流经的通路，主要用于计算电压放大倍数、输入电阻、输出电阻等动态性能指标；</li>
 </ul>
 <p>交流通路、直流通路的绘制对于放大电路的分析具有重要意义：</p>
 <ol type="1">
@@ -1063,7 +1062,7 @@ R_o = \frac{U_o}{I_o} |_{R_L = \infty, u_s = 0}
 <li>将电容视为开路；</li>
 <li>将电感视为短路；</li>
 </ol>
-<p>【例如】根据上面的定义，先将左侧电路的信号源短路处理，进而将耦合电容 <span class="math inline">\(C_1\)</span> 和 <span class="math inline">\(C_2\)</span> 视为开路，就可以得到该电路对应的右侧直流通路，此时由于电路中只有直流电源 <span class="math inline">\(U_{CC}\)</span> 的作用，各点的电流电压都是静态值，即静态工作点 Q：</p>
+<p>【例如】根据上面的定义，可以先将下图左侧电路的信号源作短路处理，进而将耦合电容 <span class="math inline">\(C_1\)</span> 和 <span class="math inline">\(C_2\)</span> 视为开路，就可以得到该电路对应的右侧直流通路，此时由于电路当中只存在直流电源 <span class="math inline">\(U_{CC}\)</span> 的作用，各点的电流电压都是静态值，即静态工作点 Q：</p>
 <p><img src="/Electronics/Analog/Section-7/1.png"></p>
 <p><strong>交流通路</strong>的绘制步骤：</p>
 <ol type="1">
@@ -1076,8 +1075,8 @@ R_o = \frac{U_o}{I_o} |_{R_L = \infty, u_s = 0}
 <p>基于上一节获得的直流通路，就可以秉承<strong>先静态后动态的原则</strong>开展静态分析，即基于放大电路的偏置电路求取静态工作点，静态分析的方法主要有<strong>估算法</strong>和<strong>图解法</strong>两种：</p>
 <p>首先，任何一种静态分析方法，都需要准确的获得放大电路的直流通路：</p>
 <p><img src="/Electronics/Analog/Section-7/3.png"></p>
-<p>上图直流通路当中各点的电流、电压都是直流分量，可以采用大符号大下标进行表示，这里的 <span class="math inline">\(I_B\)</span>、<span class="math inline">\(I_C\)</span>、<span class="math inline">\(U_{BE}\)</span>、<span class="math inline">\(U_{CE}\)</span> 就是待求取的静态工作点。</p>
-<p>已知当晶体管处于发射结正偏时，PN 结的正向导通压降可以视为一个确定值，例如硅管 <span class="math inline">\(U_{BEQ} = (0.6V \sim 0.8V)\)</span>，通常取典型值 <code>0.7V</code>。此外，当晶体管进行放大的时候，<span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(I_B\)</span> 之间有着比较固定的 <span class="math inline">\(I_C = \beta I_B\)</span> 关系。最后，结合 KVL 方程就可以对静态工作点进行求解，如果已知 <span class="math inline">\(V_CC\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span>、<span class="math inline">\(U_{BEQ}\)</span>、<span class="math inline">\(\beta\)</span>，就可以联立得到如下的方程：</p>
+<p>上面这个直流通路当中各点的电流、电压都是直流分量，可以采用大符号大下标进行表示，这里的 <span class="math inline">\(I_B\)</span>、<span class="math inline">\(I_C\)</span>、<span class="math inline">\(U_{BE}\)</span>、<span class="math inline">\(U_{CE}\)</span> 就是待求取的静态工作点。</p>
+<p>已知当晶体管处于发射结正偏时，PN 结的正向导通压降可以视为一个确定值，例如硅管 <span class="math inline">\(U_{BEQ} = (0.6V \sim 0.8V)\)</span>，通常取典型值 <code>0.7V</code>。此外，当晶体管进行放大的时候，<span class="math inline">\(I_C\)</span> 和 <span class="math inline">\(I_B\)</span> 之间有着比较固定的 <span class="math inline">\(I_C = \beta I_B\)</span> 关系。最后，结合 KVL 方程就可以对静态工作点进行求解，如果已知 <span class="math inline">\(V_CC\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span>、<span class="math inline">\(U_{BEQ}\)</span>、<span class="math inline">\(\beta\)</span>，就可以联立得到如下方程：</p>
 <p><span class="math display">\[
 \begin{cases}
   I_{BQ} = \frac{V_{CC} - U_{BEQ}}{R_B} \approx \frac{V_{CC}}{R_B} \\
@@ -1087,7 +1086,7 @@ R_o = \frac{U_o}{I_o} |_{R_L = \infty, u_s = 0}
 \]</span></p>
 <p>▶【例题】采用估算法求解下图射极偏置电路的静态工作点？</p>
 <p><img src="/Electronics/Analog/Section-7/4.png"></p>
-<p>▶【解答】首先，对射极偏置电路进行静态分析的时候，需要找到通过一个方程就能确定的未知数，本题当中应为 <span class="math inline">\(I_B\)</span>，基于上图蓝色箭头标识的输入回路电压方程：</p>
+<p>▶【解答】首先，对射极偏置电路进行静态分析的时候，需要找到通过一个方程就能确定的未知数，本题当中这个未知数就是 <span class="math inline">\(I_B\)</span>，基于上图蓝色箭头标识的输入回路列写电压方程：</p>
 <p><span class="math display">\[
 U_{CC} = I_B R_B + U_{BE} + (1+\beta) I_B R_E
 \]</span></p>
@@ -1099,21 +1098,21 @@ I_B = \frac{U_{CC} - U_{BE}}{R_B + (1+\beta)R_E}
 <p><span class="math display">\[
 U_{CE} = U_{CC} - I_C R_C - I_E R_E
 \]</span></p>
-<p>最后，完成静态工作点的分析。由此，可以总结出估算法求解静态工作点的一般步骤如下：</p>
+<p>最后，联立方程完成静态工作点的分析，并且可以由此总结出估算法求解静态工作点的一般步骤：</p>
 <ol type="1">
 <li>精简出放大电路的直流通路；</li>
-<li>根据基极回路求 <span class="math inline">\(I_{B}\)</span>；</li>
-<li>由 BJT 的电流分配关系求 <span class="math inline">\(I_{C}\)</span>；</li>
-<li>由集电极回路求 <span class="math inline">\(U_{CE}\)</span>；</li>
+<li>根据基极回路求解 <span class="math inline">\(I_{B}\)</span>；</li>
+<li>由 BJT 的电流分配关系求解 <span class="math inline">\(I_{C}\)</span>；</li>
+<li>由集电极回路求解 <span class="math inline">\(U_{CE}\)</span>；</li>
 </ol>
-<p>基于基尔霍夫定律列写放大电路输入与输出回路的电压方程，求取 <span class="math inline">\(I_{B}\)</span>、<span class="math inline">\(I_{C}\)</span>、<span class="math inline">\(U_{CE}\)</span>。</p>
+<p>即基于基尔霍夫定律列写放大电路输入与输出回路的电压方程，求取 <span class="math inline">\(I_{B}\)</span>、<span class="math inline">\(I_{C}\)</span>、<span class="math inline">\(U_{CE}\)</span>。</p>
 <blockquote>
 <p><strong>注意</strong>：当电路结构发生变化时，求解的表达式也会发生变化，求解的思路也可能会发生变化，因此必须具体问题具体分析，而不能生搬硬套。</p>
 </blockquote>
 <h3 id="图解法">图解法</h3>
 <p>由于静态工作点 <span class="math inline">\(I_{BQ}\)</span>、<span class="math inline">\(U_{BEQ}\)</span> 与 <span class="math inline">\(I_{CQ}\)</span>、<span class="math inline">\(U_{CEQ}\)</span> 分别对应输入、输出特性曲线上的点，所以可以采用作图的方法，通过晶体管特性曲线分析静态工作点。</p>
 <p><img src="/Electronics/Analog/Section-7/5.png"></p>
-<p>在已知元件实际伏安特性曲线的条件下，图解法可以直观的分析各个参数对于静态工作点的影响，并且了解静态工作点的变化对于放大电路静态特性的影响。这里以下面偏置电路为例，采用图解法求解其静态工作点：</p>
+<p>在已知元件实际伏安特性曲线的情况下，图解法可以直观的分析各个参数对于静态工作点的影响，并且了解静态工作点的变化对于放大电路静态特性的影响。这里以下面的偏置电路为例，采用图解法求解其静态工作点：</p>
 <p><img src="/Electronics/Analog/Section-7/6.png"></p>
 <p>已知晶体管的输入、输出特性曲线如下所示：</p>
 <p><img src="/Electronics/Analog/Section-7/7.png"></p>
@@ -1124,25 +1123,25 @@ U_{CE} = U_{CC} - I_C R_C - I_E R_E
    I_B = -\frac{1}{R_B} U_{BE} + \frac{V_{CC}}{R_B}
 \end{cases}
 \]</span></p>
-<p>此时，在输入特性曲线下，上面输入回路的电压方程就是一条以 <span class="math inline">\(-\frac{1}{R_B}\)</span> 为斜率的直线，这条直线与输入特性曲线具有唯一交点，即静态工作点 <span class="math inline">\((I_{BQ}, U_{BEQ})\)</span>。</p>
+<p>此时，在输入特性曲线下，上面输入回路的电压方程就是一条以 <span class="math inline">\(-\frac{1}{R_B}\)</span> 作为斜率的直线，该条直线与输入特性曲线具有唯一交点，即静态工作点 <span class="math inline">\((I_{BQ}, U_{BEQ})\)</span>。</p>
 <p><img src="/Electronics/Analog/Section-7/8.png"></p>
-<p>接下来观察<strong>输入回路</strong>曲线，同样也可以列出如下的电压方程：</p>
+<p>接下来观察<strong>输入回路</strong>曲线，同样也可以列写出如下的电压方程：</p>
 <p><span class="math display">\[
 \begin{cases}
    U_{CE} = V_{CC} - I_C R_C \\
    I_C = -\frac{1}{R_C} U_{CE} + \frac{V_{CC}}{R_C}
 \end{cases}
 \]</span></p>
-<p>同样，在输出特性曲线下，上面输入回路的电压方程就是一条以 <span class="math inline">\(-\frac{1}{R_C}\)</span> 为斜率的直线（直流负载线），这条直线与输出特性曲线具有多个交点。由于前面已经基于输入特性求取了 <span class="math inline">\(I_{BQ}\)</span>，那么 <span class="math inline">\(I_{BQ}\)</span> 对应的特性曲线与该直线的交点就是所求的静态工作点 <span class="math inline">\((I_{CQ}, U_{CEQ})\)</span>。</p>
+<p>同理，在输出特性曲线下，上面输入回路的电压方程就是一条以 <span class="math inline">\(-\frac{1}{R_C}\)</span> 为斜率的直线（<strong>直流负载线</strong>），该条直线与输出特性曲线具有多个交点。由于前面已经基于输入特性求取了 <span class="math inline">\(I_{BQ}\)</span>，所以 <span class="math inline">\(I_{BQ}\)</span> 对应的特性曲线与该直线的交点就是待求的静态工作点 <span class="math inline">\((I_{CQ}, U_{CEQ})\)</span>。</p>
 <p><img src="/Electronics/Analog/Section-7/9.png"></p>
-<p>通过上面的过程，可以非常直观的观察到静态工作点在特性曲线当中的位置，这样就有利于观察电路参数 <span class="math inline">\(V_CC\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span>、<span class="math inline">\(\beta\)</span> 对静态工作点的影响。</p>
+<p>经过上面的过程，可以非常直观的观察到静态工作点在特性曲线当中的位置，这样就有利于观察电路参数 <span class="math inline">\(V_{CC}\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span>、<span class="math inline">\(\beta\)</span> 对静态工作点的影响：</p>
 <ul>
-<li>改变 <span class="math inline">\(R_B\)</span>，其它参数保持不变；下图左侧输入回路的电压方程是一条以 <span class="math inline">\(-\frac{1}{R_B}\)</span> 为斜率的直线，因此当 <span class="math inline">\(R_B\)</span> 变化的时候，这条直线的斜率也会发生变化，当 <span class="math inline">\(R_B\)</span> 增大的时候，斜率变小导致静态工作点向下移动。对于右侧的输出回路，当 <span class="math inline">\(R_B\)</span> 增大的时候，<span class="math inline">\(I_{BQ}\)</span> 变小，导致静态工作点 Q 沿着直流负载线向下移动；所以，可以得到结论 <span class="math inline">\(R_B\)</span> 的变化将会非常明显的影响静态工作点的位置； <img src="/Electronics/Analog/Section-7/10.png"></li>
-<li>改变 <span class="math inline">\(R_C\)</span>，其它参数保持不变；由于输入回路的方程是一条斜率为 <span class="math inline">\(-\frac{1}{R_B}\)</span> 的直线，所以 <span class="math inline">\(R_C\)</span> 的变化不会影响到输入回路的静态工作点；而输出回路当中，直流负载线的斜率为 <span class="math inline">\(-\frac{1}{R_C}\)</span>，因此 <span class="math inline">\(R_C\)</span> 的变化将会直接导致直流负载线的变化，如果 <span class="math inline">\(R_C\)</span> 增大，直流负载线斜率变小，将会导致静态工作点向左移动靠近饱和区； <img src="/Electronics/Analog/Section-7/11.png"></li>
-<li>改变 <span class="math inline">\(V_{CC}\)</span>，其它参数保持不变；输入回路的直线和输出回路的直流负载线都与 <span class="math inline">\(V_{CC}\)</span> 密切相关，例如当 <span class="math inline">\(V_{CC}\)</span> 减小的时候，输入回路的直线将会向下平移，从而导致静态工作点向下移动，<span class="math inline">\(I_{BQ}\)</span> 会减小；输出回路的直流负载线则由于 <span class="math inline">\(V_{CC}\)</span> 的减小而向下平移，而 <span class="math inline">\(I_{BQ}\)</span> 的变小也会导致静态工作点向下移动，所以 <span class="math inline">\(V_{CC}\)</span> 对于静态工作点也有明显影响； <img src="/Electronics/Analog/Section-7/12.png"></li>
-<li>改变 <span class="math inline">\(\beta\)</span>，其它参数保持不变；由于这种情况下 <span class="math inline">\(V_CC\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span> 都没有发生变化，所以对于固定偏置电路而言，输出和输出回路的特性方程都不会发生变化，发生变化的主要是特性曲线；当 <span class="math inline">\(\beta\)</span> 发生变化时，输入回路的特性将不会发生变化，因此输入回路的静态工作点将不会受到影响；而输出回路当中，如果 <span class="math inline">\(\beta\)</span> 变化必然导致输出特性曲线变化，比如 <span class="math inline">\(\beta\)</span> 增大，那么特性曲线会向上移动，而且曲线间距会拉大，造成直流负载线与 <span class="math inline">\(I_{BQ}\)</span> 所对应特性曲线的交点（静态工作点）向上移动；由此可见，晶体管 <span class="math inline">\(\beta\)</span> 参数的稳定，对于静态工作点的稳定至关重要； <img src="/Electronics/Analog/Section-7/13.png"></li>
+<li>如果改变 <span class="math inline">\(R_B\)</span>，其它参数保持不变；下图左侧输入回路的电压方程是一条以 <span class="math inline">\(-\frac{1}{R_B}\)</span> 为斜率的直线，因此当 <span class="math inline">\(R_B\)</span> 变化的时候，这条直线的斜率也会发生变化，当 <span class="math inline">\(R_B\)</span> 增大的时候，斜率变小导致静态工作点向下移动。对于右侧的输出回路，当 <span class="math inline">\(R_B\)</span> 增大的时候，<span class="math inline">\(I_{BQ}\)</span> 变小，导致静态工作点 Q 沿着直流负载线向下移动；所以 <span class="math inline">\(R_B\)</span> 的变化将会非常明显的影响静态工作点的位置； <img src="/Electronics/Analog/Section-7/10.png"></li>
+<li>如果改变 <span class="math inline">\(R_C\)</span>，其它参数保持不变；由于输入回路的方程是一条斜率为 <span class="math inline">\(-\frac{1}{R_B}\)</span> 的直线，所以 <span class="math inline">\(R_C\)</span> 的变化不会影响到输入回路的静态工作点；而输出回路当中，直流负载线的斜率为 <span class="math inline">\(-\frac{1}{R_C}\)</span>，因此 <span class="math inline">\(R_C\)</span> 的变化将会直接导致直流负载线的变化，如果 <span class="math inline">\(R_C\)</span> 增大，直流负载线斜率变小，将会导致静态工作点向左移动靠近饱和区； <img src="/Electronics/Analog/Section-7/11.png"></li>
+<li>如果改变 <span class="math inline">\(V_{CC}\)</span>，其它参数保持不变；输入回路的直线和输出回路的直流负载线都与 <span class="math inline">\(V_{CC}\)</span> 密切相关，例如当 <span class="math inline">\(V_{CC}\)</span> 减小的时候，输入回路的直线将会向下平移，从而导致静态工作点向下移动，<span class="math inline">\(I_{BQ}\)</span> 会减小；输出回路的直流负载线则由于 <span class="math inline">\(V_{CC}\)</span> 的减小而向下平移，而 <span class="math inline">\(I_{BQ}\)</span> 的变小也会导致静态工作点向下移动，所以 <span class="math inline">\(V_{CC}\)</span> 对于静态工作点也有明显影响； <img src="/Electronics/Analog/Section-7/12.png"></li>
+<li>如果改变 <span class="math inline">\(\beta\)</span>，其它参数保持不变；由于这种情况下 <span class="math inline">\(V_{CC}\)</span>、<span class="math inline">\(R_B\)</span>、<span class="math inline">\(R_C\)</span> 都没有发生变化，所以对于固定偏置电路而言，输入输出回路的特性方程都不会发生改变，发生变化的主要是特性曲线；当 <span class="math inline">\(\beta\)</span> 发生变化时，输入回路的特性将不会发生变化，因此输入回路的静态工作点将不会受到影响；而输出回路当中，如果 <span class="math inline">\(\beta\)</span> 变化必然导致输出特性曲线变化，比如 <span class="math inline">\(\beta\)</span> 增大，那么特性曲线就会向上移动，而且曲线间距会拉大，造成直流负载线与 <span class="math inline">\(I_{BQ}\)</span> 所对应特性曲线的交点（静态工作点）向上移动；由此可见，晶体管 <span class="math inline">\(\beta\)</span> 参数的稳定，对于静态工作点的稳定至关重要； <img src="/Electronics/Analog/Section-7/13.png"></li>
 </ul>
-<p>通过上述讨论可以发现，放大电路当中电源、电阻、三极管的参数都会对静态工作点带来明显影响，具体的电路设计过程当中，主要是基于基极电阻 <span class="math inline">\(R_B\)</span> 对静态工作点进行调整，这是由于晶体管本身是一个电流控制元件，调整 <span class="math inline">\(R_B\)</span> 从而改变 <span class="math inline">\(I_B\)</span> 的大小，能够牵一发动全身更有效的调整静态工作点，同时调整 <span class="math inline">\(R_B\)</span> 将不会影响放大电路的输出回路，减小了对电路动态性能的影响。</p>
+<p>通过上述讨论可以发现，放大电路当中电源、电阻、三极管的参数都会给静态工作点带来明显影响，具体的电路设计过程当中，主要是基于基极电阻 <span class="math inline">\(R_B\)</span> 对静态工作点进行调整，这是由于晶体管本身是一个电流控制元件，调整 <span class="math inline">\(R_B\)</span> 就可以改变 <span class="math inline">\(I_B\)</span> 的大小，从而牵一发动全身的调整晶体管的静态工作点，同时调整 <span class="math inline">\(R_B\)</span> 并不会影响放大电路的输出回路，减小了对于电路动态性能的影响。</p>
 <h2 id="bjt-放大电路微变等效电路法">BJT 放大电路微变等效电路法</h2>
 <p>Ω</p>
 <p>°C</p>
@@ -1181,7 +1180,7 @@ U_{CE} = U_{CC} - I_C R_C - I_E R_E
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://uinika.github.io/Electronics/Analog.html" title="模拟电子技术实用笔记">https://uinika.github.io/Electronics/Analog.html</a>
+    <a href="https://uinika.github.io/Electronics/Analog.html" title="现代模拟电子技术实用笔记">https://uinika.github.io/Electronics/Analog.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
