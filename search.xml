@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Altium Designer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android 物联网应用开发实例</title>
     <url>/Embedded/Android.html</url>
     <content><![CDATA[]]></content>
@@ -23,17 +34,6 @@
       </tags>
   </entry>
   <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Altium Designer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>J-Link 仿真器固件恢复小记</title>
     <url>/Embedded/JLink.html</url>
     <content><![CDATA[]]></content>
@@ -45,8 +45,8 @@
       </tags>
   </entry>
   <entry>
-    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
-    <url>/Embedded/Mini2440.html</url>
+    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
+    <url>/Embedded/NucleoF767ZI.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -56,8 +56,8 @@
       </tags>
   </entry>
   <entry>
-    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
-    <url>/Embedded/NucleoF767ZI.html</url>
+    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
+    <url>/Embedded/Mini2440.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -89,17 +89,6 @@
       </tags>
   </entry>
   <entry>
-    <title>从 GNU Make 到 CMake 快速入门</title>
-    <url>/Linux/CMake.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象的 C++ 11 程序设计语言</title>
     <url>/Linux/C++.html</url>
     <content><![CDATA[]]></content>
@@ -111,14 +100,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <url>/Linux/Command.html</url>
+    <title>从 GNU Make 到 CMake 快速入门</title>
+    <url>/Linux/CMake.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Linux</category>
+        <category>C/C++</category>
       </categories>
       <tags>
-        <tag>Embedded</tag>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -130,6 +119,17 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 常用命令行速查手册</title>
+    <url>/Linux/Command.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
       </tags>
   </entry>
   <entry>
@@ -265,8 +265,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 3.0 新增特性集锦</title>
-    <url>/Web/CSS3.html</url>
+    <title>CSS 2.1 典型概念与布局详解</title>
+    <url>/Web/CSS2.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -276,8 +276,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 2.1 典型概念与布局详解</title>
-    <url>/Web/CSS2.html</url>
+    <title>CSS 3.0 新增特性集锦</title>
+    <url>/Web/CSS3.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -298,8 +298,8 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Django2 快速开发 Web 服务</title>
-    <url>/Web/Django.html</url>
+    <title>使用 Electron 打造跨平台桌面应用</title>
+    <url>/Web/Electron.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -309,8 +309,8 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <url>/Web/Electron.html</url>
+    <title>使用 Django2 快速开发 Web 服务</title>
+    <url>/Web/Django.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -342,17 +342,6 @@
       </tags>
   </entry>
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <url>/Web/JQuery.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>概览 HTML 5 语义化标签</title>
     <url>/Web/Html.html</url>
     <content><![CDATA[]]></content>
@@ -361,6 +350,17 @@
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <url>/Web/JQuery.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -375,17 +375,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Webpack 4 核心剖析</title>
-    <url>/Web/Webpack.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows 工作环境 Config 札记</title>
     <url>/Zen/Config-Windows.html</url>
     <content><![CDATA[]]></content>
@@ -394,6 +383,17 @@
       </categories>
       <tags>
         <tag>Windows Config</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Webpack 4 核心剖析</title>
+    <url>/Web/Webpack.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -463,17 +463,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Qt 5 桌面应用程序开发指南 - QtQuick 篇</title>
     <url>/Linux/Qt-Quick.html</url>
     <content><![CDATA[]]></content>
@@ -482,6 +471,17 @@
       </categories>
       <tags>
         <tag>Desktop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
