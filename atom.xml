@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-10-03T15:30:55.465Z</updated>
+  <updated>2020-10-04T08:51:48.219Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,11 +17,65 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>数字电子技术备忘录</title>
+    <link href="https://uinika.github.io/Electronics/Digital.html"/>
+    <id>https://uinika.github.io/Electronics/Digital.html</id>
+    <published>2020-10-04T08:41:49.764Z</published>
+    <updated>2020-10-04T08:51:48.219Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;时至今日，数字化浪潮几乎席卷了电子应用技术的一切领域，与传统的模拟电子系统相比，数字电子系统具有更为优异的精确性与可靠性，因此，许多曾经使用模拟电子技术实现的系统目前正在逐步被数字系统所代替。数
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Electronics" scheme="https://uinika.github.io/categories/Electronics/"/>
+    
+    
+      <category term="Digital" scheme="https://uinika.github.io/tags/Digital/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用 LaTeX 数学公式语法汇总</title>
+    <link href="https://uinika.github.io/Zen/LaTex.html"/>
+    <id>https://uinika.github.io/Zen/LaTex.html</id>
+    <published>2020-10-04T08:23:04.099Z</published>
+    <updated>2020-10-04T08:41:25.086Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;MathJax 是一款运行于浏览器当中的开源 JavaScript 数学符号渲染引擎，使用 MathJax 可以方便的在现代 Web 浏览器当中显示数学公式。目前 MathJax 可以解析
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
+    
+    
+      <category term="Markdown" scheme="https://uinika.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>现代模拟电子技术实用笔记</title>
     <link href="https://uinika.github.io/Electronics/Analog.html"/>
     <id>https://uinika.github.io/Electronics/Analog.html</id>
-    <published>2020-10-03T11:05:06.084Z</published>
-    <updated>2020-10-03T15:30:55.465Z</updated>
+    <published>2020-10-03T16:19:13.261Z</published>
+    <updated>2020-10-04T10:54:46.035Z</updated>
     
     <summary type="html">
     
@@ -427,52 +481,6 @@
     
     
       <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>言简意赅 の Python3</title>
-    <link href="https://uinika.github.io/Web/Python.html"/>
-    <id>https://uinika.github.io/Web/Python.html</id>
-    <published>2020-05-21T13:39:03.860Z</published>
-    <updated>2020-05-21T13:39:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Python 诞生于 20 世纪 90 年代初，由荷兰人 Guido van Rossum 开发完成，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库&lt;a href=&quot;https://opencv.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OpenCV&lt;/a&gt;、三维可视化库&lt;a href=&quot;https://www.vtk.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VTK&lt;/a&gt;、医学图像处理库&lt;a href=&quot;https://itk.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ITK&lt;/a&gt;都提供了 Python 调用接口，Python 也原生提供了&lt;a href=&quot;http://www.numpy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NumPy&lt;/a&gt;、&lt;a href=&quot;https://www.scipy.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SciPy&lt;/a&gt;、&lt;a href=&quot;https://matplotlib.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;matplotlib&lt;/a&gt;等强大的科学计算扩展库。Web 开发方面，Python 也提供有&lt;a href=&quot;https://www.Djangoproject.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Django&lt;/a&gt;、&lt;a href=&quot;http://www.tornadoweb.org/en/stable/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tornado&lt;/a&gt;两款常用的 Web 开发框架。总而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Python/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文的示例代码基于目前最新的&lt;a href=&quot;https://www.python.org/downloads/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Python 3.6.6&lt;/a&gt;版本，在简单介绍相关语法以及&lt;a href=&quot;https://pypi.org/project/pip/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pip&lt;/a&gt;、&lt;a href=&quot;https://virtualenv.pypa.io/en/stable/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;virtualenv&lt;/a&gt;等扩展库的使用之后，将会最终完成一个基于官方 XML 解析库&lt;code&gt;ElementTree&lt;/code&gt;的 SVG 图片合并小程序。本文涉及的代码和 Markdown 都已经上传至笔者的&lt;a href=&quot;https://github.com/uinika/python-quick-guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt;，需要的朋友可以直接进行克隆，如果发现缪误或有任何建议请向我提交&lt;a href=&quot;https://github.com/uinika/python-quick-guide/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;issue&lt;/a&gt;。此外，笔者正在撰写[&lt;a href=&quot;https://uinika.github.io/web/server/django.html&quot;&gt;《使用 Django2 快速开发 Web 项目》&lt;/a&gt;一文，供需要使用 Python 进行 Web 开发的朋友进一步阅读。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>React 16.6.x 全新全译</title>
-    <link href="https://uinika.github.io/Web/React.html"/>
-    <id>https://uinika.github.io/Web/React.html</id>
-    <published>2020-05-21T13:39:03.860Z</published>
-    <updated>2020-05-21T13:39:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;全文翻译自&lt;a href=&quot;https://reactjs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;React 16.6.0 英文文档&lt;/a&gt;，适当精简了生产环境不经常使用的内容，并对部分较为复杂的概念进行了更加翔实的解读，以及与 Vue2 进行了一些特性方面的比较。本文首先会介绍&lt;strong&gt;React 16&lt;/strong&gt;带来的一系列变化与新特性，然后解读 React 官方文档&lt;a href=&quot;https://reactjs.org/docs/hello-world.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Docs&lt;/a&gt;当中&lt;strong&gt;Quick Start&lt;/strong&gt;和&lt;strong&gt;Advanced Guides&lt;/strong&gt;的内容，最后基于项目上的使用实践，开源了一个较为完整的&lt;strong&gt;&lt;a href=&quot;https://github.com/uinika/rhino.git&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;脚手架项目Rhino&lt;/a&gt;&lt;/strong&gt;，适合已经具备&lt;strong&gt;组件式&lt;/strong&gt;前端框架开发经验的同学快速上手。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/React/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2017 年 9 月 &lt;strong&gt;Facebook&lt;/strong&gt; 释出&lt;code&gt;React v16.0.x&lt;/code&gt;，宣布使用对商业使用更加友好的 &lt;a href=&quot;https://mit-license.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;MIT license&lt;/strong&gt;&lt;/a&gt; 开源许可，并带来了全新的&lt;code&gt;render()&lt;/code&gt;函数返回类型、更加健壮的错误处理机制、全新的&lt;code&gt;Fragment&lt;/code&gt;和&lt;code&gt;Portal&lt;/code&gt; 特性，并完全重写了类库的核心架构，带来更为优异服务器端渲染性能的同时，有效缩小了类库代码本身的体积，更重要的意义在于杜绝了 &lt;a href=&quot;https://github.com/developit/preact&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Preact&lt;/strong&gt;&lt;/a&gt; 等衍生框架对 React 社区所造成的分裂。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
