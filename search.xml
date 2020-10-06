@@ -12,17 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数字电子技术备忘录</title>
-    <url>/Electronics/Digital.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Digital</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
     <url>/Electronics/KiCad.html</url>
     <content><![CDATA[]]></content>
@@ -31,6 +20,17 @@
       </categories>
       <tags>
         <tag>EDA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基础数字逻辑电子技术备忘录</title>
+    <url>/Electronics/Digital.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Digital</tag>
       </tags>
   </entry>
   <entry>
@@ -56,8 +56,8 @@
       </tags>
   </entry>
   <entry>
-    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
-    <url>/Embedded/NucleoF767ZI.html</url>
+    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
+    <url>/Embedded/Mini2440.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -67,8 +67,8 @@
       </tags>
   </entry>
   <entry>
-    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
-    <url>/Embedded/Mini2440.html</url>
+    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
+    <url>/Embedded/NucleoF767ZI.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -89,17 +89,6 @@
       </tags>
   </entry>
   <entry>
-    <title>面向对象的 C++ 11 程序设计语言</title>
-    <url>/Linux/C++.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
     <url>/Embedded/STM32F103ZET6.html</url>
     <content><![CDATA[]]></content>
@@ -108,6 +97,17 @@
       </categories>
       <tags>
         <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象的 C++ 11 程序设计语言</title>
+    <url>/Linux/C++.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -130,17 +130,6 @@
       </categories>
       <tags>
         <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux C 应用程序开发进阶</title>
-    <url>/Linux/Native.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>C language</tag>
       </tags>
   </entry>
   <entry>
@@ -174,6 +163,17 @@
       </categories>
       <tags>
         <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux C 应用程序开发进阶</title>
+    <url>/Linux/Native.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>C language</tag>
       </tags>
   </entry>
   <entry>
@@ -265,17 +265,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 2.1 典型概念与布局详解</title>
-    <url>/Web/CSS2.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为什么认为 Backbone 是现代化前端框架的基石</title>
     <url>/Web/Backbone.html</url>
     <content><![CDATA[]]></content>
@@ -284,6 +273,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS 2.1 典型概念与布局详解</title>
+    <url>/Web/CSS2.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -419,19 +419,19 @@
       </tags>
   </entry>
   <entry>
-    <title>常用 LaTeX 数学公式语法汇总</title>
-    <url>/Zen/LaTex.html</url>
+    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
+    <url>/Embedded/Arduino.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Zen</category>
+        <category>Embedded</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
+        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
-    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
-    <url>/Embedded/Arduino.html</url>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <url>/Embedded/RaspberryPi.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -463,17 +463,6 @@
       </tags>
   </entry>
   <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <url>/Embedded/RaspberryPi.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux C 标准程序设计语言</title>
     <url>/Linux/C.html</url>
     <content><![CDATA[]]></content>
@@ -496,17 +485,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>言简意赅 の Python3</title>
     <url>/Web/Python.html</url>
     <content><![CDATA[]]></content>
@@ -515,6 +493,17 @@
       </categories>
       <tags>
         <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -548,6 +537,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用 LaTeX 数学公式语法汇总</title>
+    <url>/Zen/LaTex.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Zen</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>

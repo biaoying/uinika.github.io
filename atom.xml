@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-10-04T08:51:48.219Z</updated>
+  <updated>2020-10-06T01:02:02.882Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>数字电子技术备忘录</title>
+    <title>常用 LaTeX 数学公式语法汇总</title>
+    <link href="https://uinika.github.io/Zen/LaTex.html"/>
+    <id>https://uinika.github.io/Zen/LaTex.html</id>
+    <published>2020-10-06T00:10:56.206Z</published>
+    <updated>2020-10-06T01:02:02.882Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.mathjax.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;MathJax&lt;/strong&gt;&lt;/a&gt; 是一款运行于 Web 浏览器当中的开源 JavaScript 数学符号渲染引擎，通过它可以方便的在现代 Web 浏览器当中显示数学公式，目前已经能够解析 &lt;code&gt;LaTex&lt;/code&gt;、&lt;code&gt;MathML&lt;/code&gt; 等标记语言。&lt;strong&gt;MathJax&lt;/strong&gt; 项目发源于 2009 年，目前由 NumFOCUS 基金会主持，并且得到了 MathJax 联盟的支持，该联盟是&lt;strong&gt;美国数学协会&lt;/strong&gt;（AMS）和 &lt;strong&gt;工业与应用数学协会&lt;/strong&gt;（SIAM）的共同合资企业。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/LaTex/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.latex-project.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;LaTeX&lt;/strong&gt;&lt;/a&gt; 是一种高质量的排版格式，可以生成复杂的表格与数学公式，是当前电子与数学出版行业的事实标准。本文以 &lt;a href=&quot;https://www.pandoc.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Pandoc&lt;/strong&gt;&lt;/a&gt; 作为 LaTex 渲染引擎（一款用于标记语言文档转换的命令行工具），分门别类的总结了编撰数学公式所需要经常使用到的标准 LaTeX 语法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
+    
+    
+      <category term="Markdown" scheme="https://uinika.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础数字逻辑电子技术备忘录</title>
     <link href="https://uinika.github.io/Electronics/Digital.html"/>
     <id>https://uinika.github.io/Electronics/Digital.html</id>
     <published>2020-10-04T08:41:49.764Z</published>
-    <updated>2020-10-04T08:51:48.219Z</updated>
+    <updated>2020-10-05T11:10:07.559Z</updated>
     
     <summary type="html">
     
@@ -29,7 +52,7 @@
       
         
         
-          &lt;p&gt;时至今日，数字化浪潮几乎席卷了电子应用技术的一切领域，与传统的模拟电子系统相比，数字电子系统具有更为优异的精确性与可靠性，因此，许多曾经使用模拟电子技术实现的系统目前正在逐步被数字系统所代替。数
+          &lt;p&gt;二十一世纪，数字化浪潮席卷了电子工业领域，与传统的模拟电子系统相比，数字系统具备更加优异的精确与可靠性，逐步取代了许多模拟电路的应用场景。数字逻辑电路是对数字信号进行算术与逻辑运算的电路，以&lt;s
         
       
     
@@ -40,33 +63,6 @@
     
     
       <category term="Digital" scheme="https://uinika.github.io/tags/Digital/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用 LaTeX 数学公式语法汇总</title>
-    <link href="https://uinika.github.io/Zen/LaTex.html"/>
-    <id>https://uinika.github.io/Zen/LaTex.html</id>
-    <published>2020-10-04T08:23:04.099Z</published>
-    <updated>2020-10-04T08:41:25.086Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;MathJax 是一款运行于浏览器当中的开源 JavaScript 数学符号渲染引擎，使用 MathJax 可以方便的在现代 Web 浏览器当中显示数学公式。目前 MathJax 可以解析
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Markdown" scheme="https://uinika.github.io/tags/Markdown/"/>
     
   </entry>
   
@@ -213,7 +209,7 @@
     <link href="https://uinika.github.io/Math/Elementary.html"/>
     <id>https://uinika.github.io/Math/Elementary.html</id>
     <published>2020-08-05T12:14:52.708Z</published>
-    <updated>2020-08-22T21:23:54.597Z</updated>
+    <updated>2020-10-05T14:12:36.104Z</updated>
     
     <summary type="html">
     

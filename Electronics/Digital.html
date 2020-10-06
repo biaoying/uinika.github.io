@@ -22,16 +22,16 @@
     var CONFIG = {"hostname":"uinika.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#A38272","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="时至今日，数字化浪潮几乎席卷了电子应用技术的一切领域，与传统的模拟电子系统相比，数字电子系统具有更为优异的精确性与可靠性，因此，许多曾经使用模拟电子技术实现的系统目前正在逐步被数字系统所代替。数字电路和数字电子技术是数字化信息采集、存储、处理、传输的载体与依存。">
+  <meta name="description" content="二十一世纪，数字化浪潮席卷了电子工业领域，与传统的模拟电子系统相比，数字系统具备更加优异的精确与可靠性，逐步取代了许多模拟电路的应用场景。数字逻辑电路是对数字信号进行算术与逻辑运算的电路，以逻辑门作为基本电路单元（最早采用 TTL 工艺，伴随半导体工艺技术的不断进步，目前已经逐步被 CMOS 工艺取代），数字电路可以分为组合逻辑电路（基本逻辑门）和时序逻辑电路（逻辑门 + 反馈逻辑回路）两大类。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数字电子技术备忘录">
+<meta property="og:title" content="基础数字逻辑电子技术备忘录">
 <meta property="og:url" content="https://uinika.github.io/Electronics/Digital.html">
 <meta property="og:site_name" content="Bit by bit">
-<meta property="og:description" content="时至今日，数字化浪潮几乎席卷了电子应用技术的一切领域，与传统的模拟电子系统相比，数字电子系统具有更为优异的精确性与可靠性，因此，许多曾经使用模拟电子技术实现的系统目前正在逐步被数字系统所代替。数字电路和数字电子技术是数字化信息采集、存储、处理、传输的载体与依存。">
+<meta property="og:description" content="二十一世纪，数字化浪潮席卷了电子工业领域，与传统的模拟电子系统相比，数字系统具备更加优异的精确与可靠性，逐步取代了许多模拟电路的应用场景。数字逻辑电路是对数字信号进行算术与逻辑运算的电路，以逻辑门作为基本电路单元（最早采用 TTL 工艺，伴随半导体工艺技术的不断进步，目前已经逐步被 CMOS 工艺取代），数字电路可以分为组合逻辑电路（基本逻辑门）和时序逻辑电路（逻辑门 + 反馈逻辑回路）两大类。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Digital/logo.png">
 <meta property="article:published_time" content="2020-10-04T08:41:49.764Z">
-<meta property="article:modified_time" content="2020-10-04T08:51:48.219Z">
+<meta property="article:modified_time" content="2020-10-05T11:10:07.559Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Digital">
 <meta name="twitter:card" content="summary">
@@ -50,7 +50,7 @@
   };
 </script>
 
-  <title>数字电子技术备忘录 | Bit by bit</title>
+  <title>基础数字逻辑电子技术备忘录 | Bit by bit</title>
   
 
 
@@ -218,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          数字电子技术备忘录
+          基础数字逻辑电子技术备忘录
         </h1>
 
         <div class="post-meta">
@@ -227,10 +227,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-10-04 16:41:49 / 修改时间：16:51:48" itemprop="dateCreated datePublished" datetime="2020-10-04T16:41:49+08:00">2020-10-04</time>
+              <time title="创建时间：2020-10-04 16:41:49" itemprop="dateCreated datePublished" datetime="2020-10-04T16:41:49+08:00">2020-10-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-05 19:10:07" itemprop="dateModified" datetime="2020-10-05T19:10:07+08:00">2020-10-05</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -254,7 +260,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>131</span>
+              <span>344</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -273,8 +279,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>时至今日，数字化浪潮几乎席卷了电子应用技术的一切领域，与传统的模拟电子系统相比，数字电子系统具有更为优异的精确性与可靠性，因此，许多曾经使用模拟电子技术实现的系统目前正在逐步被数字系统所代替。数字电路和数字电子技术是数字化信息采集、存储、处理、传输的载体与依存。</p>
+        <p>二十一世纪，数字化浪潮席卷了电子工业领域，与传统的模拟电子系统相比，数字系统具备更加优异的精确与可靠性，逐步取代了许多模拟电路的应用场景。数字逻辑电路是对数字信号进行算术与逻辑运算的电路，以<strong>逻辑门</strong>作为基本电路单元（最早采用 <strong>TTL</strong> 工艺，伴随半导体工艺技术的不断进步，目前已经逐步被 <strong>CMOS</strong> 工艺取代），数字电路可以分为组合逻辑电路（基本逻辑门）和时序逻辑电路（逻辑门 + 反馈逻辑回路）两大类。</p>
 <p><img src="/Electronics/Digital/logo.png"></p>
+<p>本篇文章讲解了数字逻辑电路的分析与设计所涉及到的基础理论，首先讲解了<code>数制</code>、<code>码制</code>和<code>逻辑代数</code>等基础知识，接着重点描述<code>组合逻辑电路</code>和<code>时序逻辑电路</code>的分析与设计方法，然后讨论了各种<code>数字集成电路</code>（ 含门电路、可编程逻辑元件、半导体存储器）的原理以及使用方法，最后一部分讲解<code>AD/DA</code>转换以及<code>脉冲波形</code>的产生与转换电路。</p>
 
     </div>
 
@@ -290,7 +297,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://uinika.github.io/Electronics/Digital.html" title="数字电子技术备忘录">https://uinika.github.io/Electronics/Digital.html</a>
+    <a href="https://uinika.github.io/Electronics/Digital.html" title="基础数字逻辑电子技术备忘录">https://uinika.github.io/Electronics/Digital.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -311,10 +318,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Zen/LaTex.html" rel="prev" title="常用 LaTeX 数学公式语法汇总">
-      <i class="fa fa-chevron-left"></i> 常用 LaTeX 数学公式语法汇总
+    <a href="/Electronics/Analog.html" rel="prev" title="现代模拟电子技术实用笔记">
+      <i class="fa fa-chevron-left"></i> 现代模拟电子技术实用笔记
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/Zen/LaTex.html" rel="next" title="常用 LaTeX 数学公式语法汇总">
+      常用 LaTeX 数学公式语法汇总 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -468,7 +478,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">24:34</span>
+    <span title="站点阅读时长">24:59</span>
 </div>
 
         
