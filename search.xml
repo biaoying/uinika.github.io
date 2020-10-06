@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基础数字逻辑电子技术备忘录</title>
+    <url>/Electronics/Digital.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Digital</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>模拟与数字电子技术导论</title>
     <url>/Electronics/Introduct.html</url>
     <content><![CDATA[]]></content>
@@ -20,17 +31,6 @@
       </categories>
       <tags>
         <tag>EDA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基础数字逻辑电子技术备忘录</title>
-    <url>/Electronics/Digital.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Digital</tag>
       </tags>
   </entry>
   <entry>
@@ -144,6 +144,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux C 应用程序开发进阶</title>
+    <url>/Linux/Native.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>C language</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Bash Shell 脚本编程实践</title>
     <url>/Linux/Shell.html</url>
     <content><![CDATA[]]></content>
@@ -163,17 +174,6 @@
       </categories>
       <tags>
         <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux C 应用程序开发进阶</title>
-    <url>/Linux/Native.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>C language</tag>
       </tags>
   </entry>
   <entry>
@@ -375,17 +375,6 @@
       </tags>
   </entry>
   <entry>
-    <title>NodeJS 快速上手指南</title>
-    <url>/Web/Nodejs.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Webpack 4 核心剖析</title>
     <url>/Web/Webpack.html</url>
     <content><![CDATA[]]></content>
@@ -394,6 +383,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NodeJS 快速上手指南</title>
+    <url>/Web/Nodejs.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -419,17 +419,6 @@
       </tags>
   </entry>
   <entry>
-    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
-    <url>/Embedded/Arduino.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>玩转 Raspberry Pi 4B 开源硬件</title>
     <url>/Embedded/RaspberryPi.html</url>
     <content><![CDATA[]]></content>
@@ -449,6 +438,17 @@
       </categories>
       <tags>
         <tag>Analog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
+    <url>/Embedded/Arduino.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -474,6 +474,17 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Qt 5 桌面应用程序开发指南 - QtQuick 篇</title>
     <url>/Linux/Qt-Quick.html</url>
     <content><![CDATA[]]></content>
@@ -496,8 +507,8 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
+    <title>React 16.6.x 全新全译</title>
+    <url>/Web/React.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -515,17 +526,6 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>React 16.6.x 全新全译</title>
-    <url>/Web/React.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -573,14 +573,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
-    <url>/Linux/Qt-Widgets.html</url>
+    <title>宏晶 STC89C52RC 微控制器实践小书</title>
+    <url>/Embedded/STC89C52.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Qt</category>
+        <category>Embedded</category>
       </categories>
       <tags>
-        <tag>Desktop</tag>
+        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -595,14 +595,14 @@
       </tags>
   </entry>
   <entry>
-    <title>宏晶 STC89C52RC 微控制器实践小书</title>
-    <url>/Embedded/STC89C52.html</url>
+    <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
+    <url>/Linux/Qt-Widgets.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Embedded</category>
+        <category>Qt</category>
       </categories>
       <tags>
-        <tag>MCU</tag>
+        <tag>Desktop</tag>
       </tags>
   </entry>
 </search>
