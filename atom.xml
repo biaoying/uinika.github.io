@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-10-06T02:10:22.836Z</updated>
+  <updated>2020-10-06T02:13:30.134Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -18,15 +18,15 @@
   
   <entry>
     <title>通用 LaTeX 数学公式语法手册</title>
-    <link href="https://uinika.github.io/Zen/a.html"/>
-    <id>https://uinika.github.io/Zen/a.html</id>
+    <link href="https://uinika.github.io/Zen/LaTeX.html"/>
+    <id>https://uinika.github.io/Zen/LaTeX.html</id>
     <published>2020-10-06T00:10:56.206Z</published>
-    <updated>2020-10-06T02:10:22.836Z</updated>
+    <updated>2020-10-06T02:13:30.134Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;https://www.mathjax.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;MathJax&lt;/strong&gt;&lt;/a&gt; 是一款运行于 Web 浏览器当中的开源 JavaScript 数学符号渲染引擎，通过它可以方便的在现代 Web 浏览器当中显示数学公式，目前已经能够解析 &lt;code&gt;LaTex&lt;/code&gt;、&lt;code&gt;MathML&lt;/code&gt; 等标记语言。&lt;strong&gt;MathJax&lt;/strong&gt; 项目发源于 2009 年，目前由 NumFOCUS 基金会主持，并且得到了 MathJax 联盟的支持，该联盟是&lt;strong&gt;美国数学协会&lt;/strong&gt;（AMS）和 &lt;strong&gt;工业与应用数学协会&lt;/strong&gt;（SIAM）的共同合资企业。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/a/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/LaTeX/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.latex-project.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;LaTeX&lt;/strong&gt;&lt;/a&gt; 是一种高质量的排版格式，可以生成复杂的表格与数学公式，是当前电子与数学出版行业的事实标准。本文以 &lt;a href=&quot;https://www.pandoc.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Pandoc&lt;/strong&gt;&lt;/a&gt; 作为 LaTex 渲染引擎（一款用于标记语言文档转换的命令行工具），分门别类的总结了撰写数学公式所需要经常使用到的 LaTeX 语法，方便写作相关科技类文章时随手查阅。&lt;/p&gt;
     
     </summary>
@@ -412,29 +412,6 @@
   </entry>
   
   <entry>
-    <title>Vue 2 技术栈归纳与精粹</title>
-    <link href="https://uinika.github.io/Web/Vue.html"/>
-    <id>https://uinika.github.io/Web/Vue.html</id>
-    <published>2020-05-21T13:39:03.876Z</published>
-    <updated>2020-05-21T13:39:03.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Vue 是一款&lt;strong&gt;高度封装的&lt;/strong&gt;、&lt;strong&gt;开箱即用的&lt;/strong&gt;、&lt;strong&gt;一栈式的前端框架&lt;/strong&gt;，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至&lt;code&gt;全局window&lt;/code&gt;使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 &lt;code&gt;2.5.2&lt;/code&gt;。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方&lt;a href=&quot;https://vuejs.org/v2/guide/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Get Started》&lt;/a&gt; 的补充性读物。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Vue/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Vue2.2.x&lt;/code&gt;发布之后，其框架体系及技术栈日趋完善，相较于&lt;code&gt;React+Reflux/Redux/MobX&lt;/code&gt;技术栈，Vue 更加贴近 W3C 技术规范（&lt;em&gt;例如实现仍处于 W3C 草案阶段的&lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;slot&amp;gt;&lt;/code&gt;、&lt;code&gt;is&lt;/code&gt;等新特性，提供了良好易用的模板书写环境&lt;/em&gt;），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的&lt;code&gt;store&lt;/code&gt;的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SCSS 3.5.5 简明上手指南</title>
     <link href="https://uinika.github.io/Web/Scss.html"/>
     <id>https://uinika.github.io/Web/Scss.html</id>
@@ -454,6 +431,29 @@
     
     
       <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue 2 技术栈归纳与精粹</title>
+    <link href="https://uinika.github.io/Web/Vue.html"/>
+    <id>https://uinika.github.io/Web/Vue.html</id>
+    <published>2020-05-21T13:39:03.876Z</published>
+    <updated>2020-05-21T13:39:03.876Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vue 是一款&lt;strong&gt;高度封装的&lt;/strong&gt;、&lt;strong&gt;开箱即用的&lt;/strong&gt;、&lt;strong&gt;一栈式的前端框架&lt;/strong&gt;，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至&lt;code&gt;全局window&lt;/code&gt;使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 &lt;code&gt;2.5.2&lt;/code&gt;。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方&lt;a href=&quot;https://vuejs.org/v2/guide/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Get Started》&lt;/a&gt; 的补充性读物。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Web/Vue/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Vue2.2.x&lt;/code&gt;发布之后，其框架体系及技术栈日趋完善，相较于&lt;code&gt;React+Reflux/Redux/MobX&lt;/code&gt;技术栈，Vue 更加贴近 W3C 技术规范（&lt;em&gt;例如实现仍处于 W3C 草案阶段的&lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;slot&amp;gt;&lt;/code&gt;、&lt;code&gt;is&lt;/code&gt;等新特性，提供了良好易用的模板书写环境&lt;/em&gt;），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的&lt;code&gt;store&lt;/code&gt;的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
     
   </entry>
   
