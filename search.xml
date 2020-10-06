@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>EDA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基础数字逻辑电子技术备忘录</title>
     <url>/Electronics/Digital.html</url>
     <content><![CDATA[]]></content>
@@ -23,14 +34,14 @@
       </tags>
   </entry>
   <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
+    <title>J-Link 仿真器固件恢复小记</title>
+    <url>/Embedded/JLink.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Electronics</category>
+        <category>Embedded</category>
       </categories>
       <tags>
-        <tag>EDA</tag>
+        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -67,8 +78,8 @@
       </tags>
   </entry>
   <entry>
-    <title>J-Link 仿真器固件恢复小记</title>
-    <url>/Embedded/JLink.html</url>
+    <title>STLink V2 调试编程器应用图解</title>
+    <url>/Embedded/STLink.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -80,17 +91,6 @@
   <entry>
     <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
     <url>/Embedded/STM32F103ZET6.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>STLink V2 调试编程器应用图解</title>
-    <url>/Embedded/STLink.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -221,8 +221,8 @@
       </tags>
   </entry>
   <entry>
-    <title>2020 年小憩，聊一聊电子产业路在何方</title>
-    <url>/Other/2020-Electronic-Industry.html</url>
+    <title>如何理性看待贵阳大数据及 IT 行业的过去与将来</title>
+    <url>/Other/2018-Guiyang-Big-Data.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -232,8 +232,8 @@
       </tags>
   </entry>
   <entry>
-    <title>如何理性看待贵阳大数据及 IT 行业的过去与将来</title>
-    <url>/Other/2018-Guiyang-Big-Data.html</url>
+    <title>2020 年小憩，聊一聊电子产业路在何方</title>
+    <url>/Other/2020-Electronic-Industry.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -342,17 +342,6 @@
       </tags>
   </entry>
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <url>/Web/Html.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTTP 协议深入解析</title>
     <url>/Web/Http.html</url>
     <content><![CDATA[]]></content>
@@ -372,6 +361,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>概览 HTML 5 语义化标签</title>
+    <url>/Web/Html.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -430,8 +430,8 @@
       </tags>
   </entry>
   <entry>
-    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
-    <url>/Embedded/Arduino.html</url>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <url>/Embedded/RaspberryPi.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -441,8 +441,8 @@
       </tags>
   </entry>
   <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <url>/Embedded/RaspberryPi.html</url>
+    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
+    <url>/Embedded/Arduino.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -518,17 +518,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <url>/Web/Scss.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue 2 技术栈归纳与精粹</title>
     <url>/Web/Vue.html</url>
     <content><![CDATA[]]></content>
@@ -540,8 +529,19 @@
       </tags>
   </entry>
   <entry>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <url>/Web/Scss.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通用 LaTeX 数学公式语法手册</title>
-    <url>/Zen/LaTeX.html</url>
+    <url>/Zen/a.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Zen</category>
