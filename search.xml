@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>模拟与数字电子技术导论</title>
-    <url>/Electronics/Introduct.html</url>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Electronics</category>
       </categories>
       <tags>
-        <tag>Wikipedia</tag>
+        <tag>EDA</tag>
       </tags>
   </entry>
   <entry>
@@ -23,14 +23,14 @@
       </tags>
   </entry>
   <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
+    <title>模拟与数字电子技术导论</title>
+    <url>/Electronics/Introduct.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Electronics</category>
       </categories>
       <tags>
-        <tag>EDA</tag>
+        <tag>Wikipedia</tag>
       </tags>
   </entry>
   <entry>
@@ -47,17 +47,6 @@
   <entry>
     <title>J-Link 仿真器固件恢复小记</title>
     <url>/Embedded/JLink.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
-    <url>/Embedded/Mini2440.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -100,14 +89,36 @@
       </tags>
   </entry>
   <entry>
-    <title>面向对象的 C++ 11 程序设计语言</title>
-    <url>/Linux/C++.html</url>
+    <title>常用初等数学图形与公式汇总</title>
+    <url>/Math/Elementary.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>C/C++</category>
+        <category>Math</category>
       </categories>
       <tags>
-        <tag>Qt</tag>
+        <tag>Elementary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
+    <url>/Embedded/Mini2440.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>MCU</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用高等数学公式与导学</title>
+    <url>/Math/Calculus.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
+      <tags>
+        <tag>Calculus</tag>
       </tags>
   </entry>
   <entry>
@@ -122,14 +133,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <url>/Linux/Command.html</url>
+    <title>面向对象的 C++ 11 程序设计语言</title>
+    <url>/Linux/C++.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Linux</category>
+        <category>C/C++</category>
       </categories>
       <tags>
-        <tag>Embedded</tag>
+        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -141,6 +152,17 @@
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 常用命令行速查手册</title>
+    <url>/Linux/Command.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
       </tags>
   </entry>
   <entry>
@@ -174,28 +196,6 @@
       </categories>
       <tags>
         <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用高等数学公式与导学</title>
-    <url>/Math/Calculus.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Math</category>
-      </categories>
-      <tags>
-        <tag>Calculus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用初等数学图形与公式汇总</title>
-    <url>/Math/Elementary.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Math</category>
-      </categories>
-      <tags>
-        <tag>Elementary</tag>
       </tags>
   </entry>
   <entry>
@@ -243,6 +243,50 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux 工作环境 Config 札记</title>
+    <url>/Zen/Config-Linux.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Zen</category>
+      </categories>
+      <tags>
+        <tag>Linux Config</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows 工作环境 Config 札记</title>
+    <url>/Zen/Config-Windows.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Zen</category>
+      </categories>
+      <tags>
+        <tag>Windows Config</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS 2.1 典型概念与布局详解</title>
+    <url>/Web/CSS2.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么认为 Backbone 是现代化前端框架的基石</title>
+    <url>/Web/Backbone.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AngularJS 1.6.x 最佳实践总结</title>
     <url>/Web/Angularjs.html</url>
     <content><![CDATA[]]></content>
@@ -262,28 +306,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为什么认为 Backbone 是现代化前端框架的基石</title>
-    <url>/Web/Backbone.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS 2.1 典型概念与布局详解</title>
-    <url>/Web/CSS2.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -309,17 +331,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Django2 快速开发 Web 服务</title>
-    <url>/Web/Django.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Flux 数据流两三事儿</title>
     <url>/Web/Flux.html</url>
     <content><![CDATA[]]></content>
@@ -342,14 +353,14 @@
       </tags>
   </entry>
   <entry>
-    <title>概览 HTML 5 语义化标签</title>
-    <url>/Web/Html.html</url>
+    <title>使用 Django2 快速开发 Web 服务</title>
+    <url>/Web/Django.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -364,19 +375,19 @@
       </tags>
   </entry>
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <url>/Web/JQuery.html</url>
+    <title>概览 HTML 5 语义化标签</title>
+    <url>/Web/Html.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
-    <title>Webpack 4 核心剖析</title>
-    <url>/Web/Webpack.html</url>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <url>/Web/JQuery.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -397,25 +408,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <url>/Zen/Config-Linux.html</url>
+    <title>Webpack 4 核心剖析</title>
+    <url>/Web/Webpack.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Zen</category>
+        <category>Web</category>
       </categories>
       <tags>
-        <tag>Linux Config</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 工作环境 Config 札记</title>
-    <url>/Zen/Config-Windows.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Zen</category>
-      </categories>
-      <tags>
-        <tag>Windows Config</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -441,8 +441,8 @@
       </tags>
   </entry>
   <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <url>/Embedded/RaspberryPi.html</url>
+    <title>宏晶 STC90C516RD+ 数据手册精读</title>
+    <url>/Embedded/STC90C51.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -452,8 +452,8 @@
       </tags>
   </entry>
   <entry>
-    <title>宏晶 STC90C516RD+ 数据手册精读</title>
-    <url>/Embedded/STC90C51.html</url>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <url>/Embedded/RaspberryPi.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -485,8 +485,41 @@
       </tags>
   </entry>
   <entry>
+    <title>通用 LaTeX 数学公式语法手册</title>
+    <url>/Zen/LaTeX.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Zen</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaScript 6 简明语法书</title>
     <url>/Web/Javascript.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>言简意赅 の Python3</title>
+    <url>/Web/Python.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>React 16.6.x 全新全译</title>
+    <url>/Web/React.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -515,39 +548,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>React 16.6.x 全新全译</title>
-    <url>/Web/React.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>言简意赅 の Python3</title>
-    <url>/Web/Python.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通用 LaTeX 数学公式语法手册</title>
-    <url>/Zen/LaTeX.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Zen</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -584,8 +584,8 @@
       </tags>
   </entry>
   <entry>
-    <title>宏晶 STC89C52RC 微控制器实践小书</title>
-    <url>/Embedded/STC89C52.html</url>
+    <title>意法半导体 STM32F103C8T6 标准库典型实例</title>
+    <url>/Embedded/STM32F103C8T6.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -595,8 +595,8 @@
       </tags>
   </entry>
   <entry>
-    <title>意法半导体 STM32F103C8T6 标准库典型实例</title>
-    <url>/Embedded/STM32F103C8T6.html</url>
+    <title>宏晶 STC89C52RC 微控制器实践小书</title>
+    <url>/Embedded/STC89C52.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
