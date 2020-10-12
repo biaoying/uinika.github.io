@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>模拟与数字电子技术导论</title>
-    <url>/Electronics/Introduct.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Wikipedia</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基础数字逻辑电子技术备忘录</title>
     <url>/Electronics/Digital.html</url>
     <content><![CDATA[]]></content>
@@ -23,17 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>EDA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Android 物联网应用开发实例</title>
     <url>/Embedded/Android.html</url>
     <content><![CDATA[]]></content>
@@ -42,6 +20,28 @@
       </categories>
       <tags>
         <tag>Mobile</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>模拟与数字电子技术导论</title>
+    <url>/Electronics/Introduct.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Wikipedia</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>EDA</tag>
       </tags>
   </entry>
   <entry>
@@ -122,17 +122,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <url>/Linux/Command.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于 Linux 的 GCC 与 GDB 应用程序调试</title>
     <url>/Linux/GCC.html</url>
     <content><![CDATA[]]></content>
@@ -166,17 +155,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常用高等数学公式与导学</title>
-    <url>/Math/Calculus.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Math</category>
-      </categories>
-      <tags>
-        <tag>Calculus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vim 常用键位生存指南</title>
     <url>/Linux/Vim.html</url>
     <content><![CDATA[]]></content>
@@ -185,6 +163,17 @@
       </categories>
       <tags>
         <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用高等数学公式与导学</title>
+    <url>/Math/Calculus.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
+      <tags>
+        <tag>Calculus</tag>
       </tags>
   </entry>
   <entry>
@@ -223,17 +212,6 @@
   <entry>
     <title>如何理性看待贵阳大数据及 IT 行业的过去与将来</title>
     <url>/Other/2018-Guiyang-Big-Data.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Article</category>
-      </categories>
-      <tags>
-        <tag>Economy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2020 年小憩，聊一聊电子产业路在何方</title>
-    <url>/Other/2020-Electronic-Industry.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
@@ -320,14 +298,25 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <url>/Web/Electron.html</url>
+    <title>Linux 常用命令行速查手册</title>
+    <url>/Linux/Command.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Web</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Server</tag>
+        <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2020 年小憩，聊一聊电子产业路在何方</title>
+    <url>/Other/2020-Electronic-Industry.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Article</category>
+      </categories>
+      <tags>
+        <tag>Economy</tag>
       </tags>
   </entry>
   <entry>
@@ -350,6 +339,17 @@
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Electron 打造跨平台桌面应用</title>
+    <url>/Web/Electron.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -496,17 +496,6 @@
       </tags>
   </entry>
   <entry>
-    <title>React 16.6.x 全新全译</title>
-    <url>/Web/React.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SCSS 3.5.5 简明上手指南</title>
     <url>/Web/Scss.html</url>
     <content><![CDATA[]]></content>
@@ -515,6 +504,17 @@
       </categories>
       <tags>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>React 16.6.x 全新全译</title>
+    <url>/Web/React.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
