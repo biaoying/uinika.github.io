@@ -12,18 +12,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Android 物联网应用开发实例</title>
-    <url>/Embedded/Android.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>Mobile</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>模拟与数字电子技术导论</title>
+    <title>模拟与数字电路电子技术导论</title>
     <url>/Electronics/Introduct.html</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -34,7 +23,7 @@
       </tags>
   </entry>
   <entry>
-    <title>开源 EDA 工具 KiCad 5.1.5 电路设计手册</title>
+    <title>开源 EDA 工具 KiCad 5.1.6 电路设计小书</title>
     <url>/Electronics/KiCad.html</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -42,6 +31,17 @@
       </categories>
       <tags>
         <tag>EDA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android 物联网应用开发实例</title>
+    <url>/Embedded/Android.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Embedded</category>
+      </categories>
+      <tags>
+        <tag>Mobile</tag>
       </tags>
   </entry>
   <entry>
@@ -67,7 +67,7 @@
       </tags>
   </entry>
   <entry>
-    <title>意法半导体 Nucleo F767ZI 的 HAL/LL 评估测试</title>
+    <title>意法半导体 Nucleo F767ZI 评估板测试</title>
     <url>/Embedded/NucleoF767ZI.html</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -89,7 +89,7 @@
       </tags>
   </entry>
   <entry>
-    <title>基于 HAL/LL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
+    <title>基于 HAL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
     <url>/Embedded/STM32F103ZET6.html</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -97,17 +97,6 @@
       </categories>
       <tags>
         <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象的 C++ 11 程序设计语言</title>
-    <url>/Linux/C++.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C/C++</category>
-      </categories>
-      <tags>
-        <tag>Qt</tag>
       </tags>
   </entry>
   <entry>
@@ -122,6 +111,28 @@
       </tags>
   </entry>
   <entry>
+    <title>面向对象的 C++ 11 程序设计语言</title>
+    <url>/Linux/C++.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>C/C++</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 常用命令行速查手册</title>
+    <url>/Linux/Command.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于 Linux 的 GCC 与 GDB 应用程序调试</title>
     <url>/Linux/GCC.html</url>
     <content><![CDATA[]]></content>
@@ -133,7 +144,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux C 应用程序开发进阶</title>
+    <title>嵌入式 Linux C 原生应用程序开发</title>
     <url>/Linux/Native.html</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -199,18 +210,18 @@
       </tags>
   </entry>
   <entry>
-    <title>2017年，再聊聊成都房价、地价那些事儿</title>
+    <title>2017 年，再聊聊成都房价与地价那些事儿</title>
     <url>/Other/2017-Chengdu-Realestate.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Article</category>
       </categories>
       <tags>
-        <tag>Economy</tag>
+        <tag>Industry</tag>
       </tags>
   </entry>
   <entry>
-    <title>如何理性看待贵阳大数据及 IT 行业的过去与将来</title>
+    <title>如何理性看待贵阳大数据与 IT 行业的过去与未来</title>
     <url>/Other/2018-Guiyang-Big-Data.html</url>
     <content><![CDATA[]]></content>
       <categories>
@@ -298,25 +309,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <url>/Linux/Command.html</url>
+    <title>使用 Electron 打造跨平台桌面应用</title>
+    <url>/Web/Electron.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Linux</category>
+        <category>Web</category>
       </categories>
       <tags>
-        <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2020 年小憩，聊一聊电子产业路在何方</title>
-    <url>/Other/2020-Electronic-Industry.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Article</category>
-      </categories>
-      <tags>
-        <tag>Economy</tag>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -342,17 +342,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Electron 打造跨平台桌面应用</title>
-    <url>/Web/Electron.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTTP 协议深入解析</title>
     <url>/Web/Http.html</url>
     <content><![CDATA[]]></content>
@@ -364,8 +353,8 @@
       </tags>
   </entry>
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <url>/Web/JQuery.html</url>
+    <title>Webpack 4 核心剖析</title>
+    <url>/Web/Webpack.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -375,19 +364,8 @@
       </tags>
   </entry>
   <entry>
-    <title>NodeJS 快速上手指南</title>
-    <url>/Web/Nodejs.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Webpack 4 核心剖析</title>
-    <url>/Web/Webpack.html</url>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <url>/Web/JQuery.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -416,6 +394,39 @@
       </categories>
       <tags>
         <tag>Windows Config</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用数据结构 &amp; 算法分析</title>
+    <url>/Zen/Data-Structure.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Thinking</category>
+      </categories>
+      <tags>
+        <tag>Zen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NodeJS 快速上手指南</title>
+    <url>/Web/Nodejs.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象设计模式温故知新</title>
+    <url>/Zen/Design-Pattern.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Thinking</category>
+      </categories>
+      <tags>
+        <tag>Zen</tag>
       </tags>
   </entry>
   <entry>
@@ -452,6 +463,17 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux C 标准程序设计语言</title>
     <url>/Linux/C.html</url>
     <content><![CDATA[]]></content>
@@ -474,8 +496,8 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
+    <title>React 16.6.x 全新全译</title>
+    <url>/Web/React.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -507,17 +529,6 @@
       </tags>
   </entry>
   <entry>
-    <title>React 16.6.x 全新全译</title>
-    <url>/Web/React.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue 2 技术栈归纳与精粹</title>
     <url>/Web/Vue.html</url>
     <content><![CDATA[]]></content>
@@ -530,24 +541,13 @@
   </entry>
   <entry>
     <title>通用 LaTeX 数学公式语法手册</title>
-    <url>/Zen/LaTeX.html</url>
+    <url>/Zen/LaTex.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Zen</category>
       </categories>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电路分析涉及的理论与定理</title>
-    <url>/Electronics/Analysis.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Analysis</tag>
       </tags>
   </entry>
   <entry>
@@ -559,6 +559,17 @@
       </categories>
       <tags>
         <tag>Analog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析涉及的理论与定理</title>
+    <url>/Electronics/Analysis.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Analysis</tag>
       </tags>
   </entry>
   <entry>

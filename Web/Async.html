@@ -22,20 +22,20 @@
     var CONFIG = {"hostname":"uinika.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#A38272","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="早期的浏览器端异步编程主要依靠回调函数、事件监听、发布&#x2F;订阅、Promise的各类polyfill这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了Generator函数及其衍生的async&#x2F;await语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的rxjs则进一步改善了 JavaScript 异步编程的体验。  本文按照前端异步编程技术发">
+  <meta name="description" content="早期的 Web 浏览器端的异步编程主要依靠 回调函数、事件监听、发布&#x2F;订阅、Promise 的各种 polyfill 这 4 种方式来进行，当 EcmaScript 6 推出以后，在完整实现 Promise 规范的同时，还引入了 Generator 函数及其衍生的 async&#x2F;await 语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的 RxJS 则进一步改善了 JavaSc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="异步事件管理：从 Promise 与 async&#x2F;await 到 RxJS">
 <meta property="og:url" content="https://uinika.github.io/Web/Async.html">
 <meta property="og:site_name" content="Bit by bit">
-<meta property="og:description" content="早期的浏览器端异步编程主要依靠回调函数、事件监听、发布&#x2F;订阅、Promise的各类polyfill这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了Generator函数及其衍生的async&#x2F;await语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的rxjs则进一步改善了 JavaScript 异步编程的体验。  本文按照前端异步编程技术发">
+<meta property="og:description" content="早期的 Web 浏览器端的异步编程主要依靠 回调函数、事件监听、发布&#x2F;订阅、Promise 的各种 polyfill 这 4 种方式来进行，当 EcmaScript 6 推出以后，在完整实现 Promise 规范的同时，还引入了 Generator 函数及其衍生的 async&#x2F;await 语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的 RxJS 则进一步改善了 JavaSc">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://uinika.github.io/Web/Async/logo.png">
 <meta property="og:image" content="https://uinika.github.io/Web/Async/promise-flow.png">
 <meta property="og:image" content="https://uinika.github.io/Web/Async/promise-then-catch-flow.png">
 <meta property="og:image" content="https://uinika.github.io/Web/Async/then-catch.png">
 <meta property="og:image" content="https://uinika.github.io/Web/Async/my-generator.gif">
-<meta property="article:published_time" content="2020-05-21T13:39:03.798Z">
-<meta property="article:modified_time" content="2020-05-21T13:39:03.798Z">
+<meta property="article:published_time" content="2020-10-13T18:33:09.031Z">
+<meta property="article:modified_time" content="2020-10-13T18:33:09.031Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -131,7 +131,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">55</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">56</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -141,12 +141,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">24</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">26</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-briefcase"></i>分类<span class="badge">11</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-briefcase"></i>分类<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-it圈">
@@ -232,7 +232,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-05-21 21:39:03" itemprop="dateCreated datePublished" datetime="2020-05-21T21:39:03+08:00">2020-05-21</time>
+              <time title="创建时间：2020-10-14 02:33:09" itemprop="dateCreated datePublished" datetime="2020-10-14T02:33:09+08:00">2020-10-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -276,9 +276,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>早期的浏览器端异步编程主要依靠<code>回调函数</code>、<code>事件监听</code>、<code>发布/订阅</code>、<code>Promise的各类polyfill</code>这四种方式进行，ES6 推出之后在完整实现了 Promise 规范的同时，还引入了<code>Generator</code>函数及其衍生的<code>async/await</code>语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的<a href="http://reactivex.io/rxjs/" target="_blank" rel="noopener">rxjs</a>则进一步改善了 JavaScript 异步编程的体验。</p>
+        <p>早期的 Web 浏览器端的异步编程主要依靠 <code>回调函数</code>、<code>事件监听</code>、<code>发布/订阅</code>、<code>Promise 的各种 polyfill</code> 这 4 种方式来进行，当 EcmaScript 6 推出以后，在完整实现 <strong>Promise</strong> 规范的同时，还引入了 <code>Generator</code> 函数及其衍生的 <code>async/await</code> 语法糖，将 JavaScript 异步编程带入了全新阶段。而随后诞生的 <a href="http://reactivex.io/rxjs/" target="_blank" rel="noopener">RxJS</a> 则进一步改善了 JavaScript 异步编程的体验，很好的解决了 JavaScript 异步编程的痛点。</p>
 <p><img src="/Web/Async/logo.png"></p>
-<p>本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">《Mozilla Promise Reference》</a>，关于 Promise 状态的截图部分引用自<a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">《JavaScript Promise 迷你书》</a>。</p>
+<p>本文按照前端异步编程技术发展的时间线，以 ES6 Promise 规范作为起点，逐步引出 async/await，最后探讨 RxJS 的使用，并对三者之间使用上的优缺点进行了横向的比较。本文撰写过程中出于严谨性方面的考量，Promise API 方面的内容翻译自<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">《Mozilla Promise Reference》</a>，关于 <code>Promise</code> 状态的描述性截图则引用自<a href="http://liubin.org/promises-book/" target="_blank" rel="noopener">《JavaScript Promise 迷你书》</a>一文。</p>
 <a id="more"></a>
 <h2 id="es6-的-promise">ES6 的 Promise</h2>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">ES6 Promises</a>规范源自于开源社区的<a href="https://promisesaplus.com/" target="_blank" rel="noopener">Promises/A+</a>，是浏览器 JavaScript 以及 NodeJS 上较为早期的异步事件处理方案，也是目前较常使用的异步处理机制。</p>
@@ -454,8 +454,8 @@
       <i class="fa fa-chevron-left"></i> 为什么认为 Backbone 是现代化前端框架的基石
     </a></div>
       <div class="post-nav-item">
-    <a href="/Web/Django.html" rel="next" title="使用 Django2 快速开发 Web 服务">
-      使用 Django2 快速开发 Web 服务 <i class="fa fa-chevron-right"></i>
+    <a href="/Web/Vue.html" rel="next" title="Vue 2 技术栈归纳与精粹">
+      Vue 2 技术栈归纳与精粹 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -531,20 +531,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">55</span>
+          <span class="site-state-item-count">56</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-count">26</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -611,7 +611,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">25:16</span>
+    <span title="站点阅读时长">25:19</span>
 </div>
 
         

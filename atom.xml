@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-10-12T13:22:12.643Z</updated>
+  <updated>2020-10-13T19:27:22.229Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>现代模拟电子技术实用笔记</title>
     <link href="https://uinika.github.io/Electronics/Analog.html"/>
     <id>https://uinika.github.io/Electronics/Analog.html</id>
-    <published>2020-10-12T13:22:12.627Z</published>
-    <updated>2020-10-12T13:22:12.643Z</updated>
+    <published>2020-10-13T19:27:22.224Z</published>
+    <updated>2020-10-13T19:27:22.229Z</updated>
     
     <summary type="html">
     
@@ -40,16 +40,62 @@
   </entry>
   
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.6 电路设计小书</title>
+    <link href="https://uinika.github.io/Electronics/KiCad.html"/>
+    <id>https://uinika.github.io/Electronics/KiCad.html</id>
+    <published>2020-10-13T19:26:53.045Z</published>
+    <updated>2020-10-13T19:28:43.253Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于国内中小型电子企业的工程师而言，Altium Designer、Pads、Allegro 等商业 EDA 工具的授权费用过于昂贵，且大部分仅提供了 Windows 操作系统版本，缺乏相应的跨平台支持。在电子行业版权问题逐步受到重视的今天，一款易使用、低成本的 EDA 工具对于广大电子工程师显得尤为重要。而 PCB 设计流程与布局布线经验超越 EDA 工具本身，如果没有丰富的元件库与封装库支持，也会面临无米难为炊的困境。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Electronics/KiCad/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文介绍的&lt;a href=&quot;https://kicad-pcb.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;KiCad&lt;/a&gt; 是一款基于 &lt;strong&gt;GPL&lt;/strong&gt; 开源许可下的跨平台 EDA 电子设计自动化工具集，能够处理多达 32 个铜层、14 个技术层、4 个辅助层的 PCB 电路板，并且生成加工制造所需要的所有文件（包括照片绘图仪的 Gerber 文件、钻孔文件、元件位置文件等），官方开源社区提供并维护了丰富的第三方库可供选用，而针对开源 EDA 工具普遍存在的自动布线功能偏弱的问题，KiCad 也通过&lt;a href=&quot;https://freerouting.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FreeRouting&lt;/a&gt;提供了有力支持。文中所涉及原理图与 PCB 样图，皆已共享至笔者的 Github 项目&lt;a href=&quot;https://github.com/uinika/abrams&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Abrams&lt;/a&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Electronics" scheme="https://uinika.github.io/categories/Electronics/"/>
+    
+    
+      <category term="EDA" scheme="https://uinika.github.io/tags/EDA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电路分析涉及的理论与定理</title>
+    <link href="https://uinika.github.io/Electronics/Analysis.html"/>
+    <id>https://uinika.github.io/Electronics/Analysis.html</id>
+    <published>2020-10-13T19:26:53.042Z</published>
+    <updated>2020-10-13T19:26:53.044Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;电路分析&lt;/strong&gt;作为电子信息工程技术专业的的先导课程，主要讨论电路当中的电磁现象及其发生过程，其理论与工程实践紧密相连，分析过程中需要注意&lt;strong&gt;电路模型&lt;/strong&gt;与&lt;strong&gt;实际电路&lt;/strong&gt;、&lt;strong&gt;测量值&lt;/strong&gt;与&lt;strong&gt;计算值&lt;/strong&gt;的差别与联系。由于电路分析技术的本质是数学在电路当中的应用，因此学习过程需要注重将电路分析方法与数学知识相结合。此外，由于每一种电路模型都具备特定的工作条件，所以 在分析过程当中，还需要根据不同工作场景选择合适的电路模型。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Electronics/Analysis/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文涵括了&lt;strong&gt;线性电路&lt;/strong&gt;相关的&lt;code&gt;基本概念与两类约束&lt;/code&gt;、&lt;code&gt;电路的等效变换&lt;/code&gt;、&lt;code&gt;电阻电路的分析方法&lt;/code&gt;、&lt;code&gt;常用电路定理&lt;/code&gt;，同时也介绍了&lt;code&gt;动态电路的暂态分析&lt;/code&gt;、&lt;code&gt;正弦交流电路稳态分析&lt;/code&gt;、&lt;code&gt;含二端口元件电路分析&lt;/code&gt;等&lt;strong&gt;动态电路&lt;/strong&gt;方面的内容，阅读前应具备&lt;code&gt;微分&lt;/code&gt;、&lt;code&gt;积分&lt;/code&gt;、&lt;code&gt;微分方程&lt;/code&gt;、&lt;code&gt;复数运算&lt;/code&gt;、&lt;code&gt;线性代数方程组&lt;/code&gt;、&lt;code&gt;矩阵&lt;/code&gt;、&lt;code&gt;傅里叶级数&lt;/code&gt;等&lt;strong&gt;数学&lt;/strong&gt;知识。全文撰写过程当中，参考并且借鉴了国外大学所普遍采用的《Electric Circuits》第 10 版教材。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Electronics" scheme="https://uinika.github.io/categories/Electronics/"/>
+    
+    
+      <category term="Analysis" scheme="https://uinika.github.io/tags/Analysis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>通用 LaTeX 数学公式语法手册</title>
-    <link href="https://uinika.github.io/Zen/LaTeX.html"/>
-    <id>https://uinika.github.io/Zen/LaTeX.html</id>
-    <published>2020-10-06T00:10:56.206Z</published>
-    <updated>2020-10-06T02:13:30.134Z</updated>
+    <link href="https://uinika.github.io/Zen/LaTex.html"/>
+    <id>https://uinika.github.io/Zen/LaTex.html</id>
+    <published>2020-10-13T19:26:12.393Z</published>
+    <updated>2020-10-13T19:26:12.394Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;https://www.mathjax.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;MathJax&lt;/strong&gt;&lt;/a&gt; 是一款运行于 Web 浏览器当中的开源 JavaScript 数学符号渲染引擎，通过它可以方便的在现代 Web 浏览器当中显示数学公式，目前已经能够解析 &lt;code&gt;LaTex&lt;/code&gt;、&lt;code&gt;MathML&lt;/code&gt; 等标记语言。&lt;strong&gt;MathJax&lt;/strong&gt; 项目发源于 2009 年，目前由 NumFOCUS 基金会主持，并且得到了 MathJax 联盟的支持，该联盟是&lt;strong&gt;美国数学协会&lt;/strong&gt;（AMS）和 &lt;strong&gt;工业与应用数学协会&lt;/strong&gt;（SIAM）的共同合资企业。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/LaTeX/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/LaTex/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.latex-project.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;LaTeX&lt;/strong&gt;&lt;/a&gt; 是一种高质量的排版格式，可以生成复杂的表格与数学公式，是当前电子与数学出版行业的事实标准。本文以 &lt;a href=&quot;https://www.pandoc.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Pandoc&lt;/strong&gt;&lt;/a&gt; 作为 LaTex 渲染引擎（一款用于标记语言文档转换的命令行工具），分门别类的总结了撰写数学公式所需要经常使用到的 LaTeX 语法，方便写作相关科技类文章时随手查阅。&lt;/p&gt;
     
     </summary>
@@ -63,11 +109,337 @@
   </entry>
   
   <entry>
+    <title>玩转 Raspberry Pi 4B 开源硬件</title>
+    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
+    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
+    <published>2020-10-13T19:26:12.383Z</published>
+    <updated>2020-10-13T19:26:12.383Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玩转 Arduino Uno、Mega、Due 开源硬件</title>
+    <link href="https://uinika.github.io/Embedded/Arduino.html"/>
+    <id>https://uinika.github.io/Embedded/Arduino.html</id>
+    <published>2020-10-13T19:26:12.381Z</published>
+    <updated>2020-10-13T19:26:12.382Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.arduino.cc/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Arduino&lt;/strong&gt;&lt;/a&gt; 是一款目前非常成熟的物联网产品原型开发工具，其硬件设计、IDE 工具、微控制器核心库皆基于开源协议发布，其中，&lt;strong&gt;Eagle&lt;/strong&gt; 原理图以及 PCB 布线遵循 &lt;code&gt;Creative Commons Attribution Share-Alike&lt;/code&gt; 许可，而 IDE 环境的源代码基于 &lt;code&gt;GPL&lt;/code&gt; 协议，微控制器的 C/C++ 库则是基于 &lt;code&gt;LGPL&lt;/code&gt; 协议。自从 2005 年首块 Arduino 开发板发布以来，已经推出了众多满足不同需求的硬件以及软件库，开源社区也日渐活跃与丰富。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/Arduino/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arduino Uno&lt;/strong&gt; 是整个 Arduino 家族当中使用最为广泛、文档最为齐全的一款硬件产品，基于 Microchip 微芯公司的 &lt;strong&gt;8&lt;/strong&gt; 位 &lt;strong&gt;AVR&lt;/strong&gt; 单片机 &lt;a href=&quot;http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;ATmega328P&lt;/strong&gt;&lt;/a&gt;，工作电压为&lt;code&gt;5V&lt;/code&gt;，采用&lt;code&gt;16MHz&lt;/code&gt;的无源谐振器，并拥有&lt;code&gt;32 KB&lt;/code&gt;的 &lt;strong&gt;Flash&lt;/strong&gt; 存储器（其中&lt;code&gt;0.5KB&lt;/code&gt;用于&lt;code&gt;Bootloader&lt;/code&gt;程序），以及&lt;code&gt;2KB&lt;/code&gt;的 &lt;strong&gt;SRAM&lt;/strong&gt; 和&lt;code&gt;1KB&lt;/code&gt;的 &lt;strong&gt;EEPROM&lt;/strong&gt;。本文采用的 Arduino 硬件是于 2011 年发布的 &lt;a href=&quot;https://store.arduino.cc/usa/arduino-uno-rev3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Arduino Uno R3&lt;/strong&gt;&lt;/a&gt; 版本，是当前国内市场运用最为广泛的一款型号。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
+    <link href="https://uinika.github.io/Linux/Qt-Widgets.html"/>
+    <id>https://uinika.github.io/Linux/Qt-Widgets.html</id>
+    <published>2020-10-13T19:21:25.777Z</published>
+    <updated>2020-10-13T19:21:25.778Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://www.qt.io/offline-installers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt 5.14.2&lt;/strong&gt;&lt;/a&gt; 是跨平台应用开发框架 Qt 的最新版本，除了采用基于 &lt;strong&gt;C++11&lt;/strong&gt; 的经典 &lt;a href=&quot;https://doc.qt.io/qt-5/qtwidgets-index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt Widgets&lt;/strong&gt;&lt;/a&gt; 进行桌面应用程序开发以外，还支持通过 &lt;strong&gt;Qt Quick&lt;/strong&gt; 快速开发适用于移动端设备的用户界面，因为 Qt 5 底层图形渲染引擎基于 GPU 硬件加速，所以其能够保持与原生 &lt;strong&gt;C++&lt;/strong&gt; 近乎等同的运行效率。笔者计划通过两篇文章分别对这 2 种技术进行介绍，但是无论如何，在传统跨平台桌面应用开发领域，&lt;strong&gt;Qt Widgets&lt;/strong&gt; 依然是 Qt5 最为基础与核心的内容。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Linux/Qt-Widgets/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;虽然 Qt 6 发布在即，但是官方声明将会依然保持 API 的兼容与稳定性，因此本文依然基于当前最新的 Qt5 稳定版本撰写。全文将会分别对 &lt;strong&gt;Qt Widgets&lt;/strong&gt; 当中使用较为频繁的&lt;code&gt;窗口部件&lt;/code&gt;、&lt;code&gt;布局管理&lt;/code&gt;、&lt;code&gt;应用主窗口&lt;/code&gt;、&lt;code&gt;事件系统&lt;/code&gt;、&lt;code&gt;对象模型&lt;/code&gt;、&lt;code&gt;风格与样式&lt;/code&gt;、&lt;code&gt;国际化&lt;/code&gt;等部分内容进行深入介绍，同时展示完善的示例代码以及程序运行效果，并结合&lt;a href=&quot;./embedded/Qt-Quick.html&quot;&gt;《QtQuick 篇》&lt;/a&gt;一文讲解混合编程相关的技术。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Qt" scheme="https://uinika.github.io/categories/Qt/"/>
+    
+    
+      <category term="Desktop" scheme="https://uinika.github.io/tags/Desktop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qt 5 桌面应用程序开发指南 - QtQuick 篇</title>
+    <link href="https://uinika.github.io/Linux/Qt-Quick.html"/>
+    <id>https://uinika.github.io/Linux/Qt-Quick.html</id>
+    <published>2020-10-13T19:21:25.774Z</published>
+    <updated>2020-10-13T19:21:25.775Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于 Material Style 这样富含动画效果的用户界面风格，并不能简单的加入到以静态图形作为主要显示单元的&lt;code&gt;QWidget&lt;/code&gt;当中。所以 &lt;strong&gt;Qt&lt;/strong&gt; 官方推出了一种声明式编程语言 &lt;a href=&quot;https://doc.qt.io/qt-5/qtqml-index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;QML&lt;/strong&gt;&lt;/a&gt;（Qt 元对象语言，Qt Meta-Object Language），其提供了一种具有更高可读性的声明式语法，并附带了必要的 JavaScript 语句和动态属性绑定支持。QML 的语言特性和引擎框架由 &lt;code&gt;Qt QML&lt;/code&gt; 模块提供，该模块同时提供了 &lt;strong&gt;QML&lt;/strong&gt; 和 &lt;strong&gt;C++&lt;/strong&gt; 两套接口。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Linux/Qt-Quick/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://doc.qt.io/qt-5/qtquick-index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt Quick&lt;/strong&gt;&lt;/a&gt; 是一款基于 QML 的应用程序标准库，包含有可视化类型、交互类型、动画、模型和视图、粒子特效等特性，这些都是由 Qt5 上的&lt;code&gt;Qt Quick&lt;/code&gt;模块提供，通过&lt;code&gt;import&lt;/code&gt;语句即可方便的进行导入。Qt Quick 同样提供了 &lt;strong&gt;QML&lt;/strong&gt; 和 &lt;strong&gt;C++&lt;/strong&gt; 两套接口，可以轻松构建具有流畅动画效果的动态 QML 用户界面。而 Qt 5.7 版本以后推出的 &lt;a href=&quot;https://doc.qt.io/qt-5/qtquickcontrols-index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt Quick Controls&lt;/strong&gt;&lt;/a&gt; 更是提供了丰富的开箱即用控件，让快速开发成为了可能。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Qt" scheme="https://uinika.github.io/categories/Qt/"/>
+    
+    
+      <category term="Desktop" scheme="https://uinika.github.io/tags/Desktop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>意法半导体 Nucleo F767ZI 评估板测试</title>
+    <link href="https://uinika.github.io/Embedded/NucleoF767ZI.html"/>
+    <id>https://uinika.github.io/Embedded/NucleoF767ZI.html</id>
+    <published>2020-10-13T19:21:25.762Z</published>
+    <updated>2020-10-13T19:22:53.317Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;意法半导体提供的&lt;a href=&quot;https://www.st.com/zh/evaluation-tools/nucleo-f767zi.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
+    <link href="https://uinika.github.io/Embedded/Mini2440.html"/>
+    <id>https://uinika.github.io/Embedded/Mini2440.html</id>
+    <published>2020-10-13T19:21:25.761Z</published>
+    <updated>2020-10-13T19:21:25.761Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于 Linux 操作系统内核具备可裁剪定制的特性，因而能够运行于 ARM 架构的嵌入式设备当中。伴随近几年，硬件性能的飞速提升以及价格的快速下降，&lt;code&gt;Raspberry Pi&lt;/code&gt;、&lt;code&gt;Nano Pi&lt;/code&gt;、&lt;code&gt;Rock Pi&lt;/code&gt;、&lt;code&gt;Orange Pi&lt;/code&gt;等可运行完整桌面 Linux 操作系统的卡片电脑大量涌现，通用计算机与嵌入式系统之间的界限愈来愈模糊。各个 IC 厂家不断提升 MCU 性能的同时，也推出了相应的公版外围电路、通用操作系统、驱动程序支持等一揽子完善的嵌入式技术解决方案，与笔者七年以前接触嵌入式技术伊始，早已经不可同日而语。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/Mini2440/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;笔者手上这款 Mini2440 开发板于 2013 年购置，是由广州友善电子科技有限公司于 2010 年推出的 ARM9 开发板，虽然板载的三星 S3C2440 嵌入式微处理器已然廉颇老矣，且对应的&lt;code&gt;Linux 2.6.32.2&lt;/code&gt;内核版本也早已壮士暮年。但由于最近涉及 Linux 嵌入式操作系统相关的工作，因此重新上电使用，同时以怀旧心态执笔撰写本文，用于记录一些心得体会，同时也作为日后备忘。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>J-Link 仿真器固件恢复小记</title>
+    <link href="https://uinika.github.io/Embedded/JLink.html"/>
+    <id>https://uinika.github.io/Embedded/JLink.html</id>
+    <published>2020-10-13T19:21:25.760Z</published>
+    <updated>2020-10-13T19:21:25.760Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;JTAG（&lt;em&gt;Joint Test Action Group，联合测试行动组&lt;/em&gt;）是一种用于芯片内部测试的国际标准协议，&lt;strong&gt;ARM&lt;/strong&gt;、&lt;strong&gt;DSP&lt;/strong&gt;、&lt;strong&gt;FPGA&lt;/strong&gt;等主流 IC 都对其提供了良好支持，标准 JTAG 接口拥有&lt;code&gt;TMS&lt;/code&gt;模式选择、&lt;code&gt;TCK&lt;/code&gt;时钟、&lt;code&gt;TDI&lt;/code&gt;数据输入、&lt;code&gt;TDO&lt;/code&gt;数据输出共 4 条信号线。笔者当前使用的 Mini2440 开发板原厂提供的 JTAG 调试器是采用并口的&lt;a href=&quot;http://www.hjtag.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;H-JTAG&lt;/a&gt;，由于现在的计算机设备早已经不提供并口支持，因此笔者选择了较为通用的&lt;strong&gt;J-Link&lt;/strong&gt;作为 ARM9 仿真调试器。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/JLink/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;J-Link&lt;/strong&gt;是德国&lt;a href=&quot;https://www.segger.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SEGGER&lt;/a&gt;公司推出的一款专用于 ARM 内核微控制器的 JTAG 仿真调试设备，能够与 ARM 官方提供的 Keil 集成开发环境无缝衔接，支持 Cortex-A/R、Cortex-M、ARM7、ARM9、ARM11、Renesas RX、Microchip PIC、Silicon Labs 8051、RISC-V 等系列的微控制器。笔者 7 年前购置了一台 J-Link V8 版本的&lt;strong&gt;J-Link&lt;/strong&gt;调试器，当时由于使用不当造成固件丢失，因此特别撰写此文来记录一下固件恢复的过程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模拟与数字电路电子技术导论</title>
+    <link href="https://uinika.github.io/Electronics/Introduct.html"/>
+    <id>https://uinika.github.io/Electronics/Introduct.html</id>
+    <published>2020-10-13T18:50:57.775Z</published>
+    <updated>2020-10-13T18:51:19.998Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自本世纪六十年代开始，数字半导体技术席卷了全球电子工业，伴随工艺与制程的持续演进，高频高速电子信号的处理需求愈加旺盛，电子技术的发展重心逐步由模拟时代，过渡至全面的数字化阶段。虽然模拟电路以及分立式电子元器件的使用频率逐年下降，但是在电磁兼容性处理、开关电源设计等场景当中，传统的模拟电子技术以及相关分立式元器件依然扮演着不可或缺的角色。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Electronics/Introduct/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文定位为一篇&lt;strong&gt;导论&lt;/strong&gt;性质的文章，用于帮助当前开发团队里的嵌入式软件工程师，快速了解模拟数字电子技术相关的术语与概念，因此行文中并不涉及各类电路原理的深入数学分析，仅仅言简意赅的汇总了日常工作相关的模拟、数字电路知识。文章中的部分公式与原理图摘取自&lt;a href=&quot;https://zh.wikipedia.org/wiki/Wikipedia&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;维基百科&lt;/a&gt;，写作过程当中参考了《Practical Electronics》第 4 版一书。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Electronics" scheme="https://uinika.github.io/categories/Electronics/"/>
+    
+    
+      <category term="Wikipedia" scheme="https://uinika.github.io/tags/Wikipedia/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于 HAL 与 CubeIDE 的 STM32F103ZET6 开发指南</title>
+    <link href="https://uinika.github.io/Embedded/STM32F103ZET6.html"/>
+    <id>https://uinika.github.io/Embedded/STM32F103ZET6.html</id>
+    <published>2020-10-13T18:37:02.652Z</published>
+    <updated>2020-10-13T18:37:02.652Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;相对于采用 LQFP48 封装的 &lt;strong&gt;STM32F103C8T6&lt;/strong&gt; 微控制器，采用 LQFP144 封装的 &lt;strong&gt;STM32F103ZET6&lt;/strong&gt; 时钟频率虽然同为&lt;code&gt;72MHz&lt;/code&gt;，但提供了更加丰富的片上外设资源，例如高达&lt;code&gt;512Kbytes&lt;/code&gt;的 &lt;strong&gt;Flash&lt;/strong&gt; 程序存储器和&lt;code&gt;64Kbytes&lt;/code&gt;的 &lt;strong&gt;SRAM&lt;/strong&gt; 数据存储器，以及 12 通道&lt;code&gt;DMA&lt;/code&gt;控制器，内置 2 个基本定时器 2 个高级定时器 4 个通用定时器，以及 3 个&lt;code&gt;12bit&lt;/code&gt;的 &lt;strong&gt;ADC&lt;/strong&gt; 与 2 个&lt;code&gt;12bit&lt;/code&gt;的 &lt;strong&gt;DAC&lt;/strong&gt; 转换器，同时还支持多达 3 组 &lt;strong&gt;SPI&lt;/strong&gt;、2 组 &lt;strong&gt;I²C&lt;/strong&gt;、 5 组&lt;strong&gt;USART&lt;/strong&gt;、1 组&lt;strong&gt;CAN&lt;/strong&gt;、1 组 &lt;strong&gt;SDIO&lt;/strong&gt; 接口和 1 组全速 &lt;strong&gt;USB2.0&lt;/strong&gt; 接口。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/STM32F103ZET6/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文基于 &lt;strong&gt;ST&lt;/strong&gt; 官方近年力推的 &lt;strong&gt;HAL&lt;/strong&gt;（Hardware Abstraction Layer）与 &lt;strong&gt;LL&lt;/strong&gt;（Low-layer）开发库，结合 &lt;strong&gt;STM32CubeIDE&lt;/strong&gt; 提供的图形化配置工具，参考意法半导体官方文档《STM32F103xE Data Sheet》和《STM32F103xx Reference Manual》以及《Description of STM32F1 HAL &amp;amp; LL drivers》，并且结合《ARM Cortex-M3 &amp;amp; Cortex-M4 权威指南》一书，对于微控制器片上外设资源的编程方法进行了详细的分析与示例。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android 物联网应用开发实例</title>
+    <link href="https://uinika.github.io/Embedded/Android.html"/>
+    <id>https://uinika.github.io/Embedded/Android.html</id>
+    <published>2020-10-13T18:37:02.636Z</published>
+    <updated>2020-10-13T18:37:02.636Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://developer.android.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; 可以采用 Kotlin、Java、C++ 语言编写应用程序，&lt;a href=&quot;https://developer.android.google.cn/reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android SDK&lt;/a&gt; 会将这些代码连同相应的数据和资源文件编译为 Android 软件包，即一个带有&lt;code&gt;.apk&lt;/code&gt;后缀的归档文件，也就是 Android 应用程序的安装文件。本质上 Android 系统是一种多用户的 Linux 系统，每个应用程序都运行在独立的 Linux 用户 &lt;strong&gt;ID&lt;/strong&gt; 和&lt;strong&gt;进程&lt;/strong&gt;之下，从而为每个 Android 应用都提供了独立的&lt;strong&gt;安全沙盒&lt;/strong&gt;，体现了最小权限的设计原则。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/Android/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;鉴于 Google 官方提供了完善的文档，本文并不过多过深的涉及 Android SDK 开发的具体知识细节，仅会在简单介绍 Android 开发当中的一些基本概念之后，着重分析&lt;strong&gt;经典/低功耗蓝牙&lt;/strong&gt;、&lt;strong&gt;NFC&lt;/strong&gt;、&lt;strong&gt;WIFI&lt;/strong&gt;、&lt;strong&gt;指纹识别&lt;/strong&gt;、&lt;strong&gt;5G&lt;/strong&gt; 等硬件外设的通信协议概念以及相应的实现步骤，并且展示一些比较典型的应用场景与示例代码，从而为读者在进行物联网相关项目的开发时，在移动设备应用控制端提供即有的现成经验。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="Mobile" scheme="https://uinika.github.io/tags/Mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STLink V2 调试编程器应用图解</title>
+    <link href="https://uinika.github.io/Embedded/STLink.html"/>
+    <id>https://uinika.github.io/Embedded/STLink.html</id>
+    <published>2020-10-13T18:37:02.636Z</published>
+    <updated>2020-10-13T18:37:02.636Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;STLink 是由意法半导体公司推出的在线调试编程器，采用&lt;code&gt;5V&lt;/code&gt;的&lt;strong&gt;USB2.0&lt;/strong&gt;全速接口进行供电与数据传输，可以方便的对内部固件进行升级，同时支持以 &lt;strong&gt;JTAG&lt;/strong&gt; 或 &lt;strong&gt;SWD&lt;/strong&gt; 模式连接至 STM32 系列微控制器，或者以 &lt;strong&gt;SWIM&lt;/strong&gt; 模式连接至 STM8 系列微控制器，操作温度介于&lt;code&gt;0 ~ 50℃&lt;/code&gt;之间。由于 ST 公司极为重视中国市场，因此 STLink 的销售价格相对其它国外大厂的在线仿真设备要实惠许多，基本成为国内嵌入式工程师人手上必备的工具。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/STLink/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文详细介绍 Keil uVision 5 开发环境下 ST-LINK/V2 版本的调试编程器使用方法，并介绍了相关接口的详细定义与接线方法，文中部分内容翻译至意法半导体官方提供的&lt;a href=&quot;https://www.st.com/en/development-tools/st-link-v2.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《用于 STM8 与 STM32 的 ST-LINK/V2 在线调试编程器用户手册》&lt;/a&gt;，以确保使用方法与解释的规范性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宏晶 STC90C516RD+ 数据手册精读</title>
+    <link href="https://uinika.github.io/Embedded/STC90C51.html"/>
+    <id>https://uinika.github.io/Embedded/STC90C51.html</id>
+    <published>2020-10-13T18:37:02.636Z</published>
+    <updated>2020-10-13T18:37:02.636Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;8051 微处理器是指兼容&lt;strong&gt;Intel MCS-51&lt;/strong&gt;体系架构的一系列单片机，全球有众多的半导体厂商都有基于这一体系架构的产品，例如：Atmel 的&lt;code&gt;AT89C52&lt;/code&gt;、NXP 的&lt;code&gt;P89V51&lt;/code&gt;、宏晶科技的&lt;code&gt;STC89/90系列&lt;/code&gt;等。截至本篇文章成文之前，意法半导体推出的&lt;code&gt;STM8&lt;/code&gt;系列单片机风头正劲，同为 8 位单片机产品，虽然 8051 在架构、功耗乃至价格上基本已无优势，但作为比较经典的嵌入式微处理器解决方案，依然具备着不错的学习价值。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/STC90C51/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文介绍的&lt;code&gt;STC90C516RD+&lt;/code&gt;属于&lt;code&gt;5V&lt;/code&gt;单片机（&lt;em&gt;工作电压为&lt;code&gt;5.5V-3.3V&lt;/code&gt;&lt;/em&gt;），属于相对比较廉价和常见的国产单片机解决方案，片上拥有&lt;code&gt;中央处理器CPU&lt;/code&gt;、&lt;code&gt;程序存储器Flash&lt;/code&gt;、&lt;code&gt;数据存储器RAM&lt;/code&gt;、&lt;code&gt;定时/计数器&lt;/code&gt;、&lt;code&gt;UART串口&lt;/code&gt;、&lt;code&gt;IO接口&lt;/code&gt;、&lt;code&gt;EEPROM&lt;/code&gt;、&lt;code&gt;看门狗&lt;/code&gt;等常用资源。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>意法半导体 STM32F103C8T6 标准库典型实例</title>
+    <link href="https://uinika.github.io/Embedded/STM32F103C8T6.html"/>
+    <id>https://uinika.github.io/Embedded/STM32F103C8T6.html</id>
+    <published>2020-10-13T18:37:02.636Z</published>
+    <updated>2020-10-13T18:37:02.652Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;笔者半年之前的一篇长文，所介绍的&lt;strong&gt;STC51&lt;/strong&gt;系列单片机是一款结构简单、易于学习的嵌入式微控制器，但是由于标准 8051 架构诞生于 70 年代，其硬件架构、资源数量以及编程方式都已显老旧，成本和性能方面也皆落后于其它架构产品，市场占有率逐步遭到侵蚀，目前仅常见于一些教学与发烧友使用的范畴。伴随近几年物联网行业的快速兴起，&lt;strong&gt;STM32&lt;/strong&gt;等基于 ARM Cortex 内核的微控制器，凭借丰富的片上资源与简单易用的标准外设库，逐步成为消费与工业领域中的主流产品。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/STM32F103C8T6/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.st.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;意法半导体&lt;/a&gt;成立于 1987 年，由意大利 &lt;strong&gt;S&lt;/strong&gt;GS 和法国 &lt;strong&gt;T&lt;/strong&gt;homson 两家半导体企业合并而成，本文所介绍的&lt;a href=&quot;https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html#&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;STM32F103C8T6&lt;/strong&gt;&lt;/a&gt;属于该公司应用极为广泛的型号，其提供的&lt;code&gt;STM32F10x Standard Peripheral Library&lt;/code&gt;标准外设库对 STM32 片上资源进行了完善的封装，相对于 ST 公司目前力推的&lt;strong&gt;HAL/LL&lt;/strong&gt;库，标准外设库更加接近于传统的寄存器操作，因而也较为容易向&lt;a href=&quot;https://www.gigadevice.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;兆易创新&lt;/a&gt;的&lt;a href=&quot;https://www.gigadevice.com/products/microcontrollers/gd32/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;GD32&lt;/strong&gt;&lt;/a&gt;等国产微控制器移植。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宏晶 STC89C52RC 微控制器实践小书</title>
+    <link href="https://uinika.github.io/Embedded/STC89C52.html"/>
+    <id>https://uinika.github.io/Embedded/STC89C52.html</id>
+    <published>2020-10-13T18:37:02.636Z</published>
+    <updated>2020-10-13T18:37:02.636Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;伴随 NB-IOT、LoRa、5G 等无线物联网通信技术的快速成熟，已经诞生近四十余年的 8051 系列微处理，在功耗、性能、开发难易程度方面，已然全面落后于 ARM Cortex-M3 等主流嵌入式微控制器方案。但是由于其技术架构较为经典，寄存器配置相对简洁，在一些低成本场景中依然有所沿用。笔者当前使用的开发板基于宏晶&lt;strong&gt;STC89C52RC&lt;/strong&gt;嵌入式微控制器方案，虽然购置于六年以前，但是依然集成有各类常用的 UART、I²C、SPI 总线模块。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Embedded/STC89C52/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;笔者日常开发工作当中，经常需要使用到此类嵌入式总线通信协议，因此参考了官方文档以及相关技术资料，逐步将本文涉及的各类模块驱动移植至当前开发板，便于用作与其它嵌入式设备联调测试之用。近几年，意法半导体的&lt;strong&gt;STM32F103C8T6&lt;/strong&gt;量产价格不断下探，已经逐步接近宏晶的&lt;strong&gt;STC8051&lt;/strong&gt;系列产品，可以预见后者将会逐渐面临市场淘汰，作为一款极为经典的 8 位微控制器，用作测试和实验目的依然是不错的选择。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
+    
+    
+      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
+    
+  </entry>
+  
+  <entry>
     <title>基础数字逻辑电子技术备忘录</title>
     <link href="https://uinika.github.io/Electronics/Digital.html"/>
     <id>https://uinika.github.io/Electronics/Digital.html</id>
-    <published>2020-10-04T08:41:49.764Z</published>
-    <updated>2020-10-05T11:10:07.559Z</updated>
+    <published>2020-10-13T18:37:02.620Z</published>
+    <updated>2020-10-13T18:37:02.620Z</updated>
     
     <summary type="html">
     
@@ -90,218 +462,11 @@
   </entry>
   
   <entry>
-    <title>电路分析涉及的理论与定理</title>
-    <link href="https://uinika.github.io/Electronics/Analysis.html"/>
-    <id>https://uinika.github.io/Electronics/Analysis.html</id>
-    <published>2020-09-19T04:42:54.025Z</published>
-    <updated>2020-09-26T16:34:40.949Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;电路分析&lt;/strong&gt;作为电子信息工程技术专业的的先导课程，主要讨论电路当中的电磁现象及其发生过程，其理论与工程实践紧密相连，分析过程中需要注意&lt;strong&gt;电路模型&lt;/strong&gt;与&lt;strong&gt;实际电路&lt;/strong&gt;、&lt;strong&gt;测量值&lt;/strong&gt;与&lt;strong&gt;计算值&lt;/strong&gt;的差别与联系。由于电路分析技术的本质是数学在电路当中的应用，因此学习过程需要注重将电路分析方法与数学知识相结合。此外，由于每一种电路模型都具备特定的工作条件，所以 在分析过程当中，还需要根据不同工作场景选择合适的电路模型。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Electronics/Analysis/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文涵括了&lt;strong&gt;线性电路&lt;/strong&gt;相关的&lt;code&gt;基本概念与两类约束&lt;/code&gt;、&lt;code&gt;电路的等效变换&lt;/code&gt;、&lt;code&gt;电阻电路的分析方法&lt;/code&gt;、&lt;code&gt;常用电路定理&lt;/code&gt;，同时也介绍了&lt;code&gt;动态电路的暂态分析&lt;/code&gt;、&lt;code&gt;正弦交流电路稳态分析&lt;/code&gt;、&lt;code&gt;含二端口元件电路分析&lt;/code&gt;等&lt;strong&gt;动态电路&lt;/strong&gt;方面的内容，阅读前应具备&lt;code&gt;微分&lt;/code&gt;、&lt;code&gt;积分&lt;/code&gt;、&lt;code&gt;微分方程&lt;/code&gt;、&lt;code&gt;复数运算&lt;/code&gt;、&lt;code&gt;线性代数方程组&lt;/code&gt;、&lt;code&gt;矩阵&lt;/code&gt;、&lt;code&gt;傅里叶级数&lt;/code&gt;等&lt;strong&gt;数学&lt;/strong&gt;知识。全文撰写过程当中，参考并且借鉴了国外大学所普遍采用的《Electric Circuits》第 10 版教材。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Electronics" scheme="https://uinika.github.io/categories/Electronics/"/>
-    
-    
-      <category term="Analysis" scheme="https://uinika.github.io/tags/Analysis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>玩转 Raspberry Pi 4B 开源硬件</title>
-    <link href="https://uinika.github.io/Embedded/RaspberryPi.html"/>
-    <id>https://uinika.github.io/Embedded/RaspberryPi.html</id>
-    <published>2020-09-11T17:38:52.454Z</published>
-    <updated>2020-09-11T17:38:52.454Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;万众期待的 &lt;strong&gt;Raspberry Pi 4B&lt;/strong&gt; 终于发布，之前由于产品原型的需要，一直计划采购 &lt;strong&gt;3B+&lt;/strong&gt;，后来供应商透露新版 &lt;strong&gt;4B&lt;/strong&gt; 稍晚就会面市，所以稍微等待了一段时间，今天终于拿到了一块 &lt;strong&gt;2G&lt;/strong&gt; 内存的板子。一直以为 &lt;strong&gt;4B&lt;/strong&gt; 只会简单的更新一下 SoC 并增大 &lt;strong&gt;DDR&lt;/strong&gt; 容量，但是实际上还带来了 &lt;strong&gt;Type-C&lt;/strong&gt;、&lt;strong&gt;Bluetooth 5.0&lt;/strong&gt;、&lt;strong&gt;Micro HDMI&lt;/strong&gt;、&lt;strong&gt;USB 3.0&lt;/strong&gt; 乃至 &lt;strong&gt;DDR4&lt;/strong&gt; 等诸多崭新升级。而官方推荐的应用范围，开始从教育渗透至工业领域，逐步发展为一套完整的嵌入式生态链。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/RaspberryPi/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于树莓派基金会官方提供的 &lt;a href=&quot;https://www.raspberrypi.org/documentation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Raspberry Pi Documentation》&lt;/a&gt;，笔者翻译了其中较为常用的配置章节，便于读者拿到板子以后能够快速上手，并避免使用一些官方不推荐的操作和工具库。此外，本文也会涉及 &lt;code&gt;OpenCV&lt;/code&gt;、&lt;code&gt;dlib&lt;/code&gt; 的编译，以及 &lt;code&gt;Electron&lt;/code&gt; 在树莓派上的部署等话题。文章内容将会伴随笔者的日常使用而长期进行更新，欢迎各位爱好者朋友持续关注与勘误。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
-    
-    
-      <category term="MCU" scheme="https://uinika.github.io/tags/MCU/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用高等数学公式与导学</title>
-    <link href="https://uinika.github.io/Math/Calculus.html"/>
-    <id>https://uinika.github.io/Math/Calculus.html</id>
-    <published>2020-08-14T16:17:23.747Z</published>
-    <updated>2020-08-17T15:16:32.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;高等数学是由微积分学，较为深入的代数学、几何学以及它们之间的交叉内容所形成的一门基础学科。由于&lt;strong&gt;电路分析&lt;/strong&gt;、&lt;strong&gt;运算放大器&lt;/strong&gt;、&lt;strong&gt;信号完整性&lt;/strong&gt;、&lt;strong&gt;高频电路&lt;/strong&gt;和&lt;strong&gt;信号学&lt;/strong&gt;当中，都涉及有大量的积分和导数运算，也需要经常使用到拉普拉斯和傅立叶变换等高等数学内容，因此着手撰写本文用于复习大学本科学习阶段涉及的微积分知识，主要包含&lt;code&gt;一元函数微分学&lt;/code&gt;、&lt;code&gt;一元函数积分学&lt;/code&gt;、&lt;code&gt;矢量代数与空间解析几何&lt;/code&gt;、&lt;code&gt;多元函数微分学&lt;/code&gt;、&lt;code&gt;多元函数积分学&lt;/code&gt;、&lt;code&gt;无穷级数&lt;/code&gt;、&lt;code&gt;常微分方程&lt;/code&gt;等部分的内容。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Math/Calculus/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;由于微积分涉及的概念相对较为抽象，因此在文章写作过程中，阅读并且参考了&lt;strong&gt;《Thomas’ Calculus》&lt;/strong&gt;一书当中的有关内容。该书从 1951 年第 1 版发行至今，当前的最新版本为第 14 版，已经足足经历了七十个年头，是一本经历过时间检验的优秀参考资料。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
-    
-    
-      <category term="Calculus" scheme="https://uinika.github.io/tags/Calculus/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bash Shell 脚本编程实践</title>
-    <link href="https://uinika.github.io/Linux/Shell.html"/>
-    <id>https://uinika.github.io/Linux/Shell.html</id>
-    <published>2020-08-13T14:30:35.890Z</published>
-    <updated>2020-08-13T14:30:35.906Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;Shell&lt;/strong&gt; 既是一套&lt;strong&gt;命令行工具&lt;/strong&gt;（交互式地解释和执行用户输入的命令）也是一种&lt;strong&gt;脚本设计语言&lt;/strong&gt;（定义有变量与参数，并提供了控制、循环、分支结构）。&lt;a href=&quot;https://tiswww.case.edu/php/chet/bash/bashtop.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Bash Shell&lt;/strong&gt;&lt;/a&gt; 是由 GUN 官方项目提供的 Shell 解释器，名称源自于 &lt;strong&gt;B&lt;/strong&gt;ourne &lt;strong&gt;A&lt;/strong&gt;gain &lt;strong&gt;SH&lt;/strong&gt;ell 的英文缩写，整合了传统 &lt;strong&gt;Korn Shell&lt;/strong&gt; 以及 &lt;strong&gt;C Shell&lt;/strong&gt; 的有效特性，并且尽量遵循&lt;code&gt;IEEE POSIX P1003.2/ISO 9945.2&lt;/code&gt;规范，同时在编程与交互使用方面提供了大量的功能改进，因而在提供丰富功能的基础之上，展现出了良好的兼容特性，大多数&lt;code&gt;.sh&lt;/code&gt;脚本可以无需移植修改即可交由 Bash Shell 来执行。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Linux/Shell/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;当用户登入任意一款 Linux 操作系统时，初始化程序&lt;code&gt;init&lt;/code&gt;都将会为用户启动一个&lt;strong&gt;Bash Shell&lt;/strong&gt;命令解析器，其即可以用于解析命令行输入并与内核进行交互，也可以作为高效的脚本编程语言，运用其提供的变量、参数、循环、分支等编程语法特性，完成一些批量的自动化的任务处理工作，本文将会围绕 Bash Shell 的脚本编程特性，加以进行详细的分析、说明与示例。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Note" scheme="https://uinika.github.io/categories/Note/"/>
-    
-    
-      <category term="Linux" scheme="https://uinika.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 常用命令行速查手册</title>
-    <link href="https://uinika.github.io/Linux/Command.html"/>
-    <id>https://uinika.github.io/Linux/Command.html</id>
-    <published>2020-08-13T14:30:35.890Z</published>
-    <updated>2020-08-13T14:30:35.890Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Linux Mint 最早于 2006 年开始发行，是一款基于 &lt;strong&gt;Debian&lt;/strong&gt; 与 &lt;strong&gt;Ubuntu&lt;/strong&gt; 的 Linux 发行版，提供了更为友好稳定的桌面环境，在进行快捷键、开源字体等方面的设置，并安装了诸多的工具软件之后，笔者将其作为日常工作环境已有近 5 年的历史，伴随近几年开源团队不断的改进与升级，其兼容性与用户体验渐入佳境。从程序编写到 PCB 电路绘制，日常工作已经愈加依赖这款 Linux 操作系统。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Linux/Command/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;基于 2019 年圣诞节发布的 &lt;strong&gt;Linux mint 19.3&lt;/strong&gt; 发行版，采用的 Shell 命令解释器版本为 &lt;strong&gt;Bash Shell 5.0.3&lt;/strong&gt;，文章总结了笔者日常所经常使用到的 Linux 命令，在简明扼要的介绍相关命令与参数之后，还展示了各条命令的实际执行结果，便于读者更加直观的了解其功能与用途。限于文章篇幅以及命令行的使用频率，有关 Bash Shell 脚本编程部分的内容，将会新开一篇文章再行介绍。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://uinika.github.io/categories/Linux/"/>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/tags/Embedded/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用初等数学图形与公式汇总</title>
-    <link href="https://uinika.github.io/Math/Elementary.html"/>
-    <id>https://uinika.github.io/Math/Elementary.html</id>
-    <published>2020-08-05T12:14:52.708Z</published>
-    <updated>2020-10-05T14:12:36.104Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;初等数学主要由&lt;strong&gt;代数&lt;/strong&gt;（Algebra）和&lt;strong&gt;几何&lt;/strong&gt;（Geometry）两部分构成，本篇文章基于《Thomas’ Calculus Early Transcendentals 14th》一书附录的 &lt;strong&gt;A Brief Table of Integrals&lt;/strong&gt; 章节整理而成，主要涉及到了初等代数与几何、三角公式与函数等相关内容，较为系统的概括了初等数学当中较为常见的&lt;strong&gt;公式定理&lt;/strong&gt;以及&lt;strong&gt;平面直角坐标系图像&lt;/strong&gt;，进而为电子学当中涉及的各类数学运算做好知识准备。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Math/Elementary/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;由于初等数学只能解释常量的几何与物理问题，例如：&lt;code&gt;规则图形的长度&lt;/code&gt;、&lt;code&gt;面积&lt;/code&gt;与&lt;code&gt;体积&lt;/code&gt;，&lt;code&gt;匀速直线运动&lt;/code&gt;等等。虽然并不涉及工程计算当中经常涉及的变化量的分析与求解，但是却是高等数学知识体系当中，不可或缺的基础常识性内容。因此，笔者为了温习微积分相关的知识，特意将初等数学的重要概念归纳至本篇文章下面，便于方便快速的进行查阅。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Math" scheme="https://uinika.github.io/categories/Math/"/>
-    
-    
-      <category term="Elementary" scheme="https://uinika.github.io/tags/Elementary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Qt 5 桌面应用程序开发指南 - QtWidgets 篇</title>
-    <link href="https://uinika.github.io/Linux/Qt-Widgets.html"/>
-    <id>https://uinika.github.io/Linux/Qt-Widgets.html</id>
-    <published>2020-07-10T14:02:19.106Z</published>
-    <updated>2020-07-10T14:02:19.122Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://www.qt.io/offline-installers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt 5.14.2&lt;/strong&gt;&lt;/a&gt; 是跨平台应用开发框架 Qt 的最新版本，除了采用基于 &lt;strong&gt;C++11&lt;/strong&gt; 的经典 &lt;a href=&quot;https://doc.qt.io/qt-5/qtwidgets-index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Qt Widgets&lt;/strong&gt;&lt;/a&gt; 进行桌面应用程序开发以外，还支持通过 &lt;strong&gt;Qt Quick&lt;/strong&gt; 快速开发适用于移动端设备的用户界面，因为 Qt 5 底层图形渲染引擎基于 GPU 硬件加速，所以其能够保持与原生 &lt;strong&gt;C++&lt;/strong&gt; 近乎等同的运行效率。笔者计划通过两篇文章分别对这 2 种技术进行介绍，但是无论如何，在传统跨平台桌面应用开发领域，&lt;strong&gt;Qt Widgets&lt;/strong&gt; 依然是 Qt5 最为基础与核心的内容。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Linux/Qt-Widgets/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;虽然 Qt 6 发布在即，但是官方声明将会依然保持 API 的兼容与稳定性，因此本文依然基于当前最新的 Qt5 稳定版本撰写。全文将会分别对 &lt;strong&gt;Qt Widgets&lt;/strong&gt; 当中使用较为频繁的&lt;code&gt;窗口部件&lt;/code&gt;、&lt;code&gt;布局管理&lt;/code&gt;、&lt;code&gt;应用主窗口&lt;/code&gt;、&lt;code&gt;事件系统&lt;/code&gt;、&lt;code&gt;对象模型&lt;/code&gt;、&lt;code&gt;风格与样式&lt;/code&gt;、&lt;code&gt;国际化&lt;/code&gt;等部分内容进行深入介绍，同时展示完善的示例代码以及程序运行效果，并结合&lt;a href=&quot;./embedded/Qt-Quick.html&quot;&gt;《QtQuick 篇》&lt;/a&gt;一文讲解混合编程相关的技术。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Qt" scheme="https://uinika.github.io/categories/Qt/"/>
-    
-    
-      <category term="Desktop" scheme="https://uinika.github.io/tags/Desktop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android 物联网应用开发实例</title>
-    <link href="https://uinika.github.io/Embedded/Android.html"/>
-    <id>https://uinika.github.io/Embedded/Android.html</id>
-    <published>2020-06-23T15:23:07.155Z</published>
-    <updated>2020-06-23T16:21:56.432Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://developer.android.google.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt; 可以采用 Kotlin、Java、C++ 语言编写应用程序，&lt;a href=&quot;https://developer.android.google.cn/reference&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Android SDK&lt;/a&gt; 会将这些代码连同相应的数据和资源文件编译为 Android 软件包，即一个带有&lt;code&gt;.apk&lt;/code&gt;后缀的归档文件，也就是 Android 应用程序的安装文件。本质上 Android 系统是一种多用户的 Linux 系统，每个应用程序都运行在独立的 Linux 用户 &lt;strong&gt;ID&lt;/strong&gt; 和&lt;strong&gt;进程&lt;/strong&gt;之下，从而为每个 Android 应用都提供了独立的&lt;strong&gt;安全沙盒&lt;/strong&gt;，体现了最小权限的设计原则。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Embedded/Android/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;鉴于 Google 官方提供了完善的文档，本文并不过多过深的涉及 Android SDK 开发的具体知识细节，仅会在简单介绍 Android 开发当中的一些基本概念之后，着重分析&lt;strong&gt;经典/低功耗蓝牙&lt;/strong&gt;、&lt;strong&gt;NFC&lt;/strong&gt;、&lt;strong&gt;WIFI&lt;/strong&gt;、&lt;strong&gt;指纹识别&lt;/strong&gt;、&lt;strong&gt;5G&lt;/strong&gt; 等硬件外设的通信协议概念以及相应的实现步骤，并且展示一些比较典型的应用场景与示例代码，从而为读者在进行物联网相关项目的开发时，在移动设备应用控制端提供即有的现成经验。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Embedded" scheme="https://uinika.github.io/categories/Embedded/"/>
-    
-    
-      <category term="Mobile" scheme="https://uinika.github.io/tags/Mobile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从 GNU Make 到 CMake 快速入门</title>
-    <link href="https://uinika.github.io/Linux/CMake.html"/>
-    <id>https://uinika.github.io/Linux/CMake.html</id>
-    <published>2020-06-05T14:04:46.579Z</published>
-    <updated>2020-06-05T14:04:46.672Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/make/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GNU Make&lt;/a&gt;用于控制如何从程序的源代码文件编译并链接为可执行文件，通过&lt;code&gt;make&lt;/code&gt;命令从名称为&lt;code&gt;makefile&lt;/code&gt;的文件中获取构建信息，该文件定义了一系列规则来指定源文件的编译先后顺序、是否需要重新编译、甚至于进行更为复杂的操作。通过&lt;code&gt;makefile&lt;/code&gt;文件可以方便的实现工程的自动化编译，只需要执行&lt;code&gt;make&lt;/code&gt;命令即可完成编译动作，从而极大的提高了开发人员的工作效率。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Linux/CMake/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://cmake.org/cmake/help/v3.17/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CMake 3.17&lt;/a&gt;是一款源代码构建管理工具，最初作为各种 &lt;strong&gt;Makefile&lt;/strong&gt; 方言的生成器，后来逐步发展为现代化的构建系统，广泛用于 C 和 C++ 工程源代码的构建。官方提供的&lt;a href=&quot;https://cmake.org/cmake/help/latest/guide/tutorial/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《CMake Tutorial》&lt;/a&gt; 为开发人员提供了一个循序渐进的指南，涵盖了 CMake 构建过程中常见问题的解决方案。如果需要构建从第三方发布的源代码包，则可以参考&lt;a href=&quot;https://cmake.org/cmake/help/v3.17/guide/user-interaction/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《User Interaction Guide》&lt;/a&gt;。而&lt;a href=&quot;https://cmake.org/cmake/help/v3.17/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Using Dependencies Guide》&lt;/a&gt;则主要针对需要使用第三方库的开发人员。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="C/C++" scheme="https://uinika.github.io/categories/C-C/"/>
-    
-    
-      <category term="Qt" scheme="https://uinika.github.io/tags/Qt/"/>
-    
-  </entry>
-  
-  <entry>
     <title>基于 Linux 的 GCC 与 GDB 应用程序调试</title>
     <link href="https://uinika.github.io/Linux/GCC.html"/>
     <id>https://uinika.github.io/Linux/GCC.html</id>
-    <published>2020-06-02T11:58:12.895Z</published>
-    <updated>2020-06-02T16:15:56.173Z</updated>
+    <published>2020-10-13T18:35:35.658Z</published>
+    <updated>2020-10-13T18:35:35.658Z</updated>
     
     <summary type="html">
     
@@ -316,167 +481,6 @@
     
     
       <category term="Linux" scheme="https://uinika.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>面向对象的 C++ 11 程序设计语言</title>
-    <link href="https://uinika.github.io/Linux/C++.html"/>
-    <id>https://uinika.github.io/Linux/C++.html</id>
-    <published>2020-06-01T12:34:24.855Z</published>
-    <updated>2020-06-01T16:08:24.553Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;2011 年，C++ 标准委员会发布了 ISO C++ 标准的一个重要修订版 &lt;strong&gt;C++ 11&lt;/strong&gt;；该修订版是 C++ 语言演进过程当中的重要一步，也是当前获得编译器（&lt;a href=&quot;http://gcc.gnu.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GCC&lt;/a&gt;、&lt;a href=&quot;https://llvm.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LLVM&lt;/a&gt;、&lt;a href=&quot;https://www.qt.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Qt5&lt;/a&gt;、&lt;a href=&quot;https://docs.microsoft.com/zh-cn/cpp/cpp/c-cpp-language-and-standard-libraries?view=vs-2017&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Visual C++&lt;/a&gt;支持较多，兼容性最为优秀的一个版本。增添了类型说明符&lt;code&gt;auto&lt;/code&gt;和&lt;code&gt;decltype&lt;/code&gt;、&lt;code&gt;Lambda 表达式&lt;/code&gt;、&lt;code&gt;智能指针 unique_ptr shared_ptr weak_ptr&lt;/code&gt;、&lt;code&gt;空指针 nullptr&lt;/code&gt;等诸多新特性，语言风格更加灵活统一的同时，极大提升了程序的编写效率。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Linux/C++/logo.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于&lt;a href=&quot;https://www.pearson.com/store/p/c-primer/P100001360317/9780321714114?tab=for-teachers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《C++ Primer》&lt;/a&gt;一书最新的第 5 版撰写而成，该书作为 C++ 语言学习的经典读物，同样与时俱进增添了 C++ 11 的诸多新特性。因此，本文也选择了支持 C++ 11 标准的 &lt;strong&gt;Qt5&lt;/strong&gt; 作为开发编译环境。由于 C++ 面向过程的语法与 C 语言类似，而笔者之前已经在&lt;a href=&quot;/linux/c-reference.html&quot;&gt;《Linux C 标准程序设计》&lt;/a&gt;一文对相关内容进行了详尽的表述，因而本文将会着重笔墨水介绍 C++ 面向对象以及标准库方面的内容。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="C/C++" scheme="https://uinika.github.io/categories/C-C/"/>
-    
-    
-      <category term="Qt" scheme="https://uinika.github.io/tags/Qt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Windows.html"/>
-    <id>https://uinika.github.io/Zen/Config-Windows.html</id>
-    <published>2020-05-25T12:23:38.339Z</published>
-    <updated>2020-05-28T16:13:15.003Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;开发人员长期以来对于 Microsoft Windows 操作系统总抱以嗤之以鼻的态度，笔者亲身经历了&lt;code&gt;Windows XP&lt;/code&gt;、&lt;code&gt;Windows 7&lt;/code&gt;到&lt;code&gt;Windows 10&lt;/code&gt;的版本演变过程，抛开众所周知的偏见，事实上是能够感觉到系统稳定性、用户体验方面的大幅改善的，叠加近年来 &lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Cmder&lt;/strong&gt;&lt;/a&gt;、&lt;a href=&quot;https://neovim.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; 等辅助开发工具的出现与逐渐成熟，作为软件开发环境，其使用体验已经完全可以与 Linux 媲美，并在图形界面的稳定性以及交互的友好性方面胜于后者。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Windows/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;但是对于广大硬件电子工程师而言，&lt;strong&gt;Altium Designer&lt;/strong&gt;、&lt;strong&gt;Pads&lt;/strong&gt;、&lt;strong&gt;Allegro&lt;/strong&gt; 等商业 EDA 工具仅提供支持 Windows 操作系统的版本，而高频高速 PCB 电路设计基本离不开 Windows 操作系统环境，因而 Windows 和 Linux 在笔者日常工作里都各自拥有着其不可替代性。本文主要用于记录一些笔者使用 Windows 10 操作系统的配置和习惯，便于切换到新的工作环境时快速的展开，因而文章也会持续的保持更新。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Windows Config" scheme="https://uinika.github.io/tags/Windows-Config/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Webpack 4 核心剖析</title>
-    <link href="https://uinika.github.io/Web/Webpack.html"/>
-    <id>https://uinika.github.io/Web/Webpack.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T15:28:49.754Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://webpack.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Webpack&lt;/a&gt;&lt;/strong&gt; 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个&lt;code&gt;bundle&lt;/code&gt;。目前 Webpack 已经更新至 &lt;strong&gt;4.29.6&lt;/strong&gt; 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Webpack/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Webpack 提出了&lt;strong&gt;入口&lt;/strong&gt;&lt;code&gt;entry&lt;/code&gt;、&lt;strong&gt;输出&lt;/strong&gt;&lt;code&gt;output&lt;/code&gt;、&lt;strong&gt;加载器&lt;/strong&gt;&lt;code&gt;loader&lt;/code&gt;、&lt;strong&gt;插件&lt;/strong&gt;&lt;code&gt;plugin&lt;/code&gt;这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的&lt;code&gt;import&lt;/code&gt;模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在&lt;a href=&quot;https://github.com/uinika/aves&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aves&lt;/a&gt;和&lt;a href=&quot;https://github.com/uinika/rhino&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rhino&lt;/a&gt;两个开源脚手架项目当中（&lt;em&gt;分别基于 Vue2 和 React16&lt;/em&gt;）所使用到的最佳配置实践。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <link href="https://uinika.github.io/Zen/Config-Linux.html"/>
-    <id>https://uinika.github.io/Zen/Config-Linux.html</id>
-    <published>2020-05-21T13:39:03.892Z</published>
-    <updated>2020-05-21T13:39:03.892Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用 Linux 作为日常&lt;strong&gt;开发&lt;/strong&gt;和&lt;strong&gt;工作&lt;/strong&gt;环境近 5 年时间，尝试过&lt;code&gt;Debian&lt;/code&gt;、&lt;code&gt;Fedora&lt;/code&gt;、&lt;code&gt;Ubuntu&lt;/code&gt;、&lt;code&gt;Mint&lt;/code&gt;等桌面发行版。虽然 Linux 作为服务器运行稳定可靠，但是在桌面 GUI 体验一直有待改进，显卡驱动兼容性与 CPU 占用率过高等问题一直悬而未决。而日常工作当中经常需要使用到的&lt;code&gt;Altium Designer&lt;/code&gt;、&lt;code&gt;Keil uVision&lt;/code&gt;等商业软件仅提供 Windows 10 版本，因此笔者时常需要在两款操作系统之间来回进行切换。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/Config-Linux/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Linux Mint 提供了嵌入式开发当中必不可少的交叉编译环境，也能够直接安装 &lt;code&gt;KiCAD&lt;/code&gt;、&lt;code&gt;STM32CubeIDE&lt;/code&gt;、&lt;code&gt;VSCode&lt;/code&gt;、&lt;code&gt;Sublime&lt;/code&gt; 等生产力工具；Windows 10 则提供了 &lt;code&gt;Altium Designer&lt;/code&gt;、开发板串口驱动等大量无法跨平台使用的商业软件支持。本文主要用于备注两款操作系统当中一些常用的开发与工作环境配置，便于后续在全新工作环境中展开部署，以方便的移植个性化的使用习惯至新设备。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Zen" scheme="https://uinika.github.io/categories/Zen/"/>
-    
-    
-      <category term="Linux Config" scheme="https://uinika.github.io/tags/Linux-Config/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <link href="https://uinika.github.io/Web/Scss.html"/>
-    <id>https://uinika.github.io/Web/Scss.html</id>
-    <published>2020-05-21T13:39:03.876Z</published>
-    <updated>2020-05-21T15:33:26.888Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://sass-lang.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass&lt;/a&gt;&lt;/strong&gt; 是成熟、稳定、强大的&lt;strong&gt;CSS 预处理器&lt;/strong&gt;，截止到目前为止已经发展有 10 年，前当最新 release 版本为&lt;code&gt;3.5.5&lt;/code&gt;。而&lt;strong&gt;SCSS&lt;/strong&gt;是&lt;strong&gt;Sass3&lt;/strong&gt;版本当中引入的新语法特性，完全兼容 CSS3 的同时继承了&lt;strong&gt;Sass&lt;/strong&gt;强大的动态功能。本文翻译自&lt;a href=&quot;http://sass-lang.com/guide&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Guide》&lt;/a&gt;和&lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Sass Syntactically Awesome StyleSheets》&lt;/a&gt;两篇官方文档，讲解了现代化前端开发当中经常使用的 SCSS 语法特性，便于开发小组的同学快速上手。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Scss/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;基于 Gulp 完成前端自动化的年代，出于快速上手以及 npm 安装方便的考虑，开发团队一直沿用&lt;a href=&quot;http://lesscss.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Less&lt;/a&gt;和&lt;a href=&quot;https://github.com/stevelacy/gulp-less&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp-less&lt;/a&gt;作为 CSS 预处理工具，但是 Sass 提供了更加丰富的动态语法特征，因此逐步淘汰基于 Gulp 的&lt;a href=&quot;https://github.com/uinika/beaver&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;beaver&lt;/a&gt;前端项目脚手架以后，新项目全部基于 Webpack 的&lt;a href=&quot;https://github.com/sass/node-sass&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node-sass&lt;/a&gt;和&lt;a href=&quot;https://github.com/webpack-contrib/sass-loader&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-loader&lt;/a&gt;作为预处理工具。Sass 和 Less 的详细比较可以参考&lt;a href=&quot;https://css-tricks.com/sass-vs-less/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sass-vs-less&lt;/a&gt;和&lt;a href=&quot;http://cued.xunlei.com/log044&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sass 与 Less 比拼&lt;/a&gt;两篇文章，里面对两者的优劣做了非常详实的比较。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="CSS" scheme="https://uinika.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 2 技术栈归纳与精粹</title>
-    <link href="https://uinika.github.io/Web/Vue.html"/>
-    <id>https://uinika.github.io/Web/Vue.html</id>
-    <published>2020-05-21T13:39:03.876Z</published>
-    <updated>2020-05-21T13:39:03.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Vue 是一款&lt;strong&gt;高度封装的&lt;/strong&gt;、&lt;strong&gt;开箱即用的&lt;/strong&gt;、&lt;strong&gt;一栈式的前端框架&lt;/strong&gt;，既可以结合 webpack 进行编译式前端开发，也适用基于 gulp、grunt 等自动化工具直接挂载至&lt;code&gt;全局window&lt;/code&gt;使用。本文成文于 Vue2.4.x 版本发布之初，笔者生产环境当前使用的最新版本为 &lt;code&gt;2.5.2&lt;/code&gt;。在经历多个前端重度交互项目的开发实践之后，笔者结合官方文档对 Vue 技术栈进行了全面的梳理、归纳和注解，因此本文可以作为 Vue2 官方&lt;a href=&quot;https://vuejs.org/v2/guide/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《Get Started》&lt;/a&gt; 的补充性读物。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Vue/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Vue2.2.x&lt;/code&gt;发布之后，其框架体系及技术栈日趋完善，相较于&lt;code&gt;React+Reflux/Redux/MobX&lt;/code&gt;技术栈，Vue 更加贴近 W3C 技术规范（&lt;em&gt;例如实现仍处于 W3C 草案阶段的&lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;slot&amp;gt;&lt;/code&gt;、&lt;code&gt;is&lt;/code&gt;等新特性，提供了良好易用的模板书写环境&lt;/em&gt;），并且开源生态更加完整并易于配置，将 React 大量手动编码处理的位置，整合成为最佳实践并抽象为简单的语法糖（比如 Vuex 中提供的&lt;code&gt;store&lt;/code&gt;的模块化特性），使得开发人员得以将注意力聚焦于业务逻辑本身。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="JavaScript" scheme="https://uinika.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NodeJS 快速上手指南</title>
-    <link href="https://uinika.github.io/Web/Nodejs.html"/>
-    <id>https://uinika.github.io/Web/Nodejs.html</id>
-    <published>2020-05-21T13:39:03.860Z</published>
-    <updated>2020-05-21T13:39:03.860Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 开源项目于 2009 年由 &lt;strong&gt;Google Brain&lt;/strong&gt; 团队的软件工程师 Ryan Dahl 发起创建，后被美国云计算企业 &lt;a href=&quot;https://www.joyent.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Joyent&lt;/a&gt; 招入麾下，2015 年后正式被 &lt;a href=&quot;https://foundation.nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NodeJS 基金会&lt;/a&gt; 接管，三星公司于 2016 年完成了对 Joyent 的收购。经过将近 10 年的发展，NodeJS 已经成为现代化前端开发过程中不可或缺的基础架构，即可以作为页面渲染的分布式服务器，也可以作为前端自动化的宿主环境。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Web/Nodejs/logo.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;本文基于笔者在 2015 年所写的一篇读书笔记整理，彼时 &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node.js&lt;/a&gt; 的版本号还停留在&lt;code&gt;v0.12.x&lt;/code&gt;，社区也还未完成与 &lt;a href=&quot;https://iojs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;io.js&lt;/a&gt; 的最终合并，文中出现的部分 API 时至今日已经被废弃或者迁移。但是这些 API 层面的变化都可以对照 &lt;a href=&quot;https://nodejs.org/dist/latest-v8.x/docs/api/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《官方文档》&lt;/a&gt;找到相应说明以及替代 API，总体上并不会影响通过本文快速了解 NodeJS 的全套技术栈特性。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Web" scheme="https://uinika.github.io/categories/Web/"/>
-    
-    
-      <category term="Server" scheme="https://uinika.github.io/tags/Server/"/>
     
   </entry>
   
