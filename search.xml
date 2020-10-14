@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>开源 EDA 工具 KiCad 5.1.6 电路设计小书</title>
+    <url>/Electronics/KiCad.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>EDA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基础数字逻辑电子技术备忘录</title>
     <url>/Electronics/Digital.html</url>
     <content><![CDATA[]]></content>
@@ -20,17 +31,6 @@
       </categories>
       <tags>
         <tag>Wikipedia</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开源 EDA 工具 KiCad 5.1.6 电路设计小书</title>
-    <url>/Electronics/KiCad.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>EDA</tag>
       </tags>
   </entry>
   <entry>
@@ -144,6 +144,28 @@
       </tags>
   </entry>
   <entry>
+    <title>嵌入式 Linux C 原生应用程序开发</title>
+    <url>/Linux/Native.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>C language</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vim 常用键位生存指南</title>
+    <url>/Linux/Vim.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Bash Shell 脚本编程实践</title>
     <url>/Linux/Shell.html</url>
     <content><![CDATA[]]></content>
@@ -163,28 +185,6 @@
       </categories>
       <tags>
         <tag>Calculus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim 常用键位生存指南</title>
-    <url>/Linux/Vim.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用初等数学图形与公式汇总</title>
-    <url>/Math/Elementary.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Math</category>
-      </categories>
-      <tags>
-        <tag>Elementary</tag>
       </tags>
   </entry>
   <entry>
@@ -243,17 +243,6 @@
       </tags>
   </entry>
   <entry>
-    <title>嵌入式 Linux C 原生应用程序开发</title>
-    <url>/Linux/Native.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>C language</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为什么认为 Backbone 是现代化前端框架的基石</title>
     <url>/Web/Backbone.html</url>
     <content><![CDATA[]]></content>
@@ -265,8 +254,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 3.0 新增特性集锦</title>
-    <url>/Web/CSS3.html</url>
+    <title>CSS 2.1 典型概念与布局详解</title>
+    <url>/Web/CSS2.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -276,8 +265,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CSS 2.1 典型概念与布局详解</title>
-    <url>/Web/CSS2.html</url>
+    <title>CSS 3.0 新增特性集锦</title>
+    <url>/Web/CSS3.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -298,17 +287,6 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Django2 快速开发 Web 服务</title>
-    <url>/Web/Django.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用 Electron 打造跨平台桌面应用</title>
     <url>/Web/Electron.html</url>
     <content><![CDATA[]]></content>
@@ -320,14 +298,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Flux 数据流两三事儿</title>
-    <url>/Web/Flux.html</url>
+    <title>使用 Django2 快速开发 Web 服务</title>
+    <url>/Web/Django.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -339,6 +317,17 @@
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Flux 数据流两三事儿</title>
+    <url>/Web/Flux.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -419,6 +408,17 @@
       </tags>
   </entry>
   <entry>
+    <title>常用初等数学图形与公式汇总</title>
+    <url>/Math/Elementary.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
+      <tags>
+        <tag>Elementary</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象设计模式温故知新</title>
     <url>/Zen/Design-Pattern.html</url>
     <content><![CDATA[]]></content>
@@ -452,17 +452,6 @@
       </tags>
   </entry>
   <entry>
-    <title>宏晶 STC90C516RD+ 数据手册精读</title>
-    <url>/Embedded/STC90C51.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Embedded</category>
-      </categories>
-      <tags>
-        <tag>MCU</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux C 标准程序设计语言</title>
     <url>/Linux/C.html</url>
     <content><![CDATA[]]></content>
@@ -474,14 +463,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Qt 5 桌面应用程序开发指南 - QtQuick 篇</title>
-    <url>/Linux/Qt-Quick.html</url>
+    <title>宏晶 STC90C516RD+ 数据手册精读</title>
+    <url>/Embedded/STC90C51.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Qt</category>
+        <category>Embedded</category>
       </categories>
       <tags>
-        <tag>Desktop</tag>
+        <tag>MCU</tag>
       </tags>
   </entry>
   <entry>
@@ -496,6 +485,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Qt 5 桌面应用程序开发指南 - QtQuick 篇</title>
+    <url>/Linux/Qt-Quick.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Desktop</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>言简意赅 の Python3</title>
     <url>/Web/Python.html</url>
     <content><![CDATA[]]></content>
@@ -504,17 +504,6 @@
       </categories>
       <tags>
         <tag>Server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SCSS 3.5.5 简明上手指南</title>
-    <url>/Web/Scss.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Web</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -540,6 +529,17 @@
       </tags>
   </entry>
   <entry>
+    <title>SCSS 3.5.5 简明上手指南</title>
+    <url>/Web/Scss.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通用 LaTeX 数学公式语法手册</title>
     <url>/Zen/LaTeX.html</url>
     <content><![CDATA[]]></content>
@@ -551,17 +551,6 @@
       </tags>
   </entry>
   <entry>
-    <title>现代模拟电子技术应用笔记</title>
-    <url>/Electronics/Analog.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Analog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>电路分析涉及的理论与定理</title>
     <url>/Electronics/Analysis.html</url>
     <content><![CDATA[]]></content>
@@ -570,6 +559,17 @@
       </categories>
       <tags>
         <tag>Analysis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>现代模拟电子技术应用笔记</title>
+    <url>/Electronics/Analog.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Analog</tag>
       </tags>
   </entry>
   <entry>

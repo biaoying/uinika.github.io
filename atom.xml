@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://uinika.github.io/"/>
-  <updated>2020-10-14T17:15:54.533Z</updated>
+  <updated>2020-10-14T17:19:15.234Z</updated>
   <id>https://uinika.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://uinika.github.io/Electronics/Analog.html"/>
     <id>https://uinika.github.io/Electronics/Analog.html</id>
     <published>2020-10-14T14:46:25.756Z</published>
-    <updated>2020-10-14T17:15:54.533Z</updated>
+    <updated>2020-10-14T17:19:15.234Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;电子技术发展至今，基础理论方面的突破甚少，进步主要体现在工艺、材料与制程方面。特别是大规模集成电路的广泛应用，过去需要采用大量分立式元器件才能完成的工作，都已经被标准化的模拟、数字集成电路所替代。电子工程师的日常工作内容，逐步从过去各类基础电路的搭建，切换至电子自动化设计&lt;strong&gt;EDA&lt;/strong&gt;（Electronic Design Automation）、信号完整性&lt;strong&gt;SI&lt;/strong&gt;（Signal Integrity）、电磁兼容性&lt;strong&gt;EMC&lt;/strong&gt;（Electro Magnetic Compatibility）等方面。&lt;/p&gt;
+      &lt;p&gt;电子技术发展至今，基础理论方面的突破甚少，进步主要体现在工艺、材料与制程方面。特别是大规模集成电路的广泛应用，过去需要采用大量分立式元器件才能完成的工作，都已经被标准化的模拟、数字集成电路所替代。电子工程师的日常工作内容，逐步从过去各类基础电路的搭建，切换至电子自动化设计 &lt;strong&gt;EDA&lt;/strong&gt;（Electronic Design Automation）、信号完整性 &lt;strong&gt;SI&lt;/strong&gt;（Signal Integrity）、电磁兼容性 &lt;strong&gt;EMC&lt;/strong&gt;（Electro Magnetic Compatibility）等方面。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Electronics/Analog/logo.jpg&quot;&gt;&lt;/p&gt;
 &lt;p&gt;模拟电子技术作为现代电子工业的理论基石，主要围绕&lt;code&gt;双极性结型晶体管&lt;/code&gt; &lt;strong&gt;BJT&lt;/strong&gt;、&lt;code&gt;场效应晶体管&lt;/code&gt; &lt;strong&gt;FET&lt;/strong&gt; 构成的&lt;strong&gt;模拟信号&lt;/strong&gt;放大电路展开，着重分析了其&lt;strong&gt;频率响应&lt;/strong&gt;以及&lt;strong&gt;负反馈&lt;/strong&gt;等特性。伴随近年碳化硅、氮化镓等第三代半导体材料在新能源汽车等领域的广泛应用，模拟电子元件在体积、效率、可靠性方面都取得了显著的提高，本文在写作过程当中参考了《Electronic Devices and Circuit Theory》第 11 版一书。&lt;/p&gt;
     
