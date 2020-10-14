@@ -56,8 +56,8 @@
       </tags>
   </entry>
   <entry>
-    <title>意法半导体 Nucleo F767ZI 评估板测试</title>
-    <url>/Embedded/NucleoF767ZI.html</url>
+    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
+    <url>/Embedded/Mini2440.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -67,8 +67,8 @@
       </tags>
   </entry>
   <entry>
-    <title>基于三星 S3C2440 的嵌入式 Linux 攻略</title>
-    <url>/Embedded/Mini2440.html</url>
+    <title>意法半导体 Nucleo F767ZI 评估板测试</title>
+    <url>/Embedded/NucleoF767ZI.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Embedded</category>
@@ -155,17 +155,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim 常用键位生存指南</title>
-    <url>/Linux/Vim.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Embedded</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Bash Shell 脚本编程实践</title>
     <url>/Linux/Shell.html</url>
     <content><![CDATA[]]></content>
@@ -188,6 +177,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim 常用键位生存指南</title>
+    <url>/Linux/Vim.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Embedded</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2016 年，成都房价上涨对城南 IT 产业的影响与思考</title>
     <url>/Other/2016-Chengdu-Realestate.html</url>
     <content><![CDATA[]]></content>
@@ -196,6 +196,17 @@
       </categories>
       <tags>
         <tag>Economy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用初等数学图形与公式汇总</title>
+    <url>/Math/Elementary.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
+      <tags>
+        <tag>Elementary</tag>
       </tags>
   </entry>
   <entry>
@@ -287,6 +298,17 @@
       </tags>
   </entry>
   <entry>
+    <title>使用 Django2 快速开发 Web 服务</title>
+    <url>/Web/Django.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用 Electron 打造跨平台桌面应用</title>
     <url>/Web/Electron.html</url>
     <content><![CDATA[]]></content>
@@ -298,14 +320,14 @@
       </tags>
   </entry>
   <entry>
-    <title>使用 Django2 快速开发 Web 服务</title>
-    <url>/Web/Django.html</url>
+    <title>Flux 数据流两三事儿</title>
+    <url>/Web/Flux.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>Server</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -320,8 +342,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Flux 数据流两三事儿</title>
-    <url>/Web/Flux.html</url>
+    <title>Webpack 4 核心剖析</title>
+    <url>/Web/Webpack.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
@@ -342,14 +364,14 @@
       </tags>
   </entry>
   <entry>
-    <title>jQuery 那些容易被忽略的问题</title>
-    <url>/Web/JQuery.html</url>
+    <title>Linux 工作环境 Config 札记</title>
+    <url>/Zen/Config-Linux.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Web</category>
+        <category>Zen</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>Linux Config</tag>
       </tags>
   </entry>
   <entry>
@@ -364,25 +386,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Webpack 4 核心剖析</title>
-    <url>/Web/Webpack.html</url>
+    <title>常用数据结构 &amp; 算法分析</title>
+    <url>/Zen/Data-Structure.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Web</category>
+        <category>Thinking</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>Zen</tag>
       </tags>
   </entry>
   <entry>
-    <title>Linux 工作环境 Config 札记</title>
-    <url>/Zen/Config-Linux.html</url>
+    <title>面向对象设计模式温故知新</title>
+    <url>/Zen/Design-Pattern.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Zen</category>
+        <category>Thinking</category>
       </categories>
       <tags>
-        <tag>Linux Config</tag>
+        <tag>Zen</tag>
       </tags>
   </entry>
   <entry>
@@ -397,36 +419,14 @@
       </tags>
   </entry>
   <entry>
-    <title>常用数据结构 &amp; 算法分析</title>
-    <url>/Zen/Data-Structure.html</url>
+    <title>jQuery 那些容易被忽略的问题</title>
+    <url>/Web/JQuery.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Thinking</category>
+        <category>Web</category>
       </categories>
       <tags>
-        <tag>Zen</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用初等数学图形与公式汇总</title>
-    <url>/Math/Elementary.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Math</category>
-      </categories>
-      <tags>
-        <tag>Elementary</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>面向对象设计模式温故知新</title>
-    <url>/Zen/Design-Pattern.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Thinking</category>
-      </categories>
-      <tags>
-        <tag>Zen</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -452,17 +452,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux C 标准程序设计语言</title>
-    <url>/Linux/C.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>C language</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>宏晶 STC90C516RD+ 数据手册精读</title>
     <url>/Embedded/STC90C51.html</url>
     <content><![CDATA[]]></content>
@@ -474,14 +463,14 @@
       </tags>
   </entry>
   <entry>
-    <title>JavaScript 6 简明语法书</title>
-    <url>/Web/Javascript.html</url>
+    <title>Linux C 标准程序设计语言</title>
+    <url>/Linux/C.html</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Web</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>C language</tag>
       </tags>
   </entry>
   <entry>
@@ -496,14 +485,14 @@
       </tags>
   </entry>
   <entry>
-    <title>言简意赅 の Python3</title>
-    <url>/Web/Python.html</url>
+    <title>JavaScript 6 简明语法书</title>
+    <url>/Web/Javascript.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>Web</category>
       </categories>
       <tags>
-        <tag>Server</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -515,6 +504,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>言简意赅 の Python3</title>
+    <url>/Web/Python.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Server</tag>
       </tags>
   </entry>
   <entry>
@@ -551,17 +551,6 @@
       </tags>
   </entry>
   <entry>
-    <title>电路分析涉及的理论与定理</title>
-    <url>/Electronics/Analysis.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Electronics</category>
-      </categories>
-      <tags>
-        <tag>Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>现代模拟电子技术应用笔记</title>
     <url>/Electronics/Analog.html</url>
     <content><![CDATA[]]></content>
@@ -570,6 +559,17 @@
       </categories>
       <tags>
         <tag>Analog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析涉及的理论与定理</title>
+    <url>/Electronics/Analysis.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Electronics</category>
+      </categories>
+      <tags>
+        <tag>Analysis</tag>
       </tags>
   </entry>
   <entry>

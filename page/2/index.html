@@ -919,7 +919,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/JQuery.html">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Webpack.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -933,7 +933,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Web/JQuery.html" class="post-title-link" itemprop="url">jQuery 那些容易被忽略的问题</a>
+            <a href="/Web/Webpack.html" class="post-title-link" itemprop="url">Webpack 4 核心剖析</a>
         </h2>
 
         <div class="post-meta">
@@ -961,14 +961,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>6.1k</span>
+              <span>9.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
+              <span>8 分钟</span>
             </span>
 
         </div>
@@ -980,12 +980,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>伴随<code>Vue</code>、<code>Angular</code>、<code>React</code>等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持<code>selectAll()</code>等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于<code>jQuery</code>来完成 DOM 文档操作。</p>
-<p><img src="/Web/JQuery/logo.png"></p>
-<p>因此<code>jQuery</code>这款诞生于 2006 年的 JavaScript 库，依然在<strong>现代化前端开发</strong>当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了<code>jQuery</code>实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象<code>$.Deferred()</code>以及 JavaScript 性能优化相关的话题。</p>
+          <p><strong><a href="https://webpack.js.org" target="_blank" rel="noopener">Webpack</a></strong> 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个<code>bundle</code>。目前 Webpack 已经更新至 <strong>4.29.6</strong> 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。</p>
+<p><img src="/Web/Webpack/logo.png"></p>
+<p>Webpack 提出了<strong>入口</strong><code>entry</code>、<strong>输出</strong><code>output</code>、<strong>加载器</strong><code>loader</code>、<strong>插件</strong><code>plugin</code>这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的<code>import</code>模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在<a href="https://github.com/uinika/aves" target="_blank" rel="noopener">aves</a>和<a href="https://github.com/uinika/rhino" target="_blank" rel="noopener">rhino</a>两个开源脚手架项目当中（<em>分别基于 Vue2 和 React16</em>）所使用到的最佳配置实践。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Web/JQuery.html#more" rel="contents">
+              <a class="btn" href="/Web/Webpack.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1099,7 +1099,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Webpack.html">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/JQuery.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -1113,7 +1113,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Web/Webpack.html" class="post-title-link" itemprop="url">Webpack 4 核心剖析</a>
+            <a href="/Web/JQuery.html" class="post-title-link" itemprop="url">jQuery 那些容易被忽略的问题</a>
         </h2>
 
         <div class="post-meta">
@@ -1141,14 +1141,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>9.2k</span>
+              <span>6.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>8 分钟</span>
+              <span>6 分钟</span>
             </span>
 
         </div>
@@ -1160,12 +1160,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong><a href="https://webpack.js.org" target="_blank" rel="noopener">Webpack</a></strong> 是现代 Web 应用程序的静态模块打包工具，它会递归的构建应用程序各个模块的依赖关系图，然后将所有模块打包成一个或多个<code>bundle</code>。目前 Webpack 已经更新至 <strong>4.29.6</strong> 版本，增加了诸多打包和执行性能相关的支持，是目前应用最广泛、社区最活跃的 Web 前端代码打包方案。而更新版本的 Webpack 5 已经进入 Beta 发布阶段，未来将会带来更多构建性能的提升，本文依然以更为稳定的 Webpack 4 为讲解对象。</p>
-<p><img src="/Web/Webpack/logo.png"></p>
-<p>Webpack 提出了<strong>入口</strong><code>entry</code>、<strong>输出</strong><code>output</code>、<strong>加载器</strong><code>loader</code>、<strong>插件</strong><code>plugin</code>这四个核心概念，本文将会在简单介绍 Webpack 相关基础概念之后，对其原生实现的<code>import</code>模块导入机制进行分析，以清晰的展现 Wepback 在底层所进行的工作；最后逐步备注笔者在开发、生产环境下使用到的各类插件和加载器，并分享在<a href="https://github.com/uinika/aves" target="_blank" rel="noopener">aves</a>和<a href="https://github.com/uinika/rhino" target="_blank" rel="noopener">rhino</a>两个开源脚手架项目当中（<em>分别基于 Vue2 和 React16</em>）所使用到的最佳配置实践。</p>
+          <p>伴随<code>Vue</code>、<code>Angular</code>、<code>React</code>等编译式前端框架的崛起，前端开发人员逐渐从繁琐的 DOM 操作当中解脱出来。但是在项目实践过程当中，依然存有诸多问题需要通过直接操作 DOM 来解决，虽然现代化浏览器已经支持<code>selectAll()</code>等 HTML5 新特性，但是针对一些强调页面兼容性的场景，为了屏蔽各款浏览器解析引擎所遵循规范的差异，依然需要借助于<code>jQuery</code>来完成 DOM 文档操作。</p>
+<p><img src="/Web/JQuery/logo.png"></p>
+<p>因此<code>jQuery</code>这款诞生于 2006 年的 JavaScript 库，依然在<strong>现代化前端开发</strong>当中扮演着较为重要角色。本文结合笔者 Web 前端开发工作当中积累的实践经验，较为系统的总结了<code>jQuery</code>实践过程当中一些比较容易被开发人员所忽略的问题。例如 jQuery 对象与 DOM 对象的相互转换、jQuery 选择器性能、异步对象<code>$.Deferred()</code>以及 JavaScript 性能优化相关的话题。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Web/Webpack.html#more" rel="contents">
+              <a class="btn" href="/Web/JQuery.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1279,96 +1279,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Python.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Python.html" class="post-title-link" itemprop="url">言简意赅 の Python3</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-10-14 02:33:09" itemprop="dateCreated datePublished" datetime="2020-10-14T02:33:09+08:00">2020-10-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>36k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>33 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Python 诞生于 20 世纪 90 年代初，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库 <a href="https://opencv.org/" target="_blank" rel="noopener"><strong>OpenCV</strong></a>、三维可视化库 <a href="https://www.vtk.org/" target="_blank" rel="noopener"><strong>VTK</strong></a>、医学图像处理库 <a href="https://itk.org/" target="_blank" rel="noopener"><strong>ITK</strong></a>都提供了 Python 调用接口，Python 也原生提供了 <a href="http://www.numpy.org/" target="_blank" rel="noopener"><strong>NumPy</strong></a>、<a href="https://www.scipy.org/" target="_blank" rel="noopener"><strong>SciPy</strong></a>、<a href="https://matplotlib.org/" target="_blank" rel="noopener"><strong>matplotlib</strong></a>等强大的科学计算扩展库。Web 应用开发方面，Python 也提供有 <a href="https://www.Djangoproject.com/" target="_blank" rel="noopener"><strong>Django</strong></a>、<a href="http://www.tornadoweb.org/en/stable/" target="_blank" rel="noopener"><strong>Tornado</strong></a> 等开发框架。概而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。</p>
-<p><img src="/Web/Python/logo.png"></p>
-<p>本文示例代码基于<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python 3.6.6</a>版本编写，在简单介绍相关语法以及 <a href="https://pypi.org/project/pip/" target="_blank" rel="noopener">pip</a>、<a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="noopener">virtualenv</a> 等扩展库的使用之后，将会实现一个基于官方 XML 解析库<code>ElementTree</code>的 SVG 图片合并小程序。文中涉及的代码已经提交至笔者的 <a href="https://github.com/uinika/python-quick-guide" target="_blank" rel="noopener">Github</a>，需要的朋友可以直接进行克隆，任何缪误或者建议请向我提交<a href="https://github.com/uinika/python-quick-guide/issues" target="_blank" rel="noopener">issue</a>。如果需要采用 Python 进行 Web 开发，可以参见我的<a href="https://uinika.github.io/web/server/django.html">《使用 Django2 快速开发 Web 项目》</a>一文。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Python.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/React.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1436,6 +1346,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/React.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Python.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Python.html" class="post-title-link" itemprop="url">言简意赅 の Python3</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-14 02:33:09" itemprop="dateCreated datePublished" datetime="2020-10-14T02:33:09+08:00">2020-10-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>36k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>33 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Python 诞生于 20 世纪 90 年代初，是一款非常简洁易读的解释型脚本语言；擅长于科学计算与图形处理，传统的计算机视觉库 <a href="https://opencv.org/" target="_blank" rel="noopener"><strong>OpenCV</strong></a>、三维可视化库 <a href="https://www.vtk.org/" target="_blank" rel="noopener"><strong>VTK</strong></a>、医学图像处理库 <a href="https://itk.org/" target="_blank" rel="noopener"><strong>ITK</strong></a>都提供了 Python 调用接口，Python 也原生提供了 <a href="http://www.numpy.org/" target="_blank" rel="noopener"><strong>NumPy</strong></a>、<a href="https://www.scipy.org/" target="_blank" rel="noopener"><strong>SciPy</strong></a>、<a href="https://matplotlib.org/" target="_blank" rel="noopener"><strong>matplotlib</strong></a>等强大的科学计算扩展库。Web 应用开发方面，Python 也提供有 <a href="https://www.Djangoproject.com/" target="_blank" rel="noopener"><strong>Django</strong></a>、<a href="http://www.tornadoweb.org/en/stable/" target="_blank" rel="noopener"><strong>Tornado</strong></a> 等开发框架。概而言之，得益于强大的开源社区支持，Python 已经成为一门功能丰富的胶水语言。</p>
+<p><img src="/Web/Python/logo.png"></p>
+<p>本文示例代码基于<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python 3.6.6</a>版本编写，在简单介绍相关语法以及 <a href="https://pypi.org/project/pip/" target="_blank" rel="noopener">pip</a>、<a href="https://virtualenv.pypa.io/en/stable/" target="_blank" rel="noopener">virtualenv</a> 等扩展库的使用之后，将会实现一个基于官方 XML 解析库<code>ElementTree</code>的 SVG 图片合并小程序。文中涉及的代码已经提交至笔者的 <a href="https://github.com/uinika/python-quick-guide" target="_blank" rel="noopener">Github</a>，需要的朋友可以直接进行克隆，任何缪误或者建议请向我提交<a href="https://github.com/uinika/python-quick-guide/issues" target="_blank" rel="noopener">issue</a>。如果需要采用 Python 进行 Web 开发，可以参见我的<a href="https://uinika.github.io/web/server/django.html">《使用 Django2 快速开发 Web 项目》</a>一文。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Python.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2089,96 +2089,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Electron.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Hank">
-      <meta itemprop="description" content="My world of IT, learn it & play it.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Bit by bit">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Web/Electron.html" class="post-title-link" itemprop="url">使用 Electron 打造跨平台桌面应用</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-10-14 02:33:09" itemprop="dateCreated datePublished" datetime="2020-10-14T02:33:09+08:00">2020-10-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>28k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>25 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>早期桌面应用的开发主要借助原生 C/C++ API 进行，由于需要反复经历编译过程，且无法分离界面 UI 与业务代码，开发调试极为不便。后期出现的 QT 和 WPF 在一定程度上解决了界面代码分离和跨平台的问题，却依然无法避免较长时间的编译过程。近几年伴随互联网行业的迅猛发展，尤其是 NodeJS、Chromium 这类基于 W3C 标准开源应用的不断涌现，原生代码与 Web 浏览器开发逐步走向融合，Electron 正是在这种背景下诞生的。</p>
-<p><img src="/Web/Electron/logo.png"></p>
-<p>Electron 是由 Github 开发，通过将<a href="www.chromium.org">Chromium</a>和<a href="https://nodejs.org" target="_blank" rel="noopener">NodeJS</a>整合为一个运行时环境，实现使用 HTML、CSS、JavaScript 构建跨平台的桌面应用程序的目的。Electron 源于 2013 年 Github 社区提供的开源编辑器 Atom，后于 2014 年在社区开源，并在 2016 年的 5 月和 8 月，通过了 <a href="https://www.apple.com/mac/app-store/" target="_blank" rel="noopener">Mac App Store</a> 和 <a href="https://apps.microsoft.com/" target="_blank" rel="noopener">Windows Store</a> 的上架许可，VSCode、Skype 等著名开源或商业应用程序，都是基于 Electron 打造。为了方便编写测试用例，笔者在 Github 搭建了一个简单的 Electron 种子项目<a href="https://github.com/uinika/octopus" target="_blank" rel="noopener">Octopus</a>，读者可以基于此来运行本文涉及的示例代码。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Web/Electron.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Django.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2269,7 +2179,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Html.html">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Electron.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -2283,7 +2193,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Web/Html.html" class="post-title-link" itemprop="url">概览 HTML 5 语义化标签</a>
+            <a href="/Web/Electron.html" class="post-title-link" itemprop="url">使用 Electron 打造跨平台桌面应用</a>
         </h2>
 
         <div class="post-meta">
@@ -2311,14 +2221,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>21k</span>
+              <span>28k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>19 分钟</span>
+              <span>25 分钟</span>
             </span>
 
         </div>
@@ -2330,12 +2240,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>本文翻译自 Mozilla 社区的<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">《HTML Reference》</a>，包含了 <strong>HTML5</strong> 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 <a href="https://caniuse.com" target="_blank" rel="noopener"><strong>Can I use</strong></a> 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 <strong>W3C</strong> 和 <strong>Mozilla</strong> 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加<strong>语义化</strong>的文档结构。</p>
-<p><img src="/Web/Html/logo.png"></p>
-<p>HTML 超文本标记语言（<em>Hypertext Markup Language</em>）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。<strong>HTML 语义化</strong>（<em>Semantic HTML</em>）则是指合理的使用 HTML 元素编写 Web 页面内容，<strong>强调 Web 页面编码信息的含义凌驾于其表现样式之上</strong>，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。</p>
+          <p>早期桌面应用的开发主要借助原生 C/C++ API 进行，由于需要反复经历编译过程，且无法分离界面 UI 与业务代码，开发调试极为不便。后期出现的 QT 和 WPF 在一定程度上解决了界面代码分离和跨平台的问题，却依然无法避免较长时间的编译过程。近几年伴随互联网行业的迅猛发展，尤其是 NodeJS、Chromium 这类基于 W3C 标准开源应用的不断涌现，原生代码与 Web 浏览器开发逐步走向融合，Electron 正是在这种背景下诞生的。</p>
+<p><img src="/Web/Electron/logo.png"></p>
+<p>Electron 是由 Github 开发，通过将<a href="www.chromium.org">Chromium</a>和<a href="https://nodejs.org" target="_blank" rel="noopener">NodeJS</a>整合为一个运行时环境，实现使用 HTML、CSS、JavaScript 构建跨平台的桌面应用程序的目的。Electron 源于 2013 年 Github 社区提供的开源编辑器 Atom，后于 2014 年在社区开源，并在 2016 年的 5 月和 8 月，通过了 <a href="https://www.apple.com/mac/app-store/" target="_blank" rel="noopener">Mac App Store</a> 和 <a href="https://apps.microsoft.com/" target="_blank" rel="noopener">Windows Store</a> 的上架许可，VSCode、Skype 等著名开源或商业应用程序，都是基于 Electron 打造。为了方便编写测试用例，笔者在 Github 搭建了一个简单的 Electron 种子项目<a href="https://github.com/uinika/octopus" target="_blank" rel="noopener">Octopus</a>，读者可以基于此来运行本文涉及的示例代码。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Web/Html.html#more" rel="contents">
+              <a class="btn" href="/Web/Electron.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2426,6 +2336,96 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Web/Flux.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://uinika.github.io/Web/Html.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hank">
+      <meta itemprop="description" content="My world of IT, learn it & play it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bit by bit">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Web/Html.html" class="post-title-link" itemprop="url">概览 HTML 5 语义化标签</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-14 02:33:09" itemprop="dateCreated datePublished" datetime="2020-10-14T02:33:09+08:00">2020-10-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>21k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>19 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本文翻译自 Mozilla 社区的<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">《HTML Reference》</a>，包含了 <strong>HTML5</strong> 新增的元素标签及属性，并对使用场景、语义化用法进行了简要说明，便于快速定位日常开发所需要的 HTML 标签，书写更加优雅的语义化 DOM 结构。本文所涉及的 HTML 元素全部通过 <a href="https://caniuse.com" target="_blank" rel="noopener"><strong>Can I use</strong></a> 进行了兼容性校对，在标注各个 HTML 元素兼容性状态的同时，提供了 <strong>W3C</strong> 和 <strong>Mozilla</strong> 推荐的标准 Demo 用例，便于快速开发格式良好的 Web 页面，体现更加<strong>语义化</strong>的文档结构。</p>
+<p><img src="/Web/Html/logo.png"></p>
+<p>HTML 超文本标记语言（<em>Hypertext Markup Language</em>）是构建 Web 页面的基石，用于结构化的组织页面元素与内容，可以嵌入图像、视频等多媒体，也可以用于创建交互式表单，并在一定程度上描述文档的外观和语义。<strong>HTML 语义化</strong>（<em>Semantic HTML</em>）则是指合理的使用 HTML 元素编写 Web 页面内容，<strong>强调 Web 页面编码信息的含义凌驾于其表现样式之上</strong>，有利于 Web 浏览器执行规范化解析，改善网页文档的可访问性，方便搜索引擎爬虫索引。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Web/Html.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
