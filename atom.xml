@@ -87,15 +87,15 @@
   
   <entry>
     <title>通用 LaTeX 数学公式语法手册</title>
-    <link href="https://uinika.github.io/Zen/a.html"/>
-    <id>https://uinika.github.io/Zen/a.html</id>
+    <link href="https://uinika.github.io/Zen/LaTeX.html"/>
+    <id>https://uinika.github.io/Zen/LaTeX.html</id>
     <published>2020-10-13T19:26:12.393Z</published>
-    <updated>2020-10-14T02:42:33.479Z</updated>
+    <updated>2020-10-14T02:45:13.923Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;a href=&quot;https://www.mathjax.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;MathJax&lt;/strong&gt;&lt;/a&gt; 是一款运行于 Web 浏览器当中的开源 JavaScript 数学符号渲染引擎，通过它可以方便的在现代 Web 浏览器当中显示数学公式，目前已经能够解析 &lt;code&gt;LaTex&lt;/code&gt;、&lt;code&gt;MathML&lt;/code&gt; 等标记语言。&lt;strong&gt;MathJax&lt;/strong&gt; 项目发源于 2009 年，目前由 NumFOCUS 基金会主持，并且得到了 MathJax 联盟的支持，该联盟是&lt;strong&gt;美国数学协会&lt;/strong&gt;（AMS）和 &lt;strong&gt;工业与应用数学协会&lt;/strong&gt;（SIAM）的共同合资企业。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Zen/a/logo.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Zen/LaTeX/logo.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.latex-project.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;LaTeX&lt;/strong&gt;&lt;/a&gt; 是一种高质量的排版格式，可以生成复杂的表格与数学公式，是当前电子与数学出版行业的事实标准。本文以 &lt;a href=&quot;https://www.pandoc.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;Pandoc&lt;/strong&gt;&lt;/a&gt; 作为 LaTex 渲染引擎（一款用于标记语言文档转换的命令行工具），分门别类的总结了撰写数学公式所需要经常使用到的 LaTeX 语法，方便写作相关科技类文章时随手查阅。&lt;/p&gt;
     
     </summary>
