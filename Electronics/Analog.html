@@ -241,8 +241,22 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-12/13.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-12/14.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-12/15.png">
-<meta property="article:published_time" content="2020-10-16T14:51:55.901Z">
-<meta property="article:modified_time" content="2020-10-16T14:51:55.910Z">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/1.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/2.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/3.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/4.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/5.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/7.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/8.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/9.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/10.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/11.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/12.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/13.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/14.png">
+<meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/15.png">
+<meta property="article:published_time" content="2020-10-16T15:39:35.524Z">
+<meta property="article:modified_time" content="2020-10-18T20:42:03.391Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -439,8 +453,15 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-10-16 22:51:55" itemprop="dateCreated datePublished" datetime="2020-10-16T22:51:55+08:00">2020-10-16</time>
+              <time title="创建时间：2020-10-16 23:39:35" itemprop="dateCreated datePublished" datetime="2020-10-16T23:39:35+08:00">2020-10-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-19 04:42:03" itemprop="dateModified" datetime="2020-10-19T04:42:03+08:00">2020-10-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -464,14 +485,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>67k</span>
+              <span>76k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1:01</span>
+              <span>1:09</span>
             </span>
 
         </div>
@@ -2090,6 +2111,227 @@ f_L = \frac{1}{2 \pi RC} = \frac{1}{2 \pi \tau_L}
 <p>下面的表格归纳了<strong>单时间常数</strong>的 RC <strong>低通</strong>与<strong>高通</strong>电路的频率特性：</p>
 <p><img src="/Electronics/Analog/Section-12/15.png"></p>
 <h2 id="晶体管频率特性">晶体管频率特性</h2>
+<h3 id="晶体管高频等效模型">晶体管高频等效模型</h3>
+<p>高频情况下，晶体管结电容将会对信号传输带来较大影响。而之前得到的 H 参数等效模型，由于同有考虑到结电容的影响，因此不再适用。此时，需要建立一个新的模型来反映晶体管的结电容，这就是<strong>高频等效模型</strong>。本小节将从晶体管的物理结构出发，建立其物理模型：</p>
+<p><img src="/Electronics/Analog/Section-13/1.png"></p>
+<table>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 87%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>符号</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(b^{&#39;}\)</span></td>
+<td>基区的一个点</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(r_{bb^{&#39;}}\)</span></td>
+<td>基区的体电阻</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(r_{b^{&#39;}e}\)</span></td>
+<td>发射结电阻</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(r_{b^{&#39;}c}\)</span></td>
+<td>集电结电阻</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(r_{ce}\)</span></td>
+<td>输出电阻</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(C_{b^{&#39;}c}\)</span></td>
+<td>集电结电容</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(C_{b^{&#39;}e}\)</span></td>
+<td>发射结电容</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(g_m u_{b^{&#39;}e}\)</span></td>
+<td>电压控制电流源，取代 <span class="math inline">\(\beta i_b\)</span>，其中<strong>跨导</strong> <span class="math inline">\(g_m = \frac{\Delta i_c}{\Delta u_{b^{&#39;}e}} \vert u_{ce}为常量\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>跨导的定义是变化的 <span class="math inline">\(i_c\)</span> 与变化的 <span class="math inline">\(u_{b^{&#39;}e}\)</span> 的比值，通过下面的推导可以发现，这个动态参数也与静态工作点有关：</p>
+<p><span class="math display">\[
+\begin{cases}
+   \Delta i_C = g_m \Delta u_{b^{&#39;}e} = g_m \Delta i_B r_{b^{&#39;}e}   \\
+   \Delta i_C = \beta \Delta i_B
+\end{cases}
+\implies
+g_m = \frac{\beta}{r_{b^{&#39;}e}} = \frac{\beta}{(1+\beta)\frac{26mV}{I_{EQ}}} \approx \frac{I_{EQ}}{26mV}
+\]</span></p>
+<p>当静态工作点确定以后，<span class="math inline">\(g_m\)</span> 就是一个常数，说明这是一个与频率无关的量。而已知 <span class="math inline">\(\beta\)</span> 是与频率有关的，所以采用 <span class="math inline">\(g_m \Delta i_B r_{b^{&#39;}e}\)</span> 来取代原来的 <span class="math inline">\(\beta \Delta i_B\)</span>，将整个元件受频率影响的因素，归结到了两个电容对频率的响应上，这样就给分析带来了极大便利。</p>
+<p>所以在上面的电路当中，一方面体现了晶体管的极电容，同时采用电压控制的受控电流源，体现了晶体管的电流控制特性。将上面的模型重新进行绘制，习惯性的将输入回路画在左侧，输出回路画在右侧，就得到了一个完整的<strong>晶体管高频 <span class="math inline">\(\pi\)</span> 等效模型</strong>，反映了结电容在晶体管中的客观存在。由于模型的形状像字母 <span class="math inline">\(\pi\)</span>，所以也称为 <strong><span class="math inline">\(\pi\)</span> 等效模型</strong>。</p>
+<p><img src="/Electronics/Analog/Section-13/2.png"></p>
+<p>接下来着手简化上面这个模型，基区体电阻 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 和发射结电阻 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 两个电阻之和，就是前面所一直讨论的 <span class="math inline">\(r_{be}\)</span>，不能够进行忽略；<span class="math inline">\(r_{b^{&#39;}c}\)</span> 是集电结的结电阻，放大电路工作时集电结反偏，反偏 PN 结的等效电阻较大，所以可以忽略其对信号传输的影响，将其视为开路处理。根据前面的讨论，晶体管输出电阻 <span class="math inline">\(r_{ce}\)</span> 也非常大，通常在 100 千欧姆左右，所以也可以忽略其对信号传输的影响，视为开路处理。</p>
+<p>此外，上面电路中的两个电容作为研究对象，更加不能进行忽略，这样就可以得到一个简化后的 <span class="math inline">\(混合 \pi 等效模型\)</span>：</p>
+<p><img src="/Electronics/Analog/Section-13/3.png"></p>
+<p>要使用这个模型，就要确定模型当中的各个参数，其中 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 可以通过查询元件手册获得，分析中通常视为 <span class="math inline">\(100Ω \sim 300Ω\)</span> 的一个电阻，而 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 则通过 <span class="math inline">\(r_{b^{&#39;}e} = (1+\beta) \frac{26mV}{I_{EQ}}\)</span> 求得。除此之外，两个电容 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 可以通过元件手册查到，而 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 则通过 <span class="math inline">\(C_{b^{&#39;}e} \approx \frac{g_m}{2 \pi f_T}\)</span> 进行估算（晶体管特征频率 <span class="math inline">\(f_T\)</span> 可以查询元件手册获得），晶体管的 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 通常在几皮法到几十皮法 <span class="math inline">\(C_{b^{&#39;}c}\)</span>，而 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 则通常为零点几皮法至几皮法，所以 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 要远远大于 <span class="math inline">\(C_{b^{&#39;}c}\)</span>。而 <span class="math inline">\(g_m\)</span> 刚才已经知道可以通过 <span class="math inline">\(g_m \approx \frac{I_{EQ}}{26mV}\)</span> 进行求解。</p>
+<p>通过这样的分析就可以发现，跟 H 参数等效模型一样，<span class="math inline">\(\pi\)</span> 模型当中的各个参数也与静态工作点密切相关，所以在分析放大电路的频率响应的时候，仍然需要秉承先动态后静态的思路进行分析。</p>
+<p>即然<span class="math inline">\(\pi\)</span> 模型与 H 参数等效模型都是对晶体管进行的等效，低频与中频的时候，由于结电容的容抗较大可以视为开路，那么 <span class="math inline">\(\pi\)</span> 模型可以转变为如下形式：</p>
+<p><img src="/Electronics/Analog/Section-13/4.png"></p>
+<p>上面简化电路中的 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 加上 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 就是 <span class="math inline">\(r_{be}\)</span>，而 <span class="math inline">\(g_m u_{b^{&#39;}e}\)</span> 与 H 参数模型中的 <span class="math inline">\(\beta i_b\)</span> 表征的是相同的量 <span class="math inline">\(i_c\)</span>，因此可以知道在<strong>低频的时候，如果忽略晶体管内部电容，那么混合 <span class="math inline">\(\pi\)</span> 模型与 H 参数模型是完全等效的</strong>。</p>
+<p><img src="/Electronics/Analog/Section-13/5.png"></p>
+<p>利用 <span class="math inline">\(\pi\)</span> 模型就可以开展对放大电路高频段的分析，因为它非常忠实的反映了结电容的存在，可以支撑对晶体管更加详细的讨论。</p>
+<h3 id="晶体管频率特性分析">晶体管频率特性分析</h3>
+<p>结电容的存在，让晶体管成为了一个频率敏感的元件，晶体管的电流放大系数 <span class="math inline">\(\beta\)</span> 是晶体管信号传输能力的重要标志，因此在全频率范围内，考虑电流放大系数 <span class="math inline">\(\beta\)</span> 与信号频率 <span class="math inline">\(f\)</span> 的关系。将下图 <span class="math inline">\(\pi\)</span> 模型的 <code>c</code> 和 <code>e</code> 两端短路，由于电流放大系数 <span class="math inline">\(\beta\)</span> 是在 <span class="math inline">\(U_{ce}\)</span> 为常量的情况下，变化的 <span class="math inline">\(I_c\)</span> 与变化的 <span class="math inline">\(I_b\)</span> 的比值：</p>
+<p><span class="math display">\[
+\dot{\beta} = \frac{\dot{I_c}}{\dot{I_b}} \vert \dot{U_{ce} = 0}
+\]</span></p>
+<p>输出特性的几何关系上，则反映出在固定 <span class="math inline">\(U_{ce}\)</span> 的情况下，纵向特性曲线的疏密程度，因此对于交流分析，由于 <span class="math inline">\(u_{ce}\)</span> 为常数，所以必须将 <code>c</code> 和 <code>e</code> 两端短路起来。</p>
+<p>由于 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 同时出现在输入和输出回路，所以如果能够采用它来表示 <span class="math inline">\(I_c\)</span> 和 <span class="math inline">\(I_b\)</span> 就可以解决 <span class="math inline">\(\beta\)</span> 求解的问题。对上图橙色标记的结点列写 KCL 方程 <span class="math inline">\(g_m \dot{U_{b^{&#39;}e}} = C_{b^{&#39;}c}+ \dot{I_c}\)</span>，通过对电路的观察可以发现，<span class="math inline">\(C_{b^{&#39;}c}\)</span> 两端的电压恰恰就是 <span class="math inline">\(U_{b^{&#39;}e}\)</span>，如果将 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 的电抗视为 <span class="math inline">\(\frac{1}{j\omega C}\)</span> 就可以得到 <span class="math inline">\(I_c\)</span> 和 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 的关系式：</p>
+<p><span class="math display">\[
+\dot{I_c} = (g_m - j \omega C_{b^{&#39;}c}) \dot{U_{b^{&#39;}e}}
+\]</span></p>
+<p><span class="math inline">\(U_{b^{&#39;}e}\)</span> 是上图当中三条并联支路的端电压，而晶体管输入电流 <span class="math inline">\(I_B\)</span> 正好是这三条支路的总电流，根据欧姆定律就可以得出 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 与 <span class="math inline">\(I_B\)</span> 的关系：</p>
+<p><span class="math display">\[
+\dot{U_{b^{&#39;}e}} = \dot{I_b} (r_{be} // \frac{1}{j \omega C_{b^{&#39;}e}} // \frac{1}{j \omega C_{b^{&#39;}c}})
+\]</span></p>
+<p>联立上述两个方程，就可以得到 <span class="math inline">\(\beta\)</span> 关于 <span class="math inline">\(\omega\)</span> 的表达式：</p>
+<p><span class="math display">\[
+\begin{cases}
+   \dot{I_c} = (g_m - j \omega C_{b^{&#39;}c}) \dot{U_{b^{&#39;}e}} \\
+   \dot{U_{b^{&#39;}e}} = \dot{I_b} (r_{be} // \frac{1}{j \omega C_{b^{&#39;}e}} // \frac{1}{j \omega C_{b^{&#39;}c}})
+\end{cases}
+\implies
+\dot{\beta} = \frac{\dot{I_c}}{\dot{I_b}} = \frac{g_m - j \omega C_{b^{&#39;}c}}{\frac{1}{r_{b&#39;e}} + j \omega (C_{b^{&#39;}e} + C_{b^{&#39;}c})}
+\]</span></p>
+<p>实际电路当中，通常满足 <span class="math inline">\(g_m\)</span> 远远大于 <span class="math inline">\(\omega C_{b&#39;c}\)</span> 这个条件，经过合理的近似，就可以得到如下简化后的 <span class="math inline">\(\beta\)</span> 关于 <span class="math inline">\(\omega\)</span> 的表达式：</p>
+<p><span class="math display">\[
+\dot{\beta} \approx \frac{g_m r_{b&#39;e}}{1 + j \omega (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e}}
+\]</span></p>
+<p>对上面简化后的表达式进行定性分析，当信号频率非常低的时候，即 <span class="math inline">\(j \omega (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e} \approx 0\)</span>，电流放大系数 <span class="math inline">\(\beta\)</span> 将会出现一个最大值，即低频情况下的通带增益 <span class="math inline">\(\beta_0 = g_m r_{b&#39;e}\)</span>。随着频率的逐渐增加，分母逐渐变大，电流放大系数 <span class="math inline">\(\beta\)</span> 会有所损失。</p>
+<p>接下来，任然定义关键频率 <span class="math inline">\(f_\beta = \frac{1}{2 \pi (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e}}\)</span>，注意这里的电容 <strong>C</strong> 是 <span class="math inline">\(C_{b&#39;e}\)</span> 与 <span class="math inline">\(C_{b&#39;c}\)</span> 两个电容之和，进而将 <span class="math inline">\(f_\beta\)</span> 代入上面表达式，并且将 <span class="math inline">\(\omega\)</span> 用 <span class="math inline">\(2 \pi f\)</span> 取代，就可以得到 <span class="math inline">\(\beta\)</span> 关于 <span class="math inline">\(f\)</span> 的表达式，进而就可以得到电流放大系数 <span class="math inline">\(\beta\)</span> 的<strong>幅频特性</strong>与<strong>相频特性</strong>：</p>
+<p><span class="math display">\[
+\dot{\beta} = \frac{\beta_0}{1 + j \frac{f}{f_\beta}} \implies
+\begin{cases}
+   幅频特性 \implies |\dot{\beta}| = \frac{\beta_0}{\sqrt{1 + (\frac{f}{f_\beta})^2}} \\
+   相频特性 \implies \varphi = - \arctan \frac{f}{f_\beta}
+\end{cases}
+\xrightarrow{取对数}
+\begin{cases}
+   幅频特性 \implies 20 \lg |\dot{\beta}| = 20 \lg \beta_0 - 20 \lg \sqrt{1 + (\frac{f}{f_\beta})^2} \\
+   相频特性 \implies \varphi = - \arctan \frac{f}{f_\beta}
+\end{cases}
+\]</span></p>
+<p>对上面的方程组取对数后发现，这里的幅频特性与相频特性与单时间常数 RC 电路当中的低通电路十分相似，只是在一阶低通电路的情况下叠加了一个常数 <span class="math inline">\(20 \lg \beta_0\)</span>，从而绘制出 <span class="math inline">\(\beta\)</span> 的波特图：</p>
+<p><img src="/Electronics/Analog/Section-13/7.png"></p>
+<ul>
+<li>当 <span class="math inline">\(f &lt;&lt; f_\beta\)</span> 时，<span class="math inline">\(20 \lg |\dot{\beta}| \approx 20 \lg \beta_0，\varphi = 0°\)</span>；</li>
+<li>当 <span class="math inline">\(f &gt;&gt; f_\beta\)</span> 时，<span class="math inline">\(20 \lg |\dot{\beta}| \approx 20 \lg \beta_0 - 20 \lg \frac{f}{f_\beta}\)</span>；</li>
+<li>当 <span class="math inline">\(f = f_\beta\)</span> 时，<span class="math inline">\(20 \lg |\dot{\beta}| \approx 20 \lg \beta_0 - 20 \lg \sqrt{2} \approx 20 \lg \beta_0 - 3dB，\varphi = -45°\)</span>；</li>
+</ul>
+<p>通过波特图可以看到，就是在原来的一阶 RC 低通电路基础上，抬升到了 <span class="math inline">\(20 \lg \beta_0\)</span> 的位置，仍然是在 <span class="math inline">\(f_{\beta}\)</span> 的位置出现拐点。值得强调的是，在上面的波特图当中，拐点处依然会产生 <span class="math inline">\(3dB\)</span> 的最大误差，也就是 <span class="math inline">\(f \beta\)</span> 处对应的电流放大系数 <span class="math inline">\(\beta\)</span> 的增益已经相比通带增益，下降了<code>3dB</code>，因此 <span class="math inline">\(f_\beta\)</span> 也是这个波特图的上限频率。</p>
+<p>同样的，观察相频特性可以发现，与低通电路一样，在频率较低的时候，电流的放大系数将不会产生相移；随着频率的增高，电流放大系数将会产生最大 <span class="math inline">\(90°\)</span> 的相位滞后，而相频特性的最大误差也出现在拐点处，仍然为 <code>5.71°</code>；</p>
+<p><img src="/Electronics/Analog/Section-13/8.png"></p>
+<p>基于这样的晶体管电流放大系数的幅频特性与相频特性，就可以定义一些非常重要的频率参数来表征一个晶体管的频率特性。因此，定义当 <span class="math inline">\(|\dot{\beta}|\)</span> 的值下降至 <span class="math inline">\(0.707 \cdot \beta_0\)</span> 的时候（即 <span class="math inline">\(\frac{1}{\sqrt{2}}\beta_0\)</span> 时的频率）所对应的频率，称为<strong>共射截止频率</strong>，也就是波特图上的<strong>上限频率</strong>。显而易见，这个频率点的电流放大系数幅值下降了 <code>3dB</code>，在这个位置并不意味晶体管失去了电流放大能力，而只是表示当前的频率已经下降了 <code>3dB</code>，如果频率进一步提高，将会以每 10 倍频 <code>20dB</code> 的速率衰减，电流放大能力由此大打折扣。</p>
+<p>当信号频率进一步提高，电流放大系数的幅值将会进一步下降，这里定义当电流放大系数幅值 <span class="math inline">\(\dot{\beta}\)</span> 降为 <code>1</code> 的时候，所对应的频率称为特征频率 <span class="math inline">\(f_T\)</span>，即位于幅频特性与坐标横轴的交点处。</p>
+<p><img src="/Electronics/Analog/Section-13/9.png"></p>
+<p>将 <span class="math inline">\(f = f_T\)</span> 代入上面得到的频率响应，就可以得到 <span class="math inline">\(f_T\)</span> 与 <span class="math inline">\(f_\beta\)</span> 之间的关系：</p>
+<p><span class="math display">\[
+|\dot{\beta}| = \frac{\beta_0}{\sqrt{1 + (\frac{f_T}{f_\beta})^2}} = 1
+\implies
+f_T \approx \beta_0 f_\beta
+\]</span></p>
+<p>特征频率 <span class="math inline">\(f_T\)</span> 约等于 <span class="math inline">\(\beta_0\)</span> 倍的 <span class="math inline">\(f_{\beta}\)</span>，说明晶体管的特征频率远远大于其共射截止频率。<strong>特征频率是晶体管非常重要的特征参数，因为当晶体管工作频率等于或者大于特征频率 <span class="math inline">\(f_T\)</span> 的时候，意味着放大系数已经等于或者小于 <code>1</code>，此时晶体管将会失去放大作用</strong>。</p>
+<p>与共射电流放大系数 <span class="math inline">\(\beta\)</span> 一样，我们也可以对共基电流放大系数 <span class="math inline">\(\alpha\)</span> 展开频率响应分析，采用同样的方法可以得到 <span class="math inline">\(\alpha\)</span> 与频率 <span class="math inline">\(f\)</span> 的关系，可以发现 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 一样都具有低通特性：</p>
+<p><span class="math display">\[
+\dot{\alpha} = \frac{\alpha_0}{1 + j \frac{f}{f_\alpha}}
+\]</span></p>
+<p>当 <span class="math inline">\(|\dot{\alpha}|\)</span> 值下降为低频 <span class="math inline">\(\alpha_0\)</span> 的 <code>0.707</code> 倍时所对应的频率，称为<strong>共基截止频率 <span class="math inline">\(f_a\)</span></strong>。根据 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 的关系，以及 <span class="math inline">\(\beta\)</span> 的频率特性，就可以得到 <span class="math inline">\(f_{\alpha}\)</span> 与 <span class="math inline">\(f_{\beta}\)</span> 的关系：</p>
+<p><span class="math display">\[
+\begin{cases}
+   \dot{\beta} = \frac{\beta_0}{1 + j \frac{f}{f_\beta}} \\
+   \dot{\alpha} = \frac{\dot{\beta}}{1 + \dot{\beta}}
+\end{cases}
+\implies
+\begin{cases}
+   a_0 = \frac{\beta_0}{1 + \beta_0}  \\
+   f_\alpha = (1 + \beta_0)f_{\beta}
+\end{cases}
+\]</span></p>
+<p>上面等式说明，对于同样的晶体管而言，其共基截止频率要远远大于共射截止频率。这也是为什么共基放大电路的带宽，通常要远远大于共射放大电路的原因所在。</p>
+<blockquote>
+<p><strong>注意</strong>：<strong>低频小功率晶体管</strong>的 <span class="math inline">\(f_\alpha\)</span> 为几十至几百千赫，<strong>高频小功率晶体管</strong>的 <span class="math inline">\(f_\alpha\)</span> 约为几十至几百兆赫。</p>
+</blockquote>
+<p>通过以上对晶体管的频率特性分析，可以得出以下重要结论：</p>
+<ol type="1">
+<li>晶体管电流放大系数 <span class="math inline">\(\alpha\)</span> 与 <span class="math inline">\(\beta\)</span> 都是频率的函数，两者都具有低通特性；意味着在低频和中频阶段，晶体管能够保证较好的电流放大能力；伴随频率的升高，电流放大能力将会大打折扣；</li>
+<li>共射截止频率 <span class="math inline">\(f_{\beta}\)</span> 与特征频率 <span class="math inline">\(f_T\)</span> 是晶体管最重要的频率参数，其中 <span class="math inline">\(f_{\beta}\)</span> 表征的是晶体管能够保证中频时电流放大系数能力的一个上限频率，而 <span class="math inline">\(f_T\)</span> 则是表征晶体管具有放大能力的一个最高截止频率。</li>
+<li><span class="math inline">\(f_\alpha\)</span>、<span class="math inline">\(f_\beta\)</span>、<span class="math inline">\(f_T\)</span> 之间是可以换算的：<span class="math inline">\(f_T = \beta_0 f_\beta\)</span> 以及 <span class="math inline">\(f_{\alpha} = (1+\beta_0) f_{\beta}\)</span>；</li>
+<li>通过上面的换算关系，可以得到 3 个频率之间的大小关系：<span class="math inline">\(f_\beta &lt; f_T &lt; f_\alpha\)</span>；其中 <span class="math inline">\(f_\beta\)</span> 和 <span class="math inline">\(f_T\)</span> 可以从参数手册获得，而 <span class="math inline">\(f_\alpha\)</span> 则需要通过换算求取；</li>
+</ol>
+<h3 id="高频等效模型的单向化">高频等效模型的单向化</h3>
+<p>在下面的 <span class="math inline">\(\pi\)</span> 模型当中，由于电容 <span class="math inline">\(C_{b&#39;c}\)</span> 跨接在输入回路与输出回路之间，导致输入信号传输出现了双向化的过程，引入了反馈，使得电路分析极为复杂化。解决这个问题，可以采用<strong>密勒定理</strong>简化电路。</p>
+<p><img src="/Electronics/Analog/Section-13/10.png"></p>
+<p><strong>密勒定理</strong>是指一个输入和输出之间跨接阻抗 <span class="math inline">\(Z\)</span> 的网络，如果这个网络的传输函数 <span class="math inline">\(\dot{A} = \frac{\dot{U_2}}{\dot{U_1}}\)</span> 是可以确定的话，那么就可以将跨接阻抗 <span class="math inline">\(Z\)</span> 等效为位于输入回路的 <span class="math inline">\(Z_1\)</span> 和位于输出回路的 <span class="math inline">\(Z_2\)</span> 两个阻抗，从而完成电路的单向化。</p>
+<p><img src="/Electronics/Analog/Section-13/11.png"></p>
+<p>为了确保两个电路的等效，需要保证输入与输出端口在等效前后的电压电流关系是相同的，对于输入回路建立下面的关系：</p>
+<p><span class="math display">\[
+输入回路 \implies
+\begin{cases}
+   \dot{I_1} = \frac{\dot{U_1} - \dot{U_2}}{Z} = \frac{\dot{U_1}(1 - \frac{\dot{U_2}}{\dot{U_1})}}{Z}  \\
+   \dot{K} = \frac{\dot{U_2}}{\dot{U_1}}
+\end{cases}
+\implies
+\dot{I_1} = \frac{\dot{U_1}(1 - \dot{K})}{Z} = \frac{\dot{U_1}}{\dot{Z_1}}
+\]</span></p>
+<p>这里的 <span class="math inline">\(\dot{I_1}\)</span> 经过等效之后，变成 <span class="math inline">\(\frac{\dot{U_1}}{\dot{Z_1}}\)</span> 应该与原来相等，同样对于输出回路也可以建立这样的关系：</p>
+<p><span class="math display">\[
+输出回路 \implies
+\begin{cases}
+   \dot{I_2} = \frac{\dot{U_2} - \dot{U_1}}{Z}   \\
+   \dot{K} = \frac{\dot{U_2}}{\dot{U_1}}
+\end{cases}
+\implies
+\dot{I_2} = \frac{\dot{U_2}}{\frac{Z}{1 - \frac{1}{\dot{K}}}} = \frac{\dot{U_2}}{Z_2}
+\]</span></p>
+<p>经过对比以后，可以得出下面这样的结论：</p>
+<p><span class="math display">\[
+\begin{cases}
+   Z_1 = \frac{Z}{1 - \dot{K}} \\
+   Z_2 = \frac{Z}{1 - \frac{1}{\dot{K}}}
+\end{cases}
+\]</span></p>
+<p>换而言之，只要将原来的 <span class="math inline">\(Z\)</span> 分解为满足这样关系式的 <span class="math inline">\(Z_1\)</span> 和 <span class="math inline">\(Z_2\)</span>，分别放入输入和输出回路，就可以实现单向化前后系统的等效。而密勒定理对于跨接在输入与输出回路之间的电容元件同样适用。</p>
+<p>▶【例题】如下图所示电路，采用密勒定理将左图电路等效为右图，求解左图当中 <span class="math inline">\(C_1\)</span> 与 <span class="math inline">\(C_2\)</span> 的值？</p>
+<p><img src="/Electronics/Analog/Section-13/12.png"></p>
+<p>▶【解答】将电容视为 <span class="math inline">\(\frac{1}{jwC_1}\)</span> 的阻抗，将其代入上面得到的密勒定理，就可以得到 <span class="math inline">\(C_1\)</span> 与 <span class="math inline">\(C_2\)</span> 的具体数值：</p>
+<p><span class="math display">\[
+\begin{cases}
+   \frac{1}{jwC_1} = \frac{\frac{1}{jwC}}{1 - \dot{K}} \\
+   \frac{1}{jwC_2} = \frac{\frac{1}{jwC}}{1 - \frac{1}{\dot{K}}}
+\end{cases}
+\implies
+\begin{cases}
+   C_1 = (1 - \dot{K})C = 303pF   \\
+   C_2 = (1 - \frac{1}{\dot{K}})C = 3.03pF
+\end{cases}
+\]</span></p>
+<p>通过这个过程可以看到，密勒定理对于将系统单向化而言是非常有效的。同时重点观察计算后的结果，会发现等效到输入端的密勒等效电容 <span class="math inline">\(C_1\)</span> 比原电容增大了 <span class="math inline">\(1 + |K|\)</span> 倍，这种现象称为<strong>密勒效应</strong>。</p>
+<p><img src="/Electronics/Analog/Section-13/13.png"></p>
+<p>利用密勒定理，就可以针对 <span class="math inline">\(\pi\)</span> 模型进行讨论，尝试将 <span class="math inline">\(C_{b&#39;c}\)</span> 等效到输入输出回路当中。根据引入的密勒定理，就可以用两个电容来取代 <span class="math inline">\(C_{b&#39;c}\)</span>，分别连接至下图的 <span class="math inline">\(b&#39;\)</span> 和 <span class="math inline">\(e\)</span>、<span class="math inline">\(c\)</span> 和 <span class="math inline">\(e\)</span> 两端，两个等效电容的大小分别为 <span class="math inline">\((1-\dot{K})C_{b&#39;c}\)</span> 和 <span class="math inline">\(\frac{\dot{K}-1}{\dot{K}}C_{b&#39;c}\)</span>，由此就可以将这样的 <span class="math inline">\(\pi\)</span> 模型进行单向化，从而得到 <strong>单向化的混合 <span class="math inline">\(\pi\)</span> 等效模型</strong>：</p>
+<p><img src="/Electronics/Analog/Section-13/14.png"></p>
+<p>在上面的模型当中 <span class="math inline">\(\dot{K} \approx \frac{\dot{U_{ce}}}{\dot{U_{b&#39;e}}}\)</span>，可以通过具体电路来求得。上图中的电容 <span class="math inline">\(C&#39;\)</span> 则是 <span class="math inline">\(C_{b&#39;e}\)</span> 与等效电容 <span class="math inline">\((1-\dot{K})C_{b&#39;e}\)</span> 的并联值，而其容值为两者之和：</p>
+<p><span class="math display">\[
+C&#39; = C_{b&#39;e} + (1+\dot{K})C_{b&#39;e}
+\]</span></p>
+<p>根据这个结论可以发现，<span class="math inline">\(C&#39;\)</span> 比 <span class="math inline">\(\frac{\dot{K}-1}{\dot{K}}C_{b&#39;c}\)</span> 要大很多，这意味着在一定频率信号作用下，该等效电容的电抗较大，对输出信号的传输几乎不会带来影响，因此可以将其视为开路处理：</p>
+<p><img src="/Electronics/Analog/Section-13/15.png"></p>
+<p>最后，就得到了更加简洁的单向化混合 <span class="math inline">\(\pi\)</span> 等效模型，从而为后续放大电路的频率响应分析扫清了障碍。</p>
+<h2 id="放大电路频率响应分析">放大电路频率响应分析</h2>
+<h3 id="单管共射放大电路中低频响应分析">单管共射放大电路中低频响应分析</h3>
+<h3 id="单管共射放大电路高频响应分析">单管共射放大电路高频响应分析</h3>
+<h3 id="三种组态放大电路频率响应性能对比">三种组态放大电路频率响应性能对比</h3>
 
     </div>
 
@@ -2188,7 +2430,7 @@ f_L = \frac{1}{2 \pi RC} = \frac{1}{2 \pi \tau_L}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#放大原理"><span class="nav-number">5.1.</span> <span class="nav-text">放大原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性-1"><span class="nav-number">5.2.</span> <span class="nav-text">伏安特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入特性曲线"><span class="nav-number">5.2.1.</span> <span class="nav-text">输入特性曲线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出特性曲线"><span class="nav-number">5.2.2.</span> <span class="nav-text">输出特性曲线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区"><span class="nav-number">5.3.</span> <span class="nav-text">工作区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参数"><span class="nav-number">5.4.</span> <span class="nav-text">主要参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大系数"><span class="nav-number">5.4.1.</span> <span class="nav-text">电流放大系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极间反向电流"><span class="nav-number">5.4.2.</span> <span class="nav-text">极间反向电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极限参数"><span class="nav-number">5.4.3.</span> <span class="nav-text">极限参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态工作点-q"><span class="nav-number">6.1.</span> <span class="nav-text">静态工作点 Q</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态参数"><span class="nav-number">6.2.</span> <span class="nav-text">动态参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#放大倍数-dota"><span class="nav-number">6.2.1.</span> <span class="nav-text">放大倍数 \(\dot{A}\)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入电阻-r_i"><span class="nav-number">6.2.2.</span> <span class="nav-text">输入电阻 \(R_i\)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出电阻-r_o"><span class="nav-number">6.2.3.</span> <span class="nav-text">输出电阻 \(R_o\)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组态与偏置"><span class="nav-number">6.3.</span> <span class="nav-text">组态与偏置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#偏置"><span class="nav-number">6.3.1.</span> <span class="nav-text">偏置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组态"><span class="nav-number">6.3.2.</span> <span class="nav-text">组态</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共射放大电路工作原理"><span class="nav-number">6.4.</span> <span class="nav-text">共射放大电路工作原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bjt-放大电路静态分析"><span class="nav-number">7.</span> <span class="nav-text">BJT 放大电路静态分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#估算法"><span class="nav-number">7.1.</span> <span class="nav-text">估算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图解法"><span class="nav-number">7.2.</span> <span class="nav-text">图解法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bjt-放大电路动态分析"><span class="nav-number">8.</span> <span class="nav-text">BJT 放大电路动态分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等效电路法"><span class="nav-number">8.1.</span> <span class="nav-text">等效电路法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交流分析思路"><span class="nav-number">8.1.1.</span> <span class="nav-text">交流分析思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建立混合参数模型"><span class="nav-number">8.1.2.</span> <span class="nav-text">建立混合参数模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简化混合参数模型"><span class="nav-number">8.1.3.</span> <span class="nav-text">简化混合参数模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第-1-个参数-h_ie"><span class="nav-number">8.1.3.1.</span> <span class="nav-text">第 1 个参数 \(h_{ie}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第-2-个参数-h_re"><span class="nav-number">8.1.3.2.</span> <span class="nav-text">第 2 个参数 \(h_{re}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第-3-个参数-h_fe"><span class="nav-number">8.1.3.3.</span> <span class="nav-text">第 3 个参数 \(h_{fe}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第-4-个参数-h_oe"><span class="nav-number">8.1.3.4.</span> <span class="nav-text">第 4 个参数 \(h_{oe}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#简化的-h-参数等效模型"><span class="nav-number">8.1.3.5.</span> <span class="nav-text">简化的 H 参数等效模型</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#混合参数的确定"><span class="nav-number">8.1.4.</span> <span class="nav-text">混合参数的确定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#微变等效电路法"><span class="nav-number">8.1.5.</span> <span class="nav-text">微变等效电路法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图解法-1"><span class="nav-number">8.2.</span> <span class="nav-text">图解法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交流负载线分析"><span class="nav-number">8.2.1.</span> <span class="nav-text">交流负载线分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非线性失真分析"><span class="nav-number">8.2.2.</span> <span class="nav-text">非线性失真分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态工作点稳定技术"><span class="nav-number">9.</span> <span class="nav-text">静态工作点稳定技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态工作点稳定需求分析"><span class="nav-number">9.1.</span> <span class="nav-text">静态工作点稳定需求分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#稳定静态工作点的典型电路"><span class="nav-number">9.2.</span> <span class="nav-text">稳定静态工作点的典型电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#二极管温度补偿电路"><span class="nav-number">9.2.1.</span> <span class="nav-text">二极管温度补偿电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#直流负反馈-q-点稳定电路"><span class="nav-number">9.2.2.</span> <span class="nav-text">直流负反馈 Q 点稳定电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同时引入负反馈与温度补偿"><span class="nav-number">9.2.3.</span> <span class="nav-text">同时引入负反馈与温度补偿</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分压偏置共射放大电路"><span class="nav-number">9.3.</span> <span class="nav-text">分压偏置共射放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#静态分析"><span class="nav-number">9.3.1.</span> <span class="nav-text">静态分析</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#戴维南等效电路法"><span class="nav-number">9.3.1.1.</span> <span class="nav-text">戴维南等效电路法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#估算法-1"><span class="nav-number">9.3.1.2.</span> <span class="nav-text">估算法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态分析"><span class="nav-number">9.3.2.</span> <span class="nav-text">动态分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它组态晶体管放大电路"><span class="nav-number">10.</span> <span class="nav-text">其它组态晶体管放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本共集放大电路"><span class="nav-number">10.1.</span> <span class="nav-text">基本共集放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电压放大倍数"><span class="nav-number">10.1.1.</span> <span class="nav-text">电压放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大倍数"><span class="nav-number">10.1.2.</span> <span class="nav-text">电流放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入电阻"><span class="nav-number">10.1.3.</span> <span class="nav-text">输入电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出电阻"><span class="nav-number">10.1.4.</span> <span class="nav-text">输出电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结与对比"><span class="nav-number">10.1.5.</span> <span class="nav-text">总结与对比</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本共基放大电路"><span class="nav-number">10.2.</span> <span class="nav-text">基本共基放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电压放大倍数-1"><span class="nav-number">10.2.1.</span> <span class="nav-text">电压放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大倍数-1"><span class="nav-number">10.2.2.</span> <span class="nav-text">电流放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入输出电阻"><span class="nav-number">10.2.3.</span> <span class="nav-text">输入输出电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结与对比-1"><span class="nav-number">10.2.4.</span> <span class="nav-text">总结与对比</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较三种组态放大电路"><span class="nav-number">10.3.</span> <span class="nav-text">比较三种组态放大电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#达林顿管放大电路"><span class="nav-number">10.4.</span> <span class="nav-text">达林顿管放大电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#频率响应基础"><span class="nav-number">11.</span> <span class="nav-text">频率响应基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题引入"><span class="nav-number">11.1.</span> <span class="nav-text">问题引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">11.2.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rc-电路的频率响应"><span class="nav-number">11.3.</span> <span class="nav-text">RC 电路的频率响应</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#rc-高通电路"><span class="nav-number">11.3.1.</span> <span class="nav-text">RC 高通电路</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#对数幅频特性"><span class="nav-number">11.3.1.1.</span> <span class="nav-text">对数幅频特性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#对数相频特性"><span class="nav-number">11.3.1.2.</span> <span class="nav-text">对数相频特性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rc-低通电路"><span class="nav-number">11.3.2.</span> <span class="nav-text">RC 低通电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分析总结"><span class="nav-number">11.3.3.</span> <span class="nav-text">分析总结</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管频率特性"><span class="nav-number">12.</span> <span class="nav-text">晶体管频率特性</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#半导体导论"><span class="nav-number">1.</span> <span class="nav-text">半导体导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本征半导体"><span class="nav-number">1.1.</span> <span class="nav-text">本征半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂质半导体"><span class="nav-number">1.2.</span> <span class="nav-text">杂质半导体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pn-结"><span class="nav-number">1.3.</span> <span class="nav-text">PN 结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管基础"><span class="nav-number">2.</span> <span class="nav-text">二极管基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#组成与分类"><span class="nav-number">2.1.</span> <span class="nav-text">组成与分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性与电流方程"><span class="nav-number">2.2.</span> <span class="nav-text">伏安特性与电流方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#伏安特性"><span class="nav-number">2.2.1.</span> <span class="nav-text">伏安特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流方程"><span class="nav-number">2.2.2.</span> <span class="nav-text">电流方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#温度特性"><span class="nav-number">2.2.3.</span> <span class="nav-text">温度特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电阻级别"><span class="nav-number">2.2.4.</span> <span class="nav-text">电阻级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要特性参数"><span class="nav-number">2.3.</span> <span class="nav-text">主要特性参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二极管电路分析"><span class="nav-number">3.</span> <span class="nav-text">二极管电路分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图解分析法"><span class="nav-number">3.1.</span> <span class="nav-text">图解分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等效模型分析法"><span class="nav-number">3.2.</span> <span class="nav-text">等效模型分析法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见二极管应用电路"><span class="nav-number">3.3.</span> <span class="nav-text">常见二极管应用电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳压二极管"><span class="nav-number">4.</span> <span class="nav-text">稳压二极管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双极型晶体管"><span class="nav-number">5.</span> <span class="nav-text">双极型晶体管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#放大原理"><span class="nav-number">5.1.</span> <span class="nav-text">放大原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伏安特性-1"><span class="nav-number">5.2.</span> <span class="nav-text">伏安特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入特性曲线"><span class="nav-number">5.2.1.</span> <span class="nav-text">输入特性曲线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出特性曲线"><span class="nav-number">5.2.2.</span> <span class="nav-text">输出特性曲线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区"><span class="nav-number">5.3.</span> <span class="nav-text">工作区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要参数"><span class="nav-number">5.4.</span> <span class="nav-text">主要参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大系数"><span class="nav-number">5.4.1.</span> <span class="nav-text">电流放大系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极间反向电流"><span class="nav-number">5.4.2.</span> <span class="nav-text">极间反向电流</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#极限参数"><span class="nav-number">5.4.3.</span> <span class="nav-text">极限参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管放大电路基础"><span class="nav-number">6.</span> <span class="nav-text">晶体管放大电路基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态工作点-q"><span class="nav-number">6.1.</span> <span class="nav-text">静态工作点 Q</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态参数"><span class="nav-number">6.2.</span> <span class="nav-text">动态参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#放大倍数-dota"><span class="nav-number">6.2.1.</span> <span class="nav-text">放大倍数 \(\dot{A}\)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入电阻-r_i"><span class="nav-number">6.2.2.</span> <span class="nav-text">输入电阻 \(R_i\)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出电阻-r_o"><span class="nav-number">6.2.3.</span> <span class="nav-text">输出电阻 \(R_o\)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组态与偏置"><span class="nav-number">6.3.</span> <span class="nav-text">组态与偏置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#偏置"><span class="nav-number">6.3.1.</span> <span class="nav-text">偏置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组态"><span class="nav-number">6.3.2.</span> <span class="nav-text">组态</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共射放大电路工作原理"><span class="nav-number">6.4.</span> <span class="nav-text">共射放大电路工作原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bjt-放大电路静态分析"><span class="nav-number">7.</span> <span class="nav-text">BJT 放大电路静态分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#估算法"><span class="nav-number">7.1.</span> <span class="nav-text">估算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图解法"><span class="nav-number">7.2.</span> <span class="nav-text">图解法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bjt-放大电路动态分析"><span class="nav-number">8.</span> <span class="nav-text">BJT 放大电路动态分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等效电路法"><span class="nav-number">8.1.</span> <span class="nav-text">等效电路法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交流分析思路"><span class="nav-number">8.1.1.</span> <span class="nav-text">交流分析思路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建立混合参数模型"><span class="nav-number">8.1.2.</span> <span class="nav-text">建立混合参数模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简化混合参数模型"><span class="nav-number">8.1.3.</span> <span class="nav-text">简化混合参数模型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第-1-个参数-h_ie"><span class="nav-number">8.1.3.1.</span> <span class="nav-text">第 1 个参数 \(h_{ie}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第-2-个参数-h_re"><span class="nav-number">8.1.3.2.</span> <span class="nav-text">第 2 个参数 \(h_{re}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第-3-个参数-h_fe"><span class="nav-number">8.1.3.3.</span> <span class="nav-text">第 3 个参数 \(h_{fe}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第-4-个参数-h_oe"><span class="nav-number">8.1.3.4.</span> <span class="nav-text">第 4 个参数 \(h_{oe}\)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#简化的-h-参数等效模型"><span class="nav-number">8.1.3.5.</span> <span class="nav-text">简化的 H 参数等效模型</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#混合参数的确定"><span class="nav-number">8.1.4.</span> <span class="nav-text">混合参数的确定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#微变等效电路法"><span class="nav-number">8.1.5.</span> <span class="nav-text">微变等效电路法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图解法-1"><span class="nav-number">8.2.</span> <span class="nav-text">图解法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交流负载线分析"><span class="nav-number">8.2.1.</span> <span class="nav-text">交流负载线分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非线性失真分析"><span class="nav-number">8.2.2.</span> <span class="nav-text">非线性失真分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态工作点稳定技术"><span class="nav-number">9.</span> <span class="nav-text">静态工作点稳定技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态工作点稳定需求分析"><span class="nav-number">9.1.</span> <span class="nav-text">静态工作点稳定需求分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#稳定静态工作点的典型电路"><span class="nav-number">9.2.</span> <span class="nav-text">稳定静态工作点的典型电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#二极管温度补偿电路"><span class="nav-number">9.2.1.</span> <span class="nav-text">二极管温度补偿电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#直流负反馈-q-点稳定电路"><span class="nav-number">9.2.2.</span> <span class="nav-text">直流负反馈 Q 点稳定电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同时引入负反馈与温度补偿"><span class="nav-number">9.2.3.</span> <span class="nav-text">同时引入负反馈与温度补偿</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分压偏置共射放大电路"><span class="nav-number">9.3.</span> <span class="nav-text">分压偏置共射放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#静态分析"><span class="nav-number">9.3.1.</span> <span class="nav-text">静态分析</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#戴维南等效电路法"><span class="nav-number">9.3.1.1.</span> <span class="nav-text">戴维南等效电路法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#估算法-1"><span class="nav-number">9.3.1.2.</span> <span class="nav-text">估算法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态分析"><span class="nav-number">9.3.2.</span> <span class="nav-text">动态分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它组态晶体管放大电路"><span class="nav-number">10.</span> <span class="nav-text">其它组态晶体管放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本共集放大电路"><span class="nav-number">10.1.</span> <span class="nav-text">基本共集放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电压放大倍数"><span class="nav-number">10.1.1.</span> <span class="nav-text">电压放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大倍数"><span class="nav-number">10.1.2.</span> <span class="nav-text">电流放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入电阻"><span class="nav-number">10.1.3.</span> <span class="nav-text">输入电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出电阻"><span class="nav-number">10.1.4.</span> <span class="nav-text">输出电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结与对比"><span class="nav-number">10.1.5.</span> <span class="nav-text">总结与对比</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本共基放大电路"><span class="nav-number">10.2.</span> <span class="nav-text">基本共基放大电路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#电压放大倍数-1"><span class="nav-number">10.2.1.</span> <span class="nav-text">电压放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电流放大倍数-1"><span class="nav-number">10.2.2.</span> <span class="nav-text">电流放大倍数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入输出电阻"><span class="nav-number">10.2.3.</span> <span class="nav-text">输入输出电阻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结与对比-1"><span class="nav-number">10.2.4.</span> <span class="nav-text">总结与对比</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较三种组态放大电路"><span class="nav-number">10.3.</span> <span class="nav-text">比较三种组态放大电路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#达林顿管放大电路"><span class="nav-number">10.4.</span> <span class="nav-text">达林顿管放大电路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#频率响应基础"><span class="nav-number">11.</span> <span class="nav-text">频率响应基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题引入"><span class="nav-number">11.1.</span> <span class="nav-text">问题引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">11.2.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rc-电路的频率响应"><span class="nav-number">11.3.</span> <span class="nav-text">RC 电路的频率响应</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#rc-高通电路"><span class="nav-number">11.3.1.</span> <span class="nav-text">RC 高通电路</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#对数幅频特性"><span class="nav-number">11.3.1.1.</span> <span class="nav-text">对数幅频特性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#对数相频特性"><span class="nav-number">11.3.1.2.</span> <span class="nav-text">对数相频特性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rc-低通电路"><span class="nav-number">11.3.2.</span> <span class="nav-text">RC 低通电路</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分析总结"><span class="nav-number">11.3.3.</span> <span class="nav-text">分析总结</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#晶体管频率特性"><span class="nav-number">12.</span> <span class="nav-text">晶体管频率特性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#晶体管高频等效模型"><span class="nav-number">12.1.</span> <span class="nav-text">晶体管高频等效模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#晶体管频率特性分析"><span class="nav-number">12.2.</span> <span class="nav-text">晶体管频率特性分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高频等效模型的单向化"><span class="nav-number">12.3.</span> <span class="nav-text">高频等效模型的单向化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#放大电路频率响应分析"><span class="nav-number">13.</span> <span class="nav-text">放大电路频率响应分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单管共射放大电路中低频响应分析"><span class="nav-number">13.1.</span> <span class="nav-text">单管共射放大电路中低频响应分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单管共射放大电路高频响应分析"><span class="nav-number">13.2.</span> <span class="nav-text">单管共射放大电路高频响应分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种组态放大电路频率响应性能对比"><span class="nav-number">13.3.</span> <span class="nav-text">三种组态放大电路频率响应性能对比</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -2284,7 +2526,7 @@ f_L = \frac{1}{2 \pi RC} = \frac{1}{2 \pi \tau_L}
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">25:26</span>
+    <span title="站点阅读时长">25:34</span>
 </div>
 
         
