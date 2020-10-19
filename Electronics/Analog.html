@@ -255,8 +255,8 @@
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/13.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/14.png">
 <meta property="og:image" content="https://uinika.github.io/Electronics/Analog/Section-13/15.png">
-<meta property="article:published_time" content="2020-10-16T15:39:35.524Z">
-<meta property="article:modified_time" content="2020-10-18T20:49:28.839Z">
+<meta property="article:published_time" content="2020-10-19T14:35:49.963Z">
+<meta property="article:modified_time" content="2020-10-19T15:22:49.109Z">
 <meta property="article:author" content="Hank">
 <meta property="article:tag" content="Analog">
 <meta name="twitter:card" content="summary">
@@ -452,16 +452,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-10-16 23:39:35" itemprop="dateCreated datePublished" datetime="2020-10-16T23:39:35+08:00">2020-10-16</time>
+              <time title="创建时间：2020-10-19 22:35:49 / 修改时间：23:22:49" itemprop="dateCreated datePublished" datetime="2020-10-19T22:35:49+08:00">2020-10-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-19 04:49:28" itemprop="dateModified" datetime="2020-10-19T04:49:28+08:00">2020-10-19</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -2112,55 +2106,9 @@ f_L = \frac{1}{2 \pi RC} = \frac{1}{2 \pi \tau_L}
 <p><img src="/Electronics/Analog/Section-12/15.png"></p>
 <h2 id="晶体管频率特性">晶体管频率特性</h2>
 <h3 id="晶体管高频等效模型">晶体管高频等效模型</h3>
-<p>高频情况下，晶体管结电容将会对信号传输带来较大影响。而之前得到的 H 参数等效模型，由于同有考虑到结电容的影响，因此不再适用。此时，需要建立一个新的模型来反映晶体管的结电容，这就是<strong>高频等效模型</strong>。本小节将从晶体管的物理结构出发，建立其物理模型：</p>
+<p>高频情况下，晶体管结电容将会对信号传输带来较大影响。而之前得到的 H 参数等效模型，由于没有考虑到结电容的影响，因而不再适用。此时，需要建立一个新的模型来反映晶体管的结电容，这就是<strong>高频等效模型</strong>。本小节将从晶体管的物理结构出发，建立其物理模型：</p>
 <p><img src="/Electronics/Analog/Section-13/1.png"></p>
-<table>
-<colgroup>
-<col style="width: 12%">
-<col style="width: 87%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">符号</th>
-<th style="text-align: center;">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(b^{&#39;}\)</span></td>
-<td style="text-align: center;">基区的一个点；</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(r_{bb^{&#39;}}\)</span></td>
-<td style="text-align: center;">基区的体电阻；</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(r_{b^{&#39;}e}\)</span></td>
-<td style="text-align: center;">发射结电阻；</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(r_{b^{&#39;}c}\)</span></td>
-<td style="text-align: center;">集电结电阻；</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(r_{ce}\)</span></td>
-<td style="text-align: center;">输出电阻；</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(C_{b^{&#39;}c}\)</span></td>
-<td style="text-align: center;">集电结电容；</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(C_{b^{&#39;}e}\)</span></td>
-<td style="text-align: center;">发射结电容；</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="math inline">\(g_m u_{b^{&#39;}e}\)</span></td>
-<td style="text-align: center;">电压控制电流源，取代 <span class="math inline">\(\beta i_b\)</span>，其中<strong>跨导</strong> <span class="math inline">\(g_m = \frac{\Delta i_c}{\Delta u_{b^{&#39;}e}} \vert u_{ce}为常量\)</span>；</td>
-</tr>
-</tbody>
-</table>
-<p>跨导的定义是变化的 <span class="math inline">\(i_c\)</span> 与变化的 <span class="math inline">\(u_{b^{&#39;}e}\)</span> 的比值，通过下面的推导可以发现，这个动态参数也与静态工作点有关：</p>
+<p><span class="math inline">\(b^{&#39;}\)</span> 是基区的一个点；<span class="math inline">\(r_{bb^{&#39;}}\)</span> 是基区的体电阻；<span class="math inline">\(r_{b^{&#39;}e}\)</span> 是发射结电阻；<span class="math inline">\(r_{b^{&#39;}c}\)</span> 是集电结电阻；<span class="math inline">\(r_{ce}\)</span> 是输出电阻；<span class="math inline">\(C_{b^{&#39;}c}\)</span> 是集电结电容；<span class="math inline">\(C_{b^{&#39;}e}\)</span> 是发射结电容；<span class="math inline">\(g_m u_{b^{&#39;}e}\)</span> 是电压控制电流源（取代 <span class="math inline">\(\beta i_b\)</span>），其中<strong>跨导</strong> <span class="math inline">\(g_m = \frac{\Delta i_c}{\Delta u_{b^{&#39;}e}} \vert u_{ce}为常量\)</span>；跨导的定义是变化的 <span class="math inline">\(i_c\)</span> 与变化的 <span class="math inline">\(u_{b^{&#39;}e}\)</span> 的比值，通过下面的推导可以发现，该动态参数也与静态工作点有关：</p>
 <p><span class="math display">\[
 \begin{cases}
    \Delta i_C = g_m \Delta u_{b^{&#39;}e} = g_m \Delta i_B r_{b^{&#39;}e}   \\
@@ -2169,26 +2117,26 @@ f_L = \frac{1}{2 \pi RC} = \frac{1}{2 \pi \tau_L}
 \implies
 g_m = \frac{\beta}{r_{b^{&#39;}e}} = \frac{\beta}{(1+\beta)\frac{26mV}{I_{EQ}}} \approx \frac{I_{EQ}}{26mV}
 \]</span></p>
-<p>当静态工作点确定以后，<span class="math inline">\(g_m\)</span> 就是一个常数，说明这是一个与频率无关的量。而已知 <span class="math inline">\(\beta\)</span> 是与频率有关的，所以采用 <span class="math inline">\(g_m \Delta i_B r_{b^{&#39;}e}\)</span> 来取代原来的 <span class="math inline">\(\beta \Delta i_B\)</span>，将整个元件受频率影响的因素，归结到了两个电容对频率的响应上，这样就给分析带来了极大便利。</p>
-<p>所以在上面的电路当中，一方面体现了晶体管的极电容，同时采用电压控制的受控电流源，体现了晶体管的电流控制特性。将上面的模型重新进行绘制，习惯性的将输入回路画在左侧，输出回路画在右侧，就得到了一个完整的<strong>晶体管高频 <span class="math inline">\(\pi\)</span> 等效模型</strong>，反映了结电容在晶体管中的客观存在。由于模型的形状像字母 <span class="math inline">\(\pi\)</span>，所以也称为 <strong><span class="math inline">\(\pi\)</span> 等效模型</strong>。</p>
+<p>当静态工作点确定以后，<span class="math inline">\(g_m\)</span> 就是一个常数，说明这是一个与频率无关的量。而已知 <span class="math inline">\(\beta\)</span> 是与频率有关的，所以采用 <span class="math inline">\(g_m \Delta i_B r_{b^{&#39;}e}\)</span> 来取代原来的 <span class="math inline">\(\beta \Delta i_B\)</span>，将整个元件受频率影响的因素，归结到两个电容对频率的响应上，这样就给分析带来了极大便利。</p>
+<p>所以在上面的电路当中，一方面体现了晶体管的极电容，同时采用电压控制电流源体现晶体管的电流控制特性。将上面的模型重新进行绘制，习惯性的把输入回路画在左侧，输出回路画在右侧，就得到了一个完整的<strong>晶体管高频 <span class="math inline">\(\pi\)</span> 等效模型</strong>，该模型反映了结电容在晶体管中的客观存在，由于模型的形状很像字母 <span class="math inline">\(\pi\)</span>，所以也称为 <strong><span class="math inline">\(\pi\)</span> 等效模型</strong>。</p>
 <p><img src="/Electronics/Analog/Section-13/2.png"></p>
-<p>接下来着手简化上面这个模型，基区体电阻 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 和发射结电阻 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 两个电阻之和，就是前面所一直讨论的 <span class="math inline">\(r_{be}\)</span>，不能够进行忽略；<span class="math inline">\(r_{b^{&#39;}c}\)</span> 是集电结的结电阻，放大电路工作时集电结反偏，反偏 PN 结的等效电阻较大，所以可以忽略其对信号传输的影响，将其视为开路处理。根据前面的讨论，晶体管输出电阻 <span class="math inline">\(r_{ce}\)</span> 也非常大，通常在 100 千欧姆左右，所以也可以忽略其对信号传输的影响，视为开路处理。</p>
-<p>此外，上面电路中的两个电容作为研究对象，更加不能进行忽略，这样就可以得到一个简化后的 <span class="math inline">\(混合 \pi 等效模型\)</span>：</p>
+<p>接下来着手简化上面这个模型，基区体电阻 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 与发射结电阻 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 之和，就是前面所一直讨论的 <span class="math inline">\(r_{be}\)</span>，不能够进行忽略；<span class="math inline">\(r_{b^{&#39;}c}\)</span> 是集电结的结电阻，由于放大电路工作时集电结反偏，而反偏 PN 结的等效电阻较大，所以可以忽略其对信号传输的影响，将其作为开路处理。根据前面的讨论，晶体管输出电阻 <span class="math inline">\(r_{ce}\)</span> 也非常大，通常在 100 千欧姆左右，所以也可以忽略其对信号传输的影响，视为开路处理。</p>
+<p>除此之外，上面电路当中的两个电容作为研究对象，自然不能忽略，这样就可以得到一个简化后的 <span class="math inline">\(混合 \pi 等效模型\)</span>：</p>
 <p><img src="/Electronics/Analog/Section-13/3.png"></p>
-<p>要使用这个模型，就要确定模型当中的各个参数，其中 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 可以通过查询元件手册获得，分析中通常视为 <span class="math inline">\(100Ω \sim 300Ω\)</span> 的一个电阻，而 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 则通过 <span class="math inline">\(r_{b^{&#39;}e} = (1+\beta) \frac{26mV}{I_{EQ}}\)</span> 求得。除此之外，两个电容 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 可以通过元件手册查到，而 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 则通过 <span class="math inline">\(C_{b^{&#39;}e} \approx \frac{g_m}{2 \pi f_T}\)</span> 进行估算（晶体管特征频率 <span class="math inline">\(f_T\)</span> 可以查询元件手册获得），晶体管的 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 通常在几皮法到几十皮法 <span class="math inline">\(C_{b^{&#39;}c}\)</span>，而 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 则通常为零点几皮法至几皮法，所以 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 要远远大于 <span class="math inline">\(C_{b^{&#39;}c}\)</span>。而 <span class="math inline">\(g_m\)</span> 刚才已经知道可以通过 <span class="math inline">\(g_m \approx \frac{I_{EQ}}{26mV}\)</span> 进行求解。</p>
-<p>通过这样的分析就可以发现，跟 H 参数等效模型一样，<span class="math inline">\(\pi\)</span> 模型当中的各个参数也与静态工作点密切相关，所以在分析放大电路的频率响应的时候，仍然需要秉承先动态后静态的思路进行分析。</p>
-<p>即然<span class="math inline">\(\pi\)</span> 模型与 H 参数等效模型都是对晶体管进行的等效，低频与中频的时候，由于结电容的容抗较大可以视为开路，那么 <span class="math inline">\(\pi\)</span> 模型可以转变为如下形式：</p>
+<p>要使用这个模型，就要确定模型当中的各个参数，其中 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 可以通过查询元件手册获得，分析中通常视为 <span class="math inline">\(100Ω \sim 300Ω\)</span> 的一个电阻，而 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 则通过 <span class="math inline">\(r_{b^{&#39;}e} = (1+\beta) \frac{26mV}{I_{EQ}}\)</span> 求得。除此之外，两个电容 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 可以通过元件手册查询到，而 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 则通过 <span class="math inline">\(C_{b^{&#39;}e} \approx \frac{g_m}{2 \pi f_T}\)</span> 进行估算（晶体管特征频率 <span class="math inline">\(f_T\)</span> 可以查询元件手册获得），晶体管的 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 通常在几皮法到几十皮法 <span class="math inline">\(C_{b^{&#39;}c}\)</span>，而 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 通常只有零点几皮法至几皮法，所以 <span class="math inline">\(C_{b^{&#39;}e}\)</span> 要远远大于 <span class="math inline">\(C_{b^{&#39;}c}\)</span>。而 <span class="math inline">\(g_m\)</span> 刚才已经知道可以通过 <span class="math inline">\(g_m \approx \frac{I_{EQ}}{26mV}\)</span> 进行求解。</p>
+<p>通过这样的分析就可以发现，与 H 参数等效模型一样，<span class="math inline">\(\pi\)</span> 模型当中的各个参数也与静态工作点密切相关，所以在分析放大电路的频率响应时，仍然需要秉承先动态后静态的思路进行分析。</p>
+<p>即然<span class="math inline">\(\pi\)</span> 模型与 H 参数等效模型都是对晶体管进行的等效，当处于低频与中频的时候，由于结电容的容抗较大可以视为开路，那么 <span class="math inline">\(\pi\)</span> 模型可以转变为如下形式：</p>
 <p><img src="/Electronics/Analog/Section-13/4.png"></p>
-<p>上面简化电路中的 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 加上 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 就是 <span class="math inline">\(r_{be}\)</span>，而 <span class="math inline">\(g_m u_{b^{&#39;}e}\)</span> 与 H 参数模型中的 <span class="math inline">\(\beta i_b\)</span> 表征的是相同的量 <span class="math inline">\(i_c\)</span>，因此可以知道在<strong>低频的时候，如果忽略晶体管内部电容，那么混合 <span class="math inline">\(\pi\)</span> 模型与 H 参数模型是完全等效的</strong>。</p>
+<p>上面简化电路中的 <span class="math inline">\(r_{bb^{&#39;}}\)</span> 加上 <span class="math inline">\(r_{b^{&#39;}e}\)</span> 就是 <span class="math inline">\(r_{be}\)</span>，而 <span class="math inline">\(g_m u_{b^{&#39;}e}\)</span> 与 H 参数模型中的 <span class="math inline">\(\beta i_b\)</span> 表征的是相同的量 <span class="math inline">\(i_c\)</span>，由此可知<strong>低频的时候，如果忽略晶体管内部电容，那么混合 <span class="math inline">\(\pi\)</span> 模型与 H 参数模型是完全等效的</strong>。</p>
 <p><img src="/Electronics/Analog/Section-13/5.png"></p>
-<p>利用 <span class="math inline">\(\pi\)</span> 模型就可以开展对放大电路高频段的分析，因为它非常忠实的反映了结电容的存在，可以支撑对晶体管更加详细的讨论。</p>
+<p>利用 <span class="math inline">\(\pi\)</span> 模型就可以开展对放大电路高频段的分析，因为它非常忠实的反映了结电容的存在，可以支撑对晶体管更为详细的讨论。</p>
 <h3 id="晶体管频率特性分析">晶体管频率特性分析</h3>
-<p>结电容的存在，让晶体管成为了一个频率敏感的元件，晶体管的电流放大系数 <span class="math inline">\(\beta\)</span> 是晶体管信号传输能力的重要标志，因此在全频率范围内，考虑电流放大系数 <span class="math inline">\(\beta\)</span> 与信号频率 <span class="math inline">\(f\)</span> 的关系。将下图 <span class="math inline">\(\pi\)</span> 模型的 <code>c</code> 和 <code>e</code> 两端短路，由于电流放大系数 <span class="math inline">\(\beta\)</span> 是在 <span class="math inline">\(U_{ce}\)</span> 为常量的情况下，变化的 <span class="math inline">\(I_c\)</span> 与变化的 <span class="math inline">\(I_b\)</span> 的比值：</p>
+<p>结电容的存在，让晶体管成为了一个频率敏感的元件，晶体管的电流放大系数 <span class="math inline">\(\beta\)</span> 是晶体管信号传输能力的重要标志，因此在全频率范围内，需要考虑电流放大系数 <span class="math inline">\(\beta\)</span> 与信号频率 <span class="math inline">\(f\)</span> 之前的关系。将下图 <span class="math inline">\(\pi\)</span> 模型的 <code>c</code> 和 <code>e</code> 两端短路，由于电流放大系数 <span class="math inline">\(\beta\)</span> 是在 <span class="math inline">\(U_{ce}\)</span> 为常量的情况下，变化的 <span class="math inline">\(I_c\)</span> 与变化的 <span class="math inline">\(I_b\)</span> 的比值：</p>
 <p><span class="math display">\[
-\dot{\beta} = \frac{\dot{I_c}}{\dot{I_b}} \vert \dot{U_{ce} = 0}
+\dot{\beta} = \frac{\dot{I_c}}{\dot{I_b}} \vert \dot{U_{ce}} = 0
 \]</span></p>
 <p>输出特性的几何关系上，则反映出在固定 <span class="math inline">\(U_{ce}\)</span> 的情况下，纵向特性曲线的疏密程度，因此对于交流分析，由于 <span class="math inline">\(u_{ce}\)</span> 为常数，所以必须将 <code>c</code> 和 <code>e</code> 两端短路起来。</p>
-<p>由于 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 同时出现在输入和输出回路，所以如果能够采用它来表示 <span class="math inline">\(I_c\)</span> 和 <span class="math inline">\(I_b\)</span> 就可以解决 <span class="math inline">\(\beta\)</span> 求解的问题。对上图橙色标记的结点列写 KCL 方程 <span class="math inline">\(g_m \dot{U_{b^{&#39;}e}} = C_{b^{&#39;}c}+ \dot{I_c}\)</span>，通过对电路的观察可以发现，<span class="math inline">\(C_{b^{&#39;}c}\)</span> 两端的电压恰恰就是 <span class="math inline">\(U_{b^{&#39;}e}\)</span>，如果将 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 的电抗视为 <span class="math inline">\(\frac{1}{j\omega C}\)</span> 就可以得到 <span class="math inline">\(I_c\)</span> 和 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 的关系式：</p>
+<p>由于 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 同时出现在输入和输出回路，所以如果能够采用它来表示 <span class="math inline">\(I_c\)</span> 和 <span class="math inline">\(I_b\)</span> 就可以解决 <span class="math inline">\(\beta\)</span> 求解的问题。对上图橙色标记的结点列写 KCL 方程 <span class="math inline">\(g_m \dot{U_{b^{&#39;}e}} = C_{b^{&#39;}c}+ \dot{I_c}\)</span>，通过对电路的观察可以发现，<span class="math inline">\(C_{b^{&#39;}c}\)</span> 两端的电压恰恰就是 <span class="math inline">\(U_{b^{&#39;}e}\)</span>，如果将 <span class="math inline">\(C_{b^{&#39;}c}\)</span> 的电抗视为 <span class="math inline">\(\frac{1}{j\omega C}\)</span> 就可以得到 <span class="math inline">\(I_c\)</span> 与 <span class="math inline">\(U_{b^{&#39;}e}\)</span> 的关系式：</p>
 <p><span class="math display">\[
 \dot{I_c} = (g_m - j \omega C_{b^{&#39;}c}) \dot{U_{b^{&#39;}e}}
 \]</span></p>
@@ -2210,7 +2158,7 @@ g_m = \frac{\beta}{r_{b^{&#39;}e}} = \frac{\beta}{(1+\beta)\frac{26mV}{I_{EQ}}} 
 \dot{\beta} \approx \frac{g_m r_{b&#39;e}}{1 + j \omega (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e}}
 \]</span></p>
 <p>对上面简化后的表达式进行定性分析，当信号频率非常低的时候，即 <span class="math inline">\(j \omega (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e} \approx 0\)</span>，电流放大系数 <span class="math inline">\(\beta\)</span> 将会出现一个最大值，即低频情况下的通带增益 <span class="math inline">\(\beta_0 = g_m r_{b&#39;e}\)</span>。随着频率的逐渐增加，分母逐渐变大，电流放大系数 <span class="math inline">\(\beta\)</span> 会有所损失。</p>
-<p>接下来，任然定义关键频率 <span class="math inline">\(f_\beta = \frac{1}{2 \pi (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e}}\)</span>，注意这里的电容 <strong>C</strong> 是 <span class="math inline">\(C_{b&#39;e}\)</span> 与 <span class="math inline">\(C_{b&#39;c}\)</span> 两个电容之和，进而将 <span class="math inline">\(f_\beta\)</span> 代入上面表达式，并且将 <span class="math inline">\(\omega\)</span> 用 <span class="math inline">\(2 \pi f\)</span> 取代，就可以得到 <span class="math inline">\(\beta\)</span> 关于 <span class="math inline">\(f\)</span> 的表达式，进而就可以得到电流放大系数 <span class="math inline">\(\beta\)</span> 的<strong>幅频特性</strong>与<strong>相频特性</strong>：</p>
+<p>接下来，仍然定义关键频率 <span class="math inline">\(f_\beta = \frac{1}{2 \pi (C_{b&#39;e} + C_{b&#39;c}) r_{b&#39;e}}\)</span>，注意这里的电容 <strong>C</strong> 是 <span class="math inline">\(C_{b&#39;e}\)</span> 与 <span class="math inline">\(C_{b&#39;c}\)</span> 两个电容之和，进而将 <span class="math inline">\(f_\beta\)</span> 代入上面的表达式，并且将 <span class="math inline">\(\omega\)</span> 用 <span class="math inline">\(2 \pi f\)</span> 取代，就可以得到 <span class="math inline">\(\beta\)</span> 关于 <span class="math inline">\(f\)</span> 的表达式，进而就可以得到电流放大系数 <span class="math inline">\(\beta\)</span> 的<strong>幅频特性</strong>与<strong>相频特性</strong>：</p>
 <p><span class="math display">\[
 \dot{\beta} = \frac{\beta_0}{1 + j \frac{f}{f_\beta}} \implies
 \begin{cases}
@@ -2223,18 +2171,18 @@ g_m = \frac{\beta}{r_{b^{&#39;}e}} = \frac{\beta}{(1+\beta)\frac{26mV}{I_{EQ}}} 
    相频特性 \implies \varphi = - \arctan \frac{f}{f_\beta}
 \end{cases}
 \]</span></p>
-<p>对上面的方程组取对数后发现，这里的幅频特性与相频特性与单时间常数 RC 电路当中的低通电路十分相似，只是在一阶低通电路的情况下叠加了一个常数 <span class="math inline">\(20 \lg \beta_0\)</span>，从而绘制出 <span class="math inline">\(\beta\)</span> 的波特图：</p>
+<p>对上面的方程组取对数以后发现，这里的幅频特性与相频特性与单时间常数 RC 电路当中的低通电路十分相似，只是在一阶低通电路的情况下叠加了一个常数 <span class="math inline">\(20 \lg \beta_0\)</span>，从而绘制出 <span class="math inline">\(\beta\)</span> 的波特图：</p>
 <p><img src="/Electronics/Analog/Section-13/7.png"></p>
 <ul>
 <li>当 <span class="math inline">\(f &lt;&lt; f_\beta\)</span> 时，<span class="math inline">\(20 \lg |\dot{\beta}| \approx 20 \lg \beta_0，\varphi = 0°\)</span>；</li>
 <li>当 <span class="math inline">\(f &gt;&gt; f_\beta\)</span> 时，<span class="math inline">\(20 \lg |\dot{\beta}| \approx 20 \lg \beta_0 - 20 \lg \frac{f}{f_\beta}\)</span>；</li>
 <li>当 <span class="math inline">\(f = f_\beta\)</span> 时，<span class="math inline">\(20 \lg |\dot{\beta}| \approx 20 \lg \beta_0 - 20 \lg \sqrt{2} \approx 20 \lg \beta_0 - 3dB，\varphi = -45°\)</span>；</li>
 </ul>
-<p>通过波特图可以看到，就是在原来的一阶 RC 低通电路基础上，抬升到了 <span class="math inline">\(20 \lg \beta_0\)</span> 的位置，仍然是在 <span class="math inline">\(f_{\beta}\)</span> 的位置出现拐点。值得强调的是，在上面的波特图当中，拐点处依然会产生 <span class="math inline">\(3dB\)</span> 的最大误差，也就是 <span class="math inline">\(f \beta\)</span> 处对应的电流放大系数 <span class="math inline">\(\beta\)</span> 的增益已经相比通带增益，下降了<code>3dB</code>，因此 <span class="math inline">\(f_\beta\)</span> 也是这个波特图的上限频率。</p>
+<p>通过波特图可以看到，上面电路就是在原来的一阶 RC 低通电路基础上，抬升至 <span class="math inline">\(20 \lg \beta_0\)</span> 位置，并且仍然是在 <span class="math inline">\(f_{\beta}\)</span> 位置出现拐点。值得强调的是，在上面波特图当中，拐点处依然会产生 <span class="math inline">\(3dB\)</span> 的最大误差，也就是 <span class="math inline">\(f \beta\)</span> 处对应的电流放大系数 <span class="math inline">\(\beta\)</span> 的增益，已经相比通带增益下降了<code>3dB</code>，因此 <span class="math inline">\(f_\beta\)</span> 同时也是这个波特图的上限频率。</p>
 <p>同样的，观察相频特性可以发现，与低通电路一样，在频率较低的时候，电流的放大系数将不会产生相移；随着频率的增高，电流放大系数将会产生最大 <span class="math inline">\(90°\)</span> 的相位滞后，而相频特性的最大误差也出现在拐点处，仍然为 <code>5.71°</code>；</p>
 <p><img src="/Electronics/Analog/Section-13/8.png"></p>
-<p>基于这样的晶体管电流放大系数的幅频特性与相频特性，就可以定义一些非常重要的频率参数来表征一个晶体管的频率特性。因此，定义当 <span class="math inline">\(|\dot{\beta}|\)</span> 的值下降至 <span class="math inline">\(0.707 \cdot \beta_0\)</span> 的时候（即 <span class="math inline">\(\frac{1}{\sqrt{2}}\beta_0\)</span> 时的频率）所对应的频率，称为<strong>共射截止频率</strong>，也就是波特图上的<strong>上限频率</strong>。显而易见，这个频率点的电流放大系数幅值下降了 <code>3dB</code>，在这个位置并不意味晶体管失去了电流放大能力，而只是表示当前的频率已经下降了 <code>3dB</code>，如果频率进一步提高，将会以每 10 倍频 <code>20dB</code> 的速率衰减，电流放大能力由此大打折扣。</p>
-<p>当信号频率进一步提高，电流放大系数的幅值将会进一步下降，这里定义当电流放大系数幅值 <span class="math inline">\(\dot{\beta}\)</span> 降为 <code>1</code> 的时候，所对应的频率称为特征频率 <span class="math inline">\(f_T\)</span>，即位于幅频特性与坐标横轴的交点处。</p>
+<p>基于这样的晶体管电流放大系数的幅频特性与相频特性，就可以定义一些非常重要的频率参数来表征一个晶体管的频率特性。因此，定义当 <span class="math inline">\(|\dot{\beta}|\)</span> 的值下降至 <span class="math inline">\(0.707 \cdot \beta_0\)</span> 的时候（即 <span class="math inline">\(\frac{1}{\sqrt{2}}\beta_0\)</span> 时的频率）所对应的频率，称为<strong>共射截止频率</strong>，也就是波特图上的<strong>上限频率</strong>。显而易见，该频率点的电流放大系数幅值下降了 <code>3dB</code>，在这个位置并不意味晶体管失去了电流放大能力，而只是表示当前的频率已经下降了 <code>3dB</code>，如果频率进一步提高，将会以每 10 倍频 <code>20dB</code> 的速率衰减，电流放大能力由此大打折扣。</p>
+<p>当信号频率进一步提高，电流放大系数的幅值将会进一步下降，这里定义当电流放大系数幅值 <span class="math inline">\(\dot{\beta}\)</span> 降为 <code>1</code> 的时候，所对应的频率称为<strong>特征频率</strong> <span class="math inline">\(f_T\)</span>，即位于幅频特性与坐标横轴的交点处。</p>
 <p><img src="/Electronics/Analog/Section-13/9.png"></p>
 <p>将 <span class="math inline">\(f = f_T\)</span> 代入上面得到的频率响应，就可以得到 <span class="math inline">\(f_T\)</span> 与 <span class="math inline">\(f_\beta\)</span> 之间的关系：</p>
 <p><span class="math display">\[
@@ -2271,11 +2219,11 @@ f_T \approx \beta_0 f_\beta
 <li>通过上面的换算关系，可以得到 3 个频率之间的大小关系：<span class="math inline">\(f_\beta &lt; f_T &lt; f_\alpha\)</span>；其中 <span class="math inline">\(f_\beta\)</span> 和 <span class="math inline">\(f_T\)</span> 可以从参数手册获得，而 <span class="math inline">\(f_\alpha\)</span> 则需要通过换算求取；</li>
 </ol>
 <h3 id="高频等效模型的单向化">高频等效模型的单向化</h3>
-<p>在下面的 <span class="math inline">\(\pi\)</span> 模型当中，由于电容 <span class="math inline">\(C_{b&#39;c}\)</span> 跨接在输入回路与输出回路之间，导致输入信号传输出现了双向化的过程，引入了反馈，使得电路分析极为复杂化。解决这个问题，可以采用<strong>密勒定理</strong>简化电路。</p>
+<p>在下面的 <span class="math inline">\(\pi\)</span> 模型当中，由于电容 <span class="math inline">\(C_{b&#39;c}\)</span> 跨接在输入回路与输出回路之间，导致输入信号传输出现了双向化过程，引入了反馈，让电路分析复杂化。解决这个问题，可以采用<strong>密勒定理</strong>简化电路。</p>
 <p><img src="/Electronics/Analog/Section-13/10.png"></p>
 <p><strong>密勒定理</strong>是指一个输入和输出之间跨接阻抗 <span class="math inline">\(Z\)</span> 的网络，如果这个网络的传输函数 <span class="math inline">\(\dot{A} = \frac{\dot{U_2}}{\dot{U_1}}\)</span> 是可以确定的话，那么就可以将跨接阻抗 <span class="math inline">\(Z\)</span> 等效为位于输入回路的 <span class="math inline">\(Z_1\)</span> 和位于输出回路的 <span class="math inline">\(Z_2\)</span> 两个阻抗，从而完成电路的单向化。</p>
 <p><img src="/Electronics/Analog/Section-13/11.png"></p>
-<p>为了确保两个电路的等效，需要保证输入与输出端口在等效前后的电压电流关系是相同的，对于输入回路建立下面的关系：</p>
+<p>为了确保两个电路的等效，需要保证输入与输出端口在等效前后的电压电流关系是相同的，对于输入回路可以建立下面的关系：</p>
 <p><span class="math display">\[
 输入回路 \implies
 \begin{cases}
